@@ -15,10 +15,56 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
-  nickname  String?
-  password  String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         Int         @id @default(autoincrement())
+  username   String      @unique
+  nickname   String?
+  password   String
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  characters Character[]
+}
+
+model Character {
+  id         Int    @id @default(autoincrement())
+  userId     Int
+  regionId   Int
+  originId   Int
+  linageId   Int
+  pastId     Int
+  name       String
+  essence    String
+  expression String
+  exaltation String
+  Region     Region @relation(fields: [regionId], references: [id])
+  Origin     Origin @relation(fields: [originId], references: [id])
+  User       User   @relation(fields: [userId], references: [id])
+  Linage     Linage @relation(fields: [linageId], references: [id])
+  Past       Past   @relation(fields: [pastId], references: [id])
+}
+
+model Region {
+  id        Int         @id @default(autoincrement())
+  name      String
+  Character Character[]
+}
+
+model Origin {
+  id        Int         @id @default(autoincrement())
+  name      String
+  Character Character[]
+  Linage    Linage[]
+}
+
+model Linage {
+  id        Int         @id @default(autoincrement())
+  name      String
+  originId  Int
+  Origin    Origin      @relation(fields: [originId], references: [id])
+  Character Character[]
+}
+
+model Past {
+  id        Int         @id @default(autoincrement())
+  name      String
+  Character Character[]
 }
