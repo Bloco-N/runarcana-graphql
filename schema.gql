@@ -7,12 +7,768 @@ type AffectedRowsOutput {
   count: Int!
 }
 
+type AggregateCharacter {
+  _avg: CharacterAvgAggregate
+  _count: CharacterCountAggregate
+  _max: CharacterMaxAggregate
+  _min: CharacterMinAggregate
+  _sum: CharacterSumAggregate
+}
+
+type AggregateLinage {
+  _avg: LinageAvgAggregate
+  _count: LinageCountAggregate
+  _max: LinageMaxAggregate
+  _min: LinageMinAggregate
+  _sum: LinageSumAggregate
+}
+
+type AggregateOrigin {
+  _avg: OriginAvgAggregate
+  _count: OriginCountAggregate
+  _max: OriginMaxAggregate
+  _min: OriginMinAggregate
+  _sum: OriginSumAggregate
+}
+
+type AggregatePast {
+  _avg: PastAvgAggregate
+  _count: PastCountAggregate
+  _max: PastMaxAggregate
+  _min: PastMinAggregate
+  _sum: PastSumAggregate
+}
+
+type AggregateRegion {
+  _avg: RegionAvgAggregate
+  _count: RegionCountAggregate
+  _max: RegionMaxAggregate
+  _min: RegionMinAggregate
+  _sum: RegionSumAggregate
+}
+
 type AggregateUser {
   _avg: UserAvgAggregate
   _count: UserCountAggregate
   _max: UserMaxAggregate
   _min: UserMinAggregate
   _sum: UserSumAggregate
+}
+
+type Character {
+  Linage: Linage!
+  Origin: Origin!
+  Past: Past!
+  Region: Region!
+  User: User!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int!
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+type CharacterAvgAggregate {
+  id: Float
+  linageId: Float
+  originId: Float
+  pastId: Float
+  regionId: Float
+  userId: Float
+}
+
+input CharacterAvgOrderByAggregateInput {
+  id: SortOrder
+  linageId: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+type CharacterCountAggregate {
+  _all: Int!
+  essence: Int!
+  exaltation: Int!
+  expression: Int!
+  id: Int!
+  linageId: Int!
+  name: Int!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterCountOrderByAggregateInput {
+  essence: SortOrder
+  exaltation: SortOrder
+  expression: SortOrder
+  id: SortOrder
+  linageId: SortOrder
+  name: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+input CharacterCreateInput {
+  Linage: LinageCreateNestedOneWithoutCharacterInput!
+  Origin: OriginCreateNestedOneWithoutCharacterInput!
+  Past: PastCreateNestedOneWithoutCharacterInput!
+  Region: RegionCreateNestedOneWithoutCharacterInput!
+  User: UserCreateNestedOneWithoutCharactersInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+input CharacterCreateManyInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterCreateManyLinageInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterCreateManyLinageInputEnvelope {
+  data: [CharacterCreateManyLinageInput!]!
+  skipDuplicates: Boolean
+}
+
+input CharacterCreateManyOriginInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  linageId: Int!
+  name: String!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterCreateManyOriginInputEnvelope {
+  data: [CharacterCreateManyOriginInput!]!
+  skipDuplicates: Boolean
+}
+
+input CharacterCreateManyPastInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  linageId: Int!
+  name: String!
+  originId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterCreateManyPastInputEnvelope {
+  data: [CharacterCreateManyPastInput!]!
+  skipDuplicates: Boolean
+}
+
+input CharacterCreateManyRegionInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  userId: Int!
+}
+
+input CharacterCreateManyRegionInputEnvelope {
+  data: [CharacterCreateManyRegionInput!]!
+  skipDuplicates: Boolean
+}
+
+input CharacterCreateManyUserInput {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+}
+
+input CharacterCreateManyUserInputEnvelope {
+  data: [CharacterCreateManyUserInput!]!
+  skipDuplicates: Boolean
+}
+
+input CharacterCreateNestedManyWithoutLinageInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutLinageInput!]
+  create: [CharacterCreateWithoutLinageInput!]
+  createMany: CharacterCreateManyLinageInputEnvelope
+}
+
+input CharacterCreateNestedManyWithoutOriginInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutOriginInput!]
+  create: [CharacterCreateWithoutOriginInput!]
+  createMany: CharacterCreateManyOriginInputEnvelope
+}
+
+input CharacterCreateNestedManyWithoutPastInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutPastInput!]
+  create: [CharacterCreateWithoutPastInput!]
+  createMany: CharacterCreateManyPastInputEnvelope
+}
+
+input CharacterCreateNestedManyWithoutRegionInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutRegionInput!]
+  create: [CharacterCreateWithoutRegionInput!]
+  createMany: CharacterCreateManyRegionInputEnvelope
+}
+
+input CharacterCreateNestedManyWithoutUserInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutUserInput!]
+  create: [CharacterCreateWithoutUserInput!]
+  createMany: CharacterCreateManyUserInputEnvelope
+}
+
+input CharacterCreateOrConnectWithoutLinageInput {
+  create: CharacterCreateWithoutLinageInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterCreateOrConnectWithoutOriginInput {
+  create: CharacterCreateWithoutOriginInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterCreateOrConnectWithoutPastInput {
+  create: CharacterCreateWithoutPastInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterCreateOrConnectWithoutRegionInput {
+  create: CharacterCreateWithoutRegionInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterCreateOrConnectWithoutUserInput {
+  create: CharacterCreateWithoutUserInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterCreateWithoutLinageInput {
+  Origin: OriginCreateNestedOneWithoutCharacterInput!
+  Past: PastCreateNestedOneWithoutCharacterInput!
+  Region: RegionCreateNestedOneWithoutCharacterInput!
+  User: UserCreateNestedOneWithoutCharactersInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+input CharacterCreateWithoutOriginInput {
+  Linage: LinageCreateNestedOneWithoutCharacterInput!
+  Past: PastCreateNestedOneWithoutCharacterInput!
+  Region: RegionCreateNestedOneWithoutCharacterInput!
+  User: UserCreateNestedOneWithoutCharactersInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+input CharacterCreateWithoutPastInput {
+  Linage: LinageCreateNestedOneWithoutCharacterInput!
+  Origin: OriginCreateNestedOneWithoutCharacterInput!
+  Region: RegionCreateNestedOneWithoutCharacterInput!
+  User: UserCreateNestedOneWithoutCharactersInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+input CharacterCreateWithoutRegionInput {
+  Linage: LinageCreateNestedOneWithoutCharacterInput!
+  Origin: OriginCreateNestedOneWithoutCharacterInput!
+  Past: PastCreateNestedOneWithoutCharacterInput!
+  User: UserCreateNestedOneWithoutCharactersInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+input CharacterCreateWithoutUserInput {
+  Linage: LinageCreateNestedOneWithoutCharacterInput!
+  Origin: OriginCreateNestedOneWithoutCharacterInput!
+  Past: PastCreateNestedOneWithoutCharacterInput!
+  Region: RegionCreateNestedOneWithoutCharacterInput!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  name: String!
+}
+
+type CharacterGroupBy {
+  _avg: CharacterAvgAggregate
+  _count: CharacterCountAggregate
+  _max: CharacterMaxAggregate
+  _min: CharacterMinAggregate
+  _sum: CharacterSumAggregate
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int!
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  userId: Int!
+}
+
+input CharacterListRelationFilter {
+  every: CharacterWhereInput
+  none: CharacterWhereInput
+  some: CharacterWhereInput
+}
+
+type CharacterMaxAggregate {
+  essence: String
+  exaltation: String
+  expression: String
+  id: Int
+  linageId: Int
+  name: String
+  originId: Int
+  pastId: Int
+  regionId: Int
+  userId: Int
+}
+
+input CharacterMaxOrderByAggregateInput {
+  essence: SortOrder
+  exaltation: SortOrder
+  expression: SortOrder
+  id: SortOrder
+  linageId: SortOrder
+  name: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+type CharacterMinAggregate {
+  essence: String
+  exaltation: String
+  expression: String
+  id: Int
+  linageId: Int
+  name: String
+  originId: Int
+  pastId: Int
+  regionId: Int
+  userId: Int
+}
+
+input CharacterMinOrderByAggregateInput {
+  essence: SortOrder
+  exaltation: SortOrder
+  expression: SortOrder
+  id: SortOrder
+  linageId: SortOrder
+  name: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+input CharacterOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input CharacterOrderByWithAggregationInput {
+  _avg: CharacterAvgOrderByAggregateInput
+  _count: CharacterCountOrderByAggregateInput
+  _max: CharacterMaxOrderByAggregateInput
+  _min: CharacterMinOrderByAggregateInput
+  _sum: CharacterSumOrderByAggregateInput
+  essence: SortOrder
+  exaltation: SortOrder
+  expression: SortOrder
+  id: SortOrder
+  linageId: SortOrder
+  name: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+input CharacterOrderByWithRelationInput {
+  Linage: LinageOrderByWithRelationInput
+  Origin: OriginOrderByWithRelationInput
+  Past: PastOrderByWithRelationInput
+  Region: RegionOrderByWithRelationInput
+  User: UserOrderByWithRelationInput
+  essence: SortOrder
+  exaltation: SortOrder
+  expression: SortOrder
+  id: SortOrder
+  linageId: SortOrder
+  name: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+enum CharacterScalarFieldEnum {
+  essence
+  exaltation
+  expression
+  id
+  linageId
+  name
+  originId
+  pastId
+  regionId
+  userId
+}
+
+input CharacterScalarWhereInput {
+  AND: [CharacterScalarWhereInput!]
+  NOT: [CharacterScalarWhereInput!]
+  OR: [CharacterScalarWhereInput!]
+  essence: StringFilter
+  exaltation: StringFilter
+  expression: StringFilter
+  id: IntFilter
+  linageId: IntFilter
+  name: StringFilter
+  originId: IntFilter
+  pastId: IntFilter
+  regionId: IntFilter
+  userId: IntFilter
+}
+
+input CharacterScalarWhereWithAggregatesInput {
+  AND: [CharacterScalarWhereWithAggregatesInput!]
+  NOT: [CharacterScalarWhereWithAggregatesInput!]
+  OR: [CharacterScalarWhereWithAggregatesInput!]
+  essence: StringWithAggregatesFilter
+  exaltation: StringWithAggregatesFilter
+  expression: StringWithAggregatesFilter
+  id: IntWithAggregatesFilter
+  linageId: IntWithAggregatesFilter
+  name: StringWithAggregatesFilter
+  originId: IntWithAggregatesFilter
+  pastId: IntWithAggregatesFilter
+  regionId: IntWithAggregatesFilter
+  userId: IntWithAggregatesFilter
+}
+
+type CharacterSumAggregate {
+  id: Int
+  linageId: Int
+  originId: Int
+  pastId: Int
+  regionId: Int
+  userId: Int
+}
+
+input CharacterSumOrderByAggregateInput {
+  id: SortOrder
+  linageId: SortOrder
+  originId: SortOrder
+  pastId: SortOrder
+  regionId: SortOrder
+  userId: SortOrder
+}
+
+input CharacterUpdateInput {
+  Linage: LinageUpdateOneRequiredWithoutCharacterInput
+  Origin: OriginUpdateOneRequiredWithoutCharacterInput
+  Past: PastUpdateOneRequiredWithoutCharacterInput
+  Region: RegionUpdateOneRequiredWithoutCharacterInput
+  User: UserUpdateOneRequiredWithoutCharactersInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateManyMutationInput {
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateManyWithWhereWithoutLinageInput {
+  data: CharacterUpdateManyMutationInput!
+  where: CharacterScalarWhereInput!
+}
+
+input CharacterUpdateManyWithWhereWithoutOriginInput {
+  data: CharacterUpdateManyMutationInput!
+  where: CharacterScalarWhereInput!
+}
+
+input CharacterUpdateManyWithWhereWithoutPastInput {
+  data: CharacterUpdateManyMutationInput!
+  where: CharacterScalarWhereInput!
+}
+
+input CharacterUpdateManyWithWhereWithoutRegionInput {
+  data: CharacterUpdateManyMutationInput!
+  where: CharacterScalarWhereInput!
+}
+
+input CharacterUpdateManyWithWhereWithoutUserInput {
+  data: CharacterUpdateManyMutationInput!
+  where: CharacterScalarWhereInput!
+}
+
+input CharacterUpdateManyWithoutLinageInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutLinageInput!]
+  create: [CharacterCreateWithoutLinageInput!]
+  createMany: CharacterCreateManyLinageInputEnvelope
+  delete: [CharacterWhereUniqueInput!]
+  deleteMany: [CharacterScalarWhereInput!]
+  disconnect: [CharacterWhereUniqueInput!]
+  set: [CharacterWhereUniqueInput!]
+  update: [CharacterUpdateWithWhereUniqueWithoutLinageInput!]
+  updateMany: [CharacterUpdateManyWithWhereWithoutLinageInput!]
+  upsert: [CharacterUpsertWithWhereUniqueWithoutLinageInput!]
+}
+
+input CharacterUpdateManyWithoutOriginInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutOriginInput!]
+  create: [CharacterCreateWithoutOriginInput!]
+  createMany: CharacterCreateManyOriginInputEnvelope
+  delete: [CharacterWhereUniqueInput!]
+  deleteMany: [CharacterScalarWhereInput!]
+  disconnect: [CharacterWhereUniqueInput!]
+  set: [CharacterWhereUniqueInput!]
+  update: [CharacterUpdateWithWhereUniqueWithoutOriginInput!]
+  updateMany: [CharacterUpdateManyWithWhereWithoutOriginInput!]
+  upsert: [CharacterUpsertWithWhereUniqueWithoutOriginInput!]
+}
+
+input CharacterUpdateManyWithoutPastInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutPastInput!]
+  create: [CharacterCreateWithoutPastInput!]
+  createMany: CharacterCreateManyPastInputEnvelope
+  delete: [CharacterWhereUniqueInput!]
+  deleteMany: [CharacterScalarWhereInput!]
+  disconnect: [CharacterWhereUniqueInput!]
+  set: [CharacterWhereUniqueInput!]
+  update: [CharacterUpdateWithWhereUniqueWithoutPastInput!]
+  updateMany: [CharacterUpdateManyWithWhereWithoutPastInput!]
+  upsert: [CharacterUpsertWithWhereUniqueWithoutPastInput!]
+}
+
+input CharacterUpdateManyWithoutRegionInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutRegionInput!]
+  create: [CharacterCreateWithoutRegionInput!]
+  createMany: CharacterCreateManyRegionInputEnvelope
+  delete: [CharacterWhereUniqueInput!]
+  deleteMany: [CharacterScalarWhereInput!]
+  disconnect: [CharacterWhereUniqueInput!]
+  set: [CharacterWhereUniqueInput!]
+  update: [CharacterUpdateWithWhereUniqueWithoutRegionInput!]
+  updateMany: [CharacterUpdateManyWithWhereWithoutRegionInput!]
+  upsert: [CharacterUpsertWithWhereUniqueWithoutRegionInput!]
+}
+
+input CharacterUpdateManyWithoutUserInput {
+  connect: [CharacterWhereUniqueInput!]
+  connectOrCreate: [CharacterCreateOrConnectWithoutUserInput!]
+  create: [CharacterCreateWithoutUserInput!]
+  createMany: CharacterCreateManyUserInputEnvelope
+  delete: [CharacterWhereUniqueInput!]
+  deleteMany: [CharacterScalarWhereInput!]
+  disconnect: [CharacterWhereUniqueInput!]
+  set: [CharacterWhereUniqueInput!]
+  update: [CharacterUpdateWithWhereUniqueWithoutUserInput!]
+  updateMany: [CharacterUpdateManyWithWhereWithoutUserInput!]
+  upsert: [CharacterUpsertWithWhereUniqueWithoutUserInput!]
+}
+
+input CharacterUpdateWithWhereUniqueWithoutLinageInput {
+  data: CharacterUpdateWithoutLinageInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpdateWithWhereUniqueWithoutOriginInput {
+  data: CharacterUpdateWithoutOriginInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpdateWithWhereUniqueWithoutPastInput {
+  data: CharacterUpdateWithoutPastInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpdateWithWhereUniqueWithoutRegionInput {
+  data: CharacterUpdateWithoutRegionInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpdateWithWhereUniqueWithoutUserInput {
+  data: CharacterUpdateWithoutUserInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpdateWithoutLinageInput {
+  Origin: OriginUpdateOneRequiredWithoutCharacterInput
+  Past: PastUpdateOneRequiredWithoutCharacterInput
+  Region: RegionUpdateOneRequiredWithoutCharacterInput
+  User: UserUpdateOneRequiredWithoutCharactersInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateWithoutOriginInput {
+  Linage: LinageUpdateOneRequiredWithoutCharacterInput
+  Past: PastUpdateOneRequiredWithoutCharacterInput
+  Region: RegionUpdateOneRequiredWithoutCharacterInput
+  User: UserUpdateOneRequiredWithoutCharactersInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateWithoutPastInput {
+  Linage: LinageUpdateOneRequiredWithoutCharacterInput
+  Origin: OriginUpdateOneRequiredWithoutCharacterInput
+  Region: RegionUpdateOneRequiredWithoutCharacterInput
+  User: UserUpdateOneRequiredWithoutCharactersInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateWithoutRegionInput {
+  Linage: LinageUpdateOneRequiredWithoutCharacterInput
+  Origin: OriginUpdateOneRequiredWithoutCharacterInput
+  Past: PastUpdateOneRequiredWithoutCharacterInput
+  User: UserUpdateOneRequiredWithoutCharactersInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpdateWithoutUserInput {
+  Linage: LinageUpdateOneRequiredWithoutCharacterInput
+  Origin: OriginUpdateOneRequiredWithoutCharacterInput
+  Past: PastUpdateOneRequiredWithoutCharacterInput
+  Region: RegionUpdateOneRequiredWithoutCharacterInput
+  essence: StringFieldUpdateOperationsInput
+  exaltation: StringFieldUpdateOperationsInput
+  expression: StringFieldUpdateOperationsInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input CharacterUpsertWithWhereUniqueWithoutLinageInput {
+  create: CharacterCreateWithoutLinageInput!
+  update: CharacterUpdateWithoutLinageInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpsertWithWhereUniqueWithoutOriginInput {
+  create: CharacterCreateWithoutOriginInput!
+  update: CharacterUpdateWithoutOriginInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpsertWithWhereUniqueWithoutPastInput {
+  create: CharacterCreateWithoutPastInput!
+  update: CharacterUpdateWithoutPastInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpsertWithWhereUniqueWithoutRegionInput {
+  create: CharacterCreateWithoutRegionInput!
+  update: CharacterUpdateWithoutRegionInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterUpsertWithWhereUniqueWithoutUserInput {
+  create: CharacterCreateWithoutUserInput!
+  update: CharacterUpdateWithoutUserInput!
+  where: CharacterWhereUniqueInput!
+}
+
+input CharacterWhereInput {
+  AND: [CharacterWhereInput!]
+  Linage: LinageRelationFilter
+  NOT: [CharacterWhereInput!]
+  OR: [CharacterWhereInput!]
+  Origin: OriginRelationFilter
+  Past: PastRelationFilter
+  Region: RegionRelationFilter
+  User: UserRelationFilter
+  essence: StringFilter
+  exaltation: StringFilter
+  expression: StringFilter
+  id: IntFilter
+  linageId: IntFilter
+  name: StringFilter
+  originId: IntFilter
+  pastId: IntFilter
+  regionId: IntFilter
+  userId: IntFilter
+}
+
+input CharacterWhereUniqueInput {
+  id: Int
 }
 
 """
@@ -76,13 +832,320 @@ input IntWithAggregatesFilter {
   notIn: [Int!]
 }
 
+type Linage {
+  Character(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
+  Origin: Origin!
+  _count: LinageCount
+  id: Int!
+  name: String!
+  originId: Int!
+}
+
+type LinageAvgAggregate {
+  id: Float
+  originId: Float
+}
+
+input LinageAvgOrderByAggregateInput {
+  id: SortOrder
+  originId: SortOrder
+}
+
+type LinageCount {
+  Character: Int!
+}
+
+type LinageCountAggregate {
+  _all: Int!
+  id: Int!
+  name: Int!
+  originId: Int!
+}
+
+input LinageCountOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+  originId: SortOrder
+}
+
+input LinageCreateInput {
+  Character: CharacterCreateNestedManyWithoutLinageInput
+  Origin: OriginCreateNestedOneWithoutLinageInput!
+  name: String!
+}
+
+input LinageCreateManyInput {
+  id: Int
+  name: String!
+  originId: Int!
+}
+
+input LinageCreateManyOriginInput {
+  id: Int
+  name: String!
+}
+
+input LinageCreateManyOriginInputEnvelope {
+  data: [LinageCreateManyOriginInput!]!
+  skipDuplicates: Boolean
+}
+
+input LinageCreateNestedManyWithoutOriginInput {
+  connect: [LinageWhereUniqueInput!]
+  connectOrCreate: [LinageCreateOrConnectWithoutOriginInput!]
+  create: [LinageCreateWithoutOriginInput!]
+  createMany: LinageCreateManyOriginInputEnvelope
+}
+
+input LinageCreateNestedOneWithoutCharacterInput {
+  connect: LinageWhereUniqueInput
+  connectOrCreate: LinageCreateOrConnectWithoutCharacterInput
+  create: LinageCreateWithoutCharacterInput
+}
+
+input LinageCreateOrConnectWithoutCharacterInput {
+  create: LinageCreateWithoutCharacterInput!
+  where: LinageWhereUniqueInput!
+}
+
+input LinageCreateOrConnectWithoutOriginInput {
+  create: LinageCreateWithoutOriginInput!
+  where: LinageWhereUniqueInput!
+}
+
+input LinageCreateWithoutCharacterInput {
+  Origin: OriginCreateNestedOneWithoutLinageInput!
+  name: String!
+}
+
+input LinageCreateWithoutOriginInput {
+  Character: CharacterCreateNestedManyWithoutLinageInput
+  name: String!
+}
+
+type LinageGroupBy {
+  _avg: LinageAvgAggregate
+  _count: LinageCountAggregate
+  _max: LinageMaxAggregate
+  _min: LinageMinAggregate
+  _sum: LinageSumAggregate
+  id: Int!
+  name: String!
+  originId: Int!
+}
+
+input LinageListRelationFilter {
+  every: LinageWhereInput
+  none: LinageWhereInput
+  some: LinageWhereInput
+}
+
+type LinageMaxAggregate {
+  id: Int
+  name: String
+  originId: Int
+}
+
+input LinageMaxOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+  originId: SortOrder
+}
+
+type LinageMinAggregate {
+  id: Int
+  name: String
+  originId: Int
+}
+
+input LinageMinOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+  originId: SortOrder
+}
+
+input LinageOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input LinageOrderByWithAggregationInput {
+  _avg: LinageAvgOrderByAggregateInput
+  _count: LinageCountOrderByAggregateInput
+  _max: LinageMaxOrderByAggregateInput
+  _min: LinageMinOrderByAggregateInput
+  _sum: LinageSumOrderByAggregateInput
+  id: SortOrder
+  name: SortOrder
+  originId: SortOrder
+}
+
+input LinageOrderByWithRelationInput {
+  Character: CharacterOrderByRelationAggregateInput
+  Origin: OriginOrderByWithRelationInput
+  id: SortOrder
+  name: SortOrder
+  originId: SortOrder
+}
+
+input LinageRelationFilter {
+  is: LinageWhereInput
+  isNot: LinageWhereInput
+}
+
+enum LinageScalarFieldEnum {
+  id
+  name
+  originId
+}
+
+input LinageScalarWhereInput {
+  AND: [LinageScalarWhereInput!]
+  NOT: [LinageScalarWhereInput!]
+  OR: [LinageScalarWhereInput!]
+  id: IntFilter
+  name: StringFilter
+  originId: IntFilter
+}
+
+input LinageScalarWhereWithAggregatesInput {
+  AND: [LinageScalarWhereWithAggregatesInput!]
+  NOT: [LinageScalarWhereWithAggregatesInput!]
+  OR: [LinageScalarWhereWithAggregatesInput!]
+  id: IntWithAggregatesFilter
+  name: StringWithAggregatesFilter
+  originId: IntWithAggregatesFilter
+}
+
+type LinageSumAggregate {
+  id: Int
+  originId: Int
+}
+
+input LinageSumOrderByAggregateInput {
+  id: SortOrder
+  originId: SortOrder
+}
+
+input LinageUpdateInput {
+  Character: CharacterUpdateManyWithoutLinageInput
+  Origin: OriginUpdateOneRequiredWithoutLinageInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input LinageUpdateManyMutationInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input LinageUpdateManyWithWhereWithoutOriginInput {
+  data: LinageUpdateManyMutationInput!
+  where: LinageScalarWhereInput!
+}
+
+input LinageUpdateManyWithoutOriginInput {
+  connect: [LinageWhereUniqueInput!]
+  connectOrCreate: [LinageCreateOrConnectWithoutOriginInput!]
+  create: [LinageCreateWithoutOriginInput!]
+  createMany: LinageCreateManyOriginInputEnvelope
+  delete: [LinageWhereUniqueInput!]
+  deleteMany: [LinageScalarWhereInput!]
+  disconnect: [LinageWhereUniqueInput!]
+  set: [LinageWhereUniqueInput!]
+  update: [LinageUpdateWithWhereUniqueWithoutOriginInput!]
+  updateMany: [LinageUpdateManyWithWhereWithoutOriginInput!]
+  upsert: [LinageUpsertWithWhereUniqueWithoutOriginInput!]
+}
+
+input LinageUpdateOneRequiredWithoutCharacterInput {
+  connect: LinageWhereUniqueInput
+  connectOrCreate: LinageCreateOrConnectWithoutCharacterInput
+  create: LinageCreateWithoutCharacterInput
+  update: LinageUpdateWithoutCharacterInput
+  upsert: LinageUpsertWithoutCharacterInput
+}
+
+input LinageUpdateWithWhereUniqueWithoutOriginInput {
+  data: LinageUpdateWithoutOriginInput!
+  where: LinageWhereUniqueInput!
+}
+
+input LinageUpdateWithoutCharacterInput {
+  Origin: OriginUpdateOneRequiredWithoutLinageInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input LinageUpdateWithoutOriginInput {
+  Character: CharacterUpdateManyWithoutLinageInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input LinageUpsertWithWhereUniqueWithoutOriginInput {
+  create: LinageCreateWithoutOriginInput!
+  update: LinageUpdateWithoutOriginInput!
+  where: LinageWhereUniqueInput!
+}
+
+input LinageUpsertWithoutCharacterInput {
+  create: LinageCreateWithoutCharacterInput!
+  update: LinageUpdateWithoutCharacterInput!
+}
+
+input LinageWhereInput {
+  AND: [LinageWhereInput!]
+  Character: CharacterListRelationFilter
+  NOT: [LinageWhereInput!]
+  OR: [LinageWhereInput!]
+  Origin: OriginRelationFilter
+  id: IntFilter
+  name: StringFilter
+  originId: IntFilter
+}
+
+input LinageWhereUniqueInput {
+  id: Int
+}
+
 type Mutation {
+  createCharacter(data: CharacterCreateInput!): Character!
+  createLinage(data: LinageCreateInput!): Linage!
+  createManyCharacter(data: [CharacterCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
+  createManyLinage(data: [LinageCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
+  createManyOrigin(data: [OriginCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
+  createManyPast(data: [PastCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
+  createManyRegion(data: [RegionCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
   createManyUser(data: [UserCreateManyInput!]!, skipDuplicates: Boolean): AffectedRowsOutput!
+  createOrigin(data: OriginCreateInput!): Origin!
+  createPast(data: PastCreateInput!): Past!
+  createRegion(data: RegionCreateInput!): Region!
   createUser(data: UserCreateInput!): User!
+  deleteCharacter(where: CharacterWhereUniqueInput!): Character
+  deleteLinage(where: LinageWhereUniqueInput!): Linage
+  deleteManyCharacter(where: CharacterWhereInput): AffectedRowsOutput!
+  deleteManyLinage(where: LinageWhereInput): AffectedRowsOutput!
+  deleteManyOrigin(where: OriginWhereInput): AffectedRowsOutput!
+  deleteManyPast(where: PastWhereInput): AffectedRowsOutput!
+  deleteManyRegion(where: RegionWhereInput): AffectedRowsOutput!
   deleteManyUser(where: UserWhereInput): AffectedRowsOutput!
+  deleteOrigin(where: OriginWhereUniqueInput!): Origin
+  deletePast(where: PastWhereUniqueInput!): Past
+  deleteRegion(where: RegionWhereUniqueInput!): Region
   deleteUser(where: UserWhereUniqueInput!): User
+  updateCharacter(data: CharacterUpdateInput!, where: CharacterWhereUniqueInput!): Character
+  updateLinage(data: LinageUpdateInput!, where: LinageWhereUniqueInput!): Linage
+  updateManyCharacter(data: CharacterUpdateManyMutationInput!, where: CharacterWhereInput): AffectedRowsOutput!
+  updateManyLinage(data: LinageUpdateManyMutationInput!, where: LinageWhereInput): AffectedRowsOutput!
+  updateManyOrigin(data: OriginUpdateManyMutationInput!, where: OriginWhereInput): AffectedRowsOutput!
+  updateManyPast(data: PastUpdateManyMutationInput!, where: PastWhereInput): AffectedRowsOutput!
+  updateManyRegion(data: RegionUpdateManyMutationInput!, where: RegionWhereInput): AffectedRowsOutput!
   updateManyUser(data: UserUpdateManyMutationInput!, where: UserWhereInput): AffectedRowsOutput!
+  updateOrigin(data: OriginUpdateInput!, where: OriginWhereUniqueInput!): Origin
+  updatePast(data: PastUpdateInput!, where: PastWhereUniqueInput!): Past
+  updateRegion(data: RegionUpdateInput!, where: RegionWhereUniqueInput!): Region
   updateUser(data: UserUpdateInput!, where: UserWhereUniqueInput!): User
+  upsertCharacter(create: CharacterCreateInput!, update: CharacterUpdateInput!, where: CharacterWhereUniqueInput!): Character!
+  upsertLinage(create: LinageCreateInput!, update: LinageUpdateInput!, where: LinageWhereUniqueInput!): Linage!
+  upsertOrigin(create: OriginCreateInput!, update: OriginUpdateInput!, where: OriginWhereUniqueInput!): Origin!
+  upsertPast(create: PastCreateInput!, update: PastUpdateInput!, where: PastWhereUniqueInput!): Past!
+  upsertRegion(create: RegionCreateInput!, update: RegionUpdateInput!, where: RegionWhereUniqueInput!): Region!
   upsertUser(create: UserCreateInput!, update: UserUpdateInput!, where: UserWhereUniqueInput!): User!
 }
 
@@ -226,10 +1289,409 @@ input NullableStringFieldUpdateOperationsInput {
   set: String
 }
 
+type Origin {
+  Character(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
+  Linage(cursor: LinageWhereUniqueInput, distinct: [LinageScalarFieldEnum!], orderBy: [LinageOrderByWithRelationInput!], skip: Int, take: Int, where: LinageWhereInput): [Linage!]!
+  _count: OriginCount
+  id: Int!
+  name: String!
+}
+
+type OriginAvgAggregate {
+  id: Float
+}
+
+input OriginAvgOrderByAggregateInput {
+  id: SortOrder
+}
+
+type OriginCount {
+  Character: Int!
+  Linage: Int!
+}
+
+type OriginCountAggregate {
+  _all: Int!
+  id: Int!
+  name: Int!
+}
+
+input OriginCountOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input OriginCreateInput {
+  Character: CharacterCreateNestedManyWithoutOriginInput
+  Linage: LinageCreateNestedManyWithoutOriginInput
+  name: String!
+}
+
+input OriginCreateManyInput {
+  id: Int
+  name: String!
+}
+
+input OriginCreateNestedOneWithoutCharacterInput {
+  connect: OriginWhereUniqueInput
+  connectOrCreate: OriginCreateOrConnectWithoutCharacterInput
+  create: OriginCreateWithoutCharacterInput
+}
+
+input OriginCreateNestedOneWithoutLinageInput {
+  connect: OriginWhereUniqueInput
+  connectOrCreate: OriginCreateOrConnectWithoutLinageInput
+  create: OriginCreateWithoutLinageInput
+}
+
+input OriginCreateOrConnectWithoutCharacterInput {
+  create: OriginCreateWithoutCharacterInput!
+  where: OriginWhereUniqueInput!
+}
+
+input OriginCreateOrConnectWithoutLinageInput {
+  create: OriginCreateWithoutLinageInput!
+  where: OriginWhereUniqueInput!
+}
+
+input OriginCreateWithoutCharacterInput {
+  Linage: LinageCreateNestedManyWithoutOriginInput
+  name: String!
+}
+
+input OriginCreateWithoutLinageInput {
+  Character: CharacterCreateNestedManyWithoutOriginInput
+  name: String!
+}
+
+type OriginGroupBy {
+  _avg: OriginAvgAggregate
+  _count: OriginCountAggregate
+  _max: OriginMaxAggregate
+  _min: OriginMinAggregate
+  _sum: OriginSumAggregate
+  id: Int!
+  name: String!
+}
+
+type OriginMaxAggregate {
+  id: Int
+  name: String
+}
+
+input OriginMaxOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+type OriginMinAggregate {
+  id: Int
+  name: String
+}
+
+input OriginMinOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input OriginOrderByWithAggregationInput {
+  _avg: OriginAvgOrderByAggregateInput
+  _count: OriginCountOrderByAggregateInput
+  _max: OriginMaxOrderByAggregateInput
+  _min: OriginMinOrderByAggregateInput
+  _sum: OriginSumOrderByAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input OriginOrderByWithRelationInput {
+  Character: CharacterOrderByRelationAggregateInput
+  Linage: LinageOrderByRelationAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input OriginRelationFilter {
+  is: OriginWhereInput
+  isNot: OriginWhereInput
+}
+
+enum OriginScalarFieldEnum {
+  id
+  name
+}
+
+input OriginScalarWhereWithAggregatesInput {
+  AND: [OriginScalarWhereWithAggregatesInput!]
+  NOT: [OriginScalarWhereWithAggregatesInput!]
+  OR: [OriginScalarWhereWithAggregatesInput!]
+  id: IntWithAggregatesFilter
+  name: StringWithAggregatesFilter
+}
+
+type OriginSumAggregate {
+  id: Int
+}
+
+input OriginSumOrderByAggregateInput {
+  id: SortOrder
+}
+
+input OriginUpdateInput {
+  Character: CharacterUpdateManyWithoutOriginInput
+  Linage: LinageUpdateManyWithoutOriginInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input OriginUpdateManyMutationInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input OriginUpdateOneRequiredWithoutCharacterInput {
+  connect: OriginWhereUniqueInput
+  connectOrCreate: OriginCreateOrConnectWithoutCharacterInput
+  create: OriginCreateWithoutCharacterInput
+  update: OriginUpdateWithoutCharacterInput
+  upsert: OriginUpsertWithoutCharacterInput
+}
+
+input OriginUpdateOneRequiredWithoutLinageInput {
+  connect: OriginWhereUniqueInput
+  connectOrCreate: OriginCreateOrConnectWithoutLinageInput
+  create: OriginCreateWithoutLinageInput
+  update: OriginUpdateWithoutLinageInput
+  upsert: OriginUpsertWithoutLinageInput
+}
+
+input OriginUpdateWithoutCharacterInput {
+  Linage: LinageUpdateManyWithoutOriginInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input OriginUpdateWithoutLinageInput {
+  Character: CharacterUpdateManyWithoutOriginInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input OriginUpsertWithoutCharacterInput {
+  create: OriginCreateWithoutCharacterInput!
+  update: OriginUpdateWithoutCharacterInput!
+}
+
+input OriginUpsertWithoutLinageInput {
+  create: OriginCreateWithoutLinageInput!
+  update: OriginUpdateWithoutLinageInput!
+}
+
+input OriginWhereInput {
+  AND: [OriginWhereInput!]
+  Character: CharacterListRelationFilter
+  Linage: LinageListRelationFilter
+  NOT: [OriginWhereInput!]
+  OR: [OriginWhereInput!]
+  id: IntFilter
+  name: StringFilter
+}
+
+input OriginWhereUniqueInput {
+  id: Int
+}
+
+type Past {
+  Character(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
+  _count: PastCount
+  id: Int!
+  name: String!
+}
+
+type PastAvgAggregate {
+  id: Float
+}
+
+input PastAvgOrderByAggregateInput {
+  id: SortOrder
+}
+
+type PastCount {
+  Character: Int!
+}
+
+type PastCountAggregate {
+  _all: Int!
+  id: Int!
+  name: Int!
+}
+
+input PastCountOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input PastCreateInput {
+  Character: CharacterCreateNestedManyWithoutPastInput
+  name: String!
+}
+
+input PastCreateManyInput {
+  id: Int
+  name: String!
+}
+
+input PastCreateNestedOneWithoutCharacterInput {
+  connect: PastWhereUniqueInput
+  connectOrCreate: PastCreateOrConnectWithoutCharacterInput
+  create: PastCreateWithoutCharacterInput
+}
+
+input PastCreateOrConnectWithoutCharacterInput {
+  create: PastCreateWithoutCharacterInput!
+  where: PastWhereUniqueInput!
+}
+
+input PastCreateWithoutCharacterInput {
+  name: String!
+}
+
+type PastGroupBy {
+  _avg: PastAvgAggregate
+  _count: PastCountAggregate
+  _max: PastMaxAggregate
+  _min: PastMinAggregate
+  _sum: PastSumAggregate
+  id: Int!
+  name: String!
+}
+
+type PastMaxAggregate {
+  id: Int
+  name: String
+}
+
+input PastMaxOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+type PastMinAggregate {
+  id: Int
+  name: String
+}
+
+input PastMinOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input PastOrderByWithAggregationInput {
+  _avg: PastAvgOrderByAggregateInput
+  _count: PastCountOrderByAggregateInput
+  _max: PastMaxOrderByAggregateInput
+  _min: PastMinOrderByAggregateInput
+  _sum: PastSumOrderByAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input PastOrderByWithRelationInput {
+  Character: CharacterOrderByRelationAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input PastRelationFilter {
+  is: PastWhereInput
+  isNot: PastWhereInput
+}
+
+enum PastScalarFieldEnum {
+  id
+  name
+}
+
+input PastScalarWhereWithAggregatesInput {
+  AND: [PastScalarWhereWithAggregatesInput!]
+  NOT: [PastScalarWhereWithAggregatesInput!]
+  OR: [PastScalarWhereWithAggregatesInput!]
+  id: IntWithAggregatesFilter
+  name: StringWithAggregatesFilter
+}
+
+type PastSumAggregate {
+  id: Int
+}
+
+input PastSumOrderByAggregateInput {
+  id: SortOrder
+}
+
+input PastUpdateInput {
+  Character: CharacterUpdateManyWithoutPastInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input PastUpdateManyMutationInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input PastUpdateOneRequiredWithoutCharacterInput {
+  connect: PastWhereUniqueInput
+  connectOrCreate: PastCreateOrConnectWithoutCharacterInput
+  create: PastCreateWithoutCharacterInput
+  update: PastUpdateWithoutCharacterInput
+  upsert: PastUpsertWithoutCharacterInput
+}
+
+input PastUpdateWithoutCharacterInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input PastUpsertWithoutCharacterInput {
+  create: PastCreateWithoutCharacterInput!
+  update: PastUpdateWithoutCharacterInput!
+}
+
+input PastWhereInput {
+  AND: [PastWhereInput!]
+  Character: CharacterListRelationFilter
+  NOT: [PastWhereInput!]
+  OR: [PastWhereInput!]
+  id: IntFilter
+  name: StringFilter
+}
+
+input PastWhereUniqueInput {
+  id: Int
+}
+
 type Query {
+  aggregateCharacter(cursor: CharacterWhereUniqueInput, orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): AggregateCharacter!
+  aggregateLinage(cursor: LinageWhereUniqueInput, orderBy: [LinageOrderByWithRelationInput!], skip: Int, take: Int, where: LinageWhereInput): AggregateLinage!
+  aggregateOrigin(cursor: OriginWhereUniqueInput, orderBy: [OriginOrderByWithRelationInput!], skip: Int, take: Int, where: OriginWhereInput): AggregateOrigin!
+  aggregatePast(cursor: PastWhereUniqueInput, orderBy: [PastOrderByWithRelationInput!], skip: Int, take: Int, where: PastWhereInput): AggregatePast!
+  aggregateRegion(cursor: RegionWhereUniqueInput, orderBy: [RegionOrderByWithRelationInput!], skip: Int, take: Int, where: RegionWhereInput): AggregateRegion!
   aggregateUser(cursor: UserWhereUniqueInput, orderBy: [UserOrderByWithRelationInput!], skip: Int, take: Int, where: UserWhereInput): AggregateUser!
+  character(where: CharacterWhereUniqueInput!): Character
+  characters(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
+  findFirstCharacter(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): Character
+  findFirstLinage(cursor: LinageWhereUniqueInput, distinct: [LinageScalarFieldEnum!], orderBy: [LinageOrderByWithRelationInput!], skip: Int, take: Int, where: LinageWhereInput): Linage
+  findFirstOrigin(cursor: OriginWhereUniqueInput, distinct: [OriginScalarFieldEnum!], orderBy: [OriginOrderByWithRelationInput!], skip: Int, take: Int, where: OriginWhereInput): Origin
+  findFirstPast(cursor: PastWhereUniqueInput, distinct: [PastScalarFieldEnum!], orderBy: [PastOrderByWithRelationInput!], skip: Int, take: Int, where: PastWhereInput): Past
+  findFirstRegion(cursor: RegionWhereUniqueInput, distinct: [RegionScalarFieldEnum!], orderBy: [RegionOrderByWithRelationInput!], skip: Int, take: Int, where: RegionWhereInput): Region
   findFirstUser(cursor: UserWhereUniqueInput, distinct: [UserScalarFieldEnum!], orderBy: [UserOrderByWithRelationInput!], skip: Int, take: Int, where: UserWhereInput): User
+  groupByCharacter(by: [CharacterScalarFieldEnum!]!, having: CharacterScalarWhereWithAggregatesInput, orderBy: [CharacterOrderByWithAggregationInput!], skip: Int, take: Int, where: CharacterWhereInput): [CharacterGroupBy!]!
+  groupByLinage(by: [LinageScalarFieldEnum!]!, having: LinageScalarWhereWithAggregatesInput, orderBy: [LinageOrderByWithAggregationInput!], skip: Int, take: Int, where: LinageWhereInput): [LinageGroupBy!]!
+  groupByOrigin(by: [OriginScalarFieldEnum!]!, having: OriginScalarWhereWithAggregatesInput, orderBy: [OriginOrderByWithAggregationInput!], skip: Int, take: Int, where: OriginWhereInput): [OriginGroupBy!]!
+  groupByPast(by: [PastScalarFieldEnum!]!, having: PastScalarWhereWithAggregatesInput, orderBy: [PastOrderByWithAggregationInput!], skip: Int, take: Int, where: PastWhereInput): [PastGroupBy!]!
+  groupByRegion(by: [RegionScalarFieldEnum!]!, having: RegionScalarWhereWithAggregatesInput, orderBy: [RegionOrderByWithAggregationInput!], skip: Int, take: Int, where: RegionWhereInput): [RegionGroupBy!]!
   groupByUser(by: [UserScalarFieldEnum!]!, having: UserScalarWhereWithAggregatesInput, orderBy: [UserOrderByWithAggregationInput!], skip: Int, take: Int, where: UserWhereInput): [UserGroupBy!]!
+  linage(where: LinageWhereUniqueInput!): Linage
+  linages(cursor: LinageWhereUniqueInput, distinct: [LinageScalarFieldEnum!], orderBy: [LinageOrderByWithRelationInput!], skip: Int, take: Int, where: LinageWhereInput): [Linage!]!
+  origin(where: OriginWhereUniqueInput!): Origin
+  origins(cursor: OriginWhereUniqueInput, distinct: [OriginScalarFieldEnum!], orderBy: [OriginOrderByWithRelationInput!], skip: Int, take: Int, where: OriginWhereInput): [Origin!]!
+  past(where: PastWhereUniqueInput!): Past
+  pasts(cursor: PastWhereUniqueInput, distinct: [PastScalarFieldEnum!], orderBy: [PastOrderByWithRelationInput!], skip: Int, take: Int, where: PastWhereInput): [Past!]!
+  region(where: RegionWhereUniqueInput!): Region
+  regions(cursor: RegionWhereUniqueInput, distinct: [RegionScalarFieldEnum!], orderBy: [RegionOrderByWithRelationInput!], skip: Int, take: Int, where: RegionWhereInput): [Region!]!
   user(where: UserWhereUniqueInput!): User
   users(cursor: UserWhereUniqueInput, distinct: [UserScalarFieldEnum!], orderBy: [UserOrderByWithRelationInput!], skip: Int, take: Int, where: UserWhereInput): [User!]!
 }
@@ -237,6 +1699,172 @@ type Query {
 enum QueryMode {
   default
   insensitive
+}
+
+type Region {
+  Character(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
+  _count: RegionCount
+  id: Int!
+  name: String!
+}
+
+type RegionAvgAggregate {
+  id: Float
+}
+
+input RegionAvgOrderByAggregateInput {
+  id: SortOrder
+}
+
+type RegionCount {
+  Character: Int!
+}
+
+type RegionCountAggregate {
+  _all: Int!
+  id: Int!
+  name: Int!
+}
+
+input RegionCountOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input RegionCreateInput {
+  Character: CharacterCreateNestedManyWithoutRegionInput
+  name: String!
+}
+
+input RegionCreateManyInput {
+  id: Int
+  name: String!
+}
+
+input RegionCreateNestedOneWithoutCharacterInput {
+  connect: RegionWhereUniqueInput
+  connectOrCreate: RegionCreateOrConnectWithoutCharacterInput
+  create: RegionCreateWithoutCharacterInput
+}
+
+input RegionCreateOrConnectWithoutCharacterInput {
+  create: RegionCreateWithoutCharacterInput!
+  where: RegionWhereUniqueInput!
+}
+
+input RegionCreateWithoutCharacterInput {
+  name: String!
+}
+
+type RegionGroupBy {
+  _avg: RegionAvgAggregate
+  _count: RegionCountAggregate
+  _max: RegionMaxAggregate
+  _min: RegionMinAggregate
+  _sum: RegionSumAggregate
+  id: Int!
+  name: String!
+}
+
+type RegionMaxAggregate {
+  id: Int
+  name: String
+}
+
+input RegionMaxOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+type RegionMinAggregate {
+  id: Int
+  name: String
+}
+
+input RegionMinOrderByAggregateInput {
+  id: SortOrder
+  name: SortOrder
+}
+
+input RegionOrderByWithAggregationInput {
+  _avg: RegionAvgOrderByAggregateInput
+  _count: RegionCountOrderByAggregateInput
+  _max: RegionMaxOrderByAggregateInput
+  _min: RegionMinOrderByAggregateInput
+  _sum: RegionSumOrderByAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input RegionOrderByWithRelationInput {
+  Character: CharacterOrderByRelationAggregateInput
+  id: SortOrder
+  name: SortOrder
+}
+
+input RegionRelationFilter {
+  is: RegionWhereInput
+  isNot: RegionWhereInput
+}
+
+enum RegionScalarFieldEnum {
+  id
+  name
+}
+
+input RegionScalarWhereWithAggregatesInput {
+  AND: [RegionScalarWhereWithAggregatesInput!]
+  NOT: [RegionScalarWhereWithAggregatesInput!]
+  OR: [RegionScalarWhereWithAggregatesInput!]
+  id: IntWithAggregatesFilter
+  name: StringWithAggregatesFilter
+}
+
+type RegionSumAggregate {
+  id: Int
+}
+
+input RegionSumOrderByAggregateInput {
+  id: SortOrder
+}
+
+input RegionUpdateInput {
+  Character: CharacterUpdateManyWithoutRegionInput
+  name: StringFieldUpdateOperationsInput
+}
+
+input RegionUpdateManyMutationInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input RegionUpdateOneRequiredWithoutCharacterInput {
+  connect: RegionWhereUniqueInput
+  connectOrCreate: RegionCreateOrConnectWithoutCharacterInput
+  create: RegionCreateWithoutCharacterInput
+  update: RegionUpdateWithoutCharacterInput
+  upsert: RegionUpsertWithoutCharacterInput
+}
+
+input RegionUpdateWithoutCharacterInput {
+  name: StringFieldUpdateOperationsInput
+}
+
+input RegionUpsertWithoutCharacterInput {
+  create: RegionCreateWithoutCharacterInput!
+  update: RegionUpdateWithoutCharacterInput!
+}
+
+input RegionWhereInput {
+  AND: [RegionWhereInput!]
+  Character: CharacterListRelationFilter
+  NOT: [RegionWhereInput!]
+  OR: [RegionWhereInput!]
+  id: IntFilter
+  name: StringFilter
+}
+
+input RegionWhereUniqueInput {
+  id: Int
 }
 
 enum SortOrder {
@@ -315,6 +1943,8 @@ input StringWithAggregatesFilter {
 }
 
 type User {
+  _count: UserCount
+  characters(cursor: CharacterWhereUniqueInput, distinct: [CharacterScalarFieldEnum!], orderBy: [CharacterOrderByWithRelationInput!], skip: Int, take: Int, where: CharacterWhereInput): [Character!]!
   createdAt: DateTime!
   id: Int!
   nickname: String
@@ -329,6 +1959,10 @@ type UserAvgAggregate {
 
 input UserAvgOrderByAggregateInput {
   id: SortOrder
+}
+
+type UserCount {
+  characters: Int!
 }
 
 type UserCountAggregate {
@@ -351,6 +1985,7 @@ input UserCountOrderByAggregateInput {
 }
 
 input UserCreateInput {
+  characters: CharacterCreateNestedManyWithoutUserInput
   createdAt: DateTime
   nickname: String
   password: String!
@@ -361,6 +1996,25 @@ input UserCreateInput {
 input UserCreateManyInput {
   createdAt: DateTime
   id: Int
+  nickname: String
+  password: String!
+  updatedAt: DateTime
+  username: String!
+}
+
+input UserCreateNestedOneWithoutCharactersInput {
+  connect: UserWhereUniqueInput
+  connectOrCreate: UserCreateOrConnectWithoutCharactersInput
+  create: UserCreateWithoutCharactersInput
+}
+
+input UserCreateOrConnectWithoutCharactersInput {
+  create: UserCreateWithoutCharactersInput!
+  where: UserWhereUniqueInput!
+}
+
+input UserCreateWithoutCharactersInput {
+  createdAt: DateTime
   nickname: String
   password: String!
   updatedAt: DateTime
@@ -432,12 +2086,18 @@ input UserOrderByWithAggregationInput {
 }
 
 input UserOrderByWithRelationInput {
+  characters: CharacterOrderByRelationAggregateInput
   createdAt: SortOrder
   id: SortOrder
   nickname: SortOrder
   password: SortOrder
   updatedAt: SortOrder
   username: SortOrder
+}
+
+input UserRelationFilter {
+  is: UserWhereInput
+  isNot: UserWhereInput
 }
 
 enum UserScalarFieldEnum {
@@ -470,6 +2130,7 @@ input UserSumOrderByAggregateInput {
 }
 
 input UserUpdateInput {
+  characters: CharacterUpdateManyWithoutUserInput
   createdAt: DateTimeFieldUpdateOperationsInput
   nickname: NullableStringFieldUpdateOperationsInput
   password: StringFieldUpdateOperationsInput
@@ -485,10 +2146,32 @@ input UserUpdateManyMutationInput {
   username: StringFieldUpdateOperationsInput
 }
 
+input UserUpdateOneRequiredWithoutCharactersInput {
+  connect: UserWhereUniqueInput
+  connectOrCreate: UserCreateOrConnectWithoutCharactersInput
+  create: UserCreateWithoutCharactersInput
+  update: UserUpdateWithoutCharactersInput
+  upsert: UserUpsertWithoutCharactersInput
+}
+
+input UserUpdateWithoutCharactersInput {
+  createdAt: DateTimeFieldUpdateOperationsInput
+  nickname: NullableStringFieldUpdateOperationsInput
+  password: StringFieldUpdateOperationsInput
+  updatedAt: DateTimeFieldUpdateOperationsInput
+  username: StringFieldUpdateOperationsInput
+}
+
+input UserUpsertWithoutCharactersInput {
+  create: UserCreateWithoutCharactersInput!
+  update: UserUpdateWithoutCharactersInput!
+}
+
 input UserWhereInput {
   AND: [UserWhereInput!]
   NOT: [UserWhereInput!]
   OR: [UserWhereInput!]
+  characters: CharacterListRelationFilter
   createdAt: DateTimeFilter
   id: IntFilter
   nickname: StringNullableFilter

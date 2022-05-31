@@ -25,6 +25,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index.ts",
-    "create-migration": "npx prisma migrate dev --name"
+    "create-migration": "npx prisma migrate dev --name",
+    "prisma-generate": "npx prisma generate"
   }
 }
