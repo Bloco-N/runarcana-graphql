@@ -16,10 +16,11 @@ export class SessionResolver {
     if (!passwordMatched) throw Error('❌ User or Password incorrect')
 
     const { secret, expiresIn } = AuthConfig.jwt
-    const token = sign({}, secret, {
-      subject: `"${user.id}"`,
-      expiresIn
-    })
+    const token = sign({
+      id: user.id,
+      username: user.username,
+      nickname: user.nickname
+    }, secret, { expiresIn })
 
     return {
       token,

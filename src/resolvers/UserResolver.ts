@@ -19,8 +19,8 @@ class SignUpInputData {
 export class UserResolver {
   @Query((returns) => User, { nullable: true })
   @Authorized()
-  async userInfo (@Arg('id') id: number, @Ctx() ctx: Context): Promise<User> {
-    const user = await ctx.prisma.user.findUnique({ where: { id } })
+  async userInfo (@Ctx() ctx: Context): Promise<User> {
+    const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
     if (!user) throw Error('❌ User not found')
     return user
   }

@@ -19,7 +19,7 @@ type Mutation {
 }
 
 type Query {
-  userInfo(id: Float!): User
+  userInfo: User
 }
 
 input SignUpInputData {
