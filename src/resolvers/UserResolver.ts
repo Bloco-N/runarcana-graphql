@@ -10,7 +10,6 @@ export class UserResolver {
   @Query((returns) => UserResponse, { nullable: true })
   @Authorized()
   async userInfo (@Ctx() ctx: Context): Promise<UserResponse> {
-    console.log(ctx.user)
     const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
     if (!user) throw Error('❌ User not found')
     return {
