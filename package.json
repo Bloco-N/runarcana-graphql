@@ -40,6 +40,8 @@
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index.ts",
     "create-migration": "npx prisma migrate dev --name",
+    "run-migration": "npx prisma migrate dev",
+    "reset-migration": "npx prisma migrate reset",
     "prisma-generate": "npx prisma generate"
   },
   "prisma": {
