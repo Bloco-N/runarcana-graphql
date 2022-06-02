@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Antroplantae",
+        "lineages": [
+            "Arbóreo",
+            "Floral"
+        ]
+    },
+    {
+        "name": "Construto",
+        "lineages": [
+            "Brutal",
+            "Emissário",
+            "Ligeiro"
+        ]
+    },
+    {
+        "name": "Humano",
+        "lineages": []
+    },
+    {
+        "name": "Meio-Dragão",
+        "lineages": [
+            "Elemental da Montanha",
+            "Elemental das Nuvens",
+            "Elemental do Oceano",
+            "Elemental Glacial",
+            "Elemental Infernal"
+        ]
+    },
+    {
+        "name": "Minotauro",
+        "lineages": [
+            "Aelus",
+            "Alnuk",
+            "Auroque"
+        ]
+    },
+    {
+        "name": "Troll",
+        "lineages": [
+            "Troll da Areia",
+            "Troll da Selva",
+            "Troll do Gelo"
+        ]
+    },
+    {
+        "name": "Vastaya",
+        "lineages": [
+            "Fauhwoon",
+            "Kiilash",
+            "Lhotlan",
+            "Marai",
+            "Oovi-Kat",
+            "Ottrani",
+            "Shimon"
+        ]
+    },
+    {
+        "name": "Yordle",
+        "lineages": [
+            "Aquáticos",
+            "Felpudo"
+        ]
+    }
+]

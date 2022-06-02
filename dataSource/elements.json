@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Água",
+    "description": "Esse elemento está presente na maior parte dos ambientes, porém, quando próximo a um corpo d’água, como um rio, lago ou oceano, o elemento se torna ainda mais abundante Normalmente magias de água são mais focadas em efeitos curativos e de auxílio",
+    "recipes": []
+  },
+  {
+    "name": "Fogo",
+    "description": "O fogo se faz presente boa parte durante o dia, ao lado de fogueiras e incêndios O fogo é um elemento extremamente volátil, mas ao mesmo tempo também é um dos elementos primários mais versáteis, juntamente com a água Normalmente magias de fogo são mais focadas em efeitos de dano, apesar de também ser utilizado para proteção",
+    "recipes": []
+  },
+  {
+    "name": "Terra",
+    "description": "Sendo a base de todo o planeta, a terra está presente em todo o terreno, seja ele abaixo ou acima do mar A terra é o elemento mais estável e ao mesmo tempo menos versátil quando comparado aos outros elementos primários Normalmente magias de terra são mais focadas em efeitos de resistência e proteção",
+    "recipes": []
+  },
+  {
+    "name": "Vento",
+    "description": "Onde se pode respirar, se pode encontrar esse elemento, presente praticamente em cada canto do mundo, esse elemento se faz o mais constante e presente na vida cotidiana É muito comum que se encontre arcanos capazes de controlar o Vento, mas poucos são capazes de masterizá-lo Normalmente magias de vento são mais focadas em efeitos de movimentação e dano",
+    "recipes": []
+  },
+  {
+    "name": "Flora",
+    "description": "Em uma mistura de Água e Terra, o elemento Flora é criado Esse elemento busca a conservação e criação da vida, facilitando e acelerando o crescimento",
+    "recipes": [
+      [
+        "Água"
+      ],
+      [
+        "Terra"
+      ]
+    ]
+  },
+  {
+    "name": "Gelo",
+    "description": "Em uma mistura de Água e Vento, o elemento Gelo é criado Por sua natureza brutal, poucos seres são capazes de utilizar esse elemento sem algum tipo de ricochete Esse elemento é capaz de coisas poderosas, porém, pode acabar trazendo graves consequências",
+    "recipes": [
+      [
+        "Água"
+      ],
+      [
+        "Vento"
+      ]
+    ]
+  },
+  {
+    "name": "Magma",
+    "description": "Em uma mistura de Fogo e Terra, o elemento Magma é criado Esse elemento busca a renovação através da destruição, possuindo tanto energias curativas quanto agressivas",
+    "recipes": [
+      [
+        "Fogo"
+      ],
+      [
+        "Terra"
+      ]
+    ]
+  },
+  {
+    "name": "Tempestade",
+    "description": "Em uma mistura de Fogo e Vento, o elemento Tempestade é criado Esse elemento traz o aumento de força pessoal ou a devastação de um local",
+    "recipes": [
+      [
+        "Fogo"
+      ],
+      [
+        "Vento"
+      ]
+    ]
+  },
+  {
+    "name": "Cristal",
+    "description": "Em uma mistura de Magma e Flora, o elemento Cristal é criado Esse elemento é de proteção por natureza, embora também possa ter usos agressivos Ele cria barreiras mágicas e pode negar efeitos nocivos",
+    "recipes": [
+      [
+        "Magma",
+        "Flora"
+      ]
+    ]
+  },
+  {
+    "name": "Metal",
+    "description": "Em uma mistura de Magma e Tempestade, o elemento Metal é criado Provavelmente esse é o elemento mais versátil e útil durante um combate, podendo criar armaduras resistentes e armas poderosas",
+    "recipes": [
+      [
+        "Magma",
+        "Tempestade"
+      ]
+    ]
+  },
+  {
+    "name": "Nevasca",
+    "description": "Em uma mistura de Tempestade e Gelo, o elemento Nevasca é criado Capaz de criar poderosas tempestades de neve, criar golens de gelo e até mesmo uma cabana capaz de proteger de todo o exterior",
+    "recipes": [
+      [
+        "Gelo",
+        "Tempestade"
+      ]
+    ]
+  },
+  {
+    "name": "Yeti",
+    "description": "Em uma mistura de Gelo e Flora, a magia Yeti é criada Esse elemento é um mistério, poucos sabem o que ele é capaz de criar, mas os que o conhecem não aparentam ter a força que possuem Não há indícios de nenhum ser que tenha estudado a fundo esse elemento Não é possível selecionar a magia Yeti como um de seus elementos",
+    "recipes": [
+      [
+        "Flora",
+        "Gelo"
+      ]
+    ]
+  },
+  {
+    "name": "Deserto",
+    "description": "Ao transicionar para o elemento Sombrio, a Terra se torna o elemento Deserto Normalmente, esse elemento é muito comum entre assassinos e espiões, sendo utilizado para exaurir seus inimigos e para se camuflar no ambiente",
+    "recipes": [
+      [
+        "Terra",
+        "Vento"
+      ],
+      [
+        "Terra",
+        "Sombrio"
+      ]
+    ]
+  },
+  {
+    "name": "Inferno",
+    "description": "Ao transicionar para o elemento Sombrio, o Fogo se torna o elemento Inferno Esse elemento traz a pior parte de cada um de seus elementos bases, sendo completamente focado na destruição e devastação, queimando tudo que estiver em seu caminho",
+    "recipes": [
+      [
+        "Fogo",
+        "Água"
+      ],
+      [
+        "Fogo",
+        "Sombrio"
+      ]
+    ]
+  },
+  {
+    "name": "Som",
+    "description": "Ao transicionar para o elemento Sombrio, o Vento se torna o elemento Som Esse elemento auxilia o controle sonoro de um local, podendo aumentá-lo exponencialmente ou silenciá-lo completamente",
+    "recipes": [
+      [
+        "Vento",
+        "Terra"
+      ],
+      [
+        "Vento",
+        "Sombrio"
+      ]
+    ]
+  },
+  {
+    "name": "Veneno",
+    "description": "Ao transicionar para o elemento Sombrio, a Água se torna o elemento Veneno Para aqueles que conhecem esse elemento, sabem que ele é muito mais do que apenas destruir as células do corpo de uma criatura, também podendo ser utilizado para a criação de efeitos potentes para o aumento de força, velocidade, ou até mesmo a visão de uma criaturaElementos Primordiais",
+    "recipes": [
+      [
+        "Água",
+        "Fogo"
+      ],
+      [
+        "Água",
+        "Sombrio"
+      ]
+    ]
+  },
+  {
+    "name": "Luz",
+    "description": "Esse elemento é considerado um dos mais raros dos poderes elementais, podendo ser extremamente versátil, criando prisões de luz pura, cegando criaturas, lançando barreiras protetoras ou criando um raio de energia capaz de atravessar a mais resistente das muralhas",
+    "recipes": [
+      [
+        "Água",
+        "Fogo",
+        "Terra",
+        "Vento"
+      ]
+    ]
+  },
+  {
+    "name": "Sombrio",
+    "description": "Um elemento criado a partir da mistura de qualquer elemento oposto Você pode imaginar o elemento Sombrio como uma esfera de pura escuridão",
+    "recipes": [
+      [
+        "Água",
+        "Fogo"
+      ],
+      [
+        "Terra",
+        "Vento"
+      ]
+    ]
+  }
+]

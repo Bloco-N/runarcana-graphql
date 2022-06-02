@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Cronomancia",
+    "description": "A magia do tempo é uma das coisas mais poderosas que existem, capazes de pausar um momento no espaço ou simplesmente retornar a aparência de um objeto para o momento em que foi criado",
+    "source": "Celestial"
+  },
+  {
+    "name": "Espaçomancia",
+    "description": "As magias do espaço são capazes de criar enormes portais capazes de engolir uma cidade inteira e transportá-la para um lugar no meio da galáxia, porém, é quase impossível um ser ter tamanho poder",
+    "source": "Celestial"
+  },
+  {
+    "name": "Gravitomancia",
+    "description": "Utilizando as forças da própria gravidade, essas magias podem alterar a força que a gravidade afeta um corpo, podendo deixá-lo mais leve, facilitando sua movimentação, ou mais pesado, o prendendo no chão",
+    "source": "Celestial"
+  },
+  {
+    "name": "Runomancia",
+    "description": "Não é segredo para os estudiosos da magia que todas as criaturas, seres e objetos são afetados diretamente pela magia das Runas Globais A runomancia faz parte do estudo em que utiliza essa magia para criar efeitos poderosos",
+    "source": "Celestial"
+  },
+  {
+    "name": "Água",
+    "description": "Esse elemento está presente na maior parte dos ambientes, porém, quando próximo a um corpo d’água, como um rio, lago ou oceano, o elemento se torna ainda mais abundante Normalmente magias de água são mais focadas em efeitos curativos e de auxílio",
+    "source": "Elemental"
+  },
+  {
+    "name": "Fogo",
+    "description": "O fogo se faz presente boa parte durante o dia, ao lado de fogueiras e incêndios O fogo é um elemento extremamente volátil, mas ao mesmo tempo também é um dos elementos primários mais versáteis, juntamente com a água Normalmente magias de fogo são mais focadas em efeitos de dano, apesar de também ser utilizado para proteção",
+    "source": "Elemental"
+  },
+  {
+    "name": "Terra",
+    "description": "Sendo a base de todo o planeta, a terra está presente em todo o terreno, seja ele abaixo ou acima do mar A terra é o elemento mais estável e ao mesmo tempo menos versátil quando comparado aos outros elementos primários Normalmente magias de terra são mais focadas em efeitos de resistência e proteção",
+    "source": "Elemental"
+  },
+  {
+    "name": "Vento",
+    "description": "Onde se pode respirar, se pode encontrar esse elemento, presente praticamente em cada canto do mundo, esse elemento se faz o mais constante e presente na vida cotidiana É muito comum que se encontre arcanos capazes de controlar o Vento, mas poucos são capazes de masterizá-lo Normalmente magias de vento são mais focadas em efeitos de movimentação e dano",
+    "source": "Elemental"
+  },
+  {
+    "name": "Flora",
+    "description": "Em uma mistura de Água e Terra, o elemento Flora é criado Esse elemento busca a conservação e criação da vida, facilitando e acelerando o crescimento",
+    "source": "Elemental"
+  },
+  {
+    "name": "Gelo",
+    "description": "Em uma mistura de Água e Vento, o elemento Gelo é criado Por sua natureza brutal, poucos seres são capazes de utilizar esse elemento sem algum tipo de ricochete Esse elemento é capaz de coisas poderosas, porém, pode acabar trazendo graves consequências",
+    "source": "Elemental"
+  },
+  {
+    "name": "Magma",
+    "description": "Em uma mistura de Fogo e Terra, o elemento Magma é criado Esse elemento busca a renovação através da destruição, possuindo tanto energias curativas quanto agressivas",
+    "source": "Elemental"
+  },
+  {
+    "name": "Tempestade",
+    "description": "Em uma mistura de Fogo e Vento, o elemento Tempestade é criado Esse elemento traz o aumento de força pessoal ou a devastação de um local",
+    "source": "Elemental"
+  },
+  {
+    "name": "Cristal",
+    "description": "Em uma mistura de Magma e Flora, o elemento Cristal é criado Esse elemento é de proteção por natureza, embora também possa ter usos agressivos Ele cria barreiras mágicas e pode negar efeitos nocivos",
+    "source": "Elemental"
+  },
+  {
+    "name": "Metal",
+    "description": "Em uma mistura de Magma e Tempestade, o elemento Metal é criado Provavelmente esse é o elemento mais versátil e útil durante um combate, podendo criar armaduras resistentes e armas poderosas",
+    "source": "Elemental"
+  },
+  {
+    "name": "Nevasca",
+    "description": "Em uma mistura de Tempestade e Gelo, o elemento Nevasca é criado Capaz de criar poderosas tempestades de neve, criar golens de gelo e até mesmo uma cabana capaz de proteger de todo o exterior",
+    "source": "Elemental"
+  },
+  {
+    "name": "Yeti",
+    "description": "Em uma mistura de Gelo e Flora, a magia Yeti é criada Esse elemento é um mistério, poucos sabem o que ele é capaz de criar, mas os que o conhecem não aparentam ter a força que possuem Não há indícios de nenhum ser que tenha estudado a fundo esse elemento Não é possível selecionar a magia Yeti como um de seus elementos",
+    "source": "Elemental"
+  },
+  {
+    "name": "Deserto",
+    "description": "Ao transicionar para o elemento Sombrio, a Terra se torna o elemento Deserto Normalmente, esse elemento é muito comum entre assassinos e espiões, sendo utilizado para exaurir seus inimigos e para se camuflar no ambiente",
+    "source": "Elemental"
+  },
+  {
+    "name": "Inferno",
+    "description": "Ao transicionar para o elemento Sombrio, o Fogo se torna o elemento Inferno Esse elemento traz a pior parte de cada um de seus elementos bases, sendo completamente focado na destruição e devastação, queimando tudo que estiver em seu caminho",
+    "source": "Elemental"
+  },
+  {
+    "name": "Som",
+    "description": "Ao transicionar para o elemento Sombrio, o Vento se torna o elemento Som Esse elemento auxilia o controle sonoro de um local, podendo aumentá-lo exponencialmente ou silenciá-lo completamente",
+    "source": "Elemental"
+  },
+  {
+    "name": "Veneno",
+    "description": "Ao transicionar para o elemento Sombrio, a Água se torna o elemento Veneno Para aqueles que conhecem esse elemento, sabem que ele é muito mais do que apenas destruir as células do corpo de uma criatura, também podendo ser utilizado para a criação de efeitos potentes para o aumento de força, velocidade, ou até mesmo a visão de uma criaturaElementos Primordiais",
+    "source": "Elemental"
+  },
+  {
+    "name": "Luz",
+    "description": "Esse elemento é considerado um dos mais raros dos poderes elementais, podendo ser extremamente versátil, criando prisões de luz pura, cegando criaturas, lançando barreiras protetoras ou criando um raio de energia capaz de atravessar a mais resistente das muralhas",
+    "source": "Elemental"
+  },
+  {
+    "name": "Sombrio",
+    "description": "Um elemento criado a partir da mistura de qualquer elemento oposto Você pode imaginar o elemento Sombrio como uma esfera de pura escuridão",
+    "source": "Elemental"
+  },
+  {
+    "name": "Elemental Geral",
+    "description": "As magias elementais manipulam energia da própria natureza para produzir um efeito desejado de um ou mais elementos, podendo criar efeitos únicos ao se combinar mais de um elemento. Algumas proporcionam explosões de fogo ou relâmpagos, outras canalizam energia positiva para curar feridas.",
+    "source": "Elemental"
+  },
+  {
+    "name": "Adivinhação",
+    "description": "Revela informações, seja na forma de segredos há muito esquecidos, vislumbres do futuro, locais de coisas ocultas, a verdade por trás de ilusões, ou visões de pessoas ou lugares distantes",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Encantamento",
+    "description": "Afeta as mentes dos outros, influenciando e controlando o seu comportamento Magias de encantamento podem fazer inimigos verem o conjurador como um amigo, forçar criaturas a tomar um curso de ação, ou até controlar outra criatura como se fosse um fantoche",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Étermancia",
+    "description": "Controla a própria energia espiritual A étermancia traz consigo poderosos efeitos explosivos que podem criar uma zona de pura energia volátil que pode explodir ao mero toque",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Hemomancia",
+    "description": "Pelo contrário do que muitos podem acreditar, a hemomancia não se dá apenas pelo controle do sangue, mas também pelo controle da energia vital de uma criatura Foi através da hemomancia que possibilitou que os Darkins fossem presos em suas armas",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Ilusão",
+    "description": "Engana os sentidos ou a mente dos outros Magias de ilusão levam as pessoas a verem coisas que não existem, não perceberem as coisas que existem, ouvirem ruídos fantasmas ou lembrarem-se de coisas que nunca aconteceram Algumas ilusões criam imagens fantasmas que qualquer criatura pode ver, mas as ilusões mais insidiosas plantam uma imagem diretamente na mente de uma criatura",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Invocação",
+    "description": "Envolve o transporte de objetos e criaturas de um local para outro Algumas magias de invocação invocam criaturas ou objetos para o lado do conjurador, enquanto outras permitem que o conjurador se teletransporte para outro local Algumas conjurações criam objetos ou efeitos do nada",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Necromancia",
+    "description": "Manipula as energias da vida e da morte Magias de necromancia podem conceder uma reserva adicional de força vital, drenar a energia vital de outra criatura, criar mortos-vivos ou até mesmo trazer os mortos de volta à vida Criar mortos-vivos através do uso de magias de necromancia, tais como animar mortos, não é um ato bom, e apenas conjuradores malignos usam tais magias com frequência",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Oniromancia",
+    "description": "Controla o sono e os sonhos Podendo forçar uma criatura à inconsciência, a oniromancia pode criar ilusões dentro da mente de uma criatura adormecida, ou utilizar a energia de seus sonhos para manter seres poderosíssimos presos numa prisão eterna de gelo",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Transmutação",
+    "description": "Altera as propriedades de uma criatura, objeto ou ambiente Magias de transmutação podem transformar um inimigo em uma criatura inofensiva, aumentar a força de um aliado, fazer um objeto se mover sob o comando do conjurador ou aprimorar as habilidades de cura inatas de uma criatura para que ela rapidamente se recupere de uma lesão",
+    "source": "Espiritual"
+  },
+  {
+    "name": "Umbramancia",
+    "description": "Controla as sombras do ambiente, pois onde quer que haja luz, há sombra, e onde não há luz… também há sombra Enquanto na escuridão, os efeitos de umbramancia são potencialmente elevados",
+    "source": "Espiritual"
+  }
+]

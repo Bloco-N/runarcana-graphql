@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Celestial",
+    "description": "Acredita-se que essas magias foram utilizadas para a criação de todas as coisas existentes no cosmos. As magias celestiais são extremamente difíceis de serem utilizadas e são extremamente raros os seres que as podem controlar, a única exceção para isso seriam as criaturas celestiais, que possuem uma aptidão inata para conjurá-las."
+  },
+  {
+    "name": "Elemental",
+    "description": "As magias elementais manipulam energia da própria natureza para produzir um efeito desejado de um ou mais elementos, podendo criar efeitos únicos ao se combinar mais de um elemento. Algumas proporcionam explosões de fogo ou relâmpagos, outras canalizam energia positiva para curar feridas."
+  },
+  {
+    "name": "Espiritual",
+    "description": "As magias espirituais utilizam a energia que está presente em todas as coisas, sejam elas vivas ou não. Em algumas culturas antigas, essa energia foi conhecida como sho’ma, um conceito que, para essas culturas, dizia que tudo possui uma alma ou uma consciência."
+  }
+]
