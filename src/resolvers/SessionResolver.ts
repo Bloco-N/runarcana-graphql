@@ -4,11 +4,13 @@ import { compare } from 'bcryptjs'
 import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
 import { IContext } from '../interfaces/IContext'
+import { SignInInputData } from '../inputs/SignInInputData'
 
 @Resolver(Auth)
 export class SessionResolver {
   @Mutation(returns => Auth)
-  async signIn (@Arg('username')username:string, @Arg('password') password:string, @Ctx() ctx:IContext) {
+  async signIn (@Arg('data')data:SignInInputData, @Ctx() ctx:IContext) {
+    const { username, password } = data
     const user = await ctx.prisma.user.findUnique({ where: { username } })
     if (!user) throw Error('❌ User or Password incorrect')
 
