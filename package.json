@@ -42,9 +42,11 @@
     "create-migration": "npx prisma migrate dev --name",
     "run-migration": "npx prisma migrate dev",
     "reset-migration": "npx prisma migrate reset",
-    "prisma-generate": "npx prisma generate"
+    "prisma-generate": "npx prisma generate",
+    "seed": "npx prisma db seed",
+    "studio": "npx prisma studio"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seeds/seed.ts"
   }
 }
