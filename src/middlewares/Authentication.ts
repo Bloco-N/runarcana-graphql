@@ -14,7 +14,9 @@ const Authentication:AuthChecker<Context> = ({ context }): boolean => {
     context.user = {
       id: decoded.id,
       username: decoded.username,
-      nickname: decoded.nickname
+      nickname: decoded.nickname,
+      createdAt: decoded.createdAt,
+      updatedAt: decoded.updatedAt
     }
     return !!decoded
   } catch {

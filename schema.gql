@@ -5,7 +5,7 @@
 
 type Auth {
   token: String!
-  user: User!
+  user: UserResponse!
 }
 
 """
@@ -15,11 +15,11 @@ scalar DateTime
 
 type Mutation {
   signIn(password: String!, username: String!): Auth!
-  signUp(data: SignUpInputData!): User!
+  signUp(data: SignUpInputData!): UserResponse!
 }
 
 type Query {
-  userInfo: User
+  userInfo: UserResponse
 }
 
 input SignUpInputData {
@@ -28,11 +28,10 @@ input SignUpInputData {
   username: String!
 }
 
-type User {
+type UserResponse {
   createdAt: DateTime!
   id: Int!
   nickname: String!
-  password: String!
   updatedAt: DateTime!
   username: String!
 }

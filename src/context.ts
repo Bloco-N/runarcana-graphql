@@ -1,17 +1,12 @@
 import { PrismaClient } from '@prisma/client'
+import { UserResponse } from './schemas/UserResponse'
 
 const prisma = new PrismaClient()
-
-interface UserWithoutPassword{
-  id:number
-  username:string,
-  nickname:string,
-}
 
 export interface Context{
   prisma:PrismaClient
   token?:string
-  user?: UserWithoutPassword
+  user?: UserResponse
 }
 
 export const context = ({ req }) => {

@@ -19,7 +19,9 @@ export class SessionResolver {
     const token = sign({
       id: user.id,
       username: user.username,
-      nickname: user.nickname
+      nickname: user.nickname,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt
     }, secret, { expiresIn })
 
     return {
