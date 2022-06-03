@@ -8,18 +8,129 @@ type Auth {
   user: UserResponse!
 }
 
+type Character {
+  Linage: Linage!
+  Origin: Origin!
+  Past: Past!
+  Region: Region!
+  RunarcanaClass: RunarcanaClass!
+  _count: CharacterCount
+  characterElements: [Element!]!
+  classId: Int!
+  createdAt: DateTime!
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Int!
+  linageId: Int!
+  name: String!
+  originId: Int!
+  pastId: Int!
+  regionId: Int!
+  spellCharacters: [Spell!]!
+  updatedAt: DateTime!
+  userId: Int!
+}
+
+type CharacterCount {
+  characterElements: Int!
+  spellCharacters: Int!
+}
+
 """
 The javascript `Date` as string. Type represents date and time as the ISO Date string.
 """
 scalar DateTime
+
+type Element {
+  _count: ElementCount
+  createdAt: DateTime!
+  description: String!
+  id: Int!
+  mysteryId: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type ElementCount {
+  characterElements: Int!
+  elementIngredients: Int!
+  elementRecipes: Int!
+}
+
+type Linage {
+  _count: LinageCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  originId: Int!
+  updatedAt: DateTime!
+}
+
+type LinageCount {
+  characters: Int!
+  spellLineage: Int!
+}
 
 type Mutation {
   signIn(data: SignInInputData!): Auth!
   signUp(data: SignUpInputData!): UserResponse!
 }
 
+type Origin {
+  _count: OriginCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type OriginCount {
+  characters: Int!
+  linages: Int!
+  spellOrigins: Int!
+  spells: Int!
+}
+
+type Past {
+  _count: PastCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type PastCount {
+  characters: Int!
+}
+
 type Query {
   userInfo: UserResponse
+}
+
+type Region {
+  _count: RegionCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type RegionCount {
+  characters: Int!
+}
+
+type RunarcanaClass {
+  _count: RunarcanaClassCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type RunarcanaClassCount {
+  Character: Int!
+  spellClass: Int!
 }
 
 input SignInInputData {
@@ -33,7 +144,32 @@ input SignUpInputData {
   username: String!
 }
 
+type Spell {
+  _count: SpellCount
+  conjurationId: Int!
+  createdAt: DateTime!
+  description: String!
+  durationId: Int!
+  id: Int!
+  level: Int!
+  materials: String!
+  name: String!
+  originId: Int!
+  rangeId: Int!
+  updatedAt: DateTime!
+}
+
+type SpellCount {
+  spellCharacters: Int!
+  spellClass: Int!
+  spellComponents: Int!
+  spellLineages: Int!
+  spellMysteries: Int!
+  spellOrigins: Int!
+}
+
 type UserResponse {
+  characters: [Character!]!
   createdAt: DateTime!
   id: Int!
   nickname: String!

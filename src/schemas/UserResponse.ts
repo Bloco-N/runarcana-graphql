@@ -1,4 +1,5 @@
 import { Field, ObjectType, Int } from 'type-graphql'
+import { Character } from './Character'
 
 @ObjectType()
 export class UserResponse {
@@ -16,4 +17,7 @@ export class UserResponse {
 
   @Field((type) => Date)
     updatedAt:Date
+
+  @Field((type) => [Character])
+    characters: Character[]
 }
