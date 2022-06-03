@@ -8,9 +8,9 @@ import {
   Region,
   RunarcanaClass,
   SpellCharacter,
-  Spell,
-  Element
+  Spell
 } from '@generated/type-graphql'
+import { Element } from './Element'
 
 @ObjectType()
 export class Character extends PrismaCharacter {
@@ -30,8 +30,8 @@ export class Character extends PrismaCharacter {
     RunarcanaClass?: RunarcanaClass
 
   @Field((type) => [Spell])
-    spellCharacters?: SpellCharacter[]
+    SpellCharacters?: SpellCharacter[]
 
   @Field((type) => [Element])
-    characterElements?: CharacterElement[]
+    CharacterElements?: CharacterElement[]
 }

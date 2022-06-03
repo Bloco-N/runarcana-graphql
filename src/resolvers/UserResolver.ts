@@ -11,6 +11,7 @@ export class UserResolver {
   @Authorized()
   async userInfo (@Ctx() ctx: IContext): Promise<UserResponse> {
     const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
+    if (!user) throw Error('❌ User not found')
     const characters = await ctx.prisma.character.findMany({
       where: { userId: ctx.user.id },
       include: {
@@ -18,11 +19,10 @@ export class UserResolver {
         Region: true,
         Origin: true,
         RunarcanaClass: true,
-        characterElements: true,
-        spellCharacters: true
+        CharacterElements: true,
+        SpellCharacters: true
       }
     })
-    if (!user) throw Error('❌ User not found')
     return {
       id: user.id,
       username: user.username,
@@ -44,8 +44,8 @@ export class UserResolver {
         Region: true,
         Origin: true,
         RunarcanaClass: true,
-        characterElements: true,
-        spellCharacters: true
+        SpellCharacters: true,
+        CharacterElements: true
       }
     })
     return {
