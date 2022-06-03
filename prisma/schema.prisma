@@ -19,39 +19,40 @@ model User {
   username   String      @unique
   nickname   String?
   password   String
-  characters Character[]
+  Characters Character[]
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
 }
 
 model Character {
-  id                Int                @id @default(autoincrement())
-  userId            Int
-  regionId          Int
-  originId          Int
-  linageId          Int
-  pastId            Int
-  classId           Int
-  name              String
-  essence           String
-  expression        String
-  exaltation        String
-  Region            Region             @relation(fields: [regionId], references: [id])
-  Origin            Origin             @relation(fields: [originId], references: [id])
-  User              User               @relation(fields: [userId], references: [id])
-  Linage            Linage             @relation(fields: [linageId], references: [id])
-  Past              Past               @relation(fields: [pastId], references: [id])
-  RunarcanaClass    RunarcanaClass     @relation(fields: [classId], references: [id])
-  spellCharacters   SpellCharacter[]
-  characterElements CharacterElement[]
-  createdAt         DateTime           @default(now())
-  updatedAt         DateTime           @updatedAt
+  id                 Int                @id @default(autoincrement())
+  userId             Int
+  regionId           Int
+  originId           Int
+  linageId           Int
+  pastId             Int
+  classId            Int
+  name               String
+  essence            String
+  expression         String
+  exaltation         String
+  Region             Region             @relation(fields: [regionId], references: [id])
+  Origin             Origin             @relation(fields: [originId], references: [id])
+  User               User               @relation(fields: [userId], references: [id])
+  Linage             Linage             @relation(fields: [linageId], references: [id])
+  Past               Past               @relation(fields: [pastId], references: [id])
+  RunarcanaClass     RunarcanaClass     @relation(fields: [classId], references: [id])
+  SpellCharacters    SpellCharacter[]
+  CharacterElements  CharacterElement[]
+  CharacterMisteries CharacterMistery[]
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
 }
 
 model Region {
   id         Int         @id @default(autoincrement())
   name       String
-  characters Character[]
+  Characters Character[]
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
 }
@@ -59,38 +60,38 @@ model Region {
 model Origin {
   id           Int           @id @default(autoincrement())
   name         String
-  characters   Character[]
-  linages      Linage[]
-  spells       Spell[]
-  spellOrigins SpellOrigin[]
+  Characters   Character[]
+  Linages      Linage[]
+  Spells       Spell[]
+  SpellOrigins SpellOrigin[]
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
 }
 
 model Linage {
-  id           Int            @id @default(autoincrement())
-  originId     Int
-  name         String
-  Origin       Origin         @relation(fields: [originId], references: [id])
-  characters   Character[]
-  spellLineage SpellLineage[]
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime       @updatedAt
+  id            Int            @id @default(autoincrement())
+  originId      Int
+  name          String
+  Origin        Origin         @relation(fields: [originId], references: [id])
+  Characters    Character[]
+  SpellLineages SpellLineage[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
 }
 
 model RunarcanaClass {
-  id         Int          @id @default(autoincrement())
-  name       String
-  spellClass SpellClass[]
-  createdAt  DateTime     @default(now())
-  updatedAt  DateTime     @updatedAt
-  Character  Character[]
+  id           Int          @id @default(autoincrement())
+  name         String
+  SpellClasses SpellClass[]
+  Characters   Character[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
 }
 
 model Past {
   id         Int         @id @default(autoincrement())
   name       String
-  characters Character[]
+  Characters Character[]
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
 }
@@ -109,12 +110,12 @@ model Spell {
   Duration        Duration         @relation(fields: [durationId], references: [id])
   Origin          Origin           @relation(fields: [originId], references: [id])
   Range           Range            @relation(fields: [rangeId], references: [id])
-  spellCharacters SpellCharacter[]
-  spellClass      SpellClass[]
-  spellComponents SpellComponent[]
-  spellLineages   SpellLineage[]
-  spellMysteries  SpellMystery[]
-  spellOrigins    SpellOrigin[]
+  SpellCharacters SpellCharacter[]
+  SpellClasses    SpellClass[]
+  SpellComponents SpellComponent[]
+  SpellLineages   SpellLineage[]
+  SpellMysteries  SpellMystery[]
+  SpellOrigins    SpellOrigin[]
   createdAt       DateTime         @default(now())
   updatedAt       DateTime         @updatedAt
 }
@@ -122,7 +123,7 @@ model Spell {
 model Conjuration {
   id        Int      @id @default(autoincrement())
   name      String
-  spells    Spell[]
+  Spells    Spell[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -130,7 +131,7 @@ model Conjuration {
 model Duration {
   id        Int      @id @default(autoincrement())
   name      String
-  spells    Spell[]
+  Spells    Spell[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -138,7 +139,7 @@ model Duration {
 model Range {
   id        Int      @id @default(autoincrement())
   name      String
-  spells    Spell[]
+  Spells    Spell[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -147,7 +148,7 @@ model Component {
   id              Int              @id @default(autoincrement())
   name            String
   symbol          String           @db.Char(1)
-  spellComponents SpellComponent[]
+  SpellComponents SpellComponent[]
   createdAt       DateTime         @default(now())
   updatedAt       DateTime         @updatedAt
 }
@@ -156,21 +157,22 @@ model MagicSource {
   id          Int       @id @default(autoincrement())
   name        String
   description String    @db.Text
-  misteries   Mystery[]
+  Misteries   Mystery[]
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 }
 
 model Mystery {
-  id             Int            @id @default(autoincrement())
-  magicSourceId  Int
-  name           String
-  description    String         @db.Text
-  MagicSource    MagicSource    @relation(fields: [magicSourceId], references: [id])
-  spellMysteries SpellMystery[]
-  element        Element[]
-  createdAt      DateTime       @default(now())
-  updatedAt      DateTime       @updatedAt
+  id                 Int                @id @default(autoincrement())
+  magicSourceId      Int
+  name               String
+  description        String             @db.Text
+  MagicSource        MagicSource        @relation(fields: [magicSourceId], references: [id])
+  SpellMysteries     SpellMystery[]
+  Elements           Element[]
+  CharacterMisteries CharacterMistery[]
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
 }
 
 model SpellCharacter {
@@ -228,6 +230,17 @@ model SpellMystery {
   @@id([spellId, mysteryId])
 }
 
+model CharacterMistery {
+  characterId Int
+  mysteryId   Int
+  Character   Character @relation(fields: [characterId], references: [id])
+  Mystery     Mystery   @relation(fields: [mysteryId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@id([characterId, mysteryId])
+}
+
 model SpellOrigin {
   spellId   Int
   originId  Int
@@ -245,9 +258,9 @@ model Element {
   name               String
   description        String              @db.Text
   Mystery            Mystery             @relation(fields: [mysteryId], references: [id])
-  elementRecipes     ElementRecipe[]
-  elementIngredients ElementIngredient[]
-  characterElements  CharacterElement[]
+  ElementRecipes     ElementRecipe[]
+  ElementIngredients ElementIngredient[]
+  CharacterElements  CharacterElement[]
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
 
@@ -257,7 +270,7 @@ model ElementRecipe {
   id                 Int                 @id @default(autoincrement())
   elementId          Int
   Element            Element             @relation(fields: [elementId], references: [id])
-  elementIngredients ElementIngredient[]
+  ElementIngredients ElementIngredient[]
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
 }
