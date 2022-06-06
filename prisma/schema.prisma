@@ -31,7 +31,6 @@ model Character {
   originId                Int
   linageId                Int
   pastId                  Int
-  classId                 Int
   name                    String
   essence                 String
   expression              String
@@ -47,8 +46,6 @@ model Character {
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())
   updatedAt               DateTime                  @updatedAt
-  RunarcanaClass          RunarcanaClass?           @relation(fields: [runarcanaClassId], references: [id])
-  runarcanaClassId        Int?
 }
 
 model Region {
@@ -64,7 +61,6 @@ model Origin {
   name         String
   Characters   Character[]
   Linages      Lineage[]
-  Spells       Spell[]
   SpellOrigins SpellOrigin[]
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
@@ -85,7 +81,6 @@ model RunarcanaClass {
   id                      Int                       @id @default(autoincrement())
   name                    String
   SpellClasses            SpellClass[]
-  Characters              Character[]
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())
   updatedAt               DateTime                  @updatedAt
@@ -103,7 +98,6 @@ model Spell {
   id              Int              @id @default(autoincrement())
   conjurationId   Int
   durationId      Int
-  originId        Int
   rangeId         Int
   level           Int
   name            String
@@ -111,7 +105,6 @@ model Spell {
   materials       String           @db.Text
   Conjuration     Conjuration      @relation(fields: [conjurationId], references: [id])
   Duration        Duration         @relation(fields: [durationId], references: [id])
-  Origin          Origin           @relation(fields: [originId], references: [id])
   Range           Range            @relation(fields: [rangeId], references: [id])
   SpellCharacters SpellCharacter[]
   SpellClasses    SpellClass[]
