@@ -149,7 +149,7 @@ model Component {
   updatedAt       DateTime         @updatedAt
 }
 
-model MagicSource {
+model MagicalSource {
   id          Int       @id @default(autoincrement())
   name        String
   description String    @db.Text
@@ -160,10 +160,10 @@ model MagicSource {
 
 model Mystery {
   id                 Int                @id @default(autoincrement())
-  magicSourceId      Int
+  magicalSourceId    Int
   name               String
   description        String             @db.Text
-  MagicSource        MagicSource        @relation(fields: [magicSourceId], references: [id])
+  MagicalSource      MagicalSource      @relation(fields: [magicalSourceId], references: [id])
   SpellMysteries     SpellMystery[]
   Elements           Element[]
   CharacterMisteries CharacterMistery[]
