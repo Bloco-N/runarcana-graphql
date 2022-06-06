@@ -11,11 +11,11 @@ type Auth {
 type Character {
   CharacterElements: [CharacterElement!]!
   CharacterMisteries: [CharacterMistery!]!
+  CharacterRunarcanaClass: [CharacterRunarcanaClass!]!
   Lineage: Lineage!
   Origin: Origin!
   Past: Past!
   Region: Region!
-  RunarcanaClass: RunarcanaClass!
   SpellCharacters: [SpellCharacter!]!
   _count: CharacterCount
   classId: Int!
@@ -29,6 +29,7 @@ type Character {
   originId: Int!
   pastId: Int!
   regionId: Int!
+  runarcanaClassId: Int
   updatedAt: DateTime!
   userId: Int!
 }
@@ -36,6 +37,7 @@ type Character {
 type CharacterCount {
   CharacterElements: Int!
   CharacterMisteries: Int!
+  CharacterRunarcanaClass: Int!
   SpellCharacters: Int!
 }
 
@@ -52,6 +54,15 @@ type CharacterMistery {
   characterId: Int!
   createdAt: DateTime!
   mysteryId: Int!
+  updatedAt: DateTime!
+}
+
+type CharacterRunarcanaClass {
+  RunarcanaClass: RunarcanaClass!
+  characterId: Int!
+  createdAt: DateTime!
+  level: Int!
+  runarcanaClassId: Int!
   updatedAt: DateTime!
 }
 
@@ -238,6 +249,7 @@ type RunarcanaClass {
 }
 
 type RunarcanaClassCount {
+  CharacterRunarcanaClass: Int!
   Characters: Int!
   SpellClasses: Int!
 }

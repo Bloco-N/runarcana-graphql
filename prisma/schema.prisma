@@ -25,28 +25,30 @@ model User {
 }
 
 model Character {
-  id                 Int                @id @default(autoincrement())
-  userId             Int
-  regionId           Int
-  originId           Int
-  linageId           Int
-  pastId             Int
-  classId            Int
-  name               String
-  essence            String
-  expression         String
-  exaltation         String
-  Region             Region             @relation(fields: [regionId], references: [id])
-  Origin             Origin             @relation(fields: [originId], references: [id])
-  User               User               @relation(fields: [userId], references: [id])
-  Linage             Lineage            @relation(fields: [linageId], references: [id])
-  Past               Past               @relation(fields: [pastId], references: [id])
-  RunarcanaClass     RunarcanaClass     @relation(fields: [classId], references: [id])
-  SpellCharacters    SpellCharacter[]
-  CharacterElements  CharacterElement[]
-  CharacterMisteries CharacterMistery[]
-  createdAt          DateTime           @default(now())
-  updatedAt          DateTime           @updatedAt
+  id                      Int                       @id @default(autoincrement())
+  userId                  Int
+  regionId                Int
+  originId                Int
+  linageId                Int
+  pastId                  Int
+  classId                 Int
+  name                    String
+  essence                 String
+  expression              String
+  exaltation              String
+  Region                  Region                    @relation(fields: [regionId], references: [id])
+  Origin                  Origin                    @relation(fields: [originId], references: [id])
+  User                    User                      @relation(fields: [userId], references: [id])
+  Linage                  Lineage                   @relation(fields: [linageId], references: [id])
+  Past                    Past                      @relation(fields: [pastId], references: [id])
+  SpellCharacters         SpellCharacter[]
+  CharacterElements       CharacterElement[]
+  CharacterMisteries      CharacterMistery[]
+  CharacterRunarcanaClass CharacterRunarcanaClass[]
+  createdAt               DateTime                  @default(now())
+  updatedAt               DateTime                  @updatedAt
+  RunarcanaClass          RunarcanaClass?           @relation(fields: [runarcanaClassId], references: [id])
+  runarcanaClassId        Int?
 }
 
 model Region {
@@ -80,12 +82,13 @@ model Lineage {
 }
 
 model RunarcanaClass {
-  id           Int          @id @default(autoincrement())
-  name         String
-  SpellClasses SpellClass[]
-  Characters   Character[]
-  createdAt    DateTime     @default(now())
-  updatedAt    DateTime     @updatedAt
+  id                      Int                       @id @default(autoincrement())
+  name                    String
+  SpellClasses            SpellClass[]
+  Characters              Character[]
+  CharacterRunarcanaClass CharacterRunarcanaClass[]
+  createdAt               DateTime                  @default(now())
+  updatedAt               DateTime                  @updatedAt
 }
 
 model Past {
@@ -295,4 +298,16 @@ model CharacterElement {
   updatedAt   DateTime  @updatedAt
 
   @@id([elementId, characterId])
+}
+
+model CharacterRunarcanaClass {
+  runarcanaClassId Int
+  characterId      Int
+  level            Int
+  RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id])
+  Character        Character      @relation(fields: [characterId], references: [id])
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  @@id([runarcanaClassId, characterId])
 }

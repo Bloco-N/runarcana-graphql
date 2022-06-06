@@ -4,12 +4,12 @@ import {
   Past,
   Region
 } from '@generated/type-graphql'
-import { RunarcanaClass } from './relations/RunarcanaClass'
 import { Origin } from './relations/Origin'
 import { Lineage } from './relations/Lineage'
 import { SpellCharacter } from './relations/SpellCharacter'
 import { CharacterMistery } from './relations/CharacterMistery'
 import { CharacterElement } from './relations/CharacterElement'
+import { CharacterRunarcanaClass } from './relations/CharacterRunarcanaClass'
 
 @ObjectType()
 export class Character extends PrismaCharacter {
@@ -25,8 +25,8 @@ export class Character extends PrismaCharacter {
   @Field()
     Lineage?: Lineage
 
-  @Field(() => RunarcanaClass)
-    RunarcanaClass?: RunarcanaClass
+  @Field(() => [CharacterRunarcanaClass])
+    CharacterRunarcanaClass?: CharacterRunarcanaClass[]
 
   @Field(() => [SpellCharacter])
     SpellCharacters?: SpellCharacter[]

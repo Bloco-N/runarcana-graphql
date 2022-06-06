@@ -19,9 +19,10 @@ export class UserResolver {
         Origin: true,
         Region: true,
         Linage: true,
-        RunarcanaClass: true,
         SpellCharacters: true,
-        CharacterElements: true
+        CharacterMisteries: true,
+        CharacterElements: true,
+        CharacterRunarcanaClass: true
       }
 
     })
