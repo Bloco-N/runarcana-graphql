@@ -6,6 +6,6 @@ export class Auth implements IAuth {
   @Field({ nullable: false })
     token: string
 
-  @Field((type) => UserResponse, { nullable: false })
+  @Field(() => UserResponse, { nullable: false })
     user: UserResponse
 }

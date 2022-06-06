@@ -1,23 +1,24 @@
 import { Field, ObjectType, Int } from 'type-graphql'
 import { Character } from './Character'
+// import { Character } from '@generated/type-graphql'
 
 @ObjectType()
 export class UserResponse {
-  @Field((type) => Int)
+  @Field(() => Int)
     id: number
 
-  @Field((type) => String)
+  @Field(() => String)
     username:string
 
-  @Field((type) => String)
+  @Field(() => String)
     nickname:string
 
-  @Field((type) => Date)
+  @Field(() => Date)
     createdAt:Date
 
-  @Field((type) => Date)
+  @Field(() => Date)
     updatedAt:Date
 
-  @Field((type) => [Character])
+  @Field(() => [Character])
     characters: Character[]
 }

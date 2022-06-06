@@ -9,13 +9,15 @@ type Auth {
 }
 
 type Character {
-  Linage: Linage!
+  CharacterElements: [CharacterElement!]!
+  CharacterMisteries: [CharacterMistery!]!
+  Lineage: Lineage!
   Origin: Origin!
   Past: Past!
   Region: Region!
   RunarcanaClass: RunarcanaClass!
+  SpellCharacters: [SpellCharacter!]!
   _count: CharacterCount
-  characterElements: [Element!]!
   classId: Int!
   createdAt: DateTime!
   essence: String!
@@ -27,14 +29,54 @@ type Character {
   originId: Int!
   pastId: Int!
   regionId: Int!
-  spellCharacters: [Spell!]!
   updatedAt: DateTime!
   userId: Int!
 }
 
 type CharacterCount {
-  characterElements: Int!
-  spellCharacters: Int!
+  CharacterElements: Int!
+  CharacterMisteries: Int!
+  SpellCharacters: Int!
+}
+
+type CharacterElement {
+  characterId: Int!
+  createdAt: DateTime!
+  elementId: Int!
+  updatedAt: DateTime!
+}
+
+type CharacterMistery {
+  Mystery: Mystery!
+  characterId: Int!
+  createdAt: DateTime!
+  mysteryId: Int!
+  updatedAt: DateTime!
+}
+
+type Component {
+  _count: ComponentCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  symbol: String!
+  updatedAt: DateTime!
+}
+
+type ComponentCount {
+  SpellComponents: Int!
+}
+
+type Conjuration {
+  _count: ConjurationCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type ConjurationCount {
+  Spells: Int!
 }
 
 """
@@ -42,24 +84,21 @@ The javascript `Date` as string. Type represents date and time as the ISO Date s
 """
 scalar DateTime
 
-type Element {
-  _count: ElementCount
+type Duration {
+  _count: DurationCount
   createdAt: DateTime!
-  description: String!
   id: Int!
-  mysteryId: Int!
   name: String!
   updatedAt: DateTime!
 }
 
-type ElementCount {
-  characterElements: Int!
-  elementIngredients: Int!
-  elementRecipes: Int!
+type DurationCount {
+  Spells: Int!
 }
 
-type Linage {
-  _count: LinageCount
+type Lineage {
+  SpellLineages: [SpellLineage!]!
+  _count: LineageCount
   createdAt: DateTime!
   id: Int!
   name: String!
@@ -67,9 +106,9 @@ type Linage {
   updatedAt: DateTime!
 }
 
-type LinageCount {
-  characters: Int!
-  spellLineage: Int!
+type LineageCount {
+  Characters: Int!
+  SpellLineages: Int!
 }
 
 type Mutation {
@@ -77,7 +116,26 @@ type Mutation {
   signUp(data: SignUpInputData!): UserResponse!
 }
 
+type Mystery {
+  SpellMysteries: SpellMystery!
+  _count: MysteryCount
+  createdAt: DateTime!
+  description: String!
+  id: Int!
+  magicSourceId: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type MysteryCount {
+  CharacterMisteries: Int!
+  Elements: Int!
+  SpellMysteries: Int!
+}
+
 type Origin {
+  Linaeges: [Lineage!]!
+  SpellOrigins: [SpellOrigin!]!
   _count: OriginCount
   createdAt: DateTime!
   id: Int!
@@ -86,10 +144,10 @@ type Origin {
 }
 
 type OriginCount {
-  characters: Int!
-  linages: Int!
-  spellOrigins: Int!
-  spells: Int!
+  Characters: Int!
+  Linages: Int!
+  SpellOrigins: Int!
+  Spells: Int!
 }
 
 type Past {
@@ -101,11 +159,23 @@ type Past {
 }
 
 type PastCount {
-  characters: Int!
+  Characters: Int!
 }
 
 type Query {
   userInfo: UserResponse
+}
+
+type Range {
+  _count: RangeCount
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type RangeCount {
+  Spells: Int!
 }
 
 type Region {
@@ -117,10 +187,11 @@ type Region {
 }
 
 type RegionCount {
-  characters: Int!
+  Characters: Int!
 }
 
 type RunarcanaClass {
+  SpellClasses: [SpellClass!]!
   _count: RunarcanaClassCount
   createdAt: DateTime!
   id: Int!
@@ -129,8 +200,8 @@ type RunarcanaClass {
 }
 
 type RunarcanaClassCount {
-  Character: Int!
-  spellClass: Int!
+  Characters: Int!
+  SpellClasses: Int!
 }
 
 input SignInInputData {
@@ -145,6 +216,10 @@ input SignUpInputData {
 }
 
 type Spell {
+  Conjuration: Conjuration!
+  Duration: Duration!
+  Range: Range!
+  SpellComponents: [SpellComponent!]!
   _count: SpellCount
   conjurationId: Int!
   createdAt: DateTime!
@@ -159,13 +234,60 @@ type Spell {
   updatedAt: DateTime!
 }
 
+type SpellCharacter {
+  characterId: Int!
+  createdAt: DateTime!
+  spellId: Int!
+  updatedAt: DateTime!
+}
+
+type SpellClass {
+  Spell: Spell!
+  classId: Int!
+  createdAt: DateTime!
+  spellId: Int!
+  updatedAt: DateTime!
+}
+
+type SpellComponent {
+  Component: Component!
+  componentId: Int!
+  createdAt: DateTime!
+  spellId: Int!
+  updatedAt: DateTime!
+}
+
 type SpellCount {
-  spellCharacters: Int!
-  spellClass: Int!
-  spellComponents: Int!
-  spellLineages: Int!
-  spellMysteries: Int!
-  spellOrigins: Int!
+  SpellCharacters: Int!
+  SpellClasses: Int!
+  SpellComponents: Int!
+  SpellLineages: Int!
+  SpellMysteries: Int!
+  SpellOrigins: Int!
+}
+
+type SpellLineage {
+  Spell: Spell!
+  createdAt: DateTime!
+  linageId: Int!
+  spellId: Int!
+  updatedAt: DateTime!
+}
+
+type SpellMystery {
+  Spell: Spell!
+  createdAt: DateTime!
+  mysteryId: Int!
+  spellId: Int!
+  updatedAt: DateTime!
+}
+
+type SpellOrigin {
+  Spell: Spell!
+  createdAt: DateTime!
+  originId: Int!
+  spellId: Int!
+  updatedAt: DateTime!
 }
 
 type UserResponse {

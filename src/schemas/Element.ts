@@ -3,9 +3,9 @@ import { Field, ObjectType } from 'type-graphql'
 
 @ObjectType()
 export class Element extends PrismaElement {
-  @Field(() => [Element])
+  @Field(() => [ElementIngredient])
     ElementIngredients?: ElementIngredient[]
 
-  @Field(() => [Element])
+  @Field(() => [ElementRecipe])
     ElementRecipes?: ElementRecipe[]
 }

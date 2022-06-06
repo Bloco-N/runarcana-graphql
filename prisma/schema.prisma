@@ -39,7 +39,7 @@ model Character {
   Region             Region             @relation(fields: [regionId], references: [id])
   Origin             Origin             @relation(fields: [originId], references: [id])
   User               User               @relation(fields: [userId], references: [id])
-  Linage             Linage             @relation(fields: [linageId], references: [id])
+  Linage             Lineage            @relation(fields: [linageId], references: [id])
   Past               Past               @relation(fields: [pastId], references: [id])
   RunarcanaClass     RunarcanaClass     @relation(fields: [classId], references: [id])
   SpellCharacters    SpellCharacter[]
@@ -61,14 +61,14 @@ model Origin {
   id           Int           @id @default(autoincrement())
   name         String
   Characters   Character[]
-  Linages      Linage[]
+  Linages      Lineage[]
   Spells       Spell[]
   SpellOrigins SpellOrigin[]
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
 }
 
-model Linage {
+model Lineage {
   id            Int            @id @default(autoincrement())
   originId      Int
   name          String
@@ -201,7 +201,7 @@ model SpellLineage {
   spellId   Int
   linageId  Int
   Spell     Spell    @relation(fields: [spellId], references: [id])
-  Linage    Linage   @relation(fields: [linageId], references: [id])
+  Linage    Lineage  @relation(fields: [linageId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 

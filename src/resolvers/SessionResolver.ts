@@ -8,7 +8,7 @@ import { SignInInputData } from '../inputs/SignInInputData'
 
 @Resolver(Auth)
 export class SessionResolver {
-  @Mutation(returns => Auth)
+  @Mutation(() => Auth)
   async signIn (@Arg('data')data:SignInInputData, @Ctx() ctx:IContext) {
     const { username, password } = data
     const user = await ctx.prisma.user.findUnique({ where: { username } })

@@ -2,15 +2,14 @@ import { Field, ObjectType } from 'type-graphql'
 import {
   Character as PrismaCharacter,
   CharacterElement,
-  Linage,
-  Origin,
   Past,
   Region,
-  RunarcanaClass,
-  SpellCharacter,
-  Spell
+  SpellCharacter
 } from '@generated/type-graphql'
-import { Element } from './Element'
+import { RunarcanaClass } from './relations/RunarcanaClass'
+import { Origin } from './relations/Origin'
+import { Lineage } from './relations/Lineage'
+import { CharacterMistery } from './relations/CharacterMistery'
 
 @ObjectType()
 export class Character extends PrismaCharacter {
@@ -24,14 +23,17 @@ export class Character extends PrismaCharacter {
     Origin?: Origin
 
   @Field()
-    Linage?: Linage
+    Lineage?: Lineage
 
-  @Field()
+  @Field(() => RunarcanaClass)
     RunarcanaClass?: RunarcanaClass
 
-  @Field((type) => [Spell])
+  @Field(() => [SpellCharacter])
     SpellCharacters?: SpellCharacter[]
 
-  @Field((type) => [Element])
+  @Field(() => [CharacterElement])
     CharacterElements?: CharacterElement[]
+
+  @Field(() => [CharacterMistery])
+    CharacterMisteries?: CharacterMistery[]
 }

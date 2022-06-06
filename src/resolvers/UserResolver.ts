@@ -7,7 +7,7 @@ import { IContext } from '../interfaces/IContext'
 
 @Resolver(User)
 export class UserResolver {
-  @Query((returns) => UserResponse, { nullable: true })
+  @Query(() => UserResponse, { nullable: true })
   @Authorized()
   async userInfo (@Ctx() ctx: IContext): Promise<UserResponse> {
     const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
@@ -16,12 +16,14 @@ export class UserResolver {
       where: { userId: ctx.user.id },
       include: {
         Past: true,
-        Region: true,
         Origin: true,
+        Region: true,
+        Linage: true,
         RunarcanaClass: true,
-        CharacterElements: true,
-        SpellCharacters: true
+        SpellCharacters: true,
+        CharacterElements: true
       }
+
     })
     return {
       id: user.id,
@@ -33,7 +35,7 @@ export class UserResolver {
     }
   }
 
-  @Mutation((returns) => UserResponse)
+  @Mutation(() => UserResponse)
   async signUp (@Arg('data') data:SignUpInputData, @Ctx() ctx:IContext):Promise<UserResponse> {
     const hashedPassword = await hash(data.password, 10)
     const user = await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })

@@ -2,21 +2,21 @@ import { Field, ObjectType, Int } from 'type-graphql'
 
 @ObjectType()
 export class User {
-  @Field((type) => Int)
+  @Field(() => Int)
     id: number
 
-  @Field((type) => String)
+  @Field(() => String)
     username:string
 
-  @Field((type) => String)
+  @Field(() => String)
     nickname:string
 
-  @Field((type) => String)
+  @Field(() => String)
     password:string
 
-  @Field((type) => Date)
+  @Field(() => Date)
     createdAt:Date
 
-  @Field((type) => Date)
+  @Field(() => Date)
     updatedAt:Date
 }
