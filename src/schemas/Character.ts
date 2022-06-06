@@ -1,15 +1,15 @@
 import { Field, ObjectType } from 'type-graphql'
 import {
   Character as PrismaCharacter,
-  CharacterElement,
   Past,
-  Region,
-  SpellCharacter
+  Region
 } from '@generated/type-graphql'
 import { RunarcanaClass } from './relations/RunarcanaClass'
 import { Origin } from './relations/Origin'
 import { Lineage } from './relations/Lineage'
+import { SpellCharacter } from './relations/SpellCharacter'
 import { CharacterMistery } from './relations/CharacterMistery'
+import { CharacterElement } from './relations/CharacterElement'
 
 @ObjectType()
 export class Character extends PrismaCharacter {

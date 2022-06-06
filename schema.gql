@@ -40,6 +40,7 @@ type CharacterCount {
 }
 
 type CharacterElement {
+  Element: Element!
   characterId: Int!
   createdAt: DateTime!
   elementId: Int!
@@ -94,6 +95,43 @@ type Duration {
 
 type DurationCount {
   Spells: Int!
+}
+
+type Element {
+  ElementIngredients: [ElementIngredient!]!
+  ElementRecipes: [ElementRecipe!]!
+  _count: ElementCount
+  createdAt: DateTime!
+  description: String!
+  id: Int!
+  mysteryId: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type ElementCount {
+  CharacterElements: Int!
+  ElementIngredients: Int!
+  ElementRecipes: Int!
+}
+
+type ElementIngredient {
+  createdAt: DateTime!
+  elementId: Int!
+  elementRecipeId: Int!
+  updatedAt: DateTime!
+}
+
+type ElementRecipe {
+  _count: ElementRecipeCount
+  createdAt: DateTime!
+  elementId: Int!
+  id: Int!
+  updatedAt: DateTime!
+}
+
+type ElementRecipeCount {
+  ElementIngredients: Int!
 }
 
 type Lineage {
@@ -235,6 +273,7 @@ type Spell {
 }
 
 type SpellCharacter {
+  Spell: Spell!
   characterId: Int!
   createdAt: DateTime!
   spellId: Int!
