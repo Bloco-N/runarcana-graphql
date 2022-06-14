@@ -6,36 +6,20 @@ import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
 
-const spellSelect = {
-  id: true,
-  conjurationId: true,
-  durationId: true,
-  rangeId: true,
-  level: true,
-  name: true,
-  description: true,
-  materials: true,
-  createdAt: true,
-  updatedAt: true,
-  _count: true,
-  SpellComponents: {
-    select: {
-      componentId: true,
-      Component: true
+const spellInclude = {
+  include: {
+    Spell: {
+      include: {
+        Conjuration: true,
+        Duration: true,
+        Range: true,
+        SpellComponents: {
+          include: {
+            Component: true
+          }
+        }
+      }
     }
-  },
-  Conjuration: true,
-  Duration: true,
-  Range: true
-}
-
-const spellOriginSelect = {
-  spellId: true,
-  originId: true,
-  createdAt: true,
-  updatedAt: true,
-  Spell: {
-    select: spellSelect
   }
 }
 
@@ -48,32 +32,45 @@ export class UserResolver {
     if (!user) throw Error('❌ User not found')
     const characters = await ctx.prisma.character.findMany({
       where: { userId: ctx.user.id },
-      select: {
-        id: true,
-        userId: true,
-        regionId: true,
-        lineageId: true,
-        pastId: true,
-        name: true,
-        essence: true,
-        expression: true,
-        exaltation: true,
-        createdAt: true,
-        updatedAt: true,
-        _count: true,
-        Past: true,
-        Region: true,
+      include: {
         Origin: {
-          select: {
-            id: true,
-            name: true,
-            createdAt: true,
-            updatedAt: true,
-            _count: true,
-            SpellOrigins: {
-              select: spellOriginSelect
-            },
+          include: {
+            SpellOrigins: spellInclude,
             Lineages: true
+          }
+        },
+        Lineage: {
+          include: {
+            SpellLineages: spellInclude
+          }
+        },
+        CharacterRunarcanaClass: {
+          include: {
+            RunarcanaClass: {
+              include: {
+                SpellClasses: spellInclude
+              }
+            }
+          }
+        },
+        SpellCharacters: spellInclude,
+        CharacterElements: {
+          include: {
+            Element: {
+              include: {
+                ElementIngredients: true,
+                ElementRecipes: true
+              }
+            }
+          }
+        },
+        CharacterMisteries: {
+          include: {
+            Mystery: {
+              include: {
+                SpellMysteries: spellInclude
+              }
+            }
           }
         }
 
