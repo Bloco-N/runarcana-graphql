@@ -15,7 +15,8 @@ const app = async () => {
     resolvers: [
       Auth,
       resolvers.UserResolver,
-      resolvers.SessionResolver
+      resolvers.SessionResolver,
+      resolvers.CharacterResolver
     ],
     authChecker: Authentication,
     emitSchemaFile: true

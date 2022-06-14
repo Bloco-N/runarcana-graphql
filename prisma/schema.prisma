@@ -29,7 +29,7 @@ model Character {
   userId                  Int
   regionId                Int
   originId                Int
-  linageId                Int
+  lineageId               Int
   pastId                  Int
   name                    String
   essence                 String
@@ -38,7 +38,7 @@ model Character {
   Region                  Region                    @relation(fields: [regionId], references: [id])
   Origin                  Origin                    @relation(fields: [originId], references: [id])
   User                    User                      @relation(fields: [userId], references: [id])
-  Linage                  Lineage                   @relation(fields: [linageId], references: [id])
+  Lineage                 Lineage                   @relation(fields: [lineageId], references: [id])
   Past                    Past                      @relation(fields: [pastId], references: [id])
   SpellCharacters         SpellCharacter[]
   CharacterElements       CharacterElement[]
@@ -60,7 +60,7 @@ model Origin {
   id           Int           @id @default(autoincrement())
   name         String
   Characters   Character[]
-  Linages      Lineage[]
+  Lineages     Lineage[]
   SpellOrigins SpellOrigin[]
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt

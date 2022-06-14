@@ -9,5 +9,5 @@ export class Origin extends PrismaOrigin {
     SpellOrigins?: SpellOrigin[]
 
   @Field(() => [Lineage])
-    Linaeges?: Lineage[]
+    Lineages?: Lineage[]
 }

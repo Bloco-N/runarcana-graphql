@@ -4,6 +4,40 @@ import { hash } from 'bcryptjs'
 import { SignUpInputData } from '../inputs/SignUpInputData'
 import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
+import { ApiResponse } from '../schemas/ApiResponse'
+
+const spellSelect = {
+  id: true,
+  conjurationId: true,
+  durationId: true,
+  rangeId: true,
+  level: true,
+  name: true,
+  description: true,
+  materials: true,
+  createdAt: true,
+  updatedAt: true,
+  _count: true,
+  SpellComponents: {
+    select: {
+      componentId: true,
+      Component: true
+    }
+  },
+  Conjuration: true,
+  Duration: true,
+  Range: true
+}
+
+const spellOriginSelect = {
+  spellId: true,
+  originId: true,
+  createdAt: true,
+  updatedAt: true,
+  Spell: {
+    select: spellSelect
+  }
+}
 
 @Resolver(User)
 export class UserResolver {
@@ -14,15 +48,35 @@ export class UserResolver {
     if (!user) throw Error('❌ User not found')
     const characters = await ctx.prisma.character.findMany({
       where: { userId: ctx.user.id },
-      include: {
+      select: {
+        id: true,
+        userId: true,
+        regionId: true,
+        lineageId: true,
+        pastId: true,
+        name: true,
+        essence: true,
+        expression: true,
+        exaltation: true,
+        createdAt: true,
+        updatedAt: true,
+        _count: true,
         Past: true,
-        Origin: true,
         Region: true,
-        Linage: true,
-        CharacterRunarcanaClass: true,
-        SpellCharacters: true,
-        CharacterElements: true,
-        CharacterMisteries: true
+        Origin: {
+          select: {
+            id: true,
+            name: true,
+            createdAt: true,
+            updatedAt: true,
+            _count: true,
+            SpellOrigins: {
+              select: spellOriginSelect
+            },
+            Lineages: true
+          }
+        }
+
       }
 
     })
@@ -36,30 +90,11 @@ export class UserResolver {
     }
   }
 
-  @Mutation(() => UserResponse)
-  async signUp (@Arg('data') data:SignUpInputData, @Ctx() ctx:IContext):Promise<UserResponse> {
+  @Mutation(() => ApiResponse)
+  async signUp (@Arg('data') data:SignUpInputData, @Ctx() ctx:IContext):Promise<ApiResponse> {
     const hashedPassword = await hash(data.password, 10)
-    const user = await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })
-    const characters = await ctx.prisma.character.findMany({
-      where: { userId: ctx.user.id },
-      include: {
-        Past: true,
-        Origin: true,
-        Region: true,
-        Linage: true,
-        CharacterRunarcanaClass: true,
-        SpellCharacters: true,
-        CharacterElements: true,
-        CharacterMisteries: true
-      }
-    })
-    return {
-      id: user.id,
-      username: user.username,
-      nickname: user.nickname,
-      createdAt: user.createdAt,
-      updatedAt: user.updatedAt,
-      characters
-    }
+    await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })
+
+    return new ApiResponse('User created')
   }
 }

@@ -3,6 +3,10 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+type ApiResponse {
+  message: String!
+}
+
 type Auth {
   token: String!
   user: UserResponse!
@@ -23,7 +27,7 @@ type Character {
   exaltation: String!
   expression: String!
   id: Int!
-  linageId: Int!
+  lineageId: Int!
   name: String!
   originId: Int!
   pastId: Int!
@@ -45,6 +49,17 @@ type CharacterElement {
   createdAt: DateTime!
   elementId: Int!
   updatedAt: DateTime!
+}
+
+input CharacterInputData {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  lineageId: Float!
+  name: String!
+  originId: Float!
+  pastId: Float!
+  regionId: Float!
 }
 
 type CharacterMistery {
@@ -159,8 +174,9 @@ type LineageCount {
 }
 
 type Mutation {
+  create(data: CharacterInputData!): Character!
   signIn(data: SignInInputData!): Auth!
-  signUp(data: SignUpInputData!): UserResponse!
+  signUp(data: SignUpInputData!): ApiResponse!
 }
 
 type Mystery {
@@ -169,7 +185,7 @@ type Mystery {
   createdAt: DateTime!
   description: String!
   id: Int!
-  magicSourceId: Int!
+  magicalSourceId: Int!
   name: String!
   updatedAt: DateTime!
 }
@@ -181,7 +197,7 @@ type MysteryCount {
 }
 
 type Origin {
-  Linaeges: [Lineage!]!
+  Lineages: [Lineage!]!
   SpellOrigins: [SpellOrigin!]!
   _count: OriginCount
   createdAt: DateTime!
@@ -192,7 +208,7 @@ type Origin {
 
 type OriginCount {
   Characters: Int!
-  Linages: Int!
+  Lineages: Int!
   SpellOrigins: Int!
 }
 
@@ -315,7 +331,7 @@ type SpellCount {
 type SpellLineage {
   Spell: Spell!
   createdAt: DateTime!
-  linageId: Int!
+  lineageId: Int!
   spellId: Int!
   updatedAt: DateTime!
 }
