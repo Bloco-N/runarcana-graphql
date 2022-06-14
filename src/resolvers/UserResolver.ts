@@ -19,10 +19,10 @@ export class UserResolver {
         Origin: true,
         Region: true,
         Linage: true,
+        CharacterRunarcanaClass: true,
         SpellCharacters: true,
-        CharacterMisteries: true,
         CharacterElements: true,
-        CharacterRunarcanaClass: true
+        CharacterMisteries: true
       }
 
     })
@@ -44,11 +44,13 @@ export class UserResolver {
       where: { userId: ctx.user.id },
       include: {
         Past: true,
-        Region: true,
         Origin: true,
-        RunarcanaClass: true,
+        Region: true,
+        Linage: true,
+        CharacterRunarcanaClass: true,
         SpellCharacters: true,
-        CharacterElements: true
+        CharacterElements: true,
+        CharacterMisteries: true
       }
     })
     return {

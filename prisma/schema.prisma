@@ -195,13 +195,13 @@ model SpellComponent {
 
 model SpellLineage {
   spellId   Int
-  linageId  Int
+  lineageId Int
   Spell     Spell    @relation(fields: [spellId], references: [id])
-  Linage    Lineage  @relation(fields: [linageId], references: [id])
+  Linage    Lineage  @relation(fields: [lineageId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@id([spellId, linageId])
+  @@id([spellId, lineageId])
 }
 
 model SpellClass {

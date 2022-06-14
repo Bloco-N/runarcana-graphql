@@ -18,7 +18,6 @@ type Character {
   Region: Region!
   SpellCharacters: [SpellCharacter!]!
   _count: CharacterCount
-  classId: Int!
   createdAt: DateTime!
   essence: String!
   exaltation: String!
@@ -29,7 +28,6 @@ type Character {
   originId: Int!
   pastId: Int!
   regionId: Int!
-  runarcanaClassId: Int
   updatedAt: DateTime!
   userId: Int!
 }
@@ -196,7 +194,6 @@ type OriginCount {
   Characters: Int!
   Linages: Int!
   SpellOrigins: Int!
-  Spells: Int!
 }
 
 type Past {
@@ -250,7 +247,6 @@ type RunarcanaClass {
 
 type RunarcanaClassCount {
   CharacterRunarcanaClass: Int!
-  Characters: Int!
   SpellClasses: Int!
 }
 
@@ -279,7 +275,6 @@ type Spell {
   level: Int!
   materials: String!
   name: String!
-  originId: Int!
   rangeId: Int!
   updatedAt: DateTime!
 }
