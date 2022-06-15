@@ -25,6 +25,8 @@ export default class UserService {
     let characters = await ctx.prisma.character.findMany({
       where: { userId: ctx.user.id },
       include: {
+        Past: true,
+        Region: true,
         Origin: {
           include: {
             SpellOrigins: spellInclude,
