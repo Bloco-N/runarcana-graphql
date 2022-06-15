@@ -5,86 +5,17 @@ import { SignUpInputData } from '../inputs/SignUpInputData'
 import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
-
-const spellInclude = {
-  include: {
-    Spell: {
-      include: {
-        Conjuration: true,
-        Duration: true,
-        Range: true,
-        SpellComponents: {
-          include: {
-            Component: true
-          }
-        }
-      }
-    }
-  }
-}
+import UserService from '../services/UserService'
 
 @Resolver(User)
 export class UserResolver {
+  userService = new UserService()
+
   @Query(() => UserResponse, { nullable: true })
   @Authorized()
-  async userInfo (@Ctx() ctx: IContext): Promise<UserResponse> {
-    const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
-    if (!user) throw Error('❌ User not found')
-    const characters = await ctx.prisma.character.findMany({
-      where: { userId: ctx.user.id },
-      include: {
-        Origin: {
-          include: {
-            SpellOrigins: spellInclude,
-            Lineages: true
-          }
-        },
-        Lineage: {
-          include: {
-            SpellLineages: spellInclude
-          }
-        },
-        CharacterRunarcanaClass: {
-          include: {
-            RunarcanaClass: {
-              include: {
-                SpellClasses: spellInclude
-              }
-            }
-          }
-        },
-        SpellCharacters: spellInclude,
-        CharacterElements: {
-          include: {
-            Element: {
-              include: {
-                ElementIngredients: true,
-                ElementRecipes: true
-              }
-            }
-          }
-        },
-        CharacterMisteries: {
-          include: {
-            Mystery: {
-              include: {
-                SpellMysteries: spellInclude
-              }
-            }
-          }
-        }
-
-      }
-
-    })
-    return {
-      id: user.id,
-      username: user.username,
-      nickname: user.nickname,
-      createdAt: user.createdAt,
-      updatedAt: user.updatedAt,
-      characters
-    }
+  async userInfo (@Ctx() ctx: IContext, @Arg('charId', { nullable: true }) charId?:number): Promise<UserResponse> {
+    const user = await this.userService.fetchAll(ctx, charId)
+    return user
   }
 
   @Mutation(() => ApiResponse)

@@ -225,7 +225,7 @@ type PastCount {
 }
 
 type Query {
-  userInfo: UserResponse
+  userInfo(charId: Float): UserResponse
 }
 
 type Range {
