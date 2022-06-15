@@ -23,6 +23,6 @@ export class UserResolver {
     const hashedPassword = await hash(data.password, 10)
     await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })
 
-    return new ApiResponse('User created')
+    return new ApiResponse('✅ user created')
   }
 }
