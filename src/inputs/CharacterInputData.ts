@@ -15,6 +15,9 @@ export class CharacterInputData {
     pastId:number
 
   @Field()
+    runarcanaClassId:number
+
+  @Field()
     name:string
 
   @Field()

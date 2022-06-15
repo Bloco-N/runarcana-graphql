@@ -60,6 +60,7 @@ input CharacterInputData {
   originId: Float!
   pastId: Float!
   regionId: Float!
+  runarcanaClassId: Float!
 }
 
 type CharacterMistery {
@@ -174,7 +175,7 @@ type LineageCount {
 }
 
 type Mutation {
-  create(data: CharacterInputData!): Character!
+  create(data: CharacterInputData!): ApiResponse!
   signIn(data: SignInInputData!): Auth!
   signUp(data: SignUpInputData!): ApiResponse!
 }
