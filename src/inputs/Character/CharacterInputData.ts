@@ -1,7 +1,7 @@
 import { Field, InputType } from 'type-graphql'
 
 @InputType()
-export class CharacterInputData {
+export default class CharacterInputData {
   @Field()
     regionId:number
 
@@ -13,9 +13,6 @@ export class CharacterInputData {
 
   @Field()
     pastId:number
-
-  @Field()
-    runarcanaClassId:number
 
   @Field()
     name:string

@@ -36,6 +36,11 @@ type Character {
   userId: Int!
 }
 
+input CharacterAddClassInputData {
+  characterId: Float!
+  runarcanaClassId: Float!
+}
+
 type CharacterCount {
   CharacterElements: Int!
   CharacterMisteries: Int!
@@ -43,15 +48,7 @@ type CharacterCount {
   SpellCharacters: Int!
 }
 
-type CharacterElement {
-  Element: Element!
-  characterId: Int!
-  createdAt: DateTime!
-  elementId: Int!
-  updatedAt: DateTime!
-}
-
-input CharacterInputData {
+input CharacterCreateInputData {
   essence: String!
   exaltation: String!
   expression: String!
@@ -61,6 +58,14 @@ input CharacterInputData {
   pastId: Float!
   regionId: Float!
   runarcanaClassId: Float!
+}
+
+type CharacterElement {
+  Element: Element!
+  characterId: Int!
+  createdAt: DateTime!
+  elementId: Int!
+  updatedAt: DateTime!
 }
 
 type CharacterMistery {
@@ -78,6 +83,28 @@ type CharacterRunarcanaClass {
   level: Int!
   runarcanaClassId: Int!
   updatedAt: DateTime!
+}
+
+input CharacterRunarcanaClassId {
+  characterId: Float!
+  runarcanaClassId: Float!
+}
+
+input CharacterUpdateClassInputData {
+  id: CharacterRunarcanaClassId!
+  runarcanaClassId: Float!
+}
+
+input CharacterUpdateInputData {
+  essence: String!
+  exaltation: String!
+  expression: String!
+  id: Float!
+  lineageId: Float!
+  name: String!
+  originId: Float!
+  pastId: Float!
+  regionId: Float!
 }
 
 type Component {
@@ -175,9 +202,15 @@ type LineageCount {
 }
 
 type Mutation {
-  create(data: CharacterInputData!): ApiResponse!
+  addCharacterClass(data: CharacterAddClassInputData!): ApiResponse!
+  createCharacter(data: CharacterCreateInputData!): ApiResponse!
+  deleteCharacter(id: Float!): ApiResponse!
+  deleteCharacterClass(data: CharacterRunarcanaClassId!): ApiResponse!
+  levelUpCharacterClass(data: CharacterRunarcanaClassId!): ApiResponse!
   signIn(data: SignInInputData!): Auth!
   signUp(data: SignUpInputData!): ApiResponse!
+  updateCharacter(data: CharacterUpdateInputData!): ApiResponse!
+  updateCharacterClass(data: CharacterUpdateClassInputData!): ApiResponse!
 }
 
 type Mystery {
