@@ -2,7 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
 }
 
 generator typegraphql {
@@ -174,8 +175,8 @@ model Mystery {
 model SpellCharacter {
   spellId     Int
   characterId Int
-  Spell       Spell     @relation(fields: [spellId], references: [id])
-  Character   Character @relation(fields: [characterId], references: [id])
+  Spell       Spell     @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  Character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
@@ -185,8 +186,8 @@ model SpellCharacter {
 model SpellComponent {
   spellId     Int
   componentId Int
-  Spell       Spell     @relation(fields: [spellId], references: [id])
-  Component   Component @relation(fields: [componentId], references: [id])
+  Spell       Spell     @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  Component   Component @relation(fields: [componentId], references: [id], onDelete: Cascade)
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
@@ -196,8 +197,8 @@ model SpellComponent {
 model SpellLineage {
   spellId   Int
   lineageId Int
-  Spell     Spell    @relation(fields: [spellId], references: [id])
-  Linage    Lineage  @relation(fields: [lineageId], references: [id])
+  Spell     Spell    @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  Linage    Lineage  @relation(fields: [lineageId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -207,8 +208,8 @@ model SpellLineage {
 model SpellClass {
   spellId        Int
   classId        Int
-  Spell          Spell          @relation(fields: [spellId], references: [id])
-  RunarcanaClass RunarcanaClass @relation(fields: [classId], references: [id])
+  Spell          Spell          @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  RunarcanaClass RunarcanaClass @relation(fields: [classId], references: [id], onDelete: Cascade)
   createdAt      DateTime       @default(now())
   updatedAt      DateTime       @updatedAt
 
@@ -218,8 +219,8 @@ model SpellClass {
 model SpellMystery {
   spellId   Int
   mysteryId Int
-  Spell     Spell    @relation(fields: [spellId], references: [id])
-  Mystery   Mystery  @relation(fields: [mysteryId], references: [id])
+  Spell     Spell    @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  Mystery   Mystery  @relation(fields: [mysteryId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -229,8 +230,8 @@ model SpellMystery {
 model CharacterMistery {
   characterId Int
   mysteryId   Int
-  Character   Character @relation(fields: [characterId], references: [id])
-  Mystery     Mystery   @relation(fields: [mysteryId], references: [id])
+  Character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  Mystery     Mystery   @relation(fields: [mysteryId], references: [id], onDelete: Cascade)
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
@@ -240,8 +241,8 @@ model CharacterMistery {
 model SpellOrigin {
   spellId   Int
   originId  Int
-  Origin    Origin   @relation(fields: [originId], references: [id])
-  Spell     Spell    @relation(fields: [spellId], references: [id])
+  Origin    Origin   @relation(fields: [originId], references: [id], onDelete: Cascade)
+  Spell     Spell    @relation(fields: [spellId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -265,7 +266,7 @@ model Element {
 model ElementRecipe {
   id                 Int                 @id @default(autoincrement())
   elementId          Int
-  Element            Element             @relation(fields: [elementId], references: [id])
+  Element            Element             @relation(fields: [elementId], references: [id], onDelete: Cascade)
   ElementIngredients ElementIngredient[]
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
@@ -274,8 +275,8 @@ model ElementRecipe {
 model ElementIngredient {
   elementId       Int
   elementRecipeId Int
-  Element         Element       @relation(fields: [elementId], references: [id])
-  ElementRecipe   ElementRecipe @relation(fields: [elementRecipeId], references: [id])
+  Element         Element       @relation(fields: [elementId], references: [id], onDelete: Cascade)
+  ElementRecipe   ElementRecipe @relation(fields: [elementRecipeId], references: [id], onDelete: Cascade)
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
 
@@ -285,8 +286,8 @@ model ElementIngredient {
 model CharacterElement {
   elementId   Int
   characterId Int
-  Element     Element   @relation(fields: [elementId], references: [id])
-  Character   Character @relation(fields: [characterId], references: [id])
+  Element     Element   @relation(fields: [elementId], references: [id], onDelete: Cascade)
+  Character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
@@ -297,8 +298,8 @@ model CharacterRunarcanaClass {
   runarcanaClassId Int
   characterId      Int
   level            Int
-  RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id])
-  Character        Character      @relation(fields: [characterId], references: [id])
+  RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id], onDelete: Cascade)
+  Character        Character      @relation(fields: [characterId], references: [id], onDelete: Cascade)
   createdAt        DateTime       @default(now())
   updatedAt        DateTime       @updatedAt
 
