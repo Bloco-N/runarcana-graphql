@@ -4,7 +4,7 @@ import { compare } from 'bcryptjs'
 import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
 import { IContext } from '../interfaces/IContext'
-import { SignInInputData } from '../inputs/SignInInputData'
+import SignInInputData from '../inputs/User/SignInInputData'
 
 @Resolver(Auth)
 export class SessionResolver {

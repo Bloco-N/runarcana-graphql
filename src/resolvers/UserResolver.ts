@@ -1,7 +1,7 @@
 import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from 'type-graphql'
 import { User } from '../schemas/User'
 import { hash } from 'bcryptjs'
-import { SignUpInputData } from '../inputs/SignUpInputData'
+import SignUpInputData from '../inputs/User/SignUpInputData'
 import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
