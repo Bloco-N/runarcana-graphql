@@ -58,13 +58,13 @@ export default class CharacterService {
   }
 
   public async updateRunarcanaClass (ctx:IContext, data:CharacterUpdateClassInputData) {
-    const { id, runarcanaClassId } = data
+    const { id, ...classData } = data
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.update({
       where: {
         runarcanaClassId_characterId: id
       },
       data: {
-        runarcanaClassId
+        ...classData
       }
     })
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')

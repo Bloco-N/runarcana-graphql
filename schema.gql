@@ -92,6 +92,7 @@ input CharacterRunarcanaClassId {
 
 input CharacterUpdateClassInputData {
   id: CharacterRunarcanaClassId!
+  level: Float!
   runarcanaClassId: Float!
 }
 
