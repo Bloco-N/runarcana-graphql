@@ -8,4 +8,7 @@ export default class CharacterUpdateClassInputData {
 
   @Field()
     runarcanaClassId:number
+
+  @Field()
+    level:number
 }
