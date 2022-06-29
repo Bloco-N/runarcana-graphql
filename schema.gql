@@ -260,6 +260,7 @@ type PastCount {
 }
 
 type Query {
+  listAllSpells(search: String): SpellResponse!
   userInfo(charId: Float): UserResponse
 }
 
@@ -317,6 +318,7 @@ type Spell {
   Duration: Duration!
   Range: Range!
   SpellComponents: [SpellComponent!]!
+  SpellMysteries: [SpellMystery!]!
   _count: SpellCount
   conjurationId: Int!
   createdAt: DateTime!
@@ -372,6 +374,7 @@ type SpellLineage {
 }
 
 type SpellMystery {
+  Mystery: Mystery!
   Spell: Spell!
   createdAt: DateTime!
   mysteryId: Int!
@@ -385,6 +388,10 @@ type SpellOrigin {
   originId: Int!
   spellId: Int!
   updatedAt: DateTime!
+}
+
+type SpellResponse {
+  spells: [Spell!]!
 }
 
 type UserResponse {

@@ -16,6 +16,12 @@ export default class UserService {
               include: {
                 Component: true
               }
+            },
+            SpellMysteries: {
+              include: {
+                Spell: true,
+                Mystery: true
+              }
             }
           }
         }
