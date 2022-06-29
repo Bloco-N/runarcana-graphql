@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client'
-import { UserResponse } from '../schemas/UserResponse'
+import { IUser } from './IUser'
 
 export interface IContext{
   prisma:PrismaClient
   token?:string
-  user?: UserResponse
+  user?: IUser
 }
