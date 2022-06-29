@@ -14,9 +14,7 @@ const app = async () => {
   const schema = await tq.buildSchema({
     resolvers: [
       Auth,
-      resolvers.UserResolver,
-      resolvers.SessionResolver,
-      resolvers.CharacterResolver
+      ...resolvers
     ],
     authChecker: Authentication,
     emitSchemaFile: true
