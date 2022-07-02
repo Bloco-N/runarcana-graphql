@@ -1,8 +1,11 @@
+import { hash } from 'bcryptjs'
+import SignUpInputData from '../inputs/User/SignUpInputData'
 import { IContext } from '../interfaces/IContext'
+import { ApiResponse } from '../schemas/ApiResponse'
 import { UserResponse } from '../schemas/UserResponse'
 
 export default class UserService {
-  public async fetchAll (ctx:IContext, charId:number): Promise<UserResponse> {
+  public async fetchAll (ctx:IContext, charId?:number): Promise<UserResponse> {
     const user = await ctx.prisma.user.findUnique({ where: { id: ctx.user.id } })
     if (!user) throw Error('❌ User not found')
     const spellInclude = {
@@ -88,5 +91,12 @@ export default class UserService {
       updatedAt: user.updatedAt,
       characters
     }
+  }
+
+  public async create (ctx:IContext, data:SignUpInputData):Promise<ApiResponse> {
+    const hashedPassword = await hash(data.password, 10)
+    await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })
+
+    return new ApiResponse('✅ user created')
   }
 }

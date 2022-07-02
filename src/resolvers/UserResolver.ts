@@ -1,6 +1,5 @@
 import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from 'type-graphql'
 import { User } from '../schemas/User'
-import { hash } from 'bcryptjs'
 import SignUpInputData from '../inputs/User/SignUpInputData'
 import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
@@ -20,9 +19,7 @@ export class UserResolver {
 
   @Mutation(() => ApiResponse)
   async signUp (@Arg('data') data:SignUpInputData, @Ctx() ctx:IContext):Promise<ApiResponse> {
-    const hashedPassword = await hash(data.password, 10)
-    await ctx.prisma.user.create({ data: { ...data, password: hashedPassword } })
-
-    return new ApiResponse('✅ user created')
+    const response = await this.userService.create(ctx, data)
+    return response
   }
 }
