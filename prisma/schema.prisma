@@ -18,7 +18,7 @@ datasource db {
 model User {
   id         Int         @id @default(autoincrement())
   username   String      @unique
-  nickname   String?
+  nickname   String
   password   String
   Characters Character[]
   createdAt  DateTime    @default(now())
