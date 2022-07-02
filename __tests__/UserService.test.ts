@@ -7,12 +7,11 @@ import { IContext } from '../src/interfaces/IContext'
 
 const prisma = new PrismaClient()
 
-afterAll(async () => {
-  await prisma.user.delete({ where: { username: 'aurora' } })
-  await prisma.$disconnect()
-})
-
 describe('UserService tests', () => {
+  afterAll(async () => {
+    await prisma.user.delete({ where: { username: 'aurora' } })
+    await prisma.$disconnect()
+  })
   const ctx:IContext = {
     prisma
   }
