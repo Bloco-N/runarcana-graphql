@@ -20,7 +20,7 @@ const app = async () => {
     emitSchemaFile: true
   })
 
-  new ApolloServer({
+  return new ApolloServer({
     schema,
     context
   }).listen({ port: PORT }, () =>
