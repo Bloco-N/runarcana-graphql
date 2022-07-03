@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { ApolloServer, gql } from 'apollo-server'
-import { app } from '../src/app'
+import { app } from '../../src/app'
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()

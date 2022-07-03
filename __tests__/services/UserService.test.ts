@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import 'reflect-metadata'
-import { ApiResponse } from '../src/schemas/ApiResponse'
+import { ApiResponse } from '../../src/schemas/ApiResponse'
 import { PrismaClient } from '@prisma/client'
-import UserService from '../src/services/UserService'
-import { IContext } from '../src/interfaces/IContext'
+import UserService from '../../src/services/UserService'
+import { IContext } from '../../src/interfaces/IContext'
 
 const prisma = new PrismaClient()
 
