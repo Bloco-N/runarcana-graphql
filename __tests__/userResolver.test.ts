@@ -7,29 +7,36 @@ const prisma = new PrismaClient()
 let server:ApolloServer
 
 describe('UserResolver tests', () => {
-  beforeEach(async () => {
+  beforeAll(async () => {
     server = await app(8081, false)
-  })
-  afterEach(async () => {
-    server.stop()
   })
 
   afterAll(async () => {
+    server.stop()
     await prisma.user.delete({ where: { username: 'aurora' } })
     await prisma.$disconnect()
   })
 
-  const query = gql`
+  const SIGN_UP = gql`
     mutation SignUp($data: SignUpInputData!) {
       signUp(data: $data) {
         message
       }
     }
   `
+  const SIGN_IN = gql`
+    mutation SignIn($data: SignInInputData!) {
+      signIn(data: $data) {
+        
+        token
+
+      }
+    }
+  `
 
   test('should create a user', async () => {
     const res = await server.executeOperation({
-      query,
+      query: SIGN_UP,
       variables: {
         data: {
           username: 'aurora',
@@ -45,7 +52,7 @@ describe('UserResolver tests', () => {
 
   test('should not create user', async () => {
     const res = await server.executeOperation({
-      query,
+      query: SIGN_UP,
       variables: {
         data: {
           username: 'aurora',
@@ -55,5 +62,49 @@ describe('UserResolver tests', () => {
     })
     const { data } = res
     expect(data).not.toBeDefined()
+  })
+
+  test('should sign in', async () => {
+    const res = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          username: 'aurora',
+          password: 'aurorasenha'
+        }
+      }
+    })
+    const { data: { signIn } } = res
+    expect(signIn).toHaveProperty('token')
+  })
+
+  test('should not sign in, wrong password', async () => {
+    const res = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          username: 'aurora',
+          password: 'aurorasenhaerrada'
+        }
+      }
+    })
+    const { errors: [GraphQLError] } = res
+    const { message } = GraphQLError
+    expect(message).toBe('❌ User or Password incorrect')
+  })
+
+  test('should not sign in, wrong username', async () => {
+    const res = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          username: 'auroraisnothere',
+          password: 'aurorasenha'
+        }
+      }
+    })
+    const { errors: [GraphQLError] } = res
+    const { message } = GraphQLError
+    expect(message).toBe('❌ User or Password incorrect')
   })
 })
