@@ -3,4 +3,4 @@ import { app } from './app'
 dontenv.config()
 const { PORT } = process.env
 
-app(PORT)
+app(Number(PORT))

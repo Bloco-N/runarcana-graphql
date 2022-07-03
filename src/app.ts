@@ -9,7 +9,7 @@ import { Auth } from './schemas/Auth'
 import Authentication from './middlewares/Authentication'
 dontenv.config()
 
-const app = async (port, log = true) => {
+const app = async (port:number, log = true) => {
   const schema = await tq.buildSchema({
     resolvers: [
       Auth,
