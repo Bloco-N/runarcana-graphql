@@ -50,7 +50,7 @@ describe('UserResolver tests', () => {
     expect(message).toBe('✅ user created')
   })
 
-  test('should not create user', async () => {
+  test('should not create a user', async () => {
     const res = await server.executeOperation({
       query: SIGN_UP,
       variables: {
@@ -106,5 +106,31 @@ describe('UserResolver tests', () => {
     const { errors: [GraphQLError] } = res
     const { message } = GraphQLError
     expect(message).toBe('❌ User or Password incorrect')
+  })
+
+  test('should not sign in, password undefined', async () => {
+    const res = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          username: 'aurora'
+        }
+      }
+    })
+    const { data } = res
+    expect(data).not.toBeDefined()
+  })
+
+  test('should not sign in, username undefined', async () => {
+    const res = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          password: 'aurorasenha'
+        }
+      }
+    })
+    const { data } = res
+    expect(data).not.toBeDefined()
   })
 })
