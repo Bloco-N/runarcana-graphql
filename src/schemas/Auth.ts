@@ -3,6 +3,11 @@ import { IAuth } from '../interfaces/IAuth'
 import { UserResponse } from './UserResponse'
 @ObjectType()
 export class Auth implements IAuth {
+  constructor (token:string, user:UserResponse) {
+    this.token = token
+    this.user = user
+  }
+
   @Field({ nullable: false })
     token: string
 

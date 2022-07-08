@@ -5,6 +5,8 @@ import { UserResponse } from '../schemas/UserResponse'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
 import UserService from '../services/UserService'
+import { Auth } from '../schemas/Auth'
+import SignInInputData from '../inputs/User/SignInInputData'
 
 @Resolver(User)
 export class UserResolver {
@@ -20,6 +22,12 @@ export class UserResolver {
   @Mutation(() => ApiResponse)
   async signUp (@Arg('data') data:SignUpInputData, @Ctx() ctx:IContext):Promise<ApiResponse> {
     const response = await this.userService.create(ctx, data)
+    return response
+  }
+
+  @Mutation(() => Auth)
+  async signIn (@Arg('data')data:SignInInputData, @Ctx() ctx:IContext): Promise<Auth> {
+    const response = await this.userService.signIn(ctx, data)
     return response
   }
 }
