@@ -43,12 +43,12 @@
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index.ts",
     "test": "jest -i --verbose ./__tests__ --coverage true",
-    "migration:create": "npx prisma migrate dev --name",
-    "migration:run": "npx prisma migrate dev",
-    "migration:reset": "npx prisma migrate reset",
+    "prisma:create": "npx prisma migrate dev --name",
+    "prisma:run": "npx prisma migrate dev",
+    "prisma:reset": "npx prisma migrate reset",
     "prisma:generate": "npx prisma generate",
-    "seed": "npx prisma db seed",
-    "studio": "npx prisma studio"
+    "prisma:seed": "npx prisma db seed",
+    "prisma:studio": "npx prisma studio"
   },
   "prisma": {
     "seed": "ts-node prisma/seeds/seed.ts"
