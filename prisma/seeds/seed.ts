@@ -19,6 +19,9 @@ import spellLineages from './spellLineages'
 import spellMysteries from './spellMysteries'
 import elementRecipes from './elementRecipes'
 import elementIngrendients from './elementIngredients'
+import inheritances from './inheritances'
+import inheritanceOrigins from './inheritanceOrigins'
+import inheritanceRegions from './inheritanceRegions'
 
 const prisma = new PrismaClient()
 
@@ -68,7 +71,6 @@ async function main () {
       data: element
     })
   }
-
   for (const past of pasts) {
     await prisma.past.create({
       data: past
@@ -122,6 +124,21 @@ async function main () {
   for (const elementIngredient of elementIngrendients) {
     await prisma.elementIngredient.create({
       data: elementIngredient
+    })
+  }
+  for (const inheritance of inheritances) {
+    await prisma.inheritance.create({
+      data: inheritance
+    })
+  }
+  for (const inheritanceRegion of inheritanceRegions) {
+    await prisma.inheritanceRegion.create({
+      data: inheritanceRegion
+    })
+  }
+  for (const inheritanceOrigin of inheritanceOrigins) {
+    await prisma.inheritanceOrigin.create({
+      data: inheritanceOrigin
     })
   }
 }

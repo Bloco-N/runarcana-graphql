@@ -47,24 +47,28 @@ model Character {
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())
   updatedAt               DateTime                  @updatedAt
+  CharacterInheritance    CharacterInheritance[]
 }
 
 model Region {
-  id         Int         @id @default(autoincrement())
-  name       String
-  Characters Character[]
-  createdAt  DateTime    @default(now())
-  updatedAt  DateTime    @updatedAt
+  id                 Int                  @id @default(autoincrement())
+  name               String
+  Characters         Character[]
+  InheritanceRegion  InheritanceRegion[]
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  InheritanceLineage InheritanceLineage[]
 }
 
 model Origin {
-  id           Int           @id @default(autoincrement())
-  name         String
-  Characters   Character[]
-  Lineages     Lineage[]
-  SpellOrigins SpellOrigin[]
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
+  id                Int                 @id @default(autoincrement())
+  name              String
+  Characters        Character[]
+  Lineages          Lineage[]
+  SpellOrigins      SpellOrigin[]
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  InheritanceOrigin InheritanceOrigin[]
 }
 
 model Lineage {
@@ -260,7 +264,6 @@ model Element {
   CharacterElements  CharacterElement[]
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
-
 }
 
 model ElementRecipe {
@@ -304,4 +307,62 @@ model CharacterRunarcanaClass {
   updatedAt        DateTime       @updatedAt
 
   @@id([runarcanaClassId, characterId])
+}
+
+model Inheritance {
+  id                   Int                    @id @default(autoincrement())
+  name                 String
+  prerequisites        String                 @db.Text
+  description          String                 @db.Text
+  atributes            String                 @db.Text
+  benefits             String                 @db.Text
+  rechosen             String
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+  InheritanceOrigin    InheritanceOrigin[]
+  InheritanceRegion    InheritanceRegion[]
+  InheritanceLineage   InheritanceLineage[]
+  CharacterInheritance CharacterInheritance[]
+}
+
+model InheritanceOrigin {
+  inheritanceId Int
+  originId      Int
+  Inheritence   Inheritance @relation(fields: [inheritanceId], references: [id], onDelete: Cascade)
+  Origin        Origin      @relation(fields: [originId], references: [id], onDelete: Cascade)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@id([inheritanceId, originId])
+}
+
+model InheritanceRegion {
+  inheritanceId Int
+  regionId      Int
+  Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id])
+  Region        Region      @relation(fields: [regionId], references: [id])
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@id([inheritanceId, regionId])
+}
+
+model InheritanceLineage {
+  Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id])
+  Region        Region      @relation(fields: [regionId], references: [id])
+  inheritanceId Int
+  regionId      Int
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@id([inheritanceId, regionId])
+}
+
+model CharacterInheritance {
+  Character     Character   @relation(fields: [characterId], references: [id])
+  Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id])
+  characterId   Int
+  inheritanceId Int
+
+  @@id([characterId, inheritanceId])
 }
