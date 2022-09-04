@@ -22,6 +22,7 @@ import elementIngrendients from './elementIngredients'
 import inheritances from './inheritances'
 import inheritanceOrigins from './inheritanceOrigins'
 import inheritanceRegions from './inheritanceRegions'
+import inheritanceLineages from './inheritanceLineages'
 
 const prisma = new PrismaClient()
 
@@ -139,6 +140,11 @@ async function main () {
   for (const inheritanceOrigin of inheritanceOrigins) {
     await prisma.inheritanceOrigin.create({
       data: inheritanceOrigin
+    })
+  }
+  for (const InheritanceLineage of inheritanceLineages) {
+    await prisma.inheritanceLineage.create({
+      data: InheritanceLineage
     })
   }
 }

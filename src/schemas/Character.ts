@@ -1,11 +1,11 @@
 import { Field, ObjectType } from 'type-graphql'
 import {
   Character as PrismaCharacter,
-  Past,
-  Region
+  Past
 } from '@generated/type-graphql'
-import { Origin } from './relations/Origin'
-import { Lineage } from './relations/Lineage'
+import { Origin } from './Origin'
+import { Lineage } from './Lineage'
+import { Region } from './Region'
 import { SpellCharacter } from './relations/SpellCharacter'
 import { CharacterMistery } from './relations/CharacterMistery'
 import { CharacterElement } from './relations/CharacterElement'

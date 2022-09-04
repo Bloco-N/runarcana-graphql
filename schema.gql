@@ -43,6 +43,7 @@ input CharacterAddClassInputData {
 
 type CharacterCount {
   CharacterElements: Int!
+  CharacterInheritance: Int!
   CharacterMisteries: Int!
   CharacterRunarcanaClass: Int!
   SpellCharacters: Int!
@@ -187,7 +188,55 @@ type ElementRecipeCount {
   ElementIngredients: Int!
 }
 
+type Inheritance {
+  _count: InheritanceCount
+  atributes: String!
+  benefits: String!
+  createdAt: DateTime!
+  description: String!
+  id: Int!
+  name: String!
+  prerequisites: String!
+  rechosen: String!
+  updatedAt: DateTime!
+}
+
+type InheritanceCount {
+  CharacterInheritance: Int!
+  InheritanceLineage: Int!
+  InheritanceOrigin: Int!
+  InheritanceRegion: Int!
+}
+
+type InheritanceLineage {
+  Inheritance: Inheritance!
+  Lineage: Lineage!
+  createdAt: DateTime!
+  inheritanceId: Int!
+  lineageId: Int!
+  updatedAt: DateTime!
+}
+
+type InheritanceOrigin {
+  Inheritance: Inheritance!
+  Origin: Origin!
+  createdAt: DateTime!
+  inheritanceId: Int!
+  originId: Int!
+  updatedAt: DateTime!
+}
+
+type InheritanceRegion {
+  Inheritance: Inheritance!
+  Region: Region!
+  createdAt: DateTime!
+  inheritanceId: Int!
+  regionId: Int!
+  updatedAt: DateTime!
+}
+
 type Lineage {
+  InheritanceLineage: [InheritanceLineage!]!
   SpellLineages: [SpellLineage!]!
   _count: LineageCount
   createdAt: DateTime!
@@ -199,6 +248,7 @@ type Lineage {
 
 type LineageCount {
   Characters: Int!
+  InheritanceLineage: Int!
   SpellLineages: Int!
 }
 
@@ -232,6 +282,7 @@ type MysteryCount {
 }
 
 type Origin {
+  InheritanceOrigin: [InheritanceOrigin!]!
   Lineages: [Lineage!]!
   SpellOrigins: [SpellOrigin!]!
   _count: OriginCount
@@ -243,6 +294,7 @@ type Origin {
 
 type OriginCount {
   Characters: Int!
+  InheritanceOrigin: Int!
   Lineages: Int!
   SpellOrigins: Int!
 }
@@ -277,6 +329,7 @@ type RangeCount {
 }
 
 type Region {
+  InheritanceRegion: [InheritanceRegion!]!
   _count: RegionCount
   createdAt: DateTime!
   id: Int!
@@ -286,6 +339,7 @@ type Region {
 
 type RegionCount {
   Characters: Int!
+  InheritanceRegion: Int!
 }
 
 type RunarcanaClass {

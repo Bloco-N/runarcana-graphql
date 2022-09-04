@@ -51,13 +51,12 @@ model Character {
 }
 
 model Region {
-  id                 Int                  @id @default(autoincrement())
-  name               String
-  Characters         Character[]
-  InheritanceRegion  InheritanceRegion[]
-  createdAt          DateTime             @default(now())
-  updatedAt          DateTime             @updatedAt
-  InheritanceLineage InheritanceLineage[]
+  id                Int                 @id @default(autoincrement())
+  name              String
+  Characters        Character[]
+  InheritanceRegion InheritanceRegion[]
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
 }
 
 model Origin {
@@ -72,14 +71,15 @@ model Origin {
 }
 
 model Lineage {
-  id            Int            @id @default(autoincrement())
-  originId      Int
-  name          String
-  Origin        Origin         @relation(fields: [originId], references: [id])
-  Characters    Character[]
-  SpellLineages SpellLineage[]
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
+  id                 Int                  @id @default(autoincrement())
+  originId           Int
+  name               String
+  Origin             Origin               @relation(fields: [originId], references: [id])
+  Characters         Character[]
+  SpellLineages      SpellLineage[]
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  InheritanceLineage InheritanceLineage[]
 }
 
 model RunarcanaClass {
@@ -328,7 +328,7 @@ model Inheritance {
 model InheritanceOrigin {
   inheritanceId Int
   originId      Int
-  Inheritence   Inheritance @relation(fields: [inheritanceId], references: [id], onDelete: Cascade)
+  Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id], onDelete: Cascade)
   Origin        Origin      @relation(fields: [originId], references: [id], onDelete: Cascade)
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
@@ -349,13 +349,13 @@ model InheritanceRegion {
 
 model InheritanceLineage {
   Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id])
-  Region        Region      @relation(fields: [regionId], references: [id])
+  Lineage       Lineage     @relation(fields: [lineageId], references: [id])
   inheritanceId Int
-  regionId      Int
+  lineageId     Int
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
 
-  @@id([inheritanceId, regionId])
+  @@id([inheritanceId, lineageId])
 }
 
 model CharacterInheritance {

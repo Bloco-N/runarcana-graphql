@@ -10,7 +10,7 @@ inheritances.forEach((inheritance, inheritanceIndex) => {
     if (lineages.includes(lineage)) {
       inheritanceLineages.push({
         inheritanceId: inheritanceIndex + 1,
-        originId: lineages.indexOf(lineage) + 1,
+        lineageId: lineages.indexOf(lineage) + 1,
         createdAt: new Date(),
         updatedAt: new Date()
       })

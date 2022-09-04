@@ -72,16 +72,37 @@ export default class UserService {
       where: { userId: id },
       include: {
         Past: true,
-        Region: true,
+        Region: {
+          include: {
+            InheritanceRegion: {
+              include: {
+                Region: true,
+                Inheritance: true
+              }
+            }
+          }
+        },
         Origin: {
           include: {
             SpellOrigins: spellInclude,
+            InheritanceOrigin: {
+              include: {
+                Origin: true,
+                Inheritance: true
+              }
+            },
             Lineages: true
           }
         },
         Lineage: {
           include: {
-            SpellLineages: spellInclude
+            SpellLineages: spellInclude,
+            InheritanceLineage: {
+              include: {
+                Lineage: true,
+                Inheritance: true
+              }
+            }
           }
         },
         CharacterRunarcanaClass: {

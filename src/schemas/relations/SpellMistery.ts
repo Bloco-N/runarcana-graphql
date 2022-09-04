@@ -1,7 +1,7 @@
 import { SpellMystery as PrismaSpellMystery } from '@generated/type-graphql'
 import { Field, ObjectType } from 'type-graphql'
 import { Spell } from '../Spell'
-import { Mystery } from './Mistery'
+import { Mystery } from '../Mistery'
 
 @ObjectType()
 export class SpellMystery extends PrismaSpellMystery {
