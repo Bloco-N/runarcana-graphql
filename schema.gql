@@ -14,6 +14,7 @@ type Auth {
 
 type Character {
   CharacterElements: [CharacterElement!]!
+  CharacterInheritance: [CharacterInheritance!]!
   CharacterMisteries: [CharacterMistery!]!
   CharacterRunarcanaClass: [CharacterRunarcanaClass!]!
   Lineage: Lineage!
@@ -67,6 +68,12 @@ type CharacterElement {
   createdAt: DateTime!
   elementId: Int!
   updatedAt: DateTime!
+}
+
+type CharacterInheritance {
+  Inheritance: Inheritance!
+  characterId: Int!
+  inheritanceId: Int!
 }
 
 type CharacterMistery {

@@ -10,6 +10,7 @@ import { SpellCharacter } from './relations/SpellCharacter'
 import { CharacterMistery } from './relations/CharacterMistery'
 import { CharacterElement } from './relations/CharacterElement'
 import { CharacterRunarcanaClass } from './relations/CharacterRunarcanaClass'
+import { CharacterInheritance } from './relations/CharacterInheritance'
 
 @ObjectType()
 export class Character extends PrismaCharacter {
@@ -36,4 +37,7 @@ export class Character extends PrismaCharacter {
 
   @Field(() => [CharacterMistery])
     CharacterMisteries?: CharacterMistery[]
+
+  @Field(() => [CharacterInheritance])
+    CharacterInheritance?: CharacterInheritance[]
 }

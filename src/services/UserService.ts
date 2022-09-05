@@ -125,6 +125,11 @@ export default class UserService {
             }
           }
         },
+        CharacterInheritance: {
+          include: {
+            Inheritance: true
+          }
+        },
         CharacterMisteries: {
           include: {
             Mystery: {
