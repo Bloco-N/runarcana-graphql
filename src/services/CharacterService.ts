@@ -1,8 +1,7 @@
-import CharacterAddClassInputData from '../inputs/Character/CharacterAddClassInputData'
 import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import CharacterRunarcanaClassId from '../inputs/Character/CharacterRunarcanaClassId'
 import CharacterUpdateClassInputData from '../inputs/Character/CharacterUpdateClassInputData'
 import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputData'
+import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
 
 export default class CharacterService {
@@ -47,10 +46,11 @@ export default class CharacterService {
     if (!deleted) throw new Error('❌ failed to delete character')
   }
 
-  public async addRunarcanaClass (ctx:IContext, data:CharacterAddClassInputData) {
+  public async addRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.create({
       data: {
-        ...data,
+        characterId: data.characterId,
+        runarcanaClassId: data.otherId,
         level: 1
       }
     })
@@ -61,7 +61,10 @@ export default class CharacterService {
     const { id, ...classData } = data
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.update({
       where: {
-        runarcanaClassId_characterId: id
+        runarcanaClassId_characterId: {
+          characterId: id.characterId,
+          runarcanaClassId: id.otherId
+        }
       },
       data: {
         ...classData
@@ -70,15 +73,21 @@ export default class CharacterService {
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
   }
 
-  public async levelUpRunarcanaClass (ctx:IContext, data:CharacterRunarcanaClassId) {
+  public async levelUpRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.findUnique({
       where: {
-        runarcanaClassId_characterId: data
+        runarcanaClassId_characterId: {
+          characterId: data.characterId,
+          runarcanaClassId: data.otherId
+        }
       }
     })
     const update = await ctx.prisma.characterRunarcanaClass.update({
       where: {
-        runarcanaClassId_characterId: data
+        runarcanaClassId_characterId: {
+          characterId: data.characterId,
+          runarcanaClassId: data.otherId
+        }
       },
       data: {
         level: characterRunarcanaClass.level + 1
@@ -87,13 +96,38 @@ export default class CharacterService {
     if (!update) throw new Error('❌ failed to update character')
   }
 
-  public async deleteRunarcanaClass (ctx:IContext, data:CharacterRunarcanaClassId) {
+  public async deleteRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
     const deleted = await ctx.prisma.characterRunarcanaClass.delete({
       where: {
-        runarcanaClassId_characterId: data
+        runarcanaClassId_characterId: {
+          characterId: data.characterId,
+          runarcanaClassId: data.otherId
+        }
       }
     })
 
+    if (!deleted) throw new Error('❌ failed to update character')
+  }
+
+  public async addSpellCharacter (ctx:IContext, data: CharacterIdPair) {
+    const spellCharacter = await ctx.prisma.spellCharacter.create({
+      data: {
+        characterId: data.characterId,
+        spellId: data.otherId
+      }
+    })
+    if (!spellCharacter) throw new Error('❌ failed to update character')
+  }
+
+  public async deleteSpellCharacter (ctx:IContext, data:CharacterIdPair) {
+    const deleted = await ctx.prisma.spellCharacter.delete({
+      where: {
+        spellId_characterId: {
+          characterId: data.characterId,
+          spellId: data.otherId
+        }
+      }
+    })
     if (!deleted) throw new Error('❌ failed to update character')
   }
 }

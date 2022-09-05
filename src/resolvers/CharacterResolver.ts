@@ -1,9 +1,8 @@
 import { Arg, Authorized, Ctx, Mutation, Resolver } from 'type-graphql'
-import CharacterAddClassInputData from '../inputs/Character/CharacterAddClassInputData'
 import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import CharacterRunarcanaClassId from '../inputs/Character/CharacterRunarcanaClassId'
 import CharacterUpdateClassInputData from '../inputs/Character/CharacterUpdateClassInputData'
 import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputData'
+import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
 import { Character } from '../schemas/Character'
@@ -36,7 +35,7 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async addCharacterClass (@Arg('data') data:CharacterAddClassInputData, @Ctx() ctx:IContext):Promise<ApiResponse> {
+  async addCharacterClass (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
     await this.characterService.addRunarcanaClass(ctx, data)
     return new ApiResponse('✅ character updated')
   }
@@ -50,15 +49,29 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async levelUpCharacterClass (@Arg('data') data:CharacterRunarcanaClassId, @Ctx() ctx:IContext):Promise<ApiResponse> {
+  async levelUpCharacterClass (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
     await this.characterService.levelUpRunarcanaClass(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async deleteCharacterClass (@Arg('data') data:CharacterRunarcanaClassId, @Ctx() ctx:IContext):Promise<ApiResponse> {
+  async deleteCharacterClass (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
     await this.characterService.deleteRunarcanaClass(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async addSpellCharacter (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
+    await this.characterService.addSpellCharacter(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async deleteSpellCharacter (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
+    await this.characterService.deleteSpellCharacter(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 }

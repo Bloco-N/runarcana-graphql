@@ -37,11 +37,6 @@ type Character {
   userId: Int!
 }
 
-input CharacterAddClassInputData {
-  characterId: Float!
-  runarcanaClassId: Float!
-}
-
 type CharacterCount {
   CharacterElements: Int!
   CharacterInheritance: Int!
@@ -70,6 +65,11 @@ type CharacterElement {
   updatedAt: DateTime!
 }
 
+input CharacterIdPair {
+  characterId: Float!
+  otherId: Float!
+}
+
 type CharacterInheritance {
   Inheritance: Inheritance!
   characterId: Int!
@@ -93,13 +93,8 @@ type CharacterRunarcanaClass {
   updatedAt: DateTime!
 }
 
-input CharacterRunarcanaClassId {
-  characterId: Float!
-  runarcanaClassId: Float!
-}
-
 input CharacterUpdateClassInputData {
-  id: CharacterRunarcanaClassId!
+  id: CharacterIdPair!
   level: Float!
   runarcanaClassId: Float!
 }
@@ -260,11 +255,13 @@ type LineageCount {
 }
 
 type Mutation {
-  addCharacterClass(data: CharacterAddClassInputData!): ApiResponse!
+  addCharacterClass(data: CharacterIdPair!): ApiResponse!
+  addSpellCharacter(data: CharacterIdPair!): ApiResponse!
   createCharacter(data: CharacterCreateInputData!): ApiResponse!
   deleteCharacter(id: Float!): ApiResponse!
-  deleteCharacterClass(data: CharacterRunarcanaClassId!): ApiResponse!
-  levelUpCharacterClass(data: CharacterRunarcanaClassId!): ApiResponse!
+  deleteCharacterClass(data: CharacterIdPair!): ApiResponse!
+  deleteSpellCharacter(data: CharacterIdPair!): ApiResponse!
+  levelUpCharacterClass(data: CharacterIdPair!): ApiResponse!
   signIn(data: SignInInputData!): Auth!
   signUp(data: SignUpInputData!): ApiResponse!
   updateCharacter(data: CharacterUpdateInputData!): ApiResponse!

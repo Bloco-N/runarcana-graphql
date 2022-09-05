@@ -1,10 +1,10 @@
 import { Field, InputType } from 'type-graphql'
-import CharacterRunarcanaClassId from './CharacterRunarcanaClassId'
+import CharacterIdPair from './CharacterIdPair'
 
 @InputType()
 export default class CharacterUpdateClassInputData {
-  @Field(() => CharacterRunarcanaClassId)
-    id:CharacterRunarcanaClassId
+  @Field(() => CharacterIdPair)
+    id:CharacterIdPair
 
   @Field()
     runarcanaClassId:number
