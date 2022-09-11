@@ -8,7 +8,8 @@ let server:ApolloServer
 
 describe('UserResolver tests', () => {
   beforeAll(async () => {
-    server = await app(8081, false)
+    const { server: apolloServer } = await app(8081, false)
+    server = apolloServer
   })
 
   afterAll(async () => {
