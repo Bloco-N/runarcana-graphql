@@ -74,4 +74,19 @@ export class CharacterResolver {
     await this.characterService.deleteSpellCharacter(ctx, data)
     return new ApiResponse('✅ character updated')
   }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async addInheritance(@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse>{
+    await this.characterService.addInheritance(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async deleteInheritance(@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse>{
+    await this.characterService.deleteInheritance(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
 }

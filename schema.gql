@@ -256,10 +256,12 @@ type LineageCount {
 
 type Mutation {
   addCharacterClass(data: CharacterIdPair!): ApiResponse!
+  addInheritance(data: CharacterIdPair!): ApiResponse!
   addSpellCharacter(data: CharacterIdPair!): ApiResponse!
   createCharacter(data: CharacterCreateInputData!): ApiResponse!
   deleteCharacter(id: Float!): ApiResponse!
   deleteCharacterClass(data: CharacterIdPair!): ApiResponse!
+  deleteInheritance(data: CharacterIdPair!): ApiResponse!
   deleteSpellCharacter(data: CharacterIdPair!): ApiResponse!
   levelUpCharacterClass(data: CharacterIdPair!): ApiResponse!
   signIn(data: SignInInputData!): Auth!

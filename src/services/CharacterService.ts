@@ -130,4 +130,31 @@ export default class CharacterService {
     })
     if (!deleted) throw new Error('❌ failed to update character')
   }
+
+  public async addInheritance(ctx:IContext, data:CharacterIdPair){
+    const characterInheritance = await ctx.prisma.characterInheritance.create({
+      data:{
+        characterId: data.characterId,
+        inheritanceId: data.otherId
+      }
+    })
+
+    if (!characterInheritance) throw new Error('❌ failed to update character')
+
+  }
+
+  public async deleteInheritance(ctx:IContext, data:CharacterIdPair){
+    const characterInheritance = await ctx.prisma.characterInheritance.delete({
+      where:{
+        characterId_inheritanceId:{
+          characterId: data.characterId,
+          inheritanceId: data.otherId
+        }
+      }
+    })
+
+    if (!characterInheritance) throw new Error('❌ failed to update character')
+
+  }
+
 }
