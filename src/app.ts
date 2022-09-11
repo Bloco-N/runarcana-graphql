@@ -23,11 +23,11 @@ const app = async (port:number, log = true) => {
     schema,
     context
   })
-  server.listen({ port }, () => {
+  const info = await server.listen({ port }, () => {
     if (log) console.log(`👌 Server ready at: http://localhost:${port}`)
   }
   )
-  return server
+  return { server, info }
 }
 
 export { app }
