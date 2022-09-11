@@ -7,6 +7,7 @@ import request from 'supertest'
 const prisma = new PrismaClient()
 let server:ApolloServer
 let url:string
+let token:string
 
 const SIGN_UP = gql`
 mutation SignUp($data: SignUpInputData!) {
@@ -32,6 +33,21 @@ describe('CharacterResolver tests', () => {
         }
       }
     })
+
+    const resLogin = await server.executeOperation({
+      query: SIGN_IN,
+      variables: {
+        data: {
+          username: 'aurora',
+          password: 'aurorasenha'
+        }
+      }
+    })
+
+    const { data: { signIn: { token:tokenLogin } } } = resLogin
+
+    token = tokenLogin
+
   })
 
   afterAll(async () => {
@@ -61,17 +77,6 @@ describe('CharacterResolver tests', () => {
   `
 
   test('should create a character', async () => {
-    const resLogin = await server.executeOperation({
-      query: SIGN_IN,
-      variables: {
-        data: {
-          username: 'aurora',
-          password: 'aurorasenha'
-        }
-      }
-    })
-
-    const { data: { signIn: { token } } } = resLogin
 
     const variables = {
       data: {
@@ -91,13 +96,74 @@ describe('CharacterResolver tests', () => {
       query: CREATE_CHAR,
       variables
     }
-    const {body: {data : { createCharacter: { message}}}} = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    const {body: {data : { createCharacter: { message } } } } = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
 
     expect(message).toBeDefined()
     expect(message).toBe('✅ character created')
   })
 
-  test('should add a class to character', () => {
-    
+  test('should add a class to character', async () => {
+
+    const { id }  = await prisma.character.findFirst({where: { name: 'toru'}})
+
+
+    const ADD_CLASS = `
+      mutation AddCharacterClass($data: CharacterIdPair!) {
+        addCharacterClass(data: $data) {
+          message
+        }
+      }
+    `
+
+    const variables = {
+      data: {
+        "otherId": 3,
+        "characterId": id
+      }
+    }
+
+    const queryData = {
+      query: ADD_CLASS,
+      variables
+    }
+
+    const {body: {data : { addCharacterClass: { message} } } } = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    expect(message).toBeDefined()
+    expect(message).toBe('✅ character updated')
+
+
+  })
+
+  test('should update character class', async () => {
+
+    const { id }  = await prisma.character.findFirst({where: { name: 'toru'}})
+
+    const variables = {
+      data: {
+        id: {
+          otherId: 3,
+          characterId: id
+        },
+        runarcanaClassId: 3,
+        level: 2
+      }
+    }
+
+    const UPDATE_CLASS = `
+      mutation UpdateCharacterClass($data: CharacterUpdateClassInputData!) {
+        updateCharacterClass(data: $data) {
+          message
+        }
+      }
+    `
+
+    const queryData = {
+      query: UPDATE_CLASS,
+      variables
+    }
+
+    const {body: {data : { updateCharacterClass: { message} } } } = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    expect(message).toBeDefined()
+    expect(message).toBe('✅ character updated')
   })
 })
