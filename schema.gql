@@ -23,18 +23,49 @@ type Character {
   Region: Region!
   SpellCharacters: [SpellCharacter!]!
   _count: CharacterCount
+  acrobatics: proficiency!
+  animalHandling: proficiency!
+  arcana: proficiency!
+  athletics: proficiency!
+  charisma: Int!
+  charismaSavingThrow: proficiency!
+  constitution: Int!
+  constitutionSavingThrow: proficiency!
   createdAt: DateTime!
+  deception: proficiency!
+  dexterity: Int!
+  dexteritySavingThrow: proficiency!
   essence: String!
   exaltation: String!
   expression: String!
+  history: proficiency!
   id: Int!
+  insight: proficiency!
+  intelligence: Int!
+  intelligenceSavingThrow: proficiency!
+  intimidation: proficiency!
+  investigation: proficiency!
   lineageId: Int!
+  medicine: proficiency!
   name: String!
+  nature: proficiency!
   originId: Int!
   pastId: Int!
+  perception: proficiency!
+  performance: proficiency!
+  persuasion: proficiency!
   regionId: Int!
+  religion: proficiency!
+  sleightOfHand: proficiency!
+  stealth: proficiency!
+  strength: Int!
+  strengthSavingThrow: proficiency!
+  survival: proficiency!
+  tecnology: proficiency!
   updatedAt: DateTime!
   userId: Int!
+  wisdom: Int!
+  wisdomSavingThrow: proficiency!
 }
 
 type CharacterCount {
@@ -461,4 +492,10 @@ type UserResponse {
   nickname: String!
   updatedAt: DateTime!
   username: String!
+}
+
+enum proficiency {
+  NOT_PROEFFICIENT
+  PROFFICIENT
+  SPECIALIST
 }

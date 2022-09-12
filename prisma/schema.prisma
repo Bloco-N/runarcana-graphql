@@ -25,6 +25,12 @@ model User {
   updatedAt  DateTime    @updatedAt
 }
 
+enum proficiency {
+  NOT_PROEFFICIENT
+  PROFFICIENT
+  SPECIALIST
+}
+
 model Character {
   id                      Int                       @id @default(autoincrement())
   userId                  Int
@@ -36,6 +42,37 @@ model Character {
   essence                 String
   expression              String
   exaltation              String
+  strength                Int                       @default(0)
+  dexterity               Int                       @default(0)
+  constitution            Int                       @default(0)
+  intelligence            Int                       @default(0)
+  wisdom                  Int                       @default(0)
+  charisma                Int                       @default(0)
+  acrobatics              proficiency               @default(NOT_PROEFFICIENT)
+  arcana                  proficiency               @default(NOT_PROEFFICIENT)
+  athletics               proficiency               @default(NOT_PROEFFICIENT)
+  performance             proficiency               @default(NOT_PROEFFICIENT)
+  deception               proficiency               @default(NOT_PROEFFICIENT)
+  stealth                 proficiency               @default(NOT_PROEFFICIENT)
+  history                 proficiency               @default(NOT_PROEFFICIENT)
+  intimidation            proficiency               @default(NOT_PROEFFICIENT)
+  insight                 proficiency               @default(NOT_PROEFFICIENT)
+  investigation           proficiency               @default(NOT_PROEFFICIENT)
+  animalHandling          proficiency               @default(NOT_PROEFFICIENT)
+  medicine                proficiency               @default(NOT_PROEFFICIENT)
+  nature                  proficiency               @default(NOT_PROEFFICIENT)
+  perception              proficiency               @default(NOT_PROEFFICIENT)
+  persuasion              proficiency               @default(NOT_PROEFFICIENT)
+  sleightOfHand           proficiency               @default(NOT_PROEFFICIENT)
+  religion                proficiency               @default(NOT_PROEFFICIENT)
+  survival                proficiency               @default(NOT_PROEFFICIENT)
+  tecnology               proficiency               @default(NOT_PROEFFICIENT)
+  strengthSavingThrow     proficiency               @default(NOT_PROEFFICIENT)
+  dexteritySavingThrow    proficiency               @default(NOT_PROEFFICIENT)
+  constitutionSavingThrow proficiency               @default(NOT_PROEFFICIENT)
+  intelligenceSavingThrow proficiency               @default(NOT_PROEFFICIENT)
+  wisdomSavingThrow       proficiency               @default(NOT_PROEFFICIENT)
+  charismaSavingThrow     proficiency               @default(NOT_PROEFFICIENT)
   Region                  Region                    @relation(fields: [regionId], references: [id])
   Origin                  Origin                    @relation(fields: [originId], references: [id])
   User                    User                      @relation(fields: [userId], references: [id])
