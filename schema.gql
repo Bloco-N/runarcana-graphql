@@ -54,6 +54,7 @@ type Character {
   perception: proficiency!
   performance: proficiency!
   persuasion: proficiency!
+  proficiencyBonus: Int!
   regionId: Int!
   religion: proficiency!
   sleightOfHand: proficiency!
@@ -124,6 +125,16 @@ type CharacterRunarcanaClass {
   updatedAt: DateTime!
 }
 
+input CharacterUpdateAttributesInputData {
+  charisma: Float!
+  constitution: Float!
+  dexterity: Float!
+  id: Float!
+  intelligence: Float!
+  strength: Float!
+  wisdom: Float!
+}
+
 input CharacterUpdateClassInputData {
   id: CharacterIdPair!
   level: Float!
@@ -140,6 +151,32 @@ input CharacterUpdateInputData {
   originId: Float!
   pastId: Float!
   regionId: Float!
+}
+
+input CharacterUpdateProficiencyInputData {
+  acrobatics: String!
+  animalHandling: String!
+  arcana: String!
+  charismaSavingThrow: String!
+  constitutionSavingThrow: String!
+  deception: String!
+  dexteritySavingThrow: String!
+  history: String!
+  id: Float!
+  intelligenceSavingThrow: String!
+  intimidation: String!
+  medicine: String!
+  nature: String!
+  perception: String!
+  performance: String!
+  persuasion: String!
+  religion: String!
+  sleightOfHand: String!
+  stealth: String!
+  strengthSavingThrow: String!
+  survival: String!
+  tecnology: String!
+  wisdomSavingThrow: String!
 }
 
 type Component {
@@ -298,7 +335,9 @@ type Mutation {
   signIn(data: SignInInputData!): Auth!
   signUp(data: SignUpInputData!): ApiResponse!
   updateCharacter(data: CharacterUpdateInputData!): ApiResponse!
+  updateCharacterAttributes(data: CharacterUpdateAttributesInputData!): ApiResponse!
   updateCharacterClass(data: CharacterUpdateClassInputData!): ApiResponse!
+  updateCharacterProficiency(data: CharacterUpdateProficiencyInputData!): ApiResponse!
 }
 
 type Mystery {
@@ -495,7 +534,7 @@ type UserResponse {
 }
 
 enum proficiency {
-  NOT_PROEFFICIENT
-  PROFFICIENT
+  NOT_PROFICIENT
+  PROFICIENT
   SPECIALIST
 }
