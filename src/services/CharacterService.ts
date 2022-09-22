@@ -3,6 +3,8 @@ import CharacterUpdateClassInputData from '../inputs/Character/CharacterUpdateCl
 import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputData'
 import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
+import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
+import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
@@ -155,6 +157,32 @@ export default class CharacterService {
 
     if (!characterInheritance) throw new Error('❌ failed to update character')
 
+  }
+
+  public async updateCharacterAttributes(ctx:IContext, data:CharacterUpdateAttributesInputData){
+    const { id, ...charData } = data
+    const character = await ctx.prisma.character.update({
+      where: {
+        id
+      },
+      data: {
+        ...charData
+      }
+    })
+    if (!character) throw new Error('❌ failed to update character')
+  }
+
+  public async updateCharacterProficiency(ctx:IContext, data:CharacterUpdateProficiencyInputData){
+    const { id, ...charData } = data
+    const character = await ctx.prisma.character.update({
+      where: {
+        id
+      },
+      data: {
+        ...charData
+      }
+    })
+    if (!character) throw new Error('❌ failed to update character')
   }
 
 }

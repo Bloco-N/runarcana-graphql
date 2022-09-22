@@ -7,6 +7,8 @@ import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
 import { Character } from '../schemas/Character'
 import CharacterService from '../services/CharacterService'
+import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
+import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 
 @Resolver(Character)
 export class CharacterResolver {
@@ -86,6 +88,20 @@ export class CharacterResolver {
   @Authorized()
   async deleteInheritance(@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse>{
     await this.characterService.deleteInheritance(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async updateCharacterAttributes(@Arg('data') data:CharacterUpdateAttributesInputData, @Ctx() ctx:IContext): Promise<ApiResponse> {
+    await this.characterService.updateCharacterAttributes(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async updateCharacterProficiency(@Arg('data') data:CharacterUpdateProficiencyInputData, @Ctx() ctx: IContext): Promise<ApiResponse>{
+    await this.characterService.updateCharacterProficiency(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 

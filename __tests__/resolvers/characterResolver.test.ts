@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { ApolloServer, gql, ServerInfo } from 'apollo-server'
 import { app } from '../../src/app'
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client' 
 import request from 'supertest'
 
 const prisma = new PrismaClient()
@@ -163,6 +163,89 @@ describe('CharacterResolver tests', () => {
     }
 
     const {body: {data : { updateCharacterClass: { message} } } } = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    expect(message).toBeDefined()
+    expect(message).toBe('✅ character updated')
+  })
+
+  test('should update character attributes', async () => {
+    const { id }  = await prisma.character.findFirst({where: { name: 'toru'}})
+
+    const variables = {
+      data: {
+        id,
+        strength: 12,
+        dexterity: 10,
+        constitution: 14,
+        intelligence: 8,
+        wisdom: 20,
+        charisma: 18
+      }
+    }
+
+    const UPDATE_ATTRIBUTES = `
+      mutation UpdateCharacterAttributes($data: CharacterUpdateAttributesInputData!) {
+        updateCharacterAttributes(data: $data) {
+          message
+        }
+      }
+    `
+
+    const queryData = {
+      query: UPDATE_ATTRIBUTES,
+      variables
+    }
+
+    const {body: {data : { updateCharacterAttributes: { message} } } } = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    expect(message).toBeDefined()
+    expect(message).toBe('✅ character updated')
+  })
+
+  test('should update character proficiences', async () => {
+    const { id }  = await prisma.character.findFirst({where: { name: 'toru'}})
+
+    const variables = {
+      data: {
+        id,
+        acrobatics: "PROFICIENT",
+        arcana: "SPECIALIST",
+        performance: "NOT_PROFICIENT",
+        deception: "NOT_PROFICIENT",
+        stealth: "NOT_PROFICIENT",
+        history: "NOT_PROFICIENT",
+        intimidation: "NOT_PROFICIENT",
+        animalHandling: "NOT_PROFICIENT",
+        medicine: "NOT_PROFICIENT",
+        nature: "NOT_PROFICIENT",
+        perception: "NOT_PROFICIENT",
+        persuasion: "NOT_PROFICIENT",
+        sleightOfHand: "NOT_PROFICIENT",
+        religion: "NOT_PROFICIENT",
+        survival: "NOT_PROFICIENT",
+        tecnology: "NOT_PROFICIENT",
+        strengthSavingThrow: "NOT_PROFICIENT",
+        dexteritySavingThrow: "NOT_PROFICIENT",
+        constitutionSavingThrow: "NOT_PROFICIENT",
+        intelligenceSavingThrow: "NOT_PROFICIENT",
+        wisdomSavingThrow: "NOT_PROFICIENT",
+        charismaSavingThrow: "NOT_PROFICIENT"
+        
+      }
+    }
+
+    const UPDATE_PROFICIENCY = `
+      mutation UpdateCharacterProficiency($data: CharacterUpdateProficiencyInputData!) {
+        updateCharacterProficiency(data: $data) {
+          message
+        }
+      }
+    `
+
+    const queryData = {
+      query: UPDATE_PROFICIENCY,
+      variables
+    }
+
+    const {body: {data : { updateCharacterProficiency: { message} } } }= await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
     expect(message).toBeDefined()
     expect(message).toBe('✅ character updated')
   })
