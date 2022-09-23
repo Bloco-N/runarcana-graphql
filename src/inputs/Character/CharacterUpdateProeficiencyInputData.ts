@@ -1,5 +1,4 @@
 import { Field, InputType } from "type-graphql";
-import { proficiency } from '.prisma/client'
 
 @InputType()
 export default class CharacterUpdateProficiencyInputData{
@@ -8,69 +7,72 @@ export default class CharacterUpdateProficiencyInputData{
   id:number
 
   @Field()
-  acrobatics: proficiency
+  acrobatics: string
 
   @Field()
-  arcana: proficiency
+  arcana: string
 
   @Field()
-  performance: proficiency
+  athletics: string
 
   @Field()
-  deception: proficiency
+  performance: string
 
   @Field()
-  stealth: proficiency
+  deception: string
 
   @Field()
-  history: proficiency
+  stealth: string
 
   @Field()
-  intimidation: proficiency
+  history: string
 
   @Field()
-  animalHandling: proficiency
+  intimidation: string
 
   @Field()
-  medicine: proficiency
+  animalHandling: string
 
   @Field()
-  nature: proficiency
+  medicine: string
 
   @Field()
-  perception: proficiency
+  nature: string
 
   @Field()
-  persuasion: proficiency
+  perception: string
 
   @Field()
-  sleightOfHand: proficiency
+  persuasion: string
 
   @Field()
-  religion: proficiency
+  sleightOfHand: string
 
   @Field()
-  survival: proficiency
+  religion: string
 
   @Field()
-  tecnology: proficiency
+  survival: string
 
   @Field()
-  strengthSavingThrow: proficiency
+  tecnology: string
 
   @Field()
-  dexteritySavingThrow: proficiency
+  strengthSavingThrow: string
 
   @Field()
-  constitutionSavingThrow: proficiency
+  dexteritySavingThrow: string
 
   @Field()
-  intelligenceSavingThrow: proficiency
+  constitutionSavingThrow: string
 
   @Field()
-  wisdomSavingThrow: proficiency
+  intelligenceSavingThrow: string
 
   @Field()
-  charismaSavingThrow: proficiency
+  wisdomSavingThrow: string
+
+  @Field()
+  charismaSavingThrow: string
 
 }
