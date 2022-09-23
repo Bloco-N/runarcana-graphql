@@ -116,6 +116,38 @@ type CharacterMistery {
   updatedAt: DateTime!
 }
 
+type CharacterModsAndSkills {
+  acrobaticsValue: Float!
+  animalHandlingValue: Float!
+  arcanaValue: Float!
+  athleticsValue: Float!
+  charismaMod: Float!
+  charismaSavingThrowValue: Float!
+  constitutionMod: Float!
+  constitutionSavingThrowValue: Float!
+  deceptionValue: Float!
+  dexterityMod: Float!
+  dexteritySavingThrowValue: Float!
+  historyValue: Float!
+  intelligenceMod: Float!
+  intelligenceSavingThrowValue: Float!
+  intimidationValue: Float!
+  medicineValue: Float!
+  natureValue: Float!
+  perceptionValue: Float!
+  performanceValue: Float!
+  persuasionValue: Float!
+  religionValue: Float!
+  sleightOfHandValue: Float!
+  stealthValue: Float!
+  strengthMod: Float!
+  strengthSavingThrowValue: Float!
+  survivalValue: Float!
+  tecnologyValue: Float!
+  wisdomMod: Float!
+  wisdomSavingThrowValue: Float!
+}
+
 type CharacterRunarcanaClass {
   RunarcanaClass: RunarcanaClass!
   characterId: Int!
@@ -157,6 +189,7 @@ input CharacterUpdateProficiencyInputData {
   acrobatics: String!
   animalHandling: String!
   arcana: String!
+  athletics: String!
   charismaSavingThrow: String!
   constitutionSavingThrow: String!
   deception: String!
@@ -388,6 +421,7 @@ type PastCount {
 }
 
 type Query {
+  getCharacterModAndSkills(id: Float!): CharacterModsAndSkills!
   listAllSpells(search: String): SpellResponse!
   userInfo(charId: Float): UserResponse
 }
