@@ -1,4 +1,4 @@
-import { Arg, Authorized, Ctx, Mutation, Resolver } from 'type-graphql'
+import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from 'type-graphql'
 import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
 import CharacterUpdateClassInputData from '../inputs/Character/CharacterUpdateClassInputData'
 import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputData'
@@ -9,10 +9,18 @@ import { Character } from '../schemas/Character'
 import CharacterService from '../services/CharacterService'
 import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
+import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
 
 @Resolver(Character)
 export class CharacterResolver {
   characterService = new CharacterService()
+
+  @Query(() => CharacterModsAndSkills)
+  @Authorized()
+  async getCharacterModAndSkills( @Arg('id') id:number, @Ctx() ctx:IContext): Promise<CharacterModsAndSkills>{
+    const modAndSkills = await this.characterService.getCharacterModAndSkills(ctx, id)
+    return modAndSkills
+  }
 
   @Mutation(() => ApiResponse)
   @Authorized()

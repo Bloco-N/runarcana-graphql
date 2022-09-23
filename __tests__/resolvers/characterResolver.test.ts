@@ -173,12 +173,12 @@ describe('CharacterResolver tests', () => {
     const variables = {
       data: {
         id,
-        strength: 12,
-        dexterity: 10,
-        constitution: 14,
-        intelligence: 8,
+        strength: 11,
+        dexterity: 13,
+        constitution: 15,
+        intelligence: 7,
         wisdom: 20,
-        charisma: 18
+        charisma: 19
       }
     }
 
@@ -208,6 +208,7 @@ describe('CharacterResolver tests', () => {
         id,
         acrobatics: "PROFICIENT",
         arcana: "SPECIALIST",
+        athletics: "SPECIALIST",
         performance: "NOT_PROFICIENT",
         deception: "NOT_PROFICIENT",
         stealth: "NOT_PROFICIENT",
@@ -248,5 +249,91 @@ describe('CharacterResolver tests', () => {
     const {body: {data : { updateCharacterProficiency: { message} } } }= await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
     expect(message).toBeDefined()
     expect(message).toBe('✅ character updated')
+  })
+
+  test('should get mod and skills ', async () => {
+    const { id }  = await prisma.character.findFirst({where: { name: 'toru'}})
+
+    const variables = {
+      getCharacterModAndSkillsId: id
+    }
+
+    const GET_MODS_AND_SKILLS = `
+      query GetCharacterModAndSkills($getCharacterModAndSkillsId: Float!) {
+        getCharacterModAndSkills(id: $getCharacterModAndSkillsId) {
+          strengthMod
+          dexterityMod
+          constitutionMod
+          intelligenceMod
+          wisdomMod
+          charismaMod
+          acrobaticsValue
+          arcanaValue
+          athleticsValue
+          performanceValue
+          deceptionValue
+          stealthValue
+          historyValue
+          intimidationValue
+          animalHandlingValue
+          medicineValue
+          natureValue
+          perceptionValue
+          persuasionValue
+          sleightOfHandValue
+          religionValue
+          survivalValue
+          tecnologyValue
+          strengthSavingThrowValue
+          dexteritySavingThrowValue
+          constitutionSavingThrowValue
+          intelligenceSavingThrowValue
+          wisdomSavingThrowValue
+          charismaSavingThrowValue
+        }
+      }
+    `
+    const queryData = {
+      query: GET_MODS_AND_SKILLS,
+      variables
+    }
+
+    const {body: { data}} = await request(url).post('/').send(queryData).set({ Authorization: "Bearer " + token })
+    expect(data).toStrictEqual(
+      {
+        getCharacterModAndSkills: {
+          strengthMod: 0,
+          dexterityMod: 1,
+          constitutionMod: 2,
+          intelligenceMod: -2,
+          wisdomMod: 5,
+          charismaMod: 4,
+          acrobaticsValue: 3,
+          arcanaValue: 2,
+          athleticsValue: 4,
+          performanceValue: 4,
+          deceptionValue: 4,
+          stealthValue: 1,
+          historyValue: -2,
+          intimidationValue: 4,
+          animalHandlingValue: 5,
+          medicineValue: 5,
+          natureValue: -2,
+          perceptionValue: 5,
+          persuasionValue: 4,
+          sleightOfHandValue: 1,
+          religionValue: -2,
+          survivalValue: 5,
+          tecnologyValue: -2,
+          strengthSavingThrowValue: 0,
+          dexteritySavingThrowValue: 1,
+          constitutionSavingThrowValue: 2,
+          intelligenceSavingThrowValue: -2,
+          wisdomSavingThrowValue: 5,
+          charismaSavingThrowValue: 4
+        }
+      }
+    )
+    
   })
 })
