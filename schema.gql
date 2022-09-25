@@ -342,6 +342,8 @@ type Lineage {
   InheritanceLineage: [InheritanceLineage!]!
   SpellLineages: [SpellLineage!]!
   _count: LineageCount
+  abilities: String!
+  characteristics: String!
   createdAt: DateTime!
   id: Int!
   name: String!
@@ -395,8 +397,12 @@ type Origin {
   Lineages: [Lineage!]!
   SpellOrigins: [SpellOrigin!]!
   _count: OriginCount
+  abilities: String!
+  characteristics: String!
   createdAt: DateTime!
   id: Int!
+  inheritances: Int!
+  languages: String!
   name: String!
   updatedAt: DateTime!
 }

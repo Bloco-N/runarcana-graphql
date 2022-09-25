@@ -1,66 +1,106 @@
 [
-    {
-        "name": "Antroplantae",
-        "lineages": [
-            "Arbóreo",
-            "Floral"
-        ]
-    },
-    {
-        "name": "Construto",
-        "lineages": [
-            "Brutal",
-            "Emissário",
-            "Ligeiro"
-        ]
-    },
-    {
-        "name": "Humano",
-        "lineages": []
-    },
-    {
-        "name": "Meio-Dragão",
-        "lineages": [
-            "Elemental da Montanha",
-            "Elemental das Nuvens",
-            "Elemental do Oceano",
-            "Elemental Glacial",
-            "Elemental Infernal"
-        ]
-    },
-    {
-        "name": "Minotauro",
-        "lineages": [
-            "Aelus",
-            "Alnuk",
-            "Auroque"
-        ]
-    },
-    {
-        "name": "Troll",
-        "lineages": [
-            "Troll da Areia",
-            "Troll da Selva",
-            "Troll do Gelo"
-        ]
-    },
-    {
-        "name": "Vastaya",
-        "lineages": [
-            "Fauhwoon",
-            "Kiilash",
-            "Lhotlan",
-            "Marai",
-            "Oovi-Kat",
-            "Ottrani",
-            "Shimon"
-        ]
-    },
-    {
-        "name": "Yordle",
-        "lineages": [
-            "Aquáticos",
-            "Felpudo"
-        ]
-    }
+	{
+		"name": "Antroplantae",
+		"Herança": 2,
+		"idioma": "Silvestre",
+		"característica": "não tem necessidade de se alimentar, mas devem passar pelo menos 4 horas do dia no sol e tomar 5 litros de água por dia, caso contrário recebem 1 nível de exaustão||vulnerabilidade contra efeitos relacionados ao fogo. Ao receber dano ígneo, um Antroplantæ deve fazer uma salvaguarda de Constituição cuja CD é 10 ou metade do dano recebido, o que for maior, caso falhe recebe desvantagem em todas as suas jogadas de ataque e testes de atributo por um número de rodadas igual a 8 - seu bônus de proficiência. Caso receba dano contínuo, como da condição Chamuscado, essa duração se reinicia para cada turno em que o dano é recebido.||Embora não precisem dormir, os Antroplantæ devem se enraizar todas as noites por pelo menos 8 horas. Enquanto estão enraizado eles se tornam imóveis embora possam fazer ações leves se necessário. Estão cientes dos seus arredores. Antroplantæ só podem se enraizar em areia, terra, lama e cascalho; eles não podem se enraizar em rocha sólida ou em um chão de pedra trabalhado. Um Antroplantæ que não consiga se enraizar por uma noite, ganha 1 nível de exaustão e não é beneficiado por um descanso longo.||Antroplantæ não podem ser alvos de magias que afetem humanoides, como enfeitiçar pessoa. No entanto eles contam como plantas para magias que alvejam plantas, como malogro.",
+		"habilidades": "",
+		"lineages": [
+			"Arbóreo",
+			"Floral"
+		]
+	},
+	{
+		"name": "Construto",
+		"Herança": 2,
+		"idioma": "Zaunita",
+		"característica": "Seja por algum aspecto específico da sua criação ou alguma relação com sua fonte,construtos normalmente tem uma ou duas peculiaridades em sua criação.Você pode escolher entre fazer uma jogada ou escolher entre uma das peculiaridades abaixo:Peculiaridades1d10Traços1 Você analisa (em voz alta) o potencial de ameaça de cada criatura que você conheça.2 Você não entende emoções e frequentemente interpreta mal situações emocionais.3 Você é altamente protetor com todos aqueles que você considera amigos.4 Você frequentemente diz coisas que está pensando em voz alta sem ao menos perceber.5 Você tenta aplicar táticas de guerra e disciplina para todas as situações.6 Você não sabe como filtrar seus sentimentos e está sempre prestes a explodir suas emoções dramaticamente.7 Você não entende as roupas além de sua utilidade e assume que o que uma criatura veste indica seu trabalho e status.8 Você é obcecado com a sua aparência e lustra constantemente sua armadura.9 Você está profundamente preocupado em seguir os procedimentos e protocolos adequados.10 A guerra é a única coisa que faz sentido para você. E você está sempre procurando uma luta.||Vantagem em jogadas de resistência contra venenos e resistência a dano de venenos||Imunidade a doenças||Não precisa comer, beber ou respirar||Não precisa dormir, não sofre efeito de exaustão por falta de descanso e não sofre efeitos de magia de sono||Cura apenas metade||Desvantagem em salvaguardas por climas hostis, como frio ou deserto.||Quando você faz um descanso longo você não recupera pontos de vida como outras origens normalmente fazem, ao invés disso você precisa se consertar ou conseguir alguém que o faça. Para tal feito é necessário 6 horas de trabalho cuidadoso.||Seu corpo possui camadas de defesa que definem sua Classe de Armadura.Você não tem benefícios de usar armadura, mas pode somar a CA de um escudo normalmente. Cada modelo possui suas próprias limitações. Você pode, durante um descanso longo, ajustar o seu corpo para modos diferentes de armadura.Caso você possua a característica de classe Defesa sem Armadura,você sempre terá o modo Nulo.",
+		"habilidades": "",
+		"lineages": [
+			"Brutal",
+			"Emissário",
+			"Ligeiro"
+		]
+	},
+	{
+		"name": "Humano",
+		"Herança": 3,
+		"idioma": "1(comum)",
+		"característica": "deslocamento base 30 pes||não recebe ponto de atributo do passado||proficiencia em uma pericia||Um aprimoramento, se o aprimoramento aumentar atributo, n recebe esse bonus||proficiencia em um ofício",
+		"habilidades": "",
+		"lineages": []
+	},
+	{
+		"name": "Meio-Dragão",
+		"Herança": 2,
+		"idioma": "Dracônico",
+		"característica": "Meio-Dragões podem possuir até três formas durante a vida. Enquanto em suas formas Humanoide ou Híbrida, eles possuem um deslocamento base de caminhada de 30 pés; enquanto em sua forma dracônica, possuem um deslocamento base de caminhada de 40 pés.||Um Meio-Dragão possui resistência a dano baseado no tipo de dano de sua arma de sopro. No nível 15, quando sua arma de sopro se torna mágica, você também recebe resistência nesse novo tipo de dano.||Meio-Dragões Elementais possuem uma vulnerabilidade a determinados elementos. Ao receber esse tipo de dano, um Meio-Dragão deve fazer uma salvaguarda de Constituição cuja CD é 10 ou metade do dano recebido, o que for maior, caso falhe recebe desvantagem em todas as suas jogadas de ataque e testes de atributo por um número de rodadas igual a 8 - seu bônus de proficiência. Caso receba dano contínuo, como da condição Chamuscado, essa rolagem deve ser feita a cada turno em que o dano é recebido.||Ao alcançar o 12º nível, o Meio-Dragão é tomado pela natureza dracônica e passa a ter permanentemente a forma híbrida.",
+		"habilidades": "No nível 8, o Meio-Dragão conhece mais sua própria natureza, aprendendo a dominar uma Forma de Dragão Plena, podendo assim se transformar um número de vezes igual a metade do seu bônus de proficiência por descanso curto ou longo. Ao alcançar o nível 16, você pode se transformar na Forma de Dragão Superior.||No nível 2, utilizando uma ação ele pode escolher aflorar sua essência dracônica momentaneamente através de uma forma que exala magia, chamada de forma híbrida. Essa forma dura por até 1 hora ou até que você utilize uma ação bônus para desfazê-la. Você pode fazer isso um número de vezes igual ao seu modificador de Constituição (mínimo de 1).||Você pode utilizar o truque escolhido pela sua Essência Dracônica independente da forma que você esteja.",
+		"lineages": [
+			"Elemental da Montanha",
+			"Elemental das Nuvens",
+			"Elemental do Oceano",
+			"Elemental Glacial",
+			"Elemental Infernal"
+		]
+	},
+	{
+		"name": "Minotauro",
+		"Herança": 2,
+		"idioma": "Minotáurico",
+		"característica": "Os aterrorizantes chifres dos Minotauros são sua principal arma e todos os Minotauros são proficientes com eles. O dano causado pelos chifres é de 1d8 + seu modificador de Força de dano perfurante e sua margem de crítico é 19-20.||Ao usar uma ação de Disparada você pode se mover quatro vezes o seu deslocamento, ao invés de duas e, adicionalmente, você pode fazer um ataque com seus Chifres com uma ação bônus. Caso se mova ao menos 30 pés em linha reta e atinja um alvo, os dados de dano de seu Chifres são dobrados.",
+		"habilidades": "Ao fazer um ataque corpo a corpo, você pode realizar um ataque com seus Chifres utilizando sua ação bônus. O alvo deste ataque deve estar até 5 pés de você e, caso seja no máximo uma categoria de tamanho acima de você, deve fazer uma salvaguarda de Força CD 8 + seu bônus de proficiência + seu modificador de Força. Em uma falha, o alvo é empurrado 5 pés de você. Caso a criatura seja de uma categoria de tamanho acima que a sua, ela possui vantagem na salvaguarda.",
+		"lineages": [
+			"Aelus",
+			"Alnuk",
+			"Auroque"
+		]
+	},
+	{
+		"name": "Troll",
+		"Herança": 2,
+		"idioma": "Troll",
+		"característica": "Independente de sua Descendência, a pele de um Troll é incrivelmente resistente. Enquanto não estiver utilizando armadura, sua CA se torna 11 + seu modificador de Destreza + seu modificador de Constituição. Esse traço não se acumula com características de Defesa sem Armadura.||Trolls possuem proficiência em Sobrevivência e podem encontrar comida em lugares quase impossíveis.",
+		"habilidades": "Se um inimigo que você tiver causado dano morrer na mesma rodada, você pode utilizar sua ação bônus para se mover 20 pés em direção de um próximo inimigo.||Trolls possuem uma arma natural em suas mandíbulas as quais são proficientes, podendo utilizar uma ação de ataque ou uma ação bônus para morder um alvo a 5 pés de você e causar 1d6 + seu modificador de Força de dano perfurante. Ao atingir o 6o nível, sua mordida é tão poderosa que passa a ser considerada mágica para objetivos de ultrapassar resistência, além disso o dado se torna 1d8 ao invés de 1d6.||Os Trolls estão acostumados com o pouco e aprenderam a construir armas com os materiais mais básicos, podendo construir uma Clava Grande, Lança, Maça ou Porrete durante um descanso longo utilizando coisas como gravetos, ossos, linha e pedras. Essas armas não possuem preço de venda e são apropriados apenas para Trolls utilizarem.",
+		"lineages": [
+			"Troll da Areia",
+			"Troll da Selva",
+			"Troll do Gelo"
+		]
+	},
+	{
+		"name": "Vastaya",
+		"Herança": 2,
+		"idioma": "dialeto Vastaya de sua tribo",
+		"característica": "",
+		"habilidades": "Embora os Vastaya no geral sejam metamorfos, suas formas padrão e sua proximidade do Vastayashai’rei apontam o quão fácil é para eles assumirem algumas formas. Por padrão, todo Vastaya tem quatro formas, uma humana, uma feral, uma animal e uma comum com sua tribo. A forma humana esconde a maior parte dos traços Vastaya, no entanto cada tribo tem uma dificuldade diferente em assumir essa forma, já a forma feral é uma forma híbrida, mais próxima dos animais, geralmente com armas naturais ou habilidades de uma fera. forma animal, por outro lado, é uma forma que aos olhos comuns é indistinguível de outros animais da mesma espécie (algumas tribos possuem mais de uma forma animal) e por fim, a forma tribal que é a forma com a qual estão mais acostumados e usam normalmente, ou seja, sua forma natural.",
+		"lineages": [
+			"Fauhwoon",
+			"Kiilash",
+			"Lhotlan",
+			"Marai",
+			"Oovi-Kat",
+			"Ottrani",
+			"Shimon"
+		]
+	},
+	{
+		"name": "Yordle",
+		"Herança": 2,
+		"idioma": "Yordle",
+		"característica": "Por algum motivo, todo yordle sente necessidade de ter algo em sua cabeça como um óculos, um chapéu, touca, brinco, etc.||proficiência na perícia Percepção.||Pelos olhos especiais que têm, Yordles tem uma visão superior no escuro e na penumbra. Você enxerga na penumbra a até 60 pés como se fosse luz plena e no escuro como se fosse na penumbra. Você não pode discernir cores no escuro, apenas tons de cinza.||Os Yordles podem tentar se esconder mesmo quando estiver apenas levemente oculto pela folhagem, chuva forte, neve caindo, ou outro fenômeno natural. Além disso eles podem tentar se esconder até mesmo atrás de uma criatura, contanto que ela seja no mínimo uma categoria de tamanho maior que a sua.",
+		"habilidades": "Yordles conhecem naturalmente algumas magias da lista de Magias Yordle. Eles não requerem componentes material para essas magias. Sempre que uma magia inata Yordle é conjurada, ela pode causar um efeito aleatório. No momento que você utilizar uma magia você deve rolar 1d20, caso caia 5 ou menos você deve rolar a tabela de Magia Descontrolada Yordle. Seu atributo para conjurar essas magias é Carisma.||CD para suas Magias Yordle = 8 + seu bônus de proficiência + seu modificador de Carisma||Modificador de Ataque de Magia Yordle = seu bônus de proficiência + seu modificador de Carisma",
+		"lineages": [
+			"Aquáticos",
+			"Felpudo"
+		]
+	},
+	{
+		"name": "Runinata",
+		"Herança": 1,
+		"idioma": "Nenhum",
+		"característica": "Você pode escolher 2 atributos para aumentar em +1.||Seu deslocamento base de caminhada é 30 pés||Normalmente, Runinatas não possuem um Passado definido, funcionando de forma similar ao Passado Desconhecido, a não ser que o traço maior Antecedente seja escolhido.||Você pode escolher 3 entre os traços da tabela Traços Maiores, cada traço só pode ser escolhido uma vez, a não ser que o traço diga o contrário.||Você pode escolher 3 entre os traços da tabela Traços Menores.",
+        "habilidades": "",
+		"lineages": []
+	}
 ]
