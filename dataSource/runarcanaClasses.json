@@ -1,112 +1,47 @@
 [
-    {
+	{
 		"name": "Acólito",
-		"progressTable" : "nvl 1 (Conjuração, Rito - option(Rito Espiritual||Rito das Estrelas||Rito da Forja||Rito das Marés||Rito da Natureza||Rito da Sepultura||Rito da Tempestade))||nvl 2(Eflúvio)||nvl 3()||nvl 4(Aprimoramento)||nvl 5()||nvl 6 ()||nvl 7()||nvl 8(Aprimoramento)|| nvl 9()||nvl 10(Intervenção Quintessencial)||nvl 11()||nvl 12(Aprimoramento)||nvl 13()||nvl 14()||nvl 15()||nvl 16(Aprimoramento)||nvl 17()||nvl 18()||nvl 19(Aprimoramento)||nvl 20()",
-		"healthPoints" : "Dados de vida (1d8 por nvl)||Vida nvl 1(8 + CON MOD)||Vida nvl 2+(1d8( ou 5) + CON MOD)",
-		"proficiences" : "armadura (Armaduras leves, armaduras médias, broquéis e escudos leves e pesados)||armas (armas simples)||oficios()||salvaguarda(SAB CAR)||skills(option(Historia, Intuição, Medicina, Persuasão, Religião))",
-		"equipment" : "1 (option(1xmaça ou 1xmartelo leve))|| 2 (option(1xlórica de escamas, 1xarmadura de couro, 1xcota de malha(proficiente)))||3 (option(1xbesta leve + 20xvirote, 1xarma simples))|| 4 (option(1x conjunto sacerdote, 1x conjunto aventureiro))|| 5 (1xescudo leve, 1xsimbolo sagrado)",
-		"classCaracteristics" : "Eflúvio(No 2º nível, você se torna capaz de canalizar eflúvios diretamente da sua fonte mística, utilizando-o como combustível para efeitos mágicos. Você começa com dois efeitos: Preservar a Vida e um efeito determinado pelo seu Rito. Alguns Ritos conferem efeitos adicionais conforme você avança de nível, como consta na descrição de cada Rito. Quando você usar seu Eflúvio, você escolhe qual efeito quer criar. Você precisa terminar um descanso curto ou longo para usar esta característica de novo. Alguns efeitos requerem salvaguardas. Quando você usar um desses efeitos, a CD é igual a CD de suas magias.||A partir do 6º nível, você pode usar o Eflúvio duas vezes entre descansos e a partir do 18º nível, três vezes. Você recupera os usos dessa característica quando termina um descanso curto ou longo.)||Eflúvio: Preservar a Vida(A partir do 2º nível, você pode usar seu Eflúvio para curar os feridos. Utilizando uma ação, você usa seu símbolo sagrado para invocar energia que pode recuperar um total de 5 vezes seu nível de Acólito em pontos de vida. Você escolhe quaisquer criaturas a até 30 pés de você e divide esses pontos entre elas. Essa característica só pode curar as criaturas a até metade de seu máximo de pontos de vida. Você não pode usar essa característica em um morto-vivo ou construto.)||Intervenção Quintessencial(A partir do 10º nível, você pode rogar à uma entidade da qual você cultua para que auxilie você em uma árdua tarefa. Implorar pelo auxílio requer uma ação. Você precisa descrever o que busca e jogar um dado de porcentagem. Se o resultado for menor ou igual ao seu nível de Acólito, ela intervirá. O Mestre escolhe a natureza da intervenção. O efeito de qualquer magia de Acólito ou de Rito é apropriado como resultado. Se sua entidade intervir, você perde a capacidade de usar esta característica pelos próximos 7 dias. Caso contrário, você pode usá-la novamente após terminar um descanso longo.||No 20º nível, seus pedidos de intervenção funcionam automaticamente, dispensando a jogada de dado.)",
-		"especialCaracteristcs" : "Conjuração Plena"
-
+		"progress": "|lvl 1::(|Conjuração| |rito::escolha(Rito Espiritual, Rito das Estrelas, Rito da Forja, Rito das Marés, Rito da Natureza, Rito da Sepultura, Rito da Tempestade)| |lvl 2::(|Conjuração Plena| |Efluvio(lvl 1)| |Efluvio::Preservar a Vida|)| |lvl 4::(Aprimoramento)| |lvl 6::(|Efluvio(lvl 2)|)| |lvl 8::(|Aprimoramento|)| |lvl 10::(|Intervenção Quintessencial(lvl 1)|)| |lvl 12::(|Aprimoramento|)| |lvl 16::(|Aprimoramento|)| |lvl 18::(|Efluvio(lvl 3)|)| |lvl 19::(|Aprimoramento|)| |lvl 20::(|Intervenção Quintessencial(lvl 2)|)|"
 	},
-    {
+
+	{
 		"name": "Arcano",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Atirador",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Bodisatva",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Bruto",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Caçador",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Combatente",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Mercurial",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Peregrino",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Tecmaturgo",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	},
-    {
+	{
 		"name": "Xamã",
-		"progressTable" : "placeholder",
-		"healthPoints" : "placeholder",
-		"proficiences" : "placeholder",
-		"equipment" : "placeholder",
-		"classCaracteristics" : "placeholder",
-		"especialCaracteristcs" : "placeholder"
-
+		"progress" : "placeholder"
 	}
 ]

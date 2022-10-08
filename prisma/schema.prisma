@@ -129,12 +129,7 @@ model Lineage {
 model RunarcanaClass {
   id                      Int                       @id @default(autoincrement())
   name                    String
-  progressTable           String
-  healthPoints            String
-  proficiences            String
-  equipment               String
-  classCaracteristics     String
-  especialCaracteristics  String
+  progress                String
   SpellClasses            SpellClass[]
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())

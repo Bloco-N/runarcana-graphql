@@ -414,6 +414,10 @@ type OriginCount {
   SpellOrigins: Int!
 }
 
+type OriginResponse {
+  origins: [Origin!]!
+}
+
 type Past {
   _count: PastCount
   createdAt: DateTime!
@@ -428,8 +432,15 @@ type PastCount {
 
 type Query {
   getCharacterModAndSkills(id: Float!): CharacterModsAndSkills!
+  listAllOrigins(search: String): OriginResponse!
+  listAllRClasses(search: String): RClassResponse!
+  listAllRegions(search: String): RegionResponse!
   listAllSpells(search: String): SpellResponse!
   userInfo(charId: Float): UserResponse
+}
+
+type RClassResponse {
+  runarcanaClasses: [RunarcanaClass!]!
 }
 
 type Range {
@@ -458,12 +469,17 @@ type RegionCount {
   InheritanceRegion: Int!
 }
 
+type RegionResponse {
+  regions: [Region!]!
+}
+
 type RunarcanaClass {
   SpellClasses: [SpellClass!]!
   _count: RunarcanaClassCount
   createdAt: DateTime!
   id: Int!
   name: String!
+  progress: String!
   updatedAt: DateTime!
 }
 
