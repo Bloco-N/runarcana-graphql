@@ -5,7 +5,7 @@ import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
 import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
-import { proficiency } from '@prisma/client' 
+import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
 
 export default class CharacterService {
@@ -135,22 +135,21 @@ export default class CharacterService {
     if (!deleted) throw new Error('❌ failed to update character')
   }
 
-  public async addInheritance(ctx:IContext, data:CharacterIdPair){
+  public async addInheritance (ctx:IContext, data:CharacterIdPair) {
     const characterInheritance = await ctx.prisma.characterInheritance.create({
-      data:{
+      data: {
         characterId: data.characterId,
         inheritanceId: data.otherId
       }
     })
 
     if (!characterInheritance) throw new Error('❌ failed to update character')
-
   }
 
-  public async deleteInheritance(ctx:IContext, data:CharacterIdPair){
+  public async deleteInheritance (ctx:IContext, data:CharacterIdPair) {
     const characterInheritance = await ctx.prisma.characterInheritance.delete({
-      where:{
-        characterId_inheritanceId:{
+      where: {
+        characterId_inheritanceId: {
           characterId: data.characterId,
           inheritanceId: data.otherId
         }
@@ -158,10 +157,9 @@ export default class CharacterService {
     })
 
     if (!characterInheritance) throw new Error('❌ failed to update character')
-
   }
 
-  public async updateCharacterAttributes(ctx:IContext, data:CharacterUpdateAttributesInputData){
+  public async updateCharacterAttributes (ctx:IContext, data:CharacterUpdateAttributesInputData) {
     const { id, ...charData } = data
     const character = await ctx.prisma.character.update({
       where: {
@@ -174,7 +172,7 @@ export default class CharacterService {
     if (!character) throw new Error('❌ failed to update character')
   }
 
-  public async updateCharacterProficiency(ctx:IContext, data:CharacterUpdateProficiencyInputData){
+  public async updateCharacterProficiency (ctx:IContext, data:CharacterUpdateProficiencyInputData) {
     const { id, ...charData } = data
     const character = await ctx.prisma.character.update({
       where: {
@@ -203,17 +201,17 @@ export default class CharacterService {
         constitutionSavingThrow: charData.constitutionSavingThrow as proficiency,
         intelligenceSavingThrow: charData.intelligenceSavingThrow as proficiency,
         wisdomSavingThrow: charData.wisdomSavingThrow as proficiency,
-        charismaSavingThrow: charData.charismaSavingThrow as proficiency,
+        charismaSavingThrow: charData.charismaSavingThrow as proficiency
       }
     })
     if (!character) throw new Error('❌ failed to update character')
   }
 
   public async getCharacterModAndSkills (ctx:IContext, id:number): Promise <CharacterModsAndSkills> {
-    const character = await ctx.prisma.character.findUnique({where: { id }})
-    const mod = x  => Math.floor((x - 10) / 2)
+    const character = await ctx.prisma.character.findUnique({ where: { id } })
+    const mod = x => Math.floor((x - 10) / 2)
     const proficiency = (prof:proficiency, mod:number) => {
-      switch(prof) {
+      switch (prof) {
         case 'NOT_PROFICIENT':
           return mod
         case 'PROFICIENT':
@@ -221,14 +219,14 @@ export default class CharacterService {
         case 'SPECIALIST':
           return mod + character.proficiencyBonus * 2
       }
-    } 
+    }
     const modifiers = {
       strengthMod: mod(character.strength),
       dexterityMod: mod(character.dexterity),
       constitutionMod: mod(character.constitution),
       intelligenceMod: mod(character.intelligence),
       wisdomMod: mod(character.wisdom),
-      charismaMod: mod(character.charisma),
+      charismaMod: mod(character.charisma)
     }
     const skills = {
       acrobaticsValue: proficiency(character.acrobatics, modifiers.dexterityMod),
@@ -253,9 +251,8 @@ export default class CharacterService {
       constitutionSavingThrowValue: proficiency(character.constitutionSavingThrow, modifiers.constitutionMod),
       intelligenceSavingThrowValue: proficiency(character.intelligenceSavingThrow, modifiers.intelligenceMod),
       wisdomSavingThrowValue: proficiency(character.wisdomSavingThrow, modifiers.wisdomMod),
-      charismaSavingThrowValue: proficiency(character.charismaSavingThrow, modifiers.charismaMod),
+      charismaSavingThrowValue: proficiency(character.charismaSavingThrow, modifiers.charismaMod)
     }
     return { ...modifiers, ...skills }
   }
-
 }

@@ -17,7 +17,7 @@ export class CharacterResolver {
 
   @Query(() => CharacterModsAndSkills)
   @Authorized()
-  async getCharacterModAndSkills( @Arg('id') id:number, @Ctx() ctx:IContext): Promise<CharacterModsAndSkills>{
+  async getCharacterModAndSkills (@Arg('id') id:number, @Ctx() ctx:IContext): Promise<CharacterModsAndSkills> {
     const modAndSkills = await this.characterService.getCharacterModAndSkills(ctx, id)
     return modAndSkills
   }
@@ -87,30 +87,29 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async addInheritance(@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse>{
+  async addInheritance (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse> {
     await this.characterService.addInheritance(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async deleteInheritance(@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse>{
+  async deleteInheritance (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext): Promise <ApiResponse> {
     await this.characterService.deleteInheritance(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async updateCharacterAttributes(@Arg('data') data:CharacterUpdateAttributesInputData, @Ctx() ctx:IContext): Promise<ApiResponse> {
+  async updateCharacterAttributes (@Arg('data') data:CharacterUpdateAttributesInputData, @Ctx() ctx:IContext): Promise<ApiResponse> {
     await this.characterService.updateCharacterAttributes(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async updateCharacterProficiency(@Arg('data') data:CharacterUpdateProficiencyInputData, @Ctx() ctx: IContext): Promise<ApiResponse>{
+  async updateCharacterProficiency (@Arg('data') data:CharacterUpdateProficiencyInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
     await this.characterService.updateCharacterProficiency(ctx, data)
     return new ApiResponse('✅ character updated')
   }
-
 }

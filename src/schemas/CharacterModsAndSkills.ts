@@ -1,11 +1,10 @@
-import { Field, ObjectType } from "type-graphql";
+import { Field, ObjectType } from 'type-graphql'
 
 @ObjectType()
-export class CharacterModsAndSkills{
-
+export class CharacterModsAndSkills {
   @Field()
     strengthMod: number
-  
+
   @Field()
     dexterityMod: number
 
@@ -23,16 +22,16 @@ export class CharacterModsAndSkills{
 
   @Field()
     acrobaticsValue: number
-  
+
   @Field()
     arcanaValue: number
 
   @Field()
-  athleticsValue: number
+    athleticsValue: number
 
   @Field()
     performanceValue: number
-    
+
   @Field()
     deceptionValue: number
 
@@ -80,7 +79,7 @@ export class CharacterModsAndSkills{
 
   @Field()
     constitutionSavingThrowValue: number
-  
+
   @Field()
     intelligenceSavingThrowValue: number
 
@@ -89,5 +88,4 @@ export class CharacterModsAndSkills{
 
   @Field()
     charismaSavingThrowValue: number
-
 }
