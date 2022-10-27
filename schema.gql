@@ -430,9 +430,14 @@ type PastCount {
   Characters: Int!
 }
 
+type PastResponse {
+  pasts: [Past!]!
+}
+
 type Query {
   getCharacterModAndSkills(id: Float!): CharacterModsAndSkills!
   listAllOrigins(search: String): OriginResponse!
+  listAllPasts(search: String): PastResponse!
   listAllRClasses(search: String): RClassResponse!
   listAllRegions(search: String): RegionResponse!
   listAllSpells(search: String): SpellResponse!
@@ -476,10 +481,15 @@ type RegionResponse {
 type RunarcanaClass {
   SpellClasses: [SpellClass!]!
   _count: RunarcanaClassCount
+  classCaracteristics: String!
   createdAt: DateTime!
+  equipment: String!
+  especialCaracteristics: String!
+  healthPoints: String!
   id: Int!
   name: String!
-  progress: String!
+  proficiences: String!
+  progressTable: String!
   updatedAt: DateTime!
 }
 
