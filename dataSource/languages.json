@@ -1,0 +1,167 @@
+[
+	{
+		"name": "Buhru",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Demaciano",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Freljordiano",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Ioniano",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Minotáurico",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Noxiano",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Sentinense",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Shurimane",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Targonense",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Vastayês",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Yordle",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Zaunita",
+		"type": "Comum"
+
+	},
+	{
+		"name": "Celestial",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Dracônico",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Demoníaco",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Espiritual",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Elemental",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Feérico",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Heliano",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Icathiano",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Ochnun",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Primordial",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Rúnico",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Shurimane Antigo",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Silvestre",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Troll",
+		"type": "Exótico"
+
+	},
+	{
+		"name": "Demaciano Antigo",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Vorrijaardiano",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Freljordiano Antigo",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Ioniano Antigo",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Ur’Nox",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Vasthayshai’rei",
+		"type": "Morto"
+
+	},
+	{
+		"name": "Yeti",
+		"type": "Morto"
+
+	}
+]

@@ -130,7 +130,7 @@ model RunarcanaClass {
   id                      Int                       @id @default(autoincrement())
   name                    String
   progress                String
-  characteristics          String
+  characteristics         String
   SpellClasses            SpellClass[]
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())
@@ -138,11 +138,18 @@ model RunarcanaClass {
 }
 
 model Past {
-  id         Int         @id @default(autoincrement())
-  name       String
-  Characters Character[]
-  createdAt  DateTime    @default(now())
-  updatedAt  DateTime    @updatedAt
+  id             Int         @id @default(autoincrement())
+  name           String
+  description    String
+  atributes      String
+  skills         String
+  professions    String
+  languages      String
+  equipments     String
+  characteristic String
+  Characters     Character[]
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
 }
 
 model Spell {
@@ -411,4 +418,10 @@ model CharacterInheritance {
   inheritanceId Int
 
   @@id([characterId, inheritanceId])
+}
+
+model Languages {
+  id   Int    @id @default(autoincrement())
+  name String
+  type String
 }
