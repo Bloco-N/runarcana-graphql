@@ -26,6 +26,7 @@ import inheritanceLineages from './inheritanceLineages'
 import languages from './languages'
 import professions from './professions'
 import enhancements from './enhancements'
+import runes from './runes'
 
 const prisma = new PrismaClient()
 
@@ -165,6 +166,12 @@ async function main () {
   for (const Enhancement of enhancements) {
     await prisma.enhancement.create({
       data: Enhancement
+    })
+  }
+
+  for (const Rune of runes) {
+    await prisma.rune.create({
+      data: Rune
     })
   }
 }

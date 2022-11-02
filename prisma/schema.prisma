@@ -437,8 +437,16 @@ model Profession {
 }
 
 model Enhancement {
-  id           Int    @id @default(autoincrement())
-  name         String
+  id            Int    @id @default(autoincrement())
+  name          String
   prerequisites String
-  description  String
+  description   String
+}
+
+model Rune {
+  id            Int    @id @default(autoincrement())
+  name          String
+  type          String
+  prerequisites String
+  description   String
 }
