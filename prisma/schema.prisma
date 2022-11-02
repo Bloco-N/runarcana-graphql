@@ -130,6 +130,7 @@ model RunarcanaClass {
   id                      Int                       @id @default(autoincrement())
   name                    String
   progress                String
+  characteristics          String
   SpellClasses            SpellClass[]
   CharacterRunarcanaClass CharacterRunarcanaClass[]
   createdAt               DateTime                  @default(now())
