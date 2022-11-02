@@ -27,6 +27,7 @@ import languages from './languages'
 import professions from './professions'
 import enhancements from './enhancements'
 import runes from './runes'
+import sutras from './sutras'
 
 const prisma = new PrismaClient()
 
@@ -172,6 +173,12 @@ async function main () {
   for (const Rune of runes) {
     await prisma.rune.create({
       data: Rune
+    })
+  }
+
+  for (const Sutra of sutras) {
+    await prisma.sutra.create({
+      data: Sutra
     })
   }
 }

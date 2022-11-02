@@ -450,3 +450,12 @@ model Rune {
   prerequisites String
   description   String
 }
+
+model Sutra {
+  id            Int    @id @default(autoincrement())
+  name          String
+  type          String
+  components    String
+  prerequisites String
+  description   String
+}
