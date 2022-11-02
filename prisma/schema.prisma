@@ -420,7 +420,7 @@ model CharacterInheritance {
   @@id([characterId, inheritanceId])
 }
 
-model Languages {
+model Language {
   id   Int    @id @default(autoincrement())
   name String
   type String

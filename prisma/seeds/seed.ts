@@ -149,7 +149,7 @@ async function main () {
     })
   }
   for (const Language of languages) {
-    await prisma.languages.create({
+    await prisma.language.create({
       data: Language
     })
   }
