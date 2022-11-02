@@ -435,3 +435,10 @@ model Profession {
   tools       String
   table       String
 }
+
+model Enhancement {
+  id           Int    @id @default(autoincrement())
+  name         String
+  prerequisites String
+  description  String
+}
