@@ -24,6 +24,7 @@ import inheritanceOrigins from './inheritanceOrigins'
 import inheritanceRegions from './inheritanceRegions'
 import inheritanceLineages from './inheritanceLineages'
 import languages from './languages'
+import professions from './professions'
 
 const prisma = new PrismaClient()
 
@@ -151,6 +152,12 @@ async function main () {
   for (const Language of languages) {
     await prisma.language.create({
       data: Language
+    })
+  }
+
+  for (const Profession of professions) {
+    await prisma.profession.create({
+      data: Profession
     })
   }
 }

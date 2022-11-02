@@ -425,3 +425,13 @@ model Language {
   name String
   type String
 }
+
+model Profession {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  tasks       String
+  sinergies   String
+  tools       String
+  table       String
+}
