@@ -459,3 +459,11 @@ model Sutra {
   prerequisites String
   description   String
 }
+
+model VelSutra {
+  id            Int    @id @default(autoincrement())
+  name          String
+  prerequisites String
+  cost          String
+  description   String
+}
