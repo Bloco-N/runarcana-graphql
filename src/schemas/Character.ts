@@ -43,5 +43,5 @@ export class Character extends PrismaCharacter {
     CharacterInheritance?: CharacterInheritance[]
 
   @Field(() => [Characteristic])
-    Caracteristic: Characteristic[]
+    Characteristics: Characteristic[]
 }

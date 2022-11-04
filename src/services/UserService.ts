@@ -144,6 +144,25 @@ export default class UserService {
 
     })
 
+    const newcharacters = []
+    characters.forEach(character => {
+      const characteristics = []
+      character.CharacterRunarcanaClass.forEach(rClass => {
+        const progress = JSON.parse(rClass.RunarcanaClass.progress)
+        const rClassCharacteristics = JSON.parse(rClass.RunarcanaClass.characteristics)
+        progress.every(item => {
+          if (item.lvl <= rClass.level) {
+            characteristics.push(...rClassCharacteristics.filter(characteristic => item.c.new?.includes(characteristic.name) || false))
+            return true
+          } else return false
+        })
+      })
+      newcharacters.push({
+        ...character,
+        Characteristics: characteristics
+      })
+    })
+
     if (charId) characters = characters.filter(character => character.id === charId)
 
     return {
@@ -152,7 +171,7 @@ export default class UserService {
       nickname: user.nickname,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
-      characters
+      characters: newcharacters
     }
   }
 }

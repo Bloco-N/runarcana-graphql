@@ -17,6 +17,7 @@ type Character {
   CharacterInheritance: [CharacterInheritance!]!
   CharacterMisteries: [CharacterMistery!]!
   CharacterRunarcanaClass: [CharacterRunarcanaClass!]!
+  Characteristics: [Characteristic!]!
   Lineage: Lineage!
   Origin: Origin!
   Past: Past!
@@ -210,6 +211,11 @@ input CharacterUpdateProficiencyInputData {
   survival: String!
   tecnology: String!
   wisdomSavingThrow: String!
+}
+
+type Characteristic {
+  info: [String!]!
+  name: String!
 }
 
 type Component {
@@ -420,9 +426,16 @@ type OriginResponse {
 
 type Past {
   _count: PastCount
+  atributes: String!
+  characteristic: String!
   createdAt: DateTime!
+  description: String!
+  equipments: String!
   id: Int!
+  languages: String!
   name: String!
+  professions: String!
+  skills: String!
   updatedAt: DateTime!
 }
 
@@ -481,15 +494,11 @@ type RegionResponse {
 type RunarcanaClass {
   SpellClasses: [SpellClass!]!
   _count: RunarcanaClassCount
-  classCaracteristics: String!
+  characteristics: String!
   createdAt: DateTime!
-  equipment: String!
-  especialCaracteristics: String!
-  healthPoints: String!
   id: Int!
   name: String!
-  proficiences: String!
-  progressTable: String!
+  progress: String!
   updatedAt: DateTime!
 }
 
