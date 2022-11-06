@@ -496,9 +496,13 @@ type RunarcanaClass {
   _count: RunarcanaClassCount
   characteristics: String!
   createdAt: DateTime!
+  description: String!
   id: Int!
   name: String!
+  primaryAbility: String!
+  proficiencies: String!
   progress: String!
+  savingThrows: String!
   updatedAt: DateTime!
 }
 
