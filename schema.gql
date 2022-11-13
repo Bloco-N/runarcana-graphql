@@ -46,7 +46,7 @@ type Character {
   intelligenceSavingThrow: proficiency!
   intimidation: proficiency!
   investigation: proficiency!
-  lineageId: Int!
+  lineageId: Int
   medicine: proficiency!
   name: String!
   nature: proficiency!
@@ -82,7 +82,7 @@ input CharacterCreateInputData {
   essence: String!
   exaltation: String!
   expression: String!
-  lineageId: Float!
+  lineageId: Float
   name: String!
   originId: Float!
   pastId: Float!
@@ -179,7 +179,7 @@ input CharacterUpdateInputData {
   exaltation: String!
   expression: String!
   id: Float!
-  lineageId: Float!
+  lineageId: Float
   name: String!
   originId: Float!
   pastId: Float!
@@ -449,6 +449,10 @@ type PastResponse {
 
 type Query {
   getCharacterModAndSkills(id: Float!): CharacterModsAndSkills!
+  getOriginById(id: Float!): Origin!
+  getPastById(id: Float!): Past!
+  getRClassById(id: Float!): RunarcanaClass!
+  getRegionById(id: Float!): Region!
   listAllOrigins(search: String): OriginResponse!
   listAllPasts(search: String): PastResponse!
   listAllRClasses(search: String): RClassResponse!

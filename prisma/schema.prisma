@@ -36,7 +36,7 @@ model Character {
   userId                  Int
   regionId                Int
   originId                Int
-  lineageId               Int
+  lineageId               Int?
   pastId                  Int
   name                    String
   essence                 String
@@ -77,7 +77,7 @@ model Character {
   Region                  Region                    @relation(fields: [regionId], references: [id])
   Origin                  Origin                    @relation(fields: [originId], references: [id])
   User                    User                      @relation(fields: [userId], references: [id])
-  Lineage                 Lineage                   @relation(fields: [lineageId], references: [id])
+  Lineage                 Lineage?                  @relation(fields: [lineageId], references: [id])
   Past                    Past                      @relation(fields: [pastId], references: [id])
   SpellCharacters         SpellCharacter[]
   CharacterElements       CharacterElement[]
