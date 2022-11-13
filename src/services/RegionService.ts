@@ -1,4 +1,5 @@
 import { IContext } from '../interfaces/IContext'
+import { Region } from '../schemas/Region'
 import { RegionResponse } from '../schemas/RegionResponse'
 
 export default class RegionService {
@@ -7,5 +8,10 @@ export default class RegionService {
     return {
       regions
     }
+  }
+
+  public async getRegionById(ctx:IContext, id:number): Promise<Region>{
+    const region = await ctx.prisma.region.findUnique({where:{ id }})
+    return region
   }
 }

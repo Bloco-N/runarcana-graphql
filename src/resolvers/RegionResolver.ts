@@ -12,4 +12,10 @@ export class RegionResolver {
     const regions = await this.regionService.listAll(ctx, search)
     return regions
   }
+
+  @Query(() => Region)
+  async getRegionById(@Ctx() ctx:IContext, @Arg('id') id:number){
+    const region = await this.regionService.getRegionById(ctx, id);
+    return region
+  }
 }

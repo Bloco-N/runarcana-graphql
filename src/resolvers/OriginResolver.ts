@@ -12,4 +12,10 @@ export class OriginResolver {
     const origins = await this.originService.listAll(ctx, search)
     return origins
   }
+
+  @Query(() => Origin)
+  async getOriginById(@Ctx() ctx:IContext, @Arg('id') id:number){
+    const origin = await this.originService.getOriginById(ctx, id);
+    return origin
+  }
 }

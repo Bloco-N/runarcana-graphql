@@ -12,4 +12,10 @@ export class RClassResolver {
     const rclasses = await this.rclassSevice.listAll(ctx, search)
     return rclasses
   }
+
+  @Query(() => RunarcanaClass)
+  async getRClassById(@Ctx() ctx:IContext, @Arg('id') id:number){
+    const rClass = await this.rclassSevice.getRClassById(ctx, id);
+    return rClass
+  }
 }

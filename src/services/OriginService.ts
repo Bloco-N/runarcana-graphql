@@ -1,4 +1,5 @@
 import { IContext } from '../interfaces/IContext'
+import { Origin } from '../schemas/Origin'
 import { OriginResponse } from '../schemas/OriginResponse'
 
 export default class OriginService {
@@ -11,5 +12,10 @@ export default class OriginService {
     return {
       origins
     }
+  }
+  
+  public async getOriginById(ctx:IContext, id:number): Promise<Origin>{
+    const origin = await ctx.prisma.origin.findUnique({where:{ id }})
+    return origin
   }
 }

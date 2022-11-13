@@ -1,3 +1,4 @@
+import { RunarcanaClass } from '@prisma/client'
 import { IContext } from '../interfaces/IContext'
 import { RClassResponse } from '../schemas/RClassResponse'
 
@@ -7,5 +8,10 @@ export default class RClassService {
     return {
       runarcanaClasses
     }
+  }
+
+  public async getRClassById(ctx:IContext, id:number): Promise<RunarcanaClass>{
+    const rClass = await ctx.prisma.runarcanaClass.findUnique({where:{ id }})
+    return rClass
   }
 }
