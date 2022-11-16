@@ -31,6 +31,12 @@ export default class CharacterUpdateProficiencyInputData{
   intimidation: string
 
   @Field()
+  investigation: string
+
+  @Field()
+  insight: string
+
+  @Field()
   animalHandling: string
 
   @Field()
