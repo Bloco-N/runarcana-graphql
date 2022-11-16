@@ -187,6 +187,8 @@ export default class CharacterService {
         stealth: charData.stealth as proficiency,
         history: charData.history as proficiency,
         intimidation: charData.intimidation as proficiency,
+        investigation: charData.investigation as proficiency,
+        insight: charData.insight as proficiency,
         animalHandling: charData.animalHandling as proficiency,
         medicine: charData.medicine as proficiency,
         nature: charData.nature as proficiency,
@@ -209,7 +211,7 @@ export default class CharacterService {
 
   public async getCharacterModAndSkills (ctx:IContext, id:number): Promise <CharacterModsAndSkills> {
     const character = await ctx.prisma.character.findUnique({ where: { id } })
-    const mod = x => Math.floor((x - 10) / 2)
+    const mod = (x:number) => Math.floor((x - 10) / 2)
     const proficiency = (prof:proficiency, mod:number) => {
       switch (prof) {
         case 'NOT_PROFICIENT':
