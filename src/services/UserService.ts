@@ -144,7 +144,7 @@ export default class UserService {
 
     })
 
-    const newcharacters = []
+    let newCharacters = []
     characters.forEach(character => {
       const characteristics = []
       character.CharacterRunarcanaClass.forEach(rClass => {
@@ -157,13 +157,13 @@ export default class UserService {
           } else return false
         })
       })
-      newcharacters.push({
+      newCharacters.push({
         ...character,
         Characteristics: characteristics
       })
     })
 
-    if (charId) characters = characters.filter(character => character.id === charId)
+    if (charId) newCharacters = newCharacters.filter(character => character.id === charId)
 
     return {
       id: user.id,
@@ -171,7 +171,7 @@ export default class UserService {
       nickname: user.nickname,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
-      characters: newcharacters
+      characters: newCharacters
     }
   }
 }
