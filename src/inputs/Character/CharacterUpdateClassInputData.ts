@@ -11,4 +11,7 @@ export default class CharacterUpdateClassInputData {
 
   @Field()
     level:number
+
+  @Field()
+    progres: string
 }

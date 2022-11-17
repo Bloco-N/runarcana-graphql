@@ -7,6 +7,7 @@ import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpd
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
+import { levelUP } from '../../utils/characterClassesFuncitons'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
@@ -21,7 +22,8 @@ export default class CharacterService {
       data: {
         characterId: character.id,
         runarcanaClassId,
-        level: 1
+        level: 0,
+        progress: '[]'
       }
     })
 
@@ -55,7 +57,8 @@ export default class CharacterService {
       data: {
         characterId: data.characterId,
         runarcanaClassId: data.otherId,
-        level: 1
+        level: 0,
+        progress: '[]'
       }
     })
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
@@ -84,8 +87,14 @@ export default class CharacterService {
           characterId: data.characterId,
           runarcanaClassId: data.otherId
         }
+      },
+      include: {
+        RunarcanaClass: true
       }
     })
+
+    const newCharacterRunarcanaClass = levelUP(characterRunarcanaClass)
+
     const update = await ctx.prisma.characterRunarcanaClass.update({
       where: {
         runarcanaClassId_characterId: {
@@ -94,7 +103,8 @@ export default class CharacterService {
         }
       },
       data: {
-        level: characterRunarcanaClass.level + 1
+        level: newCharacterRunarcanaClass.level,
+        progress: newCharacterRunarcanaClass.progress
       }
     })
     if (!update) throw new Error('❌ failed to update character')
