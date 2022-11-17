@@ -7,6 +7,7 @@ import { Auth } from '../schemas/Auth'
 import { UserResponse } from '../schemas/UserResponse'
 import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
+import { charAddCharacteristics } from '../../utils/characterClassesFuncitons'
 export default class UserService {
   public async fetchAll (ctx:IContext, charId?:number): Promise<UserResponse> {
     return this.fetchUserResponse(ctx, ctx.user.id, charId)
@@ -68,7 +69,7 @@ export default class UserService {
       }
     }
 
-    let characters = await ctx.prisma.character.findMany({
+    const characters = await ctx.prisma.character.findMany({
       where: { userId: id },
       include: {
         Past: true,
@@ -144,26 +145,9 @@ export default class UserService {
 
     })
 
-    let newCharacters = []
-    characters.forEach(character => {
-      const characteristics = []
-      character.CharacterRunarcanaClass.forEach(rClass => {
-        const progress = JSON.parse(rClass.RunarcanaClass.progress)
-        const rClassCharacteristics = JSON.parse(rClass.RunarcanaClass.characteristics)
-        progress.every(item => {
-          if (item.lvl <= rClass.level) {
-            characteristics.push(...rClassCharacteristics.filter(characteristic => item.c.new?.includes(characteristic.name) || false))
-            return true
-          } else return false
-        })
-      })
-      newCharacters.push({
-        ...character,
-        Characteristics: characteristics
-      })
-    })
+    const chosenCharacter = charId ? characters.filter(character => character.id === charId) : characters
 
-    if (charId) newCharacters = newCharacters.filter(character => character.id === charId)
+    const endCharacters = chosenCharacter.map(character => charAddCharacteristics(character))
 
     return {
       id: user.id,
@@ -171,7 +155,7 @@ export default class UserService {
       nickname: user.nickname,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
-      characters: newCharacters
+      characters: endCharacters
     }
   }
 }
