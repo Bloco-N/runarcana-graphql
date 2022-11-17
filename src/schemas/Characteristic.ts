@@ -6,5 +6,5 @@ export class Characteristic {
     name: string
 
   @Field(() => [String])
-    info: [string]
+    info: string[]
 }
