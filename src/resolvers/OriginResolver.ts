@@ -14,8 +14,8 @@ export class OriginResolver {
   }
 
   @Query(() => Origin)
-  async getOriginById(@Ctx() ctx:IContext, @Arg('id') id:number){
-    const origin = await this.originService.getOriginById(ctx, id);
+  async getOriginById (@Ctx() ctx:IContext, @Arg('id') id:number) {
+    const origin = await this.originService.getOriginById(ctx, id)
     return origin
   }
 }
