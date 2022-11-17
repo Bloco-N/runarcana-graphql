@@ -154,6 +154,7 @@ type CharacterRunarcanaClass {
   characterId: Int!
   createdAt: DateTime!
   level: Int!
+  progress: String!
   runarcanaClassId: Int!
   updatedAt: DateTime!
 }
@@ -171,6 +172,7 @@ input CharacterUpdateAttributesInputData {
 input CharacterUpdateClassInputData {
   id: CharacterIdPair!
   level: Float!
+  progres: String!
   runarcanaClassId: Float!
 }
 
@@ -197,8 +199,10 @@ input CharacterUpdateProficiencyInputData {
   dexteritySavingThrow: String!
   history: String!
   id: Float!
+  insight: String!
   intelligenceSavingThrow: String!
   intimidation: String!
+  investigation: String!
   medicine: String!
   nature: String!
   perception: String!

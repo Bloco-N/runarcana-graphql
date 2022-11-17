@@ -358,6 +358,7 @@ model CharacterRunarcanaClass {
   runarcanaClassId Int
   characterId      Int
   level            Int
+  progress         String
   RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id], onDelete: Cascade)
   Character        Character      @relation(fields: [characterId], references: [id], onDelete: Cascade)
   createdAt        DateTime       @default(now())
