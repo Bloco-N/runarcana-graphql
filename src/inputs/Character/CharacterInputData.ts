@@ -8,7 +8,7 @@ export default class CharacterInputData {
   @Field()
     originId:number
 
-  @Field({nullable: true})
+  @Field({ nullable: true })
     lineageId?:number
 
   @Field()

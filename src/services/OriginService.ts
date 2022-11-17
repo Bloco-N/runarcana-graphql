@@ -13,9 +13,9 @@ export default class OriginService {
       origins
     }
   }
-  
-  public async getOriginById(ctx:IContext, id:number): Promise<Origin>{
-    const origin = await ctx.prisma.origin.findUnique({where:{ id }})
+
+  public async getOriginById (ctx:IContext, id:number): Promise<Origin> {
+    const origin = await ctx.prisma.origin.findUnique({ where: { id } })
     return origin
   }
 }

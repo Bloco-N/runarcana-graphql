@@ -10,8 +10,8 @@ export default class RegionService {
     }
   }
 
-  public async getRegionById(ctx:IContext, id:number): Promise<Region>{
-    const region = await ctx.prisma.region.findUnique({where:{ id }})
+  public async getRegionById (ctx:IContext, id:number): Promise<Region> {
+    const region = await ctx.prisma.region.findUnique({ where: { id } })
     return region
   }
 }

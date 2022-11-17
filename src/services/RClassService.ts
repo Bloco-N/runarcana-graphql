@@ -10,8 +10,8 @@ export default class RClassService {
     }
   }
 
-  public async getRClassById(ctx:IContext, id:number): Promise<RunarcanaClass>{
-    const rClass = await ctx.prisma.runarcanaClass.findUnique({where:{ id }})
+  public async getRClassById (ctx:IContext, id:number): Promise<RunarcanaClass> {
+    const rClass = await ctx.prisma.runarcanaClass.findUnique({ where: { id } })
     return rClass
   }
 }

@@ -11,7 +11,7 @@ export default class PastService {
             contains: search,
             mode: 'insensitive'
           }
-        },
+        }
       })
       return { pasts }
     }
@@ -19,8 +19,8 @@ export default class PastService {
     return { pasts }
   }
 
-  public async getPastById(ctx:IContext, id:number): Promise<Past>{
-    const past = await ctx.prisma.past.findUnique({where:{ id }})
+  public async getPastById (ctx:IContext, id:number): Promise<Past> {
+    const past = await ctx.prisma.past.findUnique({ where: { id } })
     return past
   }
 }

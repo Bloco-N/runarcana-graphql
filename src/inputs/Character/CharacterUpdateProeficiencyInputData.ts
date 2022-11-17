@@ -1,84 +1,82 @@
-import { Field, InputType } from "type-graphql";
+import { Field, InputType } from 'type-graphql'
 
 @InputType()
-export default class CharacterUpdateProficiencyInputData{
+export default class CharacterUpdateProficiencyInputData {
+  @Field()
+    id:number
 
   @Field()
-  id:number
+    acrobatics: string
 
   @Field()
-  acrobatics: string
+    arcana: string
 
   @Field()
-  arcana: string
+    athletics: string
 
   @Field()
-  athletics: string
+    performance: string
 
   @Field()
-  performance: string
+    deception: string
 
   @Field()
-  deception: string
+    stealth: string
 
   @Field()
-  stealth: string
+    history: string
 
   @Field()
-  history: string
+    intimidation: string
 
   @Field()
-  intimidation: string
+    investigation: string
 
   @Field()
-  investigation: string
+    insight: string
 
   @Field()
-  insight: string
+    animalHandling: string
 
   @Field()
-  animalHandling: string
+    medicine: string
 
   @Field()
-  medicine: string
+    nature: string
 
   @Field()
-  nature: string
+    perception: string
 
   @Field()
-  perception: string
+    persuasion: string
 
   @Field()
-  persuasion: string
+    sleightOfHand: string
 
   @Field()
-  sleightOfHand: string
+    religion: string
 
   @Field()
-  religion: string
+    survival: string
 
   @Field()
-  survival: string
+    tecnology: string
 
   @Field()
-  tecnology: string
+    strengthSavingThrow: string
 
   @Field()
-  strengthSavingThrow: string
+    dexteritySavingThrow: string
 
   @Field()
-  dexteritySavingThrow: string
+    constitutionSavingThrow: string
 
   @Field()
-  constitutionSavingThrow: string
+    intelligenceSavingThrow: string
 
   @Field()
-  intelligenceSavingThrow: string
+    wisdomSavingThrow: string
 
   @Field()
-  wisdomSavingThrow: string
-
-  @Field()
-  charismaSavingThrow: string
-
+    charismaSavingThrow: string
 }

@@ -1,8 +1,7 @@
-import { Field, InputType } from "type-graphql";
+import { Field, InputType } from 'type-graphql'
 
 @InputType()
-export default class CharacterUpdateAttributesInputData{
-
+export default class CharacterUpdateAttributesInputData {
   @Field()
     id:number
 
@@ -11,17 +10,16 @@ export default class CharacterUpdateAttributesInputData{
 
   @Field()
     dexterity:number
-  
+
   @Field()
     constitution:number
-  
+
   @Field()
     intelligence:number
 
   @Field()
     wisdom:number
-  
+
   @Field()
     charisma:number
-
 }

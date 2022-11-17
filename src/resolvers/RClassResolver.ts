@@ -14,8 +14,8 @@ export class RClassResolver {
   }
 
   @Query(() => RunarcanaClass)
-  async getRClassById(@Ctx() ctx:IContext, @Arg('id') id:number){
-    const rClass = await this.rclassSevice.getRClassById(ctx, id);
+  async getRClassById (@Ctx() ctx:IContext, @Arg('id') id:number) {
+    const rClass = await this.rclassSevice.getRClassById(ctx, id)
     return rClass
   }
 }
