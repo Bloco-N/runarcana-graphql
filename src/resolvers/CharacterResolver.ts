@@ -10,6 +10,7 @@ import CharacterService from '../services/CharacterService'
 import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
+import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
 
 @Resolver(Character)
 export class CharacterResolver {
@@ -59,8 +60,8 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async levelUpCharacterClass (@Arg('data') data:CharacterIdPair, @Ctx() ctx:IContext):Promise<ApiResponse> {
-    await this.characterService.levelUpRunarcanaClass(ctx, data)
+  async levelUpCharacter (@Arg('data') data:CharacterLevelUpInputData, @Ctx() ctx:IContext):Promise<ApiResponse> {
+    await this.characterService.levelUpCharacter(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 

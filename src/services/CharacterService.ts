@@ -7,7 +7,8 @@ import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpd
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
-import { levelUP } from '../../utils/characterClassesFuncitons'
+import { characterAdditionalInfosDefault, levelUp } from '../../utils/characterFuncitons'
+import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
@@ -15,6 +16,8 @@ export default class CharacterService {
     const character = await ctx.prisma.character.create({
       data: {
         userId: ctx.user.id,
+        level: 0,
+        additionalInfos: JSON.stringify(characterAdditionalInfosDefault),
         ...charData
       }
     })
@@ -80,34 +83,58 @@ export default class CharacterService {
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
   }
 
-  public async levelUpRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
+  public async levelUpCharacter (ctx:IContext, data:CharacterLevelUpInputData) {
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.findUnique({
       where: {
         runarcanaClassId_characterId: {
           characterId: data.characterId,
-          runarcanaClassId: data.otherId
+          runarcanaClassId: data.runarcanaClassId
         }
       },
       include: {
-        RunarcanaClass: true
+        Character: {
+          select: {
+            level: true,
+            additionalInfos: true,
+            constitution: true
+          }
+        },
+        RunarcanaClass: {
+          select: {
+            characteristics: true,
+            progress: true,
+            hitDie: true
+          }
+        }
       }
     })
 
-    const newCharacterRunarcanaClass = levelUP(characterRunarcanaClass)
+    const characterRunarcanaClassUpdated = levelUp(characterRunarcanaClass, data.hitDie)
 
-    const update = await ctx.prisma.characterRunarcanaClass.update({
+    const characterUpdate = await ctx.prisma.character.update({
+      where: {
+        id: data.characterId
+      },
+      data: {
+        level: characterRunarcanaClassUpdated.Character.level,
+        additionalInfos: characterRunarcanaClassUpdated.Character.additionalInfos
+      }
+    })
+
+    const characterRunarcanaClassUpdate = await ctx.prisma.characterRunarcanaClass.update({
       where: {
         runarcanaClassId_characterId: {
           characterId: data.characterId,
-          runarcanaClassId: data.otherId
+          runarcanaClassId: data.runarcanaClassId
         }
       },
       data: {
-        level: newCharacterRunarcanaClass.level,
-        progress: newCharacterRunarcanaClass.progress
+        level: characterRunarcanaClassUpdated.level,
+        progress: characterRunarcanaClassUpdated.progress
       }
     })
-    if (!update) throw new Error('❌ failed to update character')
+
+    if (!(characterUpdate && characterRunarcanaClassUpdate)) throw new Error('❌ failed to update character')
   }
 
   public async deleteRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
