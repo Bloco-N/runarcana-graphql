@@ -1,7 +1,8 @@
 import { Character, CharacterElement, CharacterInheritance, CharacterMistery, CharacterRunarcanaClass, Component, Conjuration, Duration, Element, ElementIngredient, ElementRecipe, Inheritance, InheritanceLineage, InheritanceOrigin, InheritanceRegion, Lineage, Mystery, Origin, Past, Range, Region, RunarcanaClass, Spell, SpellCharacter, SpellClass, SpellComponent, SpellLineage, SpellMystery, SpellOrigin } from '@prisma/client'
-import { Characteristic } from '../src/schemas/Characteristic'
+import AdditionalInfos from '../src/schemas/CharacterAddons/AdditionalInfos'
+import { Characteristic } from '../src/schemas/CharacterAddons/Characteristic'
 
-type CharacterWithDetails = Character & {
+type DataBaseCharacter = Character & {
     Past: Past;
     Region: Region & {
         InheritanceRegion: (InheritanceRegion & {
@@ -110,15 +111,31 @@ type CharacterWithDetails = Character & {
     })[]
 }
 
-type CharacterWithCharacteristics = CharacterWithDetails & {
-    Characteristics : Characteristic[]
+type BuiltCharacter = DataBaseCharacter & {
+    Characteristics : Characteristic[],
+    AdditionalInfos : AdditionalInfos
 }
 
-type CharacterRunarcanaClassWithDetails = CharacterRunarcanaClass & {
+type CharClass = CharacterRunarcanaClass & {
     RunarcanaClass : RunarcanaClass
 }
+
+type CharacterLevelUp = CharacterRunarcanaClass & {
+    RunarcanaClass: {
+        progress: string;
+        characteristics: string;
+        hitDie: number;
+    };
+    Character: {
+        level: number;
+        additionalInfos: string;
+        constitution: number;
+    };
+}
+
 export {
-  CharacterWithDetails,
-  CharacterWithCharacteristics,
-  CharacterRunarcanaClassWithDetails
+  DataBaseCharacter,
+  BuiltCharacter,
+  CharClass,
+  CharacterLevelUp
 }

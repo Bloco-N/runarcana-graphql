@@ -7,7 +7,7 @@ import { Auth } from '../schemas/Auth'
 import { UserResponse } from '../schemas/UserResponse'
 import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
-import { charAddCharacteristics } from '../../utils/characterClassesFuncitons'
+import { characterAddComplements } from '../../utils/characterFuncitons'
 export default class UserService {
   public async fetchAll (ctx:IContext, charId?:number): Promise<UserResponse> {
     return this.fetchUserResponse(ctx, ctx.user.id, charId)
@@ -145,9 +145,12 @@ export default class UserService {
 
     })
 
-    const chosenCharacter = charId ? characters.filter(character => character.id === charId) : characters
+    const chosenCharacters = charId ? characters.filter(character => character.id === charId) : characters
 
-    const endCharacters = chosenCharacter.map(character => charAddCharacteristics(character))
+    const builtCharacters = chosenCharacters.map(character => characterAddComplements(character))
+
+    console.log(builtCharacters[0].AdditionalInfos)
+    console.log(builtCharacters[0].AdditionalInfos.ClassHpBase)
 
     return {
       id: user.id,
@@ -155,7 +158,7 @@ export default class UserService {
       nickname: user.nickname,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
-      characters: endCharacters
+      characters: builtCharacters
     }
   }
 }
