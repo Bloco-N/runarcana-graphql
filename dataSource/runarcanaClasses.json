@@ -2,7 +2,7 @@
 	{
 		"name": "Acólito",
 		"description": "Um campeão com conexão ao mundo espiritual a serviço de alguma entidade ou causa.",
-		"hitDie": "d8",
+		"hitDie": 8,
 		"primatyAbility": "Sabedoria & Carisma",
 		"saves": "Sabedoria & Carisma",
 		"proficiencies": {
@@ -23,7 +23,7 @@
 	{
 		"name": "Arcano",
 		"description": "Um usuário de magia seja ela canalizada através da erudição ou da intuição, capaz de manipular as estruturas da realidade.",
-		"hitDie": "d6",
+		"hitDie": 6,
 		"primatyAbility": "Inteligência ou Carisma",
 		"saves": "Carisma & Inteligência",
 		"proficiencies": {
@@ -38,7 +38,7 @@
 	{
 		"name": "Atirador",
 		"description": "Um perito no uso de armas de fogo e armas de combate à distância.",
-		"hitDie": "d8",
+		"hitDie": 8,
 		"primatyAbility": "Destreza",
 		"saves": "Destreza & Sabedoria",
 		"proficiencies": {
@@ -56,7 +56,7 @@
 	{
 		"name": "Bodisatva",
 		"description": "Um mestre das artes marciais, utilizando o poder corporal para atingir a perfeição física e espiritual",
-		"hitDie": "d10",
+		"hitDie": 10,
 		"primatyAbility": "Destreza & Sabedoria",
 		"saves": "Força & Destreza",
 		"proficiencies": {
@@ -72,7 +72,7 @@
 	{
 		"name": "Bruto",
 		"description": "Um feroz guerreiro de origem primitiva que pode entrar em fúria durante uma batalha",
-		"hitDie": "d12",
+		"hitDie": 12,
 		"primatyAbility": "Força",
 		"saves": "Força & Constituição",
 		"proficiencies": {
@@ -93,7 +93,7 @@
 	{
 		"name": "Caçador",
 		"description": "Um especialista em rastrear e abater ou mesmo capturar sua presa.",
-		"hitDie": "d10",
+		"hitDie": 10,
 		"primatyAbility": "Destreza & Sabedoria",
 		"saves": "Força & Destreza",
 		"proficiencies": {
@@ -115,7 +115,7 @@
 	{
 		"name": "Combatente",
 		"description": "Um mestre do combate, perito em uma vasta gama de armas e armaduras",
-		"hitDie": "d10",
+		"hitDie": 10,
 		"primatyAbility": "Força ou Destreza",
 		"saves": "Força & Constituição",
 		"proficiencies": {
@@ -134,7 +134,7 @@
 	{
 		"name": "Mercurial",
 		"description": "Um trapaceiro que utiliza de furtividade e astúcia para sobrepujar os obstáculos e inimigos",
-		"hitDie": "d8",
+		"hitDie": 8,
 		"primatyAbility": "Destreza",
 		"saves": "Destreza & Inteligência",
 		"proficiencies": {
@@ -155,7 +155,7 @@
 	{
 		"name": "Peregrino",
 		"description": "Um místico inspirador que possui poderes que ecoam a música da criação",
-		"hitDie": "d8",
+		"hitDie": 8,
 		"primatyAbility": "Carisma",
 		"saves": "Destreza & Carisma",
 		"proficiencies": {
@@ -176,7 +176,7 @@
 	{
 		"name": "Tecmaturgo",
 		"description": "Peritos em utilizar o potencial mágico oculto de objetos aparentemente mundanos",
-		"hitDie": "d6",
+		"hitDie": 6,
 		"primatyAbility": "Inteligência",
 		"saves": "Constituição & Inteligência",
 		"proficiencies": {
@@ -196,7 +196,7 @@
 	{
 		"name": "Xamã",
 		"description": "Um canalizador de energia e espíritos",
-		"hitDie": "d8",
+		"hitDie": 8,
 		"primatyAbility": "Sabedoria",
 		"saves": "Constituição & Sabedoria",
 		"proficiencies": {
