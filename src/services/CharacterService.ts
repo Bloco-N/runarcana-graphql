@@ -9,6 +9,7 @@ import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
 import { characterAdditionalInfosDefault, levelUp } from '../../utils/characterFuncitons'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
+import LevelUpData from '../schemas/LevelUpData'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
@@ -91,33 +92,41 @@ export default class CharacterService {
           runarcanaClassId: data.runarcanaClassId
         }
       },
-      include: {
+      select: {
+        progress: true,
+        level: true,
+        RunarcanaClass: {
+          select: {
+            progress: true
+          }
+        },
         Character: {
           select: {
             level: true,
-            additionalInfos: true,
-            constitution: true
-          }
-        },
-        RunarcanaClass: {
-          select: {
-            characteristics: true,
-            progress: true,
-            hitDie: true
+            additionalInfos: true
           }
         }
       }
     })
 
-    const characterRunarcanaClassUpdated = levelUp(characterRunarcanaClass, data.hitDie)
+    let levelUpdata : LevelUpData = {
+      characterProgress: characterRunarcanaClass.progress,
+      characterLevel: characterRunarcanaClass.Character.level,
+      characterAdditionalInfos: characterRunarcanaClass.Character.additionalInfos,
+      classProgress: characterRunarcanaClass.RunarcanaClass.progress,
+      characterClassLevel: characterRunarcanaClass.level,
+      hitDieRoll: data.hitDie
+    }
+
+    levelUpdata = levelUp(levelUpdata)
 
     const characterUpdate = await ctx.prisma.character.update({
       where: {
         id: data.characterId
       },
       data: {
-        level: characterRunarcanaClassUpdated.Character.level,
-        additionalInfos: characterRunarcanaClassUpdated.Character.additionalInfos
+        level: levelUpdata.characterLevel,
+        additionalInfos: levelUpdata.characterAdditionalInfos
       }
     })
 
@@ -129,8 +138,8 @@ export default class CharacterService {
         }
       },
       data: {
-        level: characterRunarcanaClassUpdated.level,
-        progress: characterRunarcanaClassUpdated.progress
+        level: levelUpdata.characterClassLevel,
+        progress: levelUpdata.characterProgress
       }
     })
 

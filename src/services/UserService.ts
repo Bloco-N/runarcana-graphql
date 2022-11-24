@@ -149,9 +149,6 @@ export default class UserService {
 
     const builtCharacters = chosenCharacters.map(character => characterAddComplements(character))
 
-    console.log(builtCharacters[0].AdditionalInfos)
-    console.log(builtCharacters[0].AdditionalInfos.ClassHpBase)
-
     return {
       id: user.id,
       username: user.username,

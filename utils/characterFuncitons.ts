@@ -1,13 +1,16 @@
-import AdditionalInfos from '../src/schemas/CharacterAddons/AdditionalInfos'
-import { Characteristic } from '../src/schemas/CharacterAddons/Characteristic'
-import { BuiltCharacter, CharacterLevelUp, CharClass, DataBaseCharacter } from './types'
+import { Character as PrismaCharacter } from '@prisma/client'
+import AdditionalInfos from '../src/schemas/CharacterComplements/AdditionalInfos'
+import { Character } from '../src/schemas/Character'
+import { Characteristic } from '../src/schemas/CharacterComplements/Characteristic'
+import LevelUpData from '../src/schemas/LevelUpData'
+import { CharacterRunarcanaClass } from '../src/schemas/relations/CharacterRunarcanaClass'
 
 const characterAdditionalInfosDefault: AdditionalInfos = {
-  ClassHpBase: 0
+  classHpBase: 0
 }
 
-function characterAddComplements (character: DataBaseCharacter) : BuiltCharacter {
-  const builtCharacter: BuiltCharacter = {
+function characterAddComplements (character: PrismaCharacter) : Character {
+  const builtCharacter : Character = {
     ...character,
     Characteristics: null,
     AdditionalInfos: JSON.parse(character.additionalInfos)
@@ -18,17 +21,17 @@ function characterAddComplements (character: DataBaseCharacter) : BuiltCharacter
   return builtCharacter
 }
 
-function levelUp (charClass: CharacterLevelUp, hitDie:number) : CharacterLevelUp {
-  const classProgress = JSON.parse(charClass.RunarcanaClass.progress)
-  const characterProgressUpdated = JSON.parse(charClass.progress)
-  const characterAdditionalInfosUpdated:AdditionalInfos = JSON.parse(charClass.Character.additionalInfos)
+function levelUp (data: LevelUpData) : LevelUpData {
+  const classProgress = JSON.parse(data.classProgress)
+  const characterProgressUpdated = JSON.parse(data.characterProgress)
+  const characterAdditionalInfosUpdated:AdditionalInfos = JSON.parse(data.characterAdditionalInfos)
 
-  characterAdditionalInfosUpdated.ClassHpBase += hitDie
+  characterAdditionalInfosUpdated.classHpBase += data.hitDieRoll
 
-  charClass.Character.level += 1
-  charClass.level += 1
+  data.characterLevel += 1
+  data.characterClassLevel += 1
 
-  const lvlUpdate = classProgress.find((item: { lvl: number }) => item.lvl === charClass.level)
+  const lvlUpdate = classProgress.find((item: { lvl: number }) => item.lvl === data.characterLevel)
 
   if (lvlUpdate) {
     characterProgressUpdated.push(...lvlUpdate.c.new?.map((characteristicName: string) => ({
@@ -36,12 +39,12 @@ function levelUp (charClass: CharacterLevelUp, hitDie:number) : CharacterLevelUp
       lvl: 1
     })) || [])
 
-    charClass.progress = JSON.stringify(characterProgressUpdated)
+    data.characterProgress = JSON.stringify(characterProgressUpdated)
   }
 
-  charClass.Character.additionalInfos = JSON.stringify(characterAdditionalInfosUpdated)
+  data.characterAdditionalInfos = JSON.stringify(characterAdditionalInfosUpdated)
 
-  return charClass
+  return data
 }
 
 function characteristicOnLvl (characteristicName: string, _characteristicLvl: number, classCharacteristics: Characteristic[]) {
@@ -52,15 +55,15 @@ function characteristicOnLvl (characteristicName: string, _characteristicLvl: nu
   }
 }
 
-function currentClassCharacteristics (charClass: { RunarcanaClass: { characteristics: string }; progress: string }) : Characteristic[] {
+function currentClassCharacteristics (charClass: CharacterRunarcanaClass) : Characteristic[] {
   const classCharacteristics = JSON.parse(charClass.RunarcanaClass.characteristics)
   const CharProgress = JSON.parse(charClass.progress)
   return CharProgress.map((characteristic: { name: string; lvl: number }) => characteristicOnLvl(characteristic.name, characteristic.lvl, classCharacteristics))
 }
 
-function currentCharacteristics (characterClasses: CharClass[]) : Characteristic[] {
+function currentCharacteristics (characterClasses: CharacterRunarcanaClass[]) : Characteristic[] {
   const currentCharacteristic: Characteristic[] = []
-  characterClasses.forEach((runarcanaClass: CharClass) => {
+  characterClasses.forEach((runarcanaClass: CharacterRunarcanaClass) => {
     currentCharacteristic.push(...currentClassCharacteristics(runarcanaClass))
   })
 
@@ -69,6 +72,6 @@ function currentCharacteristics (characterClasses: CharClass[]) : Characteristic
 
 export {
   levelUp,
-  characterAdditionalInfosDefault,
-  characterAddComplements
+  characterAddComplements,
+  characterAdditionalInfosDefault
 }

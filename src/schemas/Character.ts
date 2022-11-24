@@ -11,8 +11,8 @@ import { CharacterMistery } from './relations/CharacterMistery'
 import { CharacterElement } from './relations/CharacterElement'
 import { CharacterRunarcanaClass } from './relations/CharacterRunarcanaClass'
 import { CharacterInheritance } from './relations/CharacterInheritance'
-import { Characteristic } from './CharacterAddons/Characteristic'
-import AdditionalInfos from './CharacterAddons/AdditionalInfos'
+import { Characteristic } from './CharacterComplements/Characteristic'
+import AdditionalInfos from './CharacterComplements/AdditionalInfos'
 
 @ObjectType()
 export class Character extends PrismaCharacter {
