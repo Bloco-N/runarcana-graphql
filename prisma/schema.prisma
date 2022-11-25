@@ -39,7 +39,7 @@ model Character {
   lineageId               Int?
   pastId                  Int
   name                    String
-  level                   Int
+  level                   Int                       @default(1)
   additionalInfos         String
   essence                 String
   expression              String
@@ -360,7 +360,7 @@ model CharacterElement {
 model CharacterRunarcanaClass {
   runarcanaClassId Int
   characterId      Int
-  level            Int
+  level            Int            @default(1)
   progress         String
   RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id], onDelete: Cascade)
   Character        Character      @relation(fields: [characterId], references: [id], onDelete: Cascade)
