@@ -7,27 +7,44 @@ import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpd
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
-import { characterAdditionalInfosDefault, levelUp } from '../../utils/characterFuncitons'
+import { firstClassLevel, levelUp } from '../../utils/characterFuncitons'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
 import LevelUpData from '../schemas/LevelUpData'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
     const { runarcanaClassId, ...charData } = data
+
+    const firstClass = await ctx.prisma.runarcanaClass.findUnique({
+      where: {
+        id: runarcanaClassId
+      },
+      select: {
+        progress: true,
+        hitDie: true
+      }
+    })
+
+    let firstClassLevelData : LevelUpData = {
+      hitDieRoll: firstClass.hitDie,
+      classProgress: firstClass.progress
+    }
+
+    firstClassLevelData = firstClassLevel(firstClassLevelData)
+
     const character = await ctx.prisma.character.create({
       data: {
         userId: ctx.user.id,
-        level: 0,
-        additionalInfos: JSON.stringify(characterAdditionalInfosDefault),
+        additionalInfos: firstClassLevelData.characterAdditionalInfos,
         ...charData
       }
     })
+
     await ctx.prisma.characterRunarcanaClass.create({
       data: {
         characterId: character.id,
         runarcanaClassId,
-        level: 0,
-        progress: '[]'
+        progress: firstClassLevelData.characterProgress
       }
     })
 

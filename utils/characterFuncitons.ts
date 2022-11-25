@@ -70,8 +70,27 @@ function currentCharacteristics (characterClasses: CharacterRunarcanaClass[]) : 
   return currentCharacteristic
 }
 
+function firstClassLevel (data: LevelUpData) : LevelUpData {
+  const classProgress = JSON.parse(data.classProgress)
+  const characterProgressUpdated = []
+  const characterAdditionalInfosUpdated:AdditionalInfos = characterAdditionalInfosDefault
+
+  characterAdditionalInfosUpdated.classHpBase = data.hitDieRoll
+
+  characterProgressUpdated.push(...classProgress[0].c.new?.map((characteristicName: string) => ({
+    name: characteristicName,
+    lvl: 1
+  })) || [])
+
+  data.characterProgress = JSON.stringify(characterProgressUpdated)
+  data.characterAdditionalInfos = JSON.stringify(characterAdditionalInfosUpdated)
+
+  return data
+}
+
 export {
   levelUp,
   characterAddComplements,
+  firstClassLevel,
   characterAdditionalInfosDefault
 }
