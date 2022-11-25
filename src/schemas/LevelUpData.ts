@@ -3,20 +3,20 @@ import { Field, ObjectType } from 'type-graphql'
 @ObjectType()
 export default class LevelUpData {
   @Field()
-    characterLevel: number
+    characterLevel?: number
 
   @Field()
-    characterAdditionalInfos: string
+    characterAdditionalInfos?: string
 
   @Field()
-    characterProgress: string
+    characterProgress?: string
 
   @Field()
-    characterClassLevel: number
+    characterClassLevel?: number
 
   @Field()
-    classProgress: string
+    classProgress?: string
 
   @Field()
-    hitDieRoll: number
+    hitDieRoll?: number
 }
