@@ -1,35 +1,45 @@
-import { Character as PrismaCharacter } from '@prisma/client'
-import AdditionalInfos from '../src/schemas/CharacterComplements/AdditionalInfos'
-import { Character } from '../src/schemas/Character'
-import { Characteristic } from '../src/schemas/CharacterComplements/Characteristic'
-import LevelUpData from '../src/schemas/LevelUpData'
-import { CharacterRunarcanaClass } from '../src/schemas/relations/CharacterRunarcanaClass'
+import { Character } from '../src/schemas/Character/Character'
+import { Characteristic } from '../src/schemas/Character/CharacterComplements/Characteristic'
+import { CharacterRunarcanaClass } from '../src/schemas/Character/CharacterRelations/CharacterRunarcanaClass'
 
-const characterAdditionalInfosDefault: AdditionalInfos = {
-  classHpBase: 0
-}
+function characterAddComplements (character) : Character {
+  const builtCharacter : Character = character as Character
 
-function characterAddComplements (character: PrismaCharacter) : Character {
-  const builtCharacter : Character = {
-    ...character,
-    Characteristics: null,
-    AdditionalInfos: JSON.parse(character.additionalInfos)
-  }
-
-  builtCharacter.Characteristics = currentCharacteristics(builtCharacter.CharacterRunarcanaClass)
+  builtCharacter.Characteristics = currentCharacteristics(builtCharacter.CharacterRunarcanaClasses)
 
   return builtCharacter
 }
 
-function levelUp (data: LevelUpData) : LevelUpData {
+function firstClassLevel (data) {
+  const classProgress = JSON.parse(data.progress)
+  const characterProgressUpdated = []
+
+  characterProgressUpdated.push(...classProgress[0].c.new?.map((characteristicName: string) => ({
+    name: characteristicName,
+    lvl: 1
+  })) || [])
+
+  data.characterProgress = JSON.stringify(characterProgressUpdated)
+
+  return {
+    classHpBase: data.hitDie,
+    CharacterRunarcanaClasses: {
+      create: {
+        runarcanaClassId: data.id,
+        progress: data.characterProgress
+      }
+
+    }
+  }
+}
+
+function levelUp (data) {
   const classProgress = JSON.parse(data.classProgress)
   const characterProgressUpdated = JSON.parse(data.characterProgress)
-  const characterAdditionalInfosUpdated:AdditionalInfos = JSON.parse(data.characterAdditionalInfos)
 
-  characterAdditionalInfosUpdated.classHpBase += data.hitDieRoll
-
-  data.characterLevel += 1
-  data.characterClassLevel += 1
+  data.classHpBase += data.hitDieRoll
+  data.characterLevel++
+  data.characterClassLevel++
 
   const lvlUpdate = classProgress.find((item: { lvl: number }) => item.lvl === data.characterLevel)
 
@@ -42,9 +52,16 @@ function levelUp (data: LevelUpData) : LevelUpData {
     data.characterProgress = JSON.stringify(characterProgressUpdated)
   }
 
-  data.characterAdditionalInfos = JSON.stringify(characterAdditionalInfosUpdated)
-
-  return data
+  return {
+    Character: {
+      update: {
+        level: data.characterLevel,
+        classHpBase: data.classHpBase
+      },
+      level: data.characterClassLevel,
+      progress: data.characterProgress
+    }
+  }
 }
 
 function characteristicOnLvl (characteristicName: string, _characteristicLvl: number, classCharacteristics: Characteristic[]) {
@@ -70,27 +87,29 @@ function currentCharacteristics (characterClasses: CharacterRunarcanaClass[]) : 
   return currentCharacteristic
 }
 
-function firstClassLevel (data: LevelUpData) : LevelUpData {
-  const classProgress = JSON.parse(data.classProgress)
-  const characterProgressUpdated = []
-  const characterAdditionalInfosUpdated:AdditionalInfos = characterAdditionalInfosDefault
-
-  characterAdditionalInfosUpdated.classHpBase = data.hitDieRoll
-
-  characterProgressUpdated.push(...classProgress[0].c.new?.map((characteristicName: string) => ({
-    name: characteristicName,
-    lvl: 1
-  })) || [])
-
-  data.characterProgress = JSON.stringify(characterProgressUpdated)
-  data.characterAdditionalInfos = JSON.stringify(characterAdditionalInfosUpdated)
-
-  return data
+function createRelation (createData) {
+  return {
+    CharacterInheritances: {
+      create: {
+        inheritanceId: createData.InheritanceId
+      }
+    },
+    CharacterRunarcanaClasses: {
+      create: {
+        runarcanaClassId: createData.RunarcanaClassId
+      }
+    },
+    CharacterSpells: {
+      create: {
+        spellId: createData.SpellId
+      }
+    }
+  }
 }
 
 export {
   levelUp,
   characterAddComplements,
   firstClassLevel,
-  characterAdditionalInfosDefault
+  createRelation
 }
