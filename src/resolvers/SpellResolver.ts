@@ -1,7 +1,7 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
-import { Spell } from '../schemas/Spell'
+import { Spell } from '../schemas/Spell/Spell'
 import { IContext } from '../interfaces/IContext'
-import { SpellResponse } from '../schemas/SpellResponse'
+import { SpellResponse } from '../schemas/Spell/SpellResponse'
 import SpellService from '../services/SpellService'
 
 @Resolver(Spell)

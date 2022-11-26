@@ -5,12 +5,14 @@ import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputDa
 import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
-import { Character } from '../schemas/Character'
+import { Character } from '../schemas/Character/Character'
 import CharacterService from '../services/CharacterService'
 import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
-import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
+import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
+import CharacterUpdateHpInputData from '../inputs/Character/CharacterUpdateHpInputData'
+import CharacterAddInputData from '../inputs/Character/CharacterAddInputData'
 
 @Resolver(Character)
 export class CharacterResolver {
@@ -111,6 +113,20 @@ export class CharacterResolver {
   @Authorized()
   async updateCharacterProficiency (@Arg('data') data:CharacterUpdateProficiencyInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
     await this.characterService.updateCharacterProficiency(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async updateCurrentHp (@Arg('data') data:CharacterUpdateHpInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
+    await this.characterService.updateCharacterHp(ctx, data)
+    return new ApiResponse('✅ character updated')
+  }
+
+  @Mutation(() => ApiResponse)
+  @Authorized()
+  async addRelation (@Arg('data') data:CharacterAddInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
+    await this.characterService.addRelation(ctx, data)
     return new ApiResponse('✅ character updated')
   }
 }

@@ -1,7 +1,7 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
 import { IContext } from '../interfaces/IContext'
-import { Origin } from '../schemas/Origin'
-import { OriginResponse } from '../schemas/OriginResponse'
+import { Origin } from '../schemas/Origin/Origin'
+import { OriginResponse } from '../schemas/Origin/OriginResponse'
 import OriginService from '../services/OriginService'
 
 @Resolver(Origin)

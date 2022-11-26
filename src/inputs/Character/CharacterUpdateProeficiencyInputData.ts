@@ -1,82 +1,83 @@
 import { Field, InputType } from 'type-graphql'
+import { proficiency } from '@prisma/client'
 
 @InputType()
 export default class CharacterUpdateProficiencyInputData {
   @Field()
     id:number
 
-  @Field()
-    acrobatics: string
+  @Field({ nullable: true })
+    acrobatics?: proficiency
 
-  @Field()
-    arcana: string
+  @Field({ nullable: true })
+    arcana?: proficiency
 
-  @Field()
-    athletics: string
+  @Field({ nullable: true })
+    athletics?: proficiency
 
-  @Field()
-    performance: string
+  @Field({ nullable: true })
+    performance?: proficiency
 
-  @Field()
-    deception: string
+  @Field({ nullable: true })
+    deception?: proficiency
 
-  @Field()
-    stealth: string
+  @Field({ nullable: true })
+    stealth?: proficiency
 
-  @Field()
-    history: string
+  @Field({ nullable: true })
+    history?: proficiency
 
-  @Field()
-    intimidation: string
+  @Field({ nullable: true })
+    intimidation?: proficiency
 
-  @Field()
-    investigation: string
+  @Field({ nullable: true })
+    investigation?: proficiency
 
-  @Field()
-    insight: string
+  @Field({ nullable: true })
+    insight?: proficiency
 
-  @Field()
-    animalHandling: string
+  @Field({ nullable: true })
+    animalHandling?: proficiency
 
-  @Field()
-    medicine: string
+  @Field({ nullable: true })
+    medicine?: proficiency
 
-  @Field()
-    nature: string
+  @Field({ nullable: true })
+    nature?: proficiency
 
-  @Field()
-    perception: string
+  @Field({ nullable: true })
+    perception?: proficiency
 
-  @Field()
-    persuasion: string
+  @Field({ nullable: true })
+    persuasion?: proficiency
 
-  @Field()
-    sleightOfHand: string
+  @Field({ nullable: true })
+    sleightOfHand?: proficiency
 
-  @Field()
-    religion: string
+  @Field({ nullable: true })
+    religion?: proficiency
 
-  @Field()
-    survival: string
+  @Field({ nullable: true })
+    survival?: proficiency
 
-  @Field()
-    tecnology: string
+  @Field({ nullable: true })
+    tecnology?: proficiency
 
-  @Field()
-    strengthSavingThrow: string
+  @Field({ nullable: true })
+    strengthSavingThrow?: proficiency
 
-  @Field()
-    dexteritySavingThrow: string
+  @Field({ nullable: true })
+    dexteritySavingThrow?: proficiency
 
-  @Field()
-    constitutionSavingThrow: string
+  @Field({ nullable: true })
+    constitutionSavingThrow?: proficiency
 
-  @Field()
-    intelligenceSavingThrow: string
+  @Field({ nullable: true })
+    intelligenceSavingThrow?: proficiency
 
-  @Field()
-    wisdomSavingThrow: string
+  @Field({ nullable: true })
+    wisdomSavingThrow?: proficiency
 
-  @Field()
-    charismaSavingThrow: string
+  @Field({ nullable: true })
+    charismaSavingThrow?: proficiency
 }

@@ -1,7 +1,7 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
 import { IContext } from '../interfaces/IContext'
-import { Region } from '../schemas/Region'
-import { RegionResponse } from '../schemas/RegionResponse'
+import { Region } from '../schemas/Region/Region'
+import { RegionResponse } from '../schemas/Region/RegionResponse'
 import RegionService from '../services/RegionService'
 
 @Resolver(Region)

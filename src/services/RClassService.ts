@@ -1,6 +1,6 @@
 import { RunarcanaClass } from '@prisma/client'
 import { IContext } from '../interfaces/IContext'
-import { RClassResponse } from '../schemas/RClassResponse'
+import { RClassResponse } from '../schemas/RunaracanaClass/RunarcanaClassResponse'
 
 export default class RClassService {
   public async listAll (ctx: IContext, search: string): Promise<RClassResponse> {

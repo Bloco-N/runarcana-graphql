@@ -6,10 +6,11 @@ import { IContext } from '../interfaces/IContext'
 import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
 import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { proficiency } from '@prisma/client'
-import { CharacterModsAndSkills } from '../schemas/CharacterModsAndSkills'
-import { firstClassLevel, levelUp } from '../../utils/characterFuncitons'
+import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
+import { createRelation, firstClassLevel, levelUp } from '../../utils/characterFuncitons'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
-import LevelUpData from '../schemas/LevelUpData'
+import CharacterUpdateHpInputData from '../inputs/Character/CharacterUpdateHpInputData'
+import CharacterAddInputData from '../inputs/Character/CharacterAddInputData'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
@@ -20,31 +21,17 @@ export default class CharacterService {
         id: runarcanaClassId
       },
       select: {
+        id: true,
         progress: true,
         hitDie: true
       }
     })
 
-    let firstClassLevelData : LevelUpData = {
-      hitDieRoll: firstClass.hitDie,
-      classProgress: firstClass.progress
-    }
-
-    firstClassLevelData = firstClassLevel(firstClassLevelData)
-
     const character = await ctx.prisma.character.create({
       data: {
         userId: ctx.user.id,
-        additionalInfos: firstClassLevelData.characterAdditionalInfos,
-        ...charData
-      }
-    })
-
-    await ctx.prisma.characterRunarcanaClass.create({
-      data: {
-        characterId: character.id,
-        runarcanaClassId,
-        progress: firstClassLevelData.characterProgress
+        ...charData,
+        ...firstClassLevel(firstClass)
       }
     })
 
@@ -77,9 +64,7 @@ export default class CharacterService {
     const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.create({
       data: {
         characterId: data.characterId,
-        runarcanaClassId: data.otherId,
-        level: 0,
-        progress: '[]'
+        runarcanaClassId: data.otherId
       }
     })
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
@@ -94,9 +79,7 @@ export default class CharacterService {
           runarcanaClassId: id.otherId
         }
       },
-      data: {
-        ...classData
-      }
+      data: classData
     })
     if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
   }
@@ -120,47 +103,31 @@ export default class CharacterService {
         Character: {
           select: {
             level: true,
-            additionalInfos: true
+            classHpBase: true
           }
         }
       }
     })
 
-    let levelUpdata : LevelUpData = {
+    const levelUpdata = {
       characterProgress: characterRunarcanaClass.progress,
       characterLevel: characterRunarcanaClass.Character.level,
-      characterAdditionalInfos: characterRunarcanaClass.Character.additionalInfos,
       classProgress: characterRunarcanaClass.RunarcanaClass.progress,
       characterClassLevel: characterRunarcanaClass.level,
       hitDieRoll: data.hitDie
     }
 
-    levelUpdata = levelUp(levelUpdata)
-
-    const characterUpdate = await ctx.prisma.character.update({
-      where: {
-        id: data.characterId
-      },
-      data: {
-        level: levelUpdata.characterLevel,
-        additionalInfos: levelUpdata.characterAdditionalInfos
-      }
-    })
-
-    const characterRunarcanaClassUpdate = await ctx.prisma.characterRunarcanaClass.update({
+    const update = await ctx.prisma.characterRunarcanaClass.update({
       where: {
         runarcanaClassId_characterId: {
           characterId: data.characterId,
           runarcanaClassId: data.runarcanaClassId
         }
       },
-      data: {
-        level: levelUpdata.characterClassLevel,
-        progress: levelUpdata.characterProgress
-      }
+      data: levelUp(levelUpdata)
     })
 
-    if (!(characterUpdate && characterRunarcanaClassUpdate)) throw new Error('❌ failed to update character')
+    if (!update) throw new Error('❌ failed to update character')
   }
 
   public async deleteRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
@@ -228,9 +195,7 @@ export default class CharacterService {
       where: {
         id
       },
-      data: {
-        ...charData
-      }
+      data: charData
     })
     if (!character) throw new Error('❌ failed to update character')
   }
@@ -241,33 +206,7 @@ export default class CharacterService {
       where: {
         id
       },
-      data: {
-        acrobatics: charData.acrobatics as proficiency,
-        arcana: charData.arcana as proficiency,
-        athletics: charData.athletics as proficiency,
-        performance: charData.performance as proficiency,
-        deception: charData.deception as proficiency,
-        stealth: charData.stealth as proficiency,
-        history: charData.history as proficiency,
-        intimidation: charData.intimidation as proficiency,
-        investigation: charData.investigation as proficiency,
-        insight: charData.insight as proficiency,
-        animalHandling: charData.animalHandling as proficiency,
-        medicine: charData.medicine as proficiency,
-        nature: charData.nature as proficiency,
-        perception: charData.perception as proficiency,
-        persuasion: charData.persuasion as proficiency,
-        sleightOfHand: charData.sleightOfHand as proficiency,
-        religion: charData.religion as proficiency,
-        survival: charData.survival as proficiency,
-        tecnology: charData.tecnology as proficiency,
-        strengthSavingThrow: charData.strengthSavingThrow as proficiency,
-        dexteritySavingThrow: charData.dexteritySavingThrow as proficiency,
-        constitutionSavingThrow: charData.constitutionSavingThrow as proficiency,
-        intelligenceSavingThrow: charData.intelligenceSavingThrow as proficiency,
-        wisdomSavingThrow: charData.wisdomSavingThrow as proficiency,
-        charismaSavingThrow: charData.charismaSavingThrow as proficiency
-      }
+      data: charData
     })
     if (!character) throw new Error('❌ failed to update character')
   }
@@ -319,5 +258,30 @@ export default class CharacterService {
       charismaSavingThrowValue: proficiency(character.charismaSavingThrow, modifiers.charismaMod)
     }
     return { ...modifiers, ...skills }
+  }
+
+  public async updateCharacterHp (ctx: IContext, data: CharacterUpdateHpInputData) {
+    const { characterId, ...updateData } = data
+    const character = ctx.prisma.character.update({
+      where: {
+        id: characterId
+      },
+      data: updateData
+    })
+
+    if (!character) throw new Error('❌ failed to update character')
+  }
+
+  public async addRelation (ctx: IContext, data: CharacterAddInputData) {
+    const { id, ...createData } = data
+
+    const create = await ctx.prisma.character.update({
+      where: {
+        id
+      },
+      data: createRelation(createData)
+
+    })
+    if (!create) throw new Error('❌ failed to update character')
   }
 }

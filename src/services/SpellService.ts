@@ -1,5 +1,5 @@
 import { IContext } from '../interfaces/IContext'
-import { SpellResponse } from '../schemas/SpellResponse'
+import { SpellResponse } from '../schemas/Spell/SpellResponse'
 
 export default class SpellService {
   public async listAll (ctx:IContext, search:string): Promise<SpellResponse> {
@@ -19,21 +19,19 @@ export default class SpellService {
         }
       }
     }
-    if (search) {
-      const spells = await ctx.prisma.spell.findMany({
-        where: {
-          name: {
-            contains: search,
-            mode: 'insensitive'
-          }
-        },
-        include: spellInclude
-      })
-      return {
-        spells
-      }
+
+    const query = {
+      where: {
+        name: {
+          contains: search,
+          mode: 'insensitive'
+        }
+      },
+      include: spellInclude
     }
-    const spells = await ctx.prisma.spell.findMany({ include: spellInclude })
+
+    const spells = await ctx.prisma.spell.findMany(search ? query : { include: spellInclude })
+
     return {
       spells
     }

@@ -1,7 +1,7 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
 import { IContext } from '../interfaces/IContext'
-import { RClassResponse } from '../schemas/RClassResponse'
-import { RunarcanaClass } from '../schemas/relations/RunarcanaClass'
+import { RClassResponse } from '../schemas/RunaracanaClass/RunarcanaClassResponse'
+import { RunarcanaClass } from '../schemas/RunaracanaClass/RunarcanaClass'
 import RClassService from '../services/RClassService'
 
 @Resolver(RunarcanaClass)

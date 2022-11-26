@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { ApolloServer, gql, ServerInfo } from 'apollo-server'
+import { ApolloServer, gql } from 'apollo-server'
 import { app } from '../../src/app'
 import { PrismaClient } from '@prisma/client'
 import request from 'supertest'
@@ -128,37 +128,37 @@ describe('CharacterResolver tests', () => {
     expect(message).toBe('✅ character updated')
   })
 
-  test('should update character class', async () => {
-    const { id } = await prisma.character.findFirst({ where: { name: 'toru' } })
+  // test('should update character class', async () => {
+  //   const { id } = await prisma.character.findFirst({ where: { name: 'toru' } })
 
-    const variables = {
-      data: {
-        id: {
-          otherId: 3,
-          characterId: id
-        },
-        runarcanaClassId: 3,
-        level: 2
-      }
-    }
+  //   const variables = {
+  //     data: {
+  //       id: {
+  //         otherId: 3,
+  //         characterId: id
+  //       },
+  //       runarcanaClassId: 3,
+  //       level: 2
+  //     }
+  //   }
 
-    const UPDATE_CLASS = `
-      mutation UpdateCharacterClass($data: CharacterUpdateClassInputData!) {
-        updateCharacterClass(data: $data) {
-          message
-        }
-      }
-    `
+  //   const UPDATE_CLASS = `
+  //     mutation UpdateCharacterClass($data: CharacterUpdateClassInputData!) {
+  //       updateCharacterClass(data: $data) {
+  //         message
+  //       }
+  //     }
+  //   `
 
-    const queryData = {
-      query: UPDATE_CLASS,
-      variables
-    }
+  //   const queryData = {
+  //     query: UPDATE_CLASS,
+  //     variables
+  //   }
 
-    const { body: { data: { updateCharacterClass: { message } } } } = await request(url).post('/').send(queryData).set({ Authorization: 'Bearer ' + token })
-    expect(message).toBeDefined()
-    expect(message).toBe('✅ character updated')
-  })
+  //   const { body: { data: { updateCharacterClass: { message } } } } = await request(url).post('/').send(queryData).set({ Authorization: 'Bearer ' + token })
+  //   expect(message).toBeDefined()
+  //   expect(message).toBe('✅ character updated')
+  // })
 
   test('should update character attributes', async () => {
     const { id } = await prisma.character.findFirst({ where: { name: 'toru' } })
@@ -201,27 +201,7 @@ describe('CharacterResolver tests', () => {
         id,
         acrobatics: 'PROFICIENT',
         arcana: 'SPECIALIST',
-        athletics: 'SPECIALIST',
-        performance: 'NOT_PROFICIENT',
-        deception: 'NOT_PROFICIENT',
-        stealth: 'NOT_PROFICIENT',
-        history: 'NOT_PROFICIENT',
-        intimidation: 'NOT_PROFICIENT',
-        animalHandling: 'NOT_PROFICIENT',
-        medicine: 'NOT_PROFICIENT',
-        nature: 'NOT_PROFICIENT',
-        perception: 'NOT_PROFICIENT',
-        persuasion: 'NOT_PROFICIENT',
-        sleightOfHand: 'NOT_PROFICIENT',
-        religion: 'NOT_PROFICIENT',
-        survival: 'NOT_PROFICIENT',
-        tecnology: 'NOT_PROFICIENT',
-        strengthSavingThrow: 'NOT_PROFICIENT',
-        dexteritySavingThrow: 'NOT_PROFICIENT',
-        constitutionSavingThrow: 'NOT_PROFICIENT',
-        intelligenceSavingThrow: 'NOT_PROFICIENT',
-        wisdomSavingThrow: 'NOT_PROFICIENT',
-        charismaSavingThrow: 'NOT_PROFICIENT'
+        athletics: 'SPECIALIST'
 
       }
     }

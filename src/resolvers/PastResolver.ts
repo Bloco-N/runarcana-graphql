@@ -2,7 +2,7 @@ import { Arg, Ctx, Query, Resolver } from 'type-graphql'
 import { IContext } from '../interfaces/IContext'
 import { Past } from '@generated/type-graphql'
 import PastService from '../services/PastService'
-import { PastResponse } from '../schemas/PastResponse'
+import { PastResponse } from '../schemas/Past/PastResponse'
 
 @Resolver(Past)
 export class PastResolver {

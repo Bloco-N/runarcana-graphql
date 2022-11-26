@@ -1,6 +1,6 @@
 import { IContext } from '../interfaces/IContext'
-import { Origin } from '../schemas/Origin'
-import { OriginResponse } from '../schemas/OriginResponse'
+import { Origin } from '../schemas/Origin/Origin'
+import { OriginResponse } from '../schemas/Origin/OriginResponse'
 
 export default class OriginService {
   public async listAll (ctx: IContext, search: string): Promise<OriginResponse> {

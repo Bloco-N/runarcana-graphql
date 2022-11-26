@@ -1,6 +1,6 @@
 import { Past } from '@prisma/client'
 import { IContext } from '../interfaces/IContext'
-import { PastResponse } from '../schemas/PastResponse'
+import { PastResponse } from '../schemas/Past/PastResponse'
 
 export default class PastService {
   public async listAll (ctx: IContext, search: string): Promise<PastResponse> {

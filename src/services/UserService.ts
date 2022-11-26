@@ -4,10 +4,11 @@ import SignUpInputData from '../inputs/User/SignUpInputData'
 import { IContext } from '../interfaces/IContext'
 import { ApiResponse } from '../schemas/ApiResponse'
 import { Auth } from '../schemas/Auth'
-import { UserResponse } from '../schemas/UserResponse'
+import { UserResponse } from '../schemas/User/UserResponse'
 import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
 import { characterAddComplements } from '../../utils/characterFuncitons'
+import { Character } from '@prisma/client'
 export default class UserService {
   public async fetchAll (ctx:IContext, charId?:number): Promise<UserResponse> {
     return this.fetchUserResponse(ctx, ctx.user.id, charId)
@@ -46,6 +47,7 @@ export default class UserService {
   private async fetchUserResponse (ctx:IContext, id:number, charId?:number):Promise<UserResponse> {
     const user = await ctx.prisma.user.findUnique({ where: { id } })
     if (!user) throw Error('❌ User not found')
+
     const spellInclude = {
       include: {
         Spell: {
@@ -57,56 +59,40 @@ export default class UserService {
               include: {
                 Component: true
               }
-            },
-            SpellMysteries: {
-              include: {
-                Spell: true,
-                Mystery: true
-              }
             }
           }
         }
       }
     }
 
-    const characters = await ctx.prisma.character.findMany({
+    const InheritanceInclude = {
+      include: {
+        Inheritance: true
+      }
+    }
+
+    const characterQuery = {
       where: { userId: id },
       include: {
         Past: true,
         Region: {
           include: {
-            InheritanceRegion: {
-              include: {
-                Region: true,
-                Inheritance: true
-              }
-            }
+            InheritanceRegion: InheritanceInclude
           }
         },
         Origin: {
           include: {
-            SpellOrigins: spellInclude,
-            InheritanceOrigin: {
-              include: {
-                Origin: true,
-                Inheritance: true
-              }
-            },
-            Lineages: true
+            InheritanceOrigin: InheritanceInclude,
+            SpellOrigins: spellInclude
           }
         },
         Lineage: {
           include: {
             SpellLineages: spellInclude,
-            InheritanceLineage: {
-              include: {
-                Lineage: true,
-                Inheritance: true
-              }
-            }
+            InheritanceLineage: InheritanceInclude
           }
         },
-        CharacterRunarcanaClass: {
+        CharacterRunarcanaClasses: {
           include: {
             RunarcanaClass: {
               include: {
@@ -115,20 +101,10 @@ export default class UserService {
             }
           }
         },
-        SpellCharacters: spellInclude,
+        CharacterSpells: spellInclude,
         CharacterElements: {
           include: {
-            Element: {
-              include: {
-                ElementIngredients: true,
-                ElementRecipes: true
-              }
-            }
-          }
-        },
-        CharacterInheritance: {
-          include: {
-            Inheritance: true
+            Element: true
           }
         },
         CharacterMisteries: {
@@ -139,11 +115,12 @@ export default class UserService {
               }
             }
           }
-        }
-
+        },
+        CharacterInheritances: InheritanceInclude
       }
+    }
 
-    })
+    const characters = await ctx.prisma.character.findMany(characterQuery) as Character[]
 
     const chosenCharacters = charId ? characters.filter(character => character.id === charId) : characters
 
