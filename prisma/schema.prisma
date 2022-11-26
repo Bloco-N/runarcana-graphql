@@ -32,62 +32,64 @@ enum proficiency {
 }
 
 model Character {
-  id                      Int                       @id @default(autoincrement())
-  userId                  Int
-  regionId                Int
-  originId                Int
-  lineageId               Int?
-  pastId                  Int
-  name                    String
-  level                   Int                       @default(1)
-  additionalInfos         String
-  essence                 String
-  expression              String
-  exaltation              String
-  proficiencyBonus        Int                       @default(2)
-  strength                Int                       @default(0)
-  dexterity               Int                       @default(0)
-  constitution            Int                       @default(0)
-  intelligence            Int                       @default(0)
-  wisdom                  Int                       @default(0)
-  charisma                Int                       @default(0)
-  acrobatics              proficiency               @default(NOT_PROFICIENT)
-  arcana                  proficiency               @default(NOT_PROFICIENT)
-  athletics               proficiency               @default(NOT_PROFICIENT)
-  performance             proficiency               @default(NOT_PROFICIENT)
-  deception               proficiency               @default(NOT_PROFICIENT)
-  stealth                 proficiency               @default(NOT_PROFICIENT)
-  history                 proficiency               @default(NOT_PROFICIENT)
-  intimidation            proficiency               @default(NOT_PROFICIENT)
-  insight                 proficiency               @default(NOT_PROFICIENT)
-  investigation           proficiency               @default(NOT_PROFICIENT)
-  animalHandling          proficiency               @default(NOT_PROFICIENT)
-  medicine                proficiency               @default(NOT_PROFICIENT)
-  nature                  proficiency               @default(NOT_PROFICIENT)
-  perception              proficiency               @default(NOT_PROFICIENT)
-  persuasion              proficiency               @default(NOT_PROFICIENT)
-  sleightOfHand           proficiency               @default(NOT_PROFICIENT)
-  religion                proficiency               @default(NOT_PROFICIENT)
-  survival                proficiency               @default(NOT_PROFICIENT)
-  tecnology               proficiency               @default(NOT_PROFICIENT)
-  strengthSavingThrow     proficiency               @default(NOT_PROFICIENT)
-  dexteritySavingThrow    proficiency               @default(NOT_PROFICIENT)
-  constitutionSavingThrow proficiency               @default(NOT_PROFICIENT)
-  intelligenceSavingThrow proficiency               @default(NOT_PROFICIENT)
-  wisdomSavingThrow       proficiency               @default(NOT_PROFICIENT)
-  charismaSavingThrow     proficiency               @default(NOT_PROFICIENT)
-  Region                  Region                    @relation(fields: [regionId], references: [id])
-  Origin                  Origin                    @relation(fields: [originId], references: [id])
-  User                    User                      @relation(fields: [userId], references: [id])
-  Lineage                 Lineage?                  @relation(fields: [lineageId], references: [id])
-  Past                    Past                      @relation(fields: [pastId], references: [id])
-  SpellCharacters         SpellCharacter[]
-  CharacterElements       CharacterElement[]
-  CharacterMisteries      CharacterMistery[]
-  CharacterRunarcanaClass CharacterRunarcanaClass[]
-  createdAt               DateTime                  @default(now())
-  updatedAt               DateTime                  @updatedAt
-  CharacterInheritance    CharacterInheritance[]
+  id                        Int                       @id @default(autoincrement())
+  userId                    Int
+  regionId                  Int
+  originId                  Int
+  lineageId                 Int?
+  pastId                    Int
+  name                      String
+  level                     Int                       @default(1)
+  classHpBase               Int                       @default(0)
+  currentHp                 Int                       @default(0)
+  bonusHp                   Int                       @default(0)
+  essence                   String
+  expression                String
+  exaltation                String
+  proficiencyBonus          Int                       @default(2)
+  strength                  Int                       @default(0)
+  dexterity                 Int                       @default(0)
+  constitution              Int                       @default(0)
+  intelligence              Int                       @default(0)
+  wisdom                    Int                       @default(0)
+  charisma                  Int                       @default(0)
+  acrobatics                proficiency               @default(NOT_PROFICIENT)
+  arcana                    proficiency               @default(NOT_PROFICIENT)
+  athletics                 proficiency               @default(NOT_PROFICIENT)
+  performance               proficiency               @default(NOT_PROFICIENT)
+  deception                 proficiency               @default(NOT_PROFICIENT)
+  stealth                   proficiency               @default(NOT_PROFICIENT)
+  history                   proficiency               @default(NOT_PROFICIENT)
+  intimidation              proficiency               @default(NOT_PROFICIENT)
+  insight                   proficiency               @default(NOT_PROFICIENT)
+  investigation             proficiency               @default(NOT_PROFICIENT)
+  animalHandling            proficiency               @default(NOT_PROFICIENT)
+  medicine                  proficiency               @default(NOT_PROFICIENT)
+  nature                    proficiency               @default(NOT_PROFICIENT)
+  perception                proficiency               @default(NOT_PROFICIENT)
+  persuasion                proficiency               @default(NOT_PROFICIENT)
+  sleightOfHand             proficiency               @default(NOT_PROFICIENT)
+  religion                  proficiency               @default(NOT_PROFICIENT)
+  survival                  proficiency               @default(NOT_PROFICIENT)
+  tecnology                 proficiency               @default(NOT_PROFICIENT)
+  strengthSavingThrow       proficiency               @default(NOT_PROFICIENT)
+  dexteritySavingThrow      proficiency               @default(NOT_PROFICIENT)
+  constitutionSavingThrow   proficiency               @default(NOT_PROFICIENT)
+  intelligenceSavingThrow   proficiency               @default(NOT_PROFICIENT)
+  wisdomSavingThrow         proficiency               @default(NOT_PROFICIENT)
+  charismaSavingThrow       proficiency               @default(NOT_PROFICIENT)
+  Region                    Region                    @relation(fields: [regionId], references: [id])
+  Origin                    Origin                    @relation(fields: [originId], references: [id])
+  User                      User                      @relation(fields: [userId], references: [id])
+  Lineage                   Lineage?                  @relation(fields: [lineageId], references: [id])
+  Past                      Past                      @relation(fields: [pastId], references: [id])
+  CharacterSpells           SpellCharacter[]
+  CharacterElements         CharacterElement[]
+  CharacterMisteries        CharacterMistery[]
+  CharacterRunarcanaClasses CharacterRunarcanaClass[]
+  CharacterInheritances     CharacterInheritance[]
+  createdAt                 DateTime                  @default(now())
+  updatedAt                 DateTime                  @updatedAt
 }
 
 model Region {
@@ -361,7 +363,7 @@ model CharacterRunarcanaClass {
   runarcanaClassId Int
   characterId      Int
   level            Int            @default(1)
-  progress         String
+  progress         String         @default("")
   RunarcanaClass   RunarcanaClass @relation(fields: [runarcanaClassId], references: [id], onDelete: Cascade)
   Character        Character      @relation(fields: [characterId], references: [id], onDelete: Cascade)
   createdAt        DateTime       @default(now())
