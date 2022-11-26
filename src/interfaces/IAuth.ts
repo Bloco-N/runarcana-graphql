@@ -1,4 +1,4 @@
-import { UserResponse } from '../schemas/UserResponse'
+import { UserResponse } from '../schemas/User/UserResponse'
 
 export interface IAuth{
   token:string,
