@@ -1,8 +1,8 @@
 import { SpellCharacter as PrismaSpellCharacter } from '@generated/type-graphql'
 import { Field, ObjectType } from 'type-graphql'
-import { Spell } from '../Spell'
+import { SpellEnd } from '../../Spell/SpellEnd'
 @ObjectType()
-export class SpellCharacter extends PrismaSpellCharacter {
+export class CharacterSpell extends PrismaSpellCharacter {
   @Field()
-    Spell?: Spell
+    Spell?: SpellEnd
 }

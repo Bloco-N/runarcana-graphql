@@ -4,5 +4,5 @@ import { Spell } from './Spell'
 @ObjectType()
 export class SpellResponse {
   @Field(() => [Spell])
-    spells:Spell[]
+    spells: Spell[]
 }

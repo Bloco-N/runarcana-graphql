@@ -1,9 +1,9 @@
 import { SpellLineage as PrismaSpellLineage } from '@generated/type-graphql'
 import { Field, ObjectType } from 'type-graphql'
-import { Spell } from '../Spell'
+import { SpellEnd } from '../Spell/SpellEnd'
 
 @ObjectType()
-export class SpellLineage extends PrismaSpellLineage {
+export class LineageSpell extends PrismaSpellLineage {
   @Field()
-    Spell?: Spell
+    Spell?: SpellEnd
 }

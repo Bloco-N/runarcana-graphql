@@ -1,5 +1,5 @@
 import { Field, ObjectType } from 'type-graphql'
-import { RunarcanaClass } from './relations/RunarcanaClass'
+import { RunarcanaClass } from './RunarcanaClass'
 
 @ObjectType()
 export class RClassResponse {

@@ -1,10 +1,9 @@
 import { Spell as PrismaSpell, Range, Conjuration, Duration } from '@generated/type-graphql'
 import { Field, ObjectType } from 'type-graphql'
-import { SpellComponent } from './relations/SpellComponent'
-import { SpellMystery } from './relations/SpellMistery'
+import { SpellComponent } from './SpellRelations/SpellComponent'
 
 @ObjectType()
-export class Spell extends PrismaSpell {
+export class SpellEnd extends PrismaSpell {
   @Field()
     Conjuration?: Conjuration
 
@@ -16,7 +15,4 @@ export class Spell extends PrismaSpell {
 
   @Field(() => [SpellComponent])
     SpellComponents?: SpellComponent[]
-
-  @Field(() => [SpellMystery])
-    SpellMysteries?: SpellMystery[]
 }

@@ -1,5 +1,5 @@
 import { Field, ObjectType, Int } from 'type-graphql'
-import { Character } from './Character'
+import { Character } from '../Character/Character'
 
 @ObjectType()
 export class UserResponse {

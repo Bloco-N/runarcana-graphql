@@ -1,6 +1,6 @@
 import { Field, ObjectType } from 'type-graphql'
 import { IAuth } from '../interfaces/IAuth'
-import { UserResponse } from './UserResponse'
+import { UserResponse } from './User/UserResponse'
 @ObjectType()
 export class Auth implements IAuth {
   constructor (token:string, user:UserResponse) {

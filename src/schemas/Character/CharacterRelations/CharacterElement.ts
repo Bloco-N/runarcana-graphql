@@ -1,6 +1,6 @@
 import { CharacterElement as PrismaCharacterElement } from '@generated/type-graphql'
 import { Field, ObjectType } from 'type-graphql'
-import { Element } from '../Element'
+import { Element } from '../../Elements/Element'
 
 @ObjectType()
 export class CharacterElement extends PrismaCharacterElement {
