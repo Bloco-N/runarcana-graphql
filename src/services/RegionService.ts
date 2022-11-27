@@ -1,5 +1,5 @@
+import { Region } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
-import { Region } from '../schemas/Region/Region'
 import { RegionResponse } from '../schemas/Region/RegionResponse'
 
 export default class RegionService {

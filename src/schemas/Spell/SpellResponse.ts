@@ -1,5 +1,5 @@
 import { Field, ObjectType } from 'type-graphql'
-import { Spell } from './Spell'
+import { Spell } from '../../../prisma/generated/type-graphql'
 
 @ObjectType()
 export class SpellResponse {

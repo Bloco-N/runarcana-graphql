@@ -1,4 +1,4 @@
-import { Past } from '@prisma/client'
+import { Past } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
 import { PastResponse } from '../schemas/Past/PastResponse'
 

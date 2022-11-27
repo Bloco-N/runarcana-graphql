@@ -1,5 +1,5 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
-import { Spell } from '../schemas/Spell/Spell'
+import { Spell } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
 import { SpellResponse } from '../schemas/Spell/SpellResponse'
 import SpellService from '../services/SpellService'

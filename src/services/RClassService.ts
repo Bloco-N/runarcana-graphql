@@ -1,4 +1,4 @@
-import { RunarcanaClass } from '@prisma/client'
+import { RunarcanaClass } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
 import { RClassResponse } from '../schemas/RunaracanaClass/RunarcanaClassResponse'
 

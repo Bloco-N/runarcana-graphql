@@ -1,5 +1,5 @@
 import { Field, ObjectType } from 'type-graphql'
-import { Origin } from './Origin'
+import { Origin } from '../../../prisma/generated/type-graphql'
 
 @ObjectType()
 export class OriginResponse {

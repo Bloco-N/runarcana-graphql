@@ -1,5 +1,5 @@
 import { Field, ObjectType } from 'type-graphql'
-import { RunarcanaClass } from './RunarcanaClass'
+import { RunarcanaClass } from '../../../prisma/generated/type-graphql'
 
 @ObjectType()
 export class RClassResponse {

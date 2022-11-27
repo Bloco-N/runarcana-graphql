@@ -1,6 +1,6 @@
 import { Arg, Ctx, Query, Resolver } from 'type-graphql'
+import { Origin } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
-import { Origin } from '../schemas/Origin/Origin'
 import { OriginResponse } from '../schemas/Origin/OriginResponse'
 import OriginService from '../services/OriginService'
 
