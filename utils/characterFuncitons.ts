@@ -1,6 +1,6 @@
+import { CharacterRunarcanaClass } from '../prisma/generated/type-graphql'
 import { Character } from '../src/schemas/Character/Character'
 import { Characteristic } from '../src/schemas/Character/CharacterComplements/Characteristic'
-import { CharacterRunarcanaClass } from '../src/schemas/Character/CharacterRelations/CharacterRunarcanaClass'
 
 function characterAddComplements (character) : Character {
   const builtCharacter : Character = character as Character
