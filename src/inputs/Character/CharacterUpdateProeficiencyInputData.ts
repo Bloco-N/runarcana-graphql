@@ -6,78 +6,78 @@ export default class CharacterUpdateProficiencyInputData {
   @Field()
     id:number
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     acrobatics?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     arcana?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     athletics?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     performance?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     deception?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     stealth?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     history?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     intimidation?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     investigation?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     insight?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     animalHandling?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     medicine?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     nature?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     perception?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     persuasion?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     sleightOfHand?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     religion?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     survival?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     tecnology?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     strengthSavingThrow?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     dexteritySavingThrow?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     constitutionSavingThrow?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     intelligenceSavingThrow?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     wisdomSavingThrow?: proficiency
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
     charismaSavingThrow?: proficiency
 }
