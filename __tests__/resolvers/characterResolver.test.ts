@@ -199,9 +199,11 @@ describe('CharacterResolver tests', () => {
     const variables = {
       data: {
         id,
-        acrobatics: 'PROFICIENT',
-        arcana: 'SPECIALIST',
-        athletics: 'SPECIALIST'
+        charData: {
+          acrobatics: 'PROFICIENT',
+          arcana: 'SPECIALIST',
+          athletics: 'SPECIALIST'
+        }
 
       }
     }

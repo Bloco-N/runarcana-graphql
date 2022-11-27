@@ -201,7 +201,7 @@ export default class CharacterService {
   }
 
   public async updateCharacterProficiency (ctx:IContext, data:CharacterUpdateProficiencyInputData) {
-    const { id, ...charData } = data
+    const { id, charData } = data
     const character = await ctx.prisma.character.update({
       where: {
         id
@@ -262,7 +262,7 @@ export default class CharacterService {
 
   public async updateCharacterHp (ctx: IContext, data: CharacterUpdateHpInputData) {
     const { characterId, ...updateData } = data
-    const character = ctx.prisma.character.update({
+    const character = await ctx.prisma.character.update({
       where: {
         id: characterId
       },
