@@ -1,6 +1,6 @@
-import { UserResponse } from '../schemas/User/UserResponse'
+import { User } from '../../prisma/generated/type-graphql'
 
 export interface IAuth{
   token:string,
-  user:UserResponse
+  user:User
 }

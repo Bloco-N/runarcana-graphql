@@ -1,16 +1,8 @@
-import { CharacterRunarcanaClass } from '../prisma/generated/type-graphql'
-import { Character } from '../src/schemas/Character/Character'
+
+import { CharacterRunarcanaClass, RunarcanaClass } from '../prisma/generated/type-graphql'
 import { Characteristic } from '../src/schemas/Character/CharacterComplements/Characteristic'
 
-function characterAddComplements (character) : Character {
-  const builtCharacter : Character = character as Character
-
-  builtCharacter.Characteristics = currentCharacteristics(builtCharacter.CharacterRunarcanaClasses)
-
-  return builtCharacter
-}
-
-function firstClassLevel (data) {
+function firstClassLevel (data) : RunarcanaClass {
   const classProgress = JSON.parse(data.progress)
   const characterProgressUpdated = []
 
@@ -21,16 +13,7 @@ function firstClassLevel (data) {
 
   data.characterProgress = JSON.stringify(characterProgressUpdated)
 
-  return {
-    classHpBase: data.hitDie,
-    CharacterRunarcanaClasses: {
-      create: {
-        runarcanaClassId: data.id,
-        progress: data.characterProgress
-      }
-
-    }
-  }
+  return data
 }
 
 function levelUp (data) {
@@ -87,29 +70,8 @@ function currentCharacteristics (characterClasses: CharacterRunarcanaClass[]) : 
   return currentCharacteristic
 }
 
-function createRelation (createData) {
-  return {
-    CharacterInheritances: {
-      create: {
-        inheritanceId: createData.InheritanceId
-      }
-    },
-    CharacterRunarcanaClasses: {
-      create: {
-        runarcanaClassId: createData.RunarcanaClassId
-      }
-    },
-    CharacterSpells: {
-      create: {
-        spellId: createData.SpellId
-      }
-    }
-  }
-}
-
 export {
   levelUp,
-  characterAddComplements,
   firstClassLevel,
-  createRelation
+  currentCharacteristics
 }

@@ -1,9 +1,9 @@
 import { Field, ObjectType } from 'type-graphql'
+import { User } from '../../prisma/generated/type-graphql'
 import { IAuth } from '../interfaces/IAuth'
-import { UserResponse } from './User/UserResponse'
 @ObjectType()
 export class Auth implements IAuth {
-  constructor (token:string, user:UserResponse) {
+  constructor (token:string, user:User) {
     this.token = token
     this.user = user
   }
@@ -11,6 +11,6 @@ export class Auth implements IAuth {
   @Field({ nullable: false })
     token: string
 
-  @Field(() => UserResponse, { nullable: false })
-    user: UserResponse
+  @Field(() => User, { nullable: false })
+    user: User
 }

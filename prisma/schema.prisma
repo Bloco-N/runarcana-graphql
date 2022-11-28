@@ -10,6 +10,7 @@ generator typegraphql {
   provider        = "typegraphql-prisma"
   output          = "../prisma/generated/type-graphql"
   useSimpleInputs = true
+  simpleResolvers = false
 }
 
 datasource db {
@@ -21,6 +22,7 @@ model User {
   id         Int         @id @default(autoincrement())
   username   String      @unique
   nickname   String
+  /// @TypeGraphQL.omit(output: true)
   password   String
   Characters Character[]
   createdAt  DateTime    @default(now())
@@ -382,12 +384,12 @@ model Inheritance {
   atributes            String                 @db.Text
   benefits             String                 @db.Text
   rechosen             String
-  createdAt            DateTime               @default(now())
-  updatedAt            DateTime               @updatedAt
   InheritanceOrigin    InheritanceOrigin[]
   InheritanceRegion    InheritanceRegion[]
   InheritanceLineage   InheritanceLineage[]
   CharacterInheritance CharacterInheritance[]
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
 }
 
 model InheritanceOrigin {
@@ -428,54 +430,68 @@ model CharacterInheritance {
   Inheritance   Inheritance @relation(fields: [inheritanceId], references: [id])
   characterId   Int
   inheritanceId Int
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
 
   @@id([characterId, inheritanceId])
 }
 
 model Language {
-  id   Int    @id @default(autoincrement())
-  name String
-  type String
+  id        Int      @id @default(autoincrement())
+  name      String
+  type      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Profession {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   name        String
   description String
   tasks       String
   sinergies   String
   tools       String
   table       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model Enhancement {
-  id            Int    @id @default(autoincrement())
+  id            Int      @id @default(autoincrement())
   name          String
   prerequisites String
   description   String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model Rune {
-  id            Int    @id @default(autoincrement())
+  id            Int      @id @default(autoincrement())
   name          String
   type          String
   prerequisites String
   description   String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model Sutra {
-  id            Int    @id @default(autoincrement())
+  id            Int      @id @default(autoincrement())
   name          String
   type          String
   components    String
   prerequisites String
   description   String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model VelSutra {
-  id            Int    @id @default(autoincrement())
+  id            Int      @id @default(autoincrement())
   name          String
   prerequisites String
   cost          String
   description   String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }

@@ -1,87 +1,19 @@
 import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import CharacterUpdateClassInputData from '../inputs/Character/CharacterUpdateClassInputData'
-import CharacterUpdateInputData from '../inputs/Character/CharacterUpdateInputData'
-import CharacterIdPair from '../inputs/Character/CharacterIdPair'
 import { IContext } from '../interfaces/IContext'
-import CharacterUpdateAttributesInputData from '../inputs/Character/CharacterUpdateAttributesInputData'
-import CharacterUpdateProficiencyInputData from '../inputs/Character/CharacterUpdateProeficiencyInputData'
 import { proficiency } from '@prisma/client'
 import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import { createRelation, firstClassLevel, levelUp } from '../../utils/characterFuncitons'
+import { currentCharacteristics, levelUp } from '../../utils/characterFuncitons'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
-import CharacterUpdateHpInputData from '../inputs/Character/CharacterUpdateHpInputData'
-import CharacterAddInputData from '../inputs/Character/CharacterAddInputData'
+import { Character } from '../../prisma/generated/type-graphql'
+import { firsClassArgs, firstCharacterCreateArgs } from '../../utils/query'
 
 export default class CharacterService {
   public async create (ctx:IContext, data:CharacterCreateInputData) {
-    const { runarcanaClassId, ...charData } = data
+    const firstClass = await ctx.prisma.runarcanaClass.findUnique(firsClassArgs(data.runarcanaClassId))
 
-    const firstClass = await ctx.prisma.runarcanaClass.findUnique({
-      where: {
-        id: runarcanaClassId
-      },
-      select: {
-        id: true,
-        progress: true,
-        hitDie: true
-      }
-    })
-
-    const character = await ctx.prisma.character.create({
-      data: {
-        userId: ctx.user.id,
-        ...charData,
-        ...firstClassLevel(firstClass)
-      }
-    })
+    const character = await ctx.prisma.character.create(firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass))
 
     if (!character) throw new Error('❌ failed to create character')
-  }
-
-  public async update (ctx:IContext, data:CharacterUpdateInputData) {
-    const { id, ...charData } = data
-    const character = await ctx.prisma.character.update({
-      where: {
-        id
-      },
-      data: {
-        ...charData
-      }
-    })
-    if (!character) throw new Error('❌ failed to update character')
-  }
-
-  public async delete (ctx:IContext, id:number) {
-    const deleted = await ctx.prisma.character.delete({
-      where: {
-        id
-      }
-    })
-    if (!deleted) throw new Error('❌ failed to delete character')
-  }
-
-  public async addRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
-    const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.create({
-      data: {
-        characterId: data.characterId,
-        runarcanaClassId: data.otherId
-      }
-    })
-    if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
-  }
-
-  public async updateRunarcanaClass (ctx:IContext, data:CharacterUpdateClassInputData) {
-    const { id, ...classData } = data
-    const characterRunarcanaClass = await ctx.prisma.characterRunarcanaClass.update({
-      where: {
-        runarcanaClassId_characterId: {
-          characterId: id.characterId,
-          runarcanaClassId: id.otherId
-        }
-      },
-      data: classData
-    })
-    if (!characterRunarcanaClass) throw new Error('❌ failed to update character')
   }
 
   public async levelUpCharacter (ctx:IContext, data:CharacterLevelUpInputData) {
@@ -130,89 +62,7 @@ export default class CharacterService {
     if (!update) throw new Error('❌ failed to update character')
   }
 
-  public async deleteRunarcanaClass (ctx:IContext, data:CharacterIdPair) {
-    const deleted = await ctx.prisma.characterRunarcanaClass.delete({
-      where: {
-        runarcanaClassId_characterId: {
-          characterId: data.characterId,
-          runarcanaClassId: data.otherId
-        }
-      }
-    })
-
-    if (!deleted) throw new Error('❌ failed to update character')
-  }
-
-  public async addSpellCharacter (ctx:IContext, data: CharacterIdPair) {
-    const spellCharacter = await ctx.prisma.spellCharacter.create({
-      data: {
-        characterId: data.characterId,
-        spellId: data.otherId
-      }
-    })
-    if (!spellCharacter) throw new Error('❌ failed to update character')
-  }
-
-  public async deleteSpellCharacter (ctx:IContext, data:CharacterIdPair) {
-    const deleted = await ctx.prisma.spellCharacter.delete({
-      where: {
-        spellId_characterId: {
-          characterId: data.characterId,
-          spellId: data.otherId
-        }
-      }
-    })
-    if (!deleted) throw new Error('❌ failed to update character')
-  }
-
-  public async addInheritance (ctx:IContext, data:CharacterIdPair) {
-    const characterInheritance = await ctx.prisma.characterInheritance.create({
-      data: {
-        characterId: data.characterId,
-        inheritanceId: data.otherId
-      }
-    })
-
-    if (!characterInheritance) throw new Error('❌ failed to update character')
-  }
-
-  public async deleteInheritance (ctx:IContext, data:CharacterIdPair) {
-    const characterInheritance = await ctx.prisma.characterInheritance.delete({
-      where: {
-        characterId_inheritanceId: {
-          characterId: data.characterId,
-          inheritanceId: data.otherId
-        }
-      }
-    })
-
-    if (!characterInheritance) throw new Error('❌ failed to update character')
-  }
-
-  public async updateCharacterAttributes (ctx:IContext, data:CharacterUpdateAttributesInputData) {
-    const { id, ...charData } = data
-    const character = await ctx.prisma.character.update({
-      where: {
-        id
-      },
-      data: charData
-    })
-    if (!character) throw new Error('❌ failed to update character')
-  }
-
-  public async updateCharacterProficiency (ctx:IContext, data:CharacterUpdateProficiencyInputData) {
-    const { id, charData } = data
-    const character = await ctx.prisma.character.update({
-      where: {
-        id
-      },
-      data: charData
-    })
-    if (!character) throw new Error('❌ failed to update character')
-  }
-
-  public async getCharacterModAndSkills (ctx:IContext, id:number): Promise <CharacterModsAndSkills> {
-    const character = await ctx.prisma.character.findUnique({ where: { id } })
+  public async getCharacterModAndSkills (ctx:IContext, character: Character): Promise <CharacterModsAndSkills> {
     const mod = (x:number) => Math.floor((x - 10) / 2)
     const proficiency = (prof:proficiency, mod:number) => {
       switch (prof) {
@@ -257,31 +107,23 @@ export default class CharacterService {
       wisdomSavingThrowValue: proficiency(character.wisdomSavingThrow, modifiers.wisdomMod),
       charismaSavingThrowValue: proficiency(character.charismaSavingThrow, modifiers.charismaMod)
     }
-    return { ...modifiers, ...skills }
+    const CMS : CharacterModsAndSkills = { ...modifiers, ...skills }
+    return CMS
   }
 
-  public async updateCharacterHp (ctx: IContext, data: CharacterUpdateHpInputData) {
-    const { characterId, ...updateData } = data
-    const character = await ctx.prisma.character.update({
+  public async getCharacteristics (ctx: IContext, character: Character) {
+    const char = await ctx.prisma.character.findUnique({
       where: {
-        id: characterId
+        id: character.id
       },
-      data: updateData
+      include: {
+        CharacterRunarcanaClasses: {
+          include: {
+            RunarcanaClass: true
+          }
+        }
+      }
     })
-
-    if (!character) throw new Error('❌ failed to update character')
-  }
-
-  public async addRelation (ctx: IContext, data: CharacterAddInputData) {
-    const { id, ...createData } = data
-
-    const create = await ctx.prisma.character.update({
-      where: {
-        id
-      },
-      data: createRelation(createData)
-
-    })
-    if (!create) throw new Error('❌ failed to update character')
+    return currentCharacteristics(char.CharacterRunarcanaClasses)
   }
 }

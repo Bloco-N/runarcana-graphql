@@ -1,16 +1,16 @@
 import { UserResolver } from './UserResolver'
 import { CharacterResolver } from './CharacterResolver'
-import { SpellResolver } from './SpellResolver'
 import { RegionResolver } from './RegionResolver'
 import { OriginResolver } from './OriginResolver'
-import { RClassResolver } from './RClassResolver'
 import { PastResolver } from './PastResolver'
+import { RunarcanaClassResolver } from './RunarcanaClassResolver'
+import { SpellResolver } from './SpellResolver'
 export default [
   UserResolver,
   CharacterResolver,
-  SpellResolver,
-  RegionResolver,
+  PastResolver,
+  RunarcanaClassResolver,
   OriginResolver,
-  RClassResolver,
-  PastResolver
+  RegionResolver,
+  SpellResolver
 ]
