@@ -21,6 +21,30 @@ function firstCharacterCreateArgs (userId : number, charData:CharacterInputData,
 
   const connect = (id) => ({ connect: { id } })
 
+  if (charData.lineageId) {
+    return {
+      data: {
+        name: charData.name,
+        essence: charData.essence,
+        expression: charData.expression,
+        exaltation: charData.exaltation,
+        User: connect(userId),
+        Region: connect(charData.regionId),
+        Past: connect(charData.pastId),
+        Origin: connect(charData.originId),
+        Lineage: connect(charData.lineageId),
+        classHpBase: updatedFirstClass.hitDie,
+        CharacterRunarcanaClasses: {
+          create: [
+            {
+              RunarcanaClass: connect(updatedFirstClass.id),
+              progress: updatedFirstClass.progress
+            }
+          ]
+        }
+      }
+    }
+  }
   return {
     data: {
       name: charData.name,
@@ -31,7 +55,6 @@ function firstCharacterCreateArgs (userId : number, charData:CharacterInputData,
       Region: connect(charData.regionId),
       Past: connect(charData.pastId),
       Origin: connect(charData.originId),
-      Lineage: connect(charData.lineageId),
       classHpBase: updatedFirstClass.hitDie,
       CharacterRunarcanaClasses: {
         create: [
