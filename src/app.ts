@@ -1,13 +1,14 @@
-// index.ts
 import 'reflect-metadata'
 import * as dontenv from 'dotenv'
 import * as tq from 'type-graphql'
-import { ApolloServer } from 'apollo-server'
 import { context } from './context'
 import { Auth } from './schemas/Auth'
 import Authentication from './middlewares/Authentication'
 import { relationResolvers } from '../prisma/generated/type-graphql'
 import resolvers from './resolvers'
+import { ApolloServer } from '@apollo/server'
+import { startStandaloneServer } from '@apollo/server/standalone'
+
 dontenv.config()
 
 const app = async (port:number, log = true) => {
@@ -22,15 +23,15 @@ const app = async (port:number, log = true) => {
     emitSchemaFile: true
   })
 
-  const server = new ApolloServer({
-    schema,
+  const server = new ApolloServer({ schema })
+  const { url } = await startStandaloneServer(server, {
+    listen: { port },
     context
   })
-  const info = await server.listen({ port }, () => {
-    if (log) console.log(`👌 Server ready at: http://localhost:${port}`)
-  }
-  )
-  return { server, info }
+
+  if (log) console.log(`🚀  Server ready at: ${url}`)
+
+  return { server, url }
 }
 
 export { app }
