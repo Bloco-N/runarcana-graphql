@@ -1,12 +1,13 @@
 /* eslint-disable no-undef */
+import { ApolloServer, BaseContext } from '@apollo/server'
 import { PrismaClient } from '@prisma/client'
 import request from 'supertest'
 import { app } from '../../src/app'
 
 describe('UserResolver tests', () => {
   const prisma = new PrismaClient()
-  let server, url
-  const parse = (res, operationName) => JSON.parse(res.text).data[operationName].message
+  let server: ApolloServer<BaseContext>, url:string
+  const parse = (res: request.Response, operationName:string) => JSON.parse(res.text).data[operationName].message
 
   beforeAll(async () => {
     ({ server, url } = await app(8082, false))
