@@ -3,11 +3,11 @@ import { Field, InputType } from 'type-graphql'
 @InputType()
 export default class SignUpInputData {
   @Field()
-    username:string
+  username: string
 
   @Field()
-    nickname:string
+  nickname: string
 
   @Field()
-    password:string
+  password: string
 }

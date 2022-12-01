@@ -3,26 +3,26 @@ import { Field, InputType } from 'type-graphql'
 @InputType()
 export default class CharacterInputData {
   @Field()
-    regionId:number
+  regionId: number
 
   @Field()
-    originId:number
+  originId: number
 
   @Field({ nullable: true })
-    lineageId?:number
+  lineageId?: number
 
   @Field()
-    pastId:number
+  pastId: number
 
   @Field()
-    name:string
+  name: string
 
   @Field()
-    essence:string
+  essence: string
 
   @Field()
-    expression:string
+  expression: string
 
   @Field()
-    exaltation:string
+  exaltation: string
 }

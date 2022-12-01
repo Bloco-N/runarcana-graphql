@@ -3,89 +3,95 @@ import { Field, ObjectType } from 'type-graphql'
 @ObjectType()
 export class CharacterModsAndSkills {
   @Field()
-    strengthMod: number
+  strengthMod: number
 
   @Field()
-    dexterityMod: number
+  dexterityMod: number
 
   @Field()
-    constitutionMod: number
+  constitutionMod: number
 
   @Field()
-    intelligenceMod: number
+  intelligenceMod: number
 
   @Field()
-    wisdomMod: number
+  wisdomMod: number
 
   @Field()
-    charismaMod: number
+  charismaMod: number
 
   @Field()
-    acrobaticsValue: number
+  acrobaticsValue: number
 
   @Field()
-    arcanaValue: number
+  arcanaValue: number
 
   @Field()
-    athleticsValue: number
+  athleticsValue: number
 
   @Field()
-    performanceValue: number
+  performanceValue: number
 
   @Field()
-    deceptionValue: number
+  deceptionValue: number
 
   @Field()
-    stealthValue: number
+  stealthValue: number
 
   @Field()
-    historyValue: number
+  historyValue: number
 
   @Field()
-    intimidationValue: number
+  intimidationValue: number
 
   @Field()
-    animalHandlingValue: number
+  animalHandlingValue: number
 
   @Field()
-    medicineValue: number
+  medicineValue: number
 
   @Field()
-    natureValue: number
+  natureValue: number
 
   @Field()
-    perceptionValue: number
+  perceptionValue: number
 
   @Field()
-    persuasionValue: number
+  persuasionValue: number
 
   @Field()
-    sleightOfHandValue: number
+  sleightOfHandValue: number
 
   @Field()
-    religionValue: number
+  religionValue: number
 
   @Field()
-    survivalValue: number
+  survivalValue: number
 
   @Field()
-    tecnologyValue: number
+  tecnologyValue: number
 
   @Field()
-    strengthSavingThrowValue: number
+  investigationValue: number
 
   @Field()
-    dexteritySavingThrowValue: number
+  insightValue: number
 
   @Field()
-    constitutionSavingThrowValue: number
+  strengthSavingThrowValue: number
 
   @Field()
-    intelligenceSavingThrowValue: number
+  dexteritySavingThrowValue: number
 
   @Field()
-    wisdomSavingThrowValue: number
+  constitutionSavingThrowValue: number
 
   @Field()
-    charismaSavingThrowValue: number
+  intelligenceSavingThrowValue: number
+
+  @Field()
+  wisdomSavingThrowValue: number
+
+  @Field()
+  charismaSavingThrowValue: number
 }

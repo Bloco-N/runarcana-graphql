@@ -11,13 +11,9 @@ import { startStandaloneServer } from '@apollo/server/standalone'
 
 dontenv.config()
 
-const app = async (port:number, log = true) => {
+const app = async (port: number, log = true) => {
   const schema = await tq.buildSchema({
-    resolvers: [
-      Auth,
-      ...relationResolvers,
-      ...resolvers
-    ],
+    resolvers: [Auth, ...relationResolvers, ...resolvers],
     validate: false,
     authChecker: Authentication,
     emitSchemaFile: true
