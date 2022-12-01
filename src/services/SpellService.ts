@@ -1,4 +1,1 @@
-
-export default class SpellService {
-
-}
+export default class SpellService {}

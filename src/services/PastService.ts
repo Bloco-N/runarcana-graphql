@@ -1,4 +1,1 @@
-
-export default class PastService {
-
-}
+export default class PastService {}

@@ -1,4 +1,1 @@
-
-export default class RegionService {
-
-}
+export default class RegionService {}

@@ -1,4 +1,1 @@
-
-export default class OriginService {
-
-}
+export default class OriginService {}

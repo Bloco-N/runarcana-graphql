@@ -1,4 +1,1 @@
-
-export default class RClassService {
-
-}
+export default class RClassService {}
