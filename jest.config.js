@@ -5,5 +5,6 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '<rootDir>/prisma/generated',
     '<rootDir>/node_modules/'
-  ]
+  ],
+  testTimeout: 10000
 }
