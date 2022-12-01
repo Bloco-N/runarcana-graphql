@@ -54,17 +54,21 @@ describe('CharacterResolver tests', () => {
 
   afterAll(async () => {
     await server.stop()
-    const toru = await prisma.character.findFirst({ where: { name: 'toru' } })
+    const toru = await prisma.character.findFirst({
+      where: { name: 'toru' }
+    })
     await prisma.character.delete({ where: { id: toru.id } })
-    const aurora = await prisma.user.findFirst({ where: { username: 'aurora' } })
+    const aurora = await prisma.user.findFirst({
+      where: { username: 'aurora' }
+    })
     await prisma.user.delete({ where: { username: aurora.username } })
     await prisma.$disconnect()
   })
 
   test('should create a character', async () => {
     const CREATE_CHAR = `#graphql
-    mutation Mutation($data: CharacterCreateInputData!) {
-      createCharacter(data: $data) {
+    mutation CreateCharacter($data: CharacterCreateInputData!) {
+    createCharacter(data: $data) {
         message
       }
     }`
@@ -85,11 +89,13 @@ describe('CharacterResolver tests', () => {
             exaltation: 'a'
           }
         }
-
       }
     }
 
-    const res = await request(url).post('/').send(operation).set({ Authorization: 'Bearer ' + token })
+    const res = await request(url)
+      .post('/')
+      .send(operation)
+      .set({ Authorization: 'Bearer ' + token })
     const message = parse(res, 'createCharacter')
 
     expect(message).toBeDefined()
