@@ -9,7 +9,7 @@ describe('CharacterResolver tests', () => {
   const parse = (res, operationName) => JSON.parse(res.text).data[operationName].message
 
   beforeAll(async () => {
-    ({ server, url } = await app(8081, false))
+    ;({ server, url } = await app(8081, false))
 
     const SIGN_UP = `#graphql
     mutation SignUp($data: SignUpInputData!) {

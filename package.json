@@ -61,7 +61,8 @@
     "prisma:reset": "npx prisma migrate reset",
     "prisma:generate": "npx prisma generate",
     "prisma:seed": "npx prisma db seed",
-    "prisma:studio": "npx prisma studio"
+    "prisma:studio": "npx prisma studio",
+    "prettier-format": "prettier --config .prettierrc.js . --write"
   },
   "prisma": {
     "seed": "ts-node prisma/seeds/seed.ts"

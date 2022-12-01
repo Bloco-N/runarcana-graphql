@@ -1,54 +1,36 @@
 import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
 import { IContext } from '../interfaces/IContext'
 import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import { currentCharacteristics, levelUp } from '../../utils/characterFuncitons'
+import { currentCharacteristics } from '../../utils/characterFuncitons'
 import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
 import { Character, CharacterRunarcanaClass } from '../../prisma/generated/type-graphql'
-import { findBaseSpeedArgs, findCharacteristicsArgs, firsClassArgs, firstCharacterCreateArgs } from '../../utils/query'
+import {
+  findBaseSpeedArgs,
+  findCharacteristicsArgs,
+  findLvlUpCharClassArgs,
+  firsClassArgs,
+  firstCharacterCreateArgs,
+  updateLvlUpCharClassArgs
+} from '../../utils/query'
 import { Characteristic } from '../schemas/Character/CharacterComplements/Characteristic'
 
 export default class CharacterService {
   public async create(ctx: IContext, data: CharacterCreateInputData): Promise<Character> {
     const firstClass = await ctx.prisma.runarcanaClass.findUnique(firsClassArgs(data.runarcanaClassId))
-    return await ctx.prisma.character.create(firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass))
+
+    return (await ctx.prisma.character.create(
+      firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass)
+    )) as Character
   }
 
-  public async levelUpCharacter(ctx: IContext, data: CharacterLevelUpInputData) {
-    const characterRunarcanaClass = (await ctx.prisma.characterRunarcanaClass.findUnique({
-      where: {
-        runarcanaClassId_characterId: {
-          characterId: data.characterId,
-          runarcanaClassId: data.runarcanaClassId
-        }
-      },
-      select: {
-        progress: true,
-        level: true,
-        RunarcanaClass: {
-          select: {
-            progress: true
-          }
-        },
-        Character: {
-          select: {
-            level: true,
-            classHpBase: true
-          }
-        }
-      }
-    })) as CharacterRunarcanaClass
+  public async levelUpCharacter(ctx: IContext, data: CharacterLevelUpInputData): Promise<CharacterRunarcanaClass> {
+    const charClass = (await ctx.prisma.characterRunarcanaClass.findUnique(
+      findLvlUpCharClassArgs(data)
+    )) as CharacterRunarcanaClass
 
-    const update = await ctx.prisma.characterRunarcanaClass.update({
-      where: {
-        runarcanaClassId_characterId: {
-          characterId: data.characterId,
-          runarcanaClassId: data.runarcanaClassId
-        }
-      },
-      data: levelUp(characterRunarcanaClass, data.hitDie)
-    })
-
-    if (!update) throw new Error('❌ failed to update character')
+    return (await ctx.prisma.characterRunarcanaClass.update(
+      updateLvlUpCharClassArgs(data, charClass)
+    )) as CharacterRunarcanaClass
   }
 
   public async getCharacterModAndSkills(character: Character): Promise<CharacterModsAndSkills> {

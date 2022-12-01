@@ -6,11 +6,11 @@ import { app } from '../../src/app'
 
 describe('UserResolver tests', () => {
   const prisma = new PrismaClient()
-  let server: ApolloServer<BaseContext>, url:string
-  const parse = (res: request.Response, operationName:string) => JSON.parse(res.text).data[operationName].message
+  let server: ApolloServer<BaseContext>, url: string
+  const parse = (res: request.Response, operationName: string) => JSON.parse(res.text).data[operationName].message
 
   beforeAll(async () => {
-    ({ server, url } = await app(8082, false))
+    ;({ server, url } = await app(8082, false))
   })
 
   afterAll(async () => {

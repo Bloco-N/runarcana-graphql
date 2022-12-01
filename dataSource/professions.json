@@ -1143,7 +1143,9 @@
         "b": "15"
       },
       {
-        "a": ["Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."],
+        "a": [
+          "Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."
+        ],
         "b": "20"
       }
     ]
@@ -1324,7 +1326,9 @@
         "b": "10"
       },
       {
-        "a": ["Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"],
+        "a": [
+          "Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"
+        ],
         "b": "15"
       }
     ]
