@@ -2,8 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
+  provider = "prisma-client-js"
 }
 
 generator typegraphql {
@@ -29,7 +28,7 @@ model User {
   updatedAt  DateTime    @updatedAt
 }
 
-enum proficiency {
+enum Proficiency {
   NOT_PROFICIENT
   PROFICIENT
   SPECIALIST
@@ -57,31 +56,31 @@ model Character {
   intelligence              Int                       @default(0)
   wisdom                    Int                       @default(0)
   charisma                  Int                       @default(0)
-  acrobatics                proficiency               @default(NOT_PROFICIENT)
-  arcana                    proficiency               @default(NOT_PROFICIENT)
-  athletics                 proficiency               @default(NOT_PROFICIENT)
-  performance               proficiency               @default(NOT_PROFICIENT)
-  deception                 proficiency               @default(NOT_PROFICIENT)
-  stealth                   proficiency               @default(NOT_PROFICIENT)
-  history                   proficiency               @default(NOT_PROFICIENT)
-  intimidation              proficiency               @default(NOT_PROFICIENT)
-  insight                   proficiency               @default(NOT_PROFICIENT)
-  investigation             proficiency               @default(NOT_PROFICIENT)
-  animalHandling            proficiency               @default(NOT_PROFICIENT)
-  medicine                  proficiency               @default(NOT_PROFICIENT)
-  nature                    proficiency               @default(NOT_PROFICIENT)
-  perception                proficiency               @default(NOT_PROFICIENT)
-  persuasion                proficiency               @default(NOT_PROFICIENT)
-  sleightOfHand             proficiency               @default(NOT_PROFICIENT)
-  religion                  proficiency               @default(NOT_PROFICIENT)
-  survival                  proficiency               @default(NOT_PROFICIENT)
-  tecnology                 proficiency               @default(NOT_PROFICIENT)
-  strengthSavingThrow       proficiency               @default(NOT_PROFICIENT)
-  dexteritySavingThrow      proficiency               @default(NOT_PROFICIENT)
-  constitutionSavingThrow   proficiency               @default(NOT_PROFICIENT)
-  intelligenceSavingThrow   proficiency               @default(NOT_PROFICIENT)
-  wisdomSavingThrow         proficiency               @default(NOT_PROFICIENT)
-  charismaSavingThrow       proficiency               @default(NOT_PROFICIENT)
+  acrobatics                Proficiency               @default(NOT_PROFICIENT)
+  arcana                    Proficiency               @default(NOT_PROFICIENT)
+  athletics                 Proficiency               @default(NOT_PROFICIENT)
+  performance               Proficiency               @default(NOT_PROFICIENT)
+  deception                 Proficiency               @default(NOT_PROFICIENT)
+  stealth                   Proficiency               @default(NOT_PROFICIENT)
+  history                   Proficiency               @default(NOT_PROFICIENT)
+  intimidation              Proficiency               @default(NOT_PROFICIENT)
+  insight                   Proficiency               @default(NOT_PROFICIENT)
+  investigation             Proficiency               @default(NOT_PROFICIENT)
+  animalHandling            Proficiency               @default(NOT_PROFICIENT)
+  medicine                  Proficiency               @default(NOT_PROFICIENT)
+  nature                    Proficiency               @default(NOT_PROFICIENT)
+  perception                Proficiency               @default(NOT_PROFICIENT)
+  persuasion                Proficiency               @default(NOT_PROFICIENT)
+  sleightOfHand             Proficiency               @default(NOT_PROFICIENT)
+  religion                  Proficiency               @default(NOT_PROFICIENT)
+  survival                  Proficiency               @default(NOT_PROFICIENT)
+  tecnology                 Proficiency               @default(NOT_PROFICIENT)
+  strengthSavingThrow       Proficiency               @default(NOT_PROFICIENT)
+  dexteritySavingThrow      Proficiency               @default(NOT_PROFICIENT)
+  constitutionSavingThrow   Proficiency               @default(NOT_PROFICIENT)
+  intelligenceSavingThrow   Proficiency               @default(NOT_PROFICIENT)
+  wisdomSavingThrow         Proficiency               @default(NOT_PROFICIENT)
+  charismaSavingThrow       Proficiency               @default(NOT_PROFICIENT)
   Region                    Region                    @relation(fields: [regionId], references: [id])
   Origin                    Origin                    @relation(fields: [originId], references: [id])
   User                      User                      @relation(fields: [userId], references: [id])
@@ -112,6 +111,7 @@ model Origin {
   languages         String
   characteristics   String
   abilities         String
+  baseSpeed         Int
   Characters        Character[]
   Lineages          Lineage[]
   SpellOrigins      SpellOrigin[]
@@ -126,6 +126,7 @@ model Lineage {
   name               String
   characteristics    String
   abilities          String
+  aditionalBaseSpeed Int
   Origin             Origin               @relation(fields: [originId], references: [id])
   Characters         Character[]
   SpellLineages      SpellLineage[]

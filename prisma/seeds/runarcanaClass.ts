@@ -1,6 +1,6 @@
 import runarcanaClasses from '../../dataSource/runarcanaClasses.json'
 
-export default runarcanaClasses.map(runarcanaClass => {
+export default runarcanaClasses.map((runarcanaClass) => {
   return {
     name: runarcanaClass.name,
     description: runarcanaClass.description,

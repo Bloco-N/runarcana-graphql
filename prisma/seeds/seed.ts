@@ -32,7 +32,7 @@ import velSutras from './velSutras'
 
 const prisma = new PrismaClient()
 
-async function main () {
+async function main() {
   for (const runarcanaClass of runarcanaClasses) {
     await prisma.runarcanaClass.create({
       data: runarcanaClass
@@ -190,9 +190,11 @@ async function main () {
   }
 }
 
-main().catch(e => {
-  console.log(`❌ An error ocurred: ${e}`)
-  process.exit(1)
-}).finally(() => {
-  prisma.$disconnect()
-})
+main()
+  .catch((e) => {
+    console.log(`❌ An error ocurred: ${e}`)
+    process.exit(1)
+  })
+  .finally(() => {
+    prisma.$disconnect()
+  })

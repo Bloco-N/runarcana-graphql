@@ -1,228 +1,228 @@
 [
-	{
-		"name": "Andarilho",
-		"description": "O silêncio de estar longe da sociedade, a brisa e a calma entre a natureza. A vida de um Andarilho se passa por entre contemplações e meditações, podendo ter vagado por diversas vilas, cidades ou até mesmo continentes. Conhecendo e aprendendo sobre novas culturas e costumes, um andarilho é uma alma inquieta que não encontra um lugar para se fixar. O que motiva essa situação pode ter várias origens, desde uma profunda contemplação de si próprio, passando pela contemplação do mundo, mas podendo ser também um sobrevivente de guerra entre muitas outras opções.",
-		"atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Natureza e Sobrevivência",
-		"profession": "Herbalista",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Um estojo de pergaminho cheio de notas dos seus estudos e orações, um cobertor de inverno, um conjunto de roupas comuns, um estojo de herbalismo e 5 PO",
-		
-		"characteristic" : "Conhecimento do Vento: Devido à sua natureza inquieta, você já ouviu um pouco de tudo, sabe de diversos rumores que correm por Runeterra. Uma vez por descanso longo, quando você precisa se recordar de uma informação você pode rolar o teste com vantagem. Porém se você tirar um dado menor do que 10 você não saberá dizer se a memória recordada se trata de um rumor ou um fato."
-	},
-	{
-		"name": "Apostador",
-		"description": "O tamborilar de dados rolando sobre uma mesa de madeira, o ruído suave do baralho de cartas, os pings e tinidos de peças de ouro batendo na mesa: Esses sons são como uma sinfonia angelical para você. Ganhar ou perder, você é atraído para o jogo como uma abelha para flores. Você é do tipo que constantemente blefa, ou o tipo que não sabe o que é uma poker face? Você gasta suas noites arrecadando grandes somas de ouro? Ou você mal arrasta seus ganhos? E o mais importante, qual é o seu jogo preferido? Dados, cartas, corridas de carruagem? Ou você é do tipo que tenta de tudo para ganhar ouro? Não importa a sua preferência, o fato permanece o mesmo; você é um apostador e veio jogar.",
-		"atributo": "Seu valor de Inteligência ou Carisma aumenta em +1, até o máximo de 20",
-		"skills": "Enganação e Persuasão",
-		"profession": "Jogador de dois tipos de Jogos",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "conjunto de dados, jogo de baralho, um conjunto de roupas finas e uma algibeira contendo 5 PO",
-		"characteristic" : "Vamos Tornar as Coisas Interessantes: Você pode convencer qualquer pessoa a colocar algo que não esteja disposto a compartilhar (propriedade ou informação) em um jogo de azar. Seu Mestre pode decidir que eles só concordarão com um jogo de sua escolha, e eles só podem concordar se sentirem que as chances estão fortemente a seu favor."
-	},
-	{
-		"name": "Aristocrata",
-		"description": "Você foi criado entre a nobreza ou aprendeu a etiqueta e comportamento apropriados, permitindo que se apresente como um nobre e jogue com influências e políticas. Não importando sua opinião ou atitude, você é reconhecido na sua região devido a sua descendência. As pessoas tendem a pensar o melhor ou o pior de você por causa de sua família, podendo lhe odiar pelo feito de um membro de sua casa, ou lhe admirar por ser parente de um herói de guerra.",
-		"atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
-		"skills": "História e Persuasão",
-		"profession": "Jogador de um tipo de Jogo",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Um conjunto de trajes finos, um anel de sinete, um pergaminho de linhagem e uma algibeira contendo 25 PO",
-		"characteristic" : "Faro Real : Devido à sua origem você sabe dizer quando tentam lhe bajular ou quando estão mentindo para você. Sempre que realizar um teste de Intuição para perceber uma mentira, você o faz com vantagem. Além disso você possui vantagem em testes de História para recordar conhecimentos de uma família Nobre da sua região."
-	},
-	{
-		"name": "Artesão",
-		"description": "O calor da forja, o orgulho dos detalhes bem trabalhados de uma joia, inúmeros livros com conhecimento imensurável em prateleiras, todas essas são visões e sensações que podem existir na vida de um artesão, podendo ir desde um cartógrafo à um cervejeiro, de escriba a um ferreiro. As profissões que envolvem um artesão são dezenas, das menos valorizadas as mais comuns. Um artesão costuma ter paixão pela sua especialidade, produzindo seus produtos com amor e dedicação, mas muitas vezes as fazem simplesmente pela fama, glória e é claro… dinheiro.",
-		"atributo": "Seu valor de Força, Destreza, Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Intuição e Persuasão",
-		"profession": "Um ofício de artesão à sua escolha",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Um conjunto de ferramentas de artesão (à sua escolha), um cartão de negócios, um conjunto de roupas de viajante e uma algibeira com 15 PO",
-		"characteristic" : "Contatos de Negócio : Como uma pessoa ativa nos negócios locais você adquiriu uma certa fama da qualidade de seus produtos e até mesmo a empatia de algumas figuras importantes da sociedade. Quando você for vender seus trabalhos para alguém na região em que você é conhecido, você pode receber o dobro de dinheiro dessas vendas. Alternativamente você pode pedir abrigo e alimento à parceiros de negócio com os quais você possui uma boa relação, caso seu mestre permita, você pode ter um desses contatos em uma região que não seja a sua."
-	},
-	{
-		"name": "Artista",
-		"description": "As moedas enchem bolsos, o vinho sacia a sede e a comida forra o estômago… mas a arte alimenta a alma. Artistas existem por toda Runeterra sob as mais diversas bandeiras e patrocínios, especialmente em regiões com cofres mais cheios e patrocinadores mais generosos. Qual é a sua arte? Qual é o seu tema? Por qual motivo você seguiu essa vida? Qual a sua relação com outros artistas?",
-		"atributo": "Seu valor de Destreza ou Carisma aumenta em +1, até o máximo de 20",
-		"skills": "Acrobacia e Atuação",
-		"profession": "Maquiador, Músico de um Instrumento Musical à sua escolha",
-		"language": "",
-		"Equipment": "Um instrumento musical (à sua escolha), um presente de um admirador (carta de amor, mecha de cabelo ou uma bijuteria), uma fantasia e uma algibeira contendo 15 PO",
-		"characteristic" : "Língua de Prata : Seu carisma e controle do público lhe garantem maior facilidade de agradar uma platéia e convencer donos de comércios locais e alguns nobres, que seria vantajoso para eles de deixar você se apresentar no local. Você possui um bônus de +5 em todos os testes de Atuação. Adicionalmente se você fizer uma apresentação que agrade o dono do local, ele pode lhe oferecer estadia e uma refeição."
-	},
-	{
-		"name": "Charlatão",
-		"description": "Talvez você o faça por ter talento nisso e não ter vontade de ter um emprego normal, talvez você faça por achar que o mundo é injusto e sua habilidade é um equalizador social, ou talvez você faça por realmente não se importar com as pessoas. O fato é, você possui um charme inegável além de experiência para persuadir e enganar. Sabendo como convencer um cidadão a comprar óleo comum como se fosse algum remédio milagroso, ou então se infiltrando entre os mais poderosos da cidade para descobrir seus segredos para poder chantageá-los depois.",
-		"atributo": "Seu valor de Inteligência ou Carisma aumenta em +1, até o máximo de 20",
-		"skills": "Enganação e Prestidigitação",
-		"profession": "Maquiador e Falsificador",
-		"language": "",
-		"Equipment": "Um conjunto de roupas finas, um estojo de maquiagem, ferramentas de trapaça à sua escolha (dez garrafas tampadas preenchidas com líquidos coloridos, um conjunto de dados viciados, um baralho de cartas marcadas ou um anel de sinete de um duque imaginário), e uma algibeira contendo 15 PO",
-		"characteristic" : "Trapaceiro : Você sabe ler a origem das pessoas como a palma de sua mão, sabendo dizer de onde vieram, a condição financeira e até mesmo se está passando por necessidades só de olhar para suas expressões faciais e maneiras de se vestir. Você possui vantagem em testes de Enganação e Intuição contra uma pessoa desde que tenha passado pelo menos 1 minuto a observando e, além disso, você pode substituir testes de Persuasão por testes de Enganação."
-	},
-	{
-		"name": "Criação",
-		"description": "Ao contrário dos outros seres vivos e conscientes, você não nasceu, mas foi criado através de algum processo, para algum propósito ou graças a algum evento. Talvez você seja um construto feito com a finalidade de auxiliar um inventor, talvez você tenha sido um animal que adquiriu consciência e traços antropomórficos ou você pode muito bem ser uma rocha que ganhou consciência quando acertada por um raio mágico. Graças a essa condição única, você possui traços diferentes das outras criaturas vivas existentes.",
-		"atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
-		"skills": "Duas perícias à sua escolha, normalmente ligado ao seu criador",
-		"profession": "Um ofício à sua escolha, normalmente ligado ao seu criador",
-		"language": "Um idioma comum à sua escolha, normalmente ligado ao seu criador",
-		"Equipment": "Um conjunto de roupas comuns dadas pelo seu criador, um conjunto de ferramentas para auto-reparo (peças sobressalentes, martelo, pregos, parafusos, etc.) uma algibeira contendo 1 PO",
-		"characteristic" : "Cria : Você é algo fora da curva, podendo ser um produto da ciência e uma afronta à natureza, ou mesmo um produto da natureza e uma afronta à ciência, como tal, certos seres percebem sua existência não natural. Graças a isso, sua mente acaba não cedendo da mesma forma que a de muitos, você possui vantagem em testes para resistir à Intimidação, seja por não entender as ameaças ou por não se importar com elas."
-	},
-	{
-		"name": "Criminoso",
-		"description": "Seu passado criminoso pode te assombrar ou lhe satisfazer até os dias atuais. Você teve de encontrar uma maneira de sobreviver nesse mundo cruel para aqueles que não nascem privilegiados. Um bando criminoso lhe deu a chance de se provar para se tornar um deles, ou então lhe ofereceram uma quantidade absurda de dinheiro em troca de um serviço sujo, independente do que tenha acontecido você pegou gosto pela coisa e continuou por muitos anos na vida de crime.",
-		"atributo": "Seu valor de Força, Destreza ou Carisma aumenta em +1, até o máximo de 20",
-		"skills": "Enganação e Furtividade",
-		"profession": "Jogador de um tipo de estojo de jogo, Chaveiro",
-		"language": "",
-		"Equipment": "Um pé de cabra, um conjunto de roupas escuras comuns com capuz e uma algibeira contendo 15 PO",
-		"characteristic" : "À Margem : Você frequentemente recebe um contato de sua antiga vida, lhe trazendo novas oportunidades ou até mesmo informações sobre os acontecimentos locais. Se você ainda possuir boas relações com seus antigos contratantes, você pode possuir contatos nas cidades em que eles possuam “negócios”, lhe dando informações quando preciso, ou até mesmo um leve contrabando de armas ou venenos."
-	},
-	{
-		"name": "Desconhecido",
-		"description": "Seu passado é desconhecido para você porque sofreu algum trauma que lhe causou amnésia. Você acordou um dia, sem saber quem é ou como chegou aqui. Sua origem e família são um mistério para você. Você não tem certeza se tem aliados ou inimigos do seu passado. Se você tem habilidades além dos detalhes de treinamento da sua classe, você se esforça para evocá-las.",
-		"atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
-		"skills": "",
-		"profession": "",
-		"language": "",
-		"Equipment": "Apenas uma muda de roupas que você está vestindo e 1 PO na sua bota.",
-		"characteristic" : "Memória Gradual : Cada vez que você encontrar um novo PNJ ou visitar um novo local, uma vez por nível de personagem, poderá decidir se sentir familiar. Este lugar ou pessoa está de alguma forma relacionado com a sua vida que levou ao trauma que causou a sua amnésia. Isso não divulgará muita informação, mas fornecerá mais alguma pista. Você deve trabalhar com seu DM para adequar esse novo elemento ao seu passado, com o objetivo de fornecer uma divulgação completa até o meio do terceiro nível.-Nível 1–4: O PNJ, por acaso, reconhece você, mas não o conhece. Eles se lembram de você fazendo algum ato, como falar com uma figura misteriosa (e escutar algumas palavras), comprar um item de uma loja ou estar envolvido em uma briga.-Locais podem ser lugares que você visitou apenas uma vez ou que foram passados em seu caminho para outro lugar.-Nível 5–8: O PNJ conhece você apenas por um nome de guerra e um pouco sobre o que aconteceu com você, mas é evasivo em lhe dar informações. Se forçados a falar, eles dão apenas uma pista antes que as circunstâncias terminem com o interrogatório (ele simplesmente escapa, ou está em uma posição de poder, ou uma tempestade violenta balança o barco). Locais podem ser tavernas ou masmorras que você frequentou.-Nível 9-12: O PNJ esteve diretamente envolvido com seu trauma e conhece sua verdadeira identidade. Algum conflito deve ser resolvido antes que seu relacionamento com você seja completamente entendido: Isso pode ser um encontro de combate ou um pedido feito por ele.-Um local pode ser sua casa de família, seu local de trabalho, seu esconderijo secreto ou algum outro lugar muito pessoal para você, que revele sua identidade por meio de uma investigação.-Esse recurso pode arrastar você para o envolvimento com sociedades secretas, nobreza, exércitos malignos, templos ocultos e outras intrigas. Uma vez que você tenha total lembrança sobre sua vida e seu trauma, um desses elementos da história pode ser usado para criar um novo recurso de plano de fundo para substituir a Memória Gradual.",
-		"Especial" : "Sempre que você tentar usar uma perícia, ofício ou tentar compreender uma linguagem com a qual você não é proficiente, role um d20. Em um 20 natural, você recordou um de seus talentos pré-traumáticos e obteve essa proficiência; caso contrário, você deve terminar um descanso longo antes de poder verificar novamente a mesma proficiência. Depois de ter recuperado 5 proficiências, você não fará mais essa verificação."
-	},
-	{
-		"name": "Estudioso",
-		"description": "Você possui o conhecimento acumulado de diversas mentes geniais de gerações anteriores, leu diversos livros e testou diversas teorias. Você pode ter sido um dos estudiosos de antigas tradições, de criaturas místicas ou de novas teorias. Lendo nos livros sobre tantos lugares maravilhosos e criaturas fantásticas, sua curiosidade finalmente falou mais alto, o levando a uma vida de aventuras.",
-		"atributo": "Seu valor de Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Arcanismo ou Tecnologia, História",
-		"profession": "",
-		"language": "Dois idiomas comuns à sua escolha",
-		"Equipment": "Um vidro de tinta preta, uma pena, uma faca pequena, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
-		"characteristic" : "Traça de Livro : Por ter passado tantos anos estudando, você sabe exatamente onde encontrar uma informação que você deseja, seja ela entre acadêmicos locais, bibliotecas ou até mesmo nobres e comerciantes ricos. Adicionalmente, você possui vantagem em qualquer teste para recordar um reconhecimento prévio. Converse com seu mestre para saber se seria possível você ter estudado sobre alguma área de conhecimento em específico."
-	},
-	{
-		"name": "Exilado",
-		"description": "Você foi expulso de sua casa e pode nunca mais voltar. Onde você estava antes de ser exilado? O que você fez para merecer o exílio? Você foi falsamente acusado e, em caso afirmativo, por quê? Quais são as condições do seu retorno, se houver algum? Você está exilado ou ainda está dividido? Você ainda tem contatos com sua antiga vida, ou você foi completamente cortado? Você carrega algo com você para lembrar e se sim, para lembrar o que? Sua casa? Seu crime? Vingança?",
-		"atributo": "Seu valor de Constituição ou Inteligência aumenta em +1, até o máximo de 20",
-		"proeficience": "Escolha uma entre: Armaduras leves ou médias",
-		"skills": "Sobrevivência e História",
-		"profession": "Um ofício de artesão à sua escolha",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Uma arma de até 25 PO (tipicamente algo da sua cultura nativa), roupas de viajantes, um cobertor de inverno, um lembrete de casa (um desenho, uma folha, um anel...) e uma algibeira contendo 5 PO",
-		"characteristic" : "Ecos do Passado : Você pode ter sido forçado a deixar sua vida anterior, mas ela não o deixou. Você tem conhecimento sobre as maneiras como as pessoas tratam umas às outras e, portanto, foram dotadas de habilidades que giram em torno de uma natureza de raciocínio rápido. Escolha duas entre Enganação, Intimidação, Intuição e Persuasão. Uma vez por descanso longo, você pode ganhar vantagem em um teste de atributo para uma das perícias que você escolheu."
-	},
-	{
-		"name": "Forasteiro",
-		"description": "A vida longe da civilização, o ambiente florestal ou ambientes inóspitos são os locais ideias para você e sua tribo ou clã. Você passou a vida longe de grandes cidades e impérios, crescendo acostumado a caçar a própria comida e à vida nômade. Você se acostumou a viajar por diversos tipos de terrenos e acredita que viu todo tipo de criatura, não temendo a vida selvagem.",
-		"atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Atletismo, Sobrevivência",
-		"profession": "Instrumentista de um instrumento musical à sua escolha",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Uma armadilha de caça, um troféu de um animal que você matou, um conjunto de roupas de viajante e uma algibeira contendo 10 PO",
-		"characteristic" : "Sobrevivente : Devido ao seu conhecimento geográfico, você tem facilidade de reconhecer todas as regiões por onde passou, lembrando de locais de assentamentos, florestas e onde encontrar algum tipo específico de criatura. Adicionalmente, você possui vantagem em testes de Sobrevivência para procurar alimento e entender o terreno local."
-	},
-	{
-		"name": "Gladiador",
-		"description": "Você é um gladiador do coliseu; Você foi capturado, escravizado e forçado a competir em lutas de morte. Seu estilo de luta fez de você um gladiador de sucesso ou pelo menos foi bom o suficiente para mantê-lo vivo. O coliseu está em seu sangue agora, os eventos que aconteceram, as memórias que você repete em seus sonhos e suas experiências se tornaram você. Seja por escolha ou não, embora você seja livre; você nunca escapará da arena.",
-		"atributo": "Seu valor de Força, Destreza, Constituição ou Carisma aumenta em +1, até o máximo de 20",
-		"proeficience": "Escolha uma entre: Armaduras leves ou médias",
-		"skills": "Atletismo e Intimidação",
-		"profession": "",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Um traje, um conjunto de roupas comuns, um estojo de maquiagem e uma algibeira contendo 15 PO",
-		"characteristic" : "Contatos : Quando em uma cidade, você pode encontrar um local para lutar por dinheiro e reputação."
-	},
-	{
-		"name": "Herói Local",
-		"description": "Você fez um ato heróico para a população do local em que você nasceu, cresceu ou passou. Devido às suas humildes origens, você se tornou um tipo de lenda local, sendo aplaudido e “venerado” por todos aqueles que o conhecem. Você pode escolher ou rolar na tabela abaixo para definir melhor os detalhes desse evento.",
-		"atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
-		"skills": "Lidar com Animais e Sobrevivência",
-		"profession": "Um ofício de artesão à sua escolha, condutor de um veículo (terrestre)",
-		"language": "",
-		"Equipment": "Um conjunto de ferramentas de artesão à sua escolha, uma pá, um pote de ferro, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
-		"characteristic" : "Clamor Popular : Desde que as pessoas conheçam a sua história, existe a chance de elas oferecerem à você e seus aliados comida e abrigo por um ou mais dias, desde que não as coloque em nenhuma situação de risco. Adicionalmente, o povo que conhece você tem uma tendência lhe contar de rumores relacionados aos poderosos locais."
-	},
-	{
-		"name": "Inventor",
-		"description": "Você é (ou era) um inventor, um colaborador da ciência. Você foi inspirado por um grande inventor ainda jovem e quer ser como ele. Então, de onde você veio? Qual é a sua especialização?",
-		"atributo": "Seu valor de Destreza ou Inteligência aumenta em +1, até o máximo de 20",
-		"skills": "Tecnologia e um dos seguintes: Arcanismo, Medicina, Natureza ou Percepção",
-		"profession": "Quaisquer dois tipos de ofícios de artesão",
-		"language": "Dois idiomas comuns à sua escolha",
-		"Equipment": "Um conjunto de roupas comuns, um tipo de ferramentas de artesão com o qual você é proficiente, 1d4 livros sobre engenharia e uma minúscula ou pequena invenção feita por você e uma algibeira contendo 15 PO",
-		"characteristic" : "Uma Vez Estudante, Sempre Estudante : Você pode sempre encontrar abrigo ou santuário limitado dentro de um local de aprendizado, como uma faculdade ou academia, desde que você esteja em boas relações com o grupo que administra a escola, enquanto lá você é capaz de obter conhecimentos básicos de certos tópicos, contanto que você contribua para a escola de alguma forma construtiva."
-	},
-	{
-		"name": "Investigador",
-		"description": "Talvez você tenha uma mente peculiar, capaz de notar padrões e fazer inferências certeiras. Talvez você seja apenas um grande paranóico que acumulou muita informação aparentemente inútil e consegue fazer pontes brilhantes entre elas, como o tempo que demora para uma panela esfriar ou quão rápido um homem realiza suas necessidades básicas. Investigadores coletam, conectam e aferem informações, construindo acontecimentos ou descobrindo o que tentaram esconder.",
-		"atributo": "Seu valor de Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Investigação e escolha uma entre: Enganação, Intuição, Percepção, Persuasão ou Sobrevivência",
-		"profession": "",
-		"language": "Um idioma comum à sua escolha",
-		"Equipment": "Uma algema, um conjunto de roupas finas, uma lupa, um mapa da região em que atuou e uma algibeira contendo 15 PO",
-		"characteristic" : "Faro Aguçado : Você possui vantagem para perceber se uma criatura está mentindo para você e em testes para encontrar pistas sobre algo ou alguém que você esteja procurando. Além disso, você possui vantagem em teste de Percepção para saber se está sendo seguido."
-	},
-	{
-		"name": "Marujo",
-		"description": "Runeterra é um mundo com mais de 12 mares, as rotas mercantes existem a tempo suficiente para que ninguém lembre como era antes delas. Embora barcos sejam extremamente importantes, raros barcos podem se locomover sozinhos. Marujos são habituados ao mar e vivem sua vida em um porto de cada vez. Como você se tornou marujo? Que tipo de embarcação você tripula? Quais são seus objetivos no ar e em terra? Existe algum porto onde você não possa atracar? Qual é a sua relação com o capitão e o resto da tripulação?",
-		"atributo": "Seu valor de Destreza ou Constituição aumenta em +1, até o máximo de 20",
-		"skills": "Atletismo e Percepção",
-		"profession": "Ofício de Navegador e Condutor (aquático)",
-		"language": "",
-		"Equipment": "Uma malagueta (porrete), 45 pés de corda de seda, um amuleto da sorte como um pé de coelho ou uma pequena pedra com um furo no centro, um conjunto de trajes comuns e uma algibeira contendo 10 PO",
-		"characteristic" : "Brisa Amiga : Você conhece a tripulação de um ou mais navios e possui uma boa relação com eles, sempre que eles estiverem na mesma cidade portuária que você, você pode arranjar uma passagem gratuita para você e seus companheiros, desde que vocês paguem a passagem com serviços à bordo. Adicionalmente você possui vantagem em testes de Atletismos relacionados à natação."
-	},
-	{
-		"name": "Mercenário",
-		"description": "Como mercenário, seus serviços eram para contratar para qualquer pessoa que pudesse pagar por eles. O que te levou a ser um soldado da fortuna? Foi para escapar da pobreza? Foi a emoção da batalha? Ou foi simplesmente que a luta era tudo o que você sabia crescer? Quem era sua empresa mercenária ou você trabalha sozinho? O que fez você desistir ou ainda está contratado? Você fez algum aliado ou inimigo pelo caminho? Em que guerras ou batalhas estavam envolvidas? Quais foram as consequências? Aliados perdidos? Acusações de crime de guerra?",
-		"atributo": "Seu valor de Força, Destreza ou Constituição aumenta em +1, até o máximo de 20",
-		"skills": "Intimidação e Percepção",
-		"profession": "Jogador de um tipo de jogo, Condutor de um veículo (terra)",
-		"language": "",
-		"Equipment": "Uma prova do primeiro contrato que você completou, um conjunto de roupas comuns, um conjunto de jogos à sua escolha, uma algibeira contendo 10 PO",
-		"characteristic" : "Lâmina Contratada : Você é um soldado da fortuna, um lutador que vende seus serviços para o maior lance. Você percorre vilas e cidades em busca de um lugar onde seu conjunto exclusivo de talentos seja útil; seja para um lorde caçando um grupo de bandidos, ou um capitão cansado da infestação de barbatâminas em seu convés, você sempre pode encontrar algum trabalho se procurar com bastante atenção. O trabalho em si não deve importar muito para uma pessoa como você, pelo menos é nisso que os outros acreditam. Portanto, outros empregos menos admiráveis e evitados às vezes chegam ao seu colo, dando a você a escolha e o problema de descobrir uma maneira de se comprometer entre sua ética e seu trabalho."
-	},
-	{
-		"name": "Órfão",
-		"description": "Se você conheceu seus pais ou não, não é a questão. A questão aqui é, como você sobreviveu crescendo sem eles? Você teve que batalhar e se manter nas ruas, teve de pelejar dia a dia para sobreviver, talvez sozinho ou talvez com amigos. Quem é você? O que aconteceu com os seus pais? Com quem você cresceu e como você fez para não se tornar apenas uma estatística? Quais são suas aspirações e suas ligações com as ruas em que cresceu?",
-		"atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
-		"skills": "Furtividade e Prestidigitação",
-		"profession": "Maquiador, Chaveiro",
-		"language": "",
-		"Equipment": "Uma faca pequena, um mapa da cidade em que você cresceu, um rato de estimação, um pequeno objeto para lembrar dos seus pais, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
-		"characteristic" : "Astúcia : Você conhece os segredos das ruas de onde você cresceu, todas as passagens escondidas e locais secretos. Você possui vantagem em Furtividade e Percepção no local em que você cresceu. Você e seus aliados possuem o dobro de movimentação na região de onde você cresceu, desde que você esteja guiando e o grupo não esteja engajado em combate. Adicionalmente, você possui vantagem em qualquer teste feito para pechinchar um item mundano."
-	},
-	{
-		"name": "Pirata",
-		"description": "Piratas percorrem os mares em grupos desorganizados, levando tesouros de praticamente quem puderem. O que o levou à pirataria? Você foi voluntário para este trabalho ou foi forçado quando seu navio foi invadido? Você era o capitão do navio ou apenas mais um da tripulação? Você deixou seu navio para sempre ou ainda está conectado a esse mundo? Se você foi embora, por quê?",
-		"atributo": "Seu valor de Força, Destreza ou Constituição aumenta em +1, até o máximo de 20",
-		"skills": "Escolha duas entre: Acrobacia, Lidar com Animais ou Intimidação",
-		"proeficience" : "Cimitarra, Rapieira e escolhe entre: Armas de Fogo leves, médias, longas ou canhões",
-		"profession": "",
-		"language": "",
-		"Equipment": "Uma cimitarra ou rapieira, um mosquete ou uma pistola de perderneira, munição da arma escolhida (20), diário, roupas de pirata e uma algibeira contendo 10 PO",
-		"Optional" : "Perna de pau, gancho, tapa-olho, cachimbo e tabaco (com pederneira e ferro para acender), palha, flauta, papagaio (talvez como familiar)",
-		"characteristic" : "Ahoy, Parceiro! : Você passou anos em mar aberto e, portanto, sabe como dirigir e operar um navio. Você também conhece várias cidades portuárias em todo o mundo e, por experiência, aprendeu quais costumes são aceitáveis nas cidades portuárias que você conhece. Para você é mais fácil comprar um navio do que para outras pessoas, e você tem uma vantagem em qualquer teste feito para pechinchar para comprar um navio digno do mar. Quando estiver em uma cidade portuária amigável com a qual você tem boas relações, pode encontrar refúgio com certas pessoas; eles o esconderão se for seguro, mas não arriscarão suas vidas por você."
-	},
-	{
-		"name": "Religioso",
-		"description": "Você tem uma forte crença em algo ou alguém, seja uma divindade, um conceito ou mesmo uma filosofia. Você se guia por essa crença e acredita firmemente que ela é uma mudança positiva para o mundo ao seu redor, tendo como obrigação, proclamar essas boas novas. Qual é a sua crença? Onde ela se originou? Como é a receptividade dela a crenças divergentes? Como ela se relaciona com outras fés?",
-		"atributo": "Seu valor de Inteligência, Sabedoria ou Carisma aumenta em +1, até o máximo de 20",
-		"skills": "Intuição e Religião",
-		"profession": "",
-		"language": "Dois idiomas comuns à sua escolha",
-		"Equipment": "Um símbolo sagrado, um livro de preces ou uma conta de orações, 5 varetas de incenso, vestimentas cerimoniais, um conjunto de roupas comuns e uma algibeira contendo 15 PO",
-		"characteristic" : "Empatia da Fé : Tendo um passado religioso, você detém a simpatia daqueles que possuem a mesma fé, podendo participar e realizar cerimônias para aquele(s) que você cultua. Você e seus aliados podem pedir por ajuda ou cura em um templo, santuário ou outro local sagrado de sua fé. Você também pode pedir para aqueles que compartilham de sua fé para conceder a você um abrigo temporário, cobrindo os custos de um estilo de vida modesto. Alternativamente, você pode estar relacionado diretamente com um templo ou santuário específico de sua fé, e possuir abrigo fixo nesse local. Esse local, desde que você possua boas relações com ele, pode ser de onde você veio, cresceu ou que encontrou um lar nele. Enquanto você estiver próximo desse local, você pode solicitar por auxílio para seus fiéis ou sacerdotes, desde que não os coloque em nenhuma posição de risco."
-	},
-	{
-		"name": "Soldado",
-		"description": "Felizmente ou infelizmente a guerra é uma constante em Runeterra. Felizmente pois as ameaças nem sempre são humanas, infelizmente pois quase sempre elas são contra o vizinho, e a morte ronda por todos os lados. Pelo que você luta? Qual é a sua causa e por qual motivo ela é justa o bastante para que você tire a vida dos outros? Qual é a sua crença em seu exército e em seu comando? Você segue suas funções e obedece a sua hierarquia?",
-		"atributo": "Seu valor de Força, Destreza, Constituição ou Inteligência aumenta em +1, até o máximo de 20",
-		"skills": " Intimidação, Sobrevivência",
-		"profession": "Condutor de um veículo terrestre ou marítimo",
-		"language": "",
-		"Equipment": "Um símbolo da sua unidade, 5 azagaias, vestimentas oficiais, uma arma marcial e uma algibeira contendo 10 PO",
-		"characteristic" : "Irmãos de Armas : Você treinou e fez amigos em um pelotão de um exército de alguma região. Você possui amigos entre eles que lhe ajudariam de boa vontade oferecendo abrigo, comida e talvez até algum equipamento básico. Você é respeitado por todos aqueles que possuem conhecimento de sua patente (converse com seu mestre para defini-la), ou então pode até ser caçado por algum soldado do exército inimigo. Além disso, você possui a capacidade de intimidar aqueles que possuem uma patente menor do que a sua."
-	}
+  {
+    "name": "Andarilho",
+    "description": "O silêncio de estar longe da sociedade, a brisa e a calma entre a natureza. A vida de um Andarilho se passa por entre contemplações e meditações, podendo ter vagado por diversas vilas, cidades ou até mesmo continentes. Conhecendo e aprendendo sobre novas culturas e costumes, um andarilho é uma alma inquieta que não encontra um lugar para se fixar. O que motiva essa situação pode ter várias origens, desde uma profunda contemplação de si próprio, passando pela contemplação do mundo, mas podendo ser também um sobrevivente de guerra entre muitas outras opções.",
+    "atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Natureza e Sobrevivência",
+    "profession": "Herbalista",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Um estojo de pergaminho cheio de notas dos seus estudos e orações, um cobertor de inverno, um conjunto de roupas comuns, um estojo de herbalismo e 5 PO",
+
+    "characteristic": "Conhecimento do Vento: Devido à sua natureza inquieta, você já ouviu um pouco de tudo, sabe de diversos rumores que correm por Runeterra. Uma vez por descanso longo, quando você precisa se recordar de uma informação você pode rolar o teste com vantagem. Porém se você tirar um dado menor do que 10 você não saberá dizer se a memória recordada se trata de um rumor ou um fato."
+  },
+  {
+    "name": "Apostador",
+    "description": "O tamborilar de dados rolando sobre uma mesa de madeira, o ruído suave do baralho de cartas, os pings e tinidos de peças de ouro batendo na mesa: Esses sons são como uma sinfonia angelical para você. Ganhar ou perder, você é atraído para o jogo como uma abelha para flores. Você é do tipo que constantemente blefa, ou o tipo que não sabe o que é uma poker face? Você gasta suas noites arrecadando grandes somas de ouro? Ou você mal arrasta seus ganhos? E o mais importante, qual é o seu jogo preferido? Dados, cartas, corridas de carruagem? Ou você é do tipo que tenta de tudo para ganhar ouro? Não importa a sua preferência, o fato permanece o mesmo; você é um apostador e veio jogar.",
+    "atributo": "Seu valor de Inteligência ou Carisma aumenta em +1, até o máximo de 20",
+    "skills": "Enganação e Persuasão",
+    "profession": "Jogador de dois tipos de Jogos",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "conjunto de dados, jogo de baralho, um conjunto de roupas finas e uma algibeira contendo 5 PO",
+    "characteristic": "Vamos Tornar as Coisas Interessantes: Você pode convencer qualquer pessoa a colocar algo que não esteja disposto a compartilhar (propriedade ou informação) em um jogo de azar. Seu Mestre pode decidir que eles só concordarão com um jogo de sua escolha, e eles só podem concordar se sentirem que as chances estão fortemente a seu favor."
+  },
+  {
+    "name": "Aristocrata",
+    "description": "Você foi criado entre a nobreza ou aprendeu a etiqueta e comportamento apropriados, permitindo que se apresente como um nobre e jogue com influências e políticas. Não importando sua opinião ou atitude, você é reconhecido na sua região devido a sua descendência. As pessoas tendem a pensar o melhor ou o pior de você por causa de sua família, podendo lhe odiar pelo feito de um membro de sua casa, ou lhe admirar por ser parente de um herói de guerra.",
+    "atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
+    "skills": "História e Persuasão",
+    "profession": "Jogador de um tipo de Jogo",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Um conjunto de trajes finos, um anel de sinete, um pergaminho de linhagem e uma algibeira contendo 25 PO",
+    "characteristic": "Faro Real : Devido à sua origem você sabe dizer quando tentam lhe bajular ou quando estão mentindo para você. Sempre que realizar um teste de Intuição para perceber uma mentira, você o faz com vantagem. Além disso você possui vantagem em testes de História para recordar conhecimentos de uma família Nobre da sua região."
+  },
+  {
+    "name": "Artesão",
+    "description": "O calor da forja, o orgulho dos detalhes bem trabalhados de uma joia, inúmeros livros com conhecimento imensurável em prateleiras, todas essas são visões e sensações que podem existir na vida de um artesão, podendo ir desde um cartógrafo à um cervejeiro, de escriba a um ferreiro. As profissões que envolvem um artesão são dezenas, das menos valorizadas as mais comuns. Um artesão costuma ter paixão pela sua especialidade, produzindo seus produtos com amor e dedicação, mas muitas vezes as fazem simplesmente pela fama, glória e é claro… dinheiro.",
+    "atributo": "Seu valor de Força, Destreza, Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Intuição e Persuasão",
+    "profession": "Um ofício de artesão à sua escolha",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Um conjunto de ferramentas de artesão (à sua escolha), um cartão de negócios, um conjunto de roupas de viajante e uma algibeira com 15 PO",
+    "characteristic": "Contatos de Negócio : Como uma pessoa ativa nos negócios locais você adquiriu uma certa fama da qualidade de seus produtos e até mesmo a empatia de algumas figuras importantes da sociedade. Quando você for vender seus trabalhos para alguém na região em que você é conhecido, você pode receber o dobro de dinheiro dessas vendas. Alternativamente você pode pedir abrigo e alimento à parceiros de negócio com os quais você possui uma boa relação, caso seu mestre permita, você pode ter um desses contatos em uma região que não seja a sua."
+  },
+  {
+    "name": "Artista",
+    "description": "As moedas enchem bolsos, o vinho sacia a sede e a comida forra o estômago… mas a arte alimenta a alma. Artistas existem por toda Runeterra sob as mais diversas bandeiras e patrocínios, especialmente em regiões com cofres mais cheios e patrocinadores mais generosos. Qual é a sua arte? Qual é o seu tema? Por qual motivo você seguiu essa vida? Qual a sua relação com outros artistas?",
+    "atributo": "Seu valor de Destreza ou Carisma aumenta em +1, até o máximo de 20",
+    "skills": "Acrobacia e Atuação",
+    "profession": "Maquiador, Músico de um Instrumento Musical à sua escolha",
+    "language": "",
+    "Equipment": "Um instrumento musical (à sua escolha), um presente de um admirador (carta de amor, mecha de cabelo ou uma bijuteria), uma fantasia e uma algibeira contendo 15 PO",
+    "characteristic": "Língua de Prata : Seu carisma e controle do público lhe garantem maior facilidade de agradar uma platéia e convencer donos de comércios locais e alguns nobres, que seria vantajoso para eles de deixar você se apresentar no local. Você possui um bônus de +5 em todos os testes de Atuação. Adicionalmente se você fizer uma apresentação que agrade o dono do local, ele pode lhe oferecer estadia e uma refeição."
+  },
+  {
+    "name": "Charlatão",
+    "description": "Talvez você o faça por ter talento nisso e não ter vontade de ter um emprego normal, talvez você faça por achar que o mundo é injusto e sua habilidade é um equalizador social, ou talvez você faça por realmente não se importar com as pessoas. O fato é, você possui um charme inegável além de experiência para persuadir e enganar. Sabendo como convencer um cidadão a comprar óleo comum como se fosse algum remédio milagroso, ou então se infiltrando entre os mais poderosos da cidade para descobrir seus segredos para poder chantageá-los depois.",
+    "atributo": "Seu valor de Inteligência ou Carisma aumenta em +1, até o máximo de 20",
+    "skills": "Enganação e Prestidigitação",
+    "profession": "Maquiador e Falsificador",
+    "language": "",
+    "Equipment": "Um conjunto de roupas finas, um estojo de maquiagem, ferramentas de trapaça à sua escolha (dez garrafas tampadas preenchidas com líquidos coloridos, um conjunto de dados viciados, um baralho de cartas marcadas ou um anel de sinete de um duque imaginário), e uma algibeira contendo 15 PO",
+    "characteristic": "Trapaceiro : Você sabe ler a origem das pessoas como a palma de sua mão, sabendo dizer de onde vieram, a condição financeira e até mesmo se está passando por necessidades só de olhar para suas expressões faciais e maneiras de se vestir. Você possui vantagem em testes de Enganação e Intuição contra uma pessoa desde que tenha passado pelo menos 1 minuto a observando e, além disso, você pode substituir testes de Persuasão por testes de Enganação."
+  },
+  {
+    "name": "Criação",
+    "description": "Ao contrário dos outros seres vivos e conscientes, você não nasceu, mas foi criado através de algum processo, para algum propósito ou graças a algum evento. Talvez você seja um construto feito com a finalidade de auxiliar um inventor, talvez você tenha sido um animal que adquiriu consciência e traços antropomórficos ou você pode muito bem ser uma rocha que ganhou consciência quando acertada por um raio mágico. Graças a essa condição única, você possui traços diferentes das outras criaturas vivas existentes.",
+    "atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
+    "skills": "Duas perícias à sua escolha, normalmente ligado ao seu criador",
+    "profession": "Um ofício à sua escolha, normalmente ligado ao seu criador",
+    "language": "Um idioma comum à sua escolha, normalmente ligado ao seu criador",
+    "Equipment": "Um conjunto de roupas comuns dadas pelo seu criador, um conjunto de ferramentas para auto-reparo (peças sobressalentes, martelo, pregos, parafusos, etc.) uma algibeira contendo 1 PO",
+    "characteristic": "Cria : Você é algo fora da curva, podendo ser um produto da ciência e uma afronta à natureza, ou mesmo um produto da natureza e uma afronta à ciência, como tal, certos seres percebem sua existência não natural. Graças a isso, sua mente acaba não cedendo da mesma forma que a de muitos, você possui vantagem em testes para resistir à Intimidação, seja por não entender as ameaças ou por não se importar com elas."
+  },
+  {
+    "name": "Criminoso",
+    "description": "Seu passado criminoso pode te assombrar ou lhe satisfazer até os dias atuais. Você teve de encontrar uma maneira de sobreviver nesse mundo cruel para aqueles que não nascem privilegiados. Um bando criminoso lhe deu a chance de se provar para se tornar um deles, ou então lhe ofereceram uma quantidade absurda de dinheiro em troca de um serviço sujo, independente do que tenha acontecido você pegou gosto pela coisa e continuou por muitos anos na vida de crime.",
+    "atributo": "Seu valor de Força, Destreza ou Carisma aumenta em +1, até o máximo de 20",
+    "skills": "Enganação e Furtividade",
+    "profession": "Jogador de um tipo de estojo de jogo, Chaveiro",
+    "language": "",
+    "Equipment": "Um pé de cabra, um conjunto de roupas escuras comuns com capuz e uma algibeira contendo 15 PO",
+    "characteristic": "À Margem : Você frequentemente recebe um contato de sua antiga vida, lhe trazendo novas oportunidades ou até mesmo informações sobre os acontecimentos locais. Se você ainda possuir boas relações com seus antigos contratantes, você pode possuir contatos nas cidades em que eles possuam “negócios”, lhe dando informações quando preciso, ou até mesmo um leve contrabando de armas ou venenos."
+  },
+  {
+    "name": "Desconhecido",
+    "description": "Seu passado é desconhecido para você porque sofreu algum trauma que lhe causou amnésia. Você acordou um dia, sem saber quem é ou como chegou aqui. Sua origem e família são um mistério para você. Você não tem certeza se tem aliados ou inimigos do seu passado. Se você tem habilidades além dos detalhes de treinamento da sua classe, você se esforça para evocá-las.",
+    "atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
+    "skills": "",
+    "profession": "",
+    "language": "",
+    "Equipment": "Apenas uma muda de roupas que você está vestindo e 1 PO na sua bota.",
+    "characteristic": "Memória Gradual : Cada vez que você encontrar um novo PNJ ou visitar um novo local, uma vez por nível de personagem, poderá decidir se sentir familiar. Este lugar ou pessoa está de alguma forma relacionado com a sua vida que levou ao trauma que causou a sua amnésia. Isso não divulgará muita informação, mas fornecerá mais alguma pista. Você deve trabalhar com seu DM para adequar esse novo elemento ao seu passado, com o objetivo de fornecer uma divulgação completa até o meio do terceiro nível.-Nível 1–4: O PNJ, por acaso, reconhece você, mas não o conhece. Eles se lembram de você fazendo algum ato, como falar com uma figura misteriosa (e escutar algumas palavras), comprar um item de uma loja ou estar envolvido em uma briga.-Locais podem ser lugares que você visitou apenas uma vez ou que foram passados em seu caminho para outro lugar.-Nível 5–8: O PNJ conhece você apenas por um nome de guerra e um pouco sobre o que aconteceu com você, mas é evasivo em lhe dar informações. Se forçados a falar, eles dão apenas uma pista antes que as circunstâncias terminem com o interrogatório (ele simplesmente escapa, ou está em uma posição de poder, ou uma tempestade violenta balança o barco). Locais podem ser tavernas ou masmorras que você frequentou.-Nível 9-12: O PNJ esteve diretamente envolvido com seu trauma e conhece sua verdadeira identidade. Algum conflito deve ser resolvido antes que seu relacionamento com você seja completamente entendido: Isso pode ser um encontro de combate ou um pedido feito por ele.-Um local pode ser sua casa de família, seu local de trabalho, seu esconderijo secreto ou algum outro lugar muito pessoal para você, que revele sua identidade por meio de uma investigação.-Esse recurso pode arrastar você para o envolvimento com sociedades secretas, nobreza, exércitos malignos, templos ocultos e outras intrigas. Uma vez que você tenha total lembrança sobre sua vida e seu trauma, um desses elementos da história pode ser usado para criar um novo recurso de plano de fundo para substituir a Memória Gradual.",
+    "Especial": "Sempre que você tentar usar uma perícia, ofício ou tentar compreender uma linguagem com a qual você não é proficiente, role um d20. Em um 20 natural, você recordou um de seus talentos pré-traumáticos e obteve essa proficiência; caso contrário, você deve terminar um descanso longo antes de poder verificar novamente a mesma proficiência. Depois de ter recuperado 5 proficiências, você não fará mais essa verificação."
+  },
+  {
+    "name": "Estudioso",
+    "description": "Você possui o conhecimento acumulado de diversas mentes geniais de gerações anteriores, leu diversos livros e testou diversas teorias. Você pode ter sido um dos estudiosos de antigas tradições, de criaturas místicas ou de novas teorias. Lendo nos livros sobre tantos lugares maravilhosos e criaturas fantásticas, sua curiosidade finalmente falou mais alto, o levando a uma vida de aventuras.",
+    "atributo": "Seu valor de Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Arcanismo ou Tecnologia, História",
+    "profession": "",
+    "language": "Dois idiomas comuns à sua escolha",
+    "Equipment": "Um vidro de tinta preta, uma pena, uma faca pequena, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
+    "characteristic": "Traça de Livro : Por ter passado tantos anos estudando, você sabe exatamente onde encontrar uma informação que você deseja, seja ela entre acadêmicos locais, bibliotecas ou até mesmo nobres e comerciantes ricos. Adicionalmente, você possui vantagem em qualquer teste para recordar um reconhecimento prévio. Converse com seu mestre para saber se seria possível você ter estudado sobre alguma área de conhecimento em específico."
+  },
+  {
+    "name": "Exilado",
+    "description": "Você foi expulso de sua casa e pode nunca mais voltar. Onde você estava antes de ser exilado? O que você fez para merecer o exílio? Você foi falsamente acusado e, em caso afirmativo, por quê? Quais são as condições do seu retorno, se houver algum? Você está exilado ou ainda está dividido? Você ainda tem contatos com sua antiga vida, ou você foi completamente cortado? Você carrega algo com você para lembrar e se sim, para lembrar o que? Sua casa? Seu crime? Vingança?",
+    "atributo": "Seu valor de Constituição ou Inteligência aumenta em +1, até o máximo de 20",
+    "proeficience": "Escolha uma entre: Armaduras leves ou médias",
+    "skills": "Sobrevivência e História",
+    "profession": "Um ofício de artesão à sua escolha",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Uma arma de até 25 PO (tipicamente algo da sua cultura nativa), roupas de viajantes, um cobertor de inverno, um lembrete de casa (um desenho, uma folha, um anel...) e uma algibeira contendo 5 PO",
+    "characteristic": "Ecos do Passado : Você pode ter sido forçado a deixar sua vida anterior, mas ela não o deixou. Você tem conhecimento sobre as maneiras como as pessoas tratam umas às outras e, portanto, foram dotadas de habilidades que giram em torno de uma natureza de raciocínio rápido. Escolha duas entre Enganação, Intimidação, Intuição e Persuasão. Uma vez por descanso longo, você pode ganhar vantagem em um teste de atributo para uma das perícias que você escolheu."
+  },
+  {
+    "name": "Forasteiro",
+    "description": "A vida longe da civilização, o ambiente florestal ou ambientes inóspitos são os locais ideias para você e sua tribo ou clã. Você passou a vida longe de grandes cidades e impérios, crescendo acostumado a caçar a própria comida e à vida nômade. Você se acostumou a viajar por diversos tipos de terrenos e acredita que viu todo tipo de criatura, não temendo a vida selvagem.",
+    "atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Atletismo, Sobrevivência",
+    "profession": "Instrumentista de um instrumento musical à sua escolha",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Uma armadilha de caça, um troféu de um animal que você matou, um conjunto de roupas de viajante e uma algibeira contendo 10 PO",
+    "characteristic": "Sobrevivente : Devido ao seu conhecimento geográfico, você tem facilidade de reconhecer todas as regiões por onde passou, lembrando de locais de assentamentos, florestas e onde encontrar algum tipo específico de criatura. Adicionalmente, você possui vantagem em testes de Sobrevivência para procurar alimento e entender o terreno local."
+  },
+  {
+    "name": "Gladiador",
+    "description": "Você é um gladiador do coliseu; Você foi capturado, escravizado e forçado a competir em lutas de morte. Seu estilo de luta fez de você um gladiador de sucesso ou pelo menos foi bom o suficiente para mantê-lo vivo. O coliseu está em seu sangue agora, os eventos que aconteceram, as memórias que você repete em seus sonhos e suas experiências se tornaram você. Seja por escolha ou não, embora você seja livre; você nunca escapará da arena.",
+    "atributo": "Seu valor de Força, Destreza, Constituição ou Carisma aumenta em +1, até o máximo de 20",
+    "proeficience": "Escolha uma entre: Armaduras leves ou médias",
+    "skills": "Atletismo e Intimidação",
+    "profession": "",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Um traje, um conjunto de roupas comuns, um estojo de maquiagem e uma algibeira contendo 15 PO",
+    "characteristic": "Contatos : Quando em uma cidade, você pode encontrar um local para lutar por dinheiro e reputação."
+  },
+  {
+    "name": "Herói Local",
+    "description": "Você fez um ato heróico para a população do local em que você nasceu, cresceu ou passou. Devido às suas humildes origens, você se tornou um tipo de lenda local, sendo aplaudido e “venerado” por todos aqueles que o conhecem. Você pode escolher ou rolar na tabela abaixo para definir melhor os detalhes desse evento.",
+    "atributo": "Aumente o valor de um atributo em +1, até o máximo de 20",
+    "skills": "Lidar com Animais e Sobrevivência",
+    "profession": "Um ofício de artesão à sua escolha, condutor de um veículo (terrestre)",
+    "language": "",
+    "Equipment": "Um conjunto de ferramentas de artesão à sua escolha, uma pá, um pote de ferro, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
+    "characteristic": "Clamor Popular : Desde que as pessoas conheçam a sua história, existe a chance de elas oferecerem à você e seus aliados comida e abrigo por um ou mais dias, desde que não as coloque em nenhuma situação de risco. Adicionalmente, o povo que conhece você tem uma tendência lhe contar de rumores relacionados aos poderosos locais."
+  },
+  {
+    "name": "Inventor",
+    "description": "Você é (ou era) um inventor, um colaborador da ciência. Você foi inspirado por um grande inventor ainda jovem e quer ser como ele. Então, de onde você veio? Qual é a sua especialização?",
+    "atributo": "Seu valor de Destreza ou Inteligência aumenta em +1, até o máximo de 20",
+    "skills": "Tecnologia e um dos seguintes: Arcanismo, Medicina, Natureza ou Percepção",
+    "profession": "Quaisquer dois tipos de ofícios de artesão",
+    "language": "Dois idiomas comuns à sua escolha",
+    "Equipment": "Um conjunto de roupas comuns, um tipo de ferramentas de artesão com o qual você é proficiente, 1d4 livros sobre engenharia e uma minúscula ou pequena invenção feita por você e uma algibeira contendo 15 PO",
+    "characteristic": "Uma Vez Estudante, Sempre Estudante : Você pode sempre encontrar abrigo ou santuário limitado dentro de um local de aprendizado, como uma faculdade ou academia, desde que você esteja em boas relações com o grupo que administra a escola, enquanto lá você é capaz de obter conhecimentos básicos de certos tópicos, contanto que você contribua para a escola de alguma forma construtiva."
+  },
+  {
+    "name": "Investigador",
+    "description": "Talvez você tenha uma mente peculiar, capaz de notar padrões e fazer inferências certeiras. Talvez você seja apenas um grande paranóico que acumulou muita informação aparentemente inútil e consegue fazer pontes brilhantes entre elas, como o tempo que demora para uma panela esfriar ou quão rápido um homem realiza suas necessidades básicas. Investigadores coletam, conectam e aferem informações, construindo acontecimentos ou descobrindo o que tentaram esconder.",
+    "atributo": "Seu valor de Inteligência ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Investigação e escolha uma entre: Enganação, Intuição, Percepção, Persuasão ou Sobrevivência",
+    "profession": "",
+    "language": "Um idioma comum à sua escolha",
+    "Equipment": "Uma algema, um conjunto de roupas finas, uma lupa, um mapa da região em que atuou e uma algibeira contendo 15 PO",
+    "characteristic": "Faro Aguçado : Você possui vantagem para perceber se uma criatura está mentindo para você e em testes para encontrar pistas sobre algo ou alguém que você esteja procurando. Além disso, você possui vantagem em teste de Percepção para saber se está sendo seguido."
+  },
+  {
+    "name": "Marujo",
+    "description": "Runeterra é um mundo com mais de 12 mares, as rotas mercantes existem a tempo suficiente para que ninguém lembre como era antes delas. Embora barcos sejam extremamente importantes, raros barcos podem se locomover sozinhos. Marujos são habituados ao mar e vivem sua vida em um porto de cada vez. Como você se tornou marujo? Que tipo de embarcação você tripula? Quais são seus objetivos no ar e em terra? Existe algum porto onde você não possa atracar? Qual é a sua relação com o capitão e o resto da tripulação?",
+    "atributo": "Seu valor de Destreza ou Constituição aumenta em +1, até o máximo de 20",
+    "skills": "Atletismo e Percepção",
+    "profession": "Ofício de Navegador e Condutor (aquático)",
+    "language": "",
+    "Equipment": "Uma malagueta (porrete), 45 pés de corda de seda, um amuleto da sorte como um pé de coelho ou uma pequena pedra com um furo no centro, um conjunto de trajes comuns e uma algibeira contendo 10 PO",
+    "characteristic": "Brisa Amiga : Você conhece a tripulação de um ou mais navios e possui uma boa relação com eles, sempre que eles estiverem na mesma cidade portuária que você, você pode arranjar uma passagem gratuita para você e seus companheiros, desde que vocês paguem a passagem com serviços à bordo. Adicionalmente você possui vantagem em testes de Atletismos relacionados à natação."
+  },
+  {
+    "name": "Mercenário",
+    "description": "Como mercenário, seus serviços eram para contratar para qualquer pessoa que pudesse pagar por eles. O que te levou a ser um soldado da fortuna? Foi para escapar da pobreza? Foi a emoção da batalha? Ou foi simplesmente que a luta era tudo o que você sabia crescer? Quem era sua empresa mercenária ou você trabalha sozinho? O que fez você desistir ou ainda está contratado? Você fez algum aliado ou inimigo pelo caminho? Em que guerras ou batalhas estavam envolvidas? Quais foram as consequências? Aliados perdidos? Acusações de crime de guerra?",
+    "atributo": "Seu valor de Força, Destreza ou Constituição aumenta em +1, até o máximo de 20",
+    "skills": "Intimidação e Percepção",
+    "profession": "Jogador de um tipo de jogo, Condutor de um veículo (terra)",
+    "language": "",
+    "Equipment": "Uma prova do primeiro contrato que você completou, um conjunto de roupas comuns, um conjunto de jogos à sua escolha, uma algibeira contendo 10 PO",
+    "characteristic": "Lâmina Contratada : Você é um soldado da fortuna, um lutador que vende seus serviços para o maior lance. Você percorre vilas e cidades em busca de um lugar onde seu conjunto exclusivo de talentos seja útil; seja para um lorde caçando um grupo de bandidos, ou um capitão cansado da infestação de barbatâminas em seu convés, você sempre pode encontrar algum trabalho se procurar com bastante atenção. O trabalho em si não deve importar muito para uma pessoa como você, pelo menos é nisso que os outros acreditam. Portanto, outros empregos menos admiráveis e evitados às vezes chegam ao seu colo, dando a você a escolha e o problema de descobrir uma maneira de se comprometer entre sua ética e seu trabalho."
+  },
+  {
+    "name": "Órfão",
+    "description": "Se você conheceu seus pais ou não, não é a questão. A questão aqui é, como você sobreviveu crescendo sem eles? Você teve que batalhar e se manter nas ruas, teve de pelejar dia a dia para sobreviver, talvez sozinho ou talvez com amigos. Quem é você? O que aconteceu com os seus pais? Com quem você cresceu e como você fez para não se tornar apenas uma estatística? Quais são suas aspirações e suas ligações com as ruas em que cresceu?",
+    "atributo": "Seu valor de Constituição ou Sabedoria aumenta em +1, até o máximo de 20",
+    "skills": "Furtividade e Prestidigitação",
+    "profession": "Maquiador, Chaveiro",
+    "language": "",
+    "Equipment": "Uma faca pequena, um mapa da cidade em que você cresceu, um rato de estimação, um pequeno objeto para lembrar dos seus pais, um conjunto de roupas comuns e uma algibeira contendo 10 PO",
+    "characteristic": "Astúcia : Você conhece os segredos das ruas de onde você cresceu, todas as passagens escondidas e locais secretos. Você possui vantagem em Furtividade e Percepção no local em que você cresceu. Você e seus aliados possuem o dobro de movimentação na região de onde você cresceu, desde que você esteja guiando e o grupo não esteja engajado em combate. Adicionalmente, você possui vantagem em qualquer teste feito para pechinchar um item mundano."
+  },
+  {
+    "name": "Pirata",
+    "description": "Piratas percorrem os mares em grupos desorganizados, levando tesouros de praticamente quem puderem. O que o levou à pirataria? Você foi voluntário para este trabalho ou foi forçado quando seu navio foi invadido? Você era o capitão do navio ou apenas mais um da tripulação? Você deixou seu navio para sempre ou ainda está conectado a esse mundo? Se você foi embora, por quê?",
+    "atributo": "Seu valor de Força, Destreza ou Constituição aumenta em +1, até o máximo de 20",
+    "skills": "Escolha duas entre: Acrobacia, Lidar com Animais ou Intimidação",
+    "proeficience": "Cimitarra, Rapieira e escolhe entre: Armas de Fogo leves, médias, longas ou canhões",
+    "profession": "",
+    "language": "",
+    "Equipment": "Uma cimitarra ou rapieira, um mosquete ou uma pistola de perderneira, munição da arma escolhida (20), diário, roupas de pirata e uma algibeira contendo 10 PO",
+    "Optional": "Perna de pau, gancho, tapa-olho, cachimbo e tabaco (com pederneira e ferro para acender), palha, flauta, papagaio (talvez como familiar)",
+    "characteristic": "Ahoy, Parceiro! : Você passou anos em mar aberto e, portanto, sabe como dirigir e operar um navio. Você também conhece várias cidades portuárias em todo o mundo e, por experiência, aprendeu quais costumes são aceitáveis nas cidades portuárias que você conhece. Para você é mais fácil comprar um navio do que para outras pessoas, e você tem uma vantagem em qualquer teste feito para pechinchar para comprar um navio digno do mar. Quando estiver em uma cidade portuária amigável com a qual você tem boas relações, pode encontrar refúgio com certas pessoas; eles o esconderão se for seguro, mas não arriscarão suas vidas por você."
+  },
+  {
+    "name": "Religioso",
+    "description": "Você tem uma forte crença em algo ou alguém, seja uma divindade, um conceito ou mesmo uma filosofia. Você se guia por essa crença e acredita firmemente que ela é uma mudança positiva para o mundo ao seu redor, tendo como obrigação, proclamar essas boas novas. Qual é a sua crença? Onde ela se originou? Como é a receptividade dela a crenças divergentes? Como ela se relaciona com outras fés?",
+    "atributo": "Seu valor de Inteligência, Sabedoria ou Carisma aumenta em +1, até o máximo de 20",
+    "skills": "Intuição e Religião",
+    "profession": "",
+    "language": "Dois idiomas comuns à sua escolha",
+    "Equipment": "Um símbolo sagrado, um livro de preces ou uma conta de orações, 5 varetas de incenso, vestimentas cerimoniais, um conjunto de roupas comuns e uma algibeira contendo 15 PO",
+    "characteristic": "Empatia da Fé : Tendo um passado religioso, você detém a simpatia daqueles que possuem a mesma fé, podendo participar e realizar cerimônias para aquele(s) que você cultua. Você e seus aliados podem pedir por ajuda ou cura em um templo, santuário ou outro local sagrado de sua fé. Você também pode pedir para aqueles que compartilham de sua fé para conceder a você um abrigo temporário, cobrindo os custos de um estilo de vida modesto. Alternativamente, você pode estar relacionado diretamente com um templo ou santuário específico de sua fé, e possuir abrigo fixo nesse local. Esse local, desde que você possua boas relações com ele, pode ser de onde você veio, cresceu ou que encontrou um lar nele. Enquanto você estiver próximo desse local, você pode solicitar por auxílio para seus fiéis ou sacerdotes, desde que não os coloque em nenhuma posição de risco."
+  },
+  {
+    "name": "Soldado",
+    "description": "Felizmente ou infelizmente a guerra é uma constante em Runeterra. Felizmente pois as ameaças nem sempre são humanas, infelizmente pois quase sempre elas são contra o vizinho, e a morte ronda por todos os lados. Pelo que você luta? Qual é a sua causa e por qual motivo ela é justa o bastante para que você tire a vida dos outros? Qual é a sua crença em seu exército e em seu comando? Você segue suas funções e obedece a sua hierarquia?",
+    "atributo": "Seu valor de Força, Destreza, Constituição ou Inteligência aumenta em +1, até o máximo de 20",
+    "skills": " Intimidação, Sobrevivência",
+    "profession": "Condutor de um veículo terrestre ou marítimo",
+    "language": "",
+    "Equipment": "Um símbolo da sua unidade, 5 azagaias, vestimentas oficiais, uma arma marcial e uma algibeira contendo 10 PO",
+    "characteristic": "Irmãos de Armas : Você treinou e fez amigos em um pelotão de um exército de alguma região. Você possui amigos entre eles que lhe ajudariam de boa vontade oferecendo abrigo, comida e talvez até algum equipamento básico. Você é respeitado por todos aqueles que possuem conhecimento de sua patente (converse com seu mestre para defini-la), ou então pode até ser caçado por algum soldado do exército inimigo. Além disso, você possui a capacidade de intimidar aqueles que possuem uma patente menor do que a sua."
+  }
 ]

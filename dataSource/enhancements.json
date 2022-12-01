@@ -1,714 +1,703 @@
 [
-	{
-		"name": "Adaptação Tecnológica",
-		"info": [
-			"Ao escolher esse aprimoramento, você deve conhecer ou ser um inventor especializado em Tecnologia, além de possuir os materiais necessários ou dinheiro para realizar as adaptações em seu corpo, ambos definidos pelo Mestre.",
-			"Para receber os benefícios desse aprimoramento, você deve passar 8 horas de trabalho remodelando seu corpo, o Mestre pode aumentar esse período dependendo das suas escolhas. Após esse período de trabalho você recebe os seguintes benefícios:",
-			[
-				"Aumente o valor de Força, Destreza ou Constituição em +1, até o máximo de 20.",
-				"Escolha entre Hextec ou Quimtec:",
-				[
-					"Caso escolha Hextec, desde que você tenha um Núcleo Hex, você deve escolher uma vantagem da Variante Tecnológica;",
-					"Caso escolha Quimtec, desde que você tenha uma Fonte Quimtec, você deve escolher uma vantagem e uma desvantagem da Variante Tecnológica;"
-				]
-			],
-			"Você pode escolher esse aprimoramento mais de uma vez. Caso escolha esse aprimoramento 3 vezes ou mais, você passa a ser considerado um Construto e recebe os traços Construto Vivo e Descanso do Vigia da Origem: Construto caso já não os tenha."
-		],
-		"prerequisite": "Construto ou Variante Progressão Tecnológica"
-	},
-	{
-		"name": "Adepto Espiritual",
-		"info": [
-			"Através de suas experiências lidando com as forças espirituais você conseguiu acessar alguns poderes de outro Rito, você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Sabedoria aumenta em +1, até o máximo de 20.",
-				"Você pode escolher um Eflúvio de outro Rito que não seja o seu. Você se torna capaz de usá-lo como um de seus Eflúvios.",
-				"Você recebe um uso adicional de seus Eflúvios por descanso curto ou longo."
-			]
-		],
-		"prerequisite": "Sabedoria 17 ou maior, Possuir um Eflúvio"
-	},
-	{
-		"name": "Afortunado",
-		"info": [
-			"Você parece ser abençoado com uma sorte sobrenatural que parece agir nos momentos mais oportunos.",
-			"Você tem 2 + metade do seu bônus de proficiência em Pontos de Sorte. Ao realizar uma jogada de ataque, teste de atributo ou salvaguarda você pode gastar um ponto de sorte para rolar um d20 adicional. Esse gasto pode ser feito depois de rolar o dado inicial mas não após saber o resultado da jogada. Ao fazer essa jogada adicional, você escolhe qual dado irá usar para essa jogada.",
-			"Quando você for alvo de um ataque, você pode gastar um ponto de sorte para jogar um d20 e escolher se o ataque feito contra você irá usar o dado original ou o rolado por você; Pontos de sorte gastos por criaturas diferentes para influenciar uma jogada se anulam mutuamente e nenhum dado adicional é rolado. Toda vez que você gastar um ponto de sorte e rolar um d20, caso caia um 1, você deve rolar 1d100 e receber um efeito da tabela de Magia Descontrolada Yordle.",
-			"Pontos de Sorte são recuperados após terminar um descanso longo."
-		]
-	},
-	{
-		"name": "Ágil",
-		"info": [
-			"Você possui uma mobilidade além do comum. Você ganha os seguintes benefícios:",
-			[
-				"Seu deslocamento aumenta em 10 pés.",
-				"Correr em terreno difícil não lhe custa movimentação extra",
-				"Ao realizar um ataque corpo a corpo contra um alvo, independente se atingir ou não, você não provoca ataques de oportunidade desse alvo até o final de seu turno."
-			]
-		]
-	},
-	{
-		"name": "Anatomista Perito",
-		"info": [
-			"Através do seus estudos de determinadas criaturas, você aprendeu sobre sua fisiologia e anatomia, sabendo como derrotá-los de maneira mais efetiva. Ao escolher esse aprimoramento, escolha dois tipos de criaturas entre: celestiais, construtos, dragões, elementais, espíritos, feéricos, feras, humanóides, ínferos, mortos-vivos, plantas, vastinatas, você recebe os seguintes benefícios",
-			[
-				"Seu valor de Destreza aumenta em +1, até o máximo de 20.",
-				"Seus ataques contra os tipos de criatura escolhidas tem sua margem de crítico reduzida em 1.",
-				"Sempre que você realizar um acerto crítico contra as criaturas escolhidas, você adiciona seu modificador de Sabedoria ao dano causado",
-				"Você subtrai seu bônus de proficiência da RD dessas criaturas"
-			]
-		],
-		"prerequisite": "Sabedoria 15 ou maior, proficiência em Medicina"
-	},
-	{
-		"name": "Aperfeiçoamento de Batalha",
-		"info": [
-			"Você aperfeiçoou sua forma em batalha, aprimorando sua capacidade destrutiva de acordo com as armas que utiliza. Você recebe os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força, Destreza ou Constituição em 1, até o máximo de 20.",
-				"Escolha uma entre as três opções de dano a seguir:",
-				[
-					"Contundente. Ao causar dano contundente ou esmagador a um alvo através de uma jogada de ataque, você pode empurrá-lo 5 pés em qualquer direção, desde que o espaço esteja desocupado e o alvo seja de até uma categoria de tamanho maior que a sua. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano contundente ou esmagador a uma criatura, até o início de seu próximo turno, todas as jogadas de ataque realizadas contra ela são feitas com vantagem.",
-					"Cortante. Ao causar dano cortante ou lacerante a uma criatura através de uma jogada de ataque, você pode reduzir o deslocamento dela em 10 pés até o início de seu próximo turno. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano cortante ou lacerante a uma criatura, até o início de seu próximo turno, o alvo tem desvantagem em todas as jogadas de ataque e fica Sangrando, sofrendo 1d4 de dano por turno.",
-					"Perfurante. Ao causar dano perfurante ou incisivo a uma criatura através de uma jogada de ataque, você pode adicionar um dado de dano ao ataque. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano perfurante ou incisivo a uma criatura, até o início de seu próximo turno, ela fica Enfraquecida."
-				]
-			],
-			"Você pode escolher esse Aprimoramento mais de uma vez, sempre escolhendo uma opção de dano diferente."
-		]
-	},
-	{
-		"name": "Arcanista Iniciante",
-		"info": [
-			"Escolha uma das seguintes classes: Acólito, Combatente Arcano, Peregrino. Você aprende dois truques da lista de magias da classe escolhida. Além disso, escolha uma magia de 1º nível da mesma lista. Você aprende essa magia e pode conjurá-la uma vez com o menor nível possível sem gastar pontos de mana antes de realizar um descanso longo. Essa restrição aplica-se apenas à magia adquirida através desse Aprimoramento.",
-			"A classe que você escolheu também determina a habilidade de conjuração dessas magias: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito."
-		]
-	},
-	{
-		"name": "Arcano Vital",
-		"info": [
-			"Seu organismo é capaz de converter sua energia vital em energia mágica, recebendo os seguintes benefícios:",
-			[
-				"Seu valor de Constituição aumenta em +1, até o máximo de 20.",
-				"Ao conjurar uma magia de até nível 7, você pode optar por utilizar pontos de vida ao invés de pontos de mana, esses pontos de vida são retirados de seus pontos de vida máximos e são recuperados apenas ao término de um descanso longo."
-			],
-			"Nível da Magia\tCusto em Vida",
-			"1\t4",
-			"2\t6",
-			"3\t10",
-			"4\t12",
-			"5\t14",
-			"6\t18",
-			"7\t22"
-		],
-		"prerequisite": "Capacidade de conjurar ao menos uma magia"
-	},
-	{
-		"name": "Arcanun",
-		"info": [
-			"Através de seus estudos, você conseguiu penetrar nos segredos de um mistério mágico. Você recebe os seguintes benefícios:",
-			[
-				"Aumente o valor de um atributo em 1, até o máximo de 20.",
-				"Escolha um Mistério qualquer para que você receba acesso. Caso seja um Mistério Elemental, você deve preencher os pré-requisitos para o mesmo."
-			]
-		],
-		"prerequisite": "habilidade de conjuração, nível 4"
-	},
-	{
-		"name": "Arpoeiro",
-		"info": [
-			"A caçada aos monstros marinhos de sentina não são para qualquer um, porém, você sabe como garantir seu sustento ao fim do dia. Você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Destreza aumenta em +1, até o máximo de 20;",
-				"Desde que você possua uma corda, você pode prendê-la ao seu Arpão utilizando uma ação, o que possibilita que você sempre possa puxá-lo de volta para si. Adicionalmente, quando você realizar um ataque à distância com seu Arpão, caso atinja um alvo de até uma categoria acima que você, você pode usar uma ação bônus para puxar o alvo até 20 pés em sua direção, o alvo deve realizar uma salvaguarda de Atletismo contra sua jogada de Atletismo, sendo puxado em uma falha."
-			]
-		],
-		"prerequisite": "Sentinense"
-	},
-	{
-		"name": "Arqueiro",
-		"info": [
-			"Graças a sua prática extensiva com arcos, você ganha os seguintes benefícios:",
-			[
-				"Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com arco.",
-				"Uma vez por turno você pode usar uma ação de ataque para atirar com duas flechas no arco, a segunda flecha rola o acerto com desvantagem.",
-				"Seus ataques com arco e flecha ignoram metade da RD de seus alvos dentro de seu alcance curto"
-			]
-		]
-	},
-	{
-		"name": "Ars Veneficius",
-		"info": [
-			"Você treinou seu organismo a resistir aos mais diferentes tipos de venenos. recebendo os seguintes benefícios:",
-			[
-				"Seu valor de Constituição aumenta em +1, até o máximo de 20.",
-				"Você recebe resistência a dano venenoso.",
-				"Você tem vantagens em salvaguardas para resistir às condições Envenenado e Intoxicado."
-			]
-		],
-		"prerequisite": "Constituição 17 ou maior"
-	},
-	{
-		"name": "Artesão Vitriólico",
-		"info": [
-			"Você aprendeu a aumentar a toxidez de um veneno para fortificá-lo, fazendo com que as doses que você prepare se tornem letais. Você ganha os seguintes benefícios:",
-			[
-				"Todo dano venenoso que você causa ignora resistência.",
-				"Você pode usar sua ação bônus para aplicar veneno a uma arma ou peça de munição.",
-				"Você recebe o Ofício de Veneficista. Com uma hora de trabalho usando um estojo de veneno e 50 PO de material, você pode modificar a composição de uma dose de veneno, fazendo com que ele fique mais potente. O veneno modificado aumenta a CD da salvaguarda e categoria de dados de dano em 1. Além disso, caso uma criatura falhe na salvaguarda para resistir ao veneno, ela fica Envenenada, sofrendo 1d4 de dano venenoso por turno. Caso a dose de veneno original já deixe a criatura Envenenada, o veneno modificado não aplica a condição novamente."
-			]
-		]
-	},
-	{
-		"name": "Artista",
-		"info": [
-			"Perito em mimica e dramaturgia, você recebe os seguintes benefícios:",
-			[
-				"Aumente seu valor de Carisma em 1, até o máximo de 20.",
-				"Você tem vantagem em testes de Atuação e Enganação quando você estiver tentando se passar por uma pessoa diferente.",
-				"Você pode imitar a articulação de outra pessoa ou os sons feitos por outras criaturas. Você deve ter ouvido a pessoa falando ou ouvido a criatura fazendo o som por, pelo menos, 1 minuto. Um sucesso num teste de Intuição resistido pelo seu teste de Enganação permite que um ouvinte determine que o efeito é falso."
-			]
-		]
-	},
-	{
-		"name": "Assassino Experiente",
-		"info": [
-			"Sua experiência em seu trabalho lhe concedeu a capacidade de aumentar seu leque de possibilidades de assassinato. Você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Destreza ou Inteligência aumentam em +1, até o máximo de 20;",
-				"Escolha duas armas simples ou marciais que não tenham as propriedades Extensão, Impróprio, Pesado ou Versátil. Essas duas armas são consideradas armas assassinas para você;",
-				"Você tem vantagem em jogadas de ataque contra criaturas que ainda não agiram em combate. Adicionalmente, sempre que você realizar um acerto contra um criatura que esteja surpresa, o acerto é considerado um crítico;",
-				"Seus ataques furtivos ignoram metade da RD de seus alvos"
-			]
-		],
-		"prerequisite": "Mercurial Assassino, nível 4"
-	},
-	{
-		"name": "Assinatura Aprimorada",
-		"info": [
-			"A sua conjuração se beneficia imensamente de sua assinatura arcana, fazendo com que você modifique as suas propriedades. Você possui os seguintes benefícios:",
-			[
-				"Aumente o seu valor de Inteligência ou do seu Atributo de Assinatura Arcana em 1, até o máximo de 20.",
-				"Você recebe acesso um Mistério à sua escolha.",
-				"Você pode alterar as tramas das magias conjuradas por você. Com o gasto de 3 pontos de arcana e o gasto de mana equivalente ao de uma magia de um nível acima do lançado, você pode mudar o mistério de uma magia por outro que você tenha acesso."
-			]
-		],
-		"prerequisite": "Arcano, nível 4"
-	},
-	{
-		"name": "Atacante Brutal",
-		"info": [
-			"Uma vez por turno, você pode adicionar seu bônus de proficiência no dano, e quando você rolar 1 no dado de dano para um ataque corpo a corpo, você pode jogar novamente o dado de dano."
-		]
-	},
-	{
-		"name": "Atento",
-		"info": [
-			"Você é uma pessoa observadora e atenta e recebe os seguintes benefícios:",
-			[
-				"Ao rolar a iniciativa, você adiciona +5 ao resultado rolado.",
-				"Enquanto estiver consciente, você não sofrerá os efeitos de uma rodada surpresa.",
-				"Criaturas escondidas não possuem vantagem ao te atacar.",
-				"Você recebe +1 de bônus de percepção passiva."
-			]
-		]
-	},
-	{
-		"name": "Atirador de Elite",
-		"info": [
-			"Você dominou o uso de armas à distância e pode realizar tiros que seriam impossíveis para outros. Você ganha os seguintes benefícios:",
-			[
-				"Atacar um alvo além da distância normal não impõe desvantagem nas suas jogadas de ataque com armas à distância.",
-				"Seus ataques com armas à distância ignoram meia cobertura e três-quartos de cobertura.",
-				"Antes de realizar um ataque com uma arma à distância na qual você seja proficiente, você pode escolher sofrer –2 de penalidade na jogada de ataque. Se o ataque atingir, você adiciona 1 dado de dano da arma no ataque."
-			]
-		]
-	},
-	{
-		"name": "Atleta",
-		"info": [
-			"Você passou por árduo treinamento físico para ganhar os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.",
-				"Quando você estiver caído, se levantar requer apenas 5 Pés do seu deslocamento.",
-				"Você pode escalar sem custar movimento adicional",
-				"Você pode realizar um salto em distância ou em altura correndo se movendo apenas 5 pés, ao invés de 10 pés.",
-				"Você ganha mais 5 pés de deslocamento."
-			]
-		]
-	},
-	{
-		"name": "Balestreiro",
-		"info": [
-			"Graças a sua prática extensiva com bestas, você ganha os seguintes benefícios:",
-			[
-				"Você ignora a qualidade de recarga de bestas nas quais você é proficiente.",
-				"Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com bestas.",
-				"Quando você usa a ação de Ataque e ataca com uma arma de uma mão, você pode usar sua ação bônus para atacar com uma besta de mão carregada que você esteja empunhando.",
-				"Seus ataques com bestas ignoram metade da RD de seus alvos dentro de seu alcance curto"
-			]
-		]
-	},
-	{
-		"name": "Blindado",
-		"info": [
-			"Você treinou por anos para que ninguém pudesse te atingir em batalha, ganhando os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força em 1, até o máximo de 20.",
-				"Você ganha proficiência com armadura pesada."
-			]
-		],
-		"prerequisite": "Proficiência com armaduras médias"
-	},
-	{
-		"name": "Briguento",
-		"info": [
-			"Acostumado a brigas de bar usando qualquer coisa como armas, e na falta delas, os punhos, você ganha os seguintes benefícios:",
-			[
-				"Aumente o valor de Força ou Constituição em 1, até o máximo de 20.",
-				"Seus ataques desarmados causam 1d4 a mais de dano.",
-				"Quando você atinge uma criatura com um ataque desarmado ou com uma arma improvisada, no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo."
-			]
-		]
-	},
-	{
-		"name": "Cirurgião de Combate",
-		"info": [
-			"Você é um cirurgião capacitado, permitindo que você trate de ferimentos rapidamente, trazendo seus aliados de volta à luta. Você adquire os seguintes benefícios:",
-			[
-				"Quando você usar um kit de primeiros socorros para estabilizar uma criatura morrendo, a criatura recupera 1 ponto de vida, ao invés disso.",
-				"Com uma ação, você pode gastar um uso do kit de primeiros-socorros para tratar de uma criatura e restaurar 1d6 + 4 pontos de vida mais uma quantidade de pontos de vida adicionais igual ao número total de dados de vida da criatura. A criatura não pode recuperar pontos de vida através desse Aprimoramento novamente até ter terminado um descanso curto ou longo."
-			]
-		]
-	},
-	{
-		"name": "Conjurador Bélico",
-		"info": [
-			"Você é experiente em conjurar magias no meio do combate, aprendendo técnicas que lhe concedem os seguintes benefícios:",
-			[
-				"Você tem vantagem em salvaguardas de Constituição para manter sua concentração em uma magia quando você sofrer dano.",
-				"Você pode realizar os componentes somáticos de uma magia mesmo quando está com armas ou um escudo em uma ou ambas as mãos.",
-				"Você pode usar sua reação para conjurar uma magia na criatura, ao invés de realizar o ataque de oportunidade. A magia deve ter um tempo de conjuração de 1 ação e deve ter apenas uma criatura como alvo.",
-				"Seus ataques com magia ignoram metade da RD de seus alvos"
-			]
-		],
-		"prerequisite": "Habilidade de conjuração"
-	},
-	{
-		"name": "Controlador de Elementos",
-		"info": [
-			"Seu controle elemental se aflora em um elemento. Você domina os aspectos de um elemento, tendo um maior controle e poder em magias que utilizem desse elemento. Ao selecionar esse Aprimoramento, escolha entre um dos tipos de dano elemental a seguir: ácido, elétrico, gélido, ígneo, trovejante ou venenoso.",
-			[
-				"Magias do elemento escolhido, ao serem conjuradas, ignoram a resistência e em caso de imunidade, causam dano reduzido pela metade ao invés de não causarem dano. Adicionalmente, dados de dano que caiam como 1 são tratados como 2.",
-				"Esse Aprimoramento pode ser escolhido diversas vezes, cada vez com um dano elemental diferente."
-			]
-		],
-		"prerequisite": "Habilidade de conjurar pelo menos uma magia"
-	},
-	{
-		"name": "Duelista Defensivo",
-		"info": [
-			"Quando você estiver empunhando uma arma de acuidade com a qual você seja proficiente e outra criatura atingir você com um ataque corpo a corpo, você pode usar sua reação para adicionar seu bônus de proficiência a sua CA para esse ataque, potencialmente fazendo o ataque errar."
-		],
-		"prerequisite": "Destreza 13 ou maior"
-	},
-	{
-		"name": "Encouraçado",
-		"info": [
-			"Você treinou por alguns meses para que você pudesse ter maior resistência em combate, ganhando os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força em 1, até o máximo de 20.",
-				"Você ganha proficiência com armaduras médias e escudos."
-			]
-		],
-		"prerequisite": "Proficiência com armaduras leves"
-	},
-	{
-		"name": "Empunhadura Dupla",
-		"info": [
-			"Seu treinamento árduo fez você dominar o combate com duas armas, ganhando os seguintes benefícios:",
-			[
-				"Enquanto estiver empunhando uma arma corpo a corpo em cada mão, você ganha +1 de bônus de CA.",
-				"Mesmo que a arma de uma mão que você está empunhando não seja leve, você pode usar Combate com Duas Armas.",
-				"Você pode guardar e sacar as duas armas que você carrega, quando normalmente seria capaz de sacar ou guardar uma por vez.",
-				"Ao realizar um ataque de oportunidade, você pode rolar um segundo ataque com sua outra mão com desvantagem."
-			]
-		]
-	},
-	{
-		"name": "Empunhadura Primata",
-		"info": [
-			"A força de sua mão é muito bem desenvolvida, fazendo com que você consiga portar armas maiores do que as feitas para você, você recebe os seguintes benefícios.",
-			[
-				"Aumente seu valor de Força em 1, até o máximo de 20.",
-				"Escolha uma arma corpo a corpo de uma mão com a qual você tem proficiência. Você pode usar com sua mão hábil uma arma corpo a corpo de uma categoria maior que a sua. Ao invés de receber -5 em jogadas de ataque e ter desvantagem nessas rolagens, você recebe apenas -2 e não tem mais desvantagem. O dano de sua arma sobe 2 degraus na escala de dano."
-			],
-			"Você pode manejar uma arma leve de categoria maior como uma arma leve, ou uma arma de duas mãos como sendo de uma mão. Você não pode usar uma arma de categoria de tamanho maior com sua mão inábil, e você não pode usar este aprimoramento junto a Empunhadura Dupla. Este aprimoramento pode ser escolhido diversas vezes, cada vez com uma arma diferente."
-		],
-		"prerequisite": "Força 15 ou maior"
-	},
-	{
-		"name": "Escudeiro",
-		"info": [
-			"Você sabe como utilizar escudos tanto para se defender quanto para atacar. Você ganha os seguintes benefícios enquanto estiver empunhando um escudo:",
-			[
-				"Ao realizar um ataque corpo a corpo contra uma criatura você pode tentar usar seu escudo para derrubá-la com uma ação bônus, a criatura deve fazer uma salvaguarda de Força contra um teste seu de Força.",
-				"Enquanto você estiver consciente e não esteja incapacitado, você pode adicionar o bônus de CA do seu escudo para salvaguardas de Destreza e Força.",
-				"Você ganha proficiência com escudos"
-			]
-		]
-	},
-	{
-		"name": "Especialista em Armadura Média",
-		"info": [
-			"Você está acostumado a utilizar armaduras médias, o que lhe deu algumas vantagens:",
-			[
-				"Você não tem desvantagem em testes de Furtividade enquanto estiver utilizando uma armadura média.",
-				"Quando você estiver vestindo uma armadura média, você não possui limitador no modificador de Destreza.",
-				"Você adiciona metade do seu bônus de proficiência à Redução de Dano de sua armadura média"
-			]
-		],
-		"prerequisite": "Proficiência com armaduras médias"
-	},
-	{
-		"name": "Especialista em Armadura Pesada",
-		"info": [
-			"Você se torna quase imbatível… enquanto estiver de armadura. Você ganha os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força em 1, até o máximo de 20.",
-				"Quando você estiver vestindo uma armadura pesada, você reduz em 3 em todo dano físico recebido.",
-				"Você adiciona metade do seu bônus de proficiência à Redução de Dano de sua armadura pesada"
-			]
-		],
-		"prerequisite": "Proficiência com armaduras pesadas"
-	},
-	{
-		"name": "Especialista em Escudos",
-		"info": [
-			"Seu treinamento constante com armas e escudos lhe concedeu uma maior manobrabilidade em combate. Você recebe as seguintes características:",
-			[
-				"Você passa a poder vestir ou remover um escudo utilizando uma ação bônus.",
-				"Quando o escudo estiver vestido, você pode atacar normalmente com uma arma que possua as propriedades extensão e duas mãos, caso você esteja utilizando um escudo pesado ou de torre, você se torna incapaz de receber vantagem em seu ataque, exceto se por magia ou runas, caso possua o estilo de luta Phalanx, essa incapacidade deixa de se aplicar às armas de haste."
-			]
-		],
-		"prerequisite": "Proficiência com Escudos"
-	},
-	{
-		"name": "Essência Etílica",
-		"info": [
-			"A capacidade de ingerir álcool é comum à maioria das criaturas. O que as divide é qual sua tolerância a essa ingestão. Você, talvez por ser um traço comum em sua família, ou um hábito desenvolvido, tem não apenas uma grande capacidade de ingerir bebidas alcoólicas, como elas também causam pouca ou nenhuma intoxicação em você, restando apenas um efeito agradável e energizante. Você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Constituição ou Carisma aumenta em +1, até o máximo de 20.",
-				"Imunidade à condição Intoxicado advinda da ingestão de bebidas alcoólicas.",
-				"Água Vivente: Você pode recuperar pontos de vida igual ao seu dado de vida a cada descanso curto ou longo, através do consumo de um litro de bebida alcoólica. Você pode utilizar sua ação para ingerir um gole de aproximadamente 200 ml."
-			]
-		]
-	},
-	{
-		"name": "Estudioso das Armas",
-		"info": [
-			"Você treinou sua habilidade com diversos tipos de armas, você ganha os seguintes benefícios:",
-			[
-				"Aumente o valor de Força ou Destreza em 1, até o máximo de 20.",
-				"Você ganha proficiência com quatro armas corpo a corpo ou à distância simples ou marciais, à sua escolha."
-			]
-		]
-	},
-	{
-		"name": "Explorador Nato",
-		"info": [
-			"Você tem uma facilidade natural para encontrar passagens, tesouros e armadilhas escondidas. Você possui os seguintes benefícios:",
-			[
-				"Você tem vantagens em testes de Percepção e Investigação para encontrar passagens escondidas ou armadilhas, adicionalmente você possui vantagem em salvaguardas de Destreza para evitar uma armadilha.",
-				"Armadilhas causam metade do dano em você.",
-				"Enquanto você viaja, pode procurar por armadilhas preparadas em seu caminho sem diminuir o ritmo."
-			]
-		]
-	},
-	{
-		"name": "Explosão de Adrenalina",
-		"info": [
-			"Você aprendeu a controlar seu metabolismo conseguindo extrair o máximo de seu corpo, forçando-o a limites muito além dos seus limites naturais, você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Força ou Destreza aumenta em +1, até o máximo de 20.",
-				"Utilizando uma ação livre em seu turno, você pode executar uma explosão de adrenalina. Até o início de seu próximo turno, seu valor de Força ou Destreza se torna 25. Você pode fazer isso uma vez por descanso longo. Você pode realizar explosões de adrenalina adicionais recebendo 1 nível de exaustão por uso além do 1º."
-			]
-		],
-		"prerequisite": "Força ou Destreza 17 ou maior"
-	},
-	{
-		"name": "Fúria Elevada",
-		"info": [
-			"A fúria corre em seu sangue de uma forma sobrenatural, conseguindo ser canalizada de forma mais eficiente, você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Constituição aumenta em +1, até o máximo de 20.",
-				"Ao finalizar um descanso curto, você recupera uma quantidade de usos de fúria igual a metade do seu modificador de Constituição.",
-				"Ao final de seu turno, caso você não tenha atacado uma criatura hostil, sua Fúria não é encerrada prematuramente."
-			]
-		],
-		"prerequisite": "Bruto"
-	},
-	{
-		"name": "Grão-Conjurador",
-		"info": [
-			"Você aprendeu técnicas de conjuração com certos tipos de magia, ganhando os seguintes benefícios:",
-			[
-				"Magias e truques que requerem acerto, tem o alcance dobrado.",
-				"Suas magia que requer acerto ignoram meia cobertura ou três-quartos de cobertura.",
-				"Você aprende um truque que requer uma jogada de ataque. Escolha o truque da lista de magias do Peregrino, Acólito ou Combatente Arcano. Seu atributo de conjuração para esse truque depende da lista de magia a qual você escolheu o truque: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito."
-			]
-		],
-		"prerequisite": "Habilidade de conjurar pelo menos uma magia"
-	},
-	{
-		"name": "Hábil",
-		"info": [
-			"Você recebe proficiência em até 3 Ofícios, Instrumentos Musicais, Conjunto de jogos ou perícias à sua escolha. Você pode pegar esse Aprimoramento mais de 1 vez."
-		]
-	},
-	{
-		"name": "Imobilizador",
-		"info": [
-			"Você desenvolveu as habilidades necessárias para se manter em um agarrão corpo a corpo. Você ganha os seguintes benefícios:",
-			[
-				"Você tem vantagem nas jogadas de ataque contra uma criatura que já está agarrada.",
-				"Você pode usar sua ação para tentar imobilizar uma criatura agarrada por você. Para fazer isso, faça outro teste de agarrar. Se for bem-sucedido, você e a criatura ficam contidos até o agarrão terminar."
-			]
-		],
-		"prerequisite": "Força 13 ou maior"
-	},
-	{
-		"name": "Intérprete",
-		"info": [
-			"Você possui um amplo conhecimento em diversos idiomas e códigos, ganhando os seguintes benefícios:",
-			[
-				"Aumente seu valor de Inteligência em 1, até o máximo de 20.",
-				"Você aprende três idiomas, à sua escolha.",
-				"Você é capaz de criar códigos e cifras complexas. Criaturas que tentem decifrar esses códigos devem ser bem-sucedidas numa salvaguarda de Inteligência (CD igual ao seu valor de Inteligência + seu bônus de proficiência) ou usar uma magia para decifrá-lo."
-			]
-		]
-	},
-	{
-		"name": "Investida Incontrolável",
-		"info": [
-			"Você pode, após realizar a ação de Disparada, realizar um ataque corpo a corpo ou derrubar uma criatura com uma ação bônus.",
-			"Se você percorrer pelo menos 10 pés em uma linha reta, você pode escolher receber +5 de bônus para acertar um ataque corpo a corpo ou ter vantagem para derrubar uma criatura."
-		]
-	},
-	{
-		"name": "Invocadora das Lâminas",
-		"info": [
-			"Você aprende a controlar melhor a magia de suas plumadagas, sabendo como utilizar sua magia espiritual inata para prender seus inimigos. Você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Sabedoria aumenta em +1, até o máximo de 20.",
-				"Quando utilizar seu traço Retorno das Lâminas, caso uma criatura seja atingido por duas ou mais plumadagas, ela deve realizar uma salvaguarda de Constituição CD 8 + seu bônus de proficiência + seu modificador de Sabedoria. Em uma falha, a criatura estará Contida até o final de seu próximo turno."
-			]
-		],
-		"prerequisite": "Vastaya Lhotlan"
-	},
-	{
-		"name": "Mãos de Ferro",
-		"info": [
-			"Você se torna proficiente com manoplas de guerra e elas passam a contar como armas Bodisatva. Além disso, você causa 1 ponto de dano adicional com ela, subindo para +2 o total."
-		],
-		"prerequisite": "Força 15"
-	},
-	{
-		"name": "Mente Fortalecida",
-		"info": [
-			"Embora não seja mais resistente aos danos que as outras pessoas, seu treinamento criou em você uma tolerância maior, você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Constituição aumenta em +1, até o máximo de 20.",
-				"Ao falhar em uma salvaguarda para manter sua Concentração em uma magia, você pode repeti-la novamente ficando com o novo resultado.",
-				"Ao falhar em um teste ou salvaguarda contra uma magia do Mistério da Ilusão, você pode repetir a jogada e ficar com o novo valor.",
-				"Você recebe vantagem em salvaguarda contra qualquer tipo de controle mental."
-			]
-		],
-		"prerequisite": "Constituição 15 ou maior"
-	},
-	{
-		"name": "Mente Única",
-		"info": [
-			"Sua mente é singular, fazendo com que seu modo de pensar seja bem diferente dos seus pares. Você ganha os seguintes benefícios:",
-			[
-				"Aumente o valor de um dos seguintes atributos em +1, até o máximo de 20: Sabedoria, Inteligência ou Carisma.",
-				"Você possui proficiência em salvaguardas com o atributo escolhido."
-			]
-		]
-	},
-	{
-		"name": "Mestre do Combate",
-		"info": [
-			"Seu treinamento marcial é contínuo e sempre busca se adaptar às suas tendências. Como resultado, você aprende uma opção de Estilo de Luta à sua escolha da classe Combatente. Você não pode escolher o mesmo Estilo mais de uma vez. Além disso, quando você adquire um nível que receba um Aprimoramento, você pode escolher um Estilo de Luta que você conheça e substituí-lo por outro que você ainda não possua. Esse Aprimoramento pode ser escolhido mais de uma vez."
-		],
-		"prerequisite": "Proficiência com uma arma marcial"
-	},
-	{
-		"name": "Olho da Morte",
-		"info": [
-			"Seu treinamento com armas de ataque à distância chegou em um patamar sobrenatural, você recebe os seguintes benefícios:",
-			[
-				"Aumente seu valor de Destreza em 1, até o máximo de 20.",
-				"Escolha uma arma à distância com a qual você tenha proficiência. Ao fazer um ataque com essa arma você pode escolher receber -2 na jogada de acerto e diminuir sua margem de crítico em 1 com essa arma. Você pode repetir essa habilidade até 3 vezes em um único ataque."
-			]
-		],
-		"prerequisite": "Proficiência com uma arma à distância, Destreza 17 ou maior"
-	},
-	{
-		"name": "Perito em Armas de Arremesso",
-		"info": [
-			"Você dominou a arte de arremessar armas, sacando rapidamente e golpeando com precisão. Você ganha os seguintes benefícios:",
-			[
-				"Estar a 5 pés de uma criatura hostil ou atacar um alvo além da distância normal não impõe desvantagem nas suas jogadas de ataque à distância com armas de arremesso.",
-				"Você pode sacar uma arma que tenha a propriedade arremesso como parte de sua ação de Ataque.",
-				"Armas arremessadas por você tem sua categoria de dano aumentada em 1."
-			]
-		]
-	},
-	{
-		"name": "Perito em Armas de Fogo",
-		"info": [
-			"Graças a sua prática extensiva com armas de fogo, você ganha os seguintes benefícios:",
-			[
-				"Você é capaz de reparar uma arma de fogo pela metade do tempo e valor necessário.",
-				"Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com armas de fogo.",
-				"Quando você usar a ação de Ataque com uma arma de fogo leve, você pode usar sua ação bônus para atacar com outra arma de fogo leve carregada que você esteja empunhando.",
-				"Seus ataques com armas de fogo ignoram metade da RD de seus alvos dentro de seu alcance máximo"
-			]
-		],
-		"prerequisite": "Proficiência com uma categoria de arma de fogo"
-	},
-	{
-		"name": "Perito em Armas de Haste",
-		"info": [
-			"Você é um inimigo poderoso enquanto usa armas de haste. Você ganha os seguintes benefícios:",
-			[
-				"Quando você realiza a ação de Ataque e ataca com uma glaive, alabarda, bastão, lança, lança longa ou tridente, você pode usar uma ação bônus para realizar um ataque corpo a corpo com a outra extremidade da arma. Esse ataque usa o mesmo modificador de atributo do ataque primário. O dado de dano da arma para esse ataque é um d6 e o ataque causa dano contundente.",
-				"Enquanto você estiver empunhando uma glaive, alabarda, bastão, lança, lança longa ou tridente, as outras criaturas provocam um ataque de oportunidade a você quando entrarem no seu alcance."
-			]
-		]
-	},
-	{
-		"name": "Perito em Armas Grandes",
-		"info": [
-			"Você aprendeu a controlar o peso e balanço de sua arma a seu favor. Você ganha os seguintes benefícios:",
-			[
-				"Ao acertar um ataque crítico com uma arma corpo a corpo pesada, ou reduzir os pontos de vida de uma criatura a 0, você pode realizar um ataque corpo a corpo com sua arma pesada com uma ação bônus.",
-				"Antes de você realizar um ataque corpo a corpo com uma arma pesada com a qual você tenha proficiência, você pode optar por sofrer –2 de penalidade em sua jogada de ataque. Se este ataque atingir o alvo, você adiciona 1 dado de dano da arma ao seu dano + seu bônus de proficiência."
-			]
-		]
-	},
-	{
-		"name": "Perito em Escopeta",
-		"info": [
-			"Através do seu treinamento com a escopeta, você alcançou uma habilidade quase que sobrenatural, você recebe os seguintes benefícios:",
-			[
-				"Aumente seu valor de Destreza em 1, até o máximo de 20."
-			],
-			"Você recebe +1 em suas jogadas de ataque com armas de fogo médias. Ao atacar objetos inanimados seu dano sobe em duas categorias. Uma vez por turno, ao realizar um ataque com uma arma de fogo média, você pode fazer com que o alvo de seu ataque realize uma salvaguarda de Força CD 8 + seu bônus de proficiência + seu modificador de Destreza. Em uma falha, o alvo ficará Caído. Você pode fazer isso um número de vezes igual ao seu bônus de proficiência por descanso longo."
-		],
-		"prerequisite": "Proficiência com armas de fogo médias, Destreza 17 ou maior"
-	},
-	{
-		"name": "Perspicaz",
-		"info": [
-			"Você possui uma grande percepção de seus arredores e das pessoas que estão neles. Você ganha os seguintes benefícios:",
-			[
-				"Aumente seu valor de Sabedoria em 1, até o máximo de 20.",
-				"Você pode ler os lábios de uma criatura que você possa ver. Caso ela esteja falando em um idioma que você compreenda, você pode interpretar suas palavras.",
-				"Você possui um bônus de +5 em sua percepção passiva."
-			]
-		]
-	},
-	{
-		"name": "Plenitude de Combate",
-		"info": [
-			"Seja servindo o exército ou treinando com algum professor, você aprendeu algumas técnicas de combate. Você ganha os seguintes benefícios:",
-			[
-				"Você ganha +1 em Força ou Destreza, à sua escolha, até o limite de 20.",
-				"Escolha uma entre as Técnicas de Combate da classe Combatente que você atenda os pré-requisitos. Caso a técnica usada obrigue o alvo a realizar uma salvaguarda, a CD será igual a 8 + seu bônus de proficiência + seu modificador de Força ou Destreza (à sua escolha)."
-			]
-		]
-	},
-	{
-		"name": "Resistente",
-		"info": [
-			"Você ganha os seguintes benefícios:",
-			[
-				"Aumente o valor de um dos seguintes atributos em +1, até o máximo de 20: Força, Destreza ou Constituição.",
-				"Você possui proficiência em salvaguardas com o atributo escolhido."
-			]
-		]
-	},
-	{
-		"name": "Revestido",
-		"info": [
-			"Você treinou por algum tempo para que armaduras não atrapalhem seus movimentos, ganhando os seguintes benefícios:",
-			[
-				"Aumente seu valor de Força em 1, até o máximo de 20.",
-				"Você recebe proficiência com armadura leves."
-			]
-		]
-	},
-	{
-		"name": "Ritualista",
-		"info": [
-			"Você aprendeu um número de magias que você pode conjurar como rituais. Elas são escritas em um livro de rituais que deve estar em suas mãos enquanto você conjura uma dessas magias.",
-			"Quando você escolhe esse Aprimoramento, você adquire um livro de rituais que contém duas magias de 1º nível, à sua escolha entre as magias do Combatente Arcano ou do Peregrino ou do Acólito. Você deve escolher suas magias da lista de magias dessa Classe e as magias escolhidas devem ter o descritor ritual. A Classe que você escolheu também determina o atributo de conjuração dessas magias: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito.",
-			"Se você encontrar uma magia na forma escrita, como a contida em um pergaminho de magia ou o grimório de um Arcano, você é capaz de adicioná-la ao seu livro de rituais. A magia deve estar na lista de magias da Classe escolhida, o nível da magia não pode ser maior que metade do seu nível (arredondado para cima) e deve conter o descritor ritual. O processo para copiar a magia no seu livro de rituais leva 2 horas por nível da magia e custa 50 PO por nível da magia. O custo representa os componentes materiais que você gasta para experimentar a magia até dominá-la, bem como as finas tintas utilizadas para escrevê-la."
-		],
-		"prerequisite": "Inteligência ou Carisma ou Sabedoria 13 ou maior"
-	},
-	{
-		"name": "Robusto",
-		"info": [
-			"Você ganha metade do seu dado de vida em seu máximo de pontos de vida no 1º nível, sempre que sua vida aumentar ao subir de nível, caso você tire menos que 1 + metade do dado de vida, você pode jogar o dado novamente e escolher o maior número entre os dois."
-		]
-	},
-	{
-		"name": "Sagaz",
-		"info": [
-			"Você é particularmente hábil em esgueirar pelas sombras. Você ganha os seguintes benefícios:",
-			[
-				"Ao tentar se esconder de alguma criatura, estando levemente obscurecido, você tem vantagem em seu teste de Furtividade.",
-				"Errar um ataque a distância feito enquanto escondido, não revelará sua localização para o alvo.",
-				"Você não recebe desvantagem em testes de Percepção relacionados à visão quando em penumbra."
-			]
-		],
-		"prerequisite": "Destreza 13 ou maior"
-	},
-	{
-		"name": "Senso do Navegador",
-		"info": [
-			"Você possui uma memória como a de nenhum outro. Você ganha os seguintes benefícios:",
-			[
-				"Aumente seu valor de Inteligência em 1, até o máximo de 20.",
-				"Você sempre sabe a posição de todos os pontos cardeais.",
-				"Você sabe a quantidade de tempo exata para o nascer ou pôr do sol, independente da época do ano.",
-				"Você sabe dizer exatamente qualquer coisa que tenha visto ou ouvido no último mês."
-			]
-		]
-	},
-	{
-		"name": "Tempestade de Plumas",
-		"info": [
-			"Você aprendeu a controlar todas suas plumas com uma precisão inigualável. Você recebe os seguintes benefícios:",
-			[
-				"Seu valor de Destreza aumenta em +1, até o máximo de 20.",
-				"Utilizando uma ação, ou uma reação ao ser alvo de um ataque, você salta no ar fazendo com que o ataque seja feito com desvantagem e dispara todas as plumadagas que você possui em um cone de 25 pés a partir de você. Todos os alvos nessa área devem realizar uma salvaguarda de Destreza CD 8 + seu bônus de proficiência + seu modificador de Destreza. Em uma falha, um alvo afetado sofre o dano de todas as suas plumadagas disparadas e tem seu deslocamento reduzido em 15 pés até o final de seu próximo turno."
-			]
-		],
-		"prerequisite": "Vastaya Lhotlan, nível 12"
-	},
-	{
-		"name": "Vigilante",
-		"info": [
-			"Você domina técnicas para obter vantagens em combate, ganhando os seguintes benefícios:",
-			[
-				"Ao atingir uma criatura com um ataque de oportunidade, o deslocamento da criatura se torna 0 pelo resto do turno.",
-				"Criaturas que saírem do seu alcance, mesmo usando a ação de Desengajar, provocam ataques de oportunidade.",
-				"Quando uma criatura que esteja a 5 pés de você realizar um ataque que não tenha você como alvo, você pode utilizar sua reação para realizar um ataque corpo a corpo na criatura atacante."
-			]
-		]
-	}
+  {
+    "name": "Adaptação Tecnológica",
+    "info": [
+      "Ao escolher esse aprimoramento, você deve conhecer ou ser um inventor especializado em Tecnologia, além de possuir os materiais necessários ou dinheiro para realizar as adaptações em seu corpo, ambos definidos pelo Mestre.",
+      "Para receber os benefícios desse aprimoramento, você deve passar 8 horas de trabalho remodelando seu corpo, o Mestre pode aumentar esse período dependendo das suas escolhas. Após esse período de trabalho você recebe os seguintes benefícios:",
+      [
+        "Aumente o valor de Força, Destreza ou Constituição em +1, até o máximo de 20.",
+        "Escolha entre Hextec ou Quimtec:",
+        [
+          "Caso escolha Hextec, desde que você tenha um Núcleo Hex, você deve escolher uma vantagem da Variante Tecnológica;",
+          "Caso escolha Quimtec, desde que você tenha uma Fonte Quimtec, você deve escolher uma vantagem e uma desvantagem da Variante Tecnológica;"
+        ]
+      ],
+      "Você pode escolher esse aprimoramento mais de uma vez. Caso escolha esse aprimoramento 3 vezes ou mais, você passa a ser considerado um Construto e recebe os traços Construto Vivo e Descanso do Vigia da Origem: Construto caso já não os tenha."
+    ],
+    "prerequisite": "Construto ou Variante Progressão Tecnológica"
+  },
+  {
+    "name": "Adepto Espiritual",
+    "info": [
+      "Através de suas experiências lidando com as forças espirituais você conseguiu acessar alguns poderes de outro Rito, você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Sabedoria aumenta em +1, até o máximo de 20.",
+        "Você pode escolher um Eflúvio de outro Rito que não seja o seu. Você se torna capaz de usá-lo como um de seus Eflúvios.",
+        "Você recebe um uso adicional de seus Eflúvios por descanso curto ou longo."
+      ]
+    ],
+    "prerequisite": "Sabedoria 17 ou maior, Possuir um Eflúvio"
+  },
+  {
+    "name": "Afortunado",
+    "info": [
+      "Você parece ser abençoado com uma sorte sobrenatural que parece agir nos momentos mais oportunos.",
+      "Você tem 2 + metade do seu bônus de proficiência em Pontos de Sorte. Ao realizar uma jogada de ataque, teste de atributo ou salvaguarda você pode gastar um ponto de sorte para rolar um d20 adicional. Esse gasto pode ser feito depois de rolar o dado inicial mas não após saber o resultado da jogada. Ao fazer essa jogada adicional, você escolhe qual dado irá usar para essa jogada.",
+      "Quando você for alvo de um ataque, você pode gastar um ponto de sorte para jogar um d20 e escolher se o ataque feito contra você irá usar o dado original ou o rolado por você; Pontos de sorte gastos por criaturas diferentes para influenciar uma jogada se anulam mutuamente e nenhum dado adicional é rolado. Toda vez que você gastar um ponto de sorte e rolar um d20, caso caia um 1, você deve rolar 1d100 e receber um efeito da tabela de Magia Descontrolada Yordle.",
+      "Pontos de Sorte são recuperados após terminar um descanso longo."
+    ]
+  },
+  {
+    "name": "Ágil",
+    "info": [
+      "Você possui uma mobilidade além do comum. Você ganha os seguintes benefícios:",
+      [
+        "Seu deslocamento aumenta em 10 pés.",
+        "Correr em terreno difícil não lhe custa movimentação extra",
+        "Ao realizar um ataque corpo a corpo contra um alvo, independente se atingir ou não, você não provoca ataques de oportunidade desse alvo até o final de seu turno."
+      ]
+    ]
+  },
+  {
+    "name": "Anatomista Perito",
+    "info": [
+      "Através do seus estudos de determinadas criaturas, você aprendeu sobre sua fisiologia e anatomia, sabendo como derrotá-los de maneira mais efetiva. Ao escolher esse aprimoramento, escolha dois tipos de criaturas entre: celestiais, construtos, dragões, elementais, espíritos, feéricos, feras, humanóides, ínferos, mortos-vivos, plantas, vastinatas, você recebe os seguintes benefícios",
+      [
+        "Seu valor de Destreza aumenta em +1, até o máximo de 20.",
+        "Seus ataques contra os tipos de criatura escolhidas tem sua margem de crítico reduzida em 1.",
+        "Sempre que você realizar um acerto crítico contra as criaturas escolhidas, você adiciona seu modificador de Sabedoria ao dano causado",
+        "Você subtrai seu bônus de proficiência da RD dessas criaturas"
+      ]
+    ],
+    "prerequisite": "Sabedoria 15 ou maior, proficiência em Medicina"
+  },
+  {
+    "name": "Aperfeiçoamento de Batalha",
+    "info": [
+      "Você aperfeiçoou sua forma em batalha, aprimorando sua capacidade destrutiva de acordo com as armas que utiliza. Você recebe os seguintes benefícios:",
+      [
+        "Aumente seu valor de Força, Destreza ou Constituição em 1, até o máximo de 20.",
+        "Escolha uma entre as três opções de dano a seguir:",
+        [
+          "Contundente. Ao causar dano contundente ou esmagador a um alvo através de uma jogada de ataque, você pode empurrá-lo 5 pés em qualquer direção, desde que o espaço esteja desocupado e o alvo seja de até uma categoria de tamanho maior que a sua. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano contundente ou esmagador a uma criatura, até o início de seu próximo turno, todas as jogadas de ataque realizadas contra ela são feitas com vantagem.",
+          "Cortante. Ao causar dano cortante ou lacerante a uma criatura através de uma jogada de ataque, você pode reduzir o deslocamento dela em 10 pés até o início de seu próximo turno. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano cortante ou lacerante a uma criatura, até o início de seu próximo turno, o alvo tem desvantagem em todas as jogadas de ataque e fica Sangrando, sofrendo 1d4 de dano por turno.",
+          "Perfurante. Ao causar dano perfurante ou incisivo a uma criatura através de uma jogada de ataque, você pode adicionar um dado de dano ao ataque. Esse efeito se aplica apenas uma vez por turno. Além disso, ao obter um 20 natural em uma jogada de ataque que cause dano perfurante ou incisivo a uma criatura, até o início de seu próximo turno, ela fica Enfraquecida."
+        ]
+      ],
+      "Você pode escolher esse Aprimoramento mais de uma vez, sempre escolhendo uma opção de dano diferente."
+    ]
+  },
+  {
+    "name": "Arcanista Iniciante",
+    "info": [
+      "Escolha uma das seguintes classes: Acólito, Combatente Arcano, Peregrino. Você aprende dois truques da lista de magias da classe escolhida. Além disso, escolha uma magia de 1º nível da mesma lista. Você aprende essa magia e pode conjurá-la uma vez com o menor nível possível sem gastar pontos de mana antes de realizar um descanso longo. Essa restrição aplica-se apenas à magia adquirida através desse Aprimoramento.",
+      "A classe que você escolheu também determina a habilidade de conjuração dessas magias: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito."
+    ]
+  },
+  {
+    "name": "Arcano Vital",
+    "info": [
+      "Seu organismo é capaz de converter sua energia vital em energia mágica, recebendo os seguintes benefícios:",
+      [
+        "Seu valor de Constituição aumenta em +1, até o máximo de 20.",
+        "Ao conjurar uma magia de até nível 7, você pode optar por utilizar pontos de vida ao invés de pontos de mana, esses pontos de vida são retirados de seus pontos de vida máximos e são recuperados apenas ao término de um descanso longo."
+      ],
+      "Nível da Magia\tCusto em Vida",
+      "1\t4",
+      "2\t6",
+      "3\t10",
+      "4\t12",
+      "5\t14",
+      "6\t18",
+      "7\t22"
+    ],
+    "prerequisite": "Capacidade de conjurar ao menos uma magia"
+  },
+  {
+    "name": "Arcanun",
+    "info": [
+      "Através de seus estudos, você conseguiu penetrar nos segredos de um mistério mágico. Você recebe os seguintes benefícios:",
+      [
+        "Aumente o valor de um atributo em 1, até o máximo de 20.",
+        "Escolha um Mistério qualquer para que você receba acesso. Caso seja um Mistério Elemental, você deve preencher os pré-requisitos para o mesmo."
+      ]
+    ],
+    "prerequisite": "habilidade de conjuração, nível 4"
+  },
+  {
+    "name": "Arpoeiro",
+    "info": [
+      "A caçada aos monstros marinhos de sentina não são para qualquer um, porém, você sabe como garantir seu sustento ao fim do dia. Você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Destreza aumenta em +1, até o máximo de 20;",
+        "Desde que você possua uma corda, você pode prendê-la ao seu Arpão utilizando uma ação, o que possibilita que você sempre possa puxá-lo de volta para si. Adicionalmente, quando você realizar um ataque à distância com seu Arpão, caso atinja um alvo de até uma categoria acima que você, você pode usar uma ação bônus para puxar o alvo até 20 pés em sua direção, o alvo deve realizar uma salvaguarda de Atletismo contra sua jogada de Atletismo, sendo puxado em uma falha."
+      ]
+    ],
+    "prerequisite": "Sentinense"
+  },
+  {
+    "name": "Arqueiro",
+    "info": [
+      "Graças a sua prática extensiva com arcos, você ganha os seguintes benefícios:",
+      [
+        "Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com arco.",
+        "Uma vez por turno você pode usar uma ação de ataque para atirar com duas flechas no arco, a segunda flecha rola o acerto com desvantagem.",
+        "Seus ataques com arco e flecha ignoram metade da RD de seus alvos dentro de seu alcance curto"
+      ]
+    ]
+  },
+  {
+    "name": "Ars Veneficius",
+    "info": [
+      "Você treinou seu organismo a resistir aos mais diferentes tipos de venenos. recebendo os seguintes benefícios:",
+      [
+        "Seu valor de Constituição aumenta em +1, até o máximo de 20.",
+        "Você recebe resistência a dano venenoso.",
+        "Você tem vantagens em salvaguardas para resistir às condições Envenenado e Intoxicado."
+      ]
+    ],
+    "prerequisite": "Constituição 17 ou maior"
+  },
+  {
+    "name": "Artesão Vitriólico",
+    "info": [
+      "Você aprendeu a aumentar a toxidez de um veneno para fortificá-lo, fazendo com que as doses que você prepare se tornem letais. Você ganha os seguintes benefícios:",
+      [
+        "Todo dano venenoso que você causa ignora resistência.",
+        "Você pode usar sua ação bônus para aplicar veneno a uma arma ou peça de munição.",
+        "Você recebe o Ofício de Veneficista. Com uma hora de trabalho usando um estojo de veneno e 50 PO de material, você pode modificar a composição de uma dose de veneno, fazendo com que ele fique mais potente. O veneno modificado aumenta a CD da salvaguarda e categoria de dados de dano em 1. Além disso, caso uma criatura falhe na salvaguarda para resistir ao veneno, ela fica Envenenada, sofrendo 1d4 de dano venenoso por turno. Caso a dose de veneno original já deixe a criatura Envenenada, o veneno modificado não aplica a condição novamente."
+      ]
+    ]
+  },
+  {
+    "name": "Artista",
+    "info": [
+      "Perito em mimica e dramaturgia, você recebe os seguintes benefícios:",
+      [
+        "Aumente seu valor de Carisma em 1, até o máximo de 20.",
+        "Você tem vantagem em testes de Atuação e Enganação quando você estiver tentando se passar por uma pessoa diferente.",
+        "Você pode imitar a articulação de outra pessoa ou os sons feitos por outras criaturas. Você deve ter ouvido a pessoa falando ou ouvido a criatura fazendo o som por, pelo menos, 1 minuto. Um sucesso num teste de Intuição resistido pelo seu teste de Enganação permite que um ouvinte determine que o efeito é falso."
+      ]
+    ]
+  },
+  {
+    "name": "Assassino Experiente",
+    "info": [
+      "Sua experiência em seu trabalho lhe concedeu a capacidade de aumentar seu leque de possibilidades de assassinato. Você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Destreza ou Inteligência aumentam em +1, até o máximo de 20;",
+        "Escolha duas armas simples ou marciais que não tenham as propriedades Extensão, Impróprio, Pesado ou Versátil. Essas duas armas são consideradas armas assassinas para você;",
+        "Você tem vantagem em jogadas de ataque contra criaturas que ainda não agiram em combate. Adicionalmente, sempre que você realizar um acerto contra um criatura que esteja surpresa, o acerto é considerado um crítico;",
+        "Seus ataques furtivos ignoram metade da RD de seus alvos"
+      ]
+    ],
+    "prerequisite": "Mercurial Assassino, nível 4"
+  },
+  {
+    "name": "Assinatura Aprimorada",
+    "info": [
+      "A sua conjuração se beneficia imensamente de sua assinatura arcana, fazendo com que você modifique as suas propriedades. Você possui os seguintes benefícios:",
+      [
+        "Aumente o seu valor de Inteligência ou do seu Atributo de Assinatura Arcana em 1, até o máximo de 20.",
+        "Você recebe acesso um Mistério à sua escolha.",
+        "Você pode alterar as tramas das magias conjuradas por você. Com o gasto de 3 pontos de arcana e o gasto de mana equivalente ao de uma magia de um nível acima do lançado, você pode mudar o mistério de uma magia por outro que você tenha acesso."
+      ]
+    ],
+    "prerequisite": "Arcano, nível 4"
+  },
+  {
+    "name": "Atacante Brutal",
+    "info": [
+      "Uma vez por turno, você pode adicionar seu bônus de proficiência no dano, e quando você rolar 1 no dado de dano para um ataque corpo a corpo, você pode jogar novamente o dado de dano."
+    ]
+  },
+  {
+    "name": "Atento",
+    "info": [
+      "Você é uma pessoa observadora e atenta e recebe os seguintes benefícios:",
+      [
+        "Ao rolar a iniciativa, você adiciona +5 ao resultado rolado.",
+        "Enquanto estiver consciente, você não sofrerá os efeitos de uma rodada surpresa.",
+        "Criaturas escondidas não possuem vantagem ao te atacar.",
+        "Você recebe +1 de bônus de percepção passiva."
+      ]
+    ]
+  },
+  {
+    "name": "Atirador de Elite",
+    "info": [
+      "Você dominou o uso de armas à distância e pode realizar tiros que seriam impossíveis para outros. Você ganha os seguintes benefícios:",
+      [
+        "Atacar um alvo além da distância normal não impõe desvantagem nas suas jogadas de ataque com armas à distância.",
+        "Seus ataques com armas à distância ignoram meia cobertura e três-quartos de cobertura.",
+        "Antes de realizar um ataque com uma arma à distância na qual você seja proficiente, você pode escolher sofrer –2 de penalidade na jogada de ataque. Se o ataque atingir, você adiciona 1 dado de dano da arma no ataque."
+      ]
+    ]
+  },
+  {
+    "name": "Atleta",
+    "info": [
+      "Você passou por árduo treinamento físico para ganhar os seguintes benefícios:",
+      [
+        "Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.",
+        "Quando você estiver caído, se levantar requer apenas 5 Pés do seu deslocamento.",
+        "Você pode escalar sem custar movimento adicional",
+        "Você pode realizar um salto em distância ou em altura correndo se movendo apenas 5 pés, ao invés de 10 pés.",
+        "Você ganha mais 5 pés de deslocamento."
+      ]
+    ]
+  },
+  {
+    "name": "Balestreiro",
+    "info": [
+      "Graças a sua prática extensiva com bestas, você ganha os seguintes benefícios:",
+      [
+        "Você ignora a qualidade de recarga de bestas nas quais você é proficiente.",
+        "Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com bestas.",
+        "Quando você usa a ação de Ataque e ataca com uma arma de uma mão, você pode usar sua ação bônus para atacar com uma besta de mão carregada que você esteja empunhando.",
+        "Seus ataques com bestas ignoram metade da RD de seus alvos dentro de seu alcance curto"
+      ]
+    ]
+  },
+  {
+    "name": "Blindado",
+    "info": [
+      "Você treinou por anos para que ninguém pudesse te atingir em batalha, ganhando os seguintes benefícios:",
+      ["Aumente seu valor de Força em 1, até o máximo de 20.", "Você ganha proficiência com armadura pesada."]
+    ],
+    "prerequisite": "Proficiência com armaduras médias"
+  },
+  {
+    "name": "Briguento",
+    "info": [
+      "Acostumado a brigas de bar usando qualquer coisa como armas, e na falta delas, os punhos, você ganha os seguintes benefícios:",
+      [
+        "Aumente o valor de Força ou Constituição em 1, até o máximo de 20.",
+        "Seus ataques desarmados causam 1d4 a mais de dano.",
+        "Quando você atinge uma criatura com um ataque desarmado ou com uma arma improvisada, no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo."
+      ]
+    ]
+  },
+  {
+    "name": "Cirurgião de Combate",
+    "info": [
+      "Você é um cirurgião capacitado, permitindo que você trate de ferimentos rapidamente, trazendo seus aliados de volta à luta. Você adquire os seguintes benefícios:",
+      [
+        "Quando você usar um kit de primeiros socorros para estabilizar uma criatura morrendo, a criatura recupera 1 ponto de vida, ao invés disso.",
+        "Com uma ação, você pode gastar um uso do kit de primeiros-socorros para tratar de uma criatura e restaurar 1d6 + 4 pontos de vida mais uma quantidade de pontos de vida adicionais igual ao número total de dados de vida da criatura. A criatura não pode recuperar pontos de vida através desse Aprimoramento novamente até ter terminado um descanso curto ou longo."
+      ]
+    ]
+  },
+  {
+    "name": "Conjurador Bélico",
+    "info": [
+      "Você é experiente em conjurar magias no meio do combate, aprendendo técnicas que lhe concedem os seguintes benefícios:",
+      [
+        "Você tem vantagem em salvaguardas de Constituição para manter sua concentração em uma magia quando você sofrer dano.",
+        "Você pode realizar os componentes somáticos de uma magia mesmo quando está com armas ou um escudo em uma ou ambas as mãos.",
+        "Você pode usar sua reação para conjurar uma magia na criatura, ao invés de realizar o ataque de oportunidade. A magia deve ter um tempo de conjuração de 1 ação e deve ter apenas uma criatura como alvo.",
+        "Seus ataques com magia ignoram metade da RD de seus alvos"
+      ]
+    ],
+    "prerequisite": "Habilidade de conjuração"
+  },
+  {
+    "name": "Controlador de Elementos",
+    "info": [
+      "Seu controle elemental se aflora em um elemento. Você domina os aspectos de um elemento, tendo um maior controle e poder em magias que utilizem desse elemento. Ao selecionar esse Aprimoramento, escolha entre um dos tipos de dano elemental a seguir: ácido, elétrico, gélido, ígneo, trovejante ou venenoso.",
+      [
+        "Magias do elemento escolhido, ao serem conjuradas, ignoram a resistência e em caso de imunidade, causam dano reduzido pela metade ao invés de não causarem dano. Adicionalmente, dados de dano que caiam como 1 são tratados como 2.",
+        "Esse Aprimoramento pode ser escolhido diversas vezes, cada vez com um dano elemental diferente."
+      ]
+    ],
+    "prerequisite": "Habilidade de conjurar pelo menos uma magia"
+  },
+  {
+    "name": "Duelista Defensivo",
+    "info": [
+      "Quando você estiver empunhando uma arma de acuidade com a qual você seja proficiente e outra criatura atingir você com um ataque corpo a corpo, você pode usar sua reação para adicionar seu bônus de proficiência a sua CA para esse ataque, potencialmente fazendo o ataque errar."
+    ],
+    "prerequisite": "Destreza 13 ou maior"
+  },
+  {
+    "name": "Encouraçado",
+    "info": [
+      "Você treinou por alguns meses para que você pudesse ter maior resistência em combate, ganhando os seguintes benefícios:",
+      ["Aumente seu valor de Força em 1, até o máximo de 20.", "Você ganha proficiência com armaduras médias e escudos."]
+    ],
+    "prerequisite": "Proficiência com armaduras leves"
+  },
+  {
+    "name": "Empunhadura Dupla",
+    "info": [
+      "Seu treinamento árduo fez você dominar o combate com duas armas, ganhando os seguintes benefícios:",
+      [
+        "Enquanto estiver empunhando uma arma corpo a corpo em cada mão, você ganha +1 de bônus de CA.",
+        "Mesmo que a arma de uma mão que você está empunhando não seja leve, você pode usar Combate com Duas Armas.",
+        "Você pode guardar e sacar as duas armas que você carrega, quando normalmente seria capaz de sacar ou guardar uma por vez.",
+        "Ao realizar um ataque de oportunidade, você pode rolar um segundo ataque com sua outra mão com desvantagem."
+      ]
+    ]
+  },
+  {
+    "name": "Empunhadura Primata",
+    "info": [
+      "A força de sua mão é muito bem desenvolvida, fazendo com que você consiga portar armas maiores do que as feitas para você, você recebe os seguintes benefícios.",
+      [
+        "Aumente seu valor de Força em 1, até o máximo de 20.",
+        "Escolha uma arma corpo a corpo de uma mão com a qual você tem proficiência. Você pode usar com sua mão hábil uma arma corpo a corpo de uma categoria maior que a sua. Ao invés de receber -5 em jogadas de ataque e ter desvantagem nessas rolagens, você recebe apenas -2 e não tem mais desvantagem. O dano de sua arma sobe 2 degraus na escala de dano."
+      ],
+      "Você pode manejar uma arma leve de categoria maior como uma arma leve, ou uma arma de duas mãos como sendo de uma mão. Você não pode usar uma arma de categoria de tamanho maior com sua mão inábil, e você não pode usar este aprimoramento junto a Empunhadura Dupla. Este aprimoramento pode ser escolhido diversas vezes, cada vez com uma arma diferente."
+    ],
+    "prerequisite": "Força 15 ou maior"
+  },
+  {
+    "name": "Escudeiro",
+    "info": [
+      "Você sabe como utilizar escudos tanto para se defender quanto para atacar. Você ganha os seguintes benefícios enquanto estiver empunhando um escudo:",
+      [
+        "Ao realizar um ataque corpo a corpo contra uma criatura você pode tentar usar seu escudo para derrubá-la com uma ação bônus, a criatura deve fazer uma salvaguarda de Força contra um teste seu de Força.",
+        "Enquanto você estiver consciente e não esteja incapacitado, você pode adicionar o bônus de CA do seu escudo para salvaguardas de Destreza e Força.",
+        "Você ganha proficiência com escudos"
+      ]
+    ]
+  },
+  {
+    "name": "Especialista em Armadura Média",
+    "info": [
+      "Você está acostumado a utilizar armaduras médias, o que lhe deu algumas vantagens:",
+      [
+        "Você não tem desvantagem em testes de Furtividade enquanto estiver utilizando uma armadura média.",
+        "Quando você estiver vestindo uma armadura média, você não possui limitador no modificador de Destreza.",
+        "Você adiciona metade do seu bônus de proficiência à Redução de Dano de sua armadura média"
+      ]
+    ],
+    "prerequisite": "Proficiência com armaduras médias"
+  },
+  {
+    "name": "Especialista em Armadura Pesada",
+    "info": [
+      "Você se torna quase imbatível… enquanto estiver de armadura. Você ganha os seguintes benefícios:",
+      [
+        "Aumente seu valor de Força em 1, até o máximo de 20.",
+        "Quando você estiver vestindo uma armadura pesada, você reduz em 3 em todo dano físico recebido.",
+        "Você adiciona metade do seu bônus de proficiência à Redução de Dano de sua armadura pesada"
+      ]
+    ],
+    "prerequisite": "Proficiência com armaduras pesadas"
+  },
+  {
+    "name": "Especialista em Escudos",
+    "info": [
+      "Seu treinamento constante com armas e escudos lhe concedeu uma maior manobrabilidade em combate. Você recebe as seguintes características:",
+      [
+        "Você passa a poder vestir ou remover um escudo utilizando uma ação bônus.",
+        "Quando o escudo estiver vestido, você pode atacar normalmente com uma arma que possua as propriedades extensão e duas mãos, caso você esteja utilizando um escudo pesado ou de torre, você se torna incapaz de receber vantagem em seu ataque, exceto se por magia ou runas, caso possua o estilo de luta Phalanx, essa incapacidade deixa de se aplicar às armas de haste."
+      ]
+    ],
+    "prerequisite": "Proficiência com Escudos"
+  },
+  {
+    "name": "Essência Etílica",
+    "info": [
+      "A capacidade de ingerir álcool é comum à maioria das criaturas. O que as divide é qual sua tolerância a essa ingestão. Você, talvez por ser um traço comum em sua família, ou um hábito desenvolvido, tem não apenas uma grande capacidade de ingerir bebidas alcoólicas, como elas também causam pouca ou nenhuma intoxicação em você, restando apenas um efeito agradável e energizante. Você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Constituição ou Carisma aumenta em +1, até o máximo de 20.",
+        "Imunidade à condição Intoxicado advinda da ingestão de bebidas alcoólicas.",
+        "Água Vivente: Você pode recuperar pontos de vida igual ao seu dado de vida a cada descanso curto ou longo, através do consumo de um litro de bebida alcoólica. Você pode utilizar sua ação para ingerir um gole de aproximadamente 200 ml."
+      ]
+    ]
+  },
+  {
+    "name": "Estudioso das Armas",
+    "info": [
+      "Você treinou sua habilidade com diversos tipos de armas, você ganha os seguintes benefícios:",
+      [
+        "Aumente o valor de Força ou Destreza em 1, até o máximo de 20.",
+        "Você ganha proficiência com quatro armas corpo a corpo ou à distância simples ou marciais, à sua escolha."
+      ]
+    ]
+  },
+  {
+    "name": "Explorador Nato",
+    "info": [
+      "Você tem uma facilidade natural para encontrar passagens, tesouros e armadilhas escondidas. Você possui os seguintes benefícios:",
+      [
+        "Você tem vantagens em testes de Percepção e Investigação para encontrar passagens escondidas ou armadilhas, adicionalmente você possui vantagem em salvaguardas de Destreza para evitar uma armadilha.",
+        "Armadilhas causam metade do dano em você.",
+        "Enquanto você viaja, pode procurar por armadilhas preparadas em seu caminho sem diminuir o ritmo."
+      ]
+    ]
+  },
+  {
+    "name": "Explosão de Adrenalina",
+    "info": [
+      "Você aprendeu a controlar seu metabolismo conseguindo extrair o máximo de seu corpo, forçando-o a limites muito além dos seus limites naturais, você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Força ou Destreza aumenta em +1, até o máximo de 20.",
+        "Utilizando uma ação livre em seu turno, você pode executar uma explosão de adrenalina. Até o início de seu próximo turno, seu valor de Força ou Destreza se torna 25. Você pode fazer isso uma vez por descanso longo. Você pode realizar explosões de adrenalina adicionais recebendo 1 nível de exaustão por uso além do 1º."
+      ]
+    ],
+    "prerequisite": "Força ou Destreza 17 ou maior"
+  },
+  {
+    "name": "Fúria Elevada",
+    "info": [
+      "A fúria corre em seu sangue de uma forma sobrenatural, conseguindo ser canalizada de forma mais eficiente, você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Constituição aumenta em +1, até o máximo de 20.",
+        "Ao finalizar um descanso curto, você recupera uma quantidade de usos de fúria igual a metade do seu modificador de Constituição.",
+        "Ao final de seu turno, caso você não tenha atacado uma criatura hostil, sua Fúria não é encerrada prematuramente."
+      ]
+    ],
+    "prerequisite": "Bruto"
+  },
+  {
+    "name": "Grão-Conjurador",
+    "info": [
+      "Você aprendeu técnicas de conjuração com certos tipos de magia, ganhando os seguintes benefícios:",
+      [
+        "Magias e truques que requerem acerto, tem o alcance dobrado.",
+        "Suas magia que requer acerto ignoram meia cobertura ou três-quartos de cobertura.",
+        "Você aprende um truque que requer uma jogada de ataque. Escolha o truque da lista de magias do Peregrino, Acólito ou Combatente Arcano. Seu atributo de conjuração para esse truque depende da lista de magia a qual você escolheu o truque: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito."
+      ]
+    ],
+    "prerequisite": "Habilidade de conjurar pelo menos uma magia"
+  },
+  {
+    "name": "Hábil",
+    "info": [
+      "Você recebe proficiência em até 3 Ofícios, Instrumentos Musicais, Conjunto de jogos ou perícias à sua escolha. Você pode pegar esse Aprimoramento mais de 1 vez."
+    ]
+  },
+  {
+    "name": "Imobilizador",
+    "info": [
+      "Você desenvolveu as habilidades necessárias para se manter em um agarrão corpo a corpo. Você ganha os seguintes benefícios:",
+      [
+        "Você tem vantagem nas jogadas de ataque contra uma criatura que já está agarrada.",
+        "Você pode usar sua ação para tentar imobilizar uma criatura agarrada por você. Para fazer isso, faça outro teste de agarrar. Se for bem-sucedido, você e a criatura ficam contidos até o agarrão terminar."
+      ]
+    ],
+    "prerequisite": "Força 13 ou maior"
+  },
+  {
+    "name": "Intérprete",
+    "info": [
+      "Você possui um amplo conhecimento em diversos idiomas e códigos, ganhando os seguintes benefícios:",
+      [
+        "Aumente seu valor de Inteligência em 1, até o máximo de 20.",
+        "Você aprende três idiomas, à sua escolha.",
+        "Você é capaz de criar códigos e cifras complexas. Criaturas que tentem decifrar esses códigos devem ser bem-sucedidas numa salvaguarda de Inteligência (CD igual ao seu valor de Inteligência + seu bônus de proficiência) ou usar uma magia para decifrá-lo."
+      ]
+    ]
+  },
+  {
+    "name": "Investida Incontrolável",
+    "info": [
+      "Você pode, após realizar a ação de Disparada, realizar um ataque corpo a corpo ou derrubar uma criatura com uma ação bônus.",
+      "Se você percorrer pelo menos 10 pés em uma linha reta, você pode escolher receber +5 de bônus para acertar um ataque corpo a corpo ou ter vantagem para derrubar uma criatura."
+    ]
+  },
+  {
+    "name": "Invocadora das Lâminas",
+    "info": [
+      "Você aprende a controlar melhor a magia de suas plumadagas, sabendo como utilizar sua magia espiritual inata para prender seus inimigos. Você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Sabedoria aumenta em +1, até o máximo de 20.",
+        "Quando utilizar seu traço Retorno das Lâminas, caso uma criatura seja atingido por duas ou mais plumadagas, ela deve realizar uma salvaguarda de Constituição CD 8 + seu bônus de proficiência + seu modificador de Sabedoria. Em uma falha, a criatura estará Contida até o final de seu próximo turno."
+      ]
+    ],
+    "prerequisite": "Vastaya Lhotlan"
+  },
+  {
+    "name": "Mãos de Ferro",
+    "info": [
+      "Você se torna proficiente com manoplas de guerra e elas passam a contar como armas Bodisatva. Além disso, você causa 1 ponto de dano adicional com ela, subindo para +2 o total."
+    ],
+    "prerequisite": "Força 15"
+  },
+  {
+    "name": "Mente Fortalecida",
+    "info": [
+      "Embora não seja mais resistente aos danos que as outras pessoas, seu treinamento criou em você uma tolerância maior, você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Constituição aumenta em +1, até o máximo de 20.",
+        "Ao falhar em uma salvaguarda para manter sua Concentração em uma magia, você pode repeti-la novamente ficando com o novo resultado.",
+        "Ao falhar em um teste ou salvaguarda contra uma magia do Mistério da Ilusão, você pode repetir a jogada e ficar com o novo valor.",
+        "Você recebe vantagem em salvaguarda contra qualquer tipo de controle mental."
+      ]
+    ],
+    "prerequisite": "Constituição 15 ou maior"
+  },
+  {
+    "name": "Mente Única",
+    "info": [
+      "Sua mente é singular, fazendo com que seu modo de pensar seja bem diferente dos seus pares. Você ganha os seguintes benefícios:",
+      [
+        "Aumente o valor de um dos seguintes atributos em +1, até o máximo de 20: Sabedoria, Inteligência ou Carisma.",
+        "Você possui proficiência em salvaguardas com o atributo escolhido."
+      ]
+    ]
+  },
+  {
+    "name": "Mestre do Combate",
+    "info": [
+      "Seu treinamento marcial é contínuo e sempre busca se adaptar às suas tendências. Como resultado, você aprende uma opção de Estilo de Luta à sua escolha da classe Combatente. Você não pode escolher o mesmo Estilo mais de uma vez. Além disso, quando você adquire um nível que receba um Aprimoramento, você pode escolher um Estilo de Luta que você conheça e substituí-lo por outro que você ainda não possua. Esse Aprimoramento pode ser escolhido mais de uma vez."
+    ],
+    "prerequisite": "Proficiência com uma arma marcial"
+  },
+  {
+    "name": "Olho da Morte",
+    "info": [
+      "Seu treinamento com armas de ataque à distância chegou em um patamar sobrenatural, você recebe os seguintes benefícios:",
+      [
+        "Aumente seu valor de Destreza em 1, até o máximo de 20.",
+        "Escolha uma arma à distância com a qual você tenha proficiência. Ao fazer um ataque com essa arma você pode escolher receber -2 na jogada de acerto e diminuir sua margem de crítico em 1 com essa arma. Você pode repetir essa habilidade até 3 vezes em um único ataque."
+      ]
+    ],
+    "prerequisite": "Proficiência com uma arma à distância, Destreza 17 ou maior"
+  },
+  {
+    "name": "Perito em Armas de Arremesso",
+    "info": [
+      "Você dominou a arte de arremessar armas, sacando rapidamente e golpeando com precisão. Você ganha os seguintes benefícios:",
+      [
+        "Estar a 5 pés de uma criatura hostil ou atacar um alvo além da distância normal não impõe desvantagem nas suas jogadas de ataque à distância com armas de arremesso.",
+        "Você pode sacar uma arma que tenha a propriedade arremesso como parte de sua ação de Ataque.",
+        "Armas arremessadas por você tem sua categoria de dano aumentada em 1."
+      ]
+    ]
+  },
+  {
+    "name": "Perito em Armas de Fogo",
+    "info": [
+      "Graças a sua prática extensiva com armas de fogo, você ganha os seguintes benefícios:",
+      [
+        "Você é capaz de reparar uma arma de fogo pela metade do tempo e valor necessário.",
+        "Estar a 5 pés de uma criatura hostil não impõe desvantagem nas suas jogadas de ataque à distância com armas de fogo.",
+        "Quando você usar a ação de Ataque com uma arma de fogo leve, você pode usar sua ação bônus para atacar com outra arma de fogo leve carregada que você esteja empunhando.",
+        "Seus ataques com armas de fogo ignoram metade da RD de seus alvos dentro de seu alcance máximo"
+      ]
+    ],
+    "prerequisite": "Proficiência com uma categoria de arma de fogo"
+  },
+  {
+    "name": "Perito em Armas de Haste",
+    "info": [
+      "Você é um inimigo poderoso enquanto usa armas de haste. Você ganha os seguintes benefícios:",
+      [
+        "Quando você realiza a ação de Ataque e ataca com uma glaive, alabarda, bastão, lança, lança longa ou tridente, você pode usar uma ação bônus para realizar um ataque corpo a corpo com a outra extremidade da arma. Esse ataque usa o mesmo modificador de atributo do ataque primário. O dado de dano da arma para esse ataque é um d6 e o ataque causa dano contundente.",
+        "Enquanto você estiver empunhando uma glaive, alabarda, bastão, lança, lança longa ou tridente, as outras criaturas provocam um ataque de oportunidade a você quando entrarem no seu alcance."
+      ]
+    ]
+  },
+  {
+    "name": "Perito em Armas Grandes",
+    "info": [
+      "Você aprendeu a controlar o peso e balanço de sua arma a seu favor. Você ganha os seguintes benefícios:",
+      [
+        "Ao acertar um ataque crítico com uma arma corpo a corpo pesada, ou reduzir os pontos de vida de uma criatura a 0, você pode realizar um ataque corpo a corpo com sua arma pesada com uma ação bônus.",
+        "Antes de você realizar um ataque corpo a corpo com uma arma pesada com a qual você tenha proficiência, você pode optar por sofrer –2 de penalidade em sua jogada de ataque. Se este ataque atingir o alvo, você adiciona 1 dado de dano da arma ao seu dano + seu bônus de proficiência."
+      ]
+    ]
+  },
+  {
+    "name": "Perito em Escopeta",
+    "info": [
+      "Através do seu treinamento com a escopeta, você alcançou uma habilidade quase que sobrenatural, você recebe os seguintes benefícios:",
+      ["Aumente seu valor de Destreza em 1, até o máximo de 20."],
+      "Você recebe +1 em suas jogadas de ataque com armas de fogo médias. Ao atacar objetos inanimados seu dano sobe em duas categorias. Uma vez por turno, ao realizar um ataque com uma arma de fogo média, você pode fazer com que o alvo de seu ataque realize uma salvaguarda de Força CD 8 + seu bônus de proficiência + seu modificador de Destreza. Em uma falha, o alvo ficará Caído. Você pode fazer isso um número de vezes igual ao seu bônus de proficiência por descanso longo."
+    ],
+    "prerequisite": "Proficiência com armas de fogo médias, Destreza 17 ou maior"
+  },
+  {
+    "name": "Perspicaz",
+    "info": [
+      "Você possui uma grande percepção de seus arredores e das pessoas que estão neles. Você ganha os seguintes benefícios:",
+      [
+        "Aumente seu valor de Sabedoria em 1, até o máximo de 20.",
+        "Você pode ler os lábios de uma criatura que você possa ver. Caso ela esteja falando em um idioma que você compreenda, você pode interpretar suas palavras.",
+        "Você possui um bônus de +5 em sua percepção passiva."
+      ]
+    ]
+  },
+  {
+    "name": "Plenitude de Combate",
+    "info": [
+      "Seja servindo o exército ou treinando com algum professor, você aprendeu algumas técnicas de combate. Você ganha os seguintes benefícios:",
+      [
+        "Você ganha +1 em Força ou Destreza, à sua escolha, até o limite de 20.",
+        "Escolha uma entre as Técnicas de Combate da classe Combatente que você atenda os pré-requisitos. Caso a técnica usada obrigue o alvo a realizar uma salvaguarda, a CD será igual a 8 + seu bônus de proficiência + seu modificador de Força ou Destreza (à sua escolha)."
+      ]
+    ]
+  },
+  {
+    "name": "Resistente",
+    "info": [
+      "Você ganha os seguintes benefícios:",
+      [
+        "Aumente o valor de um dos seguintes atributos em +1, até o máximo de 20: Força, Destreza ou Constituição.",
+        "Você possui proficiência em salvaguardas com o atributo escolhido."
+      ]
+    ]
+  },
+  {
+    "name": "Revestido",
+    "info": [
+      "Você treinou por algum tempo para que armaduras não atrapalhem seus movimentos, ganhando os seguintes benefícios:",
+      ["Aumente seu valor de Força em 1, até o máximo de 20.", "Você recebe proficiência com armadura leves."]
+    ]
+  },
+  {
+    "name": "Ritualista",
+    "info": [
+      "Você aprendeu um número de magias que você pode conjurar como rituais. Elas são escritas em um livro de rituais que deve estar em suas mãos enquanto você conjura uma dessas magias.",
+      "Quando você escolhe esse Aprimoramento, você adquire um livro de rituais que contém duas magias de 1º nível, à sua escolha entre as magias do Combatente Arcano ou do Peregrino ou do Acólito. Você deve escolher suas magias da lista de magias dessa Classe e as magias escolhidas devem ter o descritor ritual. A Classe que você escolheu também determina o atributo de conjuração dessas magias: Carisma para Peregrino, Inteligência para Combatente Arcano e Sabedoria para Acólito.",
+      "Se você encontrar uma magia na forma escrita, como a contida em um pergaminho de magia ou o grimório de um Arcano, você é capaz de adicioná-la ao seu livro de rituais. A magia deve estar na lista de magias da Classe escolhida, o nível da magia não pode ser maior que metade do seu nível (arredondado para cima) e deve conter o descritor ritual. O processo para copiar a magia no seu livro de rituais leva 2 horas por nível da magia e custa 50 PO por nível da magia. O custo representa os componentes materiais que você gasta para experimentar a magia até dominá-la, bem como as finas tintas utilizadas para escrevê-la."
+    ],
+    "prerequisite": "Inteligência ou Carisma ou Sabedoria 13 ou maior"
+  },
+  {
+    "name": "Robusto",
+    "info": [
+      "Você ganha metade do seu dado de vida em seu máximo de pontos de vida no 1º nível, sempre que sua vida aumentar ao subir de nível, caso você tire menos que 1 + metade do dado de vida, você pode jogar o dado novamente e escolher o maior número entre os dois."
+    ]
+  },
+  {
+    "name": "Sagaz",
+    "info": [
+      "Você é particularmente hábil em esgueirar pelas sombras. Você ganha os seguintes benefícios:",
+      [
+        "Ao tentar se esconder de alguma criatura, estando levemente obscurecido, você tem vantagem em seu teste de Furtividade.",
+        "Errar um ataque a distância feito enquanto escondido, não revelará sua localização para o alvo.",
+        "Você não recebe desvantagem em testes de Percepção relacionados à visão quando em penumbra."
+      ]
+    ],
+    "prerequisite": "Destreza 13 ou maior"
+  },
+  {
+    "name": "Senso do Navegador",
+    "info": [
+      "Você possui uma memória como a de nenhum outro. Você ganha os seguintes benefícios:",
+      [
+        "Aumente seu valor de Inteligência em 1, até o máximo de 20.",
+        "Você sempre sabe a posição de todos os pontos cardeais.",
+        "Você sabe a quantidade de tempo exata para o nascer ou pôr do sol, independente da época do ano.",
+        "Você sabe dizer exatamente qualquer coisa que tenha visto ou ouvido no último mês."
+      ]
+    ]
+  },
+  {
+    "name": "Tempestade de Plumas",
+    "info": [
+      "Você aprendeu a controlar todas suas plumas com uma precisão inigualável. Você recebe os seguintes benefícios:",
+      [
+        "Seu valor de Destreza aumenta em +1, até o máximo de 20.",
+        "Utilizando uma ação, ou uma reação ao ser alvo de um ataque, você salta no ar fazendo com que o ataque seja feito com desvantagem e dispara todas as plumadagas que você possui em um cone de 25 pés a partir de você. Todos os alvos nessa área devem realizar uma salvaguarda de Destreza CD 8 + seu bônus de proficiência + seu modificador de Destreza. Em uma falha, um alvo afetado sofre o dano de todas as suas plumadagas disparadas e tem seu deslocamento reduzido em 15 pés até o final de seu próximo turno."
+      ]
+    ],
+    "prerequisite": "Vastaya Lhotlan, nível 12"
+  },
+  {
+    "name": "Vigilante",
+    "info": [
+      "Você domina técnicas para obter vantagens em combate, ganhando os seguintes benefícios:",
+      [
+        "Ao atingir uma criatura com um ataque de oportunidade, o deslocamento da criatura se torna 0 pelo resto do turno.",
+        "Criaturas que saírem do seu alcance, mesmo usando a ação de Desengajar, provocam ataques de oportunidade.",
+        "Quando uma criatura que esteja a 5 pés de você realizar um ataque que não tenha você como alvo, você pode utilizar sua reação para realizar um ataque corpo a corpo na criatura atacante."
+      ]
+    ]
+  }
 ]

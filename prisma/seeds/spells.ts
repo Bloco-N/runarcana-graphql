@@ -3,7 +3,7 @@ import ranges from '../../dataSource/ranges.json'
 import conjurations from '../../dataSource/conjurations.json'
 import durations from '../../dataSource/durations.json'
 
-export default spells.map(spell => {
+export default spells.map((spell) => {
   return {
     name: spell.name,
     level: spell.level,

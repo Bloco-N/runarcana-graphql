@@ -1,176 +1,176 @@
 [
-	{
-	  "name": "Furto Luminar",
-	  "cost": "◆",
-	  "prerequisites": "Inteligência  13",
-	  "info": [
-		"Um pequeno manuscrito possui um símbolo antigo para a palavra \"sombra\", com algumas inscrições ao redor desse símbolo e uma fita de cetim preto que parece ser imune à ação do tempo.",
-		"Você tem visão no escuro de 15 pés, caso já tenha essa característica, ela aumenta em 15 pés."
-	  ]
-	},
-	{
-	  "name": "Potência de Gong",
-	  "cost": "◆",
-	  "prerequisites": "Força 13",
-	  "info": [
-		"Um talismã em forma de um punho cerrado feito de madeira entalhada e que possui uma inscrição sobre força percorrendo os dedos, uma espécie de quebra-cabeça da antiguidade na qual a sequência de palavras se conectam a determinados Mudras.",
-		"Seus ataques desarmados causam 1 de dano adicional."
-	  ]
-	},
-	{
-	  "name": "Presente da Serpente",
-	  "cost": "◆",
-	  "prerequisites": "Destreza 13 e 1 ponto de Ki",
-	  "info": [
-		"Um cinto antigo feito da antiga pele de uma serpente, retirada sem que elas fosse danificada, possui uma estranha inscrição no seu decorrer, como se fossem traços já existentes na pele da serpente.",
-		"Seus ataques desarmados tem 5 pés de alcance adicional."
-	  ]
-	},
-	{
-	  "name": "Yanlei",
-	  "cost": "◆",
-	  "prerequisites": "Sabedoria 13",
-	  "info": [
-		"Yanlei é um icor sombrio, também conhecido como \"lágrima sombria\". Esse icor é uma forma líquida materializada de energia mágica espiritual, ligada ao elemento Sombrio e a sua manipulação é extremamente perigosa, podendo alterar a psicologia e a constituição física de um ser vivo para algo inumano, sendo similar aos azakanas, aflorando as emoções negativas daquele ser. Quando você é iniciado na Ordem das Sombras, você recebe uma marca em seu corpo feita de uma tinta sombria especial, capaz de lhe dar o poder sobre a arte das sombras, resguardada à séculos pelos Kinkou.",
-		"Você recebe visão no escuro de 60 pés, não podendo discernir cores na escuridão, apenas tons de cinza.",
-		"Você se torna capaz de enxergar em escuridão mágica.",
-		"Você pode aprender e utilizar Sutras de escolas sombrias."
-	  ]
-	},
-	{
-	  "name": "Palma de Lótus",
-	  "cost": "◆◆",
-	  "prerequisites": "Força 15",
-	  "info": [
-		"Um pedaço da manopla quebrada de um antigo Bodisatva feita de bronze e trabalhada com sinais de prata, possui o desenho de uma flor de lótus antes de desabrochar, com inscrições que podem ser estudadas.",
-		"Utilizando uma ação bônus, você pode manifestar uma energia oscilante em sua mão, realizando em um ataque. O alvo deve fazer uma salvaguarda de Constituição e caso falhe, cairá no solo sem conseguir se levantar por um número de turnos igual ao seu modificador de Sabedoria."
-	  ]
-	},
-	{
-	  "name": "Pele de Pedra",
-	  "cost": "◆◆",
-	  "prerequisites": "Constituição 15 e 2 pontos de Ki",
-	  "info": [
-		"No mosteiro Wuju está uma estátua de um macaco que possui um bastão, em sua base há inscrições sobre agilidade e como a sintonia com a magia natural pode regenerar ferimentos de maneira acelerada.",
-		"Você recebe +1 de CA e recupera 1d4 de vida no início de cada um de seus turnos para cada 3 inimigos adjacentes à você."
-	  ]
-	},
-	{
-	  "name": "Troca do Dragão",
-	  "cost": "◆◆",
-	  "prerequisites": "Constituição 15",
-	  "info": [
-		"Esse pequeno manual contém um dos contos do Dragão, ensinamentos antigos do mosteiro de Shojin, porém algumas letras estão escritas com um tom mais próximo do vermelho. Ao ser decifrado, esse manual transmite esse Sutra.",
-		"Ao acertar um ataque em um alvo usando uma arma Bodisatva ou um ataque desarmado, você pode optar por gastar 1 ponto de Ki e 1 ponto de Vida para causar um dado de dano adicional."
-	  ]
-	},
-	{
-	  "name": "Furto do Rei Macaco",
-	  "cost": "◆◆◆",
-	  "prerequisites": "",
-	  "info": [
-		"Pré-Requisito, Bodisatva nível 5",
-		"Um pequeno manuscrito enrolado em faixas de seda, dentro de um vaso ornamental de um templo esquecido em Tevasa, conta a história de um vastaya Shimon extremamente ágil e esperto, que conseguiu a liderança de sua tribo ao vencer seus adversários em corridas.",
-		"Você pode manifestar uma energia oscilante em sua mão, podendo usá-la em um ataque. O alvo deve fazer uma salvaguarda de Constituição e caso falhe, esse ataque causa lentidão no alvo reduzindo sua velocidade em 25 pés por um número de turnos igual ao seu bônus de proficiência e você recebe essa movimentação como deslocamento adicional pela duração."
-	  ]
-	},
-	{
-	  "name": "Potência do Búfalo",
-	  "cost": "◆◆◆",
-	  "prerequisites": "Força 15 e 1 ponto de Ki",
-	  "info": [
-		"O que aparenta ser apenas um objeto decorativo moldado em pedra sabão, revela inscrições e caracteres antigos que levam ao entendimento de como transformar o Ki em força bruta.",
-		"Seu valor de Força aumenta em 2."
-	  ]
-	},
-	{
-	  "name": "Punho Suave",
-	  "cost": "◆◆◆",
-	  "prerequisites": "Sabedoria 15 e Destreza 15",
-	  "info": [
-		"Uma jóia de madrepérola que possui em sua moldura um antigo cântico a um antigo e esquecido Bodisatva cujas proezas foram abruptamente interrompidas em sua juventude pelo surgimento de uma ameaça sem igual.",
-		"Seus ataques desarmados diminuem temporariamente a força de um alvo, cada ataque desarmado que acerte um alvo retira 1 ponto de Força do alvo caso ele falhe em uma salvaguarda de Constituição de CD 18 + seu modificador de Sabedoria. Os pontos removidos são restaurados após o alvo realizar um descanso longo."
-	  ]
-	},
-	{
-	  "name": "Cálice de Cristal Quebrado",
-	  "cost": "◆◆◆◆",
-	  "prerequisites": "Sabedoria 15 e 4 pontos de Ki",
-	  "info": [
-		"Esse cálice de cristal foi quebrado e remontado com ouro ligando as partes quebradas. Um cálice que pertenceu a um nobre do passado, foi presenteado a ele por um exímio artesão, grato pelo nobre ter usado sua fortuna para restaurar as terras de uma terrível praga. Em sua base está um agradecimento ao nobre em caracteres que são visíveis apenas quando determinados líquidos são colocados no cálice.",
-		"Você emana uma aura curativa em um raio de 50 pés. Você e todos os seus aliados nessa área tem seus efeitos curativos dobrados."
-	  ]
-	},
-	{
-	  "name": "Escamas do Dragão",
-	  "cost": "◆◆◆◆",
-	  "prerequisites": "Constituição 15 e 3 pontos de Ki",
-	  "info": [
-		"Escrito em um pedaço de couro de algum lagarto, está um poema sobre a resiliência do Dragão, alternando entre uma forma extremamente polida e uma forma bem mundana, como se representasse o diálogo de duas pessoas de instrução distinta.",
-		"Sua pele se torna tão dura quanto o aço mais resistente, você recebe +2 em seu valor de Constituição e invulnerabilidade a dano ígneo e cortante."
-	  ]
-	},
-	{
-	  "name": "Vigília Sombria",
-	  "cost": "◆◆◆◆",
-	  "prerequisites": "Sabedoria 15, 2 pontos de Ki e Bodisatva de uma Escola Sombria",
-	  "info": [
-		"Uma antiga pintura sobre a anatomia de um animal voador desconhecido possui algumas imagens com escrituras cifradas que tratam sobre a arte da Mortalha e falam sobre a Lágrima da Sombra.",
-		"Quando você cair inconsciente, sua sombra se eleva protegendo seu corpo desacordado, essa sombra possui todas as suas estatísticas e características de classe, possuindo também resistência à dano físico não mágico, necrótico, venenoso e possui imunidade à todas as condições, porém não pode sair do lugar e possui vulnerabilidade à dano radiante. Caso ela caia a 0 pontos de vida ela retorna à ser apenas sua sombra. Quando a sua sombra retorna ao normal, toda a informação obtida por ela retorna à você."
-	  ]
-	},
-	{
-	  "name": "Arauto de Ouro",
-	  "cost": "◆◆◆◆◆",
-	  "prerequisites": "Força 18 e 5 pontos de Ki",
-	  "info": [
-		"Esse par de anéis de ouro possuem inscrições em seu interior, quando alinhados, eles revelam um poema sobre a força e como ela é desperdiçada em atos sem sentido.",
-		"Alvos que sofram dano de seus ataques desarmados devem fazer uma salvaguarda de Constituição de CD 20 + seu modificador de Sabedoria ou recebem o dobro de dano."
-	  ]
-	},
-	{
-	  "name": "Benção das Primeiras Terras",
-	  "cost": "◆◆◆◆◆",
-	  "prerequisites": "Ioniano, Sabedoria 18 e 4 pontos de Ki",
-	  "info": [
-		"Um turíbulo feito de pedra e vidro que possui algumas inscrições que são visíveis somente quando exposto a calor intenso, revelando uma história sobre as Primeiras Terras em um passado longínquo. A história é uma fábula para crianças que conta sobre um tempo onde o mundo espiritual e material eram um só.",
-		"Os espíritos das Primeiras Terras têm um certo carinho por você, muitos deles o acompanhando em suas viagens, uma vez por descanso curto ou longo, ao receber dano que o deixaria com menos de 1 ponto de vida, os espíritos vão ao seu auxílio, fazendo com que você ignore o dano recebido, ficando invulnerável à todos os danos por dois turnos."
-	  ]
-	},
-	{
-	  "name": "Lanterna de Mercúrio",
-	  "cost": "◆◆◆◆◆",
-	  "prerequisites": "Destreza 16 e 4 pontos de Ki",
-	  "info": [
-		"Essa lanterna possui uma cápsula com uma substância prateada que se assemelha a mercúrio, quando o pavio em seu interior é aceso, essa lanterna emite uma luz espectral que causa calmaria. Ao ser posicionada sobre o papel certo, é possível ler um texto em um idioma antigo.",
-		"Enquanto você estiver sob qualquer iluminação mais forte que penumbra, você se torna imune a ataques surpresa, caso já possua tal imunidade, aplique seu bônus de proficiência em qualquer rolagem que envolva Destreza, seu bônus de proficiência nessas rolagens é dobrado, além de você sempre fazer essas rolagens em vantagem. Adicionalmente, seus ataques com armas à distância recebem +3 na rolagem de acerto e o dano causa seu bônus de sabedoria em d12 de dano radiante."
-	  ]
-	},
-	{
-	  "name": "Adaga do Homem Cinzento ",
-	  "cost": "◆◆◆◆◆◆",
-	  "prerequisites": "Sabedoria 18 e 8 de Ki",
-	  "info": [
-		"Uma adaga ornamental de uma época perdida, seu fio é cego e ela não possui utilidade além de decoração. Dizem que ela foi criada pelo próprio homem cinzento e acabou caindo nas mãos dos homens, criando desavença por onde passasse, até que foi adornada com duas jóias, uma opala negra e um diamante. Só então suas energias entraram em harmonia e em repouso.",
-		"Todo custo em Ki pode ser convertido em custo de pontos de vida."
-	  ]
-	},
-	{
-	  "name": "Graça de Shojin",
-	  "cost": "◆◆◆◆◆◆",
-	  "prerequisites": "Força 18, Destreza 18 e 6 de Ki",
-	  "info": [
-		"Esse manual com mais de 300 páginas relata contos perdidos sobre a sabedoria do Dragão ao meio de fórmulas de alquimia espiritual, em uma linguagem perdida há muito tempo.",
-		"Seu valor de Força passa a ser 22, caso seja menor. Como uma reação, você é capaz de ativar a potência interna desse Vel-Sutra, cobrindo seu corpo por uma espécie de armadura metálica dourada que é como uma segunda Pele, ela concede a você +3 de bônus na CA e faz com que todos seus ataques desarmados causem o seu bônus de Sabedoria em d10 de dano trovejante adicional."
-	  ]
-	},
-	{
-	  "name": "Lampejo de Foco",
-	  "cost": "◆◆◆◆◆◆",
-	  "prerequisites": "Constituição 18, Força 18 e 6 pontos de ki",
-	  "info": [
-		"Uma corrente antiga feita de prata contém em seus elos inscrições feitas em jade, outrora parte de uma estátua de um Bodisatva, é dito que a estátua original possuía um conhecimento secreto sobre como combater gigantes.",
-		"Um surto de velocidade e força transforma o Bodisatva em uma verdadeira máquina de destruição, seus movimentos se tornam mais rápidos garantindo foco e precisão. Metade do seu deslocamento é adicionado ao seu deslocamento atual e para cada golpe que você atingir, o triplo do seu bônus de proficiência é adicionado ao dano de seus ataques desarmados ou com armas corpo a corpo."
-	  ]
-	}
-  ]
+  {
+    "name": "Furto Luminar",
+    "cost": "◆",
+    "prerequisites": "Inteligência  13",
+    "info": [
+      "Um pequeno manuscrito possui um símbolo antigo para a palavra \"sombra\", com algumas inscrições ao redor desse símbolo e uma fita de cetim preto que parece ser imune à ação do tempo.",
+      "Você tem visão no escuro de 15 pés, caso já tenha essa característica, ela aumenta em 15 pés."
+    ]
+  },
+  {
+    "name": "Potência de Gong",
+    "cost": "◆",
+    "prerequisites": "Força 13",
+    "info": [
+      "Um talismã em forma de um punho cerrado feito de madeira entalhada e que possui uma inscrição sobre força percorrendo os dedos, uma espécie de quebra-cabeça da antiguidade na qual a sequência de palavras se conectam a determinados Mudras.",
+      "Seus ataques desarmados causam 1 de dano adicional."
+    ]
+  },
+  {
+    "name": "Presente da Serpente",
+    "cost": "◆",
+    "prerequisites": "Destreza 13 e 1 ponto de Ki",
+    "info": [
+      "Um cinto antigo feito da antiga pele de uma serpente, retirada sem que elas fosse danificada, possui uma estranha inscrição no seu decorrer, como se fossem traços já existentes na pele da serpente.",
+      "Seus ataques desarmados tem 5 pés de alcance adicional."
+    ]
+  },
+  {
+    "name": "Yanlei",
+    "cost": "◆",
+    "prerequisites": "Sabedoria 13",
+    "info": [
+      "Yanlei é um icor sombrio, também conhecido como \"lágrima sombria\". Esse icor é uma forma líquida materializada de energia mágica espiritual, ligada ao elemento Sombrio e a sua manipulação é extremamente perigosa, podendo alterar a psicologia e a constituição física de um ser vivo para algo inumano, sendo similar aos azakanas, aflorando as emoções negativas daquele ser. Quando você é iniciado na Ordem das Sombras, você recebe uma marca em seu corpo feita de uma tinta sombria especial, capaz de lhe dar o poder sobre a arte das sombras, resguardada à séculos pelos Kinkou.",
+      "Você recebe visão no escuro de 60 pés, não podendo discernir cores na escuridão, apenas tons de cinza.",
+      "Você se torna capaz de enxergar em escuridão mágica.",
+      "Você pode aprender e utilizar Sutras de escolas sombrias."
+    ]
+  },
+  {
+    "name": "Palma de Lótus",
+    "cost": "◆◆",
+    "prerequisites": "Força 15",
+    "info": [
+      "Um pedaço da manopla quebrada de um antigo Bodisatva feita de bronze e trabalhada com sinais de prata, possui o desenho de uma flor de lótus antes de desabrochar, com inscrições que podem ser estudadas.",
+      "Utilizando uma ação bônus, você pode manifestar uma energia oscilante em sua mão, realizando em um ataque. O alvo deve fazer uma salvaguarda de Constituição e caso falhe, cairá no solo sem conseguir se levantar por um número de turnos igual ao seu modificador de Sabedoria."
+    ]
+  },
+  {
+    "name": "Pele de Pedra",
+    "cost": "◆◆",
+    "prerequisites": "Constituição 15 e 2 pontos de Ki",
+    "info": [
+      "No mosteiro Wuju está uma estátua de um macaco que possui um bastão, em sua base há inscrições sobre agilidade e como a sintonia com a magia natural pode regenerar ferimentos de maneira acelerada.",
+      "Você recebe +1 de CA e recupera 1d4 de vida no início de cada um de seus turnos para cada 3 inimigos adjacentes à você."
+    ]
+  },
+  {
+    "name": "Troca do Dragão",
+    "cost": "◆◆",
+    "prerequisites": "Constituição 15",
+    "info": [
+      "Esse pequeno manual contém um dos contos do Dragão, ensinamentos antigos do mosteiro de Shojin, porém algumas letras estão escritas com um tom mais próximo do vermelho. Ao ser decifrado, esse manual transmite esse Sutra.",
+      "Ao acertar um ataque em um alvo usando uma arma Bodisatva ou um ataque desarmado, você pode optar por gastar 1 ponto de Ki e 1 ponto de Vida para causar um dado de dano adicional."
+    ]
+  },
+  {
+    "name": "Furto do Rei Macaco",
+    "cost": "◆◆◆",
+    "prerequisites": "",
+    "info": [
+      "Pré-Requisito, Bodisatva nível 5",
+      "Um pequeno manuscrito enrolado em faixas de seda, dentro de um vaso ornamental de um templo esquecido em Tevasa, conta a história de um vastaya Shimon extremamente ágil e esperto, que conseguiu a liderança de sua tribo ao vencer seus adversários em corridas.",
+      "Você pode manifestar uma energia oscilante em sua mão, podendo usá-la em um ataque. O alvo deve fazer uma salvaguarda de Constituição e caso falhe, esse ataque causa lentidão no alvo reduzindo sua velocidade em 25 pés por um número de turnos igual ao seu bônus de proficiência e você recebe essa movimentação como deslocamento adicional pela duração."
+    ]
+  },
+  {
+    "name": "Potência do Búfalo",
+    "cost": "◆◆◆",
+    "prerequisites": "Força 15 e 1 ponto de Ki",
+    "info": [
+      "O que aparenta ser apenas um objeto decorativo moldado em pedra sabão, revela inscrições e caracteres antigos que levam ao entendimento de como transformar o Ki em força bruta.",
+      "Seu valor de Força aumenta em 2."
+    ]
+  },
+  {
+    "name": "Punho Suave",
+    "cost": "◆◆◆",
+    "prerequisites": "Sabedoria 15 e Destreza 15",
+    "info": [
+      "Uma jóia de madrepérola que possui em sua moldura um antigo cântico a um antigo e esquecido Bodisatva cujas proezas foram abruptamente interrompidas em sua juventude pelo surgimento de uma ameaça sem igual.",
+      "Seus ataques desarmados diminuem temporariamente a força de um alvo, cada ataque desarmado que acerte um alvo retira 1 ponto de Força do alvo caso ele falhe em uma salvaguarda de Constituição de CD 18 + seu modificador de Sabedoria. Os pontos removidos são restaurados após o alvo realizar um descanso longo."
+    ]
+  },
+  {
+    "name": "Cálice de Cristal Quebrado",
+    "cost": "◆◆◆◆",
+    "prerequisites": "Sabedoria 15 e 4 pontos de Ki",
+    "info": [
+      "Esse cálice de cristal foi quebrado e remontado com ouro ligando as partes quebradas. Um cálice que pertenceu a um nobre do passado, foi presenteado a ele por um exímio artesão, grato pelo nobre ter usado sua fortuna para restaurar as terras de uma terrível praga. Em sua base está um agradecimento ao nobre em caracteres que são visíveis apenas quando determinados líquidos são colocados no cálice.",
+      "Você emana uma aura curativa em um raio de 50 pés. Você e todos os seus aliados nessa área tem seus efeitos curativos dobrados."
+    ]
+  },
+  {
+    "name": "Escamas do Dragão",
+    "cost": "◆◆◆◆",
+    "prerequisites": "Constituição 15 e 3 pontos de Ki",
+    "info": [
+      "Escrito em um pedaço de couro de algum lagarto, está um poema sobre a resiliência do Dragão, alternando entre uma forma extremamente polida e uma forma bem mundana, como se representasse o diálogo de duas pessoas de instrução distinta.",
+      "Sua pele se torna tão dura quanto o aço mais resistente, você recebe +2 em seu valor de Constituição e invulnerabilidade a dano ígneo e cortante."
+    ]
+  },
+  {
+    "name": "Vigília Sombria",
+    "cost": "◆◆◆◆",
+    "prerequisites": "Sabedoria 15, 2 pontos de Ki e Bodisatva de uma Escola Sombria",
+    "info": [
+      "Uma antiga pintura sobre a anatomia de um animal voador desconhecido possui algumas imagens com escrituras cifradas que tratam sobre a arte da Mortalha e falam sobre a Lágrima da Sombra.",
+      "Quando você cair inconsciente, sua sombra se eleva protegendo seu corpo desacordado, essa sombra possui todas as suas estatísticas e características de classe, possuindo também resistência à dano físico não mágico, necrótico, venenoso e possui imunidade à todas as condições, porém não pode sair do lugar e possui vulnerabilidade à dano radiante. Caso ela caia a 0 pontos de vida ela retorna à ser apenas sua sombra. Quando a sua sombra retorna ao normal, toda a informação obtida por ela retorna à você."
+    ]
+  },
+  {
+    "name": "Arauto de Ouro",
+    "cost": "◆◆◆◆◆",
+    "prerequisites": "Força 18 e 5 pontos de Ki",
+    "info": [
+      "Esse par de anéis de ouro possuem inscrições em seu interior, quando alinhados, eles revelam um poema sobre a força e como ela é desperdiçada em atos sem sentido.",
+      "Alvos que sofram dano de seus ataques desarmados devem fazer uma salvaguarda de Constituição de CD 20 + seu modificador de Sabedoria ou recebem o dobro de dano."
+    ]
+  },
+  {
+    "name": "Benção das Primeiras Terras",
+    "cost": "◆◆◆◆◆",
+    "prerequisites": "Ioniano, Sabedoria 18 e 4 pontos de Ki",
+    "info": [
+      "Um turíbulo feito de pedra e vidro que possui algumas inscrições que são visíveis somente quando exposto a calor intenso, revelando uma história sobre as Primeiras Terras em um passado longínquo. A história é uma fábula para crianças que conta sobre um tempo onde o mundo espiritual e material eram um só.",
+      "Os espíritos das Primeiras Terras têm um certo carinho por você, muitos deles o acompanhando em suas viagens, uma vez por descanso curto ou longo, ao receber dano que o deixaria com menos de 1 ponto de vida, os espíritos vão ao seu auxílio, fazendo com que você ignore o dano recebido, ficando invulnerável à todos os danos por dois turnos."
+    ]
+  },
+  {
+    "name": "Lanterna de Mercúrio",
+    "cost": "◆◆◆◆◆",
+    "prerequisites": "Destreza 16 e 4 pontos de Ki",
+    "info": [
+      "Essa lanterna possui uma cápsula com uma substância prateada que se assemelha a mercúrio, quando o pavio em seu interior é aceso, essa lanterna emite uma luz espectral que causa calmaria. Ao ser posicionada sobre o papel certo, é possível ler um texto em um idioma antigo.",
+      "Enquanto você estiver sob qualquer iluminação mais forte que penumbra, você se torna imune a ataques surpresa, caso já possua tal imunidade, aplique seu bônus de proficiência em qualquer rolagem que envolva Destreza, seu bônus de proficiência nessas rolagens é dobrado, além de você sempre fazer essas rolagens em vantagem. Adicionalmente, seus ataques com armas à distância recebem +3 na rolagem de acerto e o dano causa seu bônus de sabedoria em d12 de dano radiante."
+    ]
+  },
+  {
+    "name": "Adaga do Homem Cinzento ",
+    "cost": "◆◆◆◆◆◆",
+    "prerequisites": "Sabedoria 18 e 8 de Ki",
+    "info": [
+      "Uma adaga ornamental de uma época perdida, seu fio é cego e ela não possui utilidade além de decoração. Dizem que ela foi criada pelo próprio homem cinzento e acabou caindo nas mãos dos homens, criando desavença por onde passasse, até que foi adornada com duas jóias, uma opala negra e um diamante. Só então suas energias entraram em harmonia e em repouso.",
+      "Todo custo em Ki pode ser convertido em custo de pontos de vida."
+    ]
+  },
+  {
+    "name": "Graça de Shojin",
+    "cost": "◆◆◆◆◆◆",
+    "prerequisites": "Força 18, Destreza 18 e 6 de Ki",
+    "info": [
+      "Esse manual com mais de 300 páginas relata contos perdidos sobre a sabedoria do Dragão ao meio de fórmulas de alquimia espiritual, em uma linguagem perdida há muito tempo.",
+      "Seu valor de Força passa a ser 22, caso seja menor. Como uma reação, você é capaz de ativar a potência interna desse Vel-Sutra, cobrindo seu corpo por uma espécie de armadura metálica dourada que é como uma segunda Pele, ela concede a você +3 de bônus na CA e faz com que todos seus ataques desarmados causem o seu bônus de Sabedoria em d10 de dano trovejante adicional."
+    ]
+  },
+  {
+    "name": "Lampejo de Foco",
+    "cost": "◆◆◆◆◆◆",
+    "prerequisites": "Constituição 18, Força 18 e 6 pontos de ki",
+    "info": [
+      "Uma corrente antiga feita de prata contém em seus elos inscrições feitas em jade, outrora parte de uma estátua de um Bodisatva, é dito que a estátua original possuía um conhecimento secreto sobre como combater gigantes.",
+      "Um surto de velocidade e força transforma o Bodisatva em uma verdadeira máquina de destruição, seus movimentos se tornam mais rápidos garantindo foco e precisão. Metade do seu deslocamento é adicionado ao seu deslocamento atual e para cada golpe que você atingir, o triplo do seu bônus de proficiência é adicionado ao dano de seus ataques desarmados ou com armas corpo a corpo."
+    ]
+  }
+]

@@ -2,11 +2,11 @@ import inheritances from '../../dataSource/inheritances.json'
 import origins from '../../dataSource/origins.json'
 
 const lineages = []
-origins.forEach(origin => origin.lineages.forEach(lineage => lineages.push(lineage)))
+origins.forEach((origin) => origin.lineages.forEach((lineage) => lineages.push(lineage)))
 
 const inheritanceLineages = []
 inheritances.forEach((inheritance, inheritanceIndex) => {
-  inheritance.lineages.forEach(lineage => {
+  inheritance.lineages.forEach((lineage) => {
     if (lineages.includes(lineage)) {
       inheritanceLineages.push({
         inheritanceId: inheritanceIndex + 1,

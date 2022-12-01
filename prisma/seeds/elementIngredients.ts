@@ -1,9 +1,9 @@
 import elements from '../../dataSource/elements.json'
-const elementsName = elements.map(item => item.name)
+const elementsName = elements.map((item) => item.name)
 const recipes = []
 
-elements.forEach(element => {
-  element.recipes.forEach(recipe => {
+elements.forEach((element) => {
+  element.recipes.forEach((recipe) => {
     recipes.push(recipe)
   })
 })
@@ -11,7 +11,7 @@ elements.forEach(element => {
 const elementIngrendients = []
 
 recipes.forEach((recipe, recipeIndex) => {
-  recipe.forEach(ingrendient => {
+  recipe.forEach((ingrendient) => {
     elementIngrendients.push({
       elementRecipeId: recipeIndex + 1,
       elementId: elementsName.indexOf(ingrendient) + 1,

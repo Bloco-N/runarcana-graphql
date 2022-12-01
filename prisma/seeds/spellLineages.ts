@@ -2,11 +2,11 @@ import spells from '../../dataSource/spells.json'
 import origins from '../../dataSource/origins.json'
 
 const lineages = []
-origins.forEach(origin => origin.lineages.forEach(lineage => lineages.push(lineage)))
+origins.forEach((origin) => origin.lineages.forEach((lineage) => lineages.push(lineage)))
 
 const spellLineages = []
 spells.forEach((spell, spellIndex) => {
-  spell.origins.forEach(lineage => {
+  spell.origins.forEach((lineage) => {
     if (lineages.includes(lineage)) {
       spellLineages.push({
         spellId: spellIndex + 1,

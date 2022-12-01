@@ -1,1161 +1,1161 @@
 [
-	{
-	  "name": "Agitação",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "possuir Ki",
-	  "info": [
-		"O poder de seu espírito é maior que o normal, fortalecendo seus ataques quando você o usa. Uma vez por rodada, após gastar 2 pontos de Ki, seus próximos 2 ataques desarmados causam 1d4 de dano adicional. Esse dano não se acumula.",
-		"O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Anime-se",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você possui uma natureza inquieta, recebendo um número diferente de cargas de animação para cada acontecimento ao seu redor:",
-		"Ao atingir uma criatura 2 vezes na mesma rodada você recebe 1 carga;",
-		"Ao ver um aliado realizar um acerto crítico você recebe 2 cargas;",
-		"Ao realizar um acerto crítico você recebe 3 cargas;",
-		"Ao ver um aliado reduzir uma criatura a 0 pontos de vida você recebe 4 cargas;",
-		"Quando você reduzir uma criatura a 0 pontos de vida você recebe 5 cargas;",
-		"A cada carga de animação que você possua, uma vez por rodada, seu ataque desarmado ou com arma causa metade de seu bônus de proficiência como dano adicional e, a cada 5 cargas, seu deslocamento aumenta em 10 pés. Você pode acumular até o máximo de 5 cargas de animação, elas retornam para 0 após 1 hora. Seu máximo de cargas aumenta em 5 no 9º nível (10 cargas) e no 17º nível (15 cargas)."
-	  ]
-	},
-	{
-	  "name": "Aprumo Marcial",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao fazer um ataque corpo a corpo, você pode fazer uma movimentação de até 5 pés que não causa ataque de oportunidade, além disso, ao se mover você recebe um bônus em sua CA igual a metade de seu bônus de proficiência até o início de seu próximo turno. Esse bônus na CA só pode ser ativado um a vez por rodada."
-	  ]
-	},
-	{
-	  "name": "Apunhalar",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você sabe como tirar vantagem de criaturas desavisadas, aproveitando a oportunidade para atingir onde dói. Uma vez por rodada, ao atingir uma criatura surpresa ou que não possa vê-lo, seu primeiro ataque contra essa criatura causa 2d4 de dano adicional.",
-		"O dano dessa runa aumenta em 2d4 ao atingir o 9º nível (4d4) e o 17º nível (6d4)."
-	  ]
-	},
-	{
-	  "name": "Ataque Amaldiçoado",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Seus ataques carregam a mácula de uma maldição antiga. Uma vez por rodada, seu primeiro ataque corpo a corpo contra uma criatura inflige uma marca amaldiçoada caso atinja o alvo. Um alvo marcado sofre metade de seu bônus de proficiência como dano adicional sempre que for atingido por um ataque até o final de seu próximo turno.",
-		"Esse alvo também deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo está Enfraquecido até o final de seu próximo turno. Uma criatura marcada se torna imune a essa runa por um número de rodadas igual a 10 - seu bônus de proficiência."
-	  ]
-	},
-	{
-	  "name": "Barreira de Ki",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "possuir Ki",
-	  "info": [
-		"Utilizar a energia natural protege seu corpo temporariamente de ataques. Uma vez por rodada, após gastar ao menos 1 ponto de Ki, você recebe +1 de CA e 1d4 + seu bônus de proficiência em pontos de vida temporários. Esse bônus em sua CA permanece enquanto esses pontos de vida temporários estiverem ativos e não se acumula. Adicionalmente, para cada ponto de Ki adicional que você gastar aumenta os pontos de vida temporários recebidos em 1d4."
-	  ]
-	},
-	{
-	  "name": "Batida do Amor",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao fazer ataques com armas à distância, você causa seu bônus de proficiência em dano adicional sempre que ataca um alvo não atacado no seu último ataque."
-	  ]
-	},
-	{
-	  "name": "Bênção da Forja Viva",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao receber cura você pode adicionar o seu bônus de proficiência à cura recebida, adicionalmente você recebe +1 de CA por 1 minuto, além de vantagem em salvaguardas de magias por uma quantidade de rodadas igual ao seu bônus de proficiência, nenhum desses bônus é cumulativo."
-	  ]
-	},
-	{
-	  "name": "Caçador Noturno",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você sabe como se mover sem ser percebido, aproveitando ao máximo a falta de visibilidade de seus inimigos. Quando na penumbra, escuridão ou invisível, você recebe 10 pés de deslocamento adicional e seus ataques causam uma vez e meia seu bônus de proficiência como dano adicional, você também recebe o dobro de seu deslocamento nessas condições."
-	  ]
-	},
-	{
-	  "name": "Cadência Marcial",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Seu primeiro ataque contra um inimigo, utilizando uma arma corpo a corpo, causa 1 dado de dano adicional (ex. 2d6 vira 3d6). Um alvo que sofra esse dano adicional, não pode ser afetado novamente por 10 - seu bônus de proficiência em rodadas.",
-		"O dano dessa runa aumenta para 2 dados adicionais ao atingir o 9º nível e para 3 dados adicionais no 17º nível."
-	  ]
-	},
-	{
-	  "name": "Caminho da Guerra",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com uma arma marcial",
-	  "info": [
-		"Se você não estiver caído e usar uma arma marcial, seus ataques corpo a corpo causam dano adicional igual a metade do seu bônus de proficiência (arredondado para baixo) para cada 15 pés de deslocamento (ex. se você tem deslocamento base de 30 pés, e proficiência 2, você causa +2 de dano)."
-	  ]
-	},
-	{
-	  "name": "Centelha Primordial",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Sua existência foi tocada por uns dos elementos primordiais, escolha entre Luz ou Sombra. Ao atingir um alvo com um dano elemental simples ou mágico do elemento escolhido, você deixa uma carga primordial no alvo que dura por até 1 minuto, seu próximo ataque contra o mesmo alvo estoura essa carga causando 1d4 de dano adicional do mesmo tipo causado e, caso seja de seu elemento primordial, não gera uma nova carga.",
-		"O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Chamado de Freljord",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Freljordiano",
-	  "info": [
-		"Ao acertar um ataque corpo a corpo crítico, adicione seu bônus de proficiência como dano extra para você e um aliado e aumenta o deslocamento de ambos em 5 pés por três rodadas."
-	  ]
-	},
-	{
-	  "name": "Dádiva dos Afogados",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A sua vingança virá quando seus inimigos menos esperam. Quando na penumbra, escuridão ou invisível, você recupera 1d4 + seu bônus de proficiência como pontos de vida no início de cada um de seus turnos. Esse Pulso Rúnico só é ativado caso você esteja em combate.",
-		"Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Dança do Duelista",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com uma arma de acuidade",
-	  "info": [
-		"Caso você use apenas uma arma em mãos, com a propriedade de acuidade, você pode uma vez por turno escolher um ataque feito com esta arma. Se você tiver sucesso nesse ataque você causa dano adicional igual a metade do seu bônus de proficiência em todos os ataques desse turno e pode recuperar metade do seu bônus de proficiência (arredondado para baixo) em pontos de vida para cada acerto."
-	  ]
-	},
-	{
-	  "name": "Dando Corda",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Construto",
-	  "info": [
-		"A energia remanescente produzida por seus ataques é convertida em poder para fortalecer ainda mais seus golpes. Ao atingir sucessivamente uma única criatura hostil com um ataque, você adiciona metade de seu bônus de proficiência como dano energético adicional para cada ataque que atingir o alvo, até o máximo de 5 vezes seu bônus de proficiência.",
-		"Por exemplo, no nível 1 seu segundo ataque bem sucedido causará 1 de dano adicional, o terceiro 2 de dano e assim sucessivamente. Ao atacar um novo alvo, ou ficar uma rodada sem causar dano a esse alvo, esse dano adicional retorna a 0."
-	  ]
-	},
-	{
-	  "name": "Descarga Energética",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Construto",
-	  "info": [
-		"Enquanto você estiver abaixo de metade de sua vida, inimigos que estejam a até 15 pés de você, devem realizar uma salvaguarda de Destreza CD (8 + seu bônus de proficiência + seu modificador de Constituição). Em uma falha, uma criatura afetada recebe uma descarga, sofrendo 1d4 de dano energético. Quando uma descarga ocorre, uma nova descarga só poderá ocorrer após 1d4 turnos. Você desfere um número de descargas igual ao seu modificador de Constituição (mínimo de 1) por descanso curto ou longo. Ao alcançar o nível 8 seu dano se torna 1d8 e no 18º se torna 3d4."
-	  ]
-	},
-	{
-	  "name": "Devorador de Almas",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Seus ataques corpo a corpo que causam dano recuperam metade da sua proficiência arredondada para cima em pontos de vida."
-	  ]
-	},
-	{
-	  "name": "Disciplina da Força",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com uma arma marcial",
-	  "info": [
-		"Quando você faz um ataque com uma arma marcial de combate corpo a corpo, você pode adicionar metade do seu bônus de proficiência (arredondado para baixo) ao dano causado. Caso seu último ataque tenha sido contra o mesmo alvo, você passa a causar o seu bônus de proficiência como dano."
-	  ]
-	},
-	{
-	  "name": "Divisão Celular",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Runinata com Consistência Gelatinosa",
-	  "info": [
-		"Sempre que você receber dano, você perde parte de si mesmo. Essa parte é liberada em um ponto desocupado a até 15 pés de você, à escolha do Mestre. Quando você ocupar o mesmo espaço que sua parte perdida, você recupera 1d4 + metade de seu bônus de proficiência em pontos de vida. Caso outra criatura que não você ocupe o mesmo espaço que sua parte perdida, ela é destruída."
-	  ]
-	},
-	{
-	  "name": "Domínio da Ira",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Durante o combate você ganha 1 ponto de ira para cada ataque corpo a corpo bem-sucedido até o máximo de 10 pontos de ira. Esta ira fortalece seus ataques corpo a corpo, aumentando seu dano no valor de sua proficiência para cada 5 pontos de ira acumulada. Você recebe 1 ponto de ira adicional quando estiver com menos da metade da vida e pode gastar todos os seus pontos de ira a qualquer momento como uma ação bônus e recuperar essa quantidade de pontos de ira multiplicados por metade do seu modificador de Constituição em pontos de vida. No 10º nível seu máximo de pontos de ira aumenta para 15 e no 20º nível aumenta para 20."
-	  ]
-	},
-	{
-	  "name": "Escolhido da Tormenta",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao receber dano que deixaria sua vida abaixo de 1, você se cura metade de seus pontos de vida máximo ao longo dos próximos turnos. Quando isso acontece, você cura ¹/₄ da sua vida máxima, arredondado para baixo, instantâneamente. Adicionalmente, no início de cada um de seus turnos você se cura um número igual ao seu modificador de Constituição (mínimo de 1) até completar ¹/₄ de sua vida máxima.",
-		"Ou seja, caso você possua um valor de Constituição 14 e 30 pontos de vida máximos, e estiver com 5 pontos de vida atuais. Ao receber 10 de dano, você se cura automaticamente 7 pontos de vida, ficando com 2 ao invés de -5, e no início de seus próximos turnos você cura em 2 até completar os 8 pontos de vida restantes, totalizando os 15 pontos de vida curados por essa runa. Esse efeito acontece apenas uma vez por descanso longo."
-	  ]
-	},
-	{
-	  "name": "Essência da Guerra",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Cada ataque que você causar dano ao alvo se converte em pontos de vida temporários igual à metade de seu bônus proficiência arredondado para baixo."
-	  ]
-	},
-	{
-	  "name": "Fervor Ioniano",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Ioniano\"",
-	  "info": [
-		"Ao acertar um inimigo, ganha uma carga, até o máximo de 3 cargas. Ao atingir o máximo de cargas, causa o total de 3 vezes metade do seu bônus de proficiência, arredondado para baixo, de dano energético e o contador reinicia. Passar um de seus turnos sem acertar um ataque reinicia os acúmulos."
-	  ]
-	},
-	{
-	  "name": "Fúria Ampliada",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Variante Ignata e não pode ter proficiência em lançar magias",
-	  "info": [
-		"Durante o combate você ganha 1 ponto de ira para cada ataque corpo a corpo bem-sucedido até o máximo de 10 pontos de ira. Essa ira fortalece sua resistência, concedendo a você redução de dano igual a metade do seu valor de Ira. Você recebe 1 ponto de ira adicional quando acerta um ataque crítico e pode gastar todos os seus pontos de ira a qualquer momento como uma ação bônus e causar essa quantidade de pontos multiplicado pela metade do seu modificador de Força como dano adicional em seu próximo ataque corpo a corpo bem sucedido. No 10º nível seu máximo de pontos de ira aumenta para 15 e no 20º nível aumenta para 20."
-	  ]
-	},
-	{
-	  "name": "Fúria do Meio-Dragão",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Meio-Dragão",
-	  "info": [
-		"Você possui uma natureza mais resistente contra ataques de Dragões, se fortalecendo ao abatê-los. Você possui vantagem em testes e salvaguardas para resistir a qualquer efeito ou ataque de um dragão.",
-		"Adicionalmente, uma vez por rodada, você causa seu bônus de proficiência como dano adicional ao seus ataques. Esse dano adicional é do mesmo tipo que sua arma de sopro.",
-		"Forma Dracônica. Enquanto em sua Forma Dracônica, o dano adicional concedido por esse Pulso se torna 2 vezes seu bônus de proficiência."
-	  ]
-	},
-	{
-	  "name": "Furto de Essência",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Capacidade de conjurar ao menos uma magia",
-	  "info": [
-		"Você possui uma capacidade inata de roubar parte da essência do espírito de uma criatura para si. Ao conjurar uma magia que cause dano a um inimigo, você recebe 1 carga. Ao atingir o máximo de cargas, você recupera 2d4 + seu bônus de proficiência + seu modificador de conjuração em pontos de vida, após isso acontecer, as cargas retornam para 0. O valor máximo de suas cargas é igual a 9 - seu bônus de proficiência.",
-		"Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (3d4) e o 17º nível (4d4)."
-	  ]
-	},
-	{
-	  "name": "Golpes Concussivos",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com uma arma contundente",
-	  "info": [
-		"É extremamente difícil se manter em pé ao receber um de seus ataques e a sucessão de golpes podem fazer com que uma criatura perca completamente seu senso de equilíbrio. Ao atingir uma criatura hostil com um ataque, você o marca. Sempre que você ou um aliado causar dano contundente, simples ou mágico, em um alvo marcado, ele recebe uma carga concussiva.",
-		"Ao atingir 4 cargas, o próximo ataque que atingir esse alvo, faz com que ele deva realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Atordoado até o final da próxima rodada. Uma criatura Atordoada se torna imune a essa runa por um número de rodadas igual a 10 - seu bônus de proficiência."
-	  ]
-	},
-	{
-	  "name": "Hemorragia",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com uma arma cortante",
-	  "info": [
-		"Cada vez que você causa dano cortante em um oponente com um ataque corpo a corpo, você ganha uma carga contra aquele inimigo. Ao alcançar 5 cargas, todo dano cortante que você faz contra ele é maximizado (ex. 2d6 causa sempre 12 de dano) até que ele cure ao menos 1 ponto de vida e zere as cargas. A cada rodada que o alvo não receber uma nova carga, as cargas são reduzidas em 1 ponto."
-	  ]
-	},
-	{
-	  "name": "Investida Implacável",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A cada ataque corpo a corpo bem sucedido contra um inimigo, você ganha 1 carga, ao completar 5 cargas, elas reiniciam e você ganha a característica Ataque Extra até o final do seu próximo turno e adiciona seu bônus de proficiência ao dano desse ataque extra. Se você já tem a característica Ataque Extra/Ataque Múltiplo, ao invés disso ele é acrescentado de 1 e recebe o mesmo bônus de dano."
-	  ]
-	},
-	{
-	  "name": "Lâminas Sombrias",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A cada 3 ataques com uma arma corpo a corpo bem-sucedidos, o próximo ataque com arma corpo a corpo que atingir um inimigo causa seu bônus de proficiência em dano necrótico em uma área de 5 pés ao redor do alvo e cura você com um valor igual ao do dano causado. Alvos na área podem fazer uma salvaguarda de Constituição para receber apenas metade do dano."
-	  ]
-	},
-	{
-	  "name": "Lembrança de Statikk",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você recebe resistência a dano elétrico.",
-		"Choque de Statikk: A cada três ataques bem sucedidos, seu próximo ataque desencadeia um raio que salta por até 5 alvos. Esses alvos devem realizar uma salvaguarda de Destreza. Em uma falha, um alvo receberá seu bônus de proficiência como dano elétrico e o raio salta para um alvo adicional a até 15 pés. Em um sucesso, além de não receber dano algum, a cadeia de raios é interrompida. Um alvo não pode ser atingido mais de uma vez por esse pulso rúnico quando o mesmo é ativado."
-	  ]
-	},
-	{
-	  "name": "Lutador Ágil",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Destreza 13",
-	  "info": [
-		"Sua agilidade é inegável, fazendo com que atingi-lo com um golpe letal seja um feito e tanto. Você pode se mover por espaços ocupados (mas não terminar seu turno neles) e, adicionalmente, você reduz todo o dano recebido em um valor igual ao seu bônus de proficiência. Você não diminui o dano recebido através de condições."
-	  ]
-	},
-	{
-	  "name": "Marca de Caça",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A caçada faz parte de sua essência e todos seus alvos que sabem disso estão enterrados a 7 palmos do chão. Ao atingir sucessivamente uma única criatura hostil com um ataque desarmado ou com arma, você causa 1 ponto de dano adicional para cada ataque desarmado ou com arma que atingir o alvo, até o máximo de 5 vezes seu bônus de proficiência. Por exemplo, seu segundo ataque bem sucedido causará 1 de dano adicional, o terceiro 2 de dano e assim sucessivamente. Ao atacar um novo alvo, ou ficar uma rodada sem causar dano a esse alvo, esse dano adicional retorna a 0."
-	  ]
-	},
-	{
-	  "name": "Misericórdia",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você causa 1d6 de dano + seu bônus de proficiência em dano adicional a inimigos com alguma condição debilitante como Caído, Atordoado, Incapacitado, Cego, etc."
-	  ]
-	},
-	{
-	  "name": "Munição de Energia",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com armas à distância",
-	  "info": [
-		"Os ataques com armas à distância causam metade do seu bônus de proficiência, arredondado para baixo, em dano energético adicional."
-	  ]
-	},
-	{
-	  "name": "Perseverança",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Sua determinação em combate é inigualável, você nunca desiste e isso é refletido em seu poder rúnico. Desde que você não tenha recebido dano nas últimas 2 rodadas e não esteja Incapacitado, você recupera metade de seu bônus de proficiência como pontos de vida no início de cada um de seus turnos. Esse Pulso Rúnico só é ativado caso você esteja em combate."
-	  ]
-	},
-	{
-	  "name": "Pés Ligeiros",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao acertar um ataque corpo a corpo em um inimigo você ganha uma explosão de 10 pés de deslocamento adicional por 1 minuto e um escudo de mitigação de dano igual a metade do seu bônus de proficiência arredondado para baixo. Esse efeito não é cumulativo, após 1 minuto ele pode ser renovado caso você acerte outro ataque corpo a corpo."
-	  ]
-	},
-	{
-	  "name": "Poder Maligno Fenomenal",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "habilidade de conjuração",
-	  "info": [
-		"Ao atingir uma criatura com uma magia ou reduzir uma criatura a 0 pontos de vida, você recebe 1 carga. Suas magias de dano, causam 1/3 de seu bônus de proficiência (mínimo de 1) de dano adicional para cada carga que você possua. Essas cargas retornam a 0 no final de um descanso longo."
-	  ]
-	},
-	{
-	  "name": "Potência Arcana",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Capacidade de conjurar ao menos uma magia",
-	  "info": [
-		"Sua capacidade de conjuração é mais forte que a da maioria das criaturas. Ao conjurar uma magia de 1º nível ou superior, seus próximos dois ataques causam 1d4 + seu bônus de proficiência como dano adicional. Essa runa só é ativada quando nenhum de seus ataques estejam causando dano adicional através desse Pulso Rúnico.",
-		"O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Proteção da Égide",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Proficiência com escudos",
-	  "info": [
-		"Isso fica ativo apenas quando você tem um escudo equipado. Quando um ataque não te acertar, você ganha uma carga. Após 4 cargas você bloqueia automaticamente o próximo ataque que acertaria você, não recebe dano algum desse ataque e um aliado a até 10 pés de você recebe um escudo temporário que mitiga o dobro do seu bônus de proficiência em dano recebido por um número de rodadas igual seu bônus de proficiência."
-	  ]
-	},
-	{
-	  "name": "Salvação",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Capacidade de conjurar ao menos uma magia",
-	  "info": [
-		"Você sempre sabe quando um de seus amigos precisa de você, indo para seu auxílio o mais rápido que pode. Quando um aliado a até 120 pés de você estiver com menos da metade de seus pontos de vida máximos, você recebe 20 pés de deslocamento adicional, esse bônus não é cumulativo. Adicionalmente, ao recuperar pontos de vida desse aliado através de uma magia, você adiciona 1d4 + seu bônus de proficiência aos pontos de vida recuperados pela magia.",
-		"Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Seiva Mágica",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Antroplantæ",
-	  "info": [
-		"Sua seiva possui propriedades curativas únicas, fazendo com que você possa absorver sua magia periodicamente. Desde que você não esteja com seus pontos de vida máximos, ao atingir um inimigo, você recupera 1d4 + seu bônus de proficiência como pontos de vida. Você não pode recuperar pontos de vida dessa maneira por 10 - seu bônus de proficiência em rodadas. Adicionalmente, uma vez por turno ao receber dano, você diminui em 1 o número de rodadas para que você possa recuperar pontos de vida dessa maneira.",
-		"Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Sifão da Alma",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Sempre que você causar dano necrótico a uma criatura hostil, você recupera seu bônus de proficiência em pontos de vida."
-	  ]
-	},
-	{
-	  "name": "Tiro Gelado",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "Freljordiano",
-	  "info": [
-		"O gelo está em seu sangue. Uma vez por rodada, ao atingir um alvo com um ataque à distância, o deslocamento do alvo é reduzido um número de pés igual a 5 multiplicado por metade de seu bônus de proficiência até o final de seu próximo turno. Uma criatura que tenha seu deslocamento reduzido dessa maneira não pode ser afetada por essa runa mais de uma vez.",
-		"Além disso, sempre que você atingir um alvo que esteja com seu deslocamento reduzido, você causa seu bônus de proficiência como dano adicional."
-	  ]
-	},
-	{
-	  "name": "Toque Amaldiçoado",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Seus ataques físicos corpo a corpo amaldiçoam um inimigo por 1 minuto, fazendo com que recebam metade do seu bônus de proficiência, arredondado para baixo, em dano necrótico adicional vindo de você. Apenas 1 inimigo pode ser amaldiçoado por vez."
-	  ]
-	},
-	{
-	  "name": "Tributo do Rei",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você possui um direito de nascença para governar por cima das outras criaturas e aquelas que se negam a obedecê-lo devem sucumbir aos seus pés. Sempre que um inimigo a até 120 pés de você for reduzido a 0 pontos de vida, você recupera 1d4 + seu bônus de proficiência em pontos de vida. Você não recupera pontos de vida dessa maneira caso o ND da criatura abatida for menos que a metade de seu bônus de proficiência.",
-		"Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
-	  ]
-	},
-	{
-	  "name": "Visão Espiritual",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você é capaz de enxergar criaturas do mundo espiritual. Ao escolher esse Pulso Rúnico, você deve definir qual tipo de criatura você é capaz de enxergar normalmente: Espectros (Akanas), Kanmei ou Azakanas.",
-		"Akana. Você pode falar o idioma Ochnum e tem resistência a dano venenoso.",
-		"Azakana. Você pode falar o idioma Demoníaco e tem resistência a dano venenoso.",
-		"Kanmei. Você pode falar o idioma Espiritual e tem resistência a dano radiante."
-	  ]
-	},
-	{
-	  "name": "Voracidade",
-	  "type": "Pulso Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Cada vez que um inimigo é derrotado a até 35 pés de você e que você tenha causado dano corpo a corpo no último turno, você pode, com sua reação, fazer um ataque corpo a corpo adicional, o número máximo de ataques corpo a corpo que você pode fazer é igual ao seu bônus de proficiência.",
-		"A Fagulha Rúnica é a primeira manifestação dos poderes rúnicos que podem ser controlados, são pequenos espasmos de energia rúnica que transborda nos aventureiros e permite a eles realizarem alguns feitos adicionais."
-	  ]
-	},
-	{
-	  "name": "Ataque Elemental",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"As runas globais lhe concederam uma capacidade de controlar um elemento. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10. Ao ativar essa runa, seu próximo ataque causa 1d8 de dano adicional de um tipo baseado no elemento escolhido. Além disso, você recebe resistência a danos do tipo do elemento escolhido até o início de seu próximo turno.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma linha de cor ligada ao elemento escolhido, você deve realizar um ataque à distância com runa contra uma criatura que você possa ver no seu alcance de ativação erma. Caso atinja, o alvo sofre 2d8 + seu modificador de Atributo de runas. Além disso, você recebe resistência a danos do tipo do elemento escolhido até o início de seu próximo turno.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Atropelar",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"As runas que fortalecem o seu corpo fazem com que seus inimigos se arrependam de entrar em seu caminho. Ao se mover pelo menos metade de seu deslocamento em linha reta, você pode ativar essa runa para que seu próximo ataque seja fortalecido. Até o início de seu próximo turno, seu próximo ataque corpo a corpo causa 1d8 de dano adicional e, caso o ataque seja contra uma criatura de até uma categoria de tamanho acima que a sua, você faz com que ela deva realizar uma salvaguarda de Força. Em uma falha, a criatura fica Caída. Além disso, você pode se mover através do espaço ocupado por essa criatura nesse turno.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma força invisível contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Esse alvo deve realizar uma salvaguarda de Força. Em uma falha, a criatura sofre 1d6 + seu modificador de Atributo de runas de dano rúnico e fica Caída.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Barreira de Mana",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Constituição 15",
-	  "info": [
-		"A mana possui um certo favoritismo por você, lhe protegendo quando é mais necessário. Ao ser alvo de um ataque, você pode usar sua reação para ativar um escudo temporariamente. Ao fazer isso, você recebe 1d10 + [seu bônus de proficiência multiplicado pelo seu modificador de Constituição] como pontos de vida temporários. Esses pontos de vida temporários duram até ser removidos ou após 1 minuto, enquanto esses pontos de vida temporários estiverem ativos, você recebe resistência a danos simples.",
-		"Melhorias",
-		"Escudo: +1d10 de pontos de vida temporários por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: Enquanto os pontos de vida temporários estiverem ativos, você recebe resistência a danos mágicos"
-	  ]
-	},
-	{
-	  "name": "Cegar",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Ao realizar um ataque de acerto a distância com arma ou magia, você pode utilizar essa runa para causar Cegueira ao inimigo atingido. Esse inimigo deve realizar uma salvaguarda de constituição, se falhar ele ficará Cego por até o final de seu próximo turno e receberá 1d6 de dano psíquico.",
-		"Erma: Ao ser usada de forma erma, essa runa dispara um projétil no alcance de Conjuração de Runa Erma. A criatura atingida deve realizar uma salvaguarda de Constituição, numa falha ficará Cega até o final de seu próximo turno e receberá 1d4 de dano psíquico.",
-		"Melhorias",
-		"Uso: +1 uso por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: +1 uso e a CD aumenta em 2"
-	  ]
-	},
-	{
-	  "name": "Chamas Infernais",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Meio-Dragão Infernal",
-	  "info": [
-		"Você invoca as chamas de sua alma para fortalecer seu próximo ataque. Ao realizar um ataque corpo a corpo, você pode utilizar essa runa para causar 2d10 de dano ígneo adicional, caso atinja o alvo, ele deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Chamuscado sofrendo 1d10 de dano ígneo por turno.",
-		"Forma Dracônica. Enquanto em sua Forma Dracônica, ao atingir um ataque, criaturas em um cone de 10 pés atrás do alvo atingido devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 1d10 de dano ígneo.",
-		"Melhorias",
-		"Dano: +1d10 de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1d10 de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Conjuração Fortalecida",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Capacidade de conjurar ao menos uma magia",
-	  "info": [
-		"As runas lhe concedem um fortalecimento em suas conjurações. Ao ativar essa runa, sua próxima magia de ataque ou que force uma criatura a realizar uma salvaguarda para receber dano, ela irá causar 2d8 de dano adicional. Essa runa só se aplica uma vez por magia.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Deslocamento",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você recebe um pico de energia momentâneo, aumentando sua velocidade consideravelmente. Ao ativar essa runa, você recebe 30 pés de deslocamento adicional e +1 de CA até o final de seu próximo turno.",
-		"Melhorias",
-		"Deslocamento: +15 pés de deslocamento por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 uso e o bônus de CA aumenta para +2"
-	  ]
-	},
-	{
-	  "name": "Disparo Energizado",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Destreza 13 ou maior",
-	  "info": [
-		"Você aprende a externalizar a energia rúnica presente em seu corpo para fortalecer os seus disparos. Ao ativar essa runa, seu próximo ataque à distância causa 2d8 de dano adicional.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 2d6 + seu modificador de Atributo de runas como dano rúnico.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Energizar Ataque",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Força ou Destreza 13 ou maior",
-	  "info": [
-		"Você invoca a energia que flui por todas as coisas para fortalecer seus ataques. Ao ativar essa runa, seu próximo ataque corpo a corpo causa 2d10 de dano adicional.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 1d10 + seu modificador de Atributo de runas como dano rúnico.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Escudo",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você aprende a invocar a energia rúnica para que ela funcione como um escudo que protege seu corpo e sua mente. Ao ser alvo de um ataque ou caso realize uma salvaguarda para evitar receber dano, você pode usar sua reação para receber um bônus de +2 em sua CA ou na salvaguarda para resistir ao dano, você também recebe 10 pés de deslocamento e resistência ao tipo de dano do ataque ou efeito recebido. Esses bônus duram por 2 rodadas e, caso ele já esteja ativo, o bônus em sua CA ou salvaguarda não é aumentado.",
-		"Melhorias",
-		"Duração: +1 rodada de duração por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 uso e o bônus em sua CA ou salvaguarda se torna +3"
-	  ]
-	},
-	{
-	  "name": "Estilingue Elástico",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "Runinata com Consistência Gelatinosa",
-	  "info": [
-		"Utilizando uma ação, você segura o chão com seus braços e se estica para trás, se lançando em um ponto à sua escolha a até 25 pés de você. Criaturas num raio de 5 pés do ponto em que você se lançou devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 3d8 de dano contundente e fica Caída.",
-		"Melhorias",
-		"Alcance: +5 pés de alcance por melhoria",
-		"Dano: +1 dado de dano por melhoria",
-		"Maestria: +10 pés de alcance e +1 dado de dano"
-	  ]
-	},
-	{
-	  "name": "Melhorar Cura",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"As runas que você possui emanam uma energia curativa mais forte do que o normal. Ao recuperar pontos de vida de uma criatura (exceto por itens), você pode ativar essa runa para adicionar 1d8 aos pontos de vida recuperados pela criatura.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você emana energia curativa em um alvo que você possa ver no alcance de sua ativação erma. Esse alvo recupera 1d6 + seu modificador de atributo de runas.",
-		"Melhorias",
-		"Pontos de Vida: +1 dado de pontos de vida por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de pontos de vida e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Partícula de Medo",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você pode utilizar essa runa utilizando uma ação bônus para que uma criatura que você ataque realize uma salvaguarda de Sabedoria, caso ela falhe, a criatura fica Amedrontada por você durante 2 rodadas. Essa criatura recebe 1d8 de dano psíquico caso falhe na salvaguarda, esse dano só se aplica uma vez.",
-		"Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia escura no alcance de Conjuração de Runa Erma. A criatura atingida deve realizar uma salvaguarda de Sabedoria, numa falha fica amedrontada por você durante 2 rodadas. Ela causa 1d6 + seu modificador de Conjuração Erma de dano psíquico.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Roubar Vida",
-	  "type": "Fagulha Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você sabe como roubar a energia vital de uma criatura para si. Ao realizar um ataque corpo a corpo, você pode ativar essa runa para que ele cause 1d10 de dano necrótico adicional. Caso atinja, você recupera metade do dano causado por essa runa em pontos de vida.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta energia rubra em um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 1d8 + seu modificador de Atributo de runa como dano necrótico e você recupera metade do dano causado.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +1 dado de dano e +1 uso",
-		"Com a evolução dos aventureiros, a energia rúnica passa a fluir ainda melhor através deles, proporcionando os Fluxos Rúnicos, são manifestações bem raras de se ver e que normalmente são capazes de virar situações e feitos incríveis."
-	  ]
-	},
-	{
-	  "name": "Armamento Aprimorado",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você sabe como imbuir suas lâminas com o poder de suas runas. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10, caso você possua a Fagulha Rúnica: Ataque Elemental, você pode utilizar os elementos escolhidos em ambas as runas ao ativá-las, declarando o elemento utilizado previamente.",
-		"Ao ativar essa runa, você reveste uma arma corpo a corpo ou seus punhos (para ataques desarmados) com energia elemental por 2 rodadas, essa arma possui +1 de bônus em sua jogada de acerto e o primeiro ataque realizado com ela em seu turno causa 2d10 de dano adicional de um tipo baseado no elemento escolhido.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: +2 rodadas de duração e +1 dado de dano"
-	  ]
-	},
-	{
-	  "name": "Bênção Estelar",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Sabedoria ou Carisma 13 ou maior",
-	  "info": [
-		"Você pode fazer com que a energia das runas flua do solo em uma energia restauradora. Utilizando uma ação bônus, até 5 criaturas à sua escolha que você possa ver em um raio de 10 pés de você recuperam 2d8 + seu modificador de Atributo de runa em pontos de vida. Alternativamente, ao conjurar uma magia que recupere pontos de vida de uma criatura, você pode ativar essa runa para aumentar a cura concedida.",
-		"Melhorias",
-		"Pontos de Vida: +1 dado de pontos de vida por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +2 uso e +1 dado de pontos de vida"
-	  ]
-	},
-	{
-	  "name": "Bênção do Vigia",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você tira o máximo de sua força interna para fortalecer o seu corpo ou o de seus aliados. Utilizando uma ação bônus, você pode conceder a si mesmo, ou um aliado no alcance de seu toque, resistência a danos físicos simples por 3 rodadas.",
-		"Melhorias",
-		"Duração: +1 rodada de duração por melhoria",
-		"Uso: +1 uso por por melhoria",
-		"Maestria: +1 usos, +1 rodada de duração e você passa a conceder resistência à dano físicos mágicos"
-	  ]
-	},
-	{
-	  "name": "Combustão",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Meio-Dragão Infernal",
-	  "info": [
-		"Ao utilizar essa runa você rodeia-se em fogo, aumentando sua proteção e velocidade. Utilizando uma ação bônus, você cria uma área de chamas de 10 pés ao seu redor que dura pelas próximas 3 rodadas. Criaturas que você definir nessa área devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 4d8 de dano ígneo. Você define se essas chamas irão afetar a vida vegetal na área.",
-		"Forma Dracônica. Enquanto em sua Forma Dracônica, a área das chamas se torna 20 pés ao invés de 10.",
-		"Melhorias",
-		"Dano: +1d8 de dano por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: +1d8 de dano e +2 usos"
-	  ]
-	},
-	{
-	  "name": "Desidratação",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você é capaz de exaurir as forças de seus inimigos. Ao realizar um ataque, você pode ativar essa runa para forçar o alvo a realizar uma salvaguarda de Constituição. Em uma falha, a criatura ficara Enfraquecida pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você pode forçar um alvo que você possa ver no seu alcance de ativação erma a realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Enfraquecido por você durante 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso.",
-		"Melhorias",
-		"Dificuldade: +1 na CD para salvaguarda por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: Caso falhe na salvaguarda, o alvo também fica Incapacitado"
-	  ]
-	},
-	{
-	  "name": "Disparos Vorazes",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você sabe como imbuir suas armas com o poder elemental concedido pelas runas. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10, caso você possua a Fagulha Rúnica: Ataque Elemental, você pode utilizar os elementos escolhidos em ambas as runas ao ativá-las, declarando o elemento utilizado previamente.",
-		"Ao ativar essa runa, você reveste uma arma à distância ou fortalece suas magias de ataque com energia elemental por 2 rodadas, essa arma ou magia possui +1 de bônus em sua jogada de ataque e o primeiro ataque realizado com ela em seu turno causa 2d8 de dano adicional de um tipo baseado no elemento escolhido.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: +2 rodadas de duração e +1 dado de dano"
-	  ]
-	},
-	{
-	  "name": "Escudo Elemental",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Ao escolher esse Fluxo Rúnico você deve definir um tipo de energia elemental entre: ácido, elétrico, gélido, ígneo, trovejante ou venenoso. Com uma ação bônus você pode acionar esse fluxo rúnico e um escudo dessa energia rodeia seu corpo por 2 rodadas, atacantes que se aproximem a 5 pés de você sofrem dano elemental de 1d8 do tipo de energia escolhido. Você ganha resistência àquele tipo de energia pela duração, além disso ganha +3 CA pela duração contra ataques à distância.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por por melhoria",
-		"Maestria: +1 dado de dano e a duração sobe para 5 rodadas"
-	  ]
-	},
-	{
-	  "name": "Mergulho Fantasma",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Herança - Variante Ressurgido ou morto-vivo",
-	  "info": [
-		"Você aprende como utilizar a energia do pós-morte para se camuflar no Reino Material. Utilizando uma ação bônus, você ativa essa runa ficando Invisível pelas próximas 2 rodadas. Enquanto Invisível dessa maneira, você recebe 15 pés de deslocamento adicional e atacar ou receber dano pela duração, encerra essa condição prematuramente.",
-		"Melhorias",
-		"Duração: +1 rodada de duração por melhoria",
-		"Usos: +1 uso por melhoria",
-		"Maestria: +2 usos e o deslocamento adicional se torna 30 pés"
-	  ]
-	},
-	{
-	  "name": "Peçonha da Terra",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você invoca o veneno presente na terra, corromper criaturas que passem por ele. Ao realizar um ataque à distância, você pode ativar essa runa para que o ataque cause 2d8 de dano venenoso adicional e você cria uma área peçonhenta em um raio de 5 pés de seu alvo. Criaturas nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada fica Intoxicada, podendo repetir a salvaguarda no início de cada um dos turnos dela para encerrar esse efeito em um sucesso.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil esverdeado contra uma criatura que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 2d6 de dano venenoso. Além disso, você cria uma área peçonhenta em um raio de 5 pés de seu alvo. Criaturas nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada fica Intoxicada, podendo repetir a salvaguarda no início de cada um dos turnos dela para encerrar esse efeito em um sucesso.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Raio: +5 pés de raio por melhoria",
-		"Maestria: +2 dados de dano e +5 pés de raio"
-	  ]
-	},
-	{
-	  "name": "Relâmpago Perfurante",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Destreza 15 ou maior",
-	  "info": [
-		"Seus ataques são como um raio, atravessando todos no meio do combate. Ao realizar um ataque corpo a corpo que cause dano perfurante, você pode ativar essa runa para projetar energia elétrica em uma linha iniciada em você com 15 pés de comprimento por 1 pé de largura, caso sua arma possua a propriedade Extensão, o comprimento se torna 25 pés. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 3d8 de dano elétrico e fica Incapacitada até o final de seu próximo turno. Você pode usar essa runa em conjunto com outra runa de ataque corpo a corpo.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta energia elétrica em uma linha iniciada em você com o comprimento de seu alcance de ativação erma por 1 pé de largura. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 3d6 + seu modificador de Atributo de runa de dano elétrico e fica Incapacitada até o final de seu próximo turno.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +20 pés de comprimento e +1 dado de dano"
-	  ]
-	},
-	{
-	  "name": "Ribombar Lancinante",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Força 15 ou maior",
-	  "info": [
-		"Seus ataques possuem a força de um trovão, desestabilizando seus inimigos. Ao realizar um ataque corpo a corpo que cause dano contundente, você pode ativar essa runa para projetar uma força esmagadora em um cone de 10 pés iniciado em você. Inimigos nessa linha devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 2d8 de dano trovejante e fica Atordoada até o final de seu próximo turno.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma força esmagadora em um cone de 20 pés iniciado em você. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 2d6 + seu modificador de Atributo de runa de dano trovejante e fica Atordoada até o final de seu próximo turno.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +2 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Vamos Pular!",
-	  "type": "Fluxo Rúnico",
-	  "prerequisites": "Runinata com Consistência Gelatinosa",
-	  "info": [
-		"Utilizando uma ação, você se recolhe em uma esfera que quica no campo de batalha. Você pode saltar em um ponto a até 10 pés de você, criaturas num raio de 5 pés do ponto em que você se lançou devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 4d8 de dano contundente e fica Caída. Você pode saltar até 4 vezes.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Salto: +1 salto por melhoria",
-		"Maestria: +1 dado de dano e +1 salto",
-		"Uma manifestação superior do poder Rúnico, é um poder que age de maneira ainda mais forte que o Fluxo Rúnico e, por isso, ainda mais raro. Suas manifestações são normalmente impressionantes e quem testemunhe isso terá histórias para contar."
-	  ]
-	},
-	{
-	  "name": "Bênção do Ancião Carmesim",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Força ou Destreza 17 ou maior",
-	  "info": [
-		"Reza a lenda que um homem velho com barba avermelhada costumava aparecer por todos os cantos de Runeterra, trazendo caos e destruição. Você pode ativar essa runa para fortalecer seus ataques até o final de seu próximo turno. Pela duração, seus ataques corpo a corpo feitos com uma arma marcial causam 2d8 de dano necrótico adicional e você recebe resistência a dano necrótico. Adicionalmente, você recebe pontos de vida temporários iguais à quantidade de dano causado em um único turno. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Maestria: +2 dados de dano e + 1 uso",
-		"Bis"
-	  ]
-	},
-	{
-	  "name": "Pré-requisito: Carisma 15 ou maior",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Você clama por atenção e sabe como tomá-la para você. Utilizando uma ação bônus, você pode ativar essa runa para conjurar uma onda sonora em uma linha de 60 pés de comprimento e 10 pés de largura iniciada a partir de você. Criaturas nessa linha que possam ouví-lo devem realizar uma salvaguarda de Sabedoria. Em uma falha, uma criatura afetada sofre 7d8 de dano psíquico e fica Enfeitiçado por você pelas próximas 3 rodadas. Em um sucesso, uma criatura sofre apenas metade do dano e não pode ficar Enfeitiçada dessa maneira por 24 horas. O comprimento dessa linha aumenta em 10 pés para cada alvo afetado.",
-		"Uma criatura Enfeitiçada dessa maneira deve utilizar seus turnos da melhor maneira possível para se aproximar de você e pode repetir a salvaguarda no final de cada um de seus turnos para encerrar essa condição.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 usos e +1 dado de dano"
-	  ]
-	},
-	{
-	  "name": "Brilho Estelar",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"Pré requisito: Sabedoria ou Carisma 15 ou maior",
-		"As estrelas brilham mais forte para você. Utilizando uma ação, você pode ativar essa runa para recuperar 11d8 pontos de vida de até 5 criaturas que você possa ver a até 15 pés de você. Ao ativar essa runa você recebe 1 nível de Exaustão. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Melhorias",
-		"Alcance: +15 pés de alcance por melhoria",
-		"Pontos de Vida: +2 dados de pontos de vida por melhoria",
-		"Maestria: +2 dados de pontos de vida e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Campo Estático",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Construto, Pulso Rúnico - Descarga Energética",
-	  "info": [
-		"Você possui um armazenamento interno que guarda toda a energia gerada por você enquanto se movimenta. Utilizando uma ação, você desfere uma descarga de energia num raio de 15 pés ao seu redor. Criaturas nessa área devem fazer uma salvaguarda de Constituição. Em uma falha, uma criatura afetada tem todos seus pontos de vida temporários removidos, sofre 4d8 de dano energético e fica Incapacitada até o final de seu próximo turno. Em um sucesso, recebe apenas metade do dano.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +2 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Desafio Grandioso",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Destreza 19 ou maior",
-	  "info": [
-		"Você faz do campo de batalha uma dança a ser assistida, sempre trazendo admiração a cada golpe atingido. Ao ativar essa runa, você deve marcar um inimigo que você possa ver a até 30 pés de você, esse alvo deve realizar uma salvaguarda de Carisma para evitar essa marca. Em uma falha, o alvo terá seus pontos vitais expostos pelo próximo minuto e, caso você esteja utilizando uma arma com acuidade, você possui vantagem em suas jogadas de ataque contra esse alvo e sua margem de crítico contra ele é reduzida em 3.",
-		"Pela duração, cada vez que você realizar um acerto crítico contra esse alvo você rola 2 dados de dano adicionais e você recebe 15 pés de deslocamento adicional até o final de seu turno.",
-		"Enquanto a marca estiver ativa, após atingir seu alvo com 4 acertos críticos ou caso reduza seus pontos de vida a 0, você cria uma área de 15 pés de raio ao redor de seu alvo, você e seus aliados que estejam nessa área recuperam 4d10 pontos de vida. Quando isso ocorre, a marca em seu alvo desaparece e ele se torna imune à mesma pelas próximas 24 horas.",
-		"Melhorias",
-		"Pontos de Vida: +2 dados de pontos de vida por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 na CD e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Égide Infernal",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Constituição 15 e Fluxo Rúnico - Bênção do Vigia",
-	  "info": [
-		"Utilizando uma ação bônus, você pode invocar um escudo de chamas infernais num raio de 10 pés a partir de você, o escudo dura por até 3 rodadas. Ao invocar esse escudo, criaturas nessa área devem fazer uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 7d8 de dano incinerante e fica Chamuscada, recebendo 1d8 de dano incinerante por turno. Criaturas que iniciem seu turno nessa área ou entrem nela por conta própria pela duração também devem fazer a salvaguarda.",
-		"O escudo se move junto com você, plantas e animais nessa área também recebem o dano e tudo que morrer com esse dano parece ter sua vida sugada se tornando seco, enquanto o escudo durar você tem resistência a dano necrótico e a dano incinerante. Ao término do escudo você recebe 1 nível de Exaustão. Essa runa pode ser usada junto a outra Fagulha ou Fluxo Rúnico de escudo.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: +1 rodada de duração, +1 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Elégia",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Carisma 15",
-	  "info": [
-		"Você pode imbuir um ataque com arma à distância com energia necrótica. Ao atingir uma criatura com esse ataque uma área nebulosa de 10 pés centrada no seu alvo é criada, criaturas que estiverem dentro dessa área, ou começarem seus turnos dentro dela, deverão realizar uma salvaguarda de Constituição, se falharem irão receber 2d8 de dano necrótico. Essa névoa têm uma duração de 3 rodadas e se afasta 10 pés numa direção à sua escolha no começo de cada um dos seus turnos. Um vento forte é capaz de dissipar essa área.",
-		"Erma: Ao ser usada de forma erma, essa runa projeta uma energia esverdeada em uma linha no alcance de sua conjuração erma atingindo o primeiro alvo. Ao atingir uma criatura com esse ataque uma área nebulosa de 10 pés centrada no seu alvo é criada, criaturas que estiverem dentro dessa área, ou começarem seus turnos dentro dela, deverão realizar uma salvaguarda de Constituição, se falharem irão receber 1d8 + seu modificador de conjuração Erma de dano necrótico. Essa névoa têm uma duração de 3 rodadas e se afasta 10 pés numa direção à sua escolha no começo de cada um dos seus turnos. Um vento forte é capaz de dissipar essa área.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Maestria: +2 dados de dano e +1 rodada de duração"
-	  ]
-	},
-	{
-	  "name": "Enlace Virente",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A natureza pode ser uma grande aliada e você sabe como tirar proveito disso. Utilizando uma ação bônus, você cria vinhas saídas do chão em uma linha de 30 pés de comprimento por 10 pés de largura iniciada em você. Criaturas nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura ficará Contida por 3 rodadas, podendo fazer uma salvaguarda de Força no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Melhorias",
-		"Alcance: +15 pés de comprimento por melhoria",
-		"Dificuldade: +2 na CD por melhoria",
-		"Maestria: +2 rodadas de duração e +1 usos"
-	  ]
-	},
-	{
-	  "name": "Espada da Justiça",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Alinhamento ordeiro, Força ou Destreza 17 ou maior",
-	  "info": [
-		"Os vilões não podem sair impunes e você possui o poder para sentenciá-los. Utilizando uma ação, você invoca a espada da justiça em um alvo a até 30 pés de você, esse alvo deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo sofre 11d8 de dano luminar ou apenas metade disso em um sucesso.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Execução Perfeita",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Bodisatva da Doutrina Shinobi nível 12",
-	  "info": [
-		"Duas vezes por descanso longo, você pode utilizar uma ação bônus para saltar 30 pés em uma linha, criaturas que estiverem nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 9d8 de dano vibracional.",
-		"Até o final de seu próximo turno você pode utilizar sua ação bônus para saltar novamente.",
-		"Melhorias",
-		"Uso: +2 usos por melhoria",
-		"Dano: +2d8 de dano por melhoria",
-		"Maestria: +2d8 de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Florescer Repentino",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Elemento Flora, Sabedoria 15 ou maior",
-	  "info": [
-		"Você aprendeu uma maneira de reunir a mana de um local para conter o avanço de seus inimigos. Utilizando uma ação bônus, você inicia uma canalização de energia espiritual centrada em você. No início de seu próximo turno, você salta no ar liberando toda essa energia, você recebe 7d8 pontos de vida temporários até o final da rodada e criaturas hostis num raio de 15 pés ao seu redor devem realizar uma salvaguarda de Sabedoria. Em uma falha, uma criatura afetada sofre 7d8 de dano rúnico e ficam Contidas até o final de seu próximo turno.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 dados de dano e você pode liberar a energia canalizada a qualquer momento com uma ação livre"
-	  ]
-	},
-	{
-	  "name": "Hálito Flamejante",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Meio-Dragão Infernal",
-	  "info": [
-		"Você convoca as chamas de suas almas para queimar seus inimigos. Ao utilizar sua arma de sopro, você pode usar essa runa para que criaturas que falhem na salvaguarda sofram 4d8 de dano adicional e ficam Enfraquecida.",
-		"Forma Dracônica. Enquanto em sua Forma Dracônica, ao usar sua arma de sopro, você a conjurar em uma linha de 30 pés que param no primeiro alvo. Ele deve realizar uma salvaguarda de Destreza. Em uma falha, o alvo sofre 4d8 dano adicional. Em um sucesso, as chamas continuam a percorrer a linha até que atinja um alvo que falhe na salvaguarda ou chegar ao seu alcance limite, o que acontecer primeiro. Adicionalmente, ao atingir um alvo ou chegar ao final de seu alcance, as chamas explodem em uma área de 15 pés ao redor do alvo atingido pelas próximas 3 rodadas. Criaturas nessa área, que comecem seus turnos dentro dela ou entrem nela pela primeira vez em seus respectivos turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 4d8 de dano incinerante e fica Enfraquecida.",
-		"Melhorias",
-		"Dano: +2d8 de dano por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2d8 de dano, +1 uso e a duração da área se torna 5 rodadas"
-	  ]
-	},
-	{
-	  "name": "Ira Demolidora",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Força 19 ou maior",
-	  "info": [
-		"O poder da Tormenta vem à seu auxílio concedendo a ira dos trovões para seus golpes. Ao ativar essa runa, você realiza um golpe devastador em um cone de 20 pés iniciado em você. Criaturas nessa área devem realizar uma salvaguarda de Força. Em uma falha, uma criatura afetada sofre 11d8 de dano vibracional ou metade disso em um sucesso. Além disso, você recebe metade do dano causado por essa runa como pontos de vida temporários e recebe 1 nível de Exaustão. Você pode utilizar essa runa em conjunto com outra. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um surto de energia trovejante em um ponto que você possa ver no seu alcance de ativação erma. Criaturas num cone de 25 pés do ponto escolhido devem realizar uma salvaguarda de Força. Em uma falha, uma criatura afetada sofre 8d8 de dano vibracional ou metade disso em um sucesso. Além disso, você recebe metade do dano causado por essa runa como pontos de vida temporários e recebe 1 nível de Exaustão. Você pode utilizar essa runa em conjunto com outra.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Dificuldade: +2 na CD por melhoria",
-		"Maestria: +2 dados de dano e +1 na CD"
-	  ]
-	},
-	{
-	  "name": "Lança Luminar",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Destreza 15 e Fagulha Rúnica - Disparo Energizado",
-	  "info": [
-		"Você pode 2 vezes por descanso longo usar sua arma à distância para disparar um disparo devastador que causa 11d8 de dano radiante e a criatura deve fazer uma salvaguarda de Constituição cuja CD aumentada em +1, se falhar recebe a condição Cega. Utilizar essa runa causa a você 1d8 de dano que não pode ser mitigado. Essa runa pode ser usada junto a uma Fagulha Rúnica.",
-		"Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia radiante com alcance igual ao de sua Conjuração Erma contra um alvo, a criatura deve fazer uma salvaguarda de Constituição cuja CD é aumentada em +1, se falhar recebe a condição Cega e 9d8 de dano radiante. Utilizar essa runa erma causa a você 1d8 de dano que não pode ser mitigado.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Dificuldade: +2 na CD por melhoria",
-		"Maestria: +2 dados de dano e +1 na CD"
-	  ]
-	},
-	{
-	  "name": "Ressaca Espectral",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Herança - Variante Ressurgido Espectral, Destreza 15 ou maior",
-	  "info": [
-		"Sua movimentação deixa resquícios de seu espírito para trás, podendo atormentar a mente de uma criatura, a deixando incapaz de se mover. Utilizando uma ação, você ativa essa runa podendo se mover para um ponto desocupado que você possa ver a até 20 pés de você. Criaturas numa linha formada a partir do ponto inicial que você partiu até o local em que você se moveu devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofrerá 3d8 de dano necrótico e ficará Atordoada até o final de seu próximo turno.",
-		"Melhorias",
-		"Dano: +1 dado de dano por melhoria",
-		"Uso: +1 uso por melhoria",
-		"Maestria: +2 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Selo da Lua Minguante",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "",
-	  "info": [
-		"A lua minguante clama pelo aquietamento, e quando se vai contra isso, seu corpo irá reclamar. Utilizando uma ação bônus, você pode tocar uma criatura no seu alcance para tentar exaurir esse alvo, ele deve realizar uma salvaguarda de Constituição. Em uma falha, você e seus aliados possuem vantagem em jogadas de ataque contra ele, sua CA diminui em 3 e seu deslocamento é reduzido em 20 pés. Esse efeito dura por 2 rodadas. O alvo afetado pode repetir a salvaguarda no final de cada um dos turnos dele para encerrar esse efeito.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma energia prateada contra um alvo no seu alcance de conjuração erma, seu alvo deve realizar uma salvaguarda de Constituição. Em uma falha, você e seus aliados possuem vantagem em jogadas de ataque contra ele, sua CA diminui em 2 e seu deslocamento é reduzido em 15 pés. Esse efeito dura por 2 rodadas. O alvo afetado pode repetir a salvaguarda no final de cada um dos turnos dele para encerrar esse efeito.",
-		"Melhorias",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: O alvo passa a ter vulnerabilidade a todos os danos pela duração"
-	  ]
-	},
-	{
-	  "name": "Subjugar",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Constituição 19 ou maior",
-	  "info": [
-		"Seu poder rúnico é capaz de drenar a força vital de um alvo dando a você essa força. Utilizando uma ação bônus, você pode ativar essa Runa, tendo que escolher um alvo a até 20 pés de você, esse alvo deve fazer uma salvaguarda de Constituição. Em uma falha, recebe uma penalidade de -2 em sua CA e em todas suas salvaguardas e, no início de cada um de seus turnos, o alvo sofre 5d8 de dano necrótico. Adicionalmente, você recupera metade de todo o dano necrótico causado por essa runa em pontos de vida. Esse efeito dura por 3 rodadas.",
-		"Um alvo afetado por essa runa pode repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito. Além disso, enquanto um alvo estiver sob efeito dessa runa, você recebe um bônus de +2 em sua CA e em todas suas salvaguardas.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Maestria: +2 usos e +1 na CD"
-	  ]
-	},
-	{
-	  "name": "Temerário",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Constituição 17 ou maior",
-	  "info": [
-		"Sua confiança em sua resistência é excepcional trazendo uma maior ousadia em combate, isso sendo refletido em seu poder rúnico. Ao ativar essa runa, seu corpo começa a emitir um leve brilho dourado, emitindo penumbra por 5 pés. Até o início de seu próximo turno você recebe 10 pés de deslocamento adicional e possui imunidade a todos os tipos de dano (exceto danos verdadeiros). Ao final da duração, você recebe 1 nível de Exaustão.",
-		"Além disso, caso você possua o Fluxo Rúnico: Bênção do Vigia, você pode conceder esses bônus para um aliado no alcance de seu toque ao invés de você mesmo.",
-		"Melhorias",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: Você não recebe 1 nível de Exaustão ao final da duração"
-	  ]
-	},
-	{
-	  "name": "Ultimato Hextec",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Construto ou Variante Progressão Tecnológica (Núcleo Hex), Destreza 15 ou maior",
-	  "info": [
-		"O núcleo Hextec que você possui dentro de você lhe concedeu uma nova maneira de controlar o campo de batalha e isolar um inimigo. Utilizando uma ação, você salta em um alvo a até 15 pés de você, esse alvo deve realizar uma salvaguarda de Sabedoria. Em uma falha, você cria uma área de pura energia num raio de 15 pés de seu alvo pelas próximas 2 rodadas, ele não pode sair dessa área de nenhuma maneira e uma vez por rodada quando você o atingir com um ataque, você causa 4d10 de dano rúnico adicional, além disso, inimigos nessa área devem realizar uma salvaguarda de Força, sendo empurrados para fora da área em uma falha. O alvo preso na área pode repetir a salvaguarda no final dos turnos dele para encerrar esse efeito em um sucesso.",
-		"Melhorias",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Ventania Sombria",
-	  "type": "Vórtice Rúnico",
-	  "prerequisites": "Fagulha Rúnica - Partícula de Medo",
-	  "info": [
-		"Você pode utilizar essa runa 2 vezes por descanso longo para fazer um ataque com arma à distância. A criatura atingida e o inimigo mais próximo dela, a até 10 pés, devem realizar uma salvaguarda de Constituição, se falharem receberão 4d8 + seu modificador de conjuração Erma de dano necrótico e ficarão Incapacitadas por 2 rodadas, podendo repetir a salvaguarda no começo de cada um de seus turnos para encerrar a condição. Caso haja uma criatura inimiga a até 10 pés do segundo alvo atingido também deve realizar essa salvaguarda, isso se repete a até 4 criaturas além de seu alvo primário.",
-		"Erma: Ao ser usada de forma erma, essa runa projeta uma energia esverdeada em uma linha no alcance de sua conjuração erma atingindo o primeiro alvo. A criatura atingida e o inimigo mais próximo dela, a até 10 pés, devem realizar uma salvaguarda de Constituição, se falharem receberão 3d8 de dano necrótico e ficarão Incapacitadas por 2 rodadas. Caso haja uma criatura inimiga a até 10 pés do segundo alvo atingido também deve realizar essa salvaguarda, isso se repete a até 4 criaturas além de seu alvo primário.",
-		"Melhorias",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Dano: +2 dados de dano por melhoria",
-		"Maestria: +2 dados de dano e +1 rodadas de duração",
-		"O ápice do poder inato rúnico é a Explosão Rúnica, esse poder é raro e somente os mais lendários heróis são capazes de manifestá-los conseguindo feitos também lendários."
-	  ]
-	},
-	{
-	  "name": "Bênção do Senhor da Guerra",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você provavelmente nasceu sob a constelação celestial da Guerra, e isso só foi aflorar agora, no auge de sua força. Ao ativar essa runa, você convoca a fúria do senhor da guerra em seu corpo, a mantendo ativa por 2 rodadas. Uma vez por rodada, seu primeiro ataque à distância é acompanhado de 3 projéteis de energia contra seu alvo. Caso o ataque atinja, cada projétil causa 3d10 + seu modificador de Atributo de runa como dano rúnico contra o alvo.",
-		"Caso o alvo seja reduzido a 0 pontos de vida e você ainda possuir um projétil, você pode comandá-lo a atacar uma nova criatura a até 15 pés de seu alvo. Essa criatura deve realizar uma salvaguarda de Destreza, sofrendo o dano do projétil em uma falha ou apenas metade em um sucesso.",
-		"Melhorias",
-		"Projéteis: +1 projétil por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 rodadas de duração e você recupera 1d10 pontos de vida para cada projétil que atinja"
-	  ]
-	},
-	{
-	  "name": "Chamado da Dama da Fúria",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Os sons das trombetas ressoam em seus ouvidos, lhe chamando para a batalha. Ao ativar essa runa, você fortalece seus ataques corpo a corpo desarmados, com armas ou com armas naturais, mantendo esse efeito ativo por 4 rodadas. Uma vez por rodada, seu primeiro ataque corpo a corpo nessas condições causa 4d10 de dano rúnico adicional, diminuindo a CA do alvo em 1 atingido até o final da duração dessa runa.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Maestria: +2 usos, +1 dado de dano e a diminuição na CA do alvo continua por até 3 rodadas depois do fim da duração"
-	  ]
-	},
-	{
-	  "name": "Égide dos Ascendentes",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Os elementos atuam em você de uma maneira um tanto quanto incomum. Ao escolher essa Runa, você deve escolher um dos elementos mágicos da tabela Elementos e Tipos de Dano presente no Capítulo 10. Você recebe resistência a um tipo de dano mágico baseado no elemento escolhido.",
-		"Ao ativar essa runa você invoca uma nuvem elemental em um raio de 15 pés ao seu redor. Inimigos nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 4d8 de dano mágico de um tipo baseado no elemento escolhido. Em um sucesso, uma criatura sofre apenas metade do dano. Essa nuvem dura por até 2 rodadas.",
-		"Melhorias",
-		"Duração: +2 rodada de duração por melhoria",
-		"Uso: +2 uso por melhoria",
-		"Maestria: +2 dados de dano e aliados na área da nuvem recebem imunidade ao elemento escolhido pela duração"
-	  ]
-	},
-	{
-	  "name": "Exaurir",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Constituição 18 e Fluxo Rúnico - Desidratação",
-	  "info": [
-		"Ao realizar um ataque com arma ou com magia, você pode fazer com que uma criatura atingida receba uma descarga de energia causticante que causa Enfraquecimento e Cegueira por 5 rodadas, caso ela falhe em uma salvaguarda de Constituição. Você pode utilizar essa runa duas vezes por descanso longo, mas não pode utilizá-la duas vezes na mesma criatura. Uma criatura Enfraquecida e Cega dessa maneira pode repetir a salvaguarda no início de cada um de seus turnos.",
-		"Erma: Ao ser usada de forma erma, você dispara um projétil com aspecto cinzento, com alcance igual ao de uma Runa Erma. Um alvo atingido deve realizar uma salvaguarda de Constituição, caso falhe ele fica Enfraquecida e Cega por 3 rodadas.",
-		"Melhorias",
-		"Uso: +2 usos por melhoria",
-		"Dificuldade: +2 na CD por melhoria",
-		"Maestria: +1 na CD e você passa a poder atingir 2 criaturas adicionais"
-	  ]
-	},
-	{
-	  "name": "Fôlego de Guerra",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Constituição 19 ou maior, Fagulha Rúnica - Escudo",
-	  "info": [
-		"Você aprende como aumentar temporariamente sua vitalidade. Ao ativar essa runa, você aumenta seus pontos de vida máximos e atuais em 5d10 pelo próximo minuto. Além disso, desde que você não esteja Incapacitado, você recebe +4 de bônus em sua CA pela duração, esse bônus não é cumulativo. Adicionalmente, você remove 1 nível de Exaustão que você possua.",
-		"Além disso, caso você possua o Fluxo Rúnico: Bênção do Vigia, você pode conceder esses bônus para um aliado no alcance de seu toque ao invés de você mesmo.",
-		"Melhorias",
-		"Duração: +2 rodadas de duração por melhoria",
-		"Pontos de Vida: +2d10 de pontos de vida por melhoria",
-		"Maestria: +2d10 de pontos de vida e +2 usos"
-	  ]
-	},
-	{
-	  "name": "Fragilizar",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Inteligência ou Sabedoria 15 ou maior, Vórtice Rúnico - Selo da Lua Minguante",
-	  "info": [
-		"Você deixa a pele, ossos, e alma de uma criatura fracas e incapazes de uma defesa efetiva. Ao atingir um ataque, você pode ativar essa runa para fazer com que o alvo realize uma salvaguarda de Constituição. Em uma falha, a criatura receberá vulnerabilidade a todos os tipos de dano pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo, mas não pode utilizá-la 2 vezes na mesma criatura nesse período.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia pútrida contra um alvo no seu alcance de ativação erma, ele deve realizar uma salvaguarda de Constituição. Em uma falha, a criatura receberá vulnerabilidade a todos os tipos de dano pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso.",
-		"Melhorias",
-		"Dificuldade: +2 na CD por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 na CD e +2 usos"
-	  ]
-	},
-	{
-	  "name": "Lembrança Sombria",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Destreza 18 e Fagulha Rúnica - Disparo Energizado",
-	  "info": [
-		"Ao usar essa Explosão Rúnica, você pode 2 vezes por descanso longo escolher um ataque a distância (ou magia ofensiva), uma criatura atingida por esse ataque deve realizar uma salvaguarda de Destreza, se falhar irá receber 14d8 de dano de Energia Rúnica e ficará Amedrontada por você, além disso você se cura em metade do dano causado.",
-		"Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia rúnica com alcance igual ao de uma Runa Erma. Uma criatura atingida por esse ataque deve realizar uma salvaguarda de Destreza, se falhar irá receber 12d8 de dano de Energia Rúnica e ficará Amedrontada por você, além disso você se cura em metade do dano causado.",
-		"Melhorias",
-		"Uso: +2 usos por melhoria",
-		"Dano: +2 dados de dano por melhoria",
-		"Maestria: +2 dados de dano e +2 na CD"
-	  ]
-	},
-	{
-	  "name": "Lótus da Morte",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Destreza 19 ou maior",
-	  "info": [
-		"Você sabe como controlar a energia dentro de si para criar e lançar dezenas de armas mortais em seus alvos. Utilizando uma ação, você ativa essa runa realizando um golpe giratório e lançando diversas lâminas espectrais em todos os inimigos num raio de 15 pés de você, alvos nessa área devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura sofre 9d8 de dano incisivo ou metade disso em um sucesso. Adicionalmente, caso você reduza uma criatura a 0 pontos de vida utilizando essa runa, você recupera 1 uso dessa runa.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +2 dado de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Morte das Profundezas",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Herança - Variante Ressurgido Espectral, Destreza 17 ou maior",
-	  "info": [
-		"A morte foi trazida para você e você irá trazê-la para todos os seus inimigos. Utilizando uma ação, você ativa essa runa em um ponto que você possa ver a até 60 pés de você. Criaturas num raio de 10 pés desse ponto devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 6d8 de dano necrótico ou metade disso em um sucesso. Além disso, caso uma criatura na área seja reduzida a 0 pontos de vida, você passa a ocupar o local que ela estava e poderá atacar uma nova área com essa runa sem gastar um uso da mesma.",
-		"Melhorias",
-		"Dano: +2 dados de dano por melhoria",
-		"Dificuldade: +2 na CD por melhoria",
-		"Maestria: +2 dados de dano e +2 usos"
-	  ]
-	},
-	{
-	  "name": "Pesadelo Vivo",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Carisma 18",
-	  "info": [
-		"Ao invocar essa explosão rúnica você pode desfigurar sua própria face refletindo os pesadelos de seus alvos. Uma criatura à sua escolha, e até 40 pés que possa ver seu rosto deve ser bem-sucedida em uma salvaguarda de Sabedoria ou é afetada por um dos efeitos abaixo a sua escolha. A cada turno enquanto durar a explosão, você pode escolher outra criatura, mas não uma que já tenha sido bem-sucedida na salvaguarda. Essa runa possui uma duração de 3 rodadas, ao final dela você recebe 1 ponto de exaustão.",
-		"Adormecer. O alvo cai inconsciente. Ele acorda se sofrer qualquer dano ou se outra criatura usar sua ação para sacudir o adormecido até acordá-lo.",
-		"Apavorar. O alvo está amedrontado. Em cada um dos turnos dele, a criatura amedrontada deve realizar a ação de Disparada e se mover para longe de você pela rota segura mais curta disponível, a não ser que não haja lugar para se mover. Se o alvo se mover para um local a, pelo menos, 60 pés de distância de você onde ela não possa mais te ver, esse efeito termina.",
-		"Melhorias",
-		"Uso: +1 uso por melhoria",
-		"Duração: +1 rodada de duração por melhoria",
-		"Maestria: o alcance sobe para 60 pés e você pode escolher até um alvo adicional no primeiro, no terceiro e no quinto turno (caso tenha essa duração)"
-	  ]
-	},
-	{
-	  "name": "Potência Brutal",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "Fagulha Rúnica - Energizar Ataque, Força ou Destreza 19 ou maior",
-	  "info": [
-		"Sua capacidade física é incomparável e seus golpes atravessam até a mais forte das defesas. Ao ativar essa runa, você energiza seu próximo ataque corpo a corpo e fazendo com que o alvo deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo sofre 16d10 de dano rúnico adicional ou apenas metade disso em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
-		"Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil contra um alvo que você possa ver no seu alcance de ativação erma, o alvo deve realizar uma salvaguarda de Constituição, com a CD aumentada em 1. Caso atinja, o alvo sofre 14d8 + seu modificador de Atributo de runa como dano rúnico ou apenas metade disso em um sucesso.",
-		"Melhorias",
-		"Dificuldade: + 2 na CD por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: +3 dados de dano e +1 uso"
-	  ]
-	},
-	{
-	  "name": "Restauração Estelar",
-	  "type": "Explosão Rúnica",
-	  "prerequisites": "",
-	  "info": [
-		"Você possui um poder remanescente dentro de você vindo da antiga deusa da cura. Ao ativar essa runa, você invoca um surto de energia curativa em um alvo a até 120 pés de você que você possa ver, esse alvo recupera 6d8 + seu bônus de proficiência + seu modificador de Atributo de runa em pontos de vida. Alternativamente, você pode usar essa runa como parte da ação de outra magia, habilidade, efeito ou runa, isso não funciona com itens.",
-		"Melhorias",
-		"Pontos de Vida: +2 dados de pontos de vida por melhoria",
-		"Uso: +2 usos por melhoria",
-		"Maestria: Essa runa pode ser utilizada em até 4 alvos ao mesmo tempo"
-	  ]
-	}
-  ]
+  {
+    "name": "Agitação",
+    "type": "Pulso Rúnico",
+    "prerequisites": "possuir Ki",
+    "info": [
+      "O poder de seu espírito é maior que o normal, fortalecendo seus ataques quando você o usa. Uma vez por rodada, após gastar 2 pontos de Ki, seus próximos 2 ataques desarmados causam 1d4 de dano adicional. Esse dano não se acumula.",
+      "O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Anime-se",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você possui uma natureza inquieta, recebendo um número diferente de cargas de animação para cada acontecimento ao seu redor:",
+      "Ao atingir uma criatura 2 vezes na mesma rodada você recebe 1 carga;",
+      "Ao ver um aliado realizar um acerto crítico você recebe 2 cargas;",
+      "Ao realizar um acerto crítico você recebe 3 cargas;",
+      "Ao ver um aliado reduzir uma criatura a 0 pontos de vida você recebe 4 cargas;",
+      "Quando você reduzir uma criatura a 0 pontos de vida você recebe 5 cargas;",
+      "A cada carga de animação que você possua, uma vez por rodada, seu ataque desarmado ou com arma causa metade de seu bônus de proficiência como dano adicional e, a cada 5 cargas, seu deslocamento aumenta em 10 pés. Você pode acumular até o máximo de 5 cargas de animação, elas retornam para 0 após 1 hora. Seu máximo de cargas aumenta em 5 no 9º nível (10 cargas) e no 17º nível (15 cargas)."
+    ]
+  },
+  {
+    "name": "Aprumo Marcial",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao fazer um ataque corpo a corpo, você pode fazer uma movimentação de até 5 pés que não causa ataque de oportunidade, além disso, ao se mover você recebe um bônus em sua CA igual a metade de seu bônus de proficiência até o início de seu próximo turno. Esse bônus na CA só pode ser ativado um a vez por rodada."
+    ]
+  },
+  {
+    "name": "Apunhalar",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você sabe como tirar vantagem de criaturas desavisadas, aproveitando a oportunidade para atingir onde dói. Uma vez por rodada, ao atingir uma criatura surpresa ou que não possa vê-lo, seu primeiro ataque contra essa criatura causa 2d4 de dano adicional.",
+      "O dano dessa runa aumenta em 2d4 ao atingir o 9º nível (4d4) e o 17º nível (6d4)."
+    ]
+  },
+  {
+    "name": "Ataque Amaldiçoado",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Seus ataques carregam a mácula de uma maldição antiga. Uma vez por rodada, seu primeiro ataque corpo a corpo contra uma criatura inflige uma marca amaldiçoada caso atinja o alvo. Um alvo marcado sofre metade de seu bônus de proficiência como dano adicional sempre que for atingido por um ataque até o final de seu próximo turno.",
+      "Esse alvo também deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo está Enfraquecido até o final de seu próximo turno. Uma criatura marcada se torna imune a essa runa por um número de rodadas igual a 10 - seu bônus de proficiência."
+    ]
+  },
+  {
+    "name": "Barreira de Ki",
+    "type": "Pulso Rúnico",
+    "prerequisites": "possuir Ki",
+    "info": [
+      "Utilizar a energia natural protege seu corpo temporariamente de ataques. Uma vez por rodada, após gastar ao menos 1 ponto de Ki, você recebe +1 de CA e 1d4 + seu bônus de proficiência em pontos de vida temporários. Esse bônus em sua CA permanece enquanto esses pontos de vida temporários estiverem ativos e não se acumula. Adicionalmente, para cada ponto de Ki adicional que você gastar aumenta os pontos de vida temporários recebidos em 1d4."
+    ]
+  },
+  {
+    "name": "Batida do Amor",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao fazer ataques com armas à distância, você causa seu bônus de proficiência em dano adicional sempre que ataca um alvo não atacado no seu último ataque."
+    ]
+  },
+  {
+    "name": "Bênção da Forja Viva",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao receber cura você pode adicionar o seu bônus de proficiência à cura recebida, adicionalmente você recebe +1 de CA por 1 minuto, além de vantagem em salvaguardas de magias por uma quantidade de rodadas igual ao seu bônus de proficiência, nenhum desses bônus é cumulativo."
+    ]
+  },
+  {
+    "name": "Caçador Noturno",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você sabe como se mover sem ser percebido, aproveitando ao máximo a falta de visibilidade de seus inimigos. Quando na penumbra, escuridão ou invisível, você recebe 10 pés de deslocamento adicional e seus ataques causam uma vez e meia seu bônus de proficiência como dano adicional, você também recebe o dobro de seu deslocamento nessas condições."
+    ]
+  },
+  {
+    "name": "Cadência Marcial",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Seu primeiro ataque contra um inimigo, utilizando uma arma corpo a corpo, causa 1 dado de dano adicional (ex. 2d6 vira 3d6). Um alvo que sofra esse dano adicional, não pode ser afetado novamente por 10 - seu bônus de proficiência em rodadas.",
+      "O dano dessa runa aumenta para 2 dados adicionais ao atingir o 9º nível e para 3 dados adicionais no 17º nível."
+    ]
+  },
+  {
+    "name": "Caminho da Guerra",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com uma arma marcial",
+    "info": [
+      "Se você não estiver caído e usar uma arma marcial, seus ataques corpo a corpo causam dano adicional igual a metade do seu bônus de proficiência (arredondado para baixo) para cada 15 pés de deslocamento (ex. se você tem deslocamento base de 30 pés, e proficiência 2, você causa +2 de dano)."
+    ]
+  },
+  {
+    "name": "Centelha Primordial",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Sua existência foi tocada por uns dos elementos primordiais, escolha entre Luz ou Sombra. Ao atingir um alvo com um dano elemental simples ou mágico do elemento escolhido, você deixa uma carga primordial no alvo que dura por até 1 minuto, seu próximo ataque contra o mesmo alvo estoura essa carga causando 1d4 de dano adicional do mesmo tipo causado e, caso seja de seu elemento primordial, não gera uma nova carga.",
+      "O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Chamado de Freljord",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Freljordiano",
+    "info": [
+      "Ao acertar um ataque corpo a corpo crítico, adicione seu bônus de proficiência como dano extra para você e um aliado e aumenta o deslocamento de ambos em 5 pés por três rodadas."
+    ]
+  },
+  {
+    "name": "Dádiva dos Afogados",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A sua vingança virá quando seus inimigos menos esperam. Quando na penumbra, escuridão ou invisível, você recupera 1d4 + seu bônus de proficiência como pontos de vida no início de cada um de seus turnos. Esse Pulso Rúnico só é ativado caso você esteja em combate.",
+      "Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Dança do Duelista",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com uma arma de acuidade",
+    "info": [
+      "Caso você use apenas uma arma em mãos, com a propriedade de acuidade, você pode uma vez por turno escolher um ataque feito com esta arma. Se você tiver sucesso nesse ataque você causa dano adicional igual a metade do seu bônus de proficiência em todos os ataques desse turno e pode recuperar metade do seu bônus de proficiência (arredondado para baixo) em pontos de vida para cada acerto."
+    ]
+  },
+  {
+    "name": "Dando Corda",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Construto",
+    "info": [
+      "A energia remanescente produzida por seus ataques é convertida em poder para fortalecer ainda mais seus golpes. Ao atingir sucessivamente uma única criatura hostil com um ataque, você adiciona metade de seu bônus de proficiência como dano energético adicional para cada ataque que atingir o alvo, até o máximo de 5 vezes seu bônus de proficiência.",
+      "Por exemplo, no nível 1 seu segundo ataque bem sucedido causará 1 de dano adicional, o terceiro 2 de dano e assim sucessivamente. Ao atacar um novo alvo, ou ficar uma rodada sem causar dano a esse alvo, esse dano adicional retorna a 0."
+    ]
+  },
+  {
+    "name": "Descarga Energética",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Construto",
+    "info": [
+      "Enquanto você estiver abaixo de metade de sua vida, inimigos que estejam a até 15 pés de você, devem realizar uma salvaguarda de Destreza CD (8 + seu bônus de proficiência + seu modificador de Constituição). Em uma falha, uma criatura afetada recebe uma descarga, sofrendo 1d4 de dano energético. Quando uma descarga ocorre, uma nova descarga só poderá ocorrer após 1d4 turnos. Você desfere um número de descargas igual ao seu modificador de Constituição (mínimo de 1) por descanso curto ou longo. Ao alcançar o nível 8 seu dano se torna 1d8 e no 18º se torna 3d4."
+    ]
+  },
+  {
+    "name": "Devorador de Almas",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Seus ataques corpo a corpo que causam dano recuperam metade da sua proficiência arredondada para cima em pontos de vida."
+    ]
+  },
+  {
+    "name": "Disciplina da Força",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com uma arma marcial",
+    "info": [
+      "Quando você faz um ataque com uma arma marcial de combate corpo a corpo, você pode adicionar metade do seu bônus de proficiência (arredondado para baixo) ao dano causado. Caso seu último ataque tenha sido contra o mesmo alvo, você passa a causar o seu bônus de proficiência como dano."
+    ]
+  },
+  {
+    "name": "Divisão Celular",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Runinata com Consistência Gelatinosa",
+    "info": [
+      "Sempre que você receber dano, você perde parte de si mesmo. Essa parte é liberada em um ponto desocupado a até 15 pés de você, à escolha do Mestre. Quando você ocupar o mesmo espaço que sua parte perdida, você recupera 1d4 + metade de seu bônus de proficiência em pontos de vida. Caso outra criatura que não você ocupe o mesmo espaço que sua parte perdida, ela é destruída."
+    ]
+  },
+  {
+    "name": "Domínio da Ira",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Durante o combate você ganha 1 ponto de ira para cada ataque corpo a corpo bem-sucedido até o máximo de 10 pontos de ira. Esta ira fortalece seus ataques corpo a corpo, aumentando seu dano no valor de sua proficiência para cada 5 pontos de ira acumulada. Você recebe 1 ponto de ira adicional quando estiver com menos da metade da vida e pode gastar todos os seus pontos de ira a qualquer momento como uma ação bônus e recuperar essa quantidade de pontos de ira multiplicados por metade do seu modificador de Constituição em pontos de vida. No 10º nível seu máximo de pontos de ira aumenta para 15 e no 20º nível aumenta para 20."
+    ]
+  },
+  {
+    "name": "Escolhido da Tormenta",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao receber dano que deixaria sua vida abaixo de 1, você se cura metade de seus pontos de vida máximo ao longo dos próximos turnos. Quando isso acontece, você cura ¹/₄ da sua vida máxima, arredondado para baixo, instantâneamente. Adicionalmente, no início de cada um de seus turnos você se cura um número igual ao seu modificador de Constituição (mínimo de 1) até completar ¹/₄ de sua vida máxima.",
+      "Ou seja, caso você possua um valor de Constituição 14 e 30 pontos de vida máximos, e estiver com 5 pontos de vida atuais. Ao receber 10 de dano, você se cura automaticamente 7 pontos de vida, ficando com 2 ao invés de -5, e no início de seus próximos turnos você cura em 2 até completar os 8 pontos de vida restantes, totalizando os 15 pontos de vida curados por essa runa. Esse efeito acontece apenas uma vez por descanso longo."
+    ]
+  },
+  {
+    "name": "Essência da Guerra",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Cada ataque que você causar dano ao alvo se converte em pontos de vida temporários igual à metade de seu bônus proficiência arredondado para baixo."
+    ]
+  },
+  {
+    "name": "Fervor Ioniano",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Ioniano\"",
+    "info": [
+      "Ao acertar um inimigo, ganha uma carga, até o máximo de 3 cargas. Ao atingir o máximo de cargas, causa o total de 3 vezes metade do seu bônus de proficiência, arredondado para baixo, de dano energético e o contador reinicia. Passar um de seus turnos sem acertar um ataque reinicia os acúmulos."
+    ]
+  },
+  {
+    "name": "Fúria Ampliada",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Variante Ignata e não pode ter proficiência em lançar magias",
+    "info": [
+      "Durante o combate você ganha 1 ponto de ira para cada ataque corpo a corpo bem-sucedido até o máximo de 10 pontos de ira. Essa ira fortalece sua resistência, concedendo a você redução de dano igual a metade do seu valor de Ira. Você recebe 1 ponto de ira adicional quando acerta um ataque crítico e pode gastar todos os seus pontos de ira a qualquer momento como uma ação bônus e causar essa quantidade de pontos multiplicado pela metade do seu modificador de Força como dano adicional em seu próximo ataque corpo a corpo bem sucedido. No 10º nível seu máximo de pontos de ira aumenta para 15 e no 20º nível aumenta para 20."
+    ]
+  },
+  {
+    "name": "Fúria do Meio-Dragão",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Meio-Dragão",
+    "info": [
+      "Você possui uma natureza mais resistente contra ataques de Dragões, se fortalecendo ao abatê-los. Você possui vantagem em testes e salvaguardas para resistir a qualquer efeito ou ataque de um dragão.",
+      "Adicionalmente, uma vez por rodada, você causa seu bônus de proficiência como dano adicional ao seus ataques. Esse dano adicional é do mesmo tipo que sua arma de sopro.",
+      "Forma Dracônica. Enquanto em sua Forma Dracônica, o dano adicional concedido por esse Pulso se torna 2 vezes seu bônus de proficiência."
+    ]
+  },
+  {
+    "name": "Furto de Essência",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Capacidade de conjurar ao menos uma magia",
+    "info": [
+      "Você possui uma capacidade inata de roubar parte da essência do espírito de uma criatura para si. Ao conjurar uma magia que cause dano a um inimigo, você recebe 1 carga. Ao atingir o máximo de cargas, você recupera 2d4 + seu bônus de proficiência + seu modificador de conjuração em pontos de vida, após isso acontecer, as cargas retornam para 0. O valor máximo de suas cargas é igual a 9 - seu bônus de proficiência.",
+      "Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (3d4) e o 17º nível (4d4)."
+    ]
+  },
+  {
+    "name": "Golpes Concussivos",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com uma arma contundente",
+    "info": [
+      "É extremamente difícil se manter em pé ao receber um de seus ataques e a sucessão de golpes podem fazer com que uma criatura perca completamente seu senso de equilíbrio. Ao atingir uma criatura hostil com um ataque, você o marca. Sempre que você ou um aliado causar dano contundente, simples ou mágico, em um alvo marcado, ele recebe uma carga concussiva.",
+      "Ao atingir 4 cargas, o próximo ataque que atingir esse alvo, faz com que ele deva realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Atordoado até o final da próxima rodada. Uma criatura Atordoada se torna imune a essa runa por um número de rodadas igual a 10 - seu bônus de proficiência."
+    ]
+  },
+  {
+    "name": "Hemorragia",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com uma arma cortante",
+    "info": [
+      "Cada vez que você causa dano cortante em um oponente com um ataque corpo a corpo, você ganha uma carga contra aquele inimigo. Ao alcançar 5 cargas, todo dano cortante que você faz contra ele é maximizado (ex. 2d6 causa sempre 12 de dano) até que ele cure ao menos 1 ponto de vida e zere as cargas. A cada rodada que o alvo não receber uma nova carga, as cargas são reduzidas em 1 ponto."
+    ]
+  },
+  {
+    "name": "Investida Implacável",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A cada ataque corpo a corpo bem sucedido contra um inimigo, você ganha 1 carga, ao completar 5 cargas, elas reiniciam e você ganha a característica Ataque Extra até o final do seu próximo turno e adiciona seu bônus de proficiência ao dano desse ataque extra. Se você já tem a característica Ataque Extra/Ataque Múltiplo, ao invés disso ele é acrescentado de 1 e recebe o mesmo bônus de dano."
+    ]
+  },
+  {
+    "name": "Lâminas Sombrias",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A cada 3 ataques com uma arma corpo a corpo bem-sucedidos, o próximo ataque com arma corpo a corpo que atingir um inimigo causa seu bônus de proficiência em dano necrótico em uma área de 5 pés ao redor do alvo e cura você com um valor igual ao do dano causado. Alvos na área podem fazer uma salvaguarda de Constituição para receber apenas metade do dano."
+    ]
+  },
+  {
+    "name": "Lembrança de Statikk",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você recebe resistência a dano elétrico.",
+      "Choque de Statikk: A cada três ataques bem sucedidos, seu próximo ataque desencadeia um raio que salta por até 5 alvos. Esses alvos devem realizar uma salvaguarda de Destreza. Em uma falha, um alvo receberá seu bônus de proficiência como dano elétrico e o raio salta para um alvo adicional a até 15 pés. Em um sucesso, além de não receber dano algum, a cadeia de raios é interrompida. Um alvo não pode ser atingido mais de uma vez por esse pulso rúnico quando o mesmo é ativado."
+    ]
+  },
+  {
+    "name": "Lutador Ágil",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Destreza 13",
+    "info": [
+      "Sua agilidade é inegável, fazendo com que atingi-lo com um golpe letal seja um feito e tanto. Você pode se mover por espaços ocupados (mas não terminar seu turno neles) e, adicionalmente, você reduz todo o dano recebido em um valor igual ao seu bônus de proficiência. Você não diminui o dano recebido através de condições."
+    ]
+  },
+  {
+    "name": "Marca de Caça",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A caçada faz parte de sua essência e todos seus alvos que sabem disso estão enterrados a 7 palmos do chão. Ao atingir sucessivamente uma única criatura hostil com um ataque desarmado ou com arma, você causa 1 ponto de dano adicional para cada ataque desarmado ou com arma que atingir o alvo, até o máximo de 5 vezes seu bônus de proficiência. Por exemplo, seu segundo ataque bem sucedido causará 1 de dano adicional, o terceiro 2 de dano e assim sucessivamente. Ao atacar um novo alvo, ou ficar uma rodada sem causar dano a esse alvo, esse dano adicional retorna a 0."
+    ]
+  },
+  {
+    "name": "Misericórdia",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você causa 1d6 de dano + seu bônus de proficiência em dano adicional a inimigos com alguma condição debilitante como Caído, Atordoado, Incapacitado, Cego, etc."
+    ]
+  },
+  {
+    "name": "Munição de Energia",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com armas à distância",
+    "info": [
+      "Os ataques com armas à distância causam metade do seu bônus de proficiência, arredondado para baixo, em dano energético adicional."
+    ]
+  },
+  {
+    "name": "Perseverança",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Sua determinação em combate é inigualável, você nunca desiste e isso é refletido em seu poder rúnico. Desde que você não tenha recebido dano nas últimas 2 rodadas e não esteja Incapacitado, você recupera metade de seu bônus de proficiência como pontos de vida no início de cada um de seus turnos. Esse Pulso Rúnico só é ativado caso você esteja em combate."
+    ]
+  },
+  {
+    "name": "Pés Ligeiros",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao acertar um ataque corpo a corpo em um inimigo você ganha uma explosão de 10 pés de deslocamento adicional por 1 minuto e um escudo de mitigação de dano igual a metade do seu bônus de proficiência arredondado para baixo. Esse efeito não é cumulativo, após 1 minuto ele pode ser renovado caso você acerte outro ataque corpo a corpo."
+    ]
+  },
+  {
+    "name": "Poder Maligno Fenomenal",
+    "type": "Pulso Rúnico",
+    "prerequisites": "habilidade de conjuração",
+    "info": [
+      "Ao atingir uma criatura com uma magia ou reduzir uma criatura a 0 pontos de vida, você recebe 1 carga. Suas magias de dano, causam 1/3 de seu bônus de proficiência (mínimo de 1) de dano adicional para cada carga que você possua. Essas cargas retornam a 0 no final de um descanso longo."
+    ]
+  },
+  {
+    "name": "Potência Arcana",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Capacidade de conjurar ao menos uma magia",
+    "info": [
+      "Sua capacidade de conjuração é mais forte que a da maioria das criaturas. Ao conjurar uma magia de 1º nível ou superior, seus próximos dois ataques causam 1d4 + seu bônus de proficiência como dano adicional. Essa runa só é ativada quando nenhum de seus ataques estejam causando dano adicional através desse Pulso Rúnico.",
+      "O dano dessa runa aumenta em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Proteção da Égide",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Proficiência com escudos",
+    "info": [
+      "Isso fica ativo apenas quando você tem um escudo equipado. Quando um ataque não te acertar, você ganha uma carga. Após 4 cargas você bloqueia automaticamente o próximo ataque que acertaria você, não recebe dano algum desse ataque e um aliado a até 10 pés de você recebe um escudo temporário que mitiga o dobro do seu bônus de proficiência em dano recebido por um número de rodadas igual seu bônus de proficiência."
+    ]
+  },
+  {
+    "name": "Salvação",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Capacidade de conjurar ao menos uma magia",
+    "info": [
+      "Você sempre sabe quando um de seus amigos precisa de você, indo para seu auxílio o mais rápido que pode. Quando um aliado a até 120 pés de você estiver com menos da metade de seus pontos de vida máximos, você recebe 20 pés de deslocamento adicional, esse bônus não é cumulativo. Adicionalmente, ao recuperar pontos de vida desse aliado através de uma magia, você adiciona 1d4 + seu bônus de proficiência aos pontos de vida recuperados pela magia.",
+      "Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Seiva Mágica",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Antroplantæ",
+    "info": [
+      "Sua seiva possui propriedades curativas únicas, fazendo com que você possa absorver sua magia periodicamente. Desde que você não esteja com seus pontos de vida máximos, ao atingir um inimigo, você recupera 1d4 + seu bônus de proficiência como pontos de vida. Você não pode recuperar pontos de vida dessa maneira por 10 - seu bônus de proficiência em rodadas. Adicionalmente, uma vez por turno ao receber dano, você diminui em 1 o número de rodadas para que você possa recuperar pontos de vida dessa maneira.",
+      "Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Sifão da Alma",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Sempre que você causar dano necrótico a uma criatura hostil, você recupera seu bônus de proficiência em pontos de vida."
+    ]
+  },
+  {
+    "name": "Tiro Gelado",
+    "type": "Pulso Rúnico",
+    "prerequisites": "Freljordiano",
+    "info": [
+      "O gelo está em seu sangue. Uma vez por rodada, ao atingir um alvo com um ataque à distância, o deslocamento do alvo é reduzido um número de pés igual a 5 multiplicado por metade de seu bônus de proficiência até o final de seu próximo turno. Uma criatura que tenha seu deslocamento reduzido dessa maneira não pode ser afetada por essa runa mais de uma vez.",
+      "Além disso, sempre que você atingir um alvo que esteja com seu deslocamento reduzido, você causa seu bônus de proficiência como dano adicional."
+    ]
+  },
+  {
+    "name": "Toque Amaldiçoado",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Seus ataques físicos corpo a corpo amaldiçoam um inimigo por 1 minuto, fazendo com que recebam metade do seu bônus de proficiência, arredondado para baixo, em dano necrótico adicional vindo de você. Apenas 1 inimigo pode ser amaldiçoado por vez."
+    ]
+  },
+  {
+    "name": "Tributo do Rei",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você possui um direito de nascença para governar por cima das outras criaturas e aquelas que se negam a obedecê-lo devem sucumbir aos seus pés. Sempre que um inimigo a até 120 pés de você for reduzido a 0 pontos de vida, você recupera 1d4 + seu bônus de proficiência em pontos de vida. Você não recupera pontos de vida dessa maneira caso o ND da criatura abatida for menos que a metade de seu bônus de proficiência.",
+      "Os pontos de vida recuperados por essa runa aumentam em 1d4 ao atingir o 9º nível (2d4) e o 17º nível (3d4)."
+    ]
+  },
+  {
+    "name": "Visão Espiritual",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você é capaz de enxergar criaturas do mundo espiritual. Ao escolher esse Pulso Rúnico, você deve definir qual tipo de criatura você é capaz de enxergar normalmente: Espectros (Akanas), Kanmei ou Azakanas.",
+      "Akana. Você pode falar o idioma Ochnum e tem resistência a dano venenoso.",
+      "Azakana. Você pode falar o idioma Demoníaco e tem resistência a dano venenoso.",
+      "Kanmei. Você pode falar o idioma Espiritual e tem resistência a dano radiante."
+    ]
+  },
+  {
+    "name": "Voracidade",
+    "type": "Pulso Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Cada vez que um inimigo é derrotado a até 35 pés de você e que você tenha causado dano corpo a corpo no último turno, você pode, com sua reação, fazer um ataque corpo a corpo adicional, o número máximo de ataques corpo a corpo que você pode fazer é igual ao seu bônus de proficiência.",
+      "A Fagulha Rúnica é a primeira manifestação dos poderes rúnicos que podem ser controlados, são pequenos espasmos de energia rúnica que transborda nos aventureiros e permite a eles realizarem alguns feitos adicionais."
+    ]
+  },
+  {
+    "name": "Ataque Elemental",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "As runas globais lhe concederam uma capacidade de controlar um elemento. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10. Ao ativar essa runa, seu próximo ataque causa 1d8 de dano adicional de um tipo baseado no elemento escolhido. Além disso, você recebe resistência a danos do tipo do elemento escolhido até o início de seu próximo turno.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma linha de cor ligada ao elemento escolhido, você deve realizar um ataque à distância com runa contra uma criatura que você possa ver no seu alcance de ativação erma. Caso atinja, o alvo sofre 2d8 + seu modificador de Atributo de runas. Além disso, você recebe resistência a danos do tipo do elemento escolhido até o início de seu próximo turno.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Atropelar",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "As runas que fortalecem o seu corpo fazem com que seus inimigos se arrependam de entrar em seu caminho. Ao se mover pelo menos metade de seu deslocamento em linha reta, você pode ativar essa runa para que seu próximo ataque seja fortalecido. Até o início de seu próximo turno, seu próximo ataque corpo a corpo causa 1d8 de dano adicional e, caso o ataque seja contra uma criatura de até uma categoria de tamanho acima que a sua, você faz com que ela deva realizar uma salvaguarda de Força. Em uma falha, a criatura fica Caída. Além disso, você pode se mover através do espaço ocupado por essa criatura nesse turno.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma força invisível contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Esse alvo deve realizar uma salvaguarda de Força. Em uma falha, a criatura sofre 1d6 + seu modificador de Atributo de runas de dano rúnico e fica Caída.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Barreira de Mana",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Constituição 15",
+    "info": [
+      "A mana possui um certo favoritismo por você, lhe protegendo quando é mais necessário. Ao ser alvo de um ataque, você pode usar sua reação para ativar um escudo temporariamente. Ao fazer isso, você recebe 1d10 + [seu bônus de proficiência multiplicado pelo seu modificador de Constituição] como pontos de vida temporários. Esses pontos de vida temporários duram até ser removidos ou após 1 minuto, enquanto esses pontos de vida temporários estiverem ativos, você recebe resistência a danos simples.",
+      "Melhorias",
+      "Escudo: +1d10 de pontos de vida temporários por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: Enquanto os pontos de vida temporários estiverem ativos, você recebe resistência a danos mágicos"
+    ]
+  },
+  {
+    "name": "Cegar",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Ao realizar um ataque de acerto a distância com arma ou magia, você pode utilizar essa runa para causar Cegueira ao inimigo atingido. Esse inimigo deve realizar uma salvaguarda de constituição, se falhar ele ficará Cego por até o final de seu próximo turno e receberá 1d6 de dano psíquico.",
+      "Erma: Ao ser usada de forma erma, essa runa dispara um projétil no alcance de Conjuração de Runa Erma. A criatura atingida deve realizar uma salvaguarda de Constituição, numa falha ficará Cega até o final de seu próximo turno e receberá 1d4 de dano psíquico.",
+      "Melhorias",
+      "Uso: +1 uso por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: +1 uso e a CD aumenta em 2"
+    ]
+  },
+  {
+    "name": "Chamas Infernais",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Meio-Dragão Infernal",
+    "info": [
+      "Você invoca as chamas de sua alma para fortalecer seu próximo ataque. Ao realizar um ataque corpo a corpo, você pode utilizar essa runa para causar 2d10 de dano ígneo adicional, caso atinja o alvo, ele deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Chamuscado sofrendo 1d10 de dano ígneo por turno.",
+      "Forma Dracônica. Enquanto em sua Forma Dracônica, ao atingir um ataque, criaturas em um cone de 10 pés atrás do alvo atingido devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 1d10 de dano ígneo.",
+      "Melhorias",
+      "Dano: +1d10 de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1d10 de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Conjuração Fortalecida",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Capacidade de conjurar ao menos uma magia",
+    "info": [
+      "As runas lhe concedem um fortalecimento em suas conjurações. Ao ativar essa runa, sua próxima magia de ataque ou que force uma criatura a realizar uma salvaguarda para receber dano, ela irá causar 2d8 de dano adicional. Essa runa só se aplica uma vez por magia.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Deslocamento",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você recebe um pico de energia momentâneo, aumentando sua velocidade consideravelmente. Ao ativar essa runa, você recebe 30 pés de deslocamento adicional e +1 de CA até o final de seu próximo turno.",
+      "Melhorias",
+      "Deslocamento: +15 pés de deslocamento por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 uso e o bônus de CA aumenta para +2"
+    ]
+  },
+  {
+    "name": "Disparo Energizado",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Destreza 13 ou maior",
+    "info": [
+      "Você aprende a externalizar a energia rúnica presente em seu corpo para fortalecer os seus disparos. Ao ativar essa runa, seu próximo ataque à distância causa 2d8 de dano adicional.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 2d6 + seu modificador de Atributo de runas como dano rúnico.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Energizar Ataque",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Força ou Destreza 13 ou maior",
+    "info": [
+      "Você invoca a energia que flui por todas as coisas para fortalecer seus ataques. Ao ativar essa runa, seu próximo ataque corpo a corpo causa 2d10 de dano adicional.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia contra um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 1d10 + seu modificador de Atributo de runas como dano rúnico.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Escudo",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você aprende a invocar a energia rúnica para que ela funcione como um escudo que protege seu corpo e sua mente. Ao ser alvo de um ataque ou caso realize uma salvaguarda para evitar receber dano, você pode usar sua reação para receber um bônus de +2 em sua CA ou na salvaguarda para resistir ao dano, você também recebe 10 pés de deslocamento e resistência ao tipo de dano do ataque ou efeito recebido. Esses bônus duram por 2 rodadas e, caso ele já esteja ativo, o bônus em sua CA ou salvaguarda não é aumentado.",
+      "Melhorias",
+      "Duração: +1 rodada de duração por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 uso e o bônus em sua CA ou salvaguarda se torna +3"
+    ]
+  },
+  {
+    "name": "Estilingue Elástico",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "Runinata com Consistência Gelatinosa",
+    "info": [
+      "Utilizando uma ação, você segura o chão com seus braços e se estica para trás, se lançando em um ponto à sua escolha a até 25 pés de você. Criaturas num raio de 5 pés do ponto em que você se lançou devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 3d8 de dano contundente e fica Caída.",
+      "Melhorias",
+      "Alcance: +5 pés de alcance por melhoria",
+      "Dano: +1 dado de dano por melhoria",
+      "Maestria: +10 pés de alcance e +1 dado de dano"
+    ]
+  },
+  {
+    "name": "Melhorar Cura",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "As runas que você possui emanam uma energia curativa mais forte do que o normal. Ao recuperar pontos de vida de uma criatura (exceto por itens), você pode ativar essa runa para adicionar 1d8 aos pontos de vida recuperados pela criatura.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você emana energia curativa em um alvo que você possa ver no alcance de sua ativação erma. Esse alvo recupera 1d6 + seu modificador de atributo de runas.",
+      "Melhorias",
+      "Pontos de Vida: +1 dado de pontos de vida por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de pontos de vida e +1 uso"
+    ]
+  },
+  {
+    "name": "Partícula de Medo",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você pode utilizar essa runa utilizando uma ação bônus para que uma criatura que você ataque realize uma salvaguarda de Sabedoria, caso ela falhe, a criatura fica Amedrontada por você durante 2 rodadas. Essa criatura recebe 1d8 de dano psíquico caso falhe na salvaguarda, esse dano só se aplica uma vez.",
+      "Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia escura no alcance de Conjuração de Runa Erma. A criatura atingida deve realizar uma salvaguarda de Sabedoria, numa falha fica amedrontada por você durante 2 rodadas. Ela causa 1d6 + seu modificador de Conjuração Erma de dano psíquico.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Roubar Vida",
+    "type": "Fagulha Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você sabe como roubar a energia vital de uma criatura para si. Ao realizar um ataque corpo a corpo, você pode ativar essa runa para que ele cause 1d10 de dano necrótico adicional. Caso atinja, você recupera metade do dano causado por essa runa em pontos de vida.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta energia rubra em um alvo que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 1d8 + seu modificador de Atributo de runa como dano necrótico e você recupera metade do dano causado.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +1 dado de dano e +1 uso",
+      "Com a evolução dos aventureiros, a energia rúnica passa a fluir ainda melhor através deles, proporcionando os Fluxos Rúnicos, são manifestações bem raras de se ver e que normalmente são capazes de virar situações e feitos incríveis."
+    ]
+  },
+  {
+    "name": "Armamento Aprimorado",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você sabe como imbuir suas lâminas com o poder de suas runas. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10, caso você possua a Fagulha Rúnica: Ataque Elemental, você pode utilizar os elementos escolhidos em ambas as runas ao ativá-las, declarando o elemento utilizado previamente.",
+      "Ao ativar essa runa, você reveste uma arma corpo a corpo ou seus punhos (para ataques desarmados) com energia elemental por 2 rodadas, essa arma possui +1 de bônus em sua jogada de acerto e o primeiro ataque realizado com ela em seu turno causa 2d10 de dano adicional de um tipo baseado no elemento escolhido.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: +2 rodadas de duração e +1 dado de dano"
+    ]
+  },
+  {
+    "name": "Bênção Estelar",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Sabedoria ou Carisma 13 ou maior",
+    "info": [
+      "Você pode fazer com que a energia das runas flua do solo em uma energia restauradora. Utilizando uma ação bônus, até 5 criaturas à sua escolha que você possa ver em um raio de 10 pés de você recuperam 2d8 + seu modificador de Atributo de runa em pontos de vida. Alternativamente, ao conjurar uma magia que recupere pontos de vida de uma criatura, você pode ativar essa runa para aumentar a cura concedida.",
+      "Melhorias",
+      "Pontos de Vida: +1 dado de pontos de vida por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +2 uso e +1 dado de pontos de vida"
+    ]
+  },
+  {
+    "name": "Bênção do Vigia",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você tira o máximo de sua força interna para fortalecer o seu corpo ou o de seus aliados. Utilizando uma ação bônus, você pode conceder a si mesmo, ou um aliado no alcance de seu toque, resistência a danos físicos simples por 3 rodadas.",
+      "Melhorias",
+      "Duração: +1 rodada de duração por melhoria",
+      "Uso: +1 uso por por melhoria",
+      "Maestria: +1 usos, +1 rodada de duração e você passa a conceder resistência à dano físicos mágicos"
+    ]
+  },
+  {
+    "name": "Combustão",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Meio-Dragão Infernal",
+    "info": [
+      "Ao utilizar essa runa você rodeia-se em fogo, aumentando sua proteção e velocidade. Utilizando uma ação bônus, você cria uma área de chamas de 10 pés ao seu redor que dura pelas próximas 3 rodadas. Criaturas que você definir nessa área devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 4d8 de dano ígneo. Você define se essas chamas irão afetar a vida vegetal na área.",
+      "Forma Dracônica. Enquanto em sua Forma Dracônica, a área das chamas se torna 20 pés ao invés de 10.",
+      "Melhorias",
+      "Dano: +1d8 de dano por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: +1d8 de dano e +2 usos"
+    ]
+  },
+  {
+    "name": "Desidratação",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você é capaz de exaurir as forças de seus inimigos. Ao realizar um ataque, você pode ativar essa runa para forçar o alvo a realizar uma salvaguarda de Constituição. Em uma falha, a criatura ficara Enfraquecida pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você pode forçar um alvo que você possa ver no seu alcance de ativação erma a realizar uma salvaguarda de Constituição. Em uma falha, o alvo fica Enfraquecido por você durante 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso.",
+      "Melhorias",
+      "Dificuldade: +1 na CD para salvaguarda por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: Caso falhe na salvaguarda, o alvo também fica Incapacitado"
+    ]
+  },
+  {
+    "name": "Disparos Vorazes",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você sabe como imbuir suas armas com o poder elemental concedido pelas runas. Ao escolher essa Runa, você deve escolher um dos elementos simples da tabela Elementos e Tipos de Dano presente no Capítulo 10, caso você possua a Fagulha Rúnica: Ataque Elemental, você pode utilizar os elementos escolhidos em ambas as runas ao ativá-las, declarando o elemento utilizado previamente.",
+      "Ao ativar essa runa, você reveste uma arma à distância ou fortalece suas magias de ataque com energia elemental por 2 rodadas, essa arma ou magia possui +1 de bônus em sua jogada de ataque e o primeiro ataque realizado com ela em seu turno causa 2d8 de dano adicional de um tipo baseado no elemento escolhido.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: +2 rodadas de duração e +1 dado de dano"
+    ]
+  },
+  {
+    "name": "Escudo Elemental",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Ao escolher esse Fluxo Rúnico você deve definir um tipo de energia elemental entre: ácido, elétrico, gélido, ígneo, trovejante ou venenoso. Com uma ação bônus você pode acionar esse fluxo rúnico e um escudo dessa energia rodeia seu corpo por 2 rodadas, atacantes que se aproximem a 5 pés de você sofrem dano elemental de 1d8 do tipo de energia escolhido. Você ganha resistência àquele tipo de energia pela duração, além disso ganha +3 CA pela duração contra ataques à distância.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por por melhoria",
+      "Maestria: +1 dado de dano e a duração sobe para 5 rodadas"
+    ]
+  },
+  {
+    "name": "Mergulho Fantasma",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Herança - Variante Ressurgido ou morto-vivo",
+    "info": [
+      "Você aprende como utilizar a energia do pós-morte para se camuflar no Reino Material. Utilizando uma ação bônus, você ativa essa runa ficando Invisível pelas próximas 2 rodadas. Enquanto Invisível dessa maneira, você recebe 15 pés de deslocamento adicional e atacar ou receber dano pela duração, encerra essa condição prematuramente.",
+      "Melhorias",
+      "Duração: +1 rodada de duração por melhoria",
+      "Usos: +1 uso por melhoria",
+      "Maestria: +2 usos e o deslocamento adicional se torna 30 pés"
+    ]
+  },
+  {
+    "name": "Peçonha da Terra",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você invoca o veneno presente na terra, corromper criaturas que passem por ele. Ao realizar um ataque à distância, você pode ativar essa runa para que o ataque cause 2d8 de dano venenoso adicional e você cria uma área peçonhenta em um raio de 5 pés de seu alvo. Criaturas nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada fica Intoxicada, podendo repetir a salvaguarda no início de cada um dos turnos dela para encerrar esse efeito em um sucesso.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil esverdeado contra uma criatura que você possa ver no seu alcance de ativação erma, você deve realizar um ataque à distância com runa contra o alvo. Caso atinja, o alvo sofre 2d6 de dano venenoso. Além disso, você cria uma área peçonhenta em um raio de 5 pés de seu alvo. Criaturas nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada fica Intoxicada, podendo repetir a salvaguarda no início de cada um dos turnos dela para encerrar esse efeito em um sucesso.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Raio: +5 pés de raio por melhoria",
+      "Maestria: +2 dados de dano e +5 pés de raio"
+    ]
+  },
+  {
+    "name": "Relâmpago Perfurante",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Destreza 15 ou maior",
+    "info": [
+      "Seus ataques são como um raio, atravessando todos no meio do combate. Ao realizar um ataque corpo a corpo que cause dano perfurante, você pode ativar essa runa para projetar energia elétrica em uma linha iniciada em você com 15 pés de comprimento por 1 pé de largura, caso sua arma possua a propriedade Extensão, o comprimento se torna 25 pés. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 3d8 de dano elétrico e fica Incapacitada até o final de seu próximo turno. Você pode usar essa runa em conjunto com outra runa de ataque corpo a corpo.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta energia elétrica em uma linha iniciada em você com o comprimento de seu alcance de ativação erma por 1 pé de largura. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 3d6 + seu modificador de Atributo de runa de dano elétrico e fica Incapacitada até o final de seu próximo turno.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +20 pés de comprimento e +1 dado de dano"
+    ]
+  },
+  {
+    "name": "Ribombar Lancinante",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Força 15 ou maior",
+    "info": [
+      "Seus ataques possuem a força de um trovão, desestabilizando seus inimigos. Ao realizar um ataque corpo a corpo que cause dano contundente, você pode ativar essa runa para projetar uma força esmagadora em um cone de 10 pés iniciado em você. Inimigos nessa linha devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 2d8 de dano trovejante e fica Atordoada até o final de seu próximo turno.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma força esmagadora em um cone de 20 pés iniciado em você. Inimigos nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 2d6 + seu modificador de Atributo de runa de dano trovejante e fica Atordoada até o final de seu próximo turno.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +2 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Vamos Pular!",
+    "type": "Fluxo Rúnico",
+    "prerequisites": "Runinata com Consistência Gelatinosa",
+    "info": [
+      "Utilizando uma ação, você se recolhe em uma esfera que quica no campo de batalha. Você pode saltar em um ponto a até 10 pés de você, criaturas num raio de 5 pés do ponto em que você se lançou devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 4d8 de dano contundente e fica Caída. Você pode saltar até 4 vezes.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Salto: +1 salto por melhoria",
+      "Maestria: +1 dado de dano e +1 salto",
+      "Uma manifestação superior do poder Rúnico, é um poder que age de maneira ainda mais forte que o Fluxo Rúnico e, por isso, ainda mais raro. Suas manifestações são normalmente impressionantes e quem testemunhe isso terá histórias para contar."
+    ]
+  },
+  {
+    "name": "Bênção do Ancião Carmesim",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Força ou Destreza 17 ou maior",
+    "info": [
+      "Reza a lenda que um homem velho com barba avermelhada costumava aparecer por todos os cantos de Runeterra, trazendo caos e destruição. Você pode ativar essa runa para fortalecer seus ataques até o final de seu próximo turno. Pela duração, seus ataques corpo a corpo feitos com uma arma marcial causam 2d8 de dano necrótico adicional e você recebe resistência a dano necrótico. Adicionalmente, você recebe pontos de vida temporários iguais à quantidade de dano causado em um único turno. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Maestria: +2 dados de dano e + 1 uso",
+      "Bis"
+    ]
+  },
+  {
+    "name": "Pré-requisito: Carisma 15 ou maior",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Você clama por atenção e sabe como tomá-la para você. Utilizando uma ação bônus, você pode ativar essa runa para conjurar uma onda sonora em uma linha de 60 pés de comprimento e 10 pés de largura iniciada a partir de você. Criaturas nessa linha que possam ouví-lo devem realizar uma salvaguarda de Sabedoria. Em uma falha, uma criatura afetada sofre 7d8 de dano psíquico e fica Enfeitiçado por você pelas próximas 3 rodadas. Em um sucesso, uma criatura sofre apenas metade do dano e não pode ficar Enfeitiçada dessa maneira por 24 horas. O comprimento dessa linha aumenta em 10 pés para cada alvo afetado.",
+      "Uma criatura Enfeitiçada dessa maneira deve utilizar seus turnos da melhor maneira possível para se aproximar de você e pode repetir a salvaguarda no final de cada um de seus turnos para encerrar essa condição.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 usos e +1 dado de dano"
+    ]
+  },
+  {
+    "name": "Brilho Estelar",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "",
+    "info": [
+      "Pré requisito: Sabedoria ou Carisma 15 ou maior",
+      "As estrelas brilham mais forte para você. Utilizando uma ação, você pode ativar essa runa para recuperar 11d8 pontos de vida de até 5 criaturas que você possa ver a até 15 pés de você. Ao ativar essa runa você recebe 1 nível de Exaustão. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Melhorias",
+      "Alcance: +15 pés de alcance por melhoria",
+      "Pontos de Vida: +2 dados de pontos de vida por melhoria",
+      "Maestria: +2 dados de pontos de vida e +1 uso"
+    ]
+  },
+  {
+    "name": "Campo Estático",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Construto, Pulso Rúnico - Descarga Energética",
+    "info": [
+      "Você possui um armazenamento interno que guarda toda a energia gerada por você enquanto se movimenta. Utilizando uma ação, você desfere uma descarga de energia num raio de 15 pés ao seu redor. Criaturas nessa área devem fazer uma salvaguarda de Constituição. Em uma falha, uma criatura afetada tem todos seus pontos de vida temporários removidos, sofre 4d8 de dano energético e fica Incapacitada até o final de seu próximo turno. Em um sucesso, recebe apenas metade do dano.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +2 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Desafio Grandioso",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Destreza 19 ou maior",
+    "info": [
+      "Você faz do campo de batalha uma dança a ser assistida, sempre trazendo admiração a cada golpe atingido. Ao ativar essa runa, você deve marcar um inimigo que você possa ver a até 30 pés de você, esse alvo deve realizar uma salvaguarda de Carisma para evitar essa marca. Em uma falha, o alvo terá seus pontos vitais expostos pelo próximo minuto e, caso você esteja utilizando uma arma com acuidade, você possui vantagem em suas jogadas de ataque contra esse alvo e sua margem de crítico contra ele é reduzida em 3.",
+      "Pela duração, cada vez que você realizar um acerto crítico contra esse alvo você rola 2 dados de dano adicionais e você recebe 15 pés de deslocamento adicional até o final de seu turno.",
+      "Enquanto a marca estiver ativa, após atingir seu alvo com 4 acertos críticos ou caso reduza seus pontos de vida a 0, você cria uma área de 15 pés de raio ao redor de seu alvo, você e seus aliados que estejam nessa área recuperam 4d10 pontos de vida. Quando isso ocorre, a marca em seu alvo desaparece e ele se torna imune à mesma pelas próximas 24 horas.",
+      "Melhorias",
+      "Pontos de Vida: +2 dados de pontos de vida por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 na CD e +1 uso"
+    ]
+  },
+  {
+    "name": "Égide Infernal",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Constituição 15 e Fluxo Rúnico - Bênção do Vigia",
+    "info": [
+      "Utilizando uma ação bônus, você pode invocar um escudo de chamas infernais num raio de 10 pés a partir de você, o escudo dura por até 3 rodadas. Ao invocar esse escudo, criaturas nessa área devem fazer uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 7d8 de dano incinerante e fica Chamuscada, recebendo 1d8 de dano incinerante por turno. Criaturas que iniciem seu turno nessa área ou entrem nela por conta própria pela duração também devem fazer a salvaguarda.",
+      "O escudo se move junto com você, plantas e animais nessa área também recebem o dano e tudo que morrer com esse dano parece ter sua vida sugada se tornando seco, enquanto o escudo durar você tem resistência a dano necrótico e a dano incinerante. Ao término do escudo você recebe 1 nível de Exaustão. Essa runa pode ser usada junto a outra Fagulha ou Fluxo Rúnico de escudo.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: +1 rodada de duração, +1 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Elégia",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Carisma 15",
+    "info": [
+      "Você pode imbuir um ataque com arma à distância com energia necrótica. Ao atingir uma criatura com esse ataque uma área nebulosa de 10 pés centrada no seu alvo é criada, criaturas que estiverem dentro dessa área, ou começarem seus turnos dentro dela, deverão realizar uma salvaguarda de Constituição, se falharem irão receber 2d8 de dano necrótico. Essa névoa têm uma duração de 3 rodadas e se afasta 10 pés numa direção à sua escolha no começo de cada um dos seus turnos. Um vento forte é capaz de dissipar essa área.",
+      "Erma: Ao ser usada de forma erma, essa runa projeta uma energia esverdeada em uma linha no alcance de sua conjuração erma atingindo o primeiro alvo. Ao atingir uma criatura com esse ataque uma área nebulosa de 10 pés centrada no seu alvo é criada, criaturas que estiverem dentro dessa área, ou começarem seus turnos dentro dela, deverão realizar uma salvaguarda de Constituição, se falharem irão receber 1d8 + seu modificador de conjuração Erma de dano necrótico. Essa névoa têm uma duração de 3 rodadas e se afasta 10 pés numa direção à sua escolha no começo de cada um dos seus turnos. Um vento forte é capaz de dissipar essa área.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Maestria: +2 dados de dano e +1 rodada de duração"
+    ]
+  },
+  {
+    "name": "Enlace Virente",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A natureza pode ser uma grande aliada e você sabe como tirar proveito disso. Utilizando uma ação bônus, você cria vinhas saídas do chão em uma linha de 30 pés de comprimento por 10 pés de largura iniciada em você. Criaturas nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura ficará Contida por 3 rodadas, podendo fazer uma salvaguarda de Força no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Melhorias",
+      "Alcance: +15 pés de comprimento por melhoria",
+      "Dificuldade: +2 na CD por melhoria",
+      "Maestria: +2 rodadas de duração e +1 usos"
+    ]
+  },
+  {
+    "name": "Espada da Justiça",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Alinhamento ordeiro, Força ou Destreza 17 ou maior",
+    "info": [
+      "Os vilões não podem sair impunes e você possui o poder para sentenciá-los. Utilizando uma ação, você invoca a espada da justiça em um alvo a até 30 pés de você, esse alvo deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo sofre 11d8 de dano luminar ou apenas metade disso em um sucesso.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Execução Perfeita",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Bodisatva da Doutrina Shinobi nível 12",
+    "info": [
+      "Duas vezes por descanso longo, você pode utilizar uma ação bônus para saltar 30 pés em uma linha, criaturas que estiverem nessa linha devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada recebe 9d8 de dano vibracional.",
+      "Até o final de seu próximo turno você pode utilizar sua ação bônus para saltar novamente.",
+      "Melhorias",
+      "Uso: +2 usos por melhoria",
+      "Dano: +2d8 de dano por melhoria",
+      "Maestria: +2d8 de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Florescer Repentino",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Elemento Flora, Sabedoria 15 ou maior",
+    "info": [
+      "Você aprendeu uma maneira de reunir a mana de um local para conter o avanço de seus inimigos. Utilizando uma ação bônus, você inicia uma canalização de energia espiritual centrada em você. No início de seu próximo turno, você salta no ar liberando toda essa energia, você recebe 7d8 pontos de vida temporários até o final da rodada e criaturas hostis num raio de 15 pés ao seu redor devem realizar uma salvaguarda de Sabedoria. Em uma falha, uma criatura afetada sofre 7d8 de dano rúnico e ficam Contidas até o final de seu próximo turno.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 dados de dano e você pode liberar a energia canalizada a qualquer momento com uma ação livre"
+    ]
+  },
+  {
+    "name": "Hálito Flamejante",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Meio-Dragão Infernal",
+    "info": [
+      "Você convoca as chamas de suas almas para queimar seus inimigos. Ao utilizar sua arma de sopro, você pode usar essa runa para que criaturas que falhem na salvaguarda sofram 4d8 de dano adicional e ficam Enfraquecida.",
+      "Forma Dracônica. Enquanto em sua Forma Dracônica, ao usar sua arma de sopro, você a conjurar em uma linha de 30 pés que param no primeiro alvo. Ele deve realizar uma salvaguarda de Destreza. Em uma falha, o alvo sofre 4d8 dano adicional. Em um sucesso, as chamas continuam a percorrer a linha até que atinja um alvo que falhe na salvaguarda ou chegar ao seu alcance limite, o que acontecer primeiro. Adicionalmente, ao atingir um alvo ou chegar ao final de seu alcance, as chamas explodem em uma área de 15 pés ao redor do alvo atingido pelas próximas 3 rodadas. Criaturas nessa área, que comecem seus turnos dentro dela ou entrem nela pela primeira vez em seus respectivos turnos, devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 4d8 de dano incinerante e fica Enfraquecida.",
+      "Melhorias",
+      "Dano: +2d8 de dano por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2d8 de dano, +1 uso e a duração da área se torna 5 rodadas"
+    ]
+  },
+  {
+    "name": "Ira Demolidora",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Força 19 ou maior",
+    "info": [
+      "O poder da Tormenta vem à seu auxílio concedendo a ira dos trovões para seus golpes. Ao ativar essa runa, você realiza um golpe devastador em um cone de 20 pés iniciado em você. Criaturas nessa área devem realizar uma salvaguarda de Força. Em uma falha, uma criatura afetada sofre 11d8 de dano vibracional ou metade disso em um sucesso. Além disso, você recebe metade do dano causado por essa runa como pontos de vida temporários e recebe 1 nível de Exaustão. Você pode utilizar essa runa em conjunto com outra. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um surto de energia trovejante em um ponto que você possa ver no seu alcance de ativação erma. Criaturas num cone de 25 pés do ponto escolhido devem realizar uma salvaguarda de Força. Em uma falha, uma criatura afetada sofre 8d8 de dano vibracional ou metade disso em um sucesso. Além disso, você recebe metade do dano causado por essa runa como pontos de vida temporários e recebe 1 nível de Exaustão. Você pode utilizar essa runa em conjunto com outra.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Dificuldade: +2 na CD por melhoria",
+      "Maestria: +2 dados de dano e +1 na CD"
+    ]
+  },
+  {
+    "name": "Lança Luminar",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Destreza 15 e Fagulha Rúnica - Disparo Energizado",
+    "info": [
+      "Você pode 2 vezes por descanso longo usar sua arma à distância para disparar um disparo devastador que causa 11d8 de dano radiante e a criatura deve fazer uma salvaguarda de Constituição cuja CD aumentada em +1, se falhar recebe a condição Cega. Utilizar essa runa causa a você 1d8 de dano que não pode ser mitigado. Essa runa pode ser usada junto a uma Fagulha Rúnica.",
+      "Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia radiante com alcance igual ao de sua Conjuração Erma contra um alvo, a criatura deve fazer uma salvaguarda de Constituição cuja CD é aumentada em +1, se falhar recebe a condição Cega e 9d8 de dano radiante. Utilizar essa runa erma causa a você 1d8 de dano que não pode ser mitigado.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Dificuldade: +2 na CD por melhoria",
+      "Maestria: +2 dados de dano e +1 na CD"
+    ]
+  },
+  {
+    "name": "Ressaca Espectral",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Herança - Variante Ressurgido Espectral, Destreza 15 ou maior",
+    "info": [
+      "Sua movimentação deixa resquícios de seu espírito para trás, podendo atormentar a mente de uma criatura, a deixando incapaz de se mover. Utilizando uma ação, você ativa essa runa podendo se mover para um ponto desocupado que você possa ver a até 20 pés de você. Criaturas numa linha formada a partir do ponto inicial que você partiu até o local em que você se moveu devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofrerá 3d8 de dano necrótico e ficará Atordoada até o final de seu próximo turno.",
+      "Melhorias",
+      "Dano: +1 dado de dano por melhoria",
+      "Uso: +1 uso por melhoria",
+      "Maestria: +2 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Selo da Lua Minguante",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "",
+    "info": [
+      "A lua minguante clama pelo aquietamento, e quando se vai contra isso, seu corpo irá reclamar. Utilizando uma ação bônus, você pode tocar uma criatura no seu alcance para tentar exaurir esse alvo, ele deve realizar uma salvaguarda de Constituição. Em uma falha, você e seus aliados possuem vantagem em jogadas de ataque contra ele, sua CA diminui em 3 e seu deslocamento é reduzido em 20 pés. Esse efeito dura por 2 rodadas. O alvo afetado pode repetir a salvaguarda no final de cada um dos turnos dele para encerrar esse efeito.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você projeta uma energia prateada contra um alvo no seu alcance de conjuração erma, seu alvo deve realizar uma salvaguarda de Constituição. Em uma falha, você e seus aliados possuem vantagem em jogadas de ataque contra ele, sua CA diminui em 2 e seu deslocamento é reduzido em 15 pés. Esse efeito dura por 2 rodadas. O alvo afetado pode repetir a salvaguarda no final de cada um dos turnos dele para encerrar esse efeito.",
+      "Melhorias",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: O alvo passa a ter vulnerabilidade a todos os danos pela duração"
+    ]
+  },
+  {
+    "name": "Subjugar",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Constituição 19 ou maior",
+    "info": [
+      "Seu poder rúnico é capaz de drenar a força vital de um alvo dando a você essa força. Utilizando uma ação bônus, você pode ativar essa Runa, tendo que escolher um alvo a até 20 pés de você, esse alvo deve fazer uma salvaguarda de Constituição. Em uma falha, recebe uma penalidade de -2 em sua CA e em todas suas salvaguardas e, no início de cada um de seus turnos, o alvo sofre 5d8 de dano necrótico. Adicionalmente, você recupera metade de todo o dano necrótico causado por essa runa em pontos de vida. Esse efeito dura por 3 rodadas.",
+      "Um alvo afetado por essa runa pode repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito. Além disso, enquanto um alvo estiver sob efeito dessa runa, você recebe um bônus de +2 em sua CA e em todas suas salvaguardas.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Maestria: +2 usos e +1 na CD"
+    ]
+  },
+  {
+    "name": "Temerário",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Constituição 17 ou maior",
+    "info": [
+      "Sua confiança em sua resistência é excepcional trazendo uma maior ousadia em combate, isso sendo refletido em seu poder rúnico. Ao ativar essa runa, seu corpo começa a emitir um leve brilho dourado, emitindo penumbra por 5 pés. Até o início de seu próximo turno você recebe 10 pés de deslocamento adicional e possui imunidade a todos os tipos de dano (exceto danos verdadeiros). Ao final da duração, você recebe 1 nível de Exaustão.",
+      "Além disso, caso você possua o Fluxo Rúnico: Bênção do Vigia, você pode conceder esses bônus para um aliado no alcance de seu toque ao invés de você mesmo.",
+      "Melhorias",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: Você não recebe 1 nível de Exaustão ao final da duração"
+    ]
+  },
+  {
+    "name": "Ultimato Hextec",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Construto ou Variante Progressão Tecnológica (Núcleo Hex), Destreza 15 ou maior",
+    "info": [
+      "O núcleo Hextec que você possui dentro de você lhe concedeu uma nova maneira de controlar o campo de batalha e isolar um inimigo. Utilizando uma ação, você salta em um alvo a até 15 pés de você, esse alvo deve realizar uma salvaguarda de Sabedoria. Em uma falha, você cria uma área de pura energia num raio de 15 pés de seu alvo pelas próximas 2 rodadas, ele não pode sair dessa área de nenhuma maneira e uma vez por rodada quando você o atingir com um ataque, você causa 4d10 de dano rúnico adicional, além disso, inimigos nessa área devem realizar uma salvaguarda de Força, sendo empurrados para fora da área em uma falha. O alvo preso na área pode repetir a salvaguarda no final dos turnos dele para encerrar esse efeito em um sucesso.",
+      "Melhorias",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Ventania Sombria",
+    "type": "Vórtice Rúnico",
+    "prerequisites": "Fagulha Rúnica - Partícula de Medo",
+    "info": [
+      "Você pode utilizar essa runa 2 vezes por descanso longo para fazer um ataque com arma à distância. A criatura atingida e o inimigo mais próximo dela, a até 10 pés, devem realizar uma salvaguarda de Constituição, se falharem receberão 4d8 + seu modificador de conjuração Erma de dano necrótico e ficarão Incapacitadas por 2 rodadas, podendo repetir a salvaguarda no começo de cada um de seus turnos para encerrar a condição. Caso haja uma criatura inimiga a até 10 pés do segundo alvo atingido também deve realizar essa salvaguarda, isso se repete a até 4 criaturas além de seu alvo primário.",
+      "Erma: Ao ser usada de forma erma, essa runa projeta uma energia esverdeada em uma linha no alcance de sua conjuração erma atingindo o primeiro alvo. A criatura atingida e o inimigo mais próximo dela, a até 10 pés, devem realizar uma salvaguarda de Constituição, se falharem receberão 3d8 de dano necrótico e ficarão Incapacitadas por 2 rodadas. Caso haja uma criatura inimiga a até 10 pés do segundo alvo atingido também deve realizar essa salvaguarda, isso se repete a até 4 criaturas além de seu alvo primário.",
+      "Melhorias",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Dano: +2 dados de dano por melhoria",
+      "Maestria: +2 dados de dano e +1 rodadas de duração",
+      "O ápice do poder inato rúnico é a Explosão Rúnica, esse poder é raro e somente os mais lendários heróis são capazes de manifestá-los conseguindo feitos também lendários."
+    ]
+  },
+  {
+    "name": "Bênção do Senhor da Guerra",
+    "type": "Explosão Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você provavelmente nasceu sob a constelação celestial da Guerra, e isso só foi aflorar agora, no auge de sua força. Ao ativar essa runa, você convoca a fúria do senhor da guerra em seu corpo, a mantendo ativa por 2 rodadas. Uma vez por rodada, seu primeiro ataque à distância é acompanhado de 3 projéteis de energia contra seu alvo. Caso o ataque atinja, cada projétil causa 3d10 + seu modificador de Atributo de runa como dano rúnico contra o alvo.",
+      "Caso o alvo seja reduzido a 0 pontos de vida e você ainda possuir um projétil, você pode comandá-lo a atacar uma nova criatura a até 15 pés de seu alvo. Essa criatura deve realizar uma salvaguarda de Destreza, sofrendo o dano do projétil em uma falha ou apenas metade em um sucesso.",
+      "Melhorias",
+      "Projéteis: +1 projétil por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 rodadas de duração e você recupera 1d10 pontos de vida para cada projétil que atinja"
+    ]
+  },
+  {
+    "name": "Chamado da Dama da Fúria",
+    "type": "Explosão Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Os sons das trombetas ressoam em seus ouvidos, lhe chamando para a batalha. Ao ativar essa runa, você fortalece seus ataques corpo a corpo desarmados, com armas ou com armas naturais, mantendo esse efeito ativo por 4 rodadas. Uma vez por rodada, seu primeiro ataque corpo a corpo nessas condições causa 4d10 de dano rúnico adicional, diminuindo a CA do alvo em 1 atingido até o final da duração dessa runa.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Maestria: +2 usos, +1 dado de dano e a diminuição na CA do alvo continua por até 3 rodadas depois do fim da duração"
+    ]
+  },
+  {
+    "name": "Égide dos Ascendentes",
+    "type": "Explosão Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Os elementos atuam em você de uma maneira um tanto quanto incomum. Ao escolher essa Runa, você deve escolher um dos elementos mágicos da tabela Elementos e Tipos de Dano presente no Capítulo 10. Você recebe resistência a um tipo de dano mágico baseado no elemento escolhido.",
+      "Ao ativar essa runa você invoca uma nuvem elemental em um raio de 15 pés ao seu redor. Inimigos nessa área, que iniciem seus turnos dentro dela ou entrem nela pela primeira vez em seus turnos, devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura afetada sofre 4d8 de dano mágico de um tipo baseado no elemento escolhido. Em um sucesso, uma criatura sofre apenas metade do dano. Essa nuvem dura por até 2 rodadas.",
+      "Melhorias",
+      "Duração: +2 rodada de duração por melhoria",
+      "Uso: +2 uso por melhoria",
+      "Maestria: +2 dados de dano e aliados na área da nuvem recebem imunidade ao elemento escolhido pela duração"
+    ]
+  },
+  {
+    "name": "Exaurir",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Constituição 18 e Fluxo Rúnico - Desidratação",
+    "info": [
+      "Ao realizar um ataque com arma ou com magia, você pode fazer com que uma criatura atingida receba uma descarga de energia causticante que causa Enfraquecimento e Cegueira por 5 rodadas, caso ela falhe em uma salvaguarda de Constituição. Você pode utilizar essa runa duas vezes por descanso longo, mas não pode utilizá-la duas vezes na mesma criatura. Uma criatura Enfraquecida e Cega dessa maneira pode repetir a salvaguarda no início de cada um de seus turnos.",
+      "Erma: Ao ser usada de forma erma, você dispara um projétil com aspecto cinzento, com alcance igual ao de uma Runa Erma. Um alvo atingido deve realizar uma salvaguarda de Constituição, caso falhe ele fica Enfraquecida e Cega por 3 rodadas.",
+      "Melhorias",
+      "Uso: +2 usos por melhoria",
+      "Dificuldade: +2 na CD por melhoria",
+      "Maestria: +1 na CD e você passa a poder atingir 2 criaturas adicionais"
+    ]
+  },
+  {
+    "name": "Fôlego de Guerra",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Constituição 19 ou maior, Fagulha Rúnica - Escudo",
+    "info": [
+      "Você aprende como aumentar temporariamente sua vitalidade. Ao ativar essa runa, você aumenta seus pontos de vida máximos e atuais em 5d10 pelo próximo minuto. Além disso, desde que você não esteja Incapacitado, você recebe +4 de bônus em sua CA pela duração, esse bônus não é cumulativo. Adicionalmente, você remove 1 nível de Exaustão que você possua.",
+      "Além disso, caso você possua o Fluxo Rúnico: Bênção do Vigia, você pode conceder esses bônus para um aliado no alcance de seu toque ao invés de você mesmo.",
+      "Melhorias",
+      "Duração: +2 rodadas de duração por melhoria",
+      "Pontos de Vida: +2d10 de pontos de vida por melhoria",
+      "Maestria: +2d10 de pontos de vida e +2 usos"
+    ]
+  },
+  {
+    "name": "Fragilizar",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Inteligência ou Sabedoria 15 ou maior, Vórtice Rúnico - Selo da Lua Minguante",
+    "info": [
+      "Você deixa a pele, ossos, e alma de uma criatura fracas e incapazes de uma defesa efetiva. Ao atingir um ataque, você pode ativar essa runa para fazer com que o alvo realize uma salvaguarda de Constituição. Em uma falha, a criatura receberá vulnerabilidade a todos os tipos de dano pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo, mas não pode utilizá-la 2 vezes na mesma criatura nesse período.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil de energia pútrida contra um alvo no seu alcance de ativação erma, ele deve realizar uma salvaguarda de Constituição. Em uma falha, a criatura receberá vulnerabilidade a todos os tipos de dano pelas próximas 3 rodadas, podendo repetir a salvaguarda no final de cada um de seus turnos para encerrar esse efeito em um sucesso.",
+      "Melhorias",
+      "Dificuldade: +2 na CD por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 na CD e +2 usos"
+    ]
+  },
+  {
+    "name": "Lembrança Sombria",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Destreza 18 e Fagulha Rúnica - Disparo Energizado",
+    "info": [
+      "Ao usar essa Explosão Rúnica, você pode 2 vezes por descanso longo escolher um ataque a distância (ou magia ofensiva), uma criatura atingida por esse ataque deve realizar uma salvaguarda de Destreza, se falhar irá receber 14d8 de dano de Energia Rúnica e ficará Amedrontada por você, além disso você se cura em metade do dano causado.",
+      "Erma: Ao ser usada de forma erma, essa runa dispara um projétil de energia rúnica com alcance igual ao de uma Runa Erma. Uma criatura atingida por esse ataque deve realizar uma salvaguarda de Destreza, se falhar irá receber 12d8 de dano de Energia Rúnica e ficará Amedrontada por você, além disso você se cura em metade do dano causado.",
+      "Melhorias",
+      "Uso: +2 usos por melhoria",
+      "Dano: +2 dados de dano por melhoria",
+      "Maestria: +2 dados de dano e +2 na CD"
+    ]
+  },
+  {
+    "name": "Lótus da Morte",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Destreza 19 ou maior",
+    "info": [
+      "Você sabe como controlar a energia dentro de si para criar e lançar dezenas de armas mortais em seus alvos. Utilizando uma ação, você ativa essa runa realizando um golpe giratório e lançando diversas lâminas espectrais em todos os inimigos num raio de 15 pés de você, alvos nessa área devem realizar uma salvaguarda de Destreza. Em uma falha, uma criatura sofre 9d8 de dano incisivo ou metade disso em um sucesso. Adicionalmente, caso você reduza uma criatura a 0 pontos de vida utilizando essa runa, você recupera 1 uso dessa runa.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +2 dado de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Morte das Profundezas",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Herança - Variante Ressurgido Espectral, Destreza 17 ou maior",
+    "info": [
+      "A morte foi trazida para você e você irá trazê-la para todos os seus inimigos. Utilizando uma ação, você ativa essa runa em um ponto que você possa ver a até 60 pés de você. Criaturas num raio de 10 pés desse ponto devem realizar uma salvaguarda de Constituição. Em uma falha, uma criatura afetada sofre 6d8 de dano necrótico ou metade disso em um sucesso. Além disso, caso uma criatura na área seja reduzida a 0 pontos de vida, você passa a ocupar o local que ela estava e poderá atacar uma nova área com essa runa sem gastar um uso da mesma.",
+      "Melhorias",
+      "Dano: +2 dados de dano por melhoria",
+      "Dificuldade: +2 na CD por melhoria",
+      "Maestria: +2 dados de dano e +2 usos"
+    ]
+  },
+  {
+    "name": "Pesadelo Vivo",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Carisma 18",
+    "info": [
+      "Ao invocar essa explosão rúnica você pode desfigurar sua própria face refletindo os pesadelos de seus alvos. Uma criatura à sua escolha, e até 40 pés que possa ver seu rosto deve ser bem-sucedida em uma salvaguarda de Sabedoria ou é afetada por um dos efeitos abaixo a sua escolha. A cada turno enquanto durar a explosão, você pode escolher outra criatura, mas não uma que já tenha sido bem-sucedida na salvaguarda. Essa runa possui uma duração de 3 rodadas, ao final dela você recebe 1 ponto de exaustão.",
+      "Adormecer. O alvo cai inconsciente. Ele acorda se sofrer qualquer dano ou se outra criatura usar sua ação para sacudir o adormecido até acordá-lo.",
+      "Apavorar. O alvo está amedrontado. Em cada um dos turnos dele, a criatura amedrontada deve realizar a ação de Disparada e se mover para longe de você pela rota segura mais curta disponível, a não ser que não haja lugar para se mover. Se o alvo se mover para um local a, pelo menos, 60 pés de distância de você onde ela não possa mais te ver, esse efeito termina.",
+      "Melhorias",
+      "Uso: +1 uso por melhoria",
+      "Duração: +1 rodada de duração por melhoria",
+      "Maestria: o alcance sobe para 60 pés e você pode escolher até um alvo adicional no primeiro, no terceiro e no quinto turno (caso tenha essa duração)"
+    ]
+  },
+  {
+    "name": "Potência Brutal",
+    "type": "Explosão Rúnica",
+    "prerequisites": "Fagulha Rúnica - Energizar Ataque, Força ou Destreza 19 ou maior",
+    "info": [
+      "Sua capacidade física é incomparável e seus golpes atravessam até a mais forte das defesas. Ao ativar essa runa, você energiza seu próximo ataque corpo a corpo e fazendo com que o alvo deve realizar uma salvaguarda de Constituição. Em uma falha, o alvo sofre 16d10 de dano rúnico adicional ou apenas metade disso em um sucesso. Você pode utilizar essa runa 2 vezes por descanso longo.",
+      "Ativação Erma: Ao ativar a runa dessa maneira, você dispara um projétil contra um alvo que você possa ver no seu alcance de ativação erma, o alvo deve realizar uma salvaguarda de Constituição, com a CD aumentada em 1. Caso atinja, o alvo sofre 14d8 + seu modificador de Atributo de runa como dano rúnico ou apenas metade disso em um sucesso.",
+      "Melhorias",
+      "Dificuldade: + 2 na CD por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: +3 dados de dano e +1 uso"
+    ]
+  },
+  {
+    "name": "Restauração Estelar",
+    "type": "Explosão Rúnica",
+    "prerequisites": "",
+    "info": [
+      "Você possui um poder remanescente dentro de você vindo da antiga deusa da cura. Ao ativar essa runa, você invoca um surto de energia curativa em um alvo a até 120 pés de você que você possa ver, esse alvo recupera 6d8 + seu bônus de proficiência + seu modificador de Atributo de runa em pontos de vida. Alternativamente, você pode usar essa runa como parte da ação de outra magia, habilidade, efeito ou runa, isso não funciona com itens.",
+      "Melhorias",
+      "Pontos de Vida: +2 dados de pontos de vida por melhoria",
+      "Uso: +2 usos por melhoria",
+      "Maestria: Essa runa pode ser utilizada em até 4 alvos ao mesmo tempo"
+    ]
+  }
+]

@@ -1,1497 +1,1333 @@
 [
-	{
-	  "name": "Agilidade Primal",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você tem algum parentesco muito distante com Vastayeses ou uma conexão muito grande com seus instintos.",
-	  "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Qualquer rolagem para resistir às condições Agarrado ou Caído são feitas com vantagem.||Caso esteja Caído, se levantar custa apenas 5 pés de sua movimentação ao invés de metade dela.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Alma Fluida",
-	  "origins": [],
-	  "lineages": [
-		"Elemental do Oceano"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você possui uma harmonização natural com os fluídos espirituais.",
-	  "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe 1 ponto de Ki para cada 5 níveis de personagem que você possui.||Utilizando uma ação bônus e gastando 1 ponto de Ki, você pode aumentar sua CA em +1 ou adicionar o modificador do atributo escolhido para essa Herança ao dano de seus ataques corpo a corpo, o bônus escolhido dura até o início de seu próximo turno.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Ambidestro",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é eficiente com ambas as mãos, sem que haja uma dominância entre elas.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando estiver combatendo com mais de uma arma leve, você sempre adiciona seu modificador de atributo ao dano de suas armas além da primeira||Todas as suas mãos são consideradas hábeis, fazendo com que você não tenha desvantagem para realizar qualquer tipo de ação que esteja relacionada a utilizar uma mão diferente.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Anciã",
-	  "origins": [],
-	  "lineages": [
-		"Arbóreo"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Um ancião de uma espécie já ancestral, você vagueia pelo mundo a séculos ou já viu muitas almas vivas passarem por você, com o tempo você se tornou mais resistente, tanto mentalmente quanto fisicamente.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode utilizar o truque druidismo sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança, antes de realizar um descanso longo.||Você pode utilizar o truque resistência em si mesmo sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança, antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Flora||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Anos de Sho’ma",
-	  "origins": [],
-	  "lineages": [
-		"Oovi-Kat"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você sempre utilizou do Sho’ma para poder viver em uma sociedade sem ser perseguido, e ninguém até hoje tem certeza qual sua verdadeira forma.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Percepção ou Enganação, caso já possua proficiência na perícia escolhida, você recebe especialidade com a perícia escolhida.||Escolha entre Furtividade e Percepção, a perícia escolhida recebe seu bônus de proficiência.||Você tem vantagem em testes de Intuição para saber se uma criatura está falando a verdade.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Aptidão Elemental",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Ixtal"
-	  ],
-	  "prerequisites": "conjurador",
-	  "description": "Você possui uma habilidade nata em relação à magia elemental, sabendo alterar suas propriedades básicas.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso a um Mistério Elemental à sua escolha de um elemento que você possa ter acesso.||Ao obter essa Herança, você deve escolher dois elementos que você tenha acesso. Você é capaz de trocar o dano das magias desses dois elementos. Ao fazer isso, você deve declarar previamente para seu mestre o novo elemento que está sendo usado, use a tabela Elementos e Tipos de Dano do Capítulo 10: Conjuração. Por exemplo, caso você escolha os elementos Água e Fogo, ao conjurar magias de fogo que causem dano, você pode mudar o tipo de dano das magias de fogo para perfurante ao invés do dano normal da magia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Arbusto Frutífero",
-	  "origins": [
-		"Antroplantae"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Como as mais diversas plantas frutíferas você pode prover um doce sabor aos seus aliados.",
-	  "atributes": "010101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode utilizar a magia bom fruto sem gastar pontos de mana nem precisa utilizar quaisquer componentes verbais, somáticos ou materiais, você pode usar essa magia dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Flora||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Armamento Gélido",
-	  "origins": [],
-	  "lineages": [
-		"Elemental Glacial"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é capaz de solidificar o ar na forma de uma arma que, enquanto estiver em contato com você, permanece sólida como uma arma normal.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Utilizando uma ação bônus, você pode criar uma arma de gelo em suas mãos, a arma criada possui a aparência de uma arma a qual você possui proficiência, o que também define o tipo de dano da arma. Essa arma causa 1d6 de dano, aumentando para 1d8 no nível 6, 1d10 no nível 12 e 2d6 no nível 18. Caso você solte a arma, ela derrete instantaneamente. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Arsenal Floral",
-	  "origins": [
-		"Antroplantae"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Algumas plantas tem seus espinhos, mas você tem todos eles.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode produzir espinhos resistentes capazes de serem usados como arma. Você possui proficiência com esses espinhos e eles causam 1d4 de dano perfurante e possuem as propriedades: leve, acuidade e arremesso (10-20 pés). Você pode criar um número de espinhos iguais a seu modificador do atributo escolhido para essa Herança por descanso longo (mínimo de 1). Criaturas que não sejam você possuem desvantagem em rolagem de ataques com esses espinhos. Espinhos criados dessa forma ficam secos e quebradiços depois de 24 horas, se tornando inutilizáveis.||Você recebe acesso ao Mistério da Flora||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Autoridade Alfa",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Noxus"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você é imbuído pelos valores Noxianos com isso intimamente ligado ao seu ser.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você ganha proficiência em Intimidação ou Persuasão, caso já possua proficiência na perícia escolhida, você recebe especialidade com a perícia escolhida.||Se uma criatura obtiver sucesso em um ataque contra você, você tem vantagem em rolagens de acerto com armas corpo a corpo contra aquela criatura até o final do seu próximo turno. Você pode utilizar essa habilidade dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Autoridade Justa",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Piltover"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você tem as ferramentas necessárias para a aplicação da lei.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Desde que você esteja usando roupas finas, você tem vantagem em testes de Persuasão e Intimidação.||Você aprende o truque taumaturgia sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Bênção da Fortuna",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Águas de Sentina"
-	  ],
-	  "prerequisites": "",
-	  "description": "Seu povo têm uma sorte extraordinária, o que você aprendeu a emprestar misticamente a seus companheiros quando vê-los hesitar. Você não tem certeza de como fazê-lo; você apenas deseja, e isso acontece. Certamente, um sinal de favor da fortuna!",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você ou, um aliado que você possa ver dentro de 30 pés de você, rolar um 1 natural no d20 para uma rolagem de ataque, um teste de atributo ou uma Salvaguarda, você pode usar sua reação para permitir que o alvo refaça a rolagem. O alvo deve usar o novo resultado. Você pode usar essa habilidade um um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Bênção de Warmog",
-	  "origins": [
-		"Troll"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Em você corre o sangue do lendário Warmog, o mais importante Troll da era das Guerras Rúnicas. Esse sangue o abençoa com uma regeneração impressionante.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recupera um total de pontos de vida igual a metade do seu modificador de Constituição no início de cada um dos seus turnos. Se você sofrer dano ácido ou ígneo, essa Herança não funcionará até o início do seu próximo turno. Você morre ou fica inconsciente apenas se começar seu turno com 0 pontos de vida e não puder se regenerar.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Benção Rakkor",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Targon"
-	  ],
-	  "prerequisites": "",
-	  "description": "Sua fúria interior queima incansavelmente.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando acertar um ataque usando uma arma simples ou marcial corpo a corpo, você pode rolar um dos dados de dano da arma uma vez adicionalmente e somar o resultado a jogada. O tipo de dano é o mesmo original da arma. Uma vez que use essa característica, não pode usar novamente até terminar um descanso curto ou longo.||Imediatamente após usar essa Herança, você pode usar sua reação para realizar um ataque adicional com arma corpo a corpo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Bioenergia",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Piltover",
-		"Zaun"
-	  ],
-	  "prerequisites": "",
-	  "description": "Talvez tenha sido a proximidade de cristais hextec, talvez uma mutação positiva em contato com a cidade. O interessante é que você possui uma fagulha do que os Tecmaturgos buscam, energia.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe a característica Energia, possuindo 1 ponto de Energia (veja a classe de Tecmaturgo para mais informações). Caso adquira essa característica através da classe Tecmaturgo, você adiciona seu bônus de proficiência aos seus pontos de Energia ao invés disso.||Você adquire proficiência em Tecnologia, caso já possua, você recebe especialidade.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Bola de Pelos",
-	  "origins": [],
-	  "lineages": [
-		"Felpudo"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você possui um pouco mais de pelagem que os outros Yordles, se ela é bonita e vistosa ou desgrenhada, depende apenas de seus cuidados, mas ela consegue tirar você de vários apuros.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Enquanto estiver Agarrado, você pode utilizar sua reação para receber 1 ponto de dano e escapar. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||Ao ser atingido por um ataque à distância, você pode utilizar sua reação para que o ataque seja considerado uma falha crítica. Você pode fazer isso um número de vezes igual ao seu modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Brutalizador",
-	  "origins": [],
-	  "lineages": [
-		"Auroque"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Quando você entra em combate, seu corpo é a arma mais perigosa que você tem a sua disposição.",
-	  "atributes": "100000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "O dano de seus ataques desarmados e com chifres aumenta em 1 na escala de dano.||Seus ataques desarmados e com chifres tem sua margem de crítico reduzida em 1.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Caçador de Magos",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Demacia"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você recebeu um treinamento especial para utilizar contra conjuradores.",
-	  "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Se uma criatura que esteja a 5 pés de você conjurar uma magia você pode utilizar sua reação para realizar um ataque corpo a corpo contra ela.||Você implica desvantagem à concentração de uma criatura caso a atinja.||Você possui vantagem em salvaguardas contra magias conjuradas a até 5 pés de você.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Castelo de Areia",
-	  "origins": [],
-	  "lineages": [
-		"Troll da Areia"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você pode não ser tão grande quanto seus primos gélidos, mas você tem alguns truques na manga.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia aumentar/ reduzir, podendo conjurá-la em sua versão de “Aumentar” sem gastar pontos de mana. Você pode conjurar essa magia dessa maneira um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Enquanto estiver sob o efeito de Aumentar da magia aumentar/ reduzir, conjurado por você através dessa Herança, ao ser atingido por um ataque, você pode utilizar sua reação para desfazer a magia e fazer com que o ataque seja considerado uma falha crítica.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Cauda Preênsil",
-	  "origins": [
-		"Vastaya"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua cauda é quase uma terceira mão e braço para você.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Como uma ação bônus você pode realizar as seguintes ações com sua cauda.||Pegar ou segurar um objeto que pese até 1 quilo com sua cauda. Se fizer isso enquanto estiver roubando, você ganha vantagem no teste de Prestidigitação.||Abrir e Fechar portas.||Usar ferramentas de chaveiro.||Ganhar vantagem em jogadas de Agarrão.||Usar a ação Ajuda a uma criatura amigável até 5 pés de você.||Se pendurar.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Centelha Mágica",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "A magia floresceu em você ainda jovem e cabe a você explorar essa habilidade ou não.",
-	  "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso a um Mistério Celestial, Elemental Primário ou Espiritual à sua escolha.||Você recebe uma magia de 1º nível à sua escolha de um mistério que seja acessível que pode ser usada uma vez por descanso longo. Seu atributo para essa magia é o atributo escolhido e você não gasta pontos de mana para conjurá-la. Adicionalmente, você recebe acesso à lista de magias do Mistério da magia escolhida.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Centelha Mágica Ioniana",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Ionia"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você possui uma maior noção da magia natural que corre por toda Ionia através do fluxo dos espíritos, aprendendo a controlar parcialmente a magia espiritual do local à seu favor.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode conjurar druidismo e orientação. Você pode conjurar esses truques um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso a um Mistério Espiritual||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Centelha Mágica Marai",
-	  "origins": [],
-	  "lineages": [
-		"Marai"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprendeu a se adaptar tanto na superfície quanto nas profundezas.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia criar ou destruir agua, podendo conjurá-la sem pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Água||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Comandante",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua visão estratégica é privilegiada e isso pode ser aproveitado por você e seus aliados.",
-	  "atributes": "100001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Intimidação ou Persuasão, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você pode utilizar seu modificador de Força ao invés de Carisma ao utilizar a perícia Intimidação||Utilizando sua ação bônus, você pode conceder pelo próximo minuto aos seus aliados que possam vê-lo ou ouvi-lo um bônus de Moral em seu acerto igual a metade do modificador do atributo escolhido para essa Herança (mínimo de 1, arredondado para baixo). O bônus no acerto não se acumula. Você pode utilizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Conhecimentos Venéficos",
-	  "origins": [],
-	  "lineages": [
-		"Troll da Selva"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Os Trolls da Selva quando se dedicam a Venefício são exímios.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso ao Mistério Elemental do Veneno.||Você recebe acesso ao truque borrifo venenoso, esse truque é conjurado usando o atributo escolhido por essa Herança como atributo de Conjuração. Você pode conjurá-lo um número de vezes igual ao seu bônus de proficiência por descanso longo.||Você recebe o Ofício de Veneficista.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Conjurador Suporte",
-	  "origins": [],
-	  "lineages": [
-		"Marai"
-	  ],
-	  "regions": [],
-	  "prerequisites": "conjurador",
-	  "description": "Você sempre se prepara para o próximo perigo que pode encontrar.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você escolhe essa Herança, ela permite que você, uma vez por descanso longo, conjure duas magias de uma só vez com uma única ação, com os níveis máximos de magia que podem ser usados. Ambas as magias devem ter um tempo de conjuração de 1 Ação, ter uma duração de Instantâneo e pelo menos uma magia precisa atingir uma criatura aliada não causando dano à ela.||Você recebe acesso ao Mistério da Étermancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Contemplação Estelar",
-	  "origins": [],
-	  "lineages": [
-		"Ottrani"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprendeu como influenciar levemente o Sho’ma ao redor de uma criatura, fazendo com que seja mais difícil ter uma imagem certa da posição dela.",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao curar uma criatura, até o final do próximo turno dela, ataques de oportunidade realizados contra ela possuirão desvantagem e o próximo ataque que ela realizar possuirá vantagem.||Você recebe acesso ao Mistério da Étermancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Construção Primorosa",
-	  "origins": [],
-	  "lineages": [
-		"Brutal"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Os materiais empregados em sua construção foram de excelente qualidade ou tiveram uma excelente sinergia entre si, conferindo a você uma resistência adicional.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe uma segunda resistência das disponíveis na lista Resistente do Construto Brutal.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Convocar Auxílio",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Por algum motivo que você provavelmente sequer saiba, uma criatura nutre simpatia por você, vindo ao seu auxílio quando necessário.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia convocar familiar, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Corpo Leve",
-	  "origins": [],
-	  "lineages": [
-		"Ligeiro"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Os materiais empregados em seu corpo possuem uma ressonância particular que permite a você uma agilidade sobrenatural.",
-	  "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao ser atingido por um ataque corpo a corpo, após saber o dano causado pelo mesmo, você pode optar por usar sua reação para que o ataque seja considerado uma falha crítica ao invés disso. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Cultivo de Ki",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprendeu a canalizar a energia de seu próprio corpo para realizar feitos quase sobrenaturais..",
-	  "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe +1 de ponto de Ki caso já tenha Ki ou 2 pontos de Ki caso sua classe não tenha um valor de Ki.||Você pode escolher um Sutra geral ou um Sutra de Bodisatva, desde que atenda aos pré-requisitos do mesmo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Curandeiro Abençoado",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Em seu sangue corre um talento inato para a cura das mazelas que afligem o mundo.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Medicina, caso já possua você recebe especialidade.||Você aprende a magia palavra curativa, podendo conjurá-la sem gastar pontos de mana. O atributo escolhido para essa Herança é seu atributo de conjuração para essa magia. Você pode conjurar essa magia um número de vezes igual à metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo (mínimo de 1, arredondado para baixo).||Você recebe acesso ao Mistério da Água||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Dançarino",
-	  "origins": [],
-	  "lineages": [
-		"Lhotlan"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você sabe como conquistar a atenção dos outros dançando.",
-	  "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Acrobacia e Atuação, caso você já possua proficiência na perícia escolhida, você recebe especialização com a mesma.||Escolha entre Atuação ou Prestidigitação, a perícia escolhida recebe seu bônus de proficiência.||Seu deslocamento aumenta em 10 pés.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Detectar Fraquezas",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é frio e calculista, quase como Tomé Celso.",
-	  "atributes": "100100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha entre: você pode adicionar metade do seu modificador de Inteligência ao dano causado por ataques ou, você substitui o modificador de Força por metade do modificador de Inteligência para ataques.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Disciplina é Força",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Noxus"
-	  ],
-	  "prerequisites": "",
-	  "description": "Se você nasceu abraçado com essa arma ou se você se apaixonou pela mesma em seu crescimento, não importa, você se tornou perito no uso da mesma. Essa herança pode ser escolhida mais de uma vez.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao escolher essa Herança você recebe proficiência com uma arma à sua escolha.||Você adiciona seu bônus de proficiência ao dano causado com essa arma, ao escolher essa Herança novamente, você só pode receber esse bônus ao dano de uma outra arma escolhida por essa Herança.||lvl4()",
-	  "rechosen": "Y"
-	},
-	{
-	  "name": "Distração de Combate",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seja por ter uma boca muito suja ou por ser um verdadeiro provocador, você sabe como agir para distrair seus adversários.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando uma criatura que possa vê-lo ou ouvi-lo realizar um ataque, você pode utilizar sua reação para impor desvantagem ao ataque dessa criatura. Você pode realizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Dupliventos",
-	  "origins": [],
-	  "lineages": [
-		"Elemental das Nuvens"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Os ventos parecem recuperar sua energia interior, como se a cada sopro renovado você fosse provido de mais força.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao ser alvo de uma magia ou efeito que recupere uma quantidade de pontos de vida equivalentes ou maiores que o máximo de seu dado de vida, você pode usar sua reação para recuperar metade do modificador do atributo escolhido para essa Herança em pontos de mana. Você pode usar essa característica um número de vezes igual ao dobro de seu modificador do atributo escolhido para essa Herança por descanso longo.||Você pode utilizar o truque leque de vento sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||Você recebe acesso ao Mistério do Vento.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Eletrostático",
-	  "origins": [],
-	  "lineages": [
-		"Emissário"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você consegue manipular sua fonte energética, descarregando sua energia em um pulso protetor. Você pode utilizar o traço Aumentar a Voltagem para criar um escudo de pontos de vida temporários que dura até o começo de seu próximo turno como uma ação bônus. Você faz a rolagem do dado normalmente e adiciona como pontos de vida temporários que duram até o início de seu próximo turno, além disso.",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe vantagens em testes e salvaguardas de Força quando tentarem derrubá-lo ou movê-lo contra sua vontade.||Uma vez por turno, você pode adicionar seu bônus de proficiência ao dano de um ataque corpo a corpo.||lvl4(Adicionalmente, qualquer valor de ponto de vida temporário proveniente do escudo que ainda permaneça no começo de seu turno, pode ser adicionado ao dano de um ataque quando você usar essa Herança para causar dano.)",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Enxofre, Salitre e Carvão",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Talvez você tenha nascido em Águas de Sentina e tenha tocado sua primeira arma de fogo ainda criança, ou talvez você seja de Zaun e usá-las foi necessário para a sua sobrevivência, não importa o motivo, você teve contato com armas de fogo logo cedo e isso fez com que você tenha um entendimento melhor dessas “cuspidoras de fogo”.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você é capaz de desemperrar uma arma de fogo com a qual tenha proficiência utilizando uma ação bônus.||Escolha entre um desses Mistérios para receber acesso: Fogo, Tempestade ou Inferno||Se a sua jogada de ataque com uma arma de fogo for igual a margem de falha de tiro ou abaixo dela, jogue um d20. Se o número rolado é maior que a margem de falha de tiro da arma, ela não emperra. Você pode utilizar essa habilidade um número de vezes igual a metade do seu bônus de proficiência por descanso curto ou longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Espírito de Aço",
-	  "origins": [
-		"Construto",
-		"Minotauro"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua resistência é muito superior à dos outros, curiosamente, ao usar óculos, amigos tem dificuldade em reconhecê-lo.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando uma jogada de ataque feita contra você marcar um acerto crítico, você pode usar sua reação para anular o acerto crítico, fazendo com que o ataque seja tratado como um acerto normal. Você pode utilizar essa habilidade uma vez por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Esporos Inebriantes",
-	  "origins": [],
-	  "lineages": [
-		"Arbóreo"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você pode criar um feromônio em seu corpo capaz de atordoar os sentidos de criaturas próximas à você.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Uma vez por descanso longo, utilizando sua ação, você espalha esses esporos pelo seu corpo, criaturas a até 5 pés de você devem realizar uma salvaguarda de Constituição CD 8 + bônus de proficiência + seu modificador do atributo escolhido para essa Herança. Em uma falha, a criatura fica Atordoada pelo próximo minuto, podendo repetir a salvaguarda no início de cada um dos seus turnos com desvantagem, enquanto em um sucesso fica imune desse efeito pelas próximas 24 horas.||Você recebe acesso ao Mistério do Veneno||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Essência Etílica",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "A capacidade de ingerir álcool é comum à maioria das criaturas. O que as divide é qual sua tolerância a essa ingestão. Você, talvez por ser um traço comum em sua família, ou um hábito desenvolvido, tem não apenas uma grande capacidade de ingerir bebidas alcoólicas, como elas também causam pouca ou nenhuma intoxicação em você, restando apenas um efeito agradável e energizante.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Imunidade à condição Intoxicado advinda da ingestão de bebidas alcoólicas.||Água Vivente: Você pode recuperar pontos de vida igual ao seu dado de vida + o modificador do atributo escolhido inicialmente a cada descanso curto ou longo, através do consumo de um litro de bebida alcoólica. Você pode utilizar sua ação para ingerir um gole de aproximadamente 200 ml.||Vantagem em salvaguardas para resistir à condição Intoxicado.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Essência Volátil",
-	  "origins": [
-		"Construto"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seu processo de construção envolveu alguma sinergia especial com uma fonte de energia, dando a você uma particularidade de interação com a mesma. Isso se reflete em sua aparência.",
-	  "atributes": "111000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha dois entre os seguintes tipos de danos: ácido, elétrico, ígneo, gélido, trovejante ou venenoso, você recebe absorção de um e vulnerabilidade ao outro.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Exótico",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua aparência tem traços bem acentuados que divergem da aparência mais comum de sua origem. Esse traço faz com que te considerem mais atraente ou repulsivo, dependendo dos olhos de quem vê.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Intimidação ou Persuasão, caso você já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você recebe proficiência em uma arma regional a sua escolha, podendo utilizar metade do modificador de atributo escolhido para essa Herança no acerto da arma escolhida.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Experimento Bem-Sucedido",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Zaun"
-	  ],
-	  "prerequisites": "",
-	  "description": "Nem todos experimentos de Zaun são mal-sucedidos, você é um exemplo disso.",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você escolhe uma vantagem da Herança Variante Quimtec.||Você pode utilizar sua ação ou reação, caso receba dano, para recuperar um dado de vida. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Experimento Zaunita",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Zaun"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você participou de um ou mais experimentos biológicos zaunitas, com isso",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui proficiência em um Ofício à sua escolha.||Escolha uma perícia à sua escolha com a qual você não tenha proficiência.||Escolha uma vantagem da lista Quimtec do Capítulo 5: Personalização – Heranças Variantes.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Extrovertido",
-	  "origins": [
-		"Yordle"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é um Yordle curioso e interessado nas culturas do reino material.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em História, caso já você recebe especialidade com essa perícia.||Você aprende um idioma adicional à sua escolha da tabela de Idiomas Comuns no Capítulo 4: Detalhamento.||Você aprende o truque reparar. Você pode conjurar este truque um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Filho da Escuridão",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "\"Então você acha que a escuridão é a sua aliada? Você só adotou ela, eu nasci nela, fui moldado por ela, eu só vi a luz depois de virar adulto, só o que ela me fez foi me cegar\".",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você errar um ataque em uma área de penumbra ou escuridão você pode usar sua reação para realizar a ação Esconder-se||Você aprende a magia escuridão, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo. Você é capaz de enxergar normalmente na área da escuridão conjurada por essa característica ou por você.||Escolha entre um desses Mistérios para receber acesso: Sombrio ou Umbramancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Forma Aprimorada",
-	  "origins": [],
-	  "lineages": [
-		"Oovi-Kat"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seu Sho’Ma parece ressoar melhor com uma determinada origem. Você ganha os seguintes benefícios.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode escolher uma Herança que tenha pré-requisito ser de outra Origem que não seja Oovi-Kat, desde que não seja uma Herança Variante. Você não recebe o aumento no valor de atributo dessa Herança.||Você aprende um idioma adicional conhecido por essa Origem, se a origem pode escolher qualquer idioma, você também pode.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Fortitude Targonense",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Targon"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você tem o sangue de heróis de Targon correndo em suas veias.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Sempre que você realiza a ação Esquivar em combate, você pode gastar um dado de vida para se curar. Role o dado, e adicione seu modificador de Constituição, e recupere um número de pontos de vida igual a este total (mínimo de 1).||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Fúria de Warmog",
-	  "origins": [
-		"Troll"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é uma encarnação da fúria de Warmog, um Troll lendário da era das Guerras Rúnicas. E você está dedicado a honrar isso.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao usar armas de combate corpo a corpo de duas mãos você adiciona seu bônus de proficiência ao dano da arma, e a margem de crítico feita com essas armas diminui em 1, ou seja, se for 20 se torna 19 ou se for 19, se torna 18.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Gelo Ancestral",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Freljord"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você aprende a invocar o gelo ancestral para servir seus comandos.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando causar dano gélido por qualquer fonte que seja originada de você, você pode rolar novamente qualquer 1 natural na rolagem de dado de dano gélido, você deve utilizar a nova rolagem.||Você recebe acesso ao Mistério do Gelo||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Graça do Felino",
-	  "origins": [],
-	  "lineages": [
-		"Kiilash"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seus reflexos e incríveis e agilidade furtiva melhoraram.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você não recebe os primeiros 10 + (5 X seu bônus de proficiência) pés de dano de queda, a não ser que você esteja incapacitado.||Ao escolher Destreza, caso esteja furtivo, você pode se mover de uma cobertura para outra sem perder sua furtividade, desde que termine seu deslocamento dentro de outra cobertura. Ao escolher Força, o dano de suas armas naturais aumentam em uma categoria.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Graciosidade",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua movimentação e seu andar possuem uma graciosidade única e natural.",
-	  "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Caso escolha Destreza, você pode realizar a ação de Esquivar utilizando uma ação bônus um número de vezes igual ao seu modificador de Destreza (mínimo de 1) por descanso longo, caso escolha Carisma, você possui proficiência em Salvaguardas de Carisma, caso já possua proficiência você recebe especialidade com essa salvaguarda.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Guerreiro Exótico",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Embora existam muitas armas comuns em sua região, você adquiriu um apreço especial por alguma peça de combate exótica. Você ganha os seguintes benefícios",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com uma arma regional à sua escolha||Acertos críticos feitos com a arma escolhida possuem seu multiplicador de dados de dano aumentado em 1.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Guerreiro Primal",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seus instintos são extremamente aflorados, seja pela sua agressividade em combate que é similar à de um predador, seja pela familiaridade que você tem com as criaturas irracionais.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em uma das seguintes perícias: Intimidação, Lidar com Animais, Natureza ou Sobrevivência, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Desde que não esteja utilizando armadura, sua CA se torna 10 + seu modificador de Constituição (mínimo de 1). Se receber a característica defesa sem armadura de qualquer fonte, você ignora a habilidade dessa Herança.||Quando atingir uma criatura que ainda não tenha recebido dano você causa 1d4 + seu bônus de proficiência de dano adicional.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Habilidoso",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você sabe fazer de tudo um pouco, mas é ruim em tudo? Seus problemas acabaram!",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em até 3 perícias, ofícios, instrumentos musicais ou estojo de jogos à sua escolha.||lvl4()",
-	  "rechosen": "Y"
-	},
-	{
-	  "name": "Habilidade do Impulso",
-	  "origins": [],
-	  "lineages": [
-		"Shimon"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Suas manias impulsivas tornaram trivial para você superar qualquer obstáculo em seu caminho.",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Enquanto você estiver descalço, mover através de terreno difícil não custa deslocamento extra.||Enquanto você está fazendo um teste de agarrão contra uma criatura, você pode utilizar Acrobacia ao invés de Atletismo e você possui vantagem nesse teste.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Hiperatividade Rúnica",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "A energia natural rúnica percorre seu corpo com maior facilidade que as outras pessoas.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Uma vez por descanso longo você pode utilizar uma Runa que você possua sem que utilize um dos usos da Runa.||Sempre que estiver usando armaduras leves ou nenhuma, você recebe +1 de CA.||Você recebe acesso ao Mistério da Runomancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Hospitaleiro",
-	  "origins": [],
-	  "lineages": [
-		"Alnuk"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Quem é abrigado por um Alnuk pode afirmar categoricamente que eles são as criaturas mais hospitaleiras de toda Runeterra.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com o Ofício de Cozinheiro||Ao utilizar seu Ofício de Cozinheiro para preparar uma refeição, a vida curada aumenta em um valor igual a metade de seu bônus de proficiência + seu modificador de Carisma para cada Dado de Vida gasto por uma criatura.||Você recebe a magia bom fruto e pode usá-la sem gastar pontos de mana um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Inventor Renomado",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Piltover"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você é ou conheceu um dos grandes inventores de Piltover, aprendendo mais sobre a tecnologia Hextec e aplicando no próprio corpo.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com Tecnologia, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você recebe seu bônus de proficiência em qualquer rolagem que utilize Tecnologia||Escolha uma Vantagem da lista Hextec do Capítulo 5: Personalização – Variantes.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Jeitinho Especial",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Bandópolis"
-	  ],
-	  "prerequisites": "",
-	  "description": "Talvez seja a água de Bandópolis, talvez seja alguma coisa que os alimentos plantados lá tenham, você carrega um pouco daquela dimensão com você para onde quer que vá.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você é capaz de emitir um pulso de Magia Descontrolada Yordle de maneira voluntária. Com uma ação bônus, ou uma reação ao conjurar uma magia, role 2 resultados da tabela de Magia Descontrolada Yordle e escolha um deles para ser aplicado em aliados num raio de 10 pés a partir de você. Você pode fazer isso um número de vezes igual a metade do seu bônus de proficiência por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Ladrão de Segredos",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Zaun"
-	  ],
-	  "prerequisites": "",
-	  "description": "Sua mente genial é superior à dos outros.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende os truques mensagem e zombaria viciosa e pode utilizá-los sem componentes verbais, somáticos ou materiais. Você pode usar esses truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo. O atributo escolhido para essa Herança é sua habilidade de conjuração para essas magias.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Lâmina Sanguinária",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "“Violência é elegância”.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Sempre que você acertar um ataque crítico com uma arma de dano cortante, você pode fazer um novo ataque contra o mesmo alvo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Linhagem Vastaya",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Ionia"
-	  ],
-	  "prerequisites": "",
-	  "description": "A magia Vastayesa corre forte em seu sangue,",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui vantagem nas Salvaguardas para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Lutador Evasivo",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você é perito na mais avançada e refinada arte do combate: Sebo nas canelas!.",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando uma criatura se aproximar a 5 pés de você, você pode utilizar sua reação para se mover 10 pés em qualquer direção. Se mover dessa maneira não causa ataques de oportunidade.||Uma vez por descanso longo, ao falhar em uma salvaguarda de Destreza ou Sabedoria, você pode refazer a rolagem.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Magia da Floresta",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você consegue sintonizar com as energias da natureza e das florestas.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia constrição, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao elemento Flora e à lista de magias desse Mistério Elemental.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Manifestação Primordial",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "O elemento primordial que tocou sua existência aflorou durante o seu desenvolvimento.",
-	  "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso ao mistério do elemento primordial provido pela Centelha Primordial||Caso tenha escolhido Luz, você recebe imunidade à condição Cego causada por magias do mistério da Luz ou luz forte, como o efeito da magia lâmina de fogo||Caso tenha escolhido Sombra, você enxerga na penumbra a até 60 pés como se fosse luz plena e no escuro como se fosse na penumbra. Você não pode discernir cores no escuro, apenas tons de cinza e escuridão mágica não afeta sua visão no escuro.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mediador",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "“Vou fazer uma oferta que ele não pode recusar.” Ok, padrinho.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha uma entre Enganação, Intimidação, Intuição ou Persuasão, você recebe proficiência com essa perícia. Caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você possui vantagem em interações sociais com criaturas que estejam hostis em relação à você ou seus aliados.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Medicina Natural",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Ionia"
-	  ],
-	  "prerequisites": "",
-	  "description": "Tudo tem seu ritmo, harmonia e fluxo, você aprendeu a ler os sinais vitais das criaturas e é capaz de auxiliar suas aflições.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe a magia curar ferimentos, podendo conjurá-la sem gastar pontos de mana em um nível igual ao seu bônus de proficiência. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||Você adquire proficiência em Medicina, caso já tenha, recebe especialidade.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Meditação Profunda",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você está acostumado a manter sua mente calma e corpo relaxado.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao realizar um descanso longo, seu corpo entra em um estado de meditação, permanecendo semiconsciente durante 4 horas. Ao descansar dessa forma você recebe os mesmos benefícios de um descanso longo.||Escolha entre um desses Mistérios para receber acesso: Encantamento, Ilusão ou Oniromancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mente Intuitiva",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seu conhecimento e seu raciocínio funcionam muito bem em conjunto, conseguindo acessar seu conhecimento de forma rápida e efetiva.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Investigação ou Intuição, caso você já possua proficiência na perícia escolhida, você recebe especialidade com essa perícia.||Você pode escolher substituir o atributo das perícias Investigação e Intuição para Inteligência ou Sabedoria.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mestre Artesão",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "\"Eu que fiz esse martelo, ficou tão bom que eu chamei de... Martelo”.",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com um Ofício de Artesão à sua escolha, além disso, recebe também especialidade com a mesma.||O tempo e custo de criação de um item utilizando esse Ofício é reduzido pela metade.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mestre de Arma Regional",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprendeu a manejar com muita habilidade um arma regional.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha uma arma regional à sua escolha, você recebe proficiência com ela.||Armas regionais que você possui proficiência são consideradas Armas Simples ou Marciais normalmente.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mestre de Vinhas",
-	  "origins": [],
-	  "lineages": [
-		"Floral"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você dominou a habilidade de criar Vinhas Espinhosas com seu corpo, podendo causar dano com elas, Vinhas Espinhosas causam 1d6 de dano cortante e possuem as propriedades: Acuidade, Leve e Alcance (10 pés).",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você ganha um bônus de +1 nas jogadas de ataque feitas com uma Vinha Espinhosa.||Enquanto você está empunhando uma Vinha Espinhosa, outras criaturas provocam um ataque de oportunidade quando entram no alcance de sua Vinha Espinhosa.||Você tem vantagem em testes de atributo e ataques feitos para desarmar ou agarrar inimigos ao usar sua Vinha Espinhosa.||Vinhas podem ser destruídas ou queimadas e duram por apenas um dia. Para criar uma nova vinha espinhosa você deve gastar 1 hora. Como alternativa, você pode receber 1d6 de dano e criar uma nova vinha instantaneamente.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mestre Tático",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Estratégia e punho firme são as coisas que ditam o rumo em um combate, e você sabe tirar proveito de ambos.",
-	  "atributes": "100100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha uma Técnica de Combatente, à sua escolha que você preencha os requisitos (exceto o de Classe).||O CD de suas Técnicas de Combate aumenta em 2.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Mordida Infecciosa",
-	  "origins": [],
-	  "lineages": [
-		"Troll do Gelo"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Existe um número generoso de bactérias em sua boca. Elas sabem que quem manda é você, então elas não te causam problema, mas podem causar problema aos outros.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Sua Mordida causa 1d4 de dano venenoso adicional, esse dano aumenta para 1d6 no nível 6, 1d8 no nível 12 e 1d10 no nível 18, além disso, o dano se torna letífero ao atingir o nível 12.||Você recebe resistência a dano venenoso.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Nascido em Kumungu",
-	  "origins": [],
-	  "lineages": [
-		"Kiilash"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você se tornou adepto aos altos galhos das florestas mais profundas.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode usar Acrobacia para fazer testes de escalada e salto.||Você dobra o número de pés que você cobre para qualquer salto.||Você anda ou corre por galhos, copas de árvores e cipós como se fossem terreno sólido.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Núcleo Dividido",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você possui um núcleo dentro de si que é capaz de se dividir em várias partes.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao ser reduzido a 0 pontos de vida, você se divide em 4 pedaços que tentam se recombinar. Cada pedaço é lançado a 15 pés de você em direções opostas, no início de cada um de seus turnos os pedaços se movem 5 pés em direção a onde você estava. Cada pedaço possui 1/4 de sua vida máxima, a mesma CA que você e todas as suas resistências e imunidades. Quando cada pedaço retornar ao espaço que você ocupava, você retorna a sua forma normal com pontos de vida iguais a soma de seus pedaços que retornaram. Essa habilidade se ativa uma vez por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Pele Rígida",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua pele grossa é capaz de atos inacreditáveis.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha um tipo de dano entre Cortante, Perfurante ou Contundente, você se torna resistente a ele. Caso já tenha resistência, ou a receba, se torna imune à esse dano.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Perceber Fraquezas",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Para você pontos fracos em seus inimigos é algo natural, quase que como um ponto reluzente lhe chamando atenção.",
-	  "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha entre: você pode adicionar metade do seu modificador de Sabedoria ao dano causado por ataques ou, você substitui o modificador de Força por metade do modificador de Sabedoria em ataques.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Perceptivo",
-	  "origins": [
-		"Humano",
-		"Vastaya"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua capacidade de perceber o mundo ao seu redor está além do que a maioria pode imaginar.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe +2 em sua Percepção Passiva.||Uma vez por descanso longo, ao realizar um teste de Percepção, você pode optar por fazer novamente a jogada, aceitando o novo resultado. Você pode usar essa Herança depois de ver o resultado, mas antes do Mestre determinar se a jogada em questão foi ou não bem-sucedida.||Você tem visão às cegas com um alcance de 10 pés. Dentro desse alcance, você pode ver com eficácia qualquer coisa que não esteja atrás de uma cobertura total, mesmo se estiver Cego ou em escuridão. Além disso, você pode perceber criaturas Invisíveis dentro desse alcance, a menos que a criatura esteja furtiva.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Persistência Adaptável",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua resistência física e mental chegam a ser irritantes para aqueles ao seu redor.",
-	  "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você realizar Salvaguardas de Morte, você possui um sucesso garantido.||Uma vez por descanso curto, você recebe resistência ao primeiro ataque recebido em combate.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Piromaníaco",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Com os olhos vendo apenas o vermelho das chamas, você segue querendo o calor cada vez mais próximo e sentir o cheiro de carne carbonizada.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando causar dano ígneo por qualquer fonte que seja originada de você, você pode rolar novamente qualquer 1 natural na jogada de dano ígneo, você deve utilizar a nova rolagem.||Você recebe acesso ao Mistério do Fogo||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Potência da Cura",
-	  "origins": [],
-	  "lineages": [
-		"Ottrani"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprendeu a controlar melhor o seu Sho’ma, para que quando ele for induzido por fontes externas para acelerar seu processo de cura, você receba uma melhoria temporária em seu físico.",
-	  "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Enquanto em combate, ao receber cura de qualquer fonte, você pode fazer com que seu próximo ataque corpo a corpo terá vantagem e caso você atinja poderá adicionar seu bônus de proficiência ao dano. Você pode utilizar essa habilidade um número de vezes igual ao seu modificador de atributo escolhido para essa Herança por descanso longo.||Escolha entre um desses Mistérios para recebe acesso: Étermancia ou Água||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Precisão Vastayesa",
-	  "origins": [
-		"Vastaya"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você tem uma mira fora do comum. Você ganha os seguintes benefícios",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você tem vantagem em um teste de ataque, você rola três d20s em vez de dois, e usa o maior dos três testes.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Presente Incandescente",
-	  "origins": [],
-	  "lineages": [
-		"Elemental Infernal"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "As chamas em seu interior são manifestas através de suas mãos.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso a um dos seguintes elementos: Fogo, Inferno ou Magma. Você recebe acesso à lista de magias do Mistério Elemental escolhido.||Escolha um truque do Mistério escolhido, você pode conjurar esse truque sem quaisquer componentes. Você pode conjurar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Prestidigitador",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "A agilidade nunca foi um problema para você, sua habilidade de desviar ataques com suas próprias mãos e sua velocidade de reação é algo de impressionar até mesmo um general noxiano.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com Prestidigitação. Caso já possua, você recebe especialização||Ao receber um ataque corpo a corpo, você pode utilizar sua reação para fazer um ataque corpo a corpo contra a criatura que o atingiu ou realizar a ação de Desarmar. Você pode realizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Procurador da Verdade",
-	  "origins": [],
-	  "lineages": [
-		"Lhotlan"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você treinou diligentemente para reunir segredos ativamente e passivamente. Você tem o dom de lembrar e sabe exatamente as perguntas certas a fazer quando procura informações.",
-	  "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você tem uma excelente memória, e pode recordar com precisão a maioria das coisas que viu e ouviu, incluindo o texto de um livro que você casualmente folheou, uma lista grande de nomes que você leu, ou o número de pronomes usados em um livro ou de um discurso que você ouviu. Pequenos detalhes podem exigir um teste de Inteligência com o CD definido pelo seu Mestre.||Você ganha a habilidade de ler os lábios a uma distância de 100 pés.||Você possui proficiência com Percepção e você recebe +1 em sua Percepção Passiva. Caso já possua proficiência em Percepção, você recebe especialidade com a mesma.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Proficiência Onírica",
-	  "origins": [],
-	  "lineages": [
-		"Fauhwoon"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Com uma profunda relação com a magia dos sonhos, você aprendeu a… forçá-los nos outros.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia sono, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Oniromancia||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Punguista",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Como se fosse uma criança criada nas ruas, você aprendeu a treinar sua visão para coisas de valor, sabendo quem e onde deve praticar suas habilidades.",
-	  "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência em Prestidigitação, caso já possua você recebe especialidade.||Você possui vantagem em testes de Prestidigitação sempre que estiver tentando roubar um objeto pequeno de alguém.||Outras criaturas possuem desvantagem em testes de Investigação ou Percepção para perceber um objeto oculto que esteja em suas mãos||Você pode passar 1 minuto observando uma criatura fora de combate, ao fazer isso você pode descobrir se ela possui algum objeto de valor que custe ao menos 1 PO, como um brinco, um colar ou uma joia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Puxão Biônico",
-	  "origins": [
-		"Construto"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Em sua construção, seu criador colocou uma maneira de você impedir que seus inimigos pudessem fugir impunes.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode utilizar uma ação de Ataque para disparar sua mão em uma linha de 20 pés a partir de você, parando no primeiro alvo que atingir. Ele deve realizar uma salvaguarda de Destreza CD 8 + seu bônus de proficiência + seu modificador de Força. Em uma falha, o alvo sofre o dano de seu ataque desarmado e, caso a criatura seja de uma categoria de tamanho igual ou menor que a sua, ela é puxada para ficar a 5 pés de você. Em um sucesso, sua mão continua a percorrer a linha até que atinja um alvo que falhe na salvaguarda ou chegar ao seu alcance limite, o que acontecer primeiro.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Quebra Gelo",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Freljord"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você nasceu em uma região inóspita sem nenhuma vantagem adaptativa, mas conseguiu encontrar formas de compensar esse fato.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao receber dano gélido ou glacial, você reduz o dano recebido em um valor igual ao modificador escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||Você adquire proficiência em Sobrevivência, caso já tenha, recebe especialidade.||Você recebe vantagens em salvaguardas e testes relacionados a um ambiente ártico.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Resiliência Adaptativa",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Acostumado às mais diversas situações, você foi forçado a criar uma versatilidade para se proteger.",
-	  "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Escolha entre: ao invés de adicionar seu modificador de Constituição aos seus Pontos de Vida, você pode usar metade do seu modificador de Destreza ou, você pode ao invés de adicionar seu modificador de Destreza à sua CA (respeitando os limites estabelecidos) adicionar metade do seu modificador de Constituição.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Resiliência Dracônica",
-	  "origins": [
-		"Meio-Dragão"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seu ancestral possuia uma resistência incomparável entre os Dragões, podendo ficar dias sem exaurir a própria energia.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe proficiência com Sobrevivência, caso já possua você recebe especialidade com a mesma.||Você pode, uma vez por descanso longo, remover um ponto de exaustão durante um descanso curto.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Resistência ao Sai",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Shurima"
-	  ],
-	  "prerequisites": "",
-	  "description": "Pré-Requisito: Shurimane",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Tu és o boladão do deserto, parsero!||Você tem vantagem em salvaguardas relacionadas ao clima desértico e em rolagens contra magias que causem dano ígneo. Adicionalmente, sua movimentação na areia aumenta em 10 pés e faz com que terreno difícil relacionado a areia fina, grossa ou por vento seja ignorado.||Você recebe acesso ao elemento do Deserto||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Resistência Gélida",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Freljord"
-	  ],
-	  "prerequisites": "",
-	  "description": "O espírito invernal não tem pena de ninguém, mas você… você aprendeu a lutar contra ele.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você tem vantagem em salvaguardas relacionadas ao clima gélido e em rolagens contra magias que causem dano gélido. Adicionalmente, sua movimentação na neve aumenta em 10 pés e faz com que terreno difícil relacionado a neve fina ou profunda seja ignorado.||Você recebe acesso ao elemento do Gelo||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Resistência Mágica",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Demacia"
-	  ],
-	  "prerequisites": "conjurador",
-	  "description": "Anos em uma cidade feita de pedras capazes de absorver a magia, fizeram com que suas capacidade arcanas fossem prejudicadas.",
-	  "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você tem vantagem em salvaguardas para resistir a efeitos mágicos.||Você é incapaz de aprender magia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Rocha Bruta",
-	  "origins": [],
-	  "lineages": [
-		"Elemental da Montanha"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua aparência é ainda mais rochosa, fazendo com que você carregue ainda mais atributos de sua herança dracônica.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Seus ataques desarmados ou com armas naturais causam 1d4 de dano adicional, esse dano aumenta para 1d6 no nível 6, 1d8 no nível 12 e 1d10 no nível 18.||Ao atacar um alvo com um ataque desarmado ou com uma arma natural, você pode forçá-lo a fazer uma salvaguarda de Constituição CD 8 + seu bônus de proficiência + o modificador do atributo escolhido para essa Herança. Em uma falha, o alvo ficará Enfraquecido até o início de seu próximo turno. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Salva-IIP-guarda",
-	  "origins": [],
-	  "lineages": [
-		"Fauhwoon"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "\"Agora é só esperar a minha confiança crescer de novo\".",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia benção, podendo conjurá-la sem gastar espaços de magia. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sangue Arcano",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "O sangue de magos do passado correm em suas veias, criando um vínculo especial com a magia.",
-	  "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode adicionar seu modificador de Carisma ao dano de seus ataques e magias ou utilizar seu modificador de Constituição como dano mágico.||Você recebe acesso a um Mistério à sua escolha, exceto elementos terciários e primordiais.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sangue Buhru",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Águas de Sentina"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você não é um Buhru, mas também não é um Paylangi. Talvez sua mãe seja Buhru, talvez seu pai, ou talvez até mesmo um avô distante. Essa conexão traz a você algumas coisas curiosas.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe o truque chama sagrada, você pode conjurar esse truque sem quaisquer componentes. Você pode conjurar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||Você é capaz de sentir a presença de criaturas que interrompem o fluxo da vida. Você não pode ser surpreendido por mortos-vivos ou espíritos.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sangue Vastaya",
-	  "origins": [
-		"Construto",
-		"Humano"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você tem descendência vastayesa. Algum de seus antepassados, talvez um de seus avós ou até antes, era Vastaya. Isso faz com que, embora você seja de outra origem e não tenha traços aparentes que o ligue aos Vastaya, você tem uma carga espiritual diferente. Talvez isso tenha sido algo que pulou gerações até se manifestar em você ou talvez seja algo que, embora seus parentes tenham, não encontrou a condição certa para se manifestar. Os Vastaya percebem isso em você e, embora um Meio Vastaya seja um tabu, isso não se aplica a pessoas com sangue vastaya.",
-	  "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode, uma vez por descanso longo, usar uma ação para curar a si mesmo ou a uma outra criatura a até 20 pés de você, um total de pontos de vida igual à 5 x seu bônus de proficiência. Adicionalmente, você tem vantagem em testes de Medicina.||Você recebe acesso a um Mistério Espiritual||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Selvagem",
-	  "origins": [
-		"Minotauro"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Seus chifres são mais fortes do que de outros Minotauro.",
-	  "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Quando você usar a ação Disparada e realiza um ataque corpo a corpo contra uma uma criatura após se mover ao menos 20 pés, caso a criatura seja atingida, ela deve realizar uma salvaguarda de Força CD 8 + seu bônus de proficiência + seu modificador de Força. Em uma falha, a criatura ficará Caída. Criaturas que possuam duas categorias de tamanho acima que a sua, são automaticamente bem-sucedidas nessa salvaguarda.||Ataques que você fizer com seu chifre causam 2d6 + modificador de Força de dano perfurante.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sol e Lua",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Targon"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você pode ser Solari ou Lunari, mas antes de tudo você é Targonense e consegue entender a necessidade de equilíbrio entre as duas cosmovisões.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Ao receber dano radiante, simples ou mágico, você reduz o dano recebido em um valor igual ao modificador do atributo escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||Ao receber dano durante um ataque supresa, você reduz o dano recebido em um valor igual ao modificador do atributo escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sombra da Folha",
-	  "origins": [],
-	  "lineages": [
-		"Floral"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você aprende a magia das florestas primitivas, que são reverenciadas e protegidas pelo seu povo.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você aprende a magia passos sem pegadas, podendo conjurá-la sem gastar espaços de magia. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança (mínimo de 1) antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Umbramancia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sono Leve",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Como um felino, você não confia em nada ao seu redor se mantendo atento até mesmo em suas horas de sono.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui vantagem em Salvaguardas para resistir à efeitos que o deixariam Inconsciente||Desde que você não tenha recebido a condição Inconsciente de maneira forçada, ataques à você nessa condição não são realizados em vantagem e caso acertem não são considerados acertos críticos.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Sopro Precoce",
-	  "origins": [
-		"Meio-Dragão"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Possuindo uma velocidade de crescimento até superior à de muitos dragões, seu corpo acabou por se desenvolver prematuramente.",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você é capaz de utilizar a arma de sopro de sua origem desde bem jovem. Sua arma de sopro causa 2d4 de dano e pode ser usada um número de vezes igual a metade do seu modificador de Constituição (mínimo de 1) por descanso longo. A CD de sua Arma de Sopro recebe um bônus de +2. Ao alcançar o nível 2, o dano é igual ao da forma híbrida +1d6, seguindo para +2d6 no 10º nível, +3d6 no 15º nível e +4d6 no 19º nível.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Táticas de Guerrilha",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Shurima"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você vive nas areias, aprendeu a emboscar para sobreviver, seja para obter alimento, seja para atacar uma caravana desavisada.",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Seu primeiro ataque em um combate contra qualquer criatura tem sua margem de crítico reduzida em 1.||Caso você ataque uma criatura surpresa, sua margem de crítico diminui em 1 e o multiplicador de dados de um acerto crítico aumenta em 1.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Teimosia",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "“Nicole, ta errado isso aí” “Não… não tá!”.",
-	  "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui vantagem em salvaguardas para resistir a condição Amedrontado ou Enfeitiçado.||Quando uma criatura tentar ler sua mente através de algum meio mágico, você imediatamente saberá o que está havendo e possuirá vantagem na Salvaguarda para resistir a magia. Caso tenha sucesso na Salvaguarda você pode mostrar um pensamento ou memória falsa para a criatura que está tentando ler sua mente.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Teleporte das Fadas",
-	  "origins": [
-		"Yordle"
-	  ],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Pré-Requisito: Yordle",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Seu estudo de combate desbloqueou um poder feérico que apenas poucos yordles possuem.||Você aprende a falar Silvestre.||Você aprende a magia passo nebuloso e pode conjurá-la uma vez sem gastar pontos de mana como uma Magia Inata Yordle. Recupera a capacidade de conjurá-la dessa maneira quando terminar um descanso curto ou longo. A Inteligência é a sua habilidade de conjuração para essa magia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Temor Noxiano",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Noxus"
-	  ],
-	  "prerequisites": "",
-	  "description": "Quando estiver com raiva, pode irradiar ameaça.",
-	  "atributes": "110001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você pode utilizar sua ação para intimidar seus inimigos, forçando uma criatura a sua escolha a até 30 pés de você a fazer uma salvaguarda de Sabedoria CD 8 + seus bônus de proficiência + seu modificador de Carisma. Um alvo automaticamente tem sucesso na Salvaguarda se ele não puder ouvir ou vê-lo. Em caso de falha, o alvo fica amedrontado por você durante 1 minuto. Se o alvo amedrontado receber qualquer dano, ele pode repetir a salvaguarda, terminando o efeito em caso de sucesso.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Tocado pela Mana",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Ixtal"
-	  ],
-	  "prerequisites": "",
-	  "description": "Nascer e viver em uma região com uma conexão profunda com a mana faz com que você tenha um maior entendimento da mesma.",
-	  "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você adquire proficiência em Arcanismo, caso já tenha, recebe especialidade.||Ao escolher essa Herança você se torna capaz de utilizar a mana com maior precisão. Você pode reduzir o custo de mana de uma magia num valor igual ao modificador do atributo escolhido para essa Herança um número de vezes igual ao seu bônus de proficiência por descanso longo.||Ao utilizar qualquer recurso que recupere mana, você pode recuperar 1 dado de vida.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Treinamento Demaciano",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Demacia"
-	  ],
-	  "prerequisites": "",
-	  "description": "O treinamento rígido do exército lhe trouxe uma adaptabilidade incomum para todo e qualquer combate.",
-	  "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui proficiência com armas marciais corpo a corpo, com escudos e armaduras leves e médias.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Truque da Maré",
-	  "origins": [],
-	  "lineages": [
-		"Aquáticos"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você sabe se beneficiar dos ensinamentos da maré.",
-	  "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso à magia jato d’água, podendo conjurá-la como uma magia de 2º nível sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao elemento Água e à lista de magias desse Mistério Elemental.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Valor da Justiceira",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Demacia"
-	  ],
-	  "prerequisites": "",
-	  "description": "Você possui um senso de justiça extremamente poderoso e que molda seus atos doa a quem doer, a justiça deve sempre prevalecer.",
-	  "atributes": "100001||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você adquire proficiência em Investigação, caso já tenha, recebe especialidade.||Você tem vantagem em testes para detectar mentiras.||Seu primeiro ataque contra um alvo que tenha cometido uma injustiça possui vantagem e a margem de crítico de todos seus ataques contra essa criatura é reduzida em 1.||Quando você comete alguma injustiça conscientemente ou ao descobrir que algum ato seu foi injusto, você deve fazer uma salvaguarda de Sabedoria cuja CD é definida pelo Mestre. Em uma falha, você recebe desvantagem em todas as suas jogadas por 24 horas.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Vida Marinha",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Águas de Sentina"
-	  ],
-	  "prerequisites": "",
-	  "description": "Boa parte de sua vida foi ao redor do mar, o cheiro da maresia e a sensação das ondas aos seus pés lhe trazem incrível conforto.",
-	  "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você possui vantagem em testes de Atletismo relacionado à Natação e ignora terrenos difíceis relacionados à água.||Você possui um deslocamento de Natação igual ao seu deslocamento normal.||Você tem vantagem nas Salvaguardas para resistir a efeitos de estar no Mar.||Você recebe acesso ao elemento da Água||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Vida Nômade",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [
-		"Shurima"
-	  ],
-	  "prerequisites": "",
-	  "description": "Tu sabes os paranauê da vida loka!",
-	  "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você tem proficiência em Sobrevivência, caso já possua proficiência você recebe especialidade com essa perícia.||Você tem uma memória excelente para mapas e geografia do deserto e terras áridas, você sempre pode recobrar o plano geral de terrenos, assentamentos ou outras características ao seu redor. Além disso, você pode encontrar comida e água fresca no deserto para você e até cinco outras pessoas a cada dia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Visão Treinada",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Após anos treinando por entre matas escuras ou salas especiais, você aprendeu a lidar com ameaças que você era incapaz de enxergar e seus olhos se tornaram capazes de se adaptar a escuridão.",
-	  "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você não possui desvantagem em testes de Percepção quando estiver na Penumbra.||Você recebe visão no escuro de 15 pés, caso já possua visão no escuro ela aumenta em 15 pés.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Vislumbre Estelar",
-	  "origins": [],
-	  "lineages": [
-		"Aelus"
-	  ],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Você tem uma predileção especial em observar as estrelas através da sabedoria de seus ancestrais.",
-	  "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você recebe acesso a um Mistério, escolha entre Adivinhação e Oniromancia.||Você recebe uma magia de 1º nível do Mistério da Adivinhação ou da Oniromancia, você pode conjurar essa magia como uma magia de 1º nível sem gastar pontos de mana uma vez por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||lvl4()",
-	  "rechosen": "N"
-	},
-	{
-	  "name": "Voz Sedosa",
-	  "origins": [],
-	  "lineages": [],
-	  "regions": [],
-	  "prerequisites": "",
-	  "description": "Sua voz soa como melodia àqueles que não o conhecem, fazendo com que você pareça uma pessoa extremamente importante dentro de qualquer sociedade.",
-	  "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
-	  "benefits": "Você tem vantagem em teste de Persuasão contra desconhecidos que não estejam hostis à você.||Você recebe acesso ao Mistério do Encantamento.||lvl4()",
-	  "rechosen": "N"
-	}
-  ]
+  {
+    "name": "Agilidade Primal",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você tem algum parentesco muito distante com Vastayeses ou uma conexão muito grande com seus instintos.",
+    "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Qualquer rolagem para resistir às condições Agarrado ou Caído são feitas com vantagem.||Caso esteja Caído, se levantar custa apenas 5 pés de sua movimentação ao invés de metade dela.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Alma Fluida",
+    "origins": [],
+    "lineages": ["Elemental do Oceano"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você possui uma harmonização natural com os fluídos espirituais.",
+    "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe 1 ponto de Ki para cada 5 níveis de personagem que você possui.||Utilizando uma ação bônus e gastando 1 ponto de Ki, você pode aumentar sua CA em +1 ou adicionar o modificador do atributo escolhido para essa Herança ao dano de seus ataques corpo a corpo, o bônus escolhido dura até o início de seu próximo turno.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Ambidestro",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é eficiente com ambas as mãos, sem que haja uma dominância entre elas.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando estiver combatendo com mais de uma arma leve, você sempre adiciona seu modificador de atributo ao dano de suas armas além da primeira||Todas as suas mãos são consideradas hábeis, fazendo com que você não tenha desvantagem para realizar qualquer tipo de ação que esteja relacionada a utilizar uma mão diferente.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Anciã",
+    "origins": [],
+    "lineages": ["Arbóreo"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Um ancião de uma espécie já ancestral, você vagueia pelo mundo a séculos ou já viu muitas almas vivas passarem por você, com o tempo você se tornou mais resistente, tanto mentalmente quanto fisicamente.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode utilizar o truque druidismo sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança, antes de realizar um descanso longo.||Você pode utilizar o truque resistência em si mesmo sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança, antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Flora||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Anos de Sho’ma",
+    "origins": [],
+    "lineages": ["Oovi-Kat"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você sempre utilizou do Sho’ma para poder viver em uma sociedade sem ser perseguido, e ninguém até hoje tem certeza qual sua verdadeira forma.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Percepção ou Enganação, caso já possua proficiência na perícia escolhida, você recebe especialidade com a perícia escolhida.||Escolha entre Furtividade e Percepção, a perícia escolhida recebe seu bônus de proficiência.||Você tem vantagem em testes de Intuição para saber se uma criatura está falando a verdade.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Aptidão Elemental",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Ixtal"],
+    "prerequisites": "conjurador",
+    "description": "Você possui uma habilidade nata em relação à magia elemental, sabendo alterar suas propriedades básicas.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso a um Mistério Elemental à sua escolha de um elemento que você possa ter acesso.||Ao obter essa Herança, você deve escolher dois elementos que você tenha acesso. Você é capaz de trocar o dano das magias desses dois elementos. Ao fazer isso, você deve declarar previamente para seu mestre o novo elemento que está sendo usado, use a tabela Elementos e Tipos de Dano do Capítulo 10: Conjuração. Por exemplo, caso você escolha os elementos Água e Fogo, ao conjurar magias de fogo que causem dano, você pode mudar o tipo de dano das magias de fogo para perfurante ao invés do dano normal da magia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Arbusto Frutífero",
+    "origins": ["Antroplantae"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Como as mais diversas plantas frutíferas você pode prover um doce sabor aos seus aliados.",
+    "atributes": "010101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode utilizar a magia bom fruto sem gastar pontos de mana nem precisa utilizar quaisquer componentes verbais, somáticos ou materiais, você pode usar essa magia dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Flora||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Armamento Gélido",
+    "origins": [],
+    "lineages": ["Elemental Glacial"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é capaz de solidificar o ar na forma de uma arma que, enquanto estiver em contato com você, permanece sólida como uma arma normal.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Utilizando uma ação bônus, você pode criar uma arma de gelo em suas mãos, a arma criada possui a aparência de uma arma a qual você possui proficiência, o que também define o tipo de dano da arma. Essa arma causa 1d6 de dano, aumentando para 1d8 no nível 6, 1d10 no nível 12 e 2d6 no nível 18. Caso você solte a arma, ela derrete instantaneamente. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Arsenal Floral",
+    "origins": ["Antroplantae"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Algumas plantas tem seus espinhos, mas você tem todos eles.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode produzir espinhos resistentes capazes de serem usados como arma. Você possui proficiência com esses espinhos e eles causam 1d4 de dano perfurante e possuem as propriedades: leve, acuidade e arremesso (10-20 pés). Você pode criar um número de espinhos iguais a seu modificador do atributo escolhido para essa Herança por descanso longo (mínimo de 1). Criaturas que não sejam você possuem desvantagem em rolagem de ataques com esses espinhos. Espinhos criados dessa forma ficam secos e quebradiços depois de 24 horas, se tornando inutilizáveis.||Você recebe acesso ao Mistério da Flora||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Autoridade Alfa",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Noxus"],
+    "prerequisites": "",
+    "description": "Você é imbuído pelos valores Noxianos com isso intimamente ligado ao seu ser.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você ganha proficiência em Intimidação ou Persuasão, caso já possua proficiência na perícia escolhida, você recebe especialidade com a perícia escolhida.||Se uma criatura obtiver sucesso em um ataque contra você, você tem vantagem em rolagens de acerto com armas corpo a corpo contra aquela criatura até o final do seu próximo turno. Você pode utilizar essa habilidade dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Autoridade Justa",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Piltover"],
+    "prerequisites": "",
+    "description": "Você tem as ferramentas necessárias para a aplicação da lei.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Desde que você esteja usando roupas finas, você tem vantagem em testes de Persuasão e Intimidação.||Você aprende o truque taumaturgia sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Bênção da Fortuna",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Águas de Sentina"],
+    "prerequisites": "",
+    "description": "Seu povo têm uma sorte extraordinária, o que você aprendeu a emprestar misticamente a seus companheiros quando vê-los hesitar. Você não tem certeza de como fazê-lo; você apenas deseja, e isso acontece. Certamente, um sinal de favor da fortuna!",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você ou, um aliado que você possa ver dentro de 30 pés de você, rolar um 1 natural no d20 para uma rolagem de ataque, um teste de atributo ou uma Salvaguarda, você pode usar sua reação para permitir que o alvo refaça a rolagem. O alvo deve usar o novo resultado. Você pode usar essa habilidade um um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Bênção de Warmog",
+    "origins": ["Troll"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Em você corre o sangue do lendário Warmog, o mais importante Troll da era das Guerras Rúnicas. Esse sangue o abençoa com uma regeneração impressionante.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recupera um total de pontos de vida igual a metade do seu modificador de Constituição no início de cada um dos seus turnos. Se você sofrer dano ácido ou ígneo, essa Herança não funcionará até o início do seu próximo turno. Você morre ou fica inconsciente apenas se começar seu turno com 0 pontos de vida e não puder se regenerar.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Benção Rakkor",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Targon"],
+    "prerequisites": "",
+    "description": "Sua fúria interior queima incansavelmente.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando acertar um ataque usando uma arma simples ou marcial corpo a corpo, você pode rolar um dos dados de dano da arma uma vez adicionalmente e somar o resultado a jogada. O tipo de dano é o mesmo original da arma. Uma vez que use essa característica, não pode usar novamente até terminar um descanso curto ou longo.||Imediatamente após usar essa Herança, você pode usar sua reação para realizar um ataque adicional com arma corpo a corpo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Bioenergia",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Piltover", "Zaun"],
+    "prerequisites": "",
+    "description": "Talvez tenha sido a proximidade de cristais hextec, talvez uma mutação positiva em contato com a cidade. O interessante é que você possui uma fagulha do que os Tecmaturgos buscam, energia.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe a característica Energia, possuindo 1 ponto de Energia (veja a classe de Tecmaturgo para mais informações). Caso adquira essa característica através da classe Tecmaturgo, você adiciona seu bônus de proficiência aos seus pontos de Energia ao invés disso.||Você adquire proficiência em Tecnologia, caso já possua, você recebe especialidade.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Bola de Pelos",
+    "origins": [],
+    "lineages": ["Felpudo"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você possui um pouco mais de pelagem que os outros Yordles, se ela é bonita e vistosa ou desgrenhada, depende apenas de seus cuidados, mas ela consegue tirar você de vários apuros.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Enquanto estiver Agarrado, você pode utilizar sua reação para receber 1 ponto de dano e escapar. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||Ao ser atingido por um ataque à distância, você pode utilizar sua reação para que o ataque seja considerado uma falha crítica. Você pode fazer isso um número de vezes igual ao seu modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Brutalizador",
+    "origins": [],
+    "lineages": ["Auroque"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Quando você entra em combate, seu corpo é a arma mais perigosa que você tem a sua disposição.",
+    "atributes": "100000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "O dano de seus ataques desarmados e com chifres aumenta em 1 na escala de dano.||Seus ataques desarmados e com chifres tem sua margem de crítico reduzida em 1.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Caçador de Magos",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Demacia"],
+    "prerequisites": "",
+    "description": "Você recebeu um treinamento especial para utilizar contra conjuradores.",
+    "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Se uma criatura que esteja a 5 pés de você conjurar uma magia você pode utilizar sua reação para realizar um ataque corpo a corpo contra ela.||Você implica desvantagem à concentração de uma criatura caso a atinja.||Você possui vantagem em salvaguardas contra magias conjuradas a até 5 pés de você.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Castelo de Areia",
+    "origins": [],
+    "lineages": ["Troll da Areia"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você pode não ser tão grande quanto seus primos gélidos, mas você tem alguns truques na manga.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia aumentar/ reduzir, podendo conjurá-la em sua versão de “Aumentar” sem gastar pontos de mana. Você pode conjurar essa magia dessa maneira um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Enquanto estiver sob o efeito de Aumentar da magia aumentar/ reduzir, conjurado por você através dessa Herança, ao ser atingido por um ataque, você pode utilizar sua reação para desfazer a magia e fazer com que o ataque seja considerado uma falha crítica.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Cauda Preênsil",
+    "origins": ["Vastaya"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua cauda é quase uma terceira mão e braço para você.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Como uma ação bônus você pode realizar as seguintes ações com sua cauda.||Pegar ou segurar um objeto que pese até 1 quilo com sua cauda. Se fizer isso enquanto estiver roubando, você ganha vantagem no teste de Prestidigitação.||Abrir e Fechar portas.||Usar ferramentas de chaveiro.||Ganhar vantagem em jogadas de Agarrão.||Usar a ação Ajuda a uma criatura amigável até 5 pés de você.||Se pendurar.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Centelha Mágica",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "A magia floresceu em você ainda jovem e cabe a você explorar essa habilidade ou não.",
+    "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso a um Mistério Celestial, Elemental Primário ou Espiritual à sua escolha.||Você recebe uma magia de 1º nível à sua escolha de um mistério que seja acessível que pode ser usada uma vez por descanso longo. Seu atributo para essa magia é o atributo escolhido e você não gasta pontos de mana para conjurá-la. Adicionalmente, você recebe acesso à lista de magias do Mistério da magia escolhida.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Centelha Mágica Ioniana",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Ionia"],
+    "prerequisites": "",
+    "description": "Você possui uma maior noção da magia natural que corre por toda Ionia através do fluxo dos espíritos, aprendendo a controlar parcialmente a magia espiritual do local à seu favor.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode conjurar druidismo e orientação. Você pode conjurar esses truques um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso a um Mistério Espiritual||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Centelha Mágica Marai",
+    "origins": [],
+    "lineages": ["Marai"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprendeu a se adaptar tanto na superfície quanto nas profundezas.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia criar ou destruir agua, podendo conjurá-la sem pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Água||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Comandante",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua visão estratégica é privilegiada e isso pode ser aproveitado por você e seus aliados.",
+    "atributes": "100001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Intimidação ou Persuasão, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você pode utilizar seu modificador de Força ao invés de Carisma ao utilizar a perícia Intimidação||Utilizando sua ação bônus, você pode conceder pelo próximo minuto aos seus aliados que possam vê-lo ou ouvi-lo um bônus de Moral em seu acerto igual a metade do modificador do atributo escolhido para essa Herança (mínimo de 1, arredondado para baixo). O bônus no acerto não se acumula. Você pode utilizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Conhecimentos Venéficos",
+    "origins": [],
+    "lineages": ["Troll da Selva"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Os Trolls da Selva quando se dedicam a Venefício são exímios.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso ao Mistério Elemental do Veneno.||Você recebe acesso ao truque borrifo venenoso, esse truque é conjurado usando o atributo escolhido por essa Herança como atributo de Conjuração. Você pode conjurá-lo um número de vezes igual ao seu bônus de proficiência por descanso longo.||Você recebe o Ofício de Veneficista.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Conjurador Suporte",
+    "origins": [],
+    "lineages": ["Marai"],
+    "regions": [],
+    "prerequisites": "conjurador",
+    "description": "Você sempre se prepara para o próximo perigo que pode encontrar.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você escolhe essa Herança, ela permite que você, uma vez por descanso longo, conjure duas magias de uma só vez com uma única ação, com os níveis máximos de magia que podem ser usados. Ambas as magias devem ter um tempo de conjuração de 1 Ação, ter uma duração de Instantâneo e pelo menos uma magia precisa atingir uma criatura aliada não causando dano à ela.||Você recebe acesso ao Mistério da Étermancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Contemplação Estelar",
+    "origins": [],
+    "lineages": ["Ottrani"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprendeu como influenciar levemente o Sho’ma ao redor de uma criatura, fazendo com que seja mais difícil ter uma imagem certa da posição dela.",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao curar uma criatura, até o final do próximo turno dela, ataques de oportunidade realizados contra ela possuirão desvantagem e o próximo ataque que ela realizar possuirá vantagem.||Você recebe acesso ao Mistério da Étermancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Construção Primorosa",
+    "origins": [],
+    "lineages": ["Brutal"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Os materiais empregados em sua construção foram de excelente qualidade ou tiveram uma excelente sinergia entre si, conferindo a você uma resistência adicional.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe uma segunda resistência das disponíveis na lista Resistente do Construto Brutal.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Convocar Auxílio",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Por algum motivo que você provavelmente sequer saiba, uma criatura nutre simpatia por você, vindo ao seu auxílio quando necessário.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia convocar familiar, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Corpo Leve",
+    "origins": [],
+    "lineages": ["Ligeiro"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Os materiais empregados em seu corpo possuem uma ressonância particular que permite a você uma agilidade sobrenatural.",
+    "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao ser atingido por um ataque corpo a corpo, após saber o dano causado pelo mesmo, você pode optar por usar sua reação para que o ataque seja considerado uma falha crítica ao invés disso. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Cultivo de Ki",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprendeu a canalizar a energia de seu próprio corpo para realizar feitos quase sobrenaturais..",
+    "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe +1 de ponto de Ki caso já tenha Ki ou 2 pontos de Ki caso sua classe não tenha um valor de Ki.||Você pode escolher um Sutra geral ou um Sutra de Bodisatva, desde que atenda aos pré-requisitos do mesmo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Curandeiro Abençoado",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Em seu sangue corre um talento inato para a cura das mazelas que afligem o mundo.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Medicina, caso já possua você recebe especialidade.||Você aprende a magia palavra curativa, podendo conjurá-la sem gastar pontos de mana. O atributo escolhido para essa Herança é seu atributo de conjuração para essa magia. Você pode conjurar essa magia um número de vezes igual à metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo (mínimo de 1, arredondado para baixo).||Você recebe acesso ao Mistério da Água||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Dançarino",
+    "origins": [],
+    "lineages": ["Lhotlan"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você sabe como conquistar a atenção dos outros dançando.",
+    "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Acrobacia e Atuação, caso você já possua proficiência na perícia escolhida, você recebe especialização com a mesma.||Escolha entre Atuação ou Prestidigitação, a perícia escolhida recebe seu bônus de proficiência.||Seu deslocamento aumenta em 10 pés.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Detectar Fraquezas",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é frio e calculista, quase como Tomé Celso.",
+    "atributes": "100100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha entre: você pode adicionar metade do seu modificador de Inteligência ao dano causado por ataques ou, você substitui o modificador de Força por metade do modificador de Inteligência para ataques.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Disciplina é Força",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Noxus"],
+    "prerequisites": "",
+    "description": "Se você nasceu abraçado com essa arma ou se você se apaixonou pela mesma em seu crescimento, não importa, você se tornou perito no uso da mesma. Essa herança pode ser escolhida mais de uma vez.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao escolher essa Herança você recebe proficiência com uma arma à sua escolha.||Você adiciona seu bônus de proficiência ao dano causado com essa arma, ao escolher essa Herança novamente, você só pode receber esse bônus ao dano de uma outra arma escolhida por essa Herança.||lvl4()",
+    "rechosen": "Y"
+  },
+  {
+    "name": "Distração de Combate",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seja por ter uma boca muito suja ou por ser um verdadeiro provocador, você sabe como agir para distrair seus adversários.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando uma criatura que possa vê-lo ou ouvi-lo realizar um ataque, você pode utilizar sua reação para impor desvantagem ao ataque dessa criatura. Você pode realizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Dupliventos",
+    "origins": [],
+    "lineages": ["Elemental das Nuvens"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Os ventos parecem recuperar sua energia interior, como se a cada sopro renovado você fosse provido de mais força.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao ser alvo de uma magia ou efeito que recupere uma quantidade de pontos de vida equivalentes ou maiores que o máximo de seu dado de vida, você pode usar sua reação para recuperar metade do modificador do atributo escolhido para essa Herança em pontos de mana. Você pode usar essa característica um número de vezes igual ao dobro de seu modificador do atributo escolhido para essa Herança por descanso longo.||Você pode utilizar o truque leque de vento sem utilizar quaisquer componentes verbais, somáticos ou materiais. Você pode usar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||Você recebe acesso ao Mistério do Vento.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Eletrostático",
+    "origins": [],
+    "lineages": ["Emissário"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você consegue manipular sua fonte energética, descarregando sua energia em um pulso protetor. Você pode utilizar o traço Aumentar a Voltagem para criar um escudo de pontos de vida temporários que dura até o começo de seu próximo turno como uma ação bônus. Você faz a rolagem do dado normalmente e adiciona como pontos de vida temporários que duram até o início de seu próximo turno, além disso.",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe vantagens em testes e salvaguardas de Força quando tentarem derrubá-lo ou movê-lo contra sua vontade.||Uma vez por turno, você pode adicionar seu bônus de proficiência ao dano de um ataque corpo a corpo.||lvl4(Adicionalmente, qualquer valor de ponto de vida temporário proveniente do escudo que ainda permaneça no começo de seu turno, pode ser adicionado ao dano de um ataque quando você usar essa Herança para causar dano.)",
+    "rechosen": "N"
+  },
+  {
+    "name": "Enxofre, Salitre e Carvão",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Talvez você tenha nascido em Águas de Sentina e tenha tocado sua primeira arma de fogo ainda criança, ou talvez você seja de Zaun e usá-las foi necessário para a sua sobrevivência, não importa o motivo, você teve contato com armas de fogo logo cedo e isso fez com que você tenha um entendimento melhor dessas “cuspidoras de fogo”.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você é capaz de desemperrar uma arma de fogo com a qual tenha proficiência utilizando uma ação bônus.||Escolha entre um desses Mistérios para receber acesso: Fogo, Tempestade ou Inferno||Se a sua jogada de ataque com uma arma de fogo for igual a margem de falha de tiro ou abaixo dela, jogue um d20. Se o número rolado é maior que a margem de falha de tiro da arma, ela não emperra. Você pode utilizar essa habilidade um número de vezes igual a metade do seu bônus de proficiência por descanso curto ou longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Espírito de Aço",
+    "origins": ["Construto", "Minotauro"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua resistência é muito superior à dos outros, curiosamente, ao usar óculos, amigos tem dificuldade em reconhecê-lo.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando uma jogada de ataque feita contra você marcar um acerto crítico, você pode usar sua reação para anular o acerto crítico, fazendo com que o ataque seja tratado como um acerto normal. Você pode utilizar essa habilidade uma vez por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Esporos Inebriantes",
+    "origins": [],
+    "lineages": ["Arbóreo"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você pode criar um feromônio em seu corpo capaz de atordoar os sentidos de criaturas próximas à você.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Uma vez por descanso longo, utilizando sua ação, você espalha esses esporos pelo seu corpo, criaturas a até 5 pés de você devem realizar uma salvaguarda de Constituição CD 8 + bônus de proficiência + seu modificador do atributo escolhido para essa Herança. Em uma falha, a criatura fica Atordoada pelo próximo minuto, podendo repetir a salvaguarda no início de cada um dos seus turnos com desvantagem, enquanto em um sucesso fica imune desse efeito pelas próximas 24 horas.||Você recebe acesso ao Mistério do Veneno||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Essência Etílica",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "A capacidade de ingerir álcool é comum à maioria das criaturas. O que as divide é qual sua tolerância a essa ingestão. Você, talvez por ser um traço comum em sua família, ou um hábito desenvolvido, tem não apenas uma grande capacidade de ingerir bebidas alcoólicas, como elas também causam pouca ou nenhuma intoxicação em você, restando apenas um efeito agradável e energizante.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Imunidade à condição Intoxicado advinda da ingestão de bebidas alcoólicas.||Água Vivente: Você pode recuperar pontos de vida igual ao seu dado de vida + o modificador do atributo escolhido inicialmente a cada descanso curto ou longo, através do consumo de um litro de bebida alcoólica. Você pode utilizar sua ação para ingerir um gole de aproximadamente 200 ml.||Vantagem em salvaguardas para resistir à condição Intoxicado.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Essência Volátil",
+    "origins": ["Construto"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seu processo de construção envolveu alguma sinergia especial com uma fonte de energia, dando a você uma particularidade de interação com a mesma. Isso se reflete em sua aparência.",
+    "atributes": "111000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha dois entre os seguintes tipos de danos: ácido, elétrico, ígneo, gélido, trovejante ou venenoso, você recebe absorção de um e vulnerabilidade ao outro.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Exótico",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua aparência tem traços bem acentuados que divergem da aparência mais comum de sua origem. Esse traço faz com que te considerem mais atraente ou repulsivo, dependendo dos olhos de quem vê.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Intimidação ou Persuasão, caso você já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você recebe proficiência em uma arma regional a sua escolha, podendo utilizar metade do modificador de atributo escolhido para essa Herança no acerto da arma escolhida.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Experimento Bem-Sucedido",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Zaun"],
+    "prerequisites": "",
+    "description": "Nem todos experimentos de Zaun são mal-sucedidos, você é um exemplo disso.",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você escolhe uma vantagem da Herança Variante Quimtec.||Você pode utilizar sua ação ou reação, caso receba dano, para recuperar um dado de vida. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Experimento Zaunita",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Zaun"],
+    "prerequisites": "",
+    "description": "Você participou de um ou mais experimentos biológicos zaunitas, com isso",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui proficiência em um Ofício à sua escolha.||Escolha uma perícia à sua escolha com a qual você não tenha proficiência.||Escolha uma vantagem da lista Quimtec do Capítulo 5: Personalização – Heranças Variantes.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Extrovertido",
+    "origins": ["Yordle"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é um Yordle curioso e interessado nas culturas do reino material.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em História, caso já você recebe especialidade com essa perícia.||Você aprende um idioma adicional à sua escolha da tabela de Idiomas Comuns no Capítulo 4: Detalhamento.||Você aprende o truque reparar. Você pode conjurar este truque um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Filho da Escuridão",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "\"Então você acha que a escuridão é a sua aliada? Você só adotou ela, eu nasci nela, fui moldado por ela, eu só vi a luz depois de virar adulto, só o que ela me fez foi me cegar\".",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você errar um ataque em uma área de penumbra ou escuridão você pode usar sua reação para realizar a ação Esconder-se||Você aprende a magia escuridão, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo. Você é capaz de enxergar normalmente na área da escuridão conjurada por essa característica ou por você.||Escolha entre um desses Mistérios para receber acesso: Sombrio ou Umbramancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Forma Aprimorada",
+    "origins": [],
+    "lineages": ["Oovi-Kat"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seu Sho’Ma parece ressoar melhor com uma determinada origem. Você ganha os seguintes benefícios.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode escolher uma Herança que tenha pré-requisito ser de outra Origem que não seja Oovi-Kat, desde que não seja uma Herança Variante. Você não recebe o aumento no valor de atributo dessa Herança.||Você aprende um idioma adicional conhecido por essa Origem, se a origem pode escolher qualquer idioma, você também pode.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Fortitude Targonense",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Targon"],
+    "prerequisites": "",
+    "description": "Você tem o sangue de heróis de Targon correndo em suas veias.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Sempre que você realiza a ação Esquivar em combate, você pode gastar um dado de vida para se curar. Role o dado, e adicione seu modificador de Constituição, e recupere um número de pontos de vida igual a este total (mínimo de 1).||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Fúria de Warmog",
+    "origins": ["Troll"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é uma encarnação da fúria de Warmog, um Troll lendário da era das Guerras Rúnicas. E você está dedicado a honrar isso.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao usar armas de combate corpo a corpo de duas mãos você adiciona seu bônus de proficiência ao dano da arma, e a margem de crítico feita com essas armas diminui em 1, ou seja, se for 20 se torna 19 ou se for 19, se torna 18.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Gelo Ancestral",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Freljord"],
+    "prerequisites": "",
+    "description": "Você aprende a invocar o gelo ancestral para servir seus comandos.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando causar dano gélido por qualquer fonte que seja originada de você, você pode rolar novamente qualquer 1 natural na rolagem de dado de dano gélido, você deve utilizar a nova rolagem.||Você recebe acesso ao Mistério do Gelo||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Graça do Felino",
+    "origins": [],
+    "lineages": ["Kiilash"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seus reflexos e incríveis e agilidade furtiva melhoraram.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você não recebe os primeiros 10 + (5 X seu bônus de proficiência) pés de dano de queda, a não ser que você esteja incapacitado.||Ao escolher Destreza, caso esteja furtivo, você pode se mover de uma cobertura para outra sem perder sua furtividade, desde que termine seu deslocamento dentro de outra cobertura. Ao escolher Força, o dano de suas armas naturais aumentam em uma categoria.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Graciosidade",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua movimentação e seu andar possuem uma graciosidade única e natural.",
+    "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Caso escolha Destreza, você pode realizar a ação de Esquivar utilizando uma ação bônus um número de vezes igual ao seu modificador de Destreza (mínimo de 1) por descanso longo, caso escolha Carisma, você possui proficiência em Salvaguardas de Carisma, caso já possua proficiência você recebe especialidade com essa salvaguarda.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Guerreiro Exótico",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Embora existam muitas armas comuns em sua região, você adquiriu um apreço especial por alguma peça de combate exótica. Você ganha os seguintes benefícios",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com uma arma regional à sua escolha||Acertos críticos feitos com a arma escolhida possuem seu multiplicador de dados de dano aumentado em 1.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Guerreiro Primal",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seus instintos são extremamente aflorados, seja pela sua agressividade em combate que é similar à de um predador, seja pela familiaridade que você tem com as criaturas irracionais.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em uma das seguintes perícias: Intimidação, Lidar com Animais, Natureza ou Sobrevivência, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Desde que não esteja utilizando armadura, sua CA se torna 10 + seu modificador de Constituição (mínimo de 1). Se receber a característica defesa sem armadura de qualquer fonte, você ignora a habilidade dessa Herança.||Quando atingir uma criatura que ainda não tenha recebido dano você causa 1d4 + seu bônus de proficiência de dano adicional.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Habilidoso",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você sabe fazer de tudo um pouco, mas é ruim em tudo? Seus problemas acabaram!",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em até 3 perícias, ofícios, instrumentos musicais ou estojo de jogos à sua escolha.||lvl4()",
+    "rechosen": "Y"
+  },
+  {
+    "name": "Habilidade do Impulso",
+    "origins": [],
+    "lineages": ["Shimon"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Suas manias impulsivas tornaram trivial para você superar qualquer obstáculo em seu caminho.",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Enquanto você estiver descalço, mover através de terreno difícil não custa deslocamento extra.||Enquanto você está fazendo um teste de agarrão contra uma criatura, você pode utilizar Acrobacia ao invés de Atletismo e você possui vantagem nesse teste.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Hiperatividade Rúnica",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "A energia natural rúnica percorre seu corpo com maior facilidade que as outras pessoas.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Uma vez por descanso longo você pode utilizar uma Runa que você possua sem que utilize um dos usos da Runa.||Sempre que estiver usando armaduras leves ou nenhuma, você recebe +1 de CA.||Você recebe acesso ao Mistério da Runomancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Hospitaleiro",
+    "origins": [],
+    "lineages": ["Alnuk"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Quem é abrigado por um Alnuk pode afirmar categoricamente que eles são as criaturas mais hospitaleiras de toda Runeterra.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com o Ofício de Cozinheiro||Ao utilizar seu Ofício de Cozinheiro para preparar uma refeição, a vida curada aumenta em um valor igual a metade de seu bônus de proficiência + seu modificador de Carisma para cada Dado de Vida gasto por uma criatura.||Você recebe a magia bom fruto e pode usá-la sem gastar pontos de mana um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Inventor Renomado",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Piltover"],
+    "prerequisites": "",
+    "description": "Você é ou conheceu um dos grandes inventores de Piltover, aprendendo mais sobre a tecnologia Hextec e aplicando no próprio corpo.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com Tecnologia, caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você recebe seu bônus de proficiência em qualquer rolagem que utilize Tecnologia||Escolha uma Vantagem da lista Hextec do Capítulo 5: Personalização – Variantes.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Jeitinho Especial",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Bandópolis"],
+    "prerequisites": "",
+    "description": "Talvez seja a água de Bandópolis, talvez seja alguma coisa que os alimentos plantados lá tenham, você carrega um pouco daquela dimensão com você para onde quer que vá.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você é capaz de emitir um pulso de Magia Descontrolada Yordle de maneira voluntária. Com uma ação bônus, ou uma reação ao conjurar uma magia, role 2 resultados da tabela de Magia Descontrolada Yordle e escolha um deles para ser aplicado em aliados num raio de 10 pés a partir de você. Você pode fazer isso um número de vezes igual a metade do seu bônus de proficiência por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Ladrão de Segredos",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Zaun"],
+    "prerequisites": "",
+    "description": "Sua mente genial é superior à dos outros.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende os truques mensagem e zombaria viciosa e pode utilizá-los sem componentes verbais, somáticos ou materiais. Você pode usar esses truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo. O atributo escolhido para essa Herança é sua habilidade de conjuração para essas magias.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Lâmina Sanguinária",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "“Violência é elegância”.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Sempre que você acertar um ataque crítico com uma arma de dano cortante, você pode fazer um novo ataque contra o mesmo alvo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Linhagem Vastaya",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Ionia"],
+    "prerequisites": "",
+    "description": "A magia Vastayesa corre forte em seu sangue,",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui vantagem nas Salvaguardas para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Lutador Evasivo",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você é perito na mais avançada e refinada arte do combate: Sebo nas canelas!.",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando uma criatura se aproximar a 5 pés de você, você pode utilizar sua reação para se mover 10 pés em qualquer direção. Se mover dessa maneira não causa ataques de oportunidade.||Uma vez por descanso longo, ao falhar em uma salvaguarda de Destreza ou Sabedoria, você pode refazer a rolagem.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Magia da Floresta",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você consegue sintonizar com as energias da natureza e das florestas.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia constrição, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao elemento Flora e à lista de magias desse Mistério Elemental.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Manifestação Primordial",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "O elemento primordial que tocou sua existência aflorou durante o seu desenvolvimento.",
+    "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso ao mistério do elemento primordial provido pela Centelha Primordial||Caso tenha escolhido Luz, você recebe imunidade à condição Cego causada por magias do mistério da Luz ou luz forte, como o efeito da magia lâmina de fogo||Caso tenha escolhido Sombra, você enxerga na penumbra a até 60 pés como se fosse luz plena e no escuro como se fosse na penumbra. Você não pode discernir cores no escuro, apenas tons de cinza e escuridão mágica não afeta sua visão no escuro.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mediador",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "“Vou fazer uma oferta que ele não pode recusar.” Ok, padrinho.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha uma entre Enganação, Intimidação, Intuição ou Persuasão, você recebe proficiência com essa perícia. Caso já possua proficiência na perícia escolhida, você recebe especialidade com a mesma.||Você possui vantagem em interações sociais com criaturas que estejam hostis em relação à você ou seus aliados.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Medicina Natural",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Ionia"],
+    "prerequisites": "",
+    "description": "Tudo tem seu ritmo, harmonia e fluxo, você aprendeu a ler os sinais vitais das criaturas e é capaz de auxiliar suas aflições.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe a magia curar ferimentos, podendo conjurá-la sem gastar pontos de mana em um nível igual ao seu bônus de proficiência. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||Você adquire proficiência em Medicina, caso já tenha, recebe especialidade.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Meditação Profunda",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você está acostumado a manter sua mente calma e corpo relaxado.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao realizar um descanso longo, seu corpo entra em um estado de meditação, permanecendo semiconsciente durante 4 horas. Ao descansar dessa forma você recebe os mesmos benefícios de um descanso longo.||Escolha entre um desses Mistérios para receber acesso: Encantamento, Ilusão ou Oniromancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mente Intuitiva",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seu conhecimento e seu raciocínio funcionam muito bem em conjunto, conseguindo acessar seu conhecimento de forma rápida e efetiva.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Investigação ou Intuição, caso você já possua proficiência na perícia escolhida, você recebe especialidade com essa perícia.||Você pode escolher substituir o atributo das perícias Investigação e Intuição para Inteligência ou Sabedoria.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mestre Artesão",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "\"Eu que fiz esse martelo, ficou tão bom que eu chamei de... Martelo”.",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com um Ofício de Artesão à sua escolha, além disso, recebe também especialidade com a mesma.||O tempo e custo de criação de um item utilizando esse Ofício é reduzido pela metade.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mestre de Arma Regional",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprendeu a manejar com muita habilidade um arma regional.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha uma arma regional à sua escolha, você recebe proficiência com ela.||Armas regionais que você possui proficiência são consideradas Armas Simples ou Marciais normalmente.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mestre de Vinhas",
+    "origins": [],
+    "lineages": ["Floral"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você dominou a habilidade de criar Vinhas Espinhosas com seu corpo, podendo causar dano com elas, Vinhas Espinhosas causam 1d6 de dano cortante e possuem as propriedades: Acuidade, Leve e Alcance (10 pés).",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você ganha um bônus de +1 nas jogadas de ataque feitas com uma Vinha Espinhosa.||Enquanto você está empunhando uma Vinha Espinhosa, outras criaturas provocam um ataque de oportunidade quando entram no alcance de sua Vinha Espinhosa.||Você tem vantagem em testes de atributo e ataques feitos para desarmar ou agarrar inimigos ao usar sua Vinha Espinhosa.||Vinhas podem ser destruídas ou queimadas e duram por apenas um dia. Para criar uma nova vinha espinhosa você deve gastar 1 hora. Como alternativa, você pode receber 1d6 de dano e criar uma nova vinha instantaneamente.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mestre Tático",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Estratégia e punho firme são as coisas que ditam o rumo em um combate, e você sabe tirar proveito de ambos.",
+    "atributes": "100100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha uma Técnica de Combatente, à sua escolha que você preencha os requisitos (exceto o de Classe).||O CD de suas Técnicas de Combate aumenta em 2.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Mordida Infecciosa",
+    "origins": [],
+    "lineages": ["Troll do Gelo"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Existe um número generoso de bactérias em sua boca. Elas sabem que quem manda é você, então elas não te causam problema, mas podem causar problema aos outros.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Sua Mordida causa 1d4 de dano venenoso adicional, esse dano aumenta para 1d6 no nível 6, 1d8 no nível 12 e 1d10 no nível 18, além disso, o dano se torna letífero ao atingir o nível 12.||Você recebe resistência a dano venenoso.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Nascido em Kumungu",
+    "origins": [],
+    "lineages": ["Kiilash"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você se tornou adepto aos altos galhos das florestas mais profundas.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode usar Acrobacia para fazer testes de escalada e salto.||Você dobra o número de pés que você cobre para qualquer salto.||Você anda ou corre por galhos, copas de árvores e cipós como se fossem terreno sólido.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Núcleo Dividido",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você possui um núcleo dentro de si que é capaz de se dividir em várias partes.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao ser reduzido a 0 pontos de vida, você se divide em 4 pedaços que tentam se recombinar. Cada pedaço é lançado a 15 pés de você em direções opostas, no início de cada um de seus turnos os pedaços se movem 5 pés em direção a onde você estava. Cada pedaço possui 1/4 de sua vida máxima, a mesma CA que você e todas as suas resistências e imunidades. Quando cada pedaço retornar ao espaço que você ocupava, você retorna a sua forma normal com pontos de vida iguais a soma de seus pedaços que retornaram. Essa habilidade se ativa uma vez por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Pele Rígida",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua pele grossa é capaz de atos inacreditáveis.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha um tipo de dano entre Cortante, Perfurante ou Contundente, você se torna resistente a ele. Caso já tenha resistência, ou a receba, se torna imune à esse dano.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Perceber Fraquezas",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Para você pontos fracos em seus inimigos é algo natural, quase que como um ponto reluzente lhe chamando atenção.",
+    "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha entre: você pode adicionar metade do seu modificador de Sabedoria ao dano causado por ataques ou, você substitui o modificador de Força por metade do modificador de Sabedoria em ataques.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Perceptivo",
+    "origins": ["Humano", "Vastaya"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua capacidade de perceber o mundo ao seu redor está além do que a maioria pode imaginar.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe +2 em sua Percepção Passiva.||Uma vez por descanso longo, ao realizar um teste de Percepção, você pode optar por fazer novamente a jogada, aceitando o novo resultado. Você pode usar essa Herança depois de ver o resultado, mas antes do Mestre determinar se a jogada em questão foi ou não bem-sucedida.||Você tem visão às cegas com um alcance de 10 pés. Dentro desse alcance, você pode ver com eficácia qualquer coisa que não esteja atrás de uma cobertura total, mesmo se estiver Cego ou em escuridão. Além disso, você pode perceber criaturas Invisíveis dentro desse alcance, a menos que a criatura esteja furtiva.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Persistência Adaptável",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua resistência física e mental chegam a ser irritantes para aqueles ao seu redor.",
+    "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você realizar Salvaguardas de Morte, você possui um sucesso garantido.||Uma vez por descanso curto, você recebe resistência ao primeiro ataque recebido em combate.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Piromaníaco",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Com os olhos vendo apenas o vermelho das chamas, você segue querendo o calor cada vez mais próximo e sentir o cheiro de carne carbonizada.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando causar dano ígneo por qualquer fonte que seja originada de você, você pode rolar novamente qualquer 1 natural na jogada de dano ígneo, você deve utilizar a nova rolagem.||Você recebe acesso ao Mistério do Fogo||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Potência da Cura",
+    "origins": [],
+    "lineages": ["Ottrani"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprendeu a controlar melhor o seu Sho’ma, para que quando ele for induzido por fontes externas para acelerar seu processo de cura, você receba uma melhoria temporária em seu físico.",
+    "atributes": "100010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Enquanto em combate, ao receber cura de qualquer fonte, você pode fazer com que seu próximo ataque corpo a corpo terá vantagem e caso você atinja poderá adicionar seu bônus de proficiência ao dano. Você pode utilizar essa habilidade um número de vezes igual ao seu modificador de atributo escolhido para essa Herança por descanso longo.||Escolha entre um desses Mistérios para recebe acesso: Étermancia ou Água||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Precisão Vastayesa",
+    "origins": ["Vastaya"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você tem uma mira fora do comum. Você ganha os seguintes benefícios",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você tem vantagem em um teste de ataque, você rola três d20s em vez de dois, e usa o maior dos três testes.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Presente Incandescente",
+    "origins": [],
+    "lineages": ["Elemental Infernal"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "As chamas em seu interior são manifestas através de suas mãos.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso a um dos seguintes elementos: Fogo, Inferno ou Magma. Você recebe acesso à lista de magias do Mistério Elemental escolhido.||Escolha um truque do Mistério escolhido, você pode conjurar esse truque sem quaisquer componentes. Você pode conjurar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Prestidigitador",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "A agilidade nunca foi um problema para você, sua habilidade de desviar ataques com suas próprias mãos e sua velocidade de reação é algo de impressionar até mesmo um general noxiano.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com Prestidigitação. Caso já possua, você recebe especialização||Ao receber um ataque corpo a corpo, você pode utilizar sua reação para fazer um ataque corpo a corpo contra a criatura que o atingiu ou realizar a ação de Desarmar. Você pode realizar essa habilidade um número de vezes igual ao modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Procurador da Verdade",
+    "origins": [],
+    "lineages": ["Lhotlan"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você treinou diligentemente para reunir segredos ativamente e passivamente. Você tem o dom de lembrar e sabe exatamente as perguntas certas a fazer quando procura informações.",
+    "atributes": "000110||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você tem uma excelente memória, e pode recordar com precisão a maioria das coisas que viu e ouviu, incluindo o texto de um livro que você casualmente folheou, uma lista grande de nomes que você leu, ou o número de pronomes usados em um livro ou de um discurso que você ouviu. Pequenos detalhes podem exigir um teste de Inteligência com o CD definido pelo seu Mestre.||Você ganha a habilidade de ler os lábios a uma distância de 100 pés.||Você possui proficiência com Percepção e você recebe +1 em sua Percepção Passiva. Caso já possua proficiência em Percepção, você recebe especialidade com a mesma.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Proficiência Onírica",
+    "origins": [],
+    "lineages": ["Fauhwoon"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Com uma profunda relação com a magia dos sonhos, você aprendeu a… forçá-los nos outros.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia sono, podendo conjurá-la sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Oniromancia||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Punguista",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Como se fosse uma criança criada nas ruas, você aprendeu a treinar sua visão para coisas de valor, sabendo quem e onde deve praticar suas habilidades.",
+    "atributes": "001001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência em Prestidigitação, caso já possua você recebe especialidade.||Você possui vantagem em testes de Prestidigitação sempre que estiver tentando roubar um objeto pequeno de alguém.||Outras criaturas possuem desvantagem em testes de Investigação ou Percepção para perceber um objeto oculto que esteja em suas mãos||Você pode passar 1 minuto observando uma criatura fora de combate, ao fazer isso você pode descobrir se ela possui algum objeto de valor que custe ao menos 1 PO, como um brinco, um colar ou uma joia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Puxão Biônico",
+    "origins": ["Construto"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Em sua construção, seu criador colocou uma maneira de você impedir que seus inimigos pudessem fugir impunes.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode utilizar uma ação de Ataque para disparar sua mão em uma linha de 20 pés a partir de você, parando no primeiro alvo que atingir. Ele deve realizar uma salvaguarda de Destreza CD 8 + seu bônus de proficiência + seu modificador de Força. Em uma falha, o alvo sofre o dano de seu ataque desarmado e, caso a criatura seja de uma categoria de tamanho igual ou menor que a sua, ela é puxada para ficar a 5 pés de você. Em um sucesso, sua mão continua a percorrer a linha até que atinja um alvo que falhe na salvaguarda ou chegar ao seu alcance limite, o que acontecer primeiro.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Quebra Gelo",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Freljord"],
+    "prerequisites": "",
+    "description": "Você nasceu em uma região inóspita sem nenhuma vantagem adaptativa, mas conseguiu encontrar formas de compensar esse fato.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao receber dano gélido ou glacial, você reduz o dano recebido em um valor igual ao modificador escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||Você adquire proficiência em Sobrevivência, caso já tenha, recebe especialidade.||Você recebe vantagens em salvaguardas e testes relacionados a um ambiente ártico.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Resiliência Adaptativa",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Acostumado às mais diversas situações, você foi forçado a criar uma versatilidade para se proteger.",
+    "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Escolha entre: ao invés de adicionar seu modificador de Constituição aos seus Pontos de Vida, você pode usar metade do seu modificador de Destreza ou, você pode ao invés de adicionar seu modificador de Destreza à sua CA (respeitando os limites estabelecidos) adicionar metade do seu modificador de Constituição.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Resiliência Dracônica",
+    "origins": ["Meio-Dragão"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seu ancestral possuia uma resistência incomparável entre os Dragões, podendo ficar dias sem exaurir a própria energia.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe proficiência com Sobrevivência, caso já possua você recebe especialidade com a mesma.||Você pode, uma vez por descanso longo, remover um ponto de exaustão durante um descanso curto.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Resistência ao Sai",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Shurima"],
+    "prerequisites": "",
+    "description": "Pré-Requisito: Shurimane",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Tu és o boladão do deserto, parsero!||Você tem vantagem em salvaguardas relacionadas ao clima desértico e em rolagens contra magias que causem dano ígneo. Adicionalmente, sua movimentação na areia aumenta em 10 pés e faz com que terreno difícil relacionado a areia fina, grossa ou por vento seja ignorado.||Você recebe acesso ao elemento do Deserto||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Resistência Gélida",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Freljord"],
+    "prerequisites": "",
+    "description": "O espírito invernal não tem pena de ninguém, mas você… você aprendeu a lutar contra ele.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você tem vantagem em salvaguardas relacionadas ao clima gélido e em rolagens contra magias que causem dano gélido. Adicionalmente, sua movimentação na neve aumenta em 10 pés e faz com que terreno difícil relacionado a neve fina ou profunda seja ignorado.||Você recebe acesso ao elemento do Gelo||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Resistência Mágica",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Demacia"],
+    "prerequisites": "conjurador",
+    "description": "Anos em uma cidade feita de pedras capazes de absorver a magia, fizeram com que suas capacidade arcanas fossem prejudicadas.",
+    "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você tem vantagem em salvaguardas para resistir a efeitos mágicos.||Você é incapaz de aprender magia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Rocha Bruta",
+    "origins": [],
+    "lineages": ["Elemental da Montanha"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua aparência é ainda mais rochosa, fazendo com que você carregue ainda mais atributos de sua herança dracônica.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Seus ataques desarmados ou com armas naturais causam 1d4 de dano adicional, esse dano aumenta para 1d6 no nível 6, 1d8 no nível 12 e 1d10 no nível 18.||Ao atacar um alvo com um ataque desarmado ou com uma arma natural, você pode forçá-lo a fazer uma salvaguarda de Constituição CD 8 + seu bônus de proficiência + o modificador do atributo escolhido para essa Herança. Em uma falha, o alvo ficará Enfraquecido até o início de seu próximo turno. Você pode fazer isso um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Salva-IIP-guarda",
+    "origins": [],
+    "lineages": ["Fauhwoon"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "\"Agora é só esperar a minha confiança crescer de novo\".",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia benção, podendo conjurá-la sem gastar espaços de magia. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sangue Arcano",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "O sangue de magos do passado correm em suas veias, criando um vínculo especial com a magia.",
+    "atributes": "010001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode adicionar seu modificador de Carisma ao dano de seus ataques e magias ou utilizar seu modificador de Constituição como dano mágico.||Você recebe acesso a um Mistério à sua escolha, exceto elementos terciários e primordiais.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sangue Buhru",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Águas de Sentina"],
+    "prerequisites": "",
+    "description": "Você não é um Buhru, mas também não é um Paylangi. Talvez sua mãe seja Buhru, talvez seu pai, ou talvez até mesmo um avô distante. Essa conexão traz a você algumas coisas curiosas.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe o truque chama sagrada, você pode conjurar esse truque sem quaisquer componentes. Você pode conjurar esse truque dessa maneira um número de vezes igual ao modificador do atributo escolhido para essa Herança por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||Você é capaz de sentir a presença de criaturas que interrompem o fluxo da vida. Você não pode ser surpreendido por mortos-vivos ou espíritos.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sangue Vastaya",
+    "origins": ["Construto", "Humano"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você tem descendência vastayesa. Algum de seus antepassados, talvez um de seus avós ou até antes, era Vastaya. Isso faz com que, embora você seja de outra origem e não tenha traços aparentes que o ligue aos Vastaya, você tem uma carga espiritual diferente. Talvez isso tenha sido algo que pulou gerações até se manifestar em você ou talvez seja algo que, embora seus parentes tenham, não encontrou a condição certa para se manifestar. Os Vastaya percebem isso em você e, embora um Meio Vastaya seja um tabu, isso não se aplica a pessoas com sangue vastaya.",
+    "atributes": "111111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode, uma vez por descanso longo, usar uma ação para curar a si mesmo ou a uma outra criatura a até 20 pés de você, um total de pontos de vida igual à 5 x seu bônus de proficiência. Adicionalmente, você tem vantagem em testes de Medicina.||Você recebe acesso a um Mistério Espiritual||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Selvagem",
+    "origins": ["Minotauro"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Seus chifres são mais fortes do que de outros Minotauro.",
+    "atributes": "110000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Quando você usar a ação Disparada e realiza um ataque corpo a corpo contra uma uma criatura após se mover ao menos 20 pés, caso a criatura seja atingida, ela deve realizar uma salvaguarda de Força CD 8 + seu bônus de proficiência + seu modificador de Força. Em uma falha, a criatura ficará Caída. Criaturas que possuam duas categorias de tamanho acima que a sua, são automaticamente bem-sucedidas nessa salvaguarda.||Ataques que você fizer com seu chifre causam 2d6 + modificador de Força de dano perfurante.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sol e Lua",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Targon"],
+    "prerequisites": "",
+    "description": "Você pode ser Solari ou Lunari, mas antes de tudo você é Targonense e consegue entender a necessidade de equilíbrio entre as duas cosmovisões.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Ao receber dano radiante, simples ou mágico, você reduz o dano recebido em um valor igual ao modificador do atributo escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||Ao receber dano durante um ataque supresa, você reduz o dano recebido em um valor igual ao modificador do atributo escolhido para essa Herança multiplicado pelo seu bônus de proficiência. Essa habilidade se ativa apenas uma vez por turno e ela ocorre um número de vezes igual ao seu bônus de proficiência por descanso curto ou longo.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sombra da Folha",
+    "origins": [],
+    "lineages": ["Floral"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você aprende a magia das florestas primitivas, que são reverenciadas e protegidas pelo seu povo.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você aprende a magia passos sem pegadas, podendo conjurá-la sem gastar espaços de magia. Você pode conjurar essa magia um número de vezes igual a metade do modificador do atributo escolhido para essa Herança (mínimo de 1) antes de realizar um descanso longo.||Você recebe acesso ao Mistério da Umbramancia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sono Leve",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Como um felino, você não confia em nada ao seu redor se mantendo atento até mesmo em suas horas de sono.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui vantagem em Salvaguardas para resistir à efeitos que o deixariam Inconsciente||Desde que você não tenha recebido a condição Inconsciente de maneira forçada, ataques à você nessa condição não são realizados em vantagem e caso acertem não são considerados acertos críticos.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Sopro Precoce",
+    "origins": ["Meio-Dragão"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Possuindo uma velocidade de crescimento até superior à de muitos dragões, seu corpo acabou por se desenvolver prematuramente.",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você é capaz de utilizar a arma de sopro de sua origem desde bem jovem. Sua arma de sopro causa 2d4 de dano e pode ser usada um número de vezes igual a metade do seu modificador de Constituição (mínimo de 1) por descanso longo. A CD de sua Arma de Sopro recebe um bônus de +2. Ao alcançar o nível 2, o dano é igual ao da forma híbrida +1d6, seguindo para +2d6 no 10º nível, +3d6 no 15º nível e +4d6 no 19º nível.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Táticas de Guerrilha",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Shurima"],
+    "prerequisites": "",
+    "description": "Você vive nas areias, aprendeu a emboscar para sobreviver, seja para obter alimento, seja para atacar uma caravana desavisada.",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Seu primeiro ataque em um combate contra qualquer criatura tem sua margem de crítico reduzida em 1.||Caso você ataque uma criatura surpresa, sua margem de crítico diminui em 1 e o multiplicador de dados de um acerto crítico aumenta em 1.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Teimosia",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "“Nicole, ta errado isso aí” “Não… não tá!”.",
+    "atributes": "010100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui vantagem em salvaguardas para resistir a condição Amedrontado ou Enfeitiçado.||Quando uma criatura tentar ler sua mente através de algum meio mágico, você imediatamente saberá o que está havendo e possuirá vantagem na Salvaguarda para resistir a magia. Caso tenha sucesso na Salvaguarda você pode mostrar um pensamento ou memória falsa para a criatura que está tentando ler sua mente.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Teleporte das Fadas",
+    "origins": ["Yordle"],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Pré-Requisito: Yordle",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Seu estudo de combate desbloqueou um poder feérico que apenas poucos yordles possuem.||Você aprende a falar Silvestre.||Você aprende a magia passo nebuloso e pode conjurá-la uma vez sem gastar pontos de mana como uma Magia Inata Yordle. Recupera a capacidade de conjurá-la dessa maneira quando terminar um descanso curto ou longo. A Inteligência é a sua habilidade de conjuração para essa magia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Temor Noxiano",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Noxus"],
+    "prerequisites": "",
+    "description": "Quando estiver com raiva, pode irradiar ameaça.",
+    "atributes": "110001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você pode utilizar sua ação para intimidar seus inimigos, forçando uma criatura a sua escolha a até 30 pés de você a fazer uma salvaguarda de Sabedoria CD 8 + seus bônus de proficiência + seu modificador de Carisma. Um alvo automaticamente tem sucesso na Salvaguarda se ele não puder ouvir ou vê-lo. Em caso de falha, o alvo fica amedrontado por você durante 1 minuto. Se o alvo amedrontado receber qualquer dano, ele pode repetir a salvaguarda, terminando o efeito em caso de sucesso.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Tocado pela Mana",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Ixtal"],
+    "prerequisites": "",
+    "description": "Nascer e viver em uma região com uma conexão profunda com a mana faz com que você tenha um maior entendimento da mesma.",
+    "atributes": "000111||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você adquire proficiência em Arcanismo, caso já tenha, recebe especialidade.||Ao escolher essa Herança você se torna capaz de utilizar a mana com maior precisão. Você pode reduzir o custo de mana de uma magia num valor igual ao modificador do atributo escolhido para essa Herança um número de vezes igual ao seu bônus de proficiência por descanso longo.||Ao utilizar qualquer recurso que recupere mana, você pode recuperar 1 dado de vida.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Treinamento Demaciano",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Demacia"],
+    "prerequisites": "",
+    "description": "O treinamento rígido do exército lhe trouxe uma adaptabilidade incomum para todo e qualquer combate.",
+    "atributes": "101000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui proficiência com armas marciais corpo a corpo, com escudos e armaduras leves e médias.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Truque da Maré",
+    "origins": [],
+    "lineages": ["Aquáticos"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você sabe se beneficiar dos ensinamentos da maré.",
+    "atributes": "001100||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso à magia jato d’água, podendo conjurá-la como uma magia de 2º nível sem gastar pontos de mana. Você pode conjurar essa magia um número de vezes igual a metade modificador do atributo escolhido para essa Herança antes de realizar um descanso longo.||Você recebe acesso ao elemento Água e à lista de magias desse Mistério Elemental.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Valor da Justiceira",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Demacia"],
+    "prerequisites": "",
+    "description": "Você possui um senso de justiça extremamente poderoso e que molda seus atos doa a quem doer, a justiça deve sempre prevalecer.",
+    "atributes": "100001||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você adquire proficiência em Investigação, caso já tenha, recebe especialidade.||Você tem vantagem em testes para detectar mentiras.||Seu primeiro ataque contra um alvo que tenha cometido uma injustiça possui vantagem e a margem de crítico de todos seus ataques contra essa criatura é reduzida em 1.||Quando você comete alguma injustiça conscientemente ou ao descobrir que algum ato seu foi injusto, você deve fazer uma salvaguarda de Sabedoria cuja CD é definida pelo Mestre. Em uma falha, você recebe desvantagem em todas as suas jogadas por 24 horas.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Vida Marinha",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Águas de Sentina"],
+    "prerequisites": "",
+    "description": "Boa parte de sua vida foi ao redor do mar, o cheiro da maresia e a sensação das ondas aos seus pés lhe trazem incrível conforto.",
+    "atributes": "011000||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você possui vantagem em testes de Atletismo relacionado à Natação e ignora terrenos difíceis relacionados à água.||Você possui um deslocamento de Natação igual ao seu deslocamento normal.||Você tem vantagem nas Salvaguardas para resistir a efeitos de estar no Mar.||Você recebe acesso ao elemento da Água||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Vida Nômade",
+    "origins": [],
+    "lineages": [],
+    "regions": ["Shurima"],
+    "prerequisites": "",
+    "description": "Tu sabes os paranauê da vida loka!",
+    "atributes": "010010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você tem proficiência em Sobrevivência, caso já possua proficiência você recebe especialidade com essa perícia.||Você tem uma memória excelente para mapas e geografia do deserto e terras áridas, você sempre pode recobrar o plano geral de terrenos, assentamentos ou outras características ao seu redor. Além disso, você pode encontrar comida e água fresca no deserto para você e até cinco outras pessoas a cada dia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Visão Treinada",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Após anos treinando por entre matas escuras ou salas especiais, você aprendeu a lidar com ameaças que você era incapaz de enxergar e seus olhos se tornaram capazes de se adaptar a escuridão.",
+    "atributes": "001010||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você não possui desvantagem em testes de Percepção quando estiver na Penumbra.||Você recebe visão no escuro de 15 pés, caso já possua visão no escuro ela aumenta em 15 pés.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Vislumbre Estelar",
+    "origins": [],
+    "lineages": ["Aelus"],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Você tem uma predileção especial em observar as estrelas através da sabedoria de seus ancestrais.",
+    "atributes": "000011||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você recebe acesso a um Mistério, escolha entre Adivinhação e Oniromancia.||Você recebe uma magia de 1º nível do Mistério da Adivinhação ou da Oniromancia, você pode conjurar essa magia como uma magia de 1º nível sem gastar pontos de mana uma vez por descanso longo. O atributo escolhido para essa Herança é seu atributo de Conjuração para essa magia.||lvl4()",
+    "rechosen": "N"
+  },
+  {
+    "name": "Voz Sedosa",
+    "origins": [],
+    "lineages": [],
+    "regions": [],
+    "prerequisites": "",
+    "description": "Sua voz soa como melodia àqueles que não o conhecem, fazendo com que você pareça uma pessoa extremamente importante dentro de qualquer sociedade.",
+    "atributes": "000101||max(20)||lvl4(chosen_atribute||max(21))",
+    "benefits": "Você tem vantagem em teste de Persuasão contra desconhecidos que não estejam hostis à você.||Você recebe acesso ao Mistério do Encantamento.||lvl4()",
+    "rechosen": "N"
+  }
+]

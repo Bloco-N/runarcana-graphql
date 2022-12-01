@@ -1,6 +1,6 @@
 import velSutras from '../../dataSource/velSutras.json'
 
-export default velSutras.map(velSutra => {
+export default velSutras.map((velSutra) => {
   return {
     name: velSutra.name,
     prerequisites: velSutra.prerequisites,

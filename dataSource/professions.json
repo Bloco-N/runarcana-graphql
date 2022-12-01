@@ -1,1807 +1,1380 @@
 [
-	{
-	  "name": "Ofício de Armeiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de armeiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Desemperrar"
-		  ],
-		  "description": "Para desemperrar uma arma de fogo você pode usar uma ação para realizar um teste CD 10 + número de erro do tiro. Em caso de sucesso, a arma não é mais considerada emperrada e pode voltar a ser usada normalmente."
-		},
-		{
-		  "skills": [
-			"Reparar Arma Inutilizada"
-		  ],
-		  "description": "Para arrumar uma arma de fogo você pode usar uma ação para uma rolagem de Atributo com o Ofício de armeiro com um CD 10 + número de erro do tiro. Isso leva uma hora e em caso de sucesso, a arma não é mais considerada inutilizada e pode voltar a ser usada normalmente."
-		},
-		{
-		  "skills": [
-			"Reparar Arma Quebrada"
-		  ],
-		  "description": "Para reparar uma arma de fogo quebrada, desde que tenha acesso à uma chama quente o suficiente para amolecer o metal você pode usar uma ação para uma rolagem de Atributo com o Ofício de Armeiro com um CD 10 + número de erro de tiro. Você precisa gastar metade do valor da arma em peças para reparo. Esse processo demora até quatro horas e em caso de sucesso, a arma não é mais considerada quebrada."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História",
-			"Investigação"
-		  ],
-		  "description": "Sua maestria com o ofício de Armeiro lhe garantem informações adicionais, pistas ou deduções desde que sejam relacionados a trabalhos feitos com armas de fogo. Especialização concede a você informações adicionais sobre a constituição da arma e o tipo de material usado."
-		},
-		{
-		  "skills": [
-			"Tecnologia"
-		  ],
-		  "description": "Você é capaz de encontrar substitutos para propelentes na ausência de salitre, carvão e enxofre. Além de conseguir entender tecnologias novas utilizadas em armas feitas em outras regiões ou com tecnologia mais avançada."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Armeiro",
-		"Com suas ferramentas de armeiro você pode consertar armas de fogo danificadas, além de poder dar manutenção e cuidar delas para aumentar sua durabilidade e qualidade. Além disso, você consegue analisar componentes combustíveis para criar propelentes.",
-		"Conteúdo: As ferramentas de armeiro incluem normalmente um pouco de Carvão, Enxofre e Salitre além de graxa, engrenagens pequenas, óleo para lubrificação, um jogo de chaves de precisão, molde para cápsulas, espoletas, escovas de limpeza, alguns gramas de chumbo, uma prensa pequena desmontável, metal com baixo ponto de fusão, uma faca de precisão para trabalhos manuais."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Adicionar gravura à uma arma de fogo"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Analisar a origem de uma arma de fogo"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofícios de Artesão",
-	  "info": [
-		"Esses Ofícios lhe garante proficiência com ferramentas especiais que incluem os itens necessários para exercer um ofício ou comércio. A tabela mostra exemplos dos tipos mais comuns de ferramentas, cada uma com itens relacionados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite que você adicione seu bônus de proficiência para qualquer teste de Atributo que fizer usando as ferramentas do seu ofício. Cada tipo de ferramentas de artesão requer uma proficiência separada."
-	  ],
-	  "tasks": [],
-	  "sinergies": [],
-	  "tools": [],
-	  "table": []
-	},
-	{
-	  "name": "Ofício de Alquimista",
-	  "info": [
-		"O Alquimista trabalha com dois princípios básicos chamados de “Solve et Coagula” ou ainda, dissolver e coagular. Esses dois princípios buscam entender o princípio por trás da matéria e até da energia, fazendo com que através do desenvolvimento dentro desse ofício, se aprenda a criar e utilizar substâncias variadas para a fabricação de elixires, materiais raros e até mesmo simulacros de materiais raros. Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com suprimentos de alquimista.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Aprender Fórmula"
-		  ],
-		  "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para aprender fórmulas a que você tenha acesso. Enquanto você estiver aprendendo essa fórmula, você gasta 10 PO por dia de trabalho. Para cada dia de trabalho você deve fazer um teste com suas Ferramentas de Alquimista CD definida pelo Mestre, em um sucesso você avança em sua fórmula normalmente enquanto em uma falha, você regride 1 dia de trabalho."
-		},
-		{
-		  "skills": [
-			"Criação"
-		  ],
-		  "description": "Desde que você possua os materiais necessários, você pode criar Poções de Tecmaturgo de 1º nível gastando o dobro do preço e tempo (Tecmaturgos criam seus Inventos pelo tempo e preço normais)."
-		},
-		{
-		  "skills": [
-			"Desenvolver Fórmula"
-		  ],
-		  "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para desenvolver novas fórmulas. Converse com seu Mestre para saber o tempo necessário para desenvolver uma nova fórmula. Enquanto você estiver desenvolvendo essa fórmula, você gasta 50 PO por dia de trabalho. Para cada dia de trabalho você deve fazer um teste com suas Ferramentas de Alquimista CD definida pelo Mestre, em um sucesso você avança em sua fórmula normalmente enquanto em uma falha, você regride 1 dia de trabalho."
-		},
-		{
-		  "skills": [
-			"Fabricação Alquímica"
-		  ],
-		  "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para fabricar itens alquímicos. Um personagem pode investir dinheiro para coletar material bruto, que pesa 500 gramas para cada 50 PO gastas. O Mestre pode permitir a um personagem fazer jogadas com a perícia adequada com vantagem. Como parte de um descanso longo, você pode utilizar Ferramentas de Alquimista para criar uma dose de, ácido, fogo alquímico, antitoxina, óleo, perfume ou sabão. Subtraia metade do valor do item criado do total de peças de ouro dos materiais brutos que você esteja carregando."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo"
-		  ],
-		  "description": "A proficiência com o Ofício de Alquimista permite a você obter mais informações ao analisar poções e materiais estranhos com a habilidade Arcanismo."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Ao inspecionar uma área por pistas, a proficiência com o Ofício de Alquimista garante a você ensejos sobre substâncias químicas e demais materiais que possam ter sido usados na área."
-		}
-	  ],
-	  "tools": [
-		"Suprimentos de Alquimista",
-		"Os suprimentos de Alquimista permitem a um personagem produzir misturas úteis como ácido, fogo alquímico, entre muitas outras. (essas ferramentas custam 50 PO e pesa 4 Kg)",
-		"Conteúdo: Suprimentos de Alquimista incluem dois béqueres de vidro, uma estrutura de metal para segurar um béquer sobre uma chama, uma vareta de vidro para mistura, um pequeno almofariz junto a um pilão além de uma bolsa contendo ingredientes alquímicos como sal, ferro em pó, água purificada, etc."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Criar uma nuvem de fumaça espessa"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Identificar um veneno"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Identificar uma substância"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Iniciar fogo"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Neutralizar ácido"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Cartógrafo",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de cartógrafo.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Criar um Mapa"
-		  ],
-		  "description": "Você pode ao longo de sua viagem, desenhar um mapa dos locais pelo qual você passou em conjunto com suas ferramentas de cartógrafo e realizar outras atividades ao mesmo tempo."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"Religião"
-		  ],
-		  "description": "Analisando mapas você pode entender contextos arcanos ou religiosos ligados a mapas, anotações secretas além de ser capaz de encontrar códigos e padrões."
-		},
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Com as ferramentas de cartógrafo você pode comparar mapas entre si, mapas antigos com a atualidade, além de encontrar pontos de divergência entre relatos históricos"
-		},
-		{
-		  "skills": [
-			"Natureza"
-		  ],
-		  "description": "Seu conhecimento de geografia o auxilia a determinar problemas relacionados à formação e funcionamento do terreno ao seu redor."
-		},
-		{
-		  "skills": [
-			"Sobrevivência"
-		  ],
-		  "description": " Você é capaz de encontrar caminhos em regiões desconhecidas com um entendimento de geografia e acidentes geográficos, pode inferir onde povoados possam existir pela praticidade e proximidade de recursos naturais, especialmente por conhecer padrões de distribuição demográfica e de assentamento bem como entender sobre rotas comerciais e de caravana."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Cartógrafo",
-		"As ferramentas de cartógrafo servem para que você possa criar mapas dos mais variados tipos, desde políticos, passando por mapas topológicos entre muitas outras possibilidades. Você consegue criar reproduções adequadas e que captem bem direções e dimensões, tornando mais fácil se guiar ao utilizá-los.",
-		"Conteúdo: As Ferramentas de Cartógrafo normalmente são alguma forma de escrita, como caneta, ou pena e tinta, além de papéis ou pergaminhos (talvez até livros em branco) além de compassos, réguas, pinças, bússolas e em raros casos até um astrolábio."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Determinar a idade",
-			"a origem de um mapa"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Estimar a direção",
-			"a distância até um local"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Verificar a autenticidade de um mapa"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Completar uma parte faltando de um mapa"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Cozinheiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com utensílios de cozinheiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Preparar Refeições"
-		  ],
-		  "description": "Durante um descanso curto , você pode preparar uma refeição saborosa e nutritiva que ajuda seus companheiros a recuperar suas forças. Você e até cinco criaturas de sua escolha recuperam 1 ponto de vida extra para cada Dado de Vida gasto durante um descanso curto, considerando que você tenha acesso a seus utensílios de cozinha e comida suficiente."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Você tem conhecimento de costumes e hábitos alimentares de outros povos e outras épocas."
-		},
-		{
-		  "skills": [
-			"Medicina"
-		  ],
-		  "description": "Você conhece a propriedade curativa de alimentos regulares além de poder, ao administrar um tratamento, transformar um remédio amargo ou azedo em uma mistura de sabor agradável."
-		},
-		{
-		  "skills": [
-			"Sobrevivência"
-		  ],
-		  "description": "Ao buscar por alimentos você pode encontrar ingredientes alternativos além de conseguir analisar carnes de criaturas peçonhentas e.ou venenosas e possibilitar consumi-las sem risco."
-		}
-	  ],
-	  "tools": [
-		"Utensílios de Cozinheiro",
-		"Qualquer aventureiro sabe que muitas vezes a vida leva eles a ficarem dias em lugares longe de qualquer civilização, as vezes imprevistos acontecem e o alimento se torna escasso. Com um cozinheiro ao longo da jornada, suas refeições serão muito melhores do que a típica mistura de carne seca e frutas desidratadas, além de melhor distribuídas e desperdício evitado.",
-		"Conteúdo: Os utensílios de cozinheiro podem conter ao menos um pote de metal versátil que também sirva como panela, algumas facas de cozinha, alguns talheres, ao menos uma colher para misturar, e pelo menos uma concha."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Cozinhar uma refeição comum"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Replicar uma refeição já experimentada"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Encontrar veneno ou impurezas na comida"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Cozinhar uma refeição requintada"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Curtidor",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de curtidor.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"Investigação"
-		  ],
-		  "description": "Você pode utilizar de seu conhecimento em trabalhos de couro para determinar a origem de alguma técnica utilizada em couro trabalhado. Além de receber informações adicionais ou alguma pista relacionado a algum item feito de couro."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Coureiro",
-		"Com suas ferramentas você pode desde confeccionar itens de couro, até consertar itens rasgados e danificados, além de poder cuidar deles para aumentar sua durabilidade e qualidade. Além disso, você consegue analisar peles e couros, entendendo suas qualidades e fraquezas.",
-		"Conteúdo: As ferramentas de curtidor incluem normalmente um conjunto de facas bem afiadas, um pequeno malho, cortador, perfurador, linha, sobras de couro, algumas tintas e até alguns adornos além de rebites."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Modificar a aparência de algum item feito de couro"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Determinar a origem de um determinado couro"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Entalhador",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de entalhador.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Reparar"
-		  ],
-		  "description": "Utilizando as ferramentas de entalhador você pode reparar pequenos danos feitos em um objeto feito de madeira."
-		},
-		{
-		  "skills": [
-			"Criar Flechas"
-		  ],
-		  "description": "Desde que você possua madeira suficiente, você pode criar até 5 flechas em um descanso curto e 20 em um longo."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História"
-		  ],
-		  "description": "Por conta de sua especialização, você pode receber informações adicionais relacionadas à qualquer objeto de madeira."
-		},
-		{
-		  "skills": [
-			"Natureza"
-		  ],
-		  "description": "Você pode determinar a qualidade da madeira de uma árvore utilizando as ferramentas de entalhador."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Entalhador",
-		"Com ferramentas de entalhador você pode esculpir em madeira criando obras artísticas, religiosas ou meramente decorativas, além disso você pode também criar flechas e virotes.",
-		"Conteúdo: Ferramentas de entalhador incluem uma faca, uma talhadeira, e uma pequena serra."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Criar um pequeno totem ou ídolo de madeira"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Entalhar um padrão intrincado na madeira"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Falsificador",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de falsificação.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Outras Ferramentas"
-		  ],
-		  "description": "Possuir proficiência com outras ferramentas pode auxiliar com que suas falsificações se tornem cada vez mais realísticas. Por exemplo, você pode utilizar sua proficiência com estojo de falsificação e ferramentas de joalheiro para criar um ornamento com uma pedra preciosa falsa."
-		},
-		{
-		  "skills": [
-			"Falsificação Rápida"
-		  ],
-		  "description": "Você pode criar documentos falsos com não mais de uma página utilizando esse estojo em um descanso curto. Já em um descanso longo, você pode falsificar um documento mais complexo. Seu teste utilizando esse estojo determina a CD para identificar que o documento é falso."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo"
-		  ],
-		  "description": "Auxilia na identificação de veracidade de um item mágico."
-		},
-		{
-		  "skills": [
-			"Enganação"
-		  ],
-		  "description": "Ao criar uma falsificação bem feita, pode lhe auxiliar em testes de enganação para ter credibilidade em uma mentira."
-		},
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Utilizando seu conhecimento em história pode lhe auxiliar a detectar e criar documentos históricos falsos."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "O estojo de falsificação possui alguns itens que podem lhe auxiliar na identificação de documentos e objetos genuínos."
-		}
-	  ],
-	  "tools": [
-		"Estojo de Falsificação",
-		"Esta caixa pequena contém uma variedade de papéis e pergaminhos, penas e tintas, selos e cera de lacre, folhas de ouro e prata e outros suprimentos necessários para criar falsificações convincentes de documentos físicos. A proficiência com este conjunto permite a você adicionar seu bônus de proficiência a qualquer teste de Atributo para criar uma falsificação física de um documento. Este estojo lhe concede ferramentas para que você possa falsificar assinaturas de oficiais, duplicar documentos e selos de cera.",
-		"Conteúdo: Dentro de um estojo de falsificação você pode encontrar diversos tipos de tinta, pergaminhos e papeis, além de cera para selos, ferramentas metálicas para falsificar selos, uma lupa, algumas penas e folhas de ouro e prata."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Imitar escrita de um manuscrito"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Falsificar um selo de cera"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Fermentador",
-	  "info": [
-		"Fermentar é uma arte, seja ela para produzir cerveja, ou mesmo vinho. A mesma arte é também usada para produzir destilados através de processos levemente diferentes.",
-		"Ao receber proficiência com esse Ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de Fermentador.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Fermentar"
-		  ],
-		  "description": "Você pode produzir ou analisar bebidas alcoólicas desde que tenha espaço e tempo para utilizar suas ferramentas para fermentar, destilar, decantar e aplicar outros processos para isso. Cada hora de serviço produz 1 litro de uma bebida, o resultado disso fica pronto após 8 horas."
-		},
-		{
-		  "skills": [
-			"Água Potável"
-		  ],
-		  "description": "Seu conhecimento de destilação permite que você produza água purificada através de água imprópria para consumo. Como parte de um descanso longo, você pode purificar até 20 litros de água, ou 3,5 litros em um descanso curto"
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Você pode elaborar informações a respeito da bebida, sabendo de onde determinados ingredientes são originados."
-		},
-		{
-		  "skills": [
-			"Medicina"
-		  ],
-		  "description": "Você é capaz de tratar mais eficazmente alguém com intoxicação ligada a álcool e é capaz de administrar álcool de forma sedativa."
-		},
-		{
-		  "skills": [
-			"Persuasão"
-		  ],
-		  "description": "Você tem um senso de quando as pessoas estão mais suscetíveis a um convite para uma boa caneca e abrirem seus corações."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Fermentador",
-		"As ferramentas de Fermentador servem para que você possa criar bebidas fermentadas ou destiladas, analisar a composição das mesmas, decantá-las entre outros processos.",
-		"Conteúdo: Ferramentas de fermentador incluem um alambique de cobre de 6 litros que é formado de um recipiente maior, um sifão, funil e um recipiente. Além disso, inclui 5 garrafas de vidro vazias de 1 litro."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Detectar veneno ou impurezas em uma bebida"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Identificar álcool"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Ignorar os efeitos do álcool"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Ferreiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de ferreiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Reparar"
-		  ],
-		  "description": "Desde que tenha acesso a uma chama quente o suficiente para amolecer metal, você pode utilizar suas ferramentas de ferreiro para recuperar, a cada hora de trabalho, 10 pontos de vida de um objeto metálico."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História",
-			"Investigação"
-		  ],
-		  "description": "Sua maestria com trabalhos em metal lhe garantem informações adicionais, pistas ou deduções desde que sejam relacionados a trabalhos feitos com metal. Especialização concede a você informações adicionais sobre essas áreas quando estiver examinando objetos de metal, como armas."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Ferreiro",
-		"Com ferramentas de ferreiro você pode realizar várias ações, como criar armas e armaduras feitos de metal contanto que você tenha um espaço para aquecer o metal, trabalhar lingotes e até mesmo uma bigorna para modelá-los.",
-		"Conteúdo: Ferramentas de ferreiro incluem martelos, pinças, carvão, retalhos de metal, e pedra de amolar."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Afiar uma lâmina cega"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Reparar uma armadura"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Quebrar um objeto de metal não-mágico"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Funileiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de funileiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Reparar"
-		  ],
-		  "description": "Com as ferramentas de Funileiro você é capaz de reparar 10 pontos de vida de um objeto danificado para cada uma hora que você trabalhe isso. É necessário que você tenha acesso a matéria-prima igual à do objeto em questão e, no caso de objetos de metal, você precisa ter acesso a alguma chama suficientemente quente para tornar o metal maleável."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Em posse de mesmo apenas alguns pedaços de um objeto, você é capaz de saber algo a respeito dele como idade, origem, utilidade, o quão utilizado ele foi, que tipos de dano recebeu e quando."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Ao inspecionar um objeto danificado você pode inferir como ele tenha sido danificado, talvez até como costumava ser usava e se era algo usado frequentemente."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Funileiro",
-		"As ferramentas de funileiro servem para reparos de itens do dia a dia, coisas mundanas como roupas rasgadas, afiar utensílios domésticos e até armas, arrumar uma panela que tenha sido furada ou uma moringa que tenha sido quebrada.",
-		"Conteúdo: As Ferramentas de funileiro incluem várias ferramentas para trabalhos manuais, como agulhas, linha, pedras de amolar, cola, às vezes um pouco de argila, uma vela, algum metal de ponto de fusão baixo, retalhos de tecido, peças de couro."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Reativar temporariamente um dispositivo desativado"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Reparar um item na metade do tempo"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Improvisar um item temporário usando sucata"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Inventor",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de inventor.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Criação"
-		  ],
-		  "description": "Desde que você possua os materiais necessários, você pode criar Aparatos de Tecmaturgo de 1º nível gastando o dobro do preço e tempo (Tecmaturgos criam seus Inventos pelo tempo e preço normais)."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História"
-		  ],
-		  "description": "Em conjunto com seus conhecimentos, você pode analisar um item ou artefato tecnológico para determinar sua origem e funcionamentos, além de saber se é um item mágico ou não."
-		},
-		{
-		  "skills": [
-			"Tecnologia"
-		  ],
-		  "description": "Você pode utilizar essas ferramentas como parte de um descanso longo, para consertar um construto danificado, ele pode receber 2d10 + seu modificador na perícia de Tecnologia."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Inventor",
-		"Com as Ferramentas de Inventor você pode realizar várias ações, como criar pequenas bugigangas feitas de sucata, desmontar e remontar uma invenção qualquer, retirar peças de um objeto inutilizado e pode até mesmo consertar um Construto que foi danificado.",
-		"Conteúdo: As Ferramentas são compostas de várias ferramentas, como 5 chaves inglesas, chaves de fenda, um pequeno martelo, e uma variedade de parafusos, pregos, porcas, cavilhas, molas e engrenagens além de um maçarico portátil com combustível."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Analisar origem de um objeto tecnológico"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Criar um invento"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Joalheiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de joalheiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Identificar Gemas"
-		  ],
-		  "description": "Você pode identificar gemas falsas e determinar o valor delas para vendas e compras"
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo"
-		  ],
-		  "description": "Ao usar as Ferramentas de Joalheiro junto a essa perícia, você pode encontrar informações sobre encantamentos em gemas, avaliar a possibilidade de uma gema receber um encantamento, entre outros."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Você pode inspecionar gemas e objetos com gemas incrustadas, consegue encontrar pistas sobre o que aconteceu com ela, avaliar se elas ficaram em contato com alguma substância em específico entre outros."
-		},
-		{
-		  "skills": [
-			"Tecnologia",
-			"Arcanismo"
-		  ],
-		  "description": "Você pode avaliar um cristal hextec e saber se ele é sintético ou verdadeiro, além disso, pode estimar a capacidade energética dele."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Joalheiro",
-		"As ferramentas de joalheiro permitem a você técnicas para lapidar, polir limpar e todos outros processos necessários para embelezar uma gema e valorizá-la. Com elas você pode avaliá-las e até identificá-las.",
-		"Conteúdo: Nas Ferramentas de joalheiro você pode encontrar lupa e lentes, uma pequena serra, lixas, unguentos de polimento além de martelo, alicates, pinças e uma série de filmes cromáticos."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Modificar a aparência de uma gema",
-			"lapidá-la"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Determinar a localidade de origem de uma gema"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Maquiador",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de maquiagem.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Criar Disfarce"
-		  ],
-		  "description": "Durante um descanso longo, você pode criar um disfarce em especial para alguma situação. Você demora 1 minuto para colocar esse disfarce após sua criação. Você não pode transportar com você mais de um disfarce completo por vez, apenas em uma carroça ou deixá-lo em uma mochila grande. Cada conjunto de disfarce pesa 500 gramas. Um disfarce feito sem preparo demora 10 minutos para modificar levemente a sua aparência e 30 para mudá-la completamente."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Atuação"
-		  ],
-		  "description": "Você pode melhorar um disfarce, usando algodão ou outros enchimentos na boca para modificar sua voz, entre outras formas que melhore a sua atuação atendendo aos seus objetivos."
-		},
-		{
-		  "skills": [
-			"Enganação"
-		  ],
-		  "description": "Ao tentar enganar alguém com um disfarce, seu estojo provê recursos para que você possa fazer isso com maior sucesso."
-		},
-		{
-		  "skills": [
-			"Intimidação"
-		  ],
-		  "description": "Você sabe aplicar sombras em seu rosto para parecer mais amedrontador ou mesmo como fazer uma cicatriz falsa realmente impressionante, entre outros efeitos."
-		},
-		{
-		  "skills": [
-			"Persuasão"
-		  ],
-		  "description": "Você consegue adaptar suas vestimentas para emular o de alguma autoridade ou mesmo uma classe social diferente em prol de persuadir alguém."
-		}
-	  ],
-	  "tools": [
-		"Estojo de Maquiagem",
-		"Esta bolsa de cosméticos, tintura de cabelo e pequenos adereços permitem que você crie disfarces que mudam sua aparência física. A proficiência com este conjunto permite a você adicionar seu bônus de proficiência a qualquer teste de Atributo para criar um disfarce visual. Um estojo de disfarces permite a você mudar sua aparência, seja para a de alguém desconhecido ou tentar copiar alguém que existe.",
-		"Conteúdo: Dentro de um estojo de maquiagem você encontra maquiagem, pincéis para usá-la, algodão, perucas, pequenos objetos como broches, relógios, peças de roupa e talvez até algum enchimento, além de borracha que pode ser modelada para próteses."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Cobrir ferimentos ou marcas de cicatrizes"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Perceber um disfarce sendo usado por outra pessoa"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Copiar a aparência de um humanoide"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Oleiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de oleiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Reconstrução"
-		  ],
-		  "description": "Você pode reconstruir um objeto de cerâmica a partir do exame minucioso de um pedaço e tendo matéria prima a disposição."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Você pode usar suas ferramentas para determinar em que época um objeto de barro, argila ou cerâmica foi criado, ou mesmo extrair informações sobre a cultura em que ele foi produzido."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "Ao examinar cerâmicas, vasos e objetos de argila, você é capaz de receber informações adicionais, desvendando pistas que outros não viriam ao observar pequenas irregularidades."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Oleiro",
-		"As ferramentas de oleiro podem ser utilizadas para a criação de vários objetos de cerâmica, em especial potes, vasos e objetos similares.",
-		"Conteúdo: As Ferramentas de oleiro incluem normalmente algumas tintas, marcadores de cerâmica, espátulas, raspadores, material para reforço, facas especializadas, pinças e uma roda."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Determinar o conteúdo comum de um recipiente"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Criar um vaso ou objeto de cerâmica"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Encontrar falhas de construção em objetos de cerâmica"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Pedreiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de pedreiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Demolição"
-		  ],
-		  "description": "Com seu entendimento de construções, você pode identificar pontos mais frágeis em paredes de tijolo e concreto. Seu dano causado a essas estruturas quando usando uma arma apropriada é dobrado."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Você pode identificar em que época uma construção foi feita, sua utilidade e técnicas usadas para construí-la."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "Você pode obter informações adicionais quando inspeciona áreas dentro de construções de pedra, entender seu propósito, encontrar desníveis que possam indicar passagens secretas e armadilhas."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Pedreiro",
-		"Com ferramentas de pedreiro você é capaz de construir estruturas de pedra, cimento e concreto armado, incluindo paredes e construções feitas de tijolos.",
-		"Conteúdo: Nas Ferramentas de pedreiro você pode encontrar espátulas, martelo, formão, broxa, esquadro, colher de pedreiro, desempenadeira, prumo, linha e normalmente um balde."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Construir uma parede ou fazer um pequeno buraco em uma parede de pedra"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Encontrar pontos fracos em uma parede ou construção."
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Pintor",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com suprimentos de pintor.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Pintando",
-			"Desenhando"
-		  ],
-		  "description": "Durante um descanso curto ou longo, você pode produzir um trabalho artístico simples, vindo a precisar de várias sessões até produzir algo complexo. Trabalhos rápidos carecem de precisão, mas ainda assim você pode capturar uma imagem ou uma cena, ou fazer uma cópia rápida de uma obra de arte que você tenha visto."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História",
-			"Religião"
-		  ],
-		  "description": "Seu conhecimento em arte e história da arte auxilia você na descoberta de informações que estejam ligadas a obras de arte, como uma pintura representando algo mágico ou religioso, além de, caso uma pintura tenha propriedades mágicas, quais elas são, além de poder saber a origem de um estranho mural ou quadro."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "Ao inspecionar uma pintura ou um trabalho de arte visual, seu conhecimento das práticas por trás da criação podem garantir informações adicionais como há quanto tempo essa pintura foi feita, quais materiais foram usados, qual técnica foi empregada, etc."
-		}
-	  ],
-	  "tools": [
-		"Suprimentos de Pintor",
-		"A proficiência em suprimentos de pintor representa sua habilidade para pintar e desenhar além de te prover compressão da história da arte, que pode auxiliá-lo ao examinar obras de arte.",
-		"Conteúdo: Os Suprimentos de pintor incluem normalmente um cavalete, folhas, tintas, pincéis, bastões de carvão, giz de cera, pastéis e uma paleta entre outros itens regionais."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Pintar um retrato preciso ou com detalhes importantes"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Criar uma pintura ou desenho com uma mensagem escondida"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Sapateiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de sapateiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Conservação de Sapatos"
-		  ],
-		  "description": "Você pode arrumar seus sapatos e de seus companheiros durante um descanso longo, fazendo com que até 6 criaturas consigam viajar por 10 horas sem realizar uma salvaguarda contra exaustão."
-		},
-		{
-		  "skills": [
-			"Criar Compartimento Secreto"
-		  ],
-		  "description": "Você é capaz de, com 8 horas de trabalho, adicionar um compartimento secreto a um par de sapatos ou botas, com capacidade de guardar algo de até 3 polegadas de comprimento e 1 de largura e profundidade e que não seja frágil, como vidro. Ao confeccionar isso, você deve fazer um teste de Inteligência usando sua proficiência com essa ferramenta para determinar a CD do teste de Investigação necessário para encontrar o compartimento."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História"
-		  ],
-		  "description": "Você é capaz de identificar sapatos e botas com componentes exóticos que talvez sejam focos de magia, pode reconhecer botas lendárias e antigas bem como a qual nação e época elas pertenciam."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Através de seu conhecimento e informações colhidas em investigação, você pode dizer em que terrenos uma bota ou sapato esteve, de qual material parece ser, a altura e peso de quem o usa, se foram usados recentementes e caso tenha danos, o que causou esse dano."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Sapateiro",
-		"Exércitos já foram derrotados por fieira e bolhas nos pés, talvez a profissão de sapateiro possa parecer simplória para um aventureiro, mas um bom par de botas pode fazer a diferença para um personagem em uma região selvagem acidentada e através de masmorras mortíferas.",
-		"Conteúdo: As Ferramentas de sapateiro normalmente incluem martelo, furador, faca, suporte para sapato, cortador, couro para reposição, fios, agulhas para couro, tecidos para forro entre outras peças."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Determinar a idade",
-			"a origem de um sapato",
-			"a altura",
-			"peso de quem o veste ou por que terrenos esse sapato andou."
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Encontrar um compartimento secreto em um sapato"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Determinar a existência de um compartimento secreto em um sapato ou bota vestido por alguém"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Tecelão",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de tecelão.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Criar Vestimentas"
-		  ],
-		  "description": "Caso você tenha acesso a tecido e linha suficiente, você pode criar uma vestimenta para uma criatura de tamanho até médio como parte de um descanso longo."
-		},
-		{
-		  "skills": [
-			"Reparar"
-		  ],
-		  "description": "Durante um descanso curto você pode usar suas ferramentas para reparar um objeto simples de tecido que esteja danificado ou mudar sua aparência com o consumo de materiais."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História"
-		  ],
-		  "description": "O seu conhecimento sobre tecelagem concede a você informações adicionais quando estiver examinando tecidos, incluindo mantos e robes e até mesmo bandeiras."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Seu conhecimento do processo de criação de tecidos pode ser usado para que você encontre pistas e faça deduções, que outros não percebem, ao examinar tapeçarias, estofamento, vestimentas, e outros itens de tecido."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Tecelão",
-		"Com as Ferramentas de tecelão você é capaz de utilizar tecidos e linhas para criar, adaptar, reparar e até reciclar peças de vestuário",
-		"Conteúdo: As Ferramentas de tecelão incluem dedal, vários tipos de linhas, várias agulhas de diferentes tamanhos, retalhos de tecido, botões e outros adereços de metal. Você sabe também como trabalhar em um tear e outras máquinas de recelagem, mas esses equipamentos são grande demais para serem transportados."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Reutilizar tecidos",
-			"consertar um buraco em uma peça de tecido"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Criar uma vestimenta"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Vidreiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de vidreiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Identificar Fraqueza"
-		  ],
-		  "description": "Utilizando 1 minuto de estudo , você pode identificar pontos fracos em um objeto de vidro fazendo com que qualquer dano causado ao atingir o ponto fraco do objeto seja dobrado."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo",
-			"História"
-		  ],
-		  "description": "Seu conhecimento das técnicas de produção de vidro pode ajudá-lo a examinar objetos feitos de vidro, como um frasco de poção, espelhos, potes entre outros itens de vidro encontrados em um tesouro. Você pode estudar como um frasco de poção de vidro foi feito com propósito de alocar seu conteúdo, conseguindo ajudar a determinar os efeitos de uma poção que esteja nele ou dos resíduos deixados por uma."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Ao investigar uma área, seu conhecimento pode ajudar você caso as pistas incluam vidro quebrado ou objetos de vidro."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Vidreiro",
-		"A habilidade de vidreiro não se resume apenas a dar forma a vidro, mas também a sua fabricação, e os métodos para criar objetos funcionais feitas de vidro.",
-		"Conteúdo: Nas ferramentas de vidreiro você pode encontrar ao menos um soprador, uma pequena placa de grafite, blocos, e pinças. Para trabalhar o vidro, você precisa de uma fonte de calor constante e estável para derreter a matéria prima e moldá-lo com o soprador e as pinças."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Identificar a origem do vidro",
-			"sua composição"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Determinar o que continha em um vidro ou como ele foi danificado"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Chaveiro",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de chaveiro.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Montar uma Armadilha"
-		  ],
-		  "description": "Da mesma forma que você é capaz de desarmar armadilhas, você também pode armá-las. Durante um descanso curto, você pode criar uma armadilha usando itens que estiverem à sua disposição. O total do resultado do seu teste de criação é a CD para alguém que tente encontrar ou desarmar sua armadilha. A armadilha causa dano apropriado ao material que foi usado em sua criação (como um veneno ou uma arma) ou dano igual a metade do total do seu teste, ou o que o Mestre achar ser apropriado. Você pode, também durante um descanso curto, montar as estruturas de uma armadilha para armá-la posteriormente, isso leva 10 minutos."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Seu conhecimento de história inclui armadilhas comuns em determinadas regiões e povos, isso lhe concede informações que podem ajudar você a encontrar ou desarmar."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "O seu conhecimento e experiência parecem te dar um instinto apurado quando procura por armadilhas, pois você aprendeu uma variedade de sinais comuns que revelam sua presença e consegue ver sinais de armadilhas que já tenham sido ativadas."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Chaveiro",
-		"As ferramentas de chaveiro, embora possam ser usadas pelos mesmos, podem ser usadas por aventureiros que sabem ser necessário vez ou outra ter que abrir fechaduras de uma masmorra ou desarmar armadilhas. Proficiência com esta ferramenta também garante a você um conhecimento geral sobre fechaduras e armadilhas.",
-		"Conteúdo: Nas ferramentas de chaveiro normalmente estão inclusas uma pequena lixa, um conjunto de gazuas, um pequeno espelho em um suporte de metal, um conjunto de tesouras de lâmina estreita, um par de alicates, alguns arames e fios entre outros objetos."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Abrir uma fechadura ou cadeado"
-		  ],
-		  "b": "Variável"
-		},
-		{
-		  "a": [
-			"Reparar uma armadilha",
-			"rearma-la"
-		  ],
-		  "b": "Variável"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Coletor",
-	  "info": [
-		"Coletores sabem que praticamente tudo que existe tem uma utilidade. Na verdade, eles sabem que tudo tem uma utilidade, em alguns casos a mesma apenas não foi encontrada ainda. Seja uma madeira rara, uma presa de uma criatura espiritual ou um minério extremamente instável e explosivo, os Coletores serão capazes de procurar e encontrá-los.",
-		"Ao receber proficiência com esse Ofício, você pode adicionar seu bônus de proficiência às rolagens feitas com suas ferramentas de coletor.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Destrinchar"
-		  ],
-		  "description": ["Você pode maximizar a coleta de recursos acessíveis se você tiver tempo. Ao obter as recompensas naturais de uma criatura, você pode utilizar uma quantidade de tempo adicional para que, ao rolar os dados para coleta de recursos, você pode rolar novamente e escolher os maiores dados para saber quantos recursos você consegue obter, escolhendo os maiores números rolados.", "Exemplo: Se você pode rolar 2d8 para saber quantos recursos você obtém, você rola 4d8, obtendo os números 5, 8, 3, 6 nessa rolagem, você pode escolher os números 8 e 6, totalizando 14.", "Ao realizar um teste de perícia para coletar algo, você pode adicionar seu bônus de proficiência à perícia mesmo que não tenha proficiência na mesma. Caso já tenha proficiência, você adiciona o dobro do seu bônus de proficiência. Caso já tenha esse bônus dobrado, você rola com vantagem."]
-		},
-		{
-		  "skills": [
-			"Averiguar"
-		  ],
-		  "description": "Sua experiência com a obtenção de recursos deu a você um senso natural do que as coisa são verdadeiramente. Você tem vantagens em rolagens para identificar falsificações, como por exemplo perceber que as supostas Lágrimas de Azir são na verdade pó de múmia."
-		},
-		{
-		  "skills": [
-			"Sinergias"
-		  ],
-		  "description": "Em conjunto com suas ferramentas de coletor, você pode utilizar esse ofício com as seguintes perícias, possibilitando alguns efeitos:"
-		},
-		{
-		  "skills": [
-			"Arcanismo",
-			"Tecnologia"
-		  ],
-		  "description": "Você conhece propriedades tecnológicas ou mágicas de determinados recursos que podem ser usados em poções, itens mágicos, dispositivos e aparatos."
-		},
-		{
-		  "skills": [
-			"História",
-			"Investigação"
-		  ],
-		  "description": "Você é capaz de elaborar informações a respeito da criatura através do estudo das partes que você coleta."
-		},
-		{
-		  "skills": [
-			"Medicina",
-			"Prestidigitação"
-		  ],
-		  "description": "Você é capaz de remover órgãos internos de criaturas com o cuidado necessário ou de extrair certas partes com um cuidado excepcional, fazendo com que sejam ainda mais valiosos."
-		},
-		{
-		  "skills": [
-			"Natureza",
-			"Sobrevivência"
-		  ],
-		  "description": "Você é capaz de encontrar veios de minérios, rastros de determinadas criaturas ou saber onde encontrar certos tipos de madeira entre outros recursos."
-		}
-	  ],
-	  "sinergies": [],
-	  "tools": [
-		"Ferramentas de Coletor",
-		"As ferramentas de coletor servem para que você possa extrair os mais diversos recursos vegetais, minerais, ou animais.",
-		"Conteúdo: Ferramentas de coletor incluem um exemplar do “Guia de Barukh para Recursos”, um conjunto de facas, um conjunto de picaretas, um conjunto de serras, um sangrador, 5 garrafas de 200 ml, 1 Kg de sal grosso, um pote de 1 litro hermeticamente fechado e 4 bolsas de couro de 1 litro."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Remover uma presa ou uma garra de uma criatura"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Coletar uma mandrágora"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Extrair um coração de um beija-flor"
-		  ],
-		  "b": "23"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Condutor",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com veículos aquáticos, mecha ou terrestres à sua escolha. Você pode possuir esse ofício mais de uma vez para veículos adicionais. Confira mais a frente nesse capítulo os Inventos de Tecmaturgo para saber mais sobre Mechas.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Condução de Veículos"
-		  ],
-		  "description": "Ao pilotar, você pode adicionar seu bônus de proficiência na CA e salvaguardas do veículo."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo"
-		  ],
-		  "description": "Quando você estuda um veículo mágico, sua proficiência nesta ferramenta ajuda você a desvendar informações, determinar como o veículo funciona ou mesmo pilotá-lo."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "Ao inspecionar um veículo atrás de pistas ou informações escondidas, sua proficiência ajuda você a perceber coisas que outros deixariam passar, além disso você pode obter informações sobre onde esse veículo estava anteriormente ou mesmo se carregou alguma carga pesada recentemente."
-		}
-	  ],
-	  "tools": [
-		"Veículos",
-		"Veículos Aquáticos e Terrestres",
-		"Proficiência com veículos terrestres cobre uma larga gama de opções, desde carruagens e palanquins, passando por vagões e charretes e até veículos automotores que possam existir. Já a proficiência com veículos aquáticos cobre qualquer meio de transporte navegável sobre a água. A proficiência com veículos garante conhecimento necessário para operar veículos de determinado tipo, e também conhecimento para reparos e manutenções. Além disso, um personagem com proficiência em veículos aquáticos possui conhecimento a respeito de tudo com o que um marinheiro está familiarizado, como informações a respeito do mar e ilhas, fazer nós, e avaliar o clima e as condições do mar."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Pilotar em terreno ou águas difíceis ou arrumar um veículo com algum problema leve."
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Avaliar as condições do veículo ou arrumar algum problema médio."
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Herbalista",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de herbalismo.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Identificar Plantas"
-		  ],
-		  "description": "Auxilia que você identifique com maior facilidade plantas e ervas medicinais pela sua aparência, comparando a com outras amostras, e pelo cheiro seja através de reagentes aplicados diretamente ou através de alguma infusão, queima ou outro processo."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Arcanismo"
-		  ],
-		  "description": "Permite que você estude magicamente plantas e ajuda na identificação de poções."
-		},
-		{
-		  "skills": [
-			"Investigação"
-		  ],
-		  "description": "Você pode coletar pistas e detalhes em áreas de vegetação com esse estojo."
-		},
-		{
-		  "skills": [
-			"Medicina"
-		  ],
-		  "description": " Auxilia na confecção de remédios feitos de plantas medicinais para tratar doenças e curar ferimentos."
-		},
-		{
-		  "skills": [
-			"Natureza",
-			"Sobrevivência"
-		  ],
-		  "description": "Algumas plantas podem ser usadas como alimento após passarem por alguns processos de purificação ou filtragem."
-		}
-	  ],
-	  "tools": [
-		"Estojo de Herbalismo",
-		"Este conjunto contém uma variedade de instrumentos como tesouras, almofariz e pilão e bolsas usadas por herbalistas para criar remédios e poções. Proficiência com este conjunto permite que você adicione seu bônus de proficiência a qualquer teste de Atributo que fizer para identificar ou aplicar ervas. Além disso, proficiência com este conjunto é necessária para criar antitoxinas e poções de cura. Um estojo de Herbalismo permite a um personagem com Proficiência nele a identificação de plantas e venenos, além disso com ele o personagem pode coletar partes das plantas e venenos de maneira segura.",
-		"Conteúdo: O estojo de herbalismo contém pequenas bolsas para guardar ervas, tesouras e cortadores além de luvas de couro para coletar plantas. É comum que tenha almofariz além de vários frascos de vidro de diferentes tamanhos."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Identificar plantas",
-			"ervas"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Identificar veneno"
-		  ],
-		  "b": "20"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Jogador",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de jogos à sua escolha. Você pode possuir esse ofício mais de uma vez para um jogo adicional.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Você pode demonstrar algum conhecimento histórico ou evento importante que tenha alguma relação com o jogo, ou usar o mesmo para relatar algo histórico de maneira levemente teatral."
-		},
-		{
-		  "skills": [
-			"Intuição"
-		  ],
-		  "description": "Ao jogar com alguém, você pode fazer leituras de sua personalidade, entender trejeitos e tiques que possibilitam a você um melhor entendimento da pessoa, de seus tons de voz falando a verdade ou mentira ou perceber flutuações de humor."
-		},
-		{
-		  "skills": [
-			"Prestidigitação"
-		  ],
-		  "description": "Você pode utilizar o seu estojo para fazer trapaças, seja elas dentro do jogo ou utilizando o conteúdo do estojo para enganar a alguém."
-		}
-	  ],
-	  "tools": [
-		"Estojo de Jogo",
-		"Este item engloba uma vasta gama de peças de jogo, incluindo dados e baralhos de cartas. Alguns exemplos comuns aparecem na tabela Ferramentas de Ofício, mas existem outros tipos de jogos. Se é proficiente com um determinado jogo, você pode adicionar seu bônus de proficiência aos testes de Atributo que fizer para jogar com esse conjunto. Cada tipo de estojo de jogo requer uma proficiência separada. Um estojo de Jogos se aplica a um tipo de jogo, como cartas, aposta do rei, ou algum outro jogo de azar que utilize dados.",
-		"Conteúdo: Dentro de um estojo de jogos, estão todas as peças necessárias para algum jogo em específico, podendo ser desde pedras, dados, peças de tabuleiro ou apenas um baralho."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Pegar um jogador trapaceando"
-		  ],
-		  "b": "15"
-		},
-		{
-		  "a": [
-			"Obter um intuição sobre a personalidade de um jogador"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Músico",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um instrumento musical à sua escolha. Você pode possuir esse ofício mais de uma vez para instrumentos musicais adicionais.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [
-		{
-		  "skills": [
-			"Compor uma Canção"
-		  ],
-		  "description": "Durante um descanso longo, você pode compor uma nova canção e letra para seu instrumento. Você pode utilizar esta habilidade para impressionar um nobre, espalhar rumores escandalosos com uma canção cativante ou mesmo estimular sua platéia com alguma ideia ou pensamento."
-		}
-	  ],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Sua especialização pode ajudar você a relembrar informações relacionadas a seu instrumento, músicas antigas e regionais, além de entender músicas que possam trazer o registro de algum conhecimento."
-		},
-		{
-		  "skills": [
-			"Atuação",
-			"Persuasão"
-		  ],
-		  "description": "Sua capacidade de fazer um bom show é melhorada quando você incorpora um instrumento em seu ato, além disso, você pode tentar plantar uma ideia subconsciente em sua platéia."
-		}
-	  ],
-	  "tools": [
-		"Instrumento Musical",
-		"Muitos dos tipos de instrumentos musicais mais comuns são mostrados na tabela como exemplos. Se você tem proficiência com determinado instrumento musical, você pode adicionar seu bônus de proficiência para qualquer teste de Atributo que fizer para tocar música com o instrumento. Um Peregrino pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical requer uma proficiência separada., além disso, a proficiência com um instrumento musical indica que você está familiarizado com as técnicas usadas para tocá-lo. Você também sabe algumas canções comuns tocadas com o instrumento."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Identificar uma canção"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Improvisar uma canção"
-		  ],
-		  "b": "20"
-		},
-		{
-		  "a": [
-			"Estimular uma platéia a alguma ação ou pensamento"
-		  ],
-		  "b": "25"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Navegador",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de navegação.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [],
-	  "sinergies": [
-		{
-		  "skills": [
-			"Sobrevivência"
-		  ],
-		  "description": "Seu conhecimento com ferramentas de navegação pode ajudar você a evitar se perder e também garantir informações sobre o caminho mais provável para estradas e assentamentos, além de encontrar sinais de localização deixados para trás."
-		}
-	  ],
-	  "tools": [
-		"Ferramentas de Navegação",
-		"Este conjunto de instrumentos é utilizado para navegação no mar. Proficiência com ferramentas de navegador permite que você trace o curso de um navio e siga cartas de navegação. Além disso, estas ferramentas permitem que você adicione seu bônus de proficiência a testes de Atributo feitos para evitar se perder no mar. Além disso, você consegue se orientar pela observação das estrelas . Também garante a você informações em gráficos e mapas enquanto estiver trabalhando seu senso de direção.",
-		"Conteúdo: As ferramentas de navegação normalmente incluem um sextante, um compasso, pinças , uma régua, pergaminhos, tinta, e uma pena."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Determinar um curso eficiente"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	},
-	{
-	  "name": "Ofício de Veneficista",
-	  "info": [
-		"Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de venenos.",
-		":tasks:",
-		":sinergies:",
-		":Tools:",
-		":Table:"
-	  ],
-	  "tasks": [],
-	  "sinergies": [
-		{
-		  "skills": [
-			"História"
-		  ],
-		  "description": "Se alguém famoso foi envenenado, você pode usar seu conhecimento para relembrar fatos sobre isso, talvez formas de anulá-lo ou mesmo de minimizar seu efeito."
-		},
-		{
-		  "skills": [
-			"Investigação",
-			"Percepção"
-		  ],
-		  "description": "Você pode usar seu estojo para extrair veneno de objetos, armadilhas e manuseá-lo com cuidado. Além disso, você pode usá-lo para investigar possíveis focos de envenenamento."
-		},
-		{
-		  "skills": [
-			"Medicina"
-		  ],
-		  "description": "Com seu estojo você pode ter mais chances de tratar alguma vítima Envenenada, Intoxicada ou mesmo usá-lo para criar algum remédio."
-		},
-		{
-		  "skills": [
-			"Natureza",
-			"Sobrevivência"
-		  ],
-		  "description": "Você pode extrair matéria-prima para venenos e antídotos de plantas, animais, minerais, fungos, etc."
-		}
-	  ],
-	  "tools": [
-		"Estojo de Veneno",
-		"Um estojo de veneno inclui os frascos, produtos químicos e outros equipamentos necessários para a criação de venenos. Proficiência com este conjunto permite que você adicione seu bônus de proficiência a qualquer teste de Atributo que fizer para criar ou usar venenos. Esse é um estojo que você não deseja que saibam que você tem, especialmente por ser ligado a ladrões, assassinos e outros contraventores, com ele é possível criar venenos através de outros materiais e nele estão formas de inocular ou de combatê-los.",
-		"Conteúdo: Você encontra seringas, frascos de vidro, almofariz, varetas de vidro e de outros materiais orgânicos além de produtos químicos."
-	  ],
-	  "table": [
-		{
-		  "a": [
-			"Atividade"
-		  ],
-		  "b": "CD"
-		},
-		{
-		  "a": [
-			"Perceber um objeto envenenado"
-		  ],
-		  "b": "10"
-		},
-		{
-		  "a": [
-			"Determinar os efeitos de um veneno"
-		  ],
-		  "b": "15"
-		}
-	  ]
-	}
-  ]
+  {
+    "name": "Ofício de Armeiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de armeiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Desemperrar"],
+        "description": "Para desemperrar uma arma de fogo você pode usar uma ação para realizar um teste CD 10 + número de erro do tiro. Em caso de sucesso, a arma não é mais considerada emperrada e pode voltar a ser usada normalmente."
+      },
+      {
+        "skills": ["Reparar Arma Inutilizada"],
+        "description": "Para arrumar uma arma de fogo você pode usar uma ação para uma rolagem de Atributo com o Ofício de armeiro com um CD 10 + número de erro do tiro. Isso leva uma hora e em caso de sucesso, a arma não é mais considerada inutilizada e pode voltar a ser usada normalmente."
+      },
+      {
+        "skills": ["Reparar Arma Quebrada"],
+        "description": "Para reparar uma arma de fogo quebrada, desde que tenha acesso à uma chama quente o suficiente para amolecer o metal você pode usar uma ação para uma rolagem de Atributo com o Ofício de Armeiro com um CD 10 + número de erro de tiro. Você precisa gastar metade do valor da arma em peças para reparo. Esse processo demora até quatro horas e em caso de sucesso, a arma não é mais considerada quebrada."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História", "Investigação"],
+        "description": "Sua maestria com o ofício de Armeiro lhe garantem informações adicionais, pistas ou deduções desde que sejam relacionados a trabalhos feitos com armas de fogo. Especialização concede a você informações adicionais sobre a constituição da arma e o tipo de material usado."
+      },
+      {
+        "skills": ["Tecnologia"],
+        "description": "Você é capaz de encontrar substitutos para propelentes na ausência de salitre, carvão e enxofre. Além de conseguir entender tecnologias novas utilizadas em armas feitas em outras regiões ou com tecnologia mais avançada."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Armeiro",
+      "Com suas ferramentas de armeiro você pode consertar armas de fogo danificadas, além de poder dar manutenção e cuidar delas para aumentar sua durabilidade e qualidade. Além disso, você consegue analisar componentes combustíveis para criar propelentes.",
+      "Conteúdo: As ferramentas de armeiro incluem normalmente um pouco de Carvão, Enxofre e Salitre além de graxa, engrenagens pequenas, óleo para lubrificação, um jogo de chaves de precisão, molde para cápsulas, espoletas, escovas de limpeza, alguns gramas de chumbo, uma prensa pequena desmontável, metal com baixo ponto de fusão, uma faca de precisão para trabalhos manuais."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Adicionar gravura à uma arma de fogo"],
+        "b": "10"
+      },
+      {
+        "a": ["Analisar a origem de uma arma de fogo"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofícios de Artesão",
+    "info": [
+      "Esses Ofícios lhe garante proficiência com ferramentas especiais que incluem os itens necessários para exercer um ofício ou comércio. A tabela mostra exemplos dos tipos mais comuns de ferramentas, cada uma com itens relacionados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite que você adicione seu bônus de proficiência para qualquer teste de Atributo que fizer usando as ferramentas do seu ofício. Cada tipo de ferramentas de artesão requer uma proficiência separada."
+    ],
+    "tasks": [],
+    "sinergies": [],
+    "tools": [],
+    "table": []
+  },
+  {
+    "name": "Ofício de Alquimista",
+    "info": [
+      "O Alquimista trabalha com dois princípios básicos chamados de “Solve et Coagula” ou ainda, dissolver e coagular. Esses dois princípios buscam entender o princípio por trás da matéria e até da energia, fazendo com que através do desenvolvimento dentro desse ofício, se aprenda a criar e utilizar substâncias variadas para a fabricação de elixires, materiais raros e até mesmo simulacros de materiais raros. Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com suprimentos de alquimista.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Aprender Fórmula"],
+        "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para aprender fórmulas a que você tenha acesso. Enquanto você estiver aprendendo essa fórmula, você gasta 10 PO por dia de trabalho. Para cada dia de trabalho você deve fazer um teste com suas Ferramentas de Alquimista CD definida pelo Mestre, em um sucesso você avança em sua fórmula normalmente enquanto em uma falha, você regride 1 dia de trabalho."
+      },
+      {
+        "skills": ["Criação"],
+        "description": "Desde que você possua os materiais necessários, você pode criar Poções de Tecmaturgo de 1º nível gastando o dobro do preço e tempo (Tecmaturgos criam seus Inventos pelo tempo e preço normais)."
+      },
+      {
+        "skills": ["Desenvolver Fórmula"],
+        "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para desenvolver novas fórmulas. Converse com seu Mestre para saber o tempo necessário para desenvolver uma nova fórmula. Enquanto você estiver desenvolvendo essa fórmula, você gasta 50 PO por dia de trabalho. Para cada dia de trabalho você deve fazer um teste com suas Ferramentas de Alquimista CD definida pelo Mestre, em um sucesso você avança em sua fórmula normalmente enquanto em uma falha, você regride 1 dia de trabalho."
+      },
+      {
+        "skills": ["Fabricação Alquímica"],
+        "description": "Você pode utilizar sua proficiência com o Ofício de Alquimista para fabricar itens alquímicos. Um personagem pode investir dinheiro para coletar material bruto, que pesa 500 gramas para cada 50 PO gastas. O Mestre pode permitir a um personagem fazer jogadas com a perícia adequada com vantagem. Como parte de um descanso longo, você pode utilizar Ferramentas de Alquimista para criar uma dose de, ácido, fogo alquímico, antitoxina, óleo, perfume ou sabão. Subtraia metade do valor do item criado do total de peças de ouro dos materiais brutos que você esteja carregando."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo"],
+        "description": "A proficiência com o Ofício de Alquimista permite a você obter mais informações ao analisar poções e materiais estranhos com a habilidade Arcanismo."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Ao inspecionar uma área por pistas, a proficiência com o Ofício de Alquimista garante a você ensejos sobre substâncias químicas e demais materiais que possam ter sido usados na área."
+      }
+    ],
+    "tools": [
+      "Suprimentos de Alquimista",
+      "Os suprimentos de Alquimista permitem a um personagem produzir misturas úteis como ácido, fogo alquímico, entre muitas outras. (essas ferramentas custam 50 PO e pesa 4 Kg)",
+      "Conteúdo: Suprimentos de Alquimista incluem dois béqueres de vidro, uma estrutura de metal para segurar um béquer sobre uma chama, uma vareta de vidro para mistura, um pequeno almofariz junto a um pilão além de uma bolsa contendo ingredientes alquímicos como sal, ferro em pó, água purificada, etc."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Criar uma nuvem de fumaça espessa"],
+        "b": "10"
+      },
+      {
+        "a": ["Identificar um veneno"],
+        "b": "10"
+      },
+      {
+        "a": ["Identificar uma substância"],
+        "b": "15"
+      },
+      {
+        "a": ["Iniciar fogo"],
+        "b": "15"
+      },
+      {
+        "a": ["Neutralizar ácido"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Cartógrafo",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de cartógrafo.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Criar um Mapa"],
+        "description": "Você pode ao longo de sua viagem, desenhar um mapa dos locais pelo qual você passou em conjunto com suas ferramentas de cartógrafo e realizar outras atividades ao mesmo tempo."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "Religião"],
+        "description": "Analisando mapas você pode entender contextos arcanos ou religiosos ligados a mapas, anotações secretas além de ser capaz de encontrar códigos e padrões."
+      },
+      {
+        "skills": ["História"],
+        "description": "Com as ferramentas de cartógrafo você pode comparar mapas entre si, mapas antigos com a atualidade, além de encontrar pontos de divergência entre relatos históricos"
+      },
+      {
+        "skills": ["Natureza"],
+        "description": "Seu conhecimento de geografia o auxilia a determinar problemas relacionados à formação e funcionamento do terreno ao seu redor."
+      },
+      {
+        "skills": ["Sobrevivência"],
+        "description": " Você é capaz de encontrar caminhos em regiões desconhecidas com um entendimento de geografia e acidentes geográficos, pode inferir onde povoados possam existir pela praticidade e proximidade de recursos naturais, especialmente por conhecer padrões de distribuição demográfica e de assentamento bem como entender sobre rotas comerciais e de caravana."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Cartógrafo",
+      "As ferramentas de cartógrafo servem para que você possa criar mapas dos mais variados tipos, desde políticos, passando por mapas topológicos entre muitas outras possibilidades. Você consegue criar reproduções adequadas e que captem bem direções e dimensões, tornando mais fácil se guiar ao utilizá-los.",
+      "Conteúdo: As Ferramentas de Cartógrafo normalmente são alguma forma de escrita, como caneta, ou pena e tinta, além de papéis ou pergaminhos (talvez até livros em branco) além de compassos, réguas, pinças, bússolas e em raros casos até um astrolábio."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Determinar a idade", "a origem de um mapa"],
+        "b": "10"
+      },
+      {
+        "a": ["Estimar a direção", "a distância até um local"],
+        "b": "15"
+      },
+      {
+        "a": ["Verificar a autenticidade de um mapa"],
+        "b": "15"
+      },
+      {
+        "a": ["Completar uma parte faltando de um mapa"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Cozinheiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com utensílios de cozinheiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Preparar Refeições"],
+        "description": "Durante um descanso curto , você pode preparar uma refeição saborosa e nutritiva que ajuda seus companheiros a recuperar suas forças. Você e até cinco criaturas de sua escolha recuperam 1 ponto de vida extra para cada Dado de Vida gasto durante um descanso curto, considerando que você tenha acesso a seus utensílios de cozinha e comida suficiente."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Você tem conhecimento de costumes e hábitos alimentares de outros povos e outras épocas."
+      },
+      {
+        "skills": ["Medicina"],
+        "description": "Você conhece a propriedade curativa de alimentos regulares além de poder, ao administrar um tratamento, transformar um remédio amargo ou azedo em uma mistura de sabor agradável."
+      },
+      {
+        "skills": ["Sobrevivência"],
+        "description": "Ao buscar por alimentos você pode encontrar ingredientes alternativos além de conseguir analisar carnes de criaturas peçonhentas e.ou venenosas e possibilitar consumi-las sem risco."
+      }
+    ],
+    "tools": [
+      "Utensílios de Cozinheiro",
+      "Qualquer aventureiro sabe que muitas vezes a vida leva eles a ficarem dias em lugares longe de qualquer civilização, as vezes imprevistos acontecem e o alimento se torna escasso. Com um cozinheiro ao longo da jornada, suas refeições serão muito melhores do que a típica mistura de carne seca e frutas desidratadas, além de melhor distribuídas e desperdício evitado.",
+      "Conteúdo: Os utensílios de cozinheiro podem conter ao menos um pote de metal versátil que também sirva como panela, algumas facas de cozinha, alguns talheres, ao menos uma colher para misturar, e pelo menos uma concha."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Cozinhar uma refeição comum"],
+        "b": "10"
+      },
+      {
+        "a": ["Replicar uma refeição já experimentada"],
+        "b": "10"
+      },
+      {
+        "a": ["Encontrar veneno ou impurezas na comida"],
+        "b": "15"
+      },
+      {
+        "a": ["Cozinhar uma refeição requintada"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Curtidor",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de curtidor.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "Investigação"],
+        "description": "Você pode utilizar de seu conhecimento em trabalhos de couro para determinar a origem de alguma técnica utilizada em couro trabalhado. Além de receber informações adicionais ou alguma pista relacionado a algum item feito de couro."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Coureiro",
+      "Com suas ferramentas você pode desde confeccionar itens de couro, até consertar itens rasgados e danificados, além de poder cuidar deles para aumentar sua durabilidade e qualidade. Além disso, você consegue analisar peles e couros, entendendo suas qualidades e fraquezas.",
+      "Conteúdo: As ferramentas de curtidor incluem normalmente um conjunto de facas bem afiadas, um pequeno malho, cortador, perfurador, linha, sobras de couro, algumas tintas e até alguns adornos além de rebites."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Modificar a aparência de algum item feito de couro"],
+        "b": "10"
+      },
+      {
+        "a": ["Determinar a origem de um determinado couro"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Entalhador",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de entalhador.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Reparar"],
+        "description": "Utilizando as ferramentas de entalhador você pode reparar pequenos danos feitos em um objeto feito de madeira."
+      },
+      {
+        "skills": ["Criar Flechas"],
+        "description": "Desde que você possua madeira suficiente, você pode criar até 5 flechas em um descanso curto e 20 em um longo."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História"],
+        "description": "Por conta de sua especialização, você pode receber informações adicionais relacionadas à qualquer objeto de madeira."
+      },
+      {
+        "skills": ["Natureza"],
+        "description": "Você pode determinar a qualidade da madeira de uma árvore utilizando as ferramentas de entalhador."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Entalhador",
+      "Com ferramentas de entalhador você pode esculpir em madeira criando obras artísticas, religiosas ou meramente decorativas, além disso você pode também criar flechas e virotes.",
+      "Conteúdo: Ferramentas de entalhador incluem uma faca, uma talhadeira, e uma pequena serra."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Criar um pequeno totem ou ídolo de madeira"],
+        "b": "10"
+      },
+      {
+        "a": ["Entalhar um padrão intrincado na madeira"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Falsificador",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de falsificação.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Outras Ferramentas"],
+        "description": "Possuir proficiência com outras ferramentas pode auxiliar com que suas falsificações se tornem cada vez mais realísticas. Por exemplo, você pode utilizar sua proficiência com estojo de falsificação e ferramentas de joalheiro para criar um ornamento com uma pedra preciosa falsa."
+      },
+      {
+        "skills": ["Falsificação Rápida"],
+        "description": "Você pode criar documentos falsos com não mais de uma página utilizando esse estojo em um descanso curto. Já em um descanso longo, você pode falsificar um documento mais complexo. Seu teste utilizando esse estojo determina a CD para identificar que o documento é falso."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo"],
+        "description": "Auxilia na identificação de veracidade de um item mágico."
+      },
+      {
+        "skills": ["Enganação"],
+        "description": "Ao criar uma falsificação bem feita, pode lhe auxiliar em testes de enganação para ter credibilidade em uma mentira."
+      },
+      {
+        "skills": ["História"],
+        "description": "Utilizando seu conhecimento em história pode lhe auxiliar a detectar e criar documentos históricos falsos."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "O estojo de falsificação possui alguns itens que podem lhe auxiliar na identificação de documentos e objetos genuínos."
+      }
+    ],
+    "tools": [
+      "Estojo de Falsificação",
+      "Esta caixa pequena contém uma variedade de papéis e pergaminhos, penas e tintas, selos e cera de lacre, folhas de ouro e prata e outros suprimentos necessários para criar falsificações convincentes de documentos físicos. A proficiência com este conjunto permite a você adicionar seu bônus de proficiência a qualquer teste de Atributo para criar uma falsificação física de um documento. Este estojo lhe concede ferramentas para que você possa falsificar assinaturas de oficiais, duplicar documentos e selos de cera.",
+      "Conteúdo: Dentro de um estojo de falsificação você pode encontrar diversos tipos de tinta, pergaminhos e papeis, além de cera para selos, ferramentas metálicas para falsificar selos, uma lupa, algumas penas e folhas de ouro e prata."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Imitar escrita de um manuscrito"],
+        "b": "15"
+      },
+      {
+        "a": ["Falsificar um selo de cera"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Fermentador",
+    "info": [
+      "Fermentar é uma arte, seja ela para produzir cerveja, ou mesmo vinho. A mesma arte é também usada para produzir destilados através de processos levemente diferentes.",
+      "Ao receber proficiência com esse Ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de Fermentador.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Fermentar"],
+        "description": "Você pode produzir ou analisar bebidas alcoólicas desde que tenha espaço e tempo para utilizar suas ferramentas para fermentar, destilar, decantar e aplicar outros processos para isso. Cada hora de serviço produz 1 litro de uma bebida, o resultado disso fica pronto após 8 horas."
+      },
+      {
+        "skills": ["Água Potável"],
+        "description": "Seu conhecimento de destilação permite que você produza água purificada através de água imprópria para consumo. Como parte de um descanso longo, você pode purificar até 20 litros de água, ou 3,5 litros em um descanso curto"
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Você pode elaborar informações a respeito da bebida, sabendo de onde determinados ingredientes são originados."
+      },
+      {
+        "skills": ["Medicina"],
+        "description": "Você é capaz de tratar mais eficazmente alguém com intoxicação ligada a álcool e é capaz de administrar álcool de forma sedativa."
+      },
+      {
+        "skills": ["Persuasão"],
+        "description": "Você tem um senso de quando as pessoas estão mais suscetíveis a um convite para uma boa caneca e abrirem seus corações."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Fermentador",
+      "As ferramentas de Fermentador servem para que você possa criar bebidas fermentadas ou destiladas, analisar a composição das mesmas, decantá-las entre outros processos.",
+      "Conteúdo: Ferramentas de fermentador incluem um alambique de cobre de 6 litros que é formado de um recipiente maior, um sifão, funil e um recipiente. Além disso, inclui 5 garrafas de vidro vazias de 1 litro."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Detectar veneno ou impurezas em uma bebida"],
+        "b": "10"
+      },
+      {
+        "a": ["Identificar álcool"],
+        "b": "15"
+      },
+      {
+        "a": ["Ignorar os efeitos do álcool"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Ferreiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de ferreiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Reparar"],
+        "description": "Desde que tenha acesso a uma chama quente o suficiente para amolecer metal, você pode utilizar suas ferramentas de ferreiro para recuperar, a cada hora de trabalho, 10 pontos de vida de um objeto metálico."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História", "Investigação"],
+        "description": "Sua maestria com trabalhos em metal lhe garantem informações adicionais, pistas ou deduções desde que sejam relacionados a trabalhos feitos com metal. Especialização concede a você informações adicionais sobre essas áreas quando estiver examinando objetos de metal, como armas."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Ferreiro",
+      "Com ferramentas de ferreiro você pode realizar várias ações, como criar armas e armaduras feitos de metal contanto que você tenha um espaço para aquecer o metal, trabalhar lingotes e até mesmo uma bigorna para modelá-los.",
+      "Conteúdo: Ferramentas de ferreiro incluem martelos, pinças, carvão, retalhos de metal, e pedra de amolar."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Afiar uma lâmina cega"],
+        "b": "10"
+      },
+      {
+        "a": ["Reparar uma armadura"],
+        "b": "15"
+      },
+      {
+        "a": ["Quebrar um objeto de metal não-mágico"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Funileiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de funileiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Reparar"],
+        "description": "Com as ferramentas de Funileiro você é capaz de reparar 10 pontos de vida de um objeto danificado para cada uma hora que você trabalhe isso. É necessário que você tenha acesso a matéria-prima igual à do objeto em questão e, no caso de objetos de metal, você precisa ter acesso a alguma chama suficientemente quente para tornar o metal maleável."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Em posse de mesmo apenas alguns pedaços de um objeto, você é capaz de saber algo a respeito dele como idade, origem, utilidade, o quão utilizado ele foi, que tipos de dano recebeu e quando."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Ao inspecionar um objeto danificado você pode inferir como ele tenha sido danificado, talvez até como costumava ser usava e se era algo usado frequentemente."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Funileiro",
+      "As ferramentas de funileiro servem para reparos de itens do dia a dia, coisas mundanas como roupas rasgadas, afiar utensílios domésticos e até armas, arrumar uma panela que tenha sido furada ou uma moringa que tenha sido quebrada.",
+      "Conteúdo: As Ferramentas de funileiro incluem várias ferramentas para trabalhos manuais, como agulhas, linha, pedras de amolar, cola, às vezes um pouco de argila, uma vela, algum metal de ponto de fusão baixo, retalhos de tecido, peças de couro."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Reativar temporariamente um dispositivo desativado"],
+        "b": "10"
+      },
+      {
+        "a": ["Reparar um item na metade do tempo"],
+        "b": "15"
+      },
+      {
+        "a": ["Improvisar um item temporário usando sucata"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Inventor",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de inventor.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Criação"],
+        "description": "Desde que você possua os materiais necessários, você pode criar Aparatos de Tecmaturgo de 1º nível gastando o dobro do preço e tempo (Tecmaturgos criam seus Inventos pelo tempo e preço normais)."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História"],
+        "description": "Em conjunto com seus conhecimentos, você pode analisar um item ou artefato tecnológico para determinar sua origem e funcionamentos, além de saber se é um item mágico ou não."
+      },
+      {
+        "skills": ["Tecnologia"],
+        "description": "Você pode utilizar essas ferramentas como parte de um descanso longo, para consertar um construto danificado, ele pode receber 2d10 + seu modificador na perícia de Tecnologia."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Inventor",
+      "Com as Ferramentas de Inventor você pode realizar várias ações, como criar pequenas bugigangas feitas de sucata, desmontar e remontar uma invenção qualquer, retirar peças de um objeto inutilizado e pode até mesmo consertar um Construto que foi danificado.",
+      "Conteúdo: As Ferramentas são compostas de várias ferramentas, como 5 chaves inglesas, chaves de fenda, um pequeno martelo, e uma variedade de parafusos, pregos, porcas, cavilhas, molas e engrenagens além de um maçarico portátil com combustível."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Analisar origem de um objeto tecnológico"],
+        "b": "15"
+      },
+      {
+        "a": ["Criar um invento"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Joalheiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de joalheiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Identificar Gemas"],
+        "description": "Você pode identificar gemas falsas e determinar o valor delas para vendas e compras"
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo"],
+        "description": "Ao usar as Ferramentas de Joalheiro junto a essa perícia, você pode encontrar informações sobre encantamentos em gemas, avaliar a possibilidade de uma gema receber um encantamento, entre outros."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Você pode inspecionar gemas e objetos com gemas incrustadas, consegue encontrar pistas sobre o que aconteceu com ela, avaliar se elas ficaram em contato com alguma substância em específico entre outros."
+      },
+      {
+        "skills": ["Tecnologia", "Arcanismo"],
+        "description": "Você pode avaliar um cristal hextec e saber se ele é sintético ou verdadeiro, além disso, pode estimar a capacidade energética dele."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Joalheiro",
+      "As ferramentas de joalheiro permitem a você técnicas para lapidar, polir limpar e todos outros processos necessários para embelezar uma gema e valorizá-la. Com elas você pode avaliá-las e até identificá-las.",
+      "Conteúdo: Nas Ferramentas de joalheiro você pode encontrar lupa e lentes, uma pequena serra, lixas, unguentos de polimento além de martelo, alicates, pinças e uma série de filmes cromáticos."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Modificar a aparência de uma gema", "lapidá-la"],
+        "b": "15"
+      },
+      {
+        "a": ["Determinar a localidade de origem de uma gema"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Maquiador",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de maquiagem.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Criar Disfarce"],
+        "description": "Durante um descanso longo, você pode criar um disfarce em especial para alguma situação. Você demora 1 minuto para colocar esse disfarce após sua criação. Você não pode transportar com você mais de um disfarce completo por vez, apenas em uma carroça ou deixá-lo em uma mochila grande. Cada conjunto de disfarce pesa 500 gramas. Um disfarce feito sem preparo demora 10 minutos para modificar levemente a sua aparência e 30 para mudá-la completamente."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Atuação"],
+        "description": "Você pode melhorar um disfarce, usando algodão ou outros enchimentos na boca para modificar sua voz, entre outras formas que melhore a sua atuação atendendo aos seus objetivos."
+      },
+      {
+        "skills": ["Enganação"],
+        "description": "Ao tentar enganar alguém com um disfarce, seu estojo provê recursos para que você possa fazer isso com maior sucesso."
+      },
+      {
+        "skills": ["Intimidação"],
+        "description": "Você sabe aplicar sombras em seu rosto para parecer mais amedrontador ou mesmo como fazer uma cicatriz falsa realmente impressionante, entre outros efeitos."
+      },
+      {
+        "skills": ["Persuasão"],
+        "description": "Você consegue adaptar suas vestimentas para emular o de alguma autoridade ou mesmo uma classe social diferente em prol de persuadir alguém."
+      }
+    ],
+    "tools": [
+      "Estojo de Maquiagem",
+      "Esta bolsa de cosméticos, tintura de cabelo e pequenos adereços permitem que você crie disfarces que mudam sua aparência física. A proficiência com este conjunto permite a você adicionar seu bônus de proficiência a qualquer teste de Atributo para criar um disfarce visual. Um estojo de disfarces permite a você mudar sua aparência, seja para a de alguém desconhecido ou tentar copiar alguém que existe.",
+      "Conteúdo: Dentro de um estojo de maquiagem você encontra maquiagem, pincéis para usá-la, algodão, perucas, pequenos objetos como broches, relógios, peças de roupa e talvez até algum enchimento, além de borracha que pode ser modelada para próteses."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Cobrir ferimentos ou marcas de cicatrizes"],
+        "b": "10"
+      },
+      {
+        "a": ["Perceber um disfarce sendo usado por outra pessoa"],
+        "b": "15"
+      },
+      {
+        "a": ["Copiar a aparência de um humanoide"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Oleiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de oleiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Reconstrução"],
+        "description": "Você pode reconstruir um objeto de cerâmica a partir do exame minucioso de um pedaço e tendo matéria prima a disposição."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Você pode usar suas ferramentas para determinar em que época um objeto de barro, argila ou cerâmica foi criado, ou mesmo extrair informações sobre a cultura em que ele foi produzido."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "Ao examinar cerâmicas, vasos e objetos de argila, você é capaz de receber informações adicionais, desvendando pistas que outros não viriam ao observar pequenas irregularidades."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Oleiro",
+      "As ferramentas de oleiro podem ser utilizadas para a criação de vários objetos de cerâmica, em especial potes, vasos e objetos similares.",
+      "Conteúdo: As Ferramentas de oleiro incluem normalmente algumas tintas, marcadores de cerâmica, espátulas, raspadores, material para reforço, facas especializadas, pinças e uma roda."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Determinar o conteúdo comum de um recipiente"],
+        "b": "10"
+      },
+      {
+        "a": ["Criar um vaso ou objeto de cerâmica"],
+        "b": "15"
+      },
+      {
+        "a": ["Encontrar falhas de construção em objetos de cerâmica"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Pedreiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de pedreiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Demolição"],
+        "description": "Com seu entendimento de construções, você pode identificar pontos mais frágeis em paredes de tijolo e concreto. Seu dano causado a essas estruturas quando usando uma arma apropriada é dobrado."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Você pode identificar em que época uma construção foi feita, sua utilidade e técnicas usadas para construí-la."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "Você pode obter informações adicionais quando inspeciona áreas dentro de construções de pedra, entender seu propósito, encontrar desníveis que possam indicar passagens secretas e armadilhas."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Pedreiro",
+      "Com ferramentas de pedreiro você é capaz de construir estruturas de pedra, cimento e concreto armado, incluindo paredes e construções feitas de tijolos.",
+      "Conteúdo: Nas Ferramentas de pedreiro você pode encontrar espátulas, martelo, formão, broxa, esquadro, colher de pedreiro, desempenadeira, prumo, linha e normalmente um balde."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Construir uma parede ou fazer um pequeno buraco em uma parede de pedra"],
+        "b": "10"
+      },
+      {
+        "a": ["Encontrar pontos fracos em uma parede ou construção."],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Pintor",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com suprimentos de pintor.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Pintando", "Desenhando"],
+        "description": "Durante um descanso curto ou longo, você pode produzir um trabalho artístico simples, vindo a precisar de várias sessões até produzir algo complexo. Trabalhos rápidos carecem de precisão, mas ainda assim você pode capturar uma imagem ou uma cena, ou fazer uma cópia rápida de uma obra de arte que você tenha visto."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História", "Religião"],
+        "description": "Seu conhecimento em arte e história da arte auxilia você na descoberta de informações que estejam ligadas a obras de arte, como uma pintura representando algo mágico ou religioso, além de, caso uma pintura tenha propriedades mágicas, quais elas são, além de poder saber a origem de um estranho mural ou quadro."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "Ao inspecionar uma pintura ou um trabalho de arte visual, seu conhecimento das práticas por trás da criação podem garantir informações adicionais como há quanto tempo essa pintura foi feita, quais materiais foram usados, qual técnica foi empregada, etc."
+      }
+    ],
+    "tools": [
+      "Suprimentos de Pintor",
+      "A proficiência em suprimentos de pintor representa sua habilidade para pintar e desenhar além de te prover compressão da história da arte, que pode auxiliá-lo ao examinar obras de arte.",
+      "Conteúdo: Os Suprimentos de pintor incluem normalmente um cavalete, folhas, tintas, pincéis, bastões de carvão, giz de cera, pastéis e uma paleta entre outros itens regionais."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Pintar um retrato preciso ou com detalhes importantes"],
+        "b": "10"
+      },
+      {
+        "a": ["Criar uma pintura ou desenho com uma mensagem escondida"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Sapateiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de sapateiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Conservação de Sapatos"],
+        "description": "Você pode arrumar seus sapatos e de seus companheiros durante um descanso longo, fazendo com que até 6 criaturas consigam viajar por 10 horas sem realizar uma salvaguarda contra exaustão."
+      },
+      {
+        "skills": ["Criar Compartimento Secreto"],
+        "description": "Você é capaz de, com 8 horas de trabalho, adicionar um compartimento secreto a um par de sapatos ou botas, com capacidade de guardar algo de até 3 polegadas de comprimento e 1 de largura e profundidade e que não seja frágil, como vidro. Ao confeccionar isso, você deve fazer um teste de Inteligência usando sua proficiência com essa ferramenta para determinar a CD do teste de Investigação necessário para encontrar o compartimento."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História"],
+        "description": "Você é capaz de identificar sapatos e botas com componentes exóticos que talvez sejam focos de magia, pode reconhecer botas lendárias e antigas bem como a qual nação e época elas pertenciam."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Através de seu conhecimento e informações colhidas em investigação, você pode dizer em que terrenos uma bota ou sapato esteve, de qual material parece ser, a altura e peso de quem o usa, se foram usados recentementes e caso tenha danos, o que causou esse dano."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Sapateiro",
+      "Exércitos já foram derrotados por fieira e bolhas nos pés, talvez a profissão de sapateiro possa parecer simplória para um aventureiro, mas um bom par de botas pode fazer a diferença para um personagem em uma região selvagem acidentada e através de masmorras mortíferas.",
+      "Conteúdo: As Ferramentas de sapateiro normalmente incluem martelo, furador, faca, suporte para sapato, cortador, couro para reposição, fios, agulhas para couro, tecidos para forro entre outras peças."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": [
+          "Determinar a idade",
+          "a origem de um sapato",
+          "a altura",
+          "peso de quem o veste ou por que terrenos esse sapato andou."
+        ],
+        "b": "10"
+      },
+      {
+        "a": ["Encontrar um compartimento secreto em um sapato"],
+        "b": "15"
+      },
+      {
+        "a": ["Determinar a existência de um compartimento secreto em um sapato ou bota vestido por alguém"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Tecelão",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de tecelão.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Criar Vestimentas"],
+        "description": "Caso você tenha acesso a tecido e linha suficiente, você pode criar uma vestimenta para uma criatura de tamanho até médio como parte de um descanso longo."
+      },
+      {
+        "skills": ["Reparar"],
+        "description": "Durante um descanso curto você pode usar suas ferramentas para reparar um objeto simples de tecido que esteja danificado ou mudar sua aparência com o consumo de materiais."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História"],
+        "description": "O seu conhecimento sobre tecelagem concede a você informações adicionais quando estiver examinando tecidos, incluindo mantos e robes e até mesmo bandeiras."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Seu conhecimento do processo de criação de tecidos pode ser usado para que você encontre pistas e faça deduções, que outros não percebem, ao examinar tapeçarias, estofamento, vestimentas, e outros itens de tecido."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Tecelão",
+      "Com as Ferramentas de tecelão você é capaz de utilizar tecidos e linhas para criar, adaptar, reparar e até reciclar peças de vestuário",
+      "Conteúdo: As Ferramentas de tecelão incluem dedal, vários tipos de linhas, várias agulhas de diferentes tamanhos, retalhos de tecido, botões e outros adereços de metal. Você sabe também como trabalhar em um tear e outras máquinas de recelagem, mas esses equipamentos são grande demais para serem transportados."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Reutilizar tecidos", "consertar um buraco em uma peça de tecido"],
+        "b": "10"
+      },
+      {
+        "a": ["Criar uma vestimenta"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Vidreiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de vidreiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Identificar Fraqueza"],
+        "description": "Utilizando 1 minuto de estudo , você pode identificar pontos fracos em um objeto de vidro fazendo com que qualquer dano causado ao atingir o ponto fraco do objeto seja dobrado."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo", "História"],
+        "description": "Seu conhecimento das técnicas de produção de vidro pode ajudá-lo a examinar objetos feitos de vidro, como um frasco de poção, espelhos, potes entre outros itens de vidro encontrados em um tesouro. Você pode estudar como um frasco de poção de vidro foi feito com propósito de alocar seu conteúdo, conseguindo ajudar a determinar os efeitos de uma poção que esteja nele ou dos resíduos deixados por uma."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Ao investigar uma área, seu conhecimento pode ajudar você caso as pistas incluam vidro quebrado ou objetos de vidro."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Vidreiro",
+      "A habilidade de vidreiro não se resume apenas a dar forma a vidro, mas também a sua fabricação, e os métodos para criar objetos funcionais feitas de vidro.",
+      "Conteúdo: Nas ferramentas de vidreiro você pode encontrar ao menos um soprador, uma pequena placa de grafite, blocos, e pinças. Para trabalhar o vidro, você precisa de uma fonte de calor constante e estável para derreter a matéria prima e moldá-lo com o soprador e as pinças."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Identificar a origem do vidro", "sua composição"],
+        "b": "10"
+      },
+      {
+        "a": ["Determinar o que continha em um vidro ou como ele foi danificado"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Chaveiro",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de chaveiro.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Montar uma Armadilha"],
+        "description": "Da mesma forma que você é capaz de desarmar armadilhas, você também pode armá-las. Durante um descanso curto, você pode criar uma armadilha usando itens que estiverem à sua disposição. O total do resultado do seu teste de criação é a CD para alguém que tente encontrar ou desarmar sua armadilha. A armadilha causa dano apropriado ao material que foi usado em sua criação (como um veneno ou uma arma) ou dano igual a metade do total do seu teste, ou o que o Mestre achar ser apropriado. Você pode, também durante um descanso curto, montar as estruturas de uma armadilha para armá-la posteriormente, isso leva 10 minutos."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Seu conhecimento de história inclui armadilhas comuns em determinadas regiões e povos, isso lhe concede informações que podem ajudar você a encontrar ou desarmar."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "O seu conhecimento e experiência parecem te dar um instinto apurado quando procura por armadilhas, pois você aprendeu uma variedade de sinais comuns que revelam sua presença e consegue ver sinais de armadilhas que já tenham sido ativadas."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Chaveiro",
+      "As ferramentas de chaveiro, embora possam ser usadas pelos mesmos, podem ser usadas por aventureiros que sabem ser necessário vez ou outra ter que abrir fechaduras de uma masmorra ou desarmar armadilhas. Proficiência com esta ferramenta também garante a você um conhecimento geral sobre fechaduras e armadilhas.",
+      "Conteúdo: Nas ferramentas de chaveiro normalmente estão inclusas uma pequena lixa, um conjunto de gazuas, um pequeno espelho em um suporte de metal, um conjunto de tesouras de lâmina estreita, um par de alicates, alguns arames e fios entre outros objetos."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Abrir uma fechadura ou cadeado"],
+        "b": "Variável"
+      },
+      {
+        "a": ["Reparar uma armadilha", "rearma-la"],
+        "b": "Variável"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Coletor",
+    "info": [
+      "Coletores sabem que praticamente tudo que existe tem uma utilidade. Na verdade, eles sabem que tudo tem uma utilidade, em alguns casos a mesma apenas não foi encontrada ainda. Seja uma madeira rara, uma presa de uma criatura espiritual ou um minério extremamente instável e explosivo, os Coletores serão capazes de procurar e encontrá-los.",
+      "Ao receber proficiência com esse Ofício, você pode adicionar seu bônus de proficiência às rolagens feitas com suas ferramentas de coletor.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Destrinchar"],
+        "description": [
+          "Você pode maximizar a coleta de recursos acessíveis se você tiver tempo. Ao obter as recompensas naturais de uma criatura, você pode utilizar uma quantidade de tempo adicional para que, ao rolar os dados para coleta de recursos, você pode rolar novamente e escolher os maiores dados para saber quantos recursos você consegue obter, escolhendo os maiores números rolados.",
+          "Exemplo: Se você pode rolar 2d8 para saber quantos recursos você obtém, você rola 4d8, obtendo os números 5, 8, 3, 6 nessa rolagem, você pode escolher os números 8 e 6, totalizando 14.",
+          "Ao realizar um teste de perícia para coletar algo, você pode adicionar seu bônus de proficiência à perícia mesmo que não tenha proficiência na mesma. Caso já tenha proficiência, você adiciona o dobro do seu bônus de proficiência. Caso já tenha esse bônus dobrado, você rola com vantagem."
+        ]
+      },
+      {
+        "skills": ["Averiguar"],
+        "description": "Sua experiência com a obtenção de recursos deu a você um senso natural do que as coisa são verdadeiramente. Você tem vantagens em rolagens para identificar falsificações, como por exemplo perceber que as supostas Lágrimas de Azir são na verdade pó de múmia."
+      },
+      {
+        "skills": ["Sinergias"],
+        "description": "Em conjunto com suas ferramentas de coletor, você pode utilizar esse ofício com as seguintes perícias, possibilitando alguns efeitos:"
+      },
+      {
+        "skills": ["Arcanismo", "Tecnologia"],
+        "description": "Você conhece propriedades tecnológicas ou mágicas de determinados recursos que podem ser usados em poções, itens mágicos, dispositivos e aparatos."
+      },
+      {
+        "skills": ["História", "Investigação"],
+        "description": "Você é capaz de elaborar informações a respeito da criatura através do estudo das partes que você coleta."
+      },
+      {
+        "skills": ["Medicina", "Prestidigitação"],
+        "description": "Você é capaz de remover órgãos internos de criaturas com o cuidado necessário ou de extrair certas partes com um cuidado excepcional, fazendo com que sejam ainda mais valiosos."
+      },
+      {
+        "skills": ["Natureza", "Sobrevivência"],
+        "description": "Você é capaz de encontrar veios de minérios, rastros de determinadas criaturas ou saber onde encontrar certos tipos de madeira entre outros recursos."
+      }
+    ],
+    "sinergies": [],
+    "tools": [
+      "Ferramentas de Coletor",
+      "As ferramentas de coletor servem para que você possa extrair os mais diversos recursos vegetais, minerais, ou animais.",
+      "Conteúdo: Ferramentas de coletor incluem um exemplar do “Guia de Barukh para Recursos”, um conjunto de facas, um conjunto de picaretas, um conjunto de serras, um sangrador, 5 garrafas de 200 ml, 1 Kg de sal grosso, um pote de 1 litro hermeticamente fechado e 4 bolsas de couro de 1 litro."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Remover uma presa ou uma garra de uma criatura"],
+        "b": "10"
+      },
+      {
+        "a": ["Coletar uma mandrágora"],
+        "b": "15"
+      },
+      {
+        "a": ["Extrair um coração de um beija-flor"],
+        "b": "23"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Condutor",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com veículos aquáticos, mecha ou terrestres à sua escolha. Você pode possuir esse ofício mais de uma vez para veículos adicionais. Confira mais a frente nesse capítulo os Inventos de Tecmaturgo para saber mais sobre Mechas.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Condução de Veículos"],
+        "description": "Ao pilotar, você pode adicionar seu bônus de proficiência na CA e salvaguardas do veículo."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo"],
+        "description": "Quando você estuda um veículo mágico, sua proficiência nesta ferramenta ajuda você a desvendar informações, determinar como o veículo funciona ou mesmo pilotá-lo."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "Ao inspecionar um veículo atrás de pistas ou informações escondidas, sua proficiência ajuda você a perceber coisas que outros deixariam passar, além disso você pode obter informações sobre onde esse veículo estava anteriormente ou mesmo se carregou alguma carga pesada recentemente."
+      }
+    ],
+    "tools": [
+      "Veículos",
+      "Veículos Aquáticos e Terrestres",
+      "Proficiência com veículos terrestres cobre uma larga gama de opções, desde carruagens e palanquins, passando por vagões e charretes e até veículos automotores que possam existir. Já a proficiência com veículos aquáticos cobre qualquer meio de transporte navegável sobre a água. A proficiência com veículos garante conhecimento necessário para operar veículos de determinado tipo, e também conhecimento para reparos e manutenções. Além disso, um personagem com proficiência em veículos aquáticos possui conhecimento a respeito de tudo com o que um marinheiro está familiarizado, como informações a respeito do mar e ilhas, fazer nós, e avaliar o clima e as condições do mar."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Pilotar em terreno ou águas difíceis ou arrumar um veículo com algum problema leve."],
+        "b": "10"
+      },
+      {
+        "a": ["Avaliar as condições do veículo ou arrumar algum problema médio."],
+        "b": "15"
+      },
+      {
+        "a": ["Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Herbalista",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de herbalismo.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Identificar Plantas"],
+        "description": "Auxilia que você identifique com maior facilidade plantas e ervas medicinais pela sua aparência, comparando a com outras amostras, e pelo cheiro seja através de reagentes aplicados diretamente ou através de alguma infusão, queima ou outro processo."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["Arcanismo"],
+        "description": "Permite que você estude magicamente plantas e ajuda na identificação de poções."
+      },
+      {
+        "skills": ["Investigação"],
+        "description": "Você pode coletar pistas e detalhes em áreas de vegetação com esse estojo."
+      },
+      {
+        "skills": ["Medicina"],
+        "description": " Auxilia na confecção de remédios feitos de plantas medicinais para tratar doenças e curar ferimentos."
+      },
+      {
+        "skills": ["Natureza", "Sobrevivência"],
+        "description": "Algumas plantas podem ser usadas como alimento após passarem por alguns processos de purificação ou filtragem."
+      }
+    ],
+    "tools": [
+      "Estojo de Herbalismo",
+      "Este conjunto contém uma variedade de instrumentos como tesouras, almofariz e pilão e bolsas usadas por herbalistas para criar remédios e poções. Proficiência com este conjunto permite que você adicione seu bônus de proficiência a qualquer teste de Atributo que fizer para identificar ou aplicar ervas. Além disso, proficiência com este conjunto é necessária para criar antitoxinas e poções de cura. Um estojo de Herbalismo permite a um personagem com Proficiência nele a identificação de plantas e venenos, além disso com ele o personagem pode coletar partes das plantas e venenos de maneira segura.",
+      "Conteúdo: O estojo de herbalismo contém pequenas bolsas para guardar ervas, tesouras e cortadores além de luvas de couro para coletar plantas. É comum que tenha almofariz além de vários frascos de vidro de diferentes tamanhos."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Identificar plantas", "ervas"],
+        "b": "15"
+      },
+      {
+        "a": ["Identificar veneno"],
+        "b": "20"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Jogador",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de jogos à sua escolha. Você pode possuir esse ofício mais de uma vez para um jogo adicional.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Você pode demonstrar algum conhecimento histórico ou evento importante que tenha alguma relação com o jogo, ou usar o mesmo para relatar algo histórico de maneira levemente teatral."
+      },
+      {
+        "skills": ["Intuição"],
+        "description": "Ao jogar com alguém, você pode fazer leituras de sua personalidade, entender trejeitos e tiques que possibilitam a você um melhor entendimento da pessoa, de seus tons de voz falando a verdade ou mentira ou perceber flutuações de humor."
+      },
+      {
+        "skills": ["Prestidigitação"],
+        "description": "Você pode utilizar o seu estojo para fazer trapaças, seja elas dentro do jogo ou utilizando o conteúdo do estojo para enganar a alguém."
+      }
+    ],
+    "tools": [
+      "Estojo de Jogo",
+      "Este item engloba uma vasta gama de peças de jogo, incluindo dados e baralhos de cartas. Alguns exemplos comuns aparecem na tabela Ferramentas de Ofício, mas existem outros tipos de jogos. Se é proficiente com um determinado jogo, você pode adicionar seu bônus de proficiência aos testes de Atributo que fizer para jogar com esse conjunto. Cada tipo de estojo de jogo requer uma proficiência separada. Um estojo de Jogos se aplica a um tipo de jogo, como cartas, aposta do rei, ou algum outro jogo de azar que utilize dados.",
+      "Conteúdo: Dentro de um estojo de jogos, estão todas as peças necessárias para algum jogo em específico, podendo ser desde pedras, dados, peças de tabuleiro ou apenas um baralho."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Pegar um jogador trapaceando"],
+        "b": "15"
+      },
+      {
+        "a": ["Obter um intuição sobre a personalidade de um jogador"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Músico",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um instrumento musical à sua escolha. Você pode possuir esse ofício mais de uma vez para instrumentos musicais adicionais.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [
+      {
+        "skills": ["Compor uma Canção"],
+        "description": "Durante um descanso longo, você pode compor uma nova canção e letra para seu instrumento. Você pode utilizar esta habilidade para impressionar um nobre, espalhar rumores escandalosos com uma canção cativante ou mesmo estimular sua platéia com alguma ideia ou pensamento."
+      }
+    ],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Sua especialização pode ajudar você a relembrar informações relacionadas a seu instrumento, músicas antigas e regionais, além de entender músicas que possam trazer o registro de algum conhecimento."
+      },
+      {
+        "skills": ["Atuação", "Persuasão"],
+        "description": "Sua capacidade de fazer um bom show é melhorada quando você incorpora um instrumento em seu ato, além disso, você pode tentar plantar uma ideia subconsciente em sua platéia."
+      }
+    ],
+    "tools": [
+      "Instrumento Musical",
+      "Muitos dos tipos de instrumentos musicais mais comuns são mostrados na tabela como exemplos. Se você tem proficiência com determinado instrumento musical, você pode adicionar seu bônus de proficiência para qualquer teste de Atributo que fizer para tocar música com o instrumento. Um Peregrino pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical requer uma proficiência separada., além disso, a proficiência com um instrumento musical indica que você está familiarizado com as técnicas usadas para tocá-lo. Você também sabe algumas canções comuns tocadas com o instrumento."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Identificar uma canção"],
+        "b": "10"
+      },
+      {
+        "a": ["Improvisar uma canção"],
+        "b": "20"
+      },
+      {
+        "a": ["Estimular uma platéia a alguma ação ou pensamento"],
+        "b": "25"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Navegador",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com ferramentas de navegação.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [],
+    "sinergies": [
+      {
+        "skills": ["Sobrevivência"],
+        "description": "Seu conhecimento com ferramentas de navegação pode ajudar você a evitar se perder e também garantir informações sobre o caminho mais provável para estradas e assentamentos, além de encontrar sinais de localização deixados para trás."
+      }
+    ],
+    "tools": [
+      "Ferramentas de Navegação",
+      "Este conjunto de instrumentos é utilizado para navegação no mar. Proficiência com ferramentas de navegador permite que você trace o curso de um navio e siga cartas de navegação. Além disso, estas ferramentas permitem que você adicione seu bônus de proficiência a testes de Atributo feitos para evitar se perder no mar. Além disso, você consegue se orientar pela observação das estrelas . Também garante a você informações em gráficos e mapas enquanto estiver trabalhando seu senso de direção.",
+      "Conteúdo: As ferramentas de navegação normalmente incluem um sextante, um compasso, pinças , uma régua, pergaminhos, tinta, e uma pena."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Determinar um curso eficiente"],
+        "b": "10"
+      },
+      {
+        "a": ["Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"],
+        "b": "15"
+      }
+    ]
+  },
+  {
+    "name": "Ofício de Veneficista",
+    "info": [
+      "Ao receber proficiência com esse ofício, você pode adicionar seu bônus de proficiência à rolagens feitas com um estojo de venenos.",
+      ":tasks:",
+      ":sinergies:",
+      ":Tools:",
+      ":Table:"
+    ],
+    "tasks": [],
+    "sinergies": [
+      {
+        "skills": ["História"],
+        "description": "Se alguém famoso foi envenenado, você pode usar seu conhecimento para relembrar fatos sobre isso, talvez formas de anulá-lo ou mesmo de minimizar seu efeito."
+      },
+      {
+        "skills": ["Investigação", "Percepção"],
+        "description": "Você pode usar seu estojo para extrair veneno de objetos, armadilhas e manuseá-lo com cuidado. Além disso, você pode usá-lo para investigar possíveis focos de envenenamento."
+      },
+      {
+        "skills": ["Medicina"],
+        "description": "Com seu estojo você pode ter mais chances de tratar alguma vítima Envenenada, Intoxicada ou mesmo usá-lo para criar algum remédio."
+      },
+      {
+        "skills": ["Natureza", "Sobrevivência"],
+        "description": "Você pode extrair matéria-prima para venenos e antídotos de plantas, animais, minerais, fungos, etc."
+      }
+    ],
+    "tools": [
+      "Estojo de Veneno",
+      "Um estojo de veneno inclui os frascos, produtos químicos e outros equipamentos necessários para a criação de venenos. Proficiência com este conjunto permite que você adicione seu bônus de proficiência a qualquer teste de Atributo que fizer para criar ou usar venenos. Esse é um estojo que você não deseja que saibam que você tem, especialmente por ser ligado a ladrões, assassinos e outros contraventores, com ele é possível criar venenos através de outros materiais e nele estão formas de inocular ou de combatê-los.",
+      "Conteúdo: Você encontra seringas, frascos de vidro, almofariz, varetas de vidro e de outros materiais orgânicos além de produtos químicos."
+    ],
+    "table": [
+      {
+        "a": ["Atividade"],
+        "b": "CD"
+      },
+      {
+        "a": ["Perceber um objeto envenenado"],
+        "b": "10"
+      },
+      {
+        "a": ["Determinar os efeitos de um veneno"],
+        "b": "15"
+      }
+    ]
+  }
+]

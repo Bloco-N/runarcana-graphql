@@ -1,14 +1,14 @@
 [
-    {
-        "name": "Verbal",
-        "symbol": "V"
-    },
-    {
-        "name": "Somático",
-        "symbol": "S"
-    },
-    {
-        "name": "Material",
-        "symbol": "M"
-    }
+  {
+    "name": "Verbal",
+    "symbol": "V"
+  },
+  {
+    "name": "Somático",
+    "symbol": "S"
+  },
+  {
+    "name": "Material",
+    "symbol": "M"
+  }
 ]
