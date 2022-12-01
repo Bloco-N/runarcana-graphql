@@ -7,7 +7,7 @@ import RegionService from '../services/RegionService'
 export class RegionResolver {
   regionService = new RegionService()
   @Query(() => [Region])
-  async listAllRegions (@Ctx() ctx:IContext, @Args() arg:FindManyRegionArgs): Promise<Region[]> {
+  async listAllRegions(@Ctx() ctx: IContext, @Args() arg: FindManyRegionArgs): Promise<Region[]> {
     return await ctx.prisma.region.findMany(arg)
   }
 }

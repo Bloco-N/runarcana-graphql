@@ -7,7 +7,7 @@ import OriginService from '../services/OriginService'
 export class OriginResolver {
   originService = new OriginService()
   @Query(() => [Origin])
-  async listAllOrigins (@Ctx() ctx: IContext, @Args() args: FindManyOriginArgs) : Promise <Origin[]> {
+  async listAllOrigins(@Ctx() ctx: IContext, @Args() args: FindManyOriginArgs): Promise<Origin[]> {
     return await ctx.prisma.origin.findMany(args)
   }
 }
