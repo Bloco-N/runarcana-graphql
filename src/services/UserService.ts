@@ -39,9 +39,7 @@ export default class UserService {
       nickname: user.nickname,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt
-    },
-    secret,
-    { expiresIn })
+    }, secret, { expiresIn })
 
     return new Auth(token, userResponse)
   

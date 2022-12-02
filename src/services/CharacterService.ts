@@ -54,22 +54,18 @@ export default class CharacterService {
     const atributesMods = atributes.reduce((a, item) => ({
       ...a,
       [`${item.atribute}Mod`]: mod(character[item.atribute])
-    }),
-    {})
+    }), {})
     const savingsValues = atributes.reduce((a, item) => ({
       ...a,
       [`${item.atribute}SavingThrowValue`]: proficiency(character[`${item.atribute}SavingThrow`], atributeMod(item))
-    }),
-    {})
+    }), {})
     const skillsValues = atributes.reduce((a, item) => ({
       ...a,
       ...item.skills.reduce((a, skill) => ({
         ...a,
         [`${skill}Value`]: proficiency(character[skill], atributeMod(item))
-      }),
-      {})
-    }),
-    {})
+      }), {})
+    }), {})
 
     return {
       ...atributesMods,
