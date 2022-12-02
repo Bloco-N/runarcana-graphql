@@ -1,9 +1,5 @@
-import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import { IContext } from '../interfaces/IContext'
-import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import { currentCharacteristics } from '../../utils/characterFuncitons'
-import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
 import { Character, CharacterRunarcanaClass } from '../../prisma/generated/type-graphql'
+import { currentCharacteristics } from '../../utils/characterFuncitons'
 import {
   findBaseSpeedArgs,
   findCharacteristicsArgs,
@@ -12,6 +8,10 @@ import {
   firstCharacterCreateArgs,
   updateLvlUpCharClassArgs
 } from '../../utils/query'
+import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
+import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
+import { IContext } from '../interfaces/IContext'
+import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
 import { Characteristic } from '../schemas/Character/CharacterComplements/Characteristic'
 
 export default class CharacterService {

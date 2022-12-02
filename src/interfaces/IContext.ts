@@ -1,5 +1,5 @@
-import { PrismaClient } from '@prisma/client'
 import { IUser } from './IUser'
+import { PrismaClient } from '@prisma/client'
 
 export interface IContext {
   prisma: PrismaClient

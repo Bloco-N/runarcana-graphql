@@ -1,5 +1,5 @@
-import origins from '../../dataSource/origins.json'
 import lineagesInfos from '../../dataSource/lineages.json'
+import origins from '../../dataSource/origins.json'
 
 const lineagesNames = lineagesInfos.map((lineage) => lineage.name)
 

@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
-import 'reflect-metadata'
-import { PrismaClient } from '@prisma/client'
 import { Character } from '../../prisma/generated/type-graphql'
 import CharacterCreateInputData from '../../src/inputs/Character/CharacterCreateInputData'
 import SignUpInputData from '../../src/inputs/User/SignUpInputData'
 import { IContext } from '../../src/interfaces/IContext'
+import { CharacterModsAndSkills } from '../../src/schemas/Character/CharacterComplements/CharacterModsAndSkills'
 import CharacterService from '../../src/services/CharacterService'
 import UserService from '../../src/services/UserService'
-import { CharacterModsAndSkills } from '../../src/schemas/Character/CharacterComplements/CharacterModsAndSkills'
+import { PrismaClient } from '@prisma/client'
+import 'reflect-metadata'
 
 describe('CharacterService tests', () => {
 

@@ -1,11 +1,12 @@
-import { hash, compare } from 'bcryptjs'
+import { User } from '../../prisma/generated/type-graphql'
+import AuthConfig from '../config/auth'
 import SignInInputData from '../inputs/User/SignInInputData'
 import SignUpInputData from '../inputs/User/SignUpInputData'
 import { IContext } from '../interfaces/IContext'
 import { Auth } from '../schemas/Auth'
-import AuthConfig from '../config/auth'
+import { hash, compare } from 'bcryptjs'
 import { sign } from 'jsonwebtoken'
-import { User } from '../../prisma/generated/type-graphql'
+
 export default class UserService {
 
   public async create(ctx: IContext, data: SignUpInputData): Promise<User> {

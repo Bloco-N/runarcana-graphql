@@ -1,5 +1,5 @@
-import spells from '../../dataSource/spells.json'
 import mysteries from '../../dataSource/mysteries.json'
+import spells from '../../dataSource/spells.json'
 
 const mysteriesNames = mysteries.map((mystery) => mystery.name)
 

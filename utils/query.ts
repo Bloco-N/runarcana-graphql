@@ -1,8 +1,8 @@
-import { CharacterRunarcanaClass, Prisma } from '@prisma/client'
 import { CreateOneCharacterArgs, RunarcanaClass } from '../prisma/generated/type-graphql'
 import CharacterInputData from '../src/inputs/Character/CharacterInputData'
 import CharacterLevelUpInputData from '../src/inputs/Character/CharacterLevelUpInputData'
 import { levelUp } from './characterFuncitons'
+import { CharacterRunarcanaClass, Prisma } from '@prisma/client'
 
 function firsClassArgs(id: number): Prisma.RunarcanaClassFindUniqueOrThrowArgs {
 

@@ -1,5 +1,5 @@
-import spells from '../../dataSource/spells.json'
 import components from '../../dataSource/components.json'
+import spells from '../../dataSource/spells.json'
 
 const spellComponents = []
 const componentsSymbols = components.map((components) => components.symbol)

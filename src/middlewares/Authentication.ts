@@ -1,8 +1,8 @@
-import { AuthChecker } from 'type-graphql'
 import AuthConfig from '../config/auth'
-import { verify } from 'jsonwebtoken'
 import { IContext } from '../interfaces/IContext'
 import { IUser } from '../interfaces/IUser'
+import { verify } from 'jsonwebtoken'
+import { AuthChecker } from 'type-graphql'
 
 const Authentication: AuthChecker<IContext> = ({ context }): boolean => {
 
