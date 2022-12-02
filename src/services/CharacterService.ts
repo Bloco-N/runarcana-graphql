@@ -15,25 +15,23 @@ import {
 import { Characteristic } from '../schemas/Character/CharacterComplements/Characteristic'
 
 export default class CharacterService {
-  public async create(ctx: IContext, data: CharacterCreateInputData): Promise<Character> {
-    const firstClass = await ctx.prisma.runarcanaClass.findUnique(firsClassArgs(data.runarcanaClassId))
 
-    return (await ctx.prisma.character.create(
-      firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass)
-    )) as Character
+  public async create(ctx: IContext, data: CharacterCreateInputData): Promise<Character> {
+
+    const firstClass = await ctx.prisma.runarcanaClass.findUnique(firsClassArgs(data.runarcanaClassId))
+    return (await ctx.prisma.character.create(firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass))) as Character
+  
   }
 
   public async levelUpCharacter(ctx: IContext, data: CharacterLevelUpInputData): Promise<CharacterRunarcanaClass> {
-    const charClass = (await ctx.prisma.characterRunarcanaClass.findUnique(
-      findLvlUpCharClassArgs(data)
-    )) as CharacterRunarcanaClass
 
-    return (await ctx.prisma.characterRunarcanaClass.update(
-      updateLvlUpCharClassArgs(data, charClass)
-    )) as CharacterRunarcanaClass
+    const charClass = (await ctx.prisma.characterRunarcanaClass.findUnique(findLvlUpCharClassArgs(data))) as CharacterRunarcanaClass
+    return (await ctx.prisma.characterRunarcanaClass.update(updateLvlUpCharClassArgs(data, charClass))) as CharacterRunarcanaClass
+  
   }
 
   public async getCharacterModAndSkills(character: Character): Promise<CharacterModsAndSkills> {
+
     enum ProficiencyValue {
       NOT_PROFICIENT,
       PROFICIENT,
@@ -53,47 +51,43 @@ export default class CharacterService {
       { atribute: 'charisma', skills: ['deception', 'intimidation', 'performance', 'persuasion'] }
     ]
 
-    const atributesMods = atributes.reduce(
-      (a, item) => ({
+    const atributesMods = atributes.reduce((a, item) => ({
+      ...a,
+      [`${item.atribute}Mod`]: mod(character[item.atribute])
+    }),
+    {})
+    const savingsValues = atributes.reduce((a, item) => ({
+      ...a,
+      [`${item.atribute}SavingThrowValue`]: proficiency(character[`${item.atribute}SavingThrow`], atributeMod(item))
+    }),
+    {})
+    const skillsValues = atributes.reduce((a, item) => ({
+      ...a,
+      ...item.skills.reduce((a, skill) => ({
         ...a,
-        [`${item.atribute}Mod`]: mod(character[item.atribute])
+        [`${skill}Value`]: proficiency(character[skill], atributeMod(item))
       }),
-      {}
-    )
-    const savingsValues = atributes.reduce(
-      (a, item) => ({
-        ...a,
-        [`${item.atribute}SavingThrowValue`]: proficiency(character[`${item.atribute}SavingThrow`], atributeMod(item))
-      }),
-      {}
-    )
-    const skillsValues = atributes.reduce(
-      (a, item) => ({
-        ...a,
-        ...item.skills.reduce(
-          (a, skill) => ({
-            ...a,
-            [`${skill}Value`]: proficiency(character[skill], atributeMod(item))
-          }),
-          {}
-        )
-      }),
-      {}
-    )
+      {})
+    }),
+    {})
 
     return {
       ...atributesMods,
       ...savingsValues,
       ...skillsValues
     } as CharacterModsAndSkills
+  
   }
 
   public async getCharacteristics(ctx: IContext, character: Character): Promise<Characteristic[]> {
+
     const char = (await ctx.prisma.character.findUnique(findCharacteristicsArgs(character.id))) as Character
     return currentCharacteristics(char.CharacterRunarcanaClasses)
+  
   }
 
   public async getBaseSpeed(character: Character, ctx: IContext) {
+
     const charInfo = (await ctx.prisma.character.findUnique(findBaseSpeedArgs(character.id))) as Character
 
     const {
@@ -102,5 +96,7 @@ export default class CharacterService {
     } = charInfo.Lineage ? charInfo : { ...charInfo, Lineage: {} }
 
     return baseSpeed + aditionalBaseSpeed
+  
   }
+
 }

@@ -6,7 +6,9 @@ const lineagesNames = lineagesInfos.map((lineage) => lineage.name)
 const lineages = []
 
 origins.forEach((origin, originIndex) => {
+
   origin.lineages.forEach((lineage) => {
+
     const lineageIndex = lineagesNames.indexOf(lineage)
     const lineageInfo = lineagesInfos[lineageIndex]
 
@@ -19,7 +21,9 @@ origins.forEach((origin, originIndex) => {
       createdAt: new Date(),
       updatedAt: new Date()
     })
+  
   })
+
 })
 
 export default lineages

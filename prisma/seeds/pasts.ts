@@ -1,6 +1,7 @@
 import pasts from '../../dataSource/pasts.json'
 
 export default pasts.map((past) => {
+
   return {
     name: past.name,
     description: past.description,
@@ -11,4 +12,5 @@ export default pasts.map((past) => {
     equipments: past.Equipment,
     characteristic: past.characteristic
   }
+
 })

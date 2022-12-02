@@ -7,14 +7,18 @@ import AuthConfig from '../config/auth'
 import { sign } from 'jsonwebtoken'
 import { User } from '../../prisma/generated/type-graphql'
 export default class UserService {
+
   public async create(ctx: IContext, data: SignUpInputData): Promise<User> {
+
     const hashedPassword = await hash(data.password, 10)
     return await ctx.prisma.user.create({
       data: { ...data, password: hashedPassword }
     })
+  
   }
 
   public async signIn(ctx: IContext, data: SignInInputData): Promise<Auth> {
+
     const { username, password } = data
 
     const user = await ctx.prisma.user.findUnique({ where: { username } })
@@ -29,18 +33,18 @@ export default class UserService {
     if (!passwordMatched) throw Error('❌ User or Password incorrect')
 
     const { secret, expiresIn } = AuthConfig.jwt
-    const token = sign(
-      {
-        id: user.id,
-        username: user.username,
-        nickname: user.nickname,
-        createdAt: user.createdAt,
-        updatedAt: user.updatedAt
-      },
-      secret,
-      { expiresIn }
-    )
+    const token = sign({
+      id: user.id,
+      username: user.username,
+      nickname: user.nickname,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt
+    },
+    secret,
+    { expiresIn })
 
     return new Auth(token, userResponse)
+  
   }
+
 }

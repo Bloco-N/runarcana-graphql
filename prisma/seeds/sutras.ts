@@ -1,6 +1,7 @@
 import sutras from '../../dataSource/sutras.json'
 
 export default sutras.map((sutra) => {
+
   return {
     name: sutra.name,
     type: sutra.type,
@@ -8,4 +9,5 @@ export default sutras.map((sutra) => {
     prerequisites: sutra.prerequisites,
     description: JSON.stringify(sutra.info)
   }
+
 })

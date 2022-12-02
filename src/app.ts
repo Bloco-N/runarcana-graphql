@@ -12,6 +12,7 @@ import { startStandaloneServer } from '@apollo/server/standalone'
 dontenv.config()
 
 const app = async (port: number, log = true) => {
+
   const schema = await tq.buildSchema({
     resolvers: [Auth, ...relationResolvers, ...resolvers],
     validate: false,
@@ -28,6 +29,7 @@ const app = async (port: number, log = true) => {
   if (log) console.log(`🚀  Server ready at: ${url}`)
 
   return { server, url }
+
 }
 
 export { app }

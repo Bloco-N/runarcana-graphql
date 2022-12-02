@@ -9,12 +9,14 @@ import RClassService from '../services/RClassService'
 
 @Resolver(RunarcanaClass)
 export class RunarcanaClassResolver extends RunarcanaClassRelationsResolver {
+
   rclassSevice = new RClassService()
   @Query(() => [RunarcanaClass])
-  async listAllRunarcanaClass(
-    @Ctx() ctx: IContext,
-    @Args() arg: FindManyRunarcanaClassArgs
-  ): Promise<RunarcanaClass[]> {
+  async listAllRunarcanaClass(@Ctx() ctx: IContext,
+    @Args() arg: FindManyRunarcanaClassArgs): Promise<RunarcanaClass[]> {
+
     return await ctx.prisma.runarcanaClass.findMany(arg)
+  
   }
+
 }

@@ -1,6 +1,7 @@
 import professions from '../../dataSource/professions.json'
 
 export default professions.map((profession) => {
+
   return {
     name: profession.name,
     description: JSON.stringify(profession.info),
@@ -9,4 +10,5 @@ export default professions.map((profession) => {
     tools: JSON.stringify(profession.tools),
     table: JSON.stringify(profession.table)
   }
+
 })

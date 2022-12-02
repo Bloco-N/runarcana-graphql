@@ -10,6 +10,7 @@ import UserService from '../../src/services/UserService'
 import { CharacterModsAndSkills } from '../../src/schemas/Character/CharacterComplements/CharacterModsAndSkills'
 
 describe('CharacterService tests', () => {
+
   const userService = new UserService()
   const characterService = new CharacterService()
   let character: Character
@@ -18,6 +19,7 @@ describe('CharacterService tests', () => {
   }
 
   beforeAll(async () => {
+
     const data: SignUpInputData = {
       username: 'testUser',
       nickname: 'testNick',
@@ -25,18 +27,22 @@ describe('CharacterService tests', () => {
     }
 
     ctx.user = await userService.create(ctx, data)
+  
   })
 
   afterAll(async () => {
+
     await ctx.prisma.user.update({
       where: { username: ctx.user.username },
       data: { Characters: { deleteMany: {} } }
     })
     await ctx.prisma.user.delete({ where: { username: ctx.user.username } })
     ctx.prisma.$disconnect()
+  
   })
 
   test('should return a character', async () => {
+
     const data: CharacterCreateInputData = {
       runarcanaClassId: 1,
       charData: {
@@ -53,9 +59,11 @@ describe('CharacterService tests', () => {
     character = await characterService.create(ctx, data)
 
     expect(character).toBeDefined()
+  
   })
 
   test('should return character skills and mods', async () => {
+
     const characterModAndSkill = await characterService.getCharacterModAndSkills(character)
 
     expect(characterModAndSkill).toBeDefined()
@@ -64,5 +72,7 @@ describe('CharacterService tests', () => {
       athleticsValue: -5,
       strengthSavingThrowValue: -5
     } as CharacterModsAndSkills)
+  
   })
+
 })

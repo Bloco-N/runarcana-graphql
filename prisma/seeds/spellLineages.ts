@@ -6,16 +6,22 @@ origins.forEach((origin) => origin.lineages.forEach((lineage) => lineages.push(l
 
 const spellLineages = []
 spells.forEach((spell, spellIndex) => {
+
   spell.origins.forEach((lineage) => {
+
     if (lineages.includes(lineage)) {
+
       spellLineages.push({
         spellId: spellIndex + 1,
         lineageId: lineages.indexOf(lineage) + 1,
         createdAt: new Date(),
         updatedAt: new Date()
       })
+    
     }
+  
   })
+
 })
 
 export default spellLineages

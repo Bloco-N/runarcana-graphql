@@ -3,9 +3,11 @@ import CharacterInputData from './CharacterInputData'
 
 @InputType()
 export default class CharacterCreateInputData {
+
   @Field()
-  runarcanaClassId: number
+    runarcanaClassId: number
 
   @Field(() => CharacterInputData)
-  charData: CharacterInputData
+    charData: CharacterInputData
+
 }

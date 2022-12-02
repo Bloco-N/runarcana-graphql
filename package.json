@@ -62,7 +62,7 @@
     "prisma:generate": "npx prisma generate",
     "prisma:seed": "npx prisma db seed",
     "prisma:studio": "npx prisma studio",
-    "prettier-format": "prettier --config .prettierrc.js . --write"
+    "format": "prettier --config .prettierrc.js . --write ; eslint --fix ."
   },
   "prisma": {
     "seed": "ts-node prisma/seeds/seed.ts"

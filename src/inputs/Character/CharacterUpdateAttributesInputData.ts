@@ -2,24 +2,26 @@ import { Field, InputType } from 'type-graphql'
 
 @InputType()
 export default class CharacterUpdateAttributesInputData {
-  @Field()
-  id: number
 
   @Field()
-  strength: number
+    id: number
 
   @Field()
-  dexterity: number
+    strength: number
 
   @Field()
-  constitution: number
+    dexterity: number
 
   @Field()
-  intelligence: number
+    constitution: number
 
   @Field()
-  wisdom: number
+    intelligence: number
 
   @Field()
-  charisma: number
+    wisdom: number
+
+  @Field()
+    charisma: number
+
 }

@@ -19,6 +19,14 @@ module.exports = {
   },
   root: true,
   rules: {
-    'prettier/prettier': 2
+    'prettier/prettier': [
+      'off',
+      {
+        endOfLine: 'auto'
+      }
+    ],
+    'function-paren-newline': ['error', 'never'],
+    'padded-blocks': ['error', 'always', { allowSingleLineBlocks: true }],
+    indent: ['error', 2, { flatTernaryExpressions: true }]
   }
 }

@@ -4,11 +4,13 @@ import request from 'supertest'
 import { app } from '../../src/app'
 
 describe('CharacterResolver tests', () => {
+
   const prisma = new PrismaClient()
   let server, url, token
   const parse = (res, operationName) => JSON.parse(res.text).data[operationName].message
 
   beforeAll(async () => {
+
     ;({ server, url } = await app(8081, false))
 
     const SIGN_UP = `#graphql
@@ -50,9 +52,11 @@ describe('CharacterResolver tests', () => {
     const res = await request(url).post('/').send(signInOperation)
 
     token = JSON.parse(res.text).data.signIn.token
+  
   })
 
   afterAll(async () => {
+
     await server.stop()
     const toru = await prisma.character.findFirst({
       where: { name: 'toru' }
@@ -63,9 +67,11 @@ describe('CharacterResolver tests', () => {
     })
     await prisma.user.delete({ where: { username: aurora.username } })
     await prisma.$disconnect()
+  
   })
 
   test('should create a character', async () => {
+
     const CREATE_CHAR = `#graphql
     mutation CreateCharacter($data: CharacterCreateInputData!) {
     createCharacter(data: $data) {
@@ -100,5 +106,7 @@ describe('CharacterResolver tests', () => {
 
     expect(message).toBeDefined()
     expect(message).toBe('✅ character created')
+  
   })
+
 })
