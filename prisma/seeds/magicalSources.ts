@@ -1,10 +1,6 @@
 import magicalSources from '../../dataSource/magicalSources.json'
 
-export default magicalSources.map((magicalSource) => {
-
-  return {
-    name: magicalSource.name,
-    description: magicalSource.description
-  }
-
-})
+export default magicalSources.map((magicalSource) => ({
+  name: magicalSource.name,
+  description: magicalSource.description
+}))

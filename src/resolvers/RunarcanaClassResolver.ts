@@ -1,9 +1,5 @@
 import { Args, Ctx, Query, Resolver } from 'type-graphql'
-import {
-  FindManyRunarcanaClassArgs,
-  RunarcanaClass,
-  RunarcanaClassRelationsResolver
-} from '../../prisma/generated/type-graphql'
+import { FindManyRunarcanaClassArgs, RunarcanaClass, RunarcanaClassRelationsResolver } from '../../prisma/generated/type-graphql'
 import { IContext } from '../interfaces/IContext'
 import RClassService from '../services/RClassService'
 
@@ -12,8 +8,7 @@ export class RunarcanaClassResolver extends RunarcanaClassRelationsResolver {
 
   rclassSevice = new RClassService()
   @Query(() => [RunarcanaClass])
-  async listAllRunarcanaClass(@Ctx() ctx: IContext,
-    @Args() arg: FindManyRunarcanaClassArgs): Promise<RunarcanaClass[]> {
+  async listAllRunarcanaClass(@Ctx() ctx: IContext, @Args() arg: FindManyRunarcanaClassArgs): Promise<RunarcanaClass[]> {
 
     return await ctx.prisma.runarcanaClass.findMany(arg)
   

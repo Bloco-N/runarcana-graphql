@@ -1939,17 +1939,7 @@
   {
     "name": "Detectar Magia",
     "origins": ["Yordle"],
-    "classes": [
-      "Acólito",
-      "Atirador",
-      "Bruto",
-      "Caçador",
-      "Combatente",
-      "Mercurial",
-      "Peregrino",
-      "Tecmaturgo",
-      "Xamã"
-    ],
+    "classes": ["Acólito", "Atirador", "Bruto", "Caçador", "Combatente", "Mercurial", "Peregrino", "Tecmaturgo", "Xamã"],
     "mysteries": ["Runomancia", "Adivinhação", "Étermancia"],
     "level": 1,
     "range": "Pessoal",

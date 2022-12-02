@@ -33,13 +33,7 @@
     "idioma": "Dracônico",
     "característica": "Meio-Dragões podem possuir até três formas durante a vida. Enquanto em suas formas Humanoide ou Híbrida, eles possuem um deslocamento base de caminhada de 30 pés; enquanto em sua forma dracônica, possuem um deslocamento base de caminhada de 40 pés.||Um Meio-Dragão possui resistência a dano baseado no tipo de dano de sua arma de sopro. No nível 15, quando sua arma de sopro se torna mágica, você também recebe resistência nesse novo tipo de dano.||Meio-Dragões Elementais possuem uma vulnerabilidade a determinados elementos. Ao receber esse tipo de dano, um Meio-Dragão deve fazer uma salvaguarda de Constituição cuja CD é 10 ou metade do dano recebido, o que for maior, caso falhe recebe desvantagem em todas as suas jogadas de ataque e testes de atributo por um número de rodadas igual a 8 - seu bônus de proficiência. Caso receba dano contínuo, como da condição Chamuscado, essa rolagem deve ser feita a cada turno em que o dano é recebido.||Ao alcançar o 12º nível, o Meio-Dragão é tomado pela natureza dracônica e passa a ter permanentemente a forma híbrida.",
     "habilidades": "No nível 8, o Meio-Dragão conhece mais sua própria natureza, aprendendo a dominar uma Forma de Dragão Plena, podendo assim se transformar um número de vezes igual a metade do seu bônus de proficiência por descanso curto ou longo. Ao alcançar o nível 16, você pode se transformar na Forma de Dragão Superior.||No nível 2, utilizando uma ação ele pode escolher aflorar sua essência dracônica momentaneamente através de uma forma que exala magia, chamada de forma híbrida. Essa forma dura por até 1 hora ou até que você utilize uma ação bônus para desfazê-la. Você pode fazer isso um número de vezes igual ao seu modificador de Constituição (mínimo de 1).||Você pode utilizar o truque escolhido pela sua Essência Dracônica independente da forma que você esteja.",
-    "lineages": [
-      "Elemental da Montanha",
-      "Elemental das Nuvens",
-      "Elemental do Oceano",
-      "Elemental Glacial",
-      "Elemental Infernal"
-    ]
+    "lineages": ["Elemental da Montanha", "Elemental das Nuvens", "Elemental do Oceano", "Elemental Glacial", "Elemental Infernal"]
   },
   {
     "name": "Minotauro",

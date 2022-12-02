@@ -313,10 +313,7 @@
     "name": "Encouraçado",
     "info": [
       "Você treinou por alguns meses para que você pudesse ter maior resistência em combate, ganhando os seguintes benefícios:",
-      [
-        "Aumente seu valor de Força em 1, até o máximo de 20.",
-        "Você ganha proficiência com armaduras médias e escudos."
-      ]
+      ["Aumente seu valor de Força em 1, até o máximo de 20.", "Você ganha proficiência com armaduras médias e escudos."]
     ],
     "prerequisite": "Proficiência com armaduras leves"
   },

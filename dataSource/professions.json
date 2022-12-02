@@ -873,12 +873,7 @@
         "b": "CD"
       },
       {
-        "a": [
-          "Determinar a idade",
-          "a origem de um sapato",
-          "a altura",
-          "peso de quem o veste ou por que terrenos esse sapato andou."
-        ],
+        "a": ["Determinar a idade", "a origem de um sapato", "a altura", "peso de quem o veste ou por que terrenos esse sapato andou."],
         "b": "10"
       },
       {
@@ -1143,9 +1138,7 @@
         "b": "15"
       },
       {
-        "a": [
-          "Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."
-        ],
+        "a": ["Fazer uma manobra difícil em alta velocidade ou arrumar algum problema mais grave tendo peças para isso."],
         "b": "20"
       }
     ]
@@ -1326,9 +1319,7 @@
         "b": "10"
       },
       {
-        "a": [
-          "Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"
-        ],
+        "a": ["Descobrir sua posição em uma carta náutica ou tentar traçar um curso mais eficiente que outra embarcação"],
         "b": "15"
       }
     ]

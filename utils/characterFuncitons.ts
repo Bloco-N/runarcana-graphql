@@ -38,9 +38,7 @@ function levelUp(charClass: CharacterRunarcanaClass, roll: number): CharacterRun
 
 }
 
-function characteristicOnLvl(characteristicName: string,
-  _characteristicLvl: number,
-  classCharacteristics: Characteristic[]) {
+function characteristicOnLvl(characteristicName: string, _characteristicLvl: number, classCharacteristics: Characteristic[]) {
 
   const characteristic = classCharacteristics.find((characteristic: { name: string }) => characteristic.name === characteristicName)
   return {

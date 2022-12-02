@@ -19,9 +19,7 @@ function firsClassArgs(id: number): Prisma.RunarcanaClassFindUniqueOrThrowArgs {
 
 }
 
-function firstCharacterCreateArgs(userId: number,
-  charData: CharacterInputData,
-  firstClass: RunarcanaClass): CreateOneCharacterArgs {
+function firstCharacterCreateArgs(userId: number, charData: CharacterInputData, firstClass: RunarcanaClass): CreateOneCharacterArgs {
 
   const progress = JSON.stringify(JSON.parse(firstClass.progress)[0].c.new.map((characteristicName: string) => ({
     name: characteristicName,
@@ -122,8 +120,7 @@ function findLvlUpCharClassArgs(data: CharacterLevelUpInputData): Prisma.Charact
 
 }
 
-function updateLvlUpCharClassArgs(data: CharacterLevelUpInputData,
-  charClass: CharacterRunarcanaClass): Prisma.CharacterRunarcanaClassUpdateArgs {
+function updateLvlUpCharClassArgs(data: CharacterLevelUpInputData, charClass: CharacterRunarcanaClass): Prisma.CharacterRunarcanaClassUpdateArgs {
 
   return {
     where: {
@@ -137,11 +134,4 @@ function updateLvlUpCharClassArgs(data: CharacterLevelUpInputData,
 
 }
 
-export {
-  firsClassArgs,
-  firstCharacterCreateArgs,
-  findBaseSpeedArgs,
-  findCharacteristicsArgs,
-  findLvlUpCharClassArgs,
-  updateLvlUpCharClassArgs
-}
+export { firsClassArgs, firstCharacterCreateArgs, findBaseSpeedArgs, findCharacteristicsArgs, findLvlUpCharClassArgs, updateLvlUpCharClassArgs }

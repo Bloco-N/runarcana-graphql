@@ -152,9 +152,7 @@
     "name": "Devorador de Almas",
     "type": "Pulso Rúnico",
     "prerequisites": "",
-    "info": [
-      "Seus ataques corpo a corpo que causam dano recuperam metade da sua proficiência arredondada para cima em pontos de vida."
-    ]
+    "info": ["Seus ataques corpo a corpo que causam dano recuperam metade da sua proficiência arredondada para cima em pontos de vida."]
   },
   {
     "name": "Disciplina da Força",
@@ -302,9 +300,7 @@
     "name": "Munição de Energia",
     "type": "Pulso Rúnico",
     "prerequisites": "Proficiência com armas à distância",
-    "info": [
-      "Os ataques com armas à distância causam metade do seu bônus de proficiência, arredondado para baixo, em dano energético adicional."
-    ]
+    "info": ["Os ataques com armas à distância causam metade do seu bônus de proficiência, arredondado para baixo, em dano energético adicional."]
   },
   {
     "name": "Perseverança",
@@ -369,9 +365,7 @@
     "name": "Sifão da Alma",
     "type": "Pulso Rúnico",
     "prerequisites": "",
-    "info": [
-      "Sempre que você causar dano necrótico a uma criatura hostil, você recupera seu bônus de proficiência em pontos de vida."
-    ]
+    "info": ["Sempre que você causar dano necrótico a uma criatura hostil, você recupera seu bônus de proficiência em pontos de vida."]
   },
   {
     "name": "Tiro Gelado",

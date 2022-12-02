@@ -5,12 +5,4 @@ import { OriginResolver } from './OriginResolver'
 import { PastResolver } from './PastResolver'
 import { RunarcanaClassResolver } from './RunarcanaClassResolver'
 import { SpellResolver } from './SpellResolver'
-export default [
-  UserResolver,
-  CharacterResolver,
-  PastResolver,
-  RunarcanaClassResolver,
-  OriginResolver,
-  RegionResolver,
-  SpellResolver
-]
+export default [UserResolver, CharacterResolver, PastResolver, RunarcanaClassResolver, OriginResolver, RegionResolver, SpellResolver]

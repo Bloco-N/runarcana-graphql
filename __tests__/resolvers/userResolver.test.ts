@@ -12,7 +12,7 @@ describe('UserResolver tests', () => {
 
   beforeAll(async () => {
 
-    ;({ server, url } = await app(8082, false))
+    ({ server, url } = await app(8082, false))
   
   })
 
