@@ -1,5 +1,5 @@
 import inheritances from '../../dataSource/inheritances.json'
-import origins from '../../dataSource/origins.json'
+import origins      from '../../dataSource/origins.json'
 
 const originsNames = origins.map((origin) => origin.name)
 

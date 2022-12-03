@@ -1,6 +1,6 @@
 import { Field, ObjectType } from 'type-graphql'
-import { User } from '../../prisma/generated/type-graphql'
-import { IAuth } from '../interfaces/IAuth'
+import { User }              from '../../prisma/generated/type-graphql'
+import { IAuth }             from '../interfaces/IAuth'
 @ObjectType()
 export class Auth implements IAuth {
 

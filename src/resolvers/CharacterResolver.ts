@@ -1,12 +1,12 @@
-import { Arg, Args, Authorized, Ctx, FieldResolver, Int, Mutation, Resolver, Root } from 'type-graphql'
-import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import { IContext } from '../interfaces/IContext'
-import { ApiResponse } from '../schemas/ApiResponse'
-import CharacterService from '../services/CharacterService'
-import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
-import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import { Characteristic } from '../schemas/Character/CharacterComplements/Characteristic'
-import { Character, DeleteOneCharacterArgs, UpdateOneCharacterArgs } from '../../prisma/generated/type-graphql'
+import { Arg, Authorized, Ctx, FieldResolver, Int, Mutation, Resolver, Root } from 'type-graphql'
+import { Character, CharacterUpdateInput }                                    from '../../prisma/generated/type-graphql'
+import CharacterCreateInputData                                               from '../inputs/Character/CharacterCreateInputData'
+import CharacterLevelUpInputData                                              from '../inputs/Character/CharacterLevelUpInputData'
+import { IContext }                                                           from '../interfaces/IContext'
+import { ApiResponse }                                                        from '../schemas/ApiResponse'
+import { Characteristic }                                                     from '../schemas/Character/CharacterComplements/Characteristic'
+import { CharacterModsAndSkills }                                             from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
+import CharacterService                                                       from '../services/CharacterService'
 
 @Resolver(Character)
 export class CharacterResolver {
@@ -41,16 +41,19 @@ export class CharacterResolver {
   @Authorized()
   async createCharacter(@Arg('data') data: CharacterCreateInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
 
-    await this.characterService.create(ctx, data)
+    const create = await this.characterService.create(ctx, data)
+
+    if (!create) throw new Error('❌ failed to create character')
     return new ApiResponse('✅ character created')
   
   }
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async updateCharacter(@Args() arg: UpdateOneCharacterArgs, @Ctx() ctx: IContext): Promise<ApiResponse> {
+  async updateCharacter(@Root() character: Character, @Arg('data') data: CharacterUpdateInput, @Ctx() ctx: IContext): Promise<ApiResponse> {
 
-    const update = await ctx.prisma.character.update(arg)
+    const update = await this.characterService.update(character, data, ctx)
+
     if (!update) throw new Error('❌ failed to update character')
     return new ApiResponse('✅ character updated')
   
@@ -58,9 +61,10 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async deleteCharacter(@Args() arg: DeleteOneCharacterArgs, @Ctx() ctx: IContext): Promise<ApiResponse> {
+  async deleteCharacter(@Root() character: Character, @Ctx() ctx: IContext): Promise<ApiResponse> {
 
-    const deleted = await ctx.prisma.character.delete(arg)
+    const deleted = await this.characterService.delete(character, ctx)
+
     if (!deleted) throw new Error('❌ failed to delete character')
     return new ApiResponse('✅ character deleted')
   
@@ -68,9 +72,11 @@ export class CharacterResolver {
 
   @Mutation(() => ApiResponse)
   @Authorized()
-  async levelUpCharacter(@Arg('data') data: CharacterLevelUpInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
+  async levelUpCharacter(@Root() character: Character, @Arg('data') data: CharacterLevelUpInputData, @Ctx() ctx: IContext): Promise<ApiResponse> {
 
-    await this.characterService.levelUpCharacter(ctx, data)
+    const update = await this.characterService.levelUpCharacter(character, data, ctx)
+
+    if (!update) throw new Error('❌ failed to update character')
     return new ApiResponse('✅ character updated')
   
   }

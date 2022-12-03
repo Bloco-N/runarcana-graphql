@@ -1,5 +1,5 @@
 import origins from '../../dataSource/origins.json'
-import spells from '../../dataSource/spells.json'
+import spells  from '../../dataSource/spells.json'
 
 const lineages = []
 origins.forEach((origin) => origin.lineages.forEach((lineage) => lineages.push(lineage)))

@@ -1,7 +1,7 @@
 import conjurations from '../../dataSource/conjurations.json'
-import durations from '../../dataSource/durations.json'
-import ranges from '../../dataSource/ranges.json'
-import spells from '../../dataSource/spells.json'
+import durations    from '../../dataSource/durations.json'
+import ranges       from '../../dataSource/ranges.json'
+import spells       from '../../dataSource/spells.json'
 
 export default spells.map((spell) => ({
   name: spell.name,

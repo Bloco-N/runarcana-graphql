@@ -1,7 +1,7 @@
 import { Args, Ctx, Query, Resolver } from 'type-graphql'
 import { FindManyOriginArgs, Origin } from '../../prisma/generated/type-graphql'
-import { IContext } from '../interfaces/IContext'
-import OriginService from '../services/OriginService'
+import { IContext }                   from '../interfaces/IContext'
+import OriginService                  from '../services/OriginService'
 
 @Resolver(Origin)
 export class OriginResolver {

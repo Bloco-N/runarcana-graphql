@@ -1,5 +1,5 @@
 import runarcanaClassesInfo from '../../dataSource/runarcanaClasses.json'
-import spells from '../../dataSource/spells.json'
+import spells               from '../../dataSource/spells.json'
 
 const runarcanaClasses = runarcanaClassesInfo.map((runarcanaClass) => runarcanaClass.name)
 

@@ -1,13 +1,14 @@
-import { relationResolvers } from '../prisma/generated/type-graphql'
-import { context } from './context'
-import Authentication from './middlewares/Authentication'
-import resolvers from './resolvers'
-import { Auth } from './schemas/Auth'
-import { ApolloServer } from '@apollo/server'
-import { startStandaloneServer } from '@apollo/server/standalone'
-import * as dontenv from 'dotenv'
 import 'reflect-metadata'
-import * as tq from 'type-graphql'
+
+import { relationResolvers }     from '../prisma/generated/type-graphql'
+import { context }               from './context'
+import Authentication            from './middlewares/Authentication'
+import resolvers                 from './resolvers'
+import { Auth }                  from './schemas/Auth'
+import { ApolloServer }          from '@apollo/server'
+import { startStandaloneServer } from '@apollo/server/standalone'
+import * as dontenv              from 'dotenv'
+import * as tq                   from 'type-graphql'
 
 dontenv.config()
 

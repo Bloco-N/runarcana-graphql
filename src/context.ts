@@ -1,4 +1,4 @@
-import { IContext } from './interfaces/IContext'
+import { IContext }     from './interfaces/IContext'
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()

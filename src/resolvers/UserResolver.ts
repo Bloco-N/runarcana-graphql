@@ -1,11 +1,11 @@
 import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from 'type-graphql'
-import SignUpInputData from '../inputs/User/SignUpInputData'
-import { IContext } from '../interfaces/IContext'
-import { ApiResponse } from '../schemas/ApiResponse'
-import UserService from '../services/UserService'
-import { Auth } from '../schemas/Auth'
-import SignInInputData from '../inputs/User/SignInInputData'
-import { User } from '../../prisma/generated/type-graphql'
+import { User }                                            from '../../prisma/generated/type-graphql'
+import SignInInputData                                     from '../inputs/User/SignInInputData'
+import SignUpInputData                                     from '../inputs/User/SignUpInputData'
+import { IContext }                                        from '../interfaces/IContext'
+import { ApiResponse }                                     from '../schemas/ApiResponse'
+import { Auth }                                            from '../schemas/Auth'
+import UserService                                         from '../services/UserService'
 
 @Resolver(User)
 export class UserResolver {

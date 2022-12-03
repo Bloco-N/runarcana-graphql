@@ -1,5 +1,5 @@
 import inheritances from '../../dataSource/inheritances.json'
-import regions from '../../dataSource/regions.json'
+import regions      from '../../dataSource/regions.json'
 
 const inheritanceRegions = []
 inheritances.forEach((inheritance, inheritanceIndex) => {

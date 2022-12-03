@@ -1,4 +1,4 @@
-import elements from '../../dataSource/elements.json'
+import elements  from '../../dataSource/elements.json'
 import mysteries from '../../dataSource/mysteries.json'
 
 const mNames = mysteries.map((mysterie) => mysterie.name)

@@ -1,5 +1,5 @@
 import inheritances from '../../dataSource/inheritances.json'
-import origins from '../../dataSource/origins.json'
+import origins      from '../../dataSource/origins.json'
 
 const lineages = []
 origins.forEach((origin) => origin.lineages.forEach((lineage) => lineages.push(lineage)))

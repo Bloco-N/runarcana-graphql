@@ -1,7 +1,7 @@
 import { Args, Ctx, Query, Resolver } from 'type-graphql'
-import { IContext } from '../interfaces/IContext'
-import PastService from '../services/PastService'
-import { FindManyPastArgs, Past } from '../../prisma/generated/type-graphql'
+import { FindManyPastArgs, Past }     from '../../prisma/generated/type-graphql'
+import { IContext }                   from '../interfaces/IContext'
+import PastService                    from '../services/PastService'
 
 @Resolver(Past)
 export class PastResolver {
