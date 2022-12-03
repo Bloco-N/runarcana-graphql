@@ -1,8 +1,7 @@
-import { CreateOneCharacterArgs, RunarcanaClass } from '../prisma/generated/type-graphql'
-import CharacterInputData from '../src/inputs/Character/CharacterInputData'
-import CharacterLevelUpInputData from '../src/inputs/Character/CharacterLevelUpInputData'
-import { levelUp } from './characterFuncitons'
-import { CharacterRunarcanaClass, Prisma } from '@prisma/client'
+import { Character, CreateOneCharacterArgs, RunarcanaClass } from '../prisma/generated/type-graphql'
+import CharacterInputData                                    from '../src/inputs/Character/CharacterInputData'
+import { levelUp }                                           from './characterFuncitons'
+import { Prisma }                                            from '@prisma/client'
 
 function firsClassArgs(id: number): Prisma.RunarcanaClassFindUniqueOrThrowArgs {
 
@@ -92,27 +91,24 @@ function findCharacteristicsArgs(id: number): Prisma.CharacterFindUniqueOrThrowA
 
 }
 
-function findLvlUpCharClassArgs(data: CharacterLevelUpInputData): Prisma.CharacterRunarcanaClassFindUniqueOrThrowArgs {
+function lvlUpfindCharacterArgs(id: number, runarcanaClassId: number): Prisma.CharacterFindUniqueOrThrowArgs {
 
   return {
     where: {
-      runarcanaClassId_characterId: {
-        characterId: data.characterId,
-        runarcanaClassId: data.runarcanaClassId
-      }
+      id
     },
     select: {
-      progress: true,
+      id: true,
       level: true,
-      RunarcanaClass: {
-        select: {
-          progress: true
-        }
-      },
-      Character: {
+      classHpBase: true,
+      CharacterRunarcanaClasses: {
+        where: {
+          runarcanaClassId
+        },
         select: {
           level: true,
-          classHpBase: true
+          progress: true,
+          RunarcanaClass: true
         }
       }
     }
@@ -120,18 +116,34 @@ function findLvlUpCharClassArgs(data: CharacterLevelUpInputData): Prisma.Charact
 
 }
 
-function updateLvlUpCharClassArgs(data: CharacterLevelUpInputData, charClass: CharacterRunarcanaClass): Prisma.CharacterRunarcanaClassUpdateArgs {
+function lvlUpUpdateCharacterArgs(character: Character, roll: number): Prisma.CharacterUpdateArgs {
+
+  const { UC, UCRC } = levelUp(character, roll)
 
   return {
     where: {
-      runarcanaClassId_characterId: {
-        characterId: data.characterId,
-        runarcanaClassId: data.runarcanaClassId
-      }
+      id: character.id
     },
-    data: levelUp(charClass, data.hitDie)
+    data: {
+      level: UC.level,
+      classHpBase: UC.classHpBase,
+      CharacterRunarcanaClasses: {
+        update: {
+          where: {
+            runarcanaClassId_characterId: {
+              characterId: character.id,
+              runarcanaClassId: UCRC.RunarcanaClass.id
+            }
+          },
+          data: {
+            level: UCRC.level,
+            progress: UCRC.progress
+          }
+        }
+      }
+    }
   }
 
 }
 
-export { firsClassArgs, firstCharacterCreateArgs, findBaseSpeedArgs, findCharacteristicsArgs, findLvlUpCharClassArgs, updateLvlUpCharClassArgs }
+export { firsClassArgs, firstCharacterCreateArgs, findBaseSpeedArgs, findCharacteristicsArgs, lvlUpfindCharacterArgs, lvlUpUpdateCharacterArgs }

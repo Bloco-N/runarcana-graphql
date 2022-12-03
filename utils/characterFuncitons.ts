@@ -1,40 +1,32 @@
-import { CharacterRunarcanaClass, CharacterRunarcanaClassUpdateInput } from '../prisma/generated/type-graphql'
-import { Characteristic } from '../src/schemas/Character/CharacterComplements/Characteristic'
+import { Character, CharacterRunarcanaClass } from '../prisma/generated/type-graphql'
+import { Characteristic }                     from '../src/schemas/Character/CharacterComplements/Characteristic'
 
-function levelUp(charClass: CharacterRunarcanaClass, roll: number): CharacterRunarcanaClassUpdateInput {
+function levelUp(character: Character, roll: number): { UC: Character; UCRC: CharacterRunarcanaClass } {
 
-  const Character = charClass.Character
-  const RunarcanaClass = charClass.RunarcanaClass
-  const classProgress = JSON.parse(RunarcanaClass.progress)
-  const characterProgressUpdated = JSON.parse(charClass.progress)
+  const characterRunarcanaClass = character.CharacterRunarcanaClasses[0]
+  const runarcanaClass = characterRunarcanaClass.RunarcanaClass
 
-  Character.classHpBase += roll
-  Character.level++
-  charClass.level++
+  const classProgress = JSON.parse(runarcanaClass.progress)
+  const characterRunarcanaClassProgress = JSON.parse(characterRunarcanaClass.progress)
 
-  const lvlUpdate = classProgress.find((item: { lvl: number }) => item.lvl === charClass.level)
+  character.classHpBase += roll
+  character.level++
+  characterRunarcanaClass.level++
 
-  if (lvlUpdate) {
+  const progressUpdate = classProgress.find((item: { lvl: number }) => item.lvl === characterRunarcanaClass.level)
 
-    characterProgressUpdated.push(...(lvlUpdate.c.new?.map((characteristicName: string) => ({
+  if (progressUpdate) {
+
+    characterRunarcanaClassProgress.push(...(progressUpdate.c.new?.map((characteristicName: string) => ({
       name: characteristicName,
       lvl: 1
     })) || []))
 
-    charClass.progress = JSON.stringify(characterProgressUpdated)
+    characterRunarcanaClass.progress = JSON.stringify(characterRunarcanaClassProgress)
   
   }
 
-  return {
-    Character: {
-      update: {
-        level: Character.level,
-        classHpBase: Character.classHpBase
-      }
-    },
-    level: charClass.level,
-    progress: charClass.progress
-  }
+  return { UC: character, UCRC: characterRunarcanaClass }
 
 }
 

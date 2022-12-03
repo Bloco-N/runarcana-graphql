@@ -1,32 +1,56 @@
-import { Character, CharacterRunarcanaClass } from '../../prisma/generated/type-graphql'
-import { currentCharacteristics } from '../../utils/characterFuncitons'
 import {
   findBaseSpeedArgs,
   findCharacteristicsArgs,
-  findLvlUpCharClassArgs,
   firsClassArgs,
   firstCharacterCreateArgs,
-  updateLvlUpCharClassArgs
+  lvlUpUpdateCharacterArgs,
+  lvlUpfindCharacterArgs
 } from '../../utils/query'
-import CharacterCreateInputData from '../inputs/Character/CharacterCreateInputData'
-import CharacterLevelUpInputData from '../inputs/Character/CharacterLevelUpInputData'
-import { IContext } from '../interfaces/IContext'
-import { CharacterModsAndSkills } from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import { Characteristic } from '../schemas/Character/CharacterComplements/Characteristic'
+
+import { Character, CharacterUpdateInput } from '../../prisma/generated/type-graphql'
+import { currentCharacteristics }          from '../../utils/characterFuncitons'
+import CharacterCreateInputData            from '../inputs/Character/CharacterCreateInputData'
+import CharacterLevelUpInputData           from '../inputs/Character/CharacterLevelUpInputData'
+import { IContext }                        from '../interfaces/IContext'
+import { CharacterModsAndSkills }          from '../schemas/Character/CharacterComplements/CharacterModsAndSkills'
+import { Characteristic }                  from '../schemas/Character/CharacterComplements/Characteristic'
 
 export default class CharacterService {
 
   public async create(ctx: IContext, data: CharacterCreateInputData): Promise<Character> {
 
     const firstClass = await ctx.prisma.runarcanaClass.findUnique(firsClassArgs(data.runarcanaClassId))
-    return (await ctx.prisma.character.create(firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass))) as Character
+    return await ctx.prisma.character.create(firstCharacterCreateArgs(ctx.user.id, data.charData, firstClass))
   
   }
 
-  public async levelUpCharacter(ctx: IContext, data: CharacterLevelUpInputData): Promise<CharacterRunarcanaClass> {
+  public async update(character: Character, data: CharacterUpdateInput, ctx: IContext): Promise<Character> {
 
-    const charClass = (await ctx.prisma.characterRunarcanaClass.findUnique(findLvlUpCharClassArgs(data))) as CharacterRunarcanaClass
-    return (await ctx.prisma.characterRunarcanaClass.update(updateLvlUpCharClassArgs(data, charClass))) as CharacterRunarcanaClass
+    return await ctx.prisma.character.update({
+      where: {
+        id: character.id
+      },
+      data
+    })
+  
+  }
+
+  public async delete(character: Character, ctx: IContext): Promise<Character> {
+
+    return await ctx.prisma.character.delete({
+      where: {
+        id: character.id
+      }
+    })
+  
+  }
+
+  public async levelUpCharacter(character: Character, data: CharacterLevelUpInputData, ctx: IContext): Promise<Character> {
+
+    const findCharacterArgs = lvlUpfindCharacterArgs(character.id, data.runarcanaClassId)
+    const characterLUI = await ctx.prisma.character.findUnique(findCharacterArgs)
+    const updateCharacterArgs = lvlUpUpdateCharacterArgs(characterLUI, data.roll)
+    return await ctx.prisma.character.update(updateCharacterArgs)
   
   }
 
@@ -77,14 +101,14 @@ export default class CharacterService {
 
   public async getCharacteristics(ctx: IContext, character: Character): Promise<Characteristic[]> {
 
-    const char = (await ctx.prisma.character.findUnique(findCharacteristicsArgs(character.id))) as Character
+    const char: Character = await ctx.prisma.character.findUnique(findCharacteristicsArgs(character.id))
     return currentCharacteristics(char.CharacterRunarcanaClasses)
   
   }
 
-  public async getBaseSpeed(character: Character, ctx: IContext) {
+  public async getBaseSpeed(character: Character, ctx: IContext): Promise<number> {
 
-    const charInfo = (await ctx.prisma.character.findUnique(findBaseSpeedArgs(character.id))) as Character
+    const charInfo: Character = await ctx.prisma.character.findUnique(findBaseSpeedArgs(character.id))
 
     const {
       Origin: { baseSpeed },
