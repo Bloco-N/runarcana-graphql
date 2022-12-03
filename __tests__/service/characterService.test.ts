@@ -1,13 +1,15 @@
 /* eslint-disable no-undef */
-import { Character } from '../../prisma/generated/type-graphql'
-import CharacterCreateInputData from '../../src/inputs/Character/CharacterCreateInputData'
-import SignUpInputData from '../../src/inputs/User/SignUpInputData'
-import { IContext } from '../../src/interfaces/IContext'
-import { CharacterModsAndSkills } from '../../src/schemas/Character/CharacterComplements/CharacterModsAndSkills'
-import CharacterService from '../../src/services/CharacterService'
-import UserService from '../../src/services/UserService'
-import { PrismaClient } from '@prisma/client'
 import 'reflect-metadata'
+
+import { Character, CharacterUpdateInput } from '../../prisma/generated/type-graphql'
+import CharacterCreateInputData            from '../../src/inputs/Character/CharacterCreateInputData'
+import CharacterLevelUpInputData           from '../../src/inputs/Character/CharacterLevelUpInputData'
+import SignUpInputData                     from '../../src/inputs/User/SignUpInputData'
+import { IContext }                        from '../../src/interfaces/IContext'
+import { CharacterModsAndSkills }          from '../../src/schemas/Character/CharacterComplements/CharacterModsAndSkills'
+import CharacterService                    from '../../src/services/CharacterService'
+import UserService                         from '../../src/services/UserService'
+import { PrismaClient }                    from '@prisma/client'
 
 describe('CharacterService tests', () => {
 
@@ -62,16 +64,65 @@ describe('CharacterService tests', () => {
   
   })
 
+  test('should return character updated', async () => {
+
+    const data: CharacterUpdateInput = {
+      strength: 12,
+      constitution: 4,
+      dexterity: 20,
+      intelligence: 16,
+      wisdom: 8,
+      charisma: 0
+    }
+
+    character = await characterService.update(character, data, ctx)
+
+    expect(character).toBeDefined()
+    expect(character).toMatchObject<Character>({
+      ...data
+    } as Character)
+  
+  })
+
+  test('should return character level uped', async () => {
+
+    const data: CharacterLevelUpInputData = {
+      runarcanaClassId: 1,
+      roll: 5
+    }
+
+    character = await characterService.levelUpCharacter(character, data, ctx)
+
+    expect(character).toBeDefined()
+    expect(character).toMatchObject<Character>({
+      level: 2,
+      classHpBase: 13
+    } as Character)
+  
+  })
+
   test('should return character skills and mods', async () => {
 
     const characterModAndSkill = await characterService.getCharacterModAndSkills(character)
 
     expect(characterModAndSkill).toBeDefined()
     expect(characterModAndSkill).toMatchObject<CharacterModsAndSkills>({
-      strengthMod: -5,
-      athleticsValue: -5,
-      strengthSavingThrowValue: -5
+      strengthMod: 1,
+      constitutionMod: -3,
+      dexterityMod: 5,
+      intelligenceMod: 3,
+      wisdomMod: -1,
+      charismaMod: -5
     } as CharacterModsAndSkills)
+  
+  })
+
+  test('should return the deleted character', async () => {
+
+    const deletedCharacter = await characterService.delete(character, ctx)
+
+    expect(deletedCharacter).toBeDefined()
+    expect(deletedCharacter).toMatchObject(character)
   
   })
 

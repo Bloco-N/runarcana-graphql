@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-import { app } from '../../src/app'
+import { app }                       from '../../src/app'
 import { ApolloServer, BaseContext } from '@apollo/server'
-import { PrismaClient } from '@prisma/client'
-import request from 'supertest'
+import { PrismaClient }              from '@prisma/client'
+import request                       from 'supertest'
 
 describe('UserResolver tests', () => {
 

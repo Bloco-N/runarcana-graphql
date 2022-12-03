@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
-import { app } from '../../src/app'
+import { app }          from '../../src/app'
 import { PrismaClient } from '@prisma/client'
-import request from 'supertest'
+import request          from 'supertest'
 
 describe('CharacterResolver tests', () => {
 
